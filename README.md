@@ -18,7 +18,7 @@ Conjunto básico de CSS e HTML para prototipação rápida de Sites, WebApps e F
 
 ### Em Andamento
 * Estrutura básica HTML
-* HTML: Escolhe tags mínimos para o <head> do HTML
+* -HTML: Escolhe tags mínimos para o <head> do HTML-
 * Estrutura básica do CSS
 * Exemplos de formulários e aplicações de erro.
 * Formulários horizontais
