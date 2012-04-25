@@ -11,9 +11,10 @@ Conjunto básico de CSS e HTML para prototipação rápida de Sites, WebApps e F
 * Identidade visual para o projeto
 * Melhorar o tagline do projeto
 * Definir grade básica
-* Definir Relações tipográficas
+* Definir Relações tipográficas.
 * Resolver as esquizofrenia de inglês e português no projeto
 * Definir a formatação do CSS: Aberta, com uma propriedade por linha; ou Compacta, uma regra popr linha.
+* Definir diretórios para melhor atender o usuário quando ele usar o git:clone do projeto.
 
 ### Em Andamento
 * Estrutura básica HTML
