@@ -12,8 +12,9 @@ Conjunto básico de CSS e HTML para prototipação rápida de Sites, WebApps e F
 * Melhorar o tagline do projeto
 * Definir grade básica
 * Definir Relações tipográficas
+* Resolver as esquizofrenia de inglês e português no projeto
 
-### Trabalhando
+### Em Andamento
 * Estrutura básica HTML
 * HTML: Escolhe tags mínimos para o <head> do HTML
 * Estrutura básica do CSS
