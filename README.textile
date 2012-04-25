@@ -1,10 +1,10 @@
-# BasalStyle
+h1. BasalStyle
 
 Conjunto básico de CSS e HTML para prototipação rápida de Sites, WebApps e Formulários.
 
-## Roadmap
+h2. Roadmap
 
-### TODO
+h3. TODO
 * Estrutura básica em HTML5
 * Estrutura básica para Site: Abertura, Quem Somos e Contato.
 * Estrutura básica para WebApp: Abertura, Login, Dashboard e Minha Conta
@@ -16,7 +16,7 @@ Conjunto básico de CSS e HTML para prototipação rápida de Sites, WebApps e F
 * Definir a formatação do CSS: Aberta, com uma propriedade por linha; ou Compacta, uma regra popr linha.
 * Definir diretórios para melhor atender o usuário quando ele usar o git:clone do projeto.
 
-### Em Andamento
+h3. Em Andamento
 * Estrutura básica HTML
 * -HTML: Escolhe tags mínimos para o <head> do HTML-
 * Estrutura básica do CSS
