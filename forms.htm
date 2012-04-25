@@ -1,0 +1,220 @@
+<!doctype html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>BasalStyle - Index</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/basalstyle.css">
+
+</head>
+<body>
+
+<div class="headerFrame row">
+  <div class="header row">
+      <div class="siteID">
+          <h1 class="siteLogo">basalStyle</h1>
+          <p class="siteTagline">Modelos para Prototipação Rápida de Sites, WebApps e Formulários.</p>
+      </div>
+  </div>
+  <!-- header -->
+</div>
+<!-- headerFrame -->
+<hr>
+<div class="contentFrame row">
+  <div class="content row">
+      <h2>Formulários</h2>
+
+      <h3>Formulário Exemplo</h3>
+
+      <div class="row">
+          <div class="col-3">
+                  <form action="" method="" accept-charset="utf-8">
+
+                          <div class="formRow labelBlock inputText">
+                              <label for="id_name">Nome</label> <input type="text" id="id_name" name="name">
+                          </div>
+
+                          <div class="formRow labelBlock inputText inputText">
+                              <label for="id_surname">Sobrenome</label> <input type="text" id="id_surname" name="surname">
+                          </div>
+
+                          <div class="formRow inputRadio">
+                              <fieldset>
+                                  <legend>Estado Civil</legend>
+                                  <dl>
+                                    <dd><input id="id_ec_1" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_1">Solteiro</label></dd>
+                                    <dd><input id="id_ec_2" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_2">Casado</label></dd>
+                                    <dd><input id="id_ec_3" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_3">Separado</label></dd>
+                                    <dd><input id="id_ec_4" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_4">Divorciado</label></dd>
+                                    <dd><input id="id_ec_5" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_5">Viúvo</label></dd>
+                                  </ul>
+                              </fieldset>
+                          </div>
+
+                          <div class="formRow labelBlock inputText inputText-33">
+                              <label for="id_zipcode">CEP</label> <input type="text" id="id_zipcode" name="zipcode">
+                          </div>
+
+                          <div class="formRow labelBlock inputText inputText-66">
+                              <label for="id_city">Cidade</label> <input type="text" id="id_city" name="city">
+                          </div>
+
+                          <div class="formRow labelBlock selectDropdown">
+                              <label for="id_state">Estado (UF) </label>
+                              <select id="id_state" name="state">
+                                <option value="">Escolha uma opção</option>
+                                <option value="UF_AC">Acre</option>
+                                <option value="UF_RN">Rio Grande do Norte</option>
+                              </select>
+
+                          </div>
+
+                          <div class="formRow labelBlock inputText">
+                              <label>Observações</label> <textarea name=""></textarea>
+                          </div>
+                  </form>
+          </div>
+            <div class="col-3">
+                  &nbsp;
+            </div>
+
+          <div class="col">
+                  &nbsp;
+          </div>
+
+      </div>
+
+      <h3>Formulário com Erro indicado no campo</h3>
+
+        <div class="row ">
+            <div class="col-3">
+
+                  <form action="" method="" accept-charset="utf-8">
+
+                          <div class="formRow labelBlock inputText">
+                              <label for="id_name">Nome</label>
+                              <ul class="errorlist">
+                                  <li>Este campo é obrigatório.</li>
+                              </ul>
+                              <input type="text" id="id_name" name="name">
+                          </div>
+
+                          <div class="formRow labelBlock inputText inputText">
+                              <label for="id_surname">Sobrenome</label>
+                              <ul class="errorlist">
+                                  <li>Este campo é obrigatório.</li>
+                                  <li>Um exemplo de uma segunda ou mais linhas de erro no mesmo campo.</li>
+                              </ul>
+                              <input type="text" id="id_surname" name="surname">
+                          </div>
+
+                          <div class="formRow inputRadio">
+                              <fieldset>
+                                  <legend>Estado Civil</legend>
+                                  <ul class="errorlist">
+                                      <li>Este campo é obrigatório a escolha de uma opção.</li>
+                                  </ul>
+
+                                  <dl>
+                                    <dd><input id="id_ec_10" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_10">Solteiro</label></dd>
+                                    <dd><input id="id_ec_11" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_11">Casado</label></dd>
+                                    <dd><input id="id_ec_12" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_12">Separado</label></dd>
+                                    <dd><input id="id_ec_13" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_13">Divorciado</label></dd>
+                                    <dd><input id="id_ec_14" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_14">Viúvo</label></dd>
+                                  </ul>
+                              </fieldset>
+                          </div>
+
+                          <div class="formRow labelBlock inputText inputText-66">
+                              <label for="id_city">Cidade</label>
+                              <ul class="errorlist">
+                                  <li>Este campo é obrigatório.</li>
+                              </ul>
+                              <input type="text" id="id_city" name="city">
+                          </div>
+
+                          <div class="formRow labelBlock selectDropdown">
+                              <label for="id_state">Estado (UF) </label>
+                              <ul class="errorlist">
+                                  <li>Este campo é obrigatório.</li>
+                              </ul>
+                              <select id="id_state" name="state">
+                                <option value="">Escolha uma opção</option>
+                                <option value="UF_AC">Acre</option>
+                                <option value="UF_RN">Rio Grande do Norte</option>
+                              </select>
+
+                          </div>
+
+                          <div class="formRow labelBlock inputText">
+                              <label>Observações</label>
+                              <ul class="errorlist">
+                                  <li>Este campo é obrigatório.</li>
+                              </ul>
+                              <textarea name=""></textarea>
+                          </div>
+                  </form>
+
+            </div>
+        </div>
+
+
+      <h3>Formulário com Erro Unificado</h3>
+
+          <div class="row">
+                <div class="col-3">
+                    <div class="errorlist">
+                        <p>O fomulário contem erros nos campos, são eles:</p>
+                        <dl>
+                          <dt>Nome Completo</dt>
+                          <dd>Este campo é obrigatório.</dd>
+                          <dt>Email</dt>
+                          <dd>Este campo é obrigatório.</dd>
+                          <dd>Um exemplo de uma segunda ou mais linhas de erro no mesmo campo.</d>
+                        </dl>
+                    </div>
+
+                    <div class="formRow labelBlock inputText errorInput">
+                        <label>Nome Completo</label>
+                        <input type="text" id="id_subject" name="name">
+                    </div>
+
+                    <div class="formRow labelBlock inputText errorInput">
+                        <label>Email</label>
+                        <input type="text" id="id_subject" name="address">
+                    </div>
+
+                </div>
+                <div class="col-2">
+                    &nbsp;
+                </div>
+
+          </div>
+
+
+
+  </div>
+  <!-- content -->
+</div>
+<!-- contentFrame -->
+<hr>
+<div class="footerFrame row">
+  <div class="footer rulerTop row">
+      <div class="siteID">
+          <h2 class="siteLogo"><strong>basalStyle</strong></h2>
+          <p class="siteTagline">Modelos para Prototipação Rápida de Sites, WebApps e Formulários.</p>
+      </div>
+  </div>
+  <!-- footer -->
+</div>
+<!-- footerFrame -->
+
+</body>
+</html>
