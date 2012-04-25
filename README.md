@@ -13,6 +13,7 @@ Conjunto básico de CSS e HTML para prototipação rápida de Sites, WebApps e F
 * Definir grade básica
 * Definir Relações tipográficas
 * Resolver as esquizofrenia de inglês e português no projeto
+* Definir a formatação do CSS: Aberta, com uma propriedade por linha; ou Compacta, uma regra popr linha.
 
 ### Em Andamento
 * Estrutura básica HTML
