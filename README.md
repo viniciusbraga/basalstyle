@@ -12,4 +12,5 @@ Conjunto básico de CSS e HTML para prototipação rápida de Sites, WebApps e F
 
 ### Trabalhando
 * Estrutura básica HTML
+* Estrutura báscia do CSS
 * Exemplos de formulários e aplicações de erro.
