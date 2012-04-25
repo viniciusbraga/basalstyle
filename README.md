@@ -1,6 +1,6 @@
 # BasalStyle
 
-Conjunto básico de CSS e HTML para prototipação rápida de Sites, WebApps e formulários.
+Conjunto básico de CSS e HTML para prototipação rápida de Sites, WebApps e Formulários.
 
 ## Roadmap
 
@@ -10,6 +10,7 @@ Conjunto básico de CSS e HTML para prototipação rápida de Sites, WebApps e f
 * Estrutura básica para WebApp: Abertura, Login, Dashboard e Minha Conta
 
 
-### Working
+### Trabalhando
 * Estrutura básica HTML
+* Estrutura báscia do CSS
 * Exemplos de formulários e aplicações de erro.
