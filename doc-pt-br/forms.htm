@@ -55,10 +55,19 @@
 
       <div class="row">
           <div class="col-2">
-            &nbsp;
-
+            <p>Formulário Vertical é a designação para formulários com Labels fazendo quebra de linha e ocupando o topo do campo.</p>
+            <p>Por razão de ser o mais rápido de leitura e preenchimento, quando o usuário reconhece o que precisa preencher nos campos, ele é usado como formato padrão.</p>
+            <dl>
+              <dt>Prós</dt>
+              <dd>Rápida leitura</dd>
+              <dd>Preenchimento veloz</dd>
+              <dd>Compreensível na apresentação de diferentes erros</dd>
+              <dt>Contras</dt>
+              <dd>Ocupa muito espaço vertical</dd>
+              <dd>Pode esconder erros do usuário</dd>
+            </dl>
           </div>
-          <div class="col-3">
+          <div class="col-3 rulerLeft">
                   <form action="" method="" accept-charset="utf-8">
 
                           <div class="formRow labelBlock inputText formLabelDesc">
@@ -108,21 +117,8 @@
                               <label>Observações</label> <textarea name=""></textarea>
                           </div>
                   </form>
-          </div>
 
-          <div class="col">
-            &nbsp;
-          </div>
-
-      </div>
-
-      <h3>Formulário Vertical com Exemplos de Erro</h3>
-
-        <div class="row ">
-            <div class="col-2">
-              &nbsp;
-            </div>
-            <div class="col-3">
+                  <h4>Exemplo com Erro</h4>
 
                   <form action="" method="" accept-charset="utf-8">
 
@@ -177,45 +173,40 @@
                           </div>
                   </form>
 
-            </div>
-        </div>
 
 
-      <h3>Formulário Vertical com Erro Unificado</h3>
 
-          <div class="row">
-            <div class="col-2">
-              &nbsp;
-            </div>
+                  <h4>Erro Unificado</h4>
 
-                <div class="col-3">
-                    <div class="errorlist">
-                        <p>O fomulário contêm erros nos campos, são eles:</p>
-                        <dl>
-                          <dt>Nome Completo</dt>
-                          <dd>Este campo é obrigatório.</dd>
-                          <dt>Email</dt>
-                          <dd>Este campo é obrigatório.</dd>
-                          <dd>Um exemplo de uma segunda ou mais linhas de erro no mesmo campo.</d>
-                        </dl>
-                    </div>
+                  <div class="errorlist">
+                      <p>O fomulário contêm erros nos campos, são eles:</p>
+                      <dl>
+                        <dt>Nome Completo</dt>
+                        <dd>Este campo é obrigatório.</dd>
+                        <dt>Email</dt>
+                        <dd>Este campo é obrigatório.</dd>
+                        <dd>Um exemplo de uma segunda ou mais linhas de erro no mesmo campo.</d>
+                      </dl>
+                  </div>
 
-                    <div class="formRow labelBlock inputText errorInput">
-                        <label>Nome Completo</label>
-                        <input type="text" id="id_subject" name="name">
-                    </div>
+                  <div class="formRow labelBlock inputText errorInput">
+                      <label>Nome Completo</label>
+                      <input type="text" id="id_subject" name="name">
+                  </div>
 
-                    <div class="formRow labelBlock inputText errorInput">
-                        <label>Email</label>
-                        <input type="text" id="id_subject" name="address">
-                    </div>
+                  <div class="formRow labelBlock inputText errorInput">
+                      <label>Email</label>
+                      <input type="text" id="id_subject" name="address">
+                  </div>
 
-                </div>
-                <div class="col-2">
-                    &nbsp;
-                </div>
 
           </div>
+
+          <div class="col">
+            &nbsp;
+          </div>
+
+      </div>
 
 
 
