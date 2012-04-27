@@ -99,6 +99,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
    padding-top: 0;
  }
 
+ .content .col-2 p,
+ .content .col-2 li,
+ .content .col-2 dd {
+   line-height: 1.4em
+ }
+
  /* Footer */
  .footer {
    color: #999;
