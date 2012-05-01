@@ -37,26 +37,106 @@
 <body>
 
 <div class="headerFrame row">
-  <div class="header row">
+  <div class="header rulerBottom row">
       <div class="siteID">
           <h1 class="siteLogo">basalStyle</h1>
           <p class="siteTagline">CSS e HTML para prototipação rápida de Sites, WebApps e Formulários.</p>
       </div>
-  </div>
-  <!-- END header -->
-</div>
-<!-- END headerFrame -->
+  </div><!-- END header -->
+</div><!-- END headerFrame -->
 <hr>
 <div class="contentFrame row">
   <div class="content row">
+      <h2>Navegação (Bloco de Links)</h2>
+      <h3>Menu Horizontal</h3>
+      <div class="row">
+          <div class="col-2">
+                      <dl>
+                        <dt>Prós</dt>
+                        <dd>Ocupa pouco espaço vertical</dd>
+                        <dt>Contras</dt>
+                        <dd>Baixa legibilidade quando possui muitos links. Manter no máximo 8 links.</dd>
+                      </dl>
+          </div>
+          <!-- col-2 -->
+
+          <div class="col-3 rulerLeft rulerRight" style="min-height:18em">
+
+                      <div class="navFlat">
+                          <ul>
+                            <li><a href="#">Abertura</a></li>
+                            <li class="current"><a href="#">Planos &amp; Preços</a></li>
+                            <li><a href="#">Fale Conosco</a></li>
+                          </ul>
+                      </div>
+
+          </div>
+          <!-- col-3 -->
+          <div class="col">
+                <h4>Exemplo:</h4>
+                <form action="#" accept-charset="utf-8">
+                      <textarea style="font-size:1.2em;line-height:1.5em;margin:0 0.5em;height:150px;border:none;">
+<div class="navFlat">
+    <ul>
+      <li><a href="#">Abertura</a></li>
+      <li class="current"><a href="#">Planos &amp; Preços</a></li>
+    </ul>
+</div>
+                      </textarea>
+                  </form>
+          </div>
+          <!-- col -->
+      </div>
+      <!-- row -->
+
+      <h3>Menu Vertical</h3>
+      <div class="row">
+          <div class="col-2">
+                      <dl>
+                        <dt>Prós</dt>
+                        <dd>Boa legibilidade no lado esquerdo.</dd>
+                        <dd>Ideal para <strong>rodapés</strong> e <strong>sidebars</strong>.</dd>
+                        <dt>Contras</dt>
+                        <dd>Ocupa espaço vertical</dd>
+                      </dl>
+          </div>
+          <!-- col-2 -->
+
+          <div class="col-3 rulerLeft rulerRight" style="min-height:18em">
+                      <div class="navList">
+                          <ul>
+                            <li><a href="#">Abertura</a></li>
+                            <li class="current"><a href="#">Planos &amp; Preços</a></li>
+                            <li><a href="#">Fale Conosco</a></li>
+                          </ul>
+                      </div>
+          </div>
+          <!-- col-3 -->
+          <div class="col">
+              <h4>Exemplo:</h4>
+              <form action="#" accept-charset="utf-8">
+
+                <textarea style="font-size:1.2em;line-height:1.5em;margin:0 0.5em;height:150px;border:none">
+<div class="navList">
+    <ul>
+      <li><a href="#">Abertura</a></li>
+      <li class="current"><a href="#">Planos &amp; Preços</a></li>
+    </ul>
+</div>
+                </textarea>
+              </form>
+          </div>
+      </div>
+      <!-- row -->
+
+<hr>
+
       <h2>Formulários</h2>
 
       <h3>Formulário Vertical</h3>
-
       <div class="row">
           <div class="col-2">
-            <p>Formulário Vertical é a designação para formulários com Labels fazendo quebra de linha e ocupando o topo do campo.</p>
-            <p>Por razão de ser o mais rápido de leitura e preenchimento, quando o usuário reconhece o que precisa preencher nos campos, ele é usado como formato padrão.</p>
+            <p>Layout default com o <code>label</code> fazendo a quebra de linha</p>
             <dl>
               <dt>Prós</dt>
               <dd>Rápida leitura</dd>
@@ -67,7 +147,7 @@
               <dd>Pode esconder erros do usuário</dd>
             </dl>
           </div>
-          <div class="col-3 rulerLeft">
+          <div class="col-3 rulerLeft rulerRight">
                   <form action="" method="" accept-charset="utf-8">
 
                           <div class="formRow labelBlock inputText formLabelDesc">
@@ -118,13 +198,46 @@
                           </div>
                   </form>
 
-                  <h4>Exemplo com Erro</h4>
+          </div>
+
+          <div class="col">
+                <h4>Exemplo de módulo HTML com <code>label</code> e <code>input</code>.</h4>
+                <form action="#" accept-charset="utf-8">
+                      <textarea style="font-size:1.2em;line-height:1.5em;margin:0 1em;height:100px;border:none">
+<div class="formRow labelBlock inputText formLabelDesc">
+    <label for="id_name">Nome </label>
+    <input type="text" id="id_name" name="name">
+</div></textarea>
+                  </form>
+
+                <h4>Exemplo de módulo HTML com <code>label</code>, <code>input</code> e <code>p</code> com breve explicação sobre preenchimento.</h4>
+                <form action="#" accept-charset="utf-8">
+                      <textarea style="font-size:1.2em;line-height:1.5em;margin:0 1em;height:100px;border:none">
+<div class="formRow labelBlock inputText formLabelDesc">
+    <label for="id_name">Nome </label>
+    <input type="text" id="id_name" name="name">
+    <p>Aqui texto com alguma mensagem relevante.</p>
+</div></textarea>
+                  </form>
+
+          </div>
+
+      </div>
+
+
+      <h4>Formulário Vertical com Erro</h4>
+
+      <div class="row">
+          <div class="col-2">
+            <p>Layout default com o <code>label</code> fazendo a quebra de linha</p>
+          </div>
+          <div class="col-3  rulerLeft rulerRight">
 
                   <form action="" method="" accept-charset="utf-8">
 
                           <div class="formRow labelBlock inputText">
                               <label for="id_name">Nome</label>
-                              <ul class="errorlist">
+                              <ul class="errorList">
                                   <li>Este campo é obrigatório.</li>
                                   <li>Um exemplo de uma segunda ou mais linhas de erro no mesmo campo.</li>
                               </ul>
@@ -136,7 +249,7 @@
                           <div class="formRow inputRadio">
                               <fieldset>
                                   <legend>Estado Civil</legend>
-                                  <ul class="errorlist">
+                                  <ul class="errorList">
                                       <li>É preciso escolher uma opção abaixo.</li>
                                   </ul>
 
@@ -153,7 +266,7 @@
 
                           <div class="formRow labelBlock selectDropdown">
                               <label for="id_state">Estado (UF) </label>
-                              <ul class="errorlist">
+                              <ul class="errorList">
                                   <li>Este campo é obrigatório.</li>
                               </ul>
                               <select id="id_state" name="state">
@@ -166,26 +279,51 @@
 
                           <div class="formRow labelBlock inputText">
                               <label>Observações</label>
-                              <ul class="errorlist">
+                              <ul class="errorList">
                                   <li>Este campo é obrigatório.</li>
                               </ul>
                               <textarea name=""></textarea>
                           </div>
                   </form>
 
+          </div>
 
+          <div class="col">
+                <h4>Exemplo de módulo com erro.</h4>
+                <form action="#" accept-charset="utf-8">
+                      <textarea style="font-size:1.2em;line-height:1.5em;margin:0 1em;height:250px;border:none">
+<div class="formRow labelBlock inputText">
+  <label for="id_name">Nome</label>
+  <ul class="errorList">
+    <li>Este campo é obrigatório.</li>
+    <li>Um exemplo de uma segunda ou mais linhas de erro no mesmo campo.</li>
+  </ul>
+  <input type="text" id="id_name" name="name">
+  <p><strong>Exemplo</strong> de instrução sobre o preenchimento...</p>
+</div></textarea>
+                  </form>
+          </div>
 
+      </div>
 
-                  <h4>Erro Unificado</h4>
+      <h4>Formulário Vertical com Erro Unificado</h4>
 
-                  <div class="errorlist">
+      <div class="row">
+          <div class="col-2">
+            <p>Com o erro unificado, você não precisa repetir a mensagem próximo ao campo, mas deve indicar um alerta no campo com erro.</p>
+            <p>Neste caso, deve-se acrescentar a classe <code>errorInput</code> no mesmo <code>div</code> do <code>formRow</code> </p>
+          </div>
+          <div class="col-3  rulerLeft rulerRight" style="min-height:400px;">
+                  <form action="" method="" accept-charset="utf-8">
+
+                  <div class="errorList">
                       <p>O fomulário contêm erros nos campos, são eles:</p>
                       <dl>
                         <dt>Nome Completo</dt>
                         <dd>Este campo é obrigatório.</dd>
                         <dt>Email</dt>
                         <dd>Este campo é obrigatório.</dd>
-                        <dd>Um exemplo de uma segunda ou mais linhas de erro no mesmo campo.</d>
+                        <dd>Um exemplo de uma segunda ou mais linhas de erro no mesmo campo.</dd>
                       </dl>
                   </div>
 
@@ -203,7 +341,25 @@
           </div>
 
           <div class="col">
-            &nbsp;
+                <h4>Exemplo do módulo unificado de erro:</h4>
+                <form action="#" accept-charset="utf-8">
+                      <textarea style="font-size:1.2em;line-height:1.5em;margin:0 1em;height:180px;border:none">
+<div class="errorList">
+    <p>O fomulário contêm erros nos campos, são eles:</p>
+    <dl>
+      <dt>Nome Completo</dt>
+      <dd>Este campo é obrigatório.</dd>
+      <dd>Um exemplo de uma segunda ou mais linhas de erro no mesmo campo.</dd>
+    </dl>
+</div></textarea>
+
+                <h4>Classe <code>errorInput</code> aplicada no <code>div</code> <code>formRow</code></h4>
+                      <textarea style="font-size:1.2em;line-height:1.5em;margin:0 1em;height:100px;border:none">
+<div class="formRow labelBlock inputText errorInput">
+    <label>Nome Completo</label>
+    <input type="text" id="id_subject" name="name">
+</div></textarea>
+                  </form>
           </div>
 
       </div>
@@ -217,10 +373,10 @@
 <hr>
 <div class="footerFrame row">
   <div class="footer rulerTop row">
-      <div class="siteID">
-          <h2 class="siteLogo"><strong>basalStyle</strong></h2>
-          <p class="siteTagline">CSS e HTML para prototipação rápida de Sites, WebApps e Formulários.</p>
-      </div>
+          <div class="siteID">
+              <h2 class="siteLogo"><strong>basalStyle</strong></h2>
+              <p class="siteTagline">CSS e HTML para prototipação rápida de Sites, WebApps e Formulários.</p>
+          </div>
   </div>
   <!-- END footer -->
 </div>
