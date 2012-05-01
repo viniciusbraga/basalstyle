@@ -88,6 +88,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
    padding-top: 0;
  }
 
+/* Site ID */
+.siteID {
+  margin: 2em 0 0
+}
+.siteLogo {
+  margin: 0 0;
+}
+.siteTagline {
+  margin: 0
+}
+
  /* Content */
  .content {
    padding: 1em 0 4em
