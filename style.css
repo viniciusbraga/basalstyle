@@ -245,30 +245,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 
 /* Form Errors */
-.errorlist {
+.errorList {
   color: red;
 }
-.errorlist li + li,
-.errorlist dd + dd {
+.errorList li + li,
+.errorList dd + dd {
   line-height: 1.3em;
   margin: 0;
   padding-bottom:0.7em;
 }
-.errorlist dt {
+.errorList dt {
   line-height: 1.0em;
 }
-.errorlist dd {
+.errorList dd {
   padding-left:1em;
 }
-.formRow .errorlist {
+.formRow .errorList {
   margin: 0;
   padding: 0 0 0 1em;
   border-left: 6px solid #F66;
   list-style: none;
 }
-.formRow .errorlist + input,
-.formRow .errorlist + input + input,
-.formRow .errorlist + textarea,
+.formRow .errorList + input,
+.formRow .errorList + input + input,
+.formRow .errorList + textarea,
 .errorInput input {
   margin: 0 0 6px;
   padding: 4px 0 5px 5px;
