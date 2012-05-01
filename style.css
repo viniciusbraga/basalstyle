@@ -113,6 +113,50 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
    padding-top: 0;
  }
 
+ /* Navigation Combos */
+
+.navH {}
+.navH ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ display: inline-block
+}
+.navH li {
+ float: left;
+ position: relative;
+}
+.navH a {
+  font-size: inherit;
+  font-weight: 300;
+  padding: 0 0.5em;
+  margin: 0 0.5em;
+  display: block;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  /* Firefox transitions*/
+  -moz-transition-property: background-color; /* Which property to animate*/
+  -moz-transition-duration: 1s;  /* How long the change should take*/
+  /*chrome&safari transitions*/
+  -webkit-transition-property: background-color;
+  -webkit-transition-duration: 1s;
+  /*opera transitions*/
+  -o-transition-property: background-color;
+  -o-transition-duration: 1s;
+}
+.navH a:hover {
+ color: #000;
+ background: #CCC;
+}
+.navH .current a {
+ color: #333;
+ font-weight: 700;
+ background: #F5F5F5;
+}
+
+
+
 
 /* Posts (Articles, etc) */
 
