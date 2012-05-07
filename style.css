@@ -143,10 +143,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 0 0.5em;
   margin: 0 0.5em;
   display: inline-block;
+  /* Border Radius - Cross-Browser */
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
-  /* Transitions Safari, Chrome, Mozilla and Opera*/
+  /* Transitions - Cross-Browser (Safari, Chrome, Mozilla and Opera)*/
   -webkit-transition-property: background-color;
   -webkit-transition-duration: 1s;
      -moz-transition-property: background-color;
@@ -208,8 +209,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 96%;
   display: block;
   border: 1px solid #DEDFE0;
-  border-radius: 4px 4px 4px 4px;
-  box-shadow: 0 -1px 0 #ADB1B7;
+  /* Border Radius - Cross-Browser */
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  /* Box Shadow - Cross-Browser */
+  -webkit-box-shadow: 0 -1px 0 #ADB1B7;
+     -moz-box-shadow: 0 -1px 0 #ADB1B7;
+          box-shadow: 0 -1px 0 #ADB1B7;
   background-color: #F8F8F9;
 }
 .inputText-66 input {
@@ -242,7 +249,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: inline-block;
   border: 1px solid #DEDFE0;
   border-radius: 4px 4px 4px 4px;
-  box-shadow: 0 1px 0 #ADB1B7;
+  /* Box Shadow - Cross-Browser */
+  -webkit-box-shadow: 0 1px 0 #ADB1B7;
+     -moz-box-shadow: 0 1px 0 #ADB1B7;
+          box-shadow: 0 1px 0 #ADB1B7;
   background-color: #F8F8F9;
 }
 .labelInline label {
@@ -253,8 +263,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: 0;
   float: left;
 }
-
-
 /* Form Errors */
 .errorList {
   color: red;
