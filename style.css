@@ -76,14 +76,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .col-7 { width: 88.20em; }
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7 { float: left; }
 /* Columns Flex */
-.col-25 { width: 25%; }
-.col-33 { width: 33%; }
-.col-50 { width: 50%; }
-.col-66 { width: 66%; }
-.col-25, .col-33, .col-50, .col-66  { float: left;}
+.col-12 { width: 12.5%; }
+.col-25 { width: 25.0%; }
+.col-33 { width: 33.0%; }
+.col-50 { width: 50.0%; }
+.col-66 { width: 66.0%; }
+.col-75 { width: 75.0%; }
+.col-12, .col-25, .col-33, .col-50, .col-66, .col-75  { float: left;}
 .row, .col { overflow: hidden; }
 
- .header, .content, .footer {max-width:100.80em;margin:0 auto;padding:1em 0;}
+ .header, .content, .footer {max-width:100.8em;margin:0 auto;padding:1em;}
 
  /* Header */
  .headerFrame {}
@@ -103,9 +105,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
  /* Content */
- .content {
-   padding: 1em 0 4em
- }
+ .content {}
  .content h2 {
    padding-top: 0;
  }
@@ -119,7 +119,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  /* Footer */
  .footer {
    color: #999;
-   padding: 2em 0 1em
  }
  .footer h2 {
    padding-top: 0;
