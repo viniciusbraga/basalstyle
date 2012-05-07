@@ -304,5 +304,117 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Messages and Alerts */
 
 /* Buttons */
+.btnBasic, .btnBasic:visited {
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1.0em;
+  font-weight: 700;
+  line-height: 1.6em;
+  padding: 6px 24px;
+  margin:0;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.5px 2px #28281E;
+  display: inline-block;
+  border: 2px solid #BEBEB4;
+  /* Border Radius - Cross-Browser */
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  background-color: #BEBEB4;
+}
+.btnBasic:hover {
+  text-shadow: none;
+  background-color: #87877D;
+}
+/* Colors */
+.btnRed, .btnRed:visited {
+  border: 2px solid #CC0033;
+  background-color:#CC0033;
+}
+.btnRed:hover {
+  text-shadow: none;
+  background-color: #F36;
+}
+.btnOrange, .btnOrange:visited {
+  border: 2px solid #E2571E;
+  background-color:#E2571E;
+}
+.btnOrange:hover {
+  text-shadow: none;
+  background-color: #FF7300;
+}
+.btnMidori, .btnMidori:visited {
+  border: 2px solid #393;
+  background-color:#393;
+}
+.btnMidori:hover {
+  text-shadow: none;
+  background-color: #33B45A;
+}
+.btnBlue, .btnBlue:visited {
+  border: 2px solid #39F;
+  background-color:#39F;
+}
+.btnBlue:hover {
+  text-shadow: none;
+  background-color: #33B4FF;
+}
+.btnViolet, .btnViolet:visited {
+  border: 2px solid #9400D3;
+  background-color:#9400D3;
+}
+.btnViolet:hover {
+  text-shadow: none;
+  background-color: #C3F;
+}
+.btnMagenta, .btnMagenta:visited {
+  border: 2px solid #C0F;
+  background-color:#C0F;
+}
+.btnMagenta:hover {
+  text-shadow: none;
+  background-color: #CC66FF;
+}
+.submitButton, .submitButton:visited {
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1.0em;
+  font-weight: 700;
+  line-height: 1.6em;
+  padding: 6px 24px;
+  margin:0;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.5px 2px #030;
+  display: inline-block;
+  border: 2px solid #393;
+  /* Border Radius - Cross-Browser */
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  /* Box Shadow - Cross-Browser */
+  -webkit-box-shadow: inset 0px 1px 0px 0px #F5F5F5, 1px 1px 2px 2px #E5E5E5;
+     -moz-box-shadow: inset 0px 1px 0px 0px #F5F5F5, 1px 1px 2px 2px #E5E5E5;
+          box-shadow: inset 0px 1px 0px 0px #F5F5F5, 0px 0px 2px 2px #E5E5E5;
+  /* Background + Gradient - Cross-Browser */
+        background: -moz-linear-gradient( center top, #3C3 5%, #393 70% );
+        background: -webkit-gradient( linear,left top,left bottom,color-stop( 0.05, #3C3 ),color-stop( 1, #393 ) );
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3C3',endColorstr='#393');
+  background-color: #393;
+}
+.submitButton:hover {
+  /* Box Shadow - Cross-Browser */
+  -webkit-box-shadow: inset 0px 1px 0px 0px #F5F5F5, 0px 0px 2px 2px #99DC99;
+     -moz-box-shadow: inset 0px 1px 0px 0px #F5F5F5, 0px 0px 2px 2px #99DC99;
+          box-shadow: inset 0px 1px 0px 0px #F5F5F5, 0px 0px 2px 2px #99DC99;
+  /* Background + Gradient - Cross-Browser */
+        background: -moz-linear-gradient( center top, #393 10%, #3C3 60% );
+        background: -webkit-gradient( linear,left top,left bottom,color-stop( 0.05, #393 ),color-stop( 1, #3C3 ) );
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#393',endColorstr='#3C3');
+  background-color: #3C3;
+}
+.submitButton:active {
+  position: relative;
+  top: 2px;
+}
 
 /* Debug Grid */
