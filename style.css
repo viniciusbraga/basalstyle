@@ -398,7 +398,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   /* Background + Gradient - Cross-Browser */
         background: -moz-linear-gradient( center top, #3C3 5%, #393 70% );
         background: -webkit-gradient( linear,left top,left bottom,color-stop( 0.05, #3C3 ),color-stop( 1, #393 ) );
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3C3',endColorstr='#393');
   background-color: #393;
 }
 .submitButton:hover {
@@ -409,7 +408,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   /* Background + Gradient - Cross-Browser */
         background: -moz-linear-gradient( center top, #393 10%, #3C3 60% );
         background: -webkit-gradient( linear,left top,left bottom,color-stop( 0.05, #393 ),color-stop( 1, #3C3 ) );
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#393',endColorstr='#3C3');
   background-color: #3C3;
 }
 .submitButton:active {
