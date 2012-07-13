@@ -8,16 +8,18 @@ margin: 0;
 padding: 0;
 }
 
-h1 { font-size: 2.1em; line-height: 1.000em; padding-left:0.571em; }
-h2 { font-size: 1.8em; line-height: 1.000em; padding-left:0.666em;}
-h3 { font-size: 1.6em; line-height: 1.250em; padding-left:0.750em;}
-h4 { font-size: 1.2em; line-height: 1.666em; padding-left:1.000em;}
+h1 { font-size: 3.8em; line-height: 1.000em; padding-left:0.315em;}
+h2 { font-size: 3.2em; line-height: 1.000em; padding-left:0.375em;}
+h3 { font-size: 2.4em; line-height: 1.000em; padding-left:0.500em;}
+h4 { font-size: 2.1em; line-height: 1.000em; padding-left:0.571em;}
+h5 { font-size: 1.5em; line-height: 1.000em; padding-left:0.800em;}
+h6 { font-size: 1.2em; line-height: 1.750em; padding-left:1.000em;}
 
-p, li, dt, dd, th, td, caption  { font-size: 1.2em; line-height: 2em;}
+p, li, dt, dd, th, td, caption{ font-size: 1.5em; line-height: 1.4em;}
 
 li li, li p, li h1, li h3, li h4 { font-size: 1em;}
 
-p {margin: 0 0 0 0; padding: 0.416em 1em; margin: 0 0 0.833em;}
+p {margin: 0 0 0 0; padding: 0 0.8em; margin: 0 0 0 0;}
 
 h3 + p {padding-top: 0.25em;}
 
@@ -45,7 +47,7 @@ hr { display:none;margin: 0;padding: 0;}
 img { vertical-align:middle;border-width:0;}
 
 fieldset {border:solid 1px #cdcdcd;}
-textarea { font-family:inherit; font-size:1.4em;margin:0;padding:0.25em 0.5em;width:95%;border:solid 1px #cdcdcd;}
+textarea { font-family:inherit; font-size:1.5em;margin:0;padding:0.25em 0.5em;width:95%;border:solid 1px #cdcdcd;}
 
 a         { color: #0066ff; font-weight:700; text-decoration: none;}
 a:visited { color: #0066ff;}
