@@ -47,8 +47,8 @@ img { vertical-align:middle;border-width:0;}
 fieldset {border:solid 1px #cdcdcd;}
 textarea { font-family:inherit; font-size:1.4em;margin:0;padding:0.25em 0.5em;width:95%;border:solid 1px #cdcdcd;}
 
-a         { color: #06F; font-weight:700; text-decoration: none;}
-a:visited { color: #66F;}
+a         { color: #0066ff; font-weight:700; text-decoration: none;}
+a:visited { color: #0066ff;}
 a:hover   { color: #E14B00;}
 a:active  { color: #0099CC;}
 
