@@ -417,3 +417,5 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* Debug Grid */
+body:hover { background: url(images/grid-1024x21-baseline.png) repeat-y center top;}
+
