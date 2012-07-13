@@ -146,32 +146,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 0 0;
   margin: 0 1em;
   display: inline-block;
-  border-bottom: 1px solid #CCC;
   /* Transitions - Cross-Browser (Safari, Chrome, Mozilla and Opera)*/
-  -webkit-transition-property: color, border-bottom;
+  -webkit-transition-property: color;
   -webkit-transition-duration: 1s;
-     -moz-transition-property: color, border-bottom;
+     -moz-transition-property: color;
      -moz-transition-duration: 1s;
-       -o-transition-property: color, border-bottom;
+       -o-transition-property: color;
        -o-transition-duration: 1s;
 }
-.navList a {
- border-bottom: none;
-}
 .navFlat a:hover,
-.navList a:hover  {
- color: #000;
+.navList a:hover {
+ color: #CC0000;
 }
-
 .navFlat .current a,
 .navList .current a {
  color: #000;
  font-weight: 700;
- border-bottom: 1px solid #4d4d4d;
-}
-
-.navList .current a {
- border-bottom: none;
 }
 
 /* Posts (Articles, etc) */
