@@ -115,9 +115,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
  /* Content */
  .content {}
- .content h2 {
-   padding-top: 0;
- }
+
+ .content h2 {}
 
  .content .col-2 p,
  .content .col-2 li,
