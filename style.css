@@ -127,7 +127,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  /* Navigation Combos */
 
 .navFlat {}
-.navFlat ul, .navList ul {
+
+.navFlat ul,
+.navList ul {
  margin: 0;
  padding: 0;
  list-style: none;
@@ -137,32 +139,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  float: left;
  position: relative;
 }
-.navFlat a, .navList a {
+.navFlat a,
+.navList a {
   font-size: inherit;
   font-weight: 700;
-  padding: 0 0.5em;
-  margin: 0 0.5em;
+  padding: 0 0;
+  margin: 0 1em;
   display: inline-block;
-  /* Border Radius - Cross-Browser */
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+  border-bottom: 1px solid #CCC;
   /* Transitions - Cross-Browser (Safari, Chrome, Mozilla and Opera)*/
-  -webkit-transition-property: background-color;
+  -webkit-transition-property: color, border-bottom;
   -webkit-transition-duration: 1s;
-     -moz-transition-property: background-color;
+     -moz-transition-property: color, border-bottom;
      -moz-transition-duration: 1s;
-       -o-transition-property: background-color;
+       -o-transition-property: color, border-bottom;
        -o-transition-duration: 1s;
 }
-.navFlat a:hover, .navList a:hover  {
- color: #000;
- background: #CCC;
+.navList a {
+ border-bottom: none;
 }
-.navFlat .current a, .navList .current a {
- color: #333;
+.navFlat a:hover,
+.navList a:hover  {
+ color: #000;
+}
+
+.navFlat .current a,
+.navList .current a {
+ color: #000;
  font-weight: 700;
- background: #F5F5F5;
+ border-bottom: 1px solid #4d4d4d;
+}
+
+.navList .current a {
+ border-bottom: none;
 }
 
 /* Posts (Articles, etc) */
