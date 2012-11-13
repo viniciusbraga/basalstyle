@@ -93,23 +93,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  /* Header */
 .headerFrame {}
 
-.header{ padding: 0; min-height: 8.3em; }
+.header{
+  padding: 0;
+  height: 10.8em;
+}
 
 /* Site ID */
-.siteID { margin: 0 0 0; }
+.siteID {
+  margin: 0 0 0;
+  padding: 35px 18px 0;
+}
 
-.siteLogo { font-size: 2.1em; line-height: 1.2em; padding: 0 0 0 0.571em; margin: 1em 0 0; }
+.siteLogo {
+  font-size: 2.1em;
+  line-height: 1.2em;
+  padding: 0;
+  margin: 0;
+}
 
-.siteTagline { font-weight: 300; margin: 0; }
+.siteTagline {
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+}
 
 /* Content */
 .content { }
-
-.content h2 { }
-
-.content .col-2 p,
-.content .col-2 li,
-.content .col-2 dd { line-height: 1.4em; }
 
 /* Footer */
 .footer { color: #999; }
