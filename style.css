@@ -27,7 +27,6 @@ ol { margin: 0 0; padding: 0.7em 0 1.7em 5.4em; }
 dl { margin: 0 0 0 0; padding: 0.7em 2.4em 1.7em; }
 dt { margin: 0 0 0 0; padding: 0 0 0 0; font-weight: 700; }
 dd { margin: 0 0 0 0; padding: 0 0 0 0.75em; }
-dd + dt { }
 
 table { border-collapse: collapse; width: 100%; margin: 0 0 0 1em; }
 th, caption { text-align: left; font-weight: 700; }
@@ -43,8 +42,8 @@ code { color:#C06;font-size:1.2em; }
 hr { display:none; }
 img { vertical-align:middle;border-width:0;}
 
-fieldset {border:solid 1px #cdcdcd;}
-textarea { font-family:inherit; font-size:1.5em;margin:0;padding:0.25em 0.5em;width:95%;border:solid 1px #cdcdcd;}
+fieldset { border:solid 1px #cdcdcd; }
+textarea { font-family:inherit; font-size:1.5em; margin:0; padding:0.25em 0.5em; width:95%; border:solid 1px #cdcdcd; }
 
 a         { color: #0066ff; font-weight:700; text-decoration: none;}
 a:visited { color: #0066ff; }
