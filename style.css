@@ -1,60 +1,60 @@
 /* Default HTML Tags */
 body {
-color: #000;
-font-size: 62.5%;
-line-height: 1em;
-font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
-margin: 0;
-padding: 0;
+  color: #000;
+  font-size: 62.5%;
+  line-height: 1.25em;
+  font-family: helvetica,arial,sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-h1 { font-size: 3.8em; line-height: 1.000em; padding-left:0.315em;}
-h2 { font-size: 3.2em; line-height: 1.000em; padding-left:0.375em;}
-h3 { font-size: 2.4em; line-height: 1.000em; padding-left:0.500em;}
-h4 { font-size: 2.1em; line-height: 1.000em; padding-left:0.571em;}
-h5 { font-size: 1.5em; line-height: 1.000em; padding-left:0.800em;}
-h6 { font-size: 1.2em; line-height: 1.750em; padding-left:1.000em;}
+h1 { font-size: 4.2em; line-height: 1.285em; margin: 0 0; padding: 0.380em 0.428em 0.261em; }
+h2 { font-size: 2.7em; line-height: 1.000em; margin: 0 0; padding: 0.259em 0.666em 0.740em;  }
+h3 { font-size: 1.8em; line-height: 1.500em; margin: 0 0; padding: 0.500em 1.000em 1.000em;  }
+h4 { font-size: 1.6em; line-height: 1.687em; margin: 0 0; padding: 0.500em 1.125em 1.187em; }
+h5 { font-size: 1.4em; line-height: 1.928em; margin: 0 0; padding: 0.642em 1.285em 1.285em; }
+h6 { font-size: 1.2em; line-height: 1.750em; margin: 0 0; padding: 1.083em 1.500em 1.666em; }
 
-p, li, dt, dd, th, td, caption{ font-size: 1.5em; line-height: 1.4em;}
+p, li, dt, dd, th, td, caption{ font-size: 1.6em; line-height: 1.687em;}
 
-li li, li p, li h1, li h3, li h4 { font-size: 1em;}
+li li, li p, li h1, li h2, li h3, li h4 { font-size: 1em;}
 
-p {margin: 0 0 0.7em 0; padding: 0 0.8em 0.7em;}
+p { margin: 0 0 0 0; padding: 0.5em 1.125em 1.187em;  }
 
-h3 + p {padding-top: 0.25em;}
+ul { margin: 0 0; padding: 0.7em 0 1.7em 5.4em; }
+ol { margin: 0 0; padding: 0.7em 0 1.7em 5.4em; }
 
-ul { margin: 0 0 1.6em 0; padding: 0 24px; }
-ol { margin: 0 0 1.6em 0; padding: 0 24px; }
-
-dl { margin: 0 0 2.0em 0; padding: 0 1.2em; }
-dt { margin: 0 0 0 0; padding: 0 0 0 0; font-weight: 700;}
-dd { margin: 0 0 0 0; padding: 0 0 0 0; }
-dd + dt { margin: 1em 0 0 0; padding: 0 0 0 0;}
+dl { margin: 0 0 0 0; padding: 0.7em 2.4em 1.7em; }
+dt { margin: 0 0 0 0; padding: 0 0 0 0; font-weight: 700; }
+dd { margin: 0 0 0 0; padding: 0 0 0 0.75em; }
+dd + dt { }
 
 table { border-collapse: collapse; width: 100%; margin: 0 0 0 1em; }
 th, caption { text-align: left; font-weight: 700; }
 
-blockquote { margin: 0.75em 1.5em; }
-blockquote p { text-indent: -0.55em;}
+blockquote { margin: 0 0; padding: 2.4em 4.8em; }
 
-em {font-style: normal; color:#f00; }
-small { font-size: 1em; }
-strong, b { visibility: visible; }
+em { font-style: italic; }
+small { font-size: 0.8em; }
+strong, b { font-weight: 700; }
 
-code {color:#C06;font-size:1.2em;}
+code { color:#C06;font-size:1.2em; }
 
-hr { display:none;margin: 0;padding: 0;}
+hr { display:none; }
 img { vertical-align:middle;border-width:0;}
 
 fieldset {border:solid 1px #cdcdcd;}
 textarea { font-family:inherit; font-size:1.5em;margin:0;padding:0.25em 0.5em;width:95%;border:solid 1px #cdcdcd;}
 
 a         { color: #0066ff; font-weight:700; text-decoration: none;}
-a:visited { color: #0066ff;}
-a:hover   { color: #E14B00;}
-a:active  { color: #0099CC;}
+a:visited { color: #0066ff; }
+a:hover   { color: #E14B00; }
+a:active  { color: #0099CC; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* apply a natural box layout model to all elements. Look, IE was right, huh? */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 /* Columns Rulers, tricks and treats ;D */
 .rulerLeft { border-left: 1px solid #E6E6E6;}
@@ -65,8 +65,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .floatLeft { float: left;}
 .floatRight { float: right;}
 
-.alignLeft { text-align: left;}
-.alignRight { text-align: right;}
+.textAlignLeft { text-align: left;}
+.textAlignRight { text-align: right;}
+.textAlignCenter { text-align: center;}
 
 /* Columns Structures */
 .col-1 { width: 12.60em; }
@@ -87,7 +88,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .col-12, .col-25, .col-33, .col-50, .col-66, .col-75  { float: left;}
 .row, .col { overflow: hidden; }
 
- .header, .content, .footer { max-width:100.8em; margin:0 auto;}
+ .header, .content, .footer { max-width: 108em; margin:0 auto; padding: 0 0; }
 
  /* Header */
 .headerFrame {}
