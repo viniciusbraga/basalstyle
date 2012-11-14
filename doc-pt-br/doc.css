@@ -51,14 +51,14 @@ body {
 }
 
 .content, .header, .footer {
-   background-color: rgba(246,246,246,0.9);
+   background-color: rgba(246,246,246,1);
   -webkit-transition: all 2s ease-in-out;
      -moz-transition: all 2s ease-in-out;
        -o-transition: all 2s ease-in-out;
           transition: all 2s ease-in-out;
  }
 
-body:hover .content {
+.content:hover, .header:hover, .footer:hover {
    background-color: rgba(246,246,246,0.25);
     -webkit-transition: all 2s ease-in-out;
        -moz-transition: all 2s ease-in-out;
