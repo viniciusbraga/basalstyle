@@ -125,43 +125,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .footer h2 { padding-top: 0; }
 
 /* Navigation Combos */
-.navFlat {}
-
-.navFlat ul,
+.navInline ul,
 .navList ul {
  margin: 0;
  padding: 0;
  list-style: none;
- display: inline-block
+ display: inline-block;
 }
 
-.navFlat li {
+.navInline li {
  float: left;
  position: relative;
 }
 
-.navFlat a,
+.navInline a,
 .navList a {
-  font-size: inherit;
-  font-weight: 700;
-  padding: 0 0;
-  margin: 0 1em;
-  display: inline-block;
+  font-size: 0.875em;
+  line-height: 1.928em;
+  font-weight: 400;
+  margin: 0 0.642em;
+  padding: 0 0.642em;
+  display: block;
   /* Transitions - Cross-Browser (Safari, Chrome, Mozilla and Opera)*/
-  -webkit-transition-property: color;
-  -webkit-transition-duration: 1s;
-     -moz-transition-property: color;
-     -moz-transition-duration: 1s;
-       -o-transition-property: color;
-       -o-transition-duration: 1s;
+  -webkit-transition: color 1s;
+     -moz-transition: color 1s;
+       -o-transition: color 1s;
 }
 
-.navFlat a:hover,
+.navInline a:hover,
 .navList a:hover {
- color: #CC0000;
+ color: #000;
+ background: rgba(235,235,235,1);
 }
 
-.navFlat .current a,
+.navInline .current a,
 .navList .current a {
  color: #000;
  font-weight: 700;
