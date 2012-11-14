@@ -134,10 +134,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  list-style: none;
  display: inline-block
 }
+
 .navFlat li {
  float: left;
  position: relative;
 }
+
 .navFlat a,
 .navList a {
   font-size: inherit;
@@ -153,10 +155,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
        -o-transition-property: color;
        -o-transition-duration: 1s;
 }
+
 .navFlat a:hover,
 .navList a:hover {
  color: #CC0000;
 }
+
 .navFlat .current a,
 .navList .current a {
  color: #000;
