@@ -284,24 +284,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .errorList {
   color: red;
 }
+
 .errorList li + li,
 .errorList dd + dd {
   line-height: 1.3em;
   margin: 0;
   padding-bottom:0.7em;
 }
+
 .errorList dt {
   line-height: 1.0em;
 }
+
 .errorList dd {
   padding-left:1em;
 }
+
 .formRow .errorList {
   margin: 0;
   padding: 0 0 0 1em;
   border-left: 6px solid #F66;
   list-style: none;
 }
+
 .formRow .errorList + input,
 .formRow .errorList + input + input,
 .formRow .errorList + textarea,
@@ -314,6 +319,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 0;
   background: #FFE4E1;
 }
+
 .errorInput label{
   color: red;
 }
