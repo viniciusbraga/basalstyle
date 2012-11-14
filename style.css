@@ -285,9 +285,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: red;
 }
 
+.errorList p,
+.errorList li,
+.errorList dt,
+.errorList dd {
+  font-size: 1.3em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 .errorList li + li,
 .errorList dd + dd {
-  line-height: 1.3em;
+  line-height: 1.25em;
   margin: 0;
   padding-bottom:0.7em;
 }
