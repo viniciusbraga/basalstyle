@@ -242,9 +242,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: none;
 }
 
-.inputRadio dl {
+.inputRadio dl,
+.inputRadio dd {
   margin: 0;
-  padding: 0 0 0 1em;
+  padding: 0;
 }
 
 .inputRadio label {
