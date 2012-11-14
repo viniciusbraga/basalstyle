@@ -313,6 +313,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .formRow .errorList + input,
 .formRow .errorList + input + input,
 .formRow .errorList + textarea,
+.formRow .errorList + dl,
 .errorInput input {
   margin: 0 0 6px;
   padding: 4px 0 5px 5px;
@@ -321,6 +322,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-left: 6px solid #F66;
   border-radius: 0;
   background: #FFE4E1;
+}
+
+.formRow .errorList + dl {
+  border: none;
+  border-left: 6px solid #F66;
 }
 
 .errorInput label{
