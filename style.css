@@ -168,23 +168,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Forms */
 .formRow {
   margin: 0;
-  padding: 0 1.2em;
+  padding: 0 1.8em;
   list-style: none
+}
+
+.formRow p,
+.formRow li,
+.formRow dt,
+.formRow dd {
+  font-size: 1.3em;
 }
 
 .formRow label,
 .formRow legend {
-  color: #333;
-  font-size: 1.2em;
+  color: #000;
+  font-size: 1.4em;
   font-weight: 700;
-  line-height: 1.666em;
+  line-height: 1em;
   padding: 0;
   margin: 0;
 }
 
 .formRow p {
   color:#999;
-  font-style: italic;
   line-height:1.4em;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
@@ -192,20 +198,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .formRow:hover p,
 .formRow :focus + p {
-  color: #000;
+  color: #4c4c4c;
   font-style: normal;
 }
 
-.labelBlock label {
+.labelBlock label,
+.formRow legend {
+  padding: 1.142em 0 0;
   display: block;
 }
 
 .inputText input {
-  font-size: 1.2em;
-  line-height: 1.666em;
+  font-size: 1.6em;
+  line-height: 1em;
+  vertical-align: middle;
   margin: 6px 0;
-  padding: 4px 0 5px 5px;
-  width: 96%;
+  padding: 0.35em;
+  width: 100%;
   display: block;
   border: 1px solid #DEDFE0;
   /* Border Radius - Cross-Browser */
