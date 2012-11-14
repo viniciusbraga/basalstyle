@@ -292,13 +292,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-bottom:0.7em;
 }
 
-.errorList dt {
-  line-height: 1.0em;
-}
-
-.errorList dd {
-  padding-left:1em;
-}
 
 .formRow .errorList {
   margin: 0;
