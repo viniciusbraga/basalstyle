@@ -172,12 +172,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   list-style: none
 }
 
-.formRow,
-.submitRow {
-  margin: 0;
-  padding: 8px 12px 0 12px;
-}
-
 .formRow label,
 .formRow legend {
   color: #333;
