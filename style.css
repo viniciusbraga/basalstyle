@@ -43,7 +43,7 @@ hr { display:none; }
 img { vertical-align:middle;border-width:0;}
 
 fieldset { border:solid 1px #cdcdcd; }
-textarea { font-family:inherit; font-size:1.5em; margin:0; padding:0.25em 0.5em; width:95%; border:solid 1px #cdcdcd; }
+textarea { font-family:inherit; font-size:1.5em; margin:0 1.2em; padding:0.75em 0.5em 0.5em 0.75em; width:93%; border:solid 1px #cdcdcd; }
 
 a         { color: #0066cc; font-weight:700; text-decoration: none;}
 a:visited { color: #0066cc; }
@@ -189,6 +189,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: 1em;
   padding: 0;
   margin: 0;
+}
+
+.formRow textarea {
+  font-family:inherit;
+  font-size:1.5em;
+  margin:0;
+  padding:0.75em 0.5em 0.5em 0.75em;
+  width: 100%;
+  border:solid 1px #cdcdcd;
 }
 
 .formRow p {
