@@ -73,7 +73,7 @@
       <h2 class="docTitle">Navegação (Bloco de Links)</h2>
       <h3>Menu Horizontal</h3>
       <div class="row">
-          <div class="col-4 rulerRight">
+          <div class="col-4 rulerRight" style="min-height:190px;">
 
               <div class="navInline">
                   <ul>
@@ -86,17 +86,15 @@
           </div>
           <!-- col-3 -->
           <div class="col">
-                <h4>Exemplo:</h4>
                 <form action="#">
-                      <textarea style="font-size:1.2em;line-height:1.5em;margin:0 0.5em;height:150px;border:none;">
+                      <textarea style="font-size:1.3em;line-height:1.5em;margin:-1em 1.5em 1em;padding:1em;width:93%;height:180px;border:none">
 <div class="navInline">
     <ul>
         <li><a href="#">Abertura</a></li>
         <li class="current"><a href="#">Planos &amp; Preços</a></li>
         <li><a href="#">Fale Conosco</a></li>
     </ul>
-</div>
-                      </textarea>
+</div></textarea>
                   </form>
           </div>
           <!-- col -->
@@ -106,7 +104,7 @@
       <h3>Menu Vertical</h3>
       <div class="row">
 
-          <div class="col-4 rulerRight">
+          <div class="col-4 rulerRight" style="min-height:190px;">
                 <div class="navList">
                     <ul>
                       <li><a href="#">Abertura</a></li>
@@ -117,18 +115,17 @@
           </div>
           <!-- col-3 -->
           <div class="col">
-              <h4>Exemplo:</h4>
+
               <form action="#" accept-charset="utf-8">
 
-                <textarea style="font-size:1.2em;line-height:1.5em;margin:0 0.5em;height:150px;border:none">
+                <textarea style="font-size:1.3em;line-height:1.5em;margin:-1em 1.5em 1em;padding:1em;width:93%;height:180px;border:none">
 <div class="navList">
     <ul>
       <li><a href="#">Abertura</a></li>
       <li class="current"><a href="#">Planos &amp; Preços</a></li>
       <li><a href="#">Fale Conosco</a></li>
     </ul>
-</div>
-                </textarea>
+</div></textarea>
               </form>
           </div>
       </div>
@@ -140,19 +137,8 @@
 
       <h3>Formulário Vertical</h3>
       <div class="row">
-          <div class="col-2">
-            <p>Layout default com o <code>label</code> fazendo a quebra de linha</p>
-            <dl>
-              <dt>Prós</dt>
-              <dd>Rápida leitura</dd>
-              <dd>Preenchimento veloz</dd>
-              <dd>Compreensível na apresentação de diferentes erros</dd>
-              <dt>Contras</dt>
-              <dd>Ocupa muito espaço vertical</dd>
-              <dd>Pode esconder erros do usuário</dd>
-            </dl>
-          </div>
-          <div class="col-3 rulerLeft rulerRight">
+
+          <div class="col-4 rulerRight">
                   <form action="" method="" accept-charset="utf-8">
 
                           <div class="formRow labelBlock inputText formLabelDesc">
@@ -169,14 +155,16 @@
                           <div class="formRow inputRadio formLabelDesc">
                               <fieldset>
                                   <legend>Estado Civil</legend>
-                                  <p><strong>Exemplo</strong> de instrução sobre o preenchimento antes do campo. Esta instrução pode ser uma parágrafo com quebras de linhas usando "breaks".</p>
+                                  <ul class="errorList">
+                                      <li>É preciso escolher uma opção abaixo.</li>
+                                  </ul>
                                   <dl>
                                     <dd><input id="id_ec_1" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_1">Solteiro</label></dd>
                                     <dd><input id="id_ec_2" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_2">Casado</label></dd>
                                     <dd><input id="id_ec_3" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_3">Separado</label></dd>
                                     <dd><input id="id_ec_4" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_4">Divorciado</label></dd>
                                     <dd><input id="id_ec_5" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_5">Viúvo</label></dd>
-                                  </ul>
+                                  </dl>
                               </fieldset>
                           </div>
 
@@ -185,7 +173,12 @@
                           </div>
 
                           <div class="formRow labelBlock inputText inputText-66">
-                              <label for="id_city">Cidade</label> <input type="text" id="id_city" name="city">
+                              <label for="id_city">Cidade</label>
+                              <ul class="errorList">
+                                  <li>Este campo é obrigatório.</li>
+                                  <li>Um exemplo de uma segunda ou mais linhas de erro no mesmo campo.</li>
+                              </ul>
+                              <input type="text" id="id_city" name="city">
                           </div>
 
                           <div class="formRow labelBlock selectDropdown">
@@ -208,7 +201,7 @@
           <div class="col">
                 <h4>Exemplo de módulo HTML com <code>label</code> e <code>input</code>.</h4>
                 <form action="#" accept-charset="utf-8">
-                      <textarea style="font-size:1.2em;line-height:1.5em;margin:0 1em;height:100px;border:none">
+                      <textarea style="font-size:1.3em;line-height:1.5em;margin:-1em 1.5em 1em;padding:1em;width:93%;height:120px;border:none">
 <div class="formRow labelBlock inputText formLabelDesc">
     <label for="id_name">Nome </label>
     <input type="text" id="id_name" name="name">
@@ -217,7 +210,7 @@
 
                 <h4>Exemplo de módulo HTML com <code>label</code>, <code>input</code> e <code>p</code> com breve explicação sobre preenchimento.</h4>
                 <form action="#" accept-charset="utf-8">
-                      <textarea style="font-size:1.2em;line-height:1.5em;margin:0 1em;height:100px;border:none">
+                      <textarea style="font-size:1.3em;line-height:1.5em;margin:-1em 1.5em 1em;padding:1em;width:93%;height:130px;border:none">
 <div class="formRow labelBlock inputText formLabelDesc">
     <label for="id_name">Nome </label>
     <input type="text" id="id_name" name="name">
@@ -225,101 +218,32 @@
 </div></textarea>
                   </form>
 
-          </div>
-
-      </div>
-
-
-      <h4>Formulário Vertical com Erro</h4>
-
-      <div class="row">
-          <div class="col-2">
-            <p>Layout default com o <code>label</code> fazendo a quebra de linha</p>
-          </div>
-          <div class="col-3  rulerLeft rulerRight">
-
-                  <form action="" method="" accept-charset="utf-8">
-
-                          <div class="formRow labelBlock inputText">
-                              <label for="id_name">Nome</label>
-                              <ul class="errorList">
-                                  <li>Este campo é obrigatório.</li>
-                                  <li>Um exemplo de uma segunda ou mais linhas de erro no mesmo campo.</li>
-                              </ul>
-                              <input type="text" id="id_name" name="name">
-                              <p><strong>Exemplo</strong> de instrução sobre o preenchimento após o campo. Esta instrução pode ser uma parágrafo com quebras de linhas usando "breaks".</p>
-                          </div>
-
-
-                          <div class="formRow inputRadio">
-                              <fieldset>
-                                  <legend>Estado Civil</legend>
-                                  <ul class="errorList">
-                                      <li>É preciso escolher uma opção abaixo.</li>
-                                  </ul>
-
-                                  <dl>
-                                    <dd><input id="id_ec_10" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_10">Solteiro</label></dd>
-                                    <dd><input id="id_ec_11" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_11">Casado</label></dd>
-                                    <dd><input id="id_ec_12" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_12">Separado</label></dd>
-                                    <dd><input id="id_ec_13" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_13">Divorciado</label></dd>
-                                    <dd><input id="id_ec_14" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_14">Viúvo</label></dd>
-                                  </ul>
-                              </fieldset>
-                          </div>
-
-
-                          <div class="formRow labelBlock selectDropdown">
-                              <label for="id_state">Estado (UF) </label>
-                              <ul class="errorList">
-                                  <li>Este campo é obrigatório.</li>
-                              </ul>
-                              <select id="id_state" name="state">
-                                <option value="">Escolha uma opção</option>
-                                <option value="UF_AC">Acre</option>
-                                <option value="UF_RN">Rio Grande do Norte</option>
-                              </select>
-
-                          </div>
-
-                          <div class="formRow labelBlock inputText">
-                              <label>Observações</label>
-                              <ul class="errorList">
-                                  <li>Este campo é obrigatório.</li>
-                              </ul>
-                              <textarea name=""></textarea>
-                          </div>
-                  </form>
-
-          </div>
-
-          <div class="col">
                 <h4>Exemplo de módulo com erro.</h4>
                 <form action="#" accept-charset="utf-8">
-                      <textarea style="font-size:1.2em;line-height:1.5em;margin:0 1em;height:250px;border:none">
+                      <textarea style="font-size:1.3em;line-height:1.5em;margin:-1em 1.5em 1em;padding:1em;width:93%;height:250px;border:none">
 <div class="formRow labelBlock inputText">
   <label for="id_name">Nome</label>
   <ul class="errorList">
     <li>Este campo é obrigatório.</li>
-    <li>Um exemplo de uma segunda ou mais linhas de erro no mesmo campo.</li>
+    <li>Um exemplo de uma segunda ou mais linhas de erro...</li>
   </ul>
   <input type="text" id="id_name" name="name">
   <p><strong>Exemplo</strong> de instrução sobre o preenchimento...</p>
 </div></textarea>
                   </form>
+
           </div>
 
       </div>
 
-      <h4>Formulário Vertical com Erro Unificado</h4>
+<br><br><br>
+
+      <h3>Formulário Vertical com Erro Unificado</h3>
 
       <div class="row">
-          <div class="col-2">
-            <p>Com o erro unificado, você não precisa repetir a mensagem próximo ao campo, mas deve indicar um alerta no campo com erro.</p>
-            <p>Neste caso, deve-se acrescentar a classe <code>errorInput</code> no mesmo <code>div</code> do <code>formRow</code> </p>
-          </div>
-          <div class="col-3  rulerLeft rulerRight" style="min-height:400px;">
-                  <form action="" method="" accept-charset="utf-8">
+
+          <div class="col-4 rulerRight" style="min-height:400px;">
+              <form action="" method="" accept-charset="utf-8">
 
                   <div class="errorList">
                       <p>O fomulário contêm erros nos campos, são eles:</p>
@@ -341,7 +265,7 @@
                       <label>Email</label>
                       <input type="text" id="id_subject" name="address">
                   </div>
-
+              </form>
 
           </div>
 
@@ -359,7 +283,7 @@
 </div></textarea>
 
                 <h4>Classe <code>errorInput</code> aplicada no <code>div</code> <code>formRow</code></h4>
-                      <textarea style="font-size:1.2em;line-height:1.5em;margin:0 1em;height:100px;border:none">
+                      <textarea style="font-size:1.2em;line-height:1.5em;margin:0 1.5em;width:93%;height:100px;border:none">
 <div class="formRow labelBlock inputText errorInput">
     <label>Nome Completo</label>
     <input type="text" id="id_subject" name="name">
