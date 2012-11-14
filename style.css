@@ -171,12 +171,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 0 1.2em;
   list-style: none
 }
+
 .formRow,
 .submitRow {
   margin: 0;
   padding: 8px 12px 0 12px;
 }
-.formRow label,.formRow legend {
+
+.formRow label,
+.formRow legend {
   color: #333;
   font-size: 1.2em;
   font-weight: 700;
@@ -184,21 +187,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 0;
   margin: 0;
 }
-.formRow p{
+
+.formRow p {
   color:#999;
   font-style: italic;
   line-height:1.4em;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 }
+
 .formRow:hover p,
 .formRow :focus + p {
   color: #000;
   font-style: normal;
 }
+
 .labelBlock label {
   display: block;
 }
+
 .inputText input {
   font-size: 1.2em;
   line-height: 1.666em;
@@ -217,28 +224,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
           box-shadow: 0 -1px 0 #ADB1B7;
   background-color: #F8F8F9;
 }
+
 .inputText-66 input {
   width: 66%;
 }
+
 .inputText-33 input {
   width: 33%;
 }
+
 .inputRadio fieldset {
   padding: 0;
   border: none;
 }
+
 .inputRadio dl {
   margin: 0;
   padding: 0 0 0 1em;
 }
+
 .inputRadio label {
   font-size: 1em;
   font-weight: 300;
 }
+
 .inputRadio input {
   display: inline-block;
   margin-right: 0.66em
 }
+
 .selectDropdown select {
   font-size: 1.2em;
   margin: 6px 0;
@@ -253,6 +267,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
           box-shadow: 0 1px 0 #ADB1B7;
   background-color: #F8F8F9;
 }
+
 .labelInline label {
   font-size: 1.2em;
   font-weight: 400;
@@ -261,6 +276,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: 0;
   float: left;
 }
+
 /* Form Errors */
 .errorList {
   color: red;
