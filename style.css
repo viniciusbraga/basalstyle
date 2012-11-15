@@ -375,27 +375,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
           border-radius: 6px;
   background-color: #BEBEB4;
 }
+
 .btnBasic:hover {
   text-shadow: none;
   background-color: #87877D;
 }
+
 /* Colors */
 .btnMidori, .btnMidori:visited {
   border: 2px solid #393;
   background-color:#393;
 }
+
 .btnMidori:hover {
   text-shadow: none;
   background-color: #33B45A;
 }
+
 .btnBlue, .btnBlue:visited {
   border: 2px solid #39F;
   background-color:#39F;
 }
+
 .btnBlue:hover {
   text-shadow: none;
   background-color: #33B4FF;
 }
+
 .submitButton, .submitButton:visited {
   color: #ffffff;
   font-family: inherit;
@@ -422,6 +428,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33CC33',endColorstr='#339933');
   background-color: #393;
 }
+
 .submitButton:hover {
   /* Box Shadow - Cross-Browser */
   -webkit-box-shadow: inset 0px 1px 0px 0px #F5F5F5, 0px 0px 2px 2px #99DC99;
@@ -433,6 +440,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#339933',endColorstr='#339933');
   background-color: #3C3;
 }
+
 .submitButton:active {
   position: relative;
   top: 2px;
