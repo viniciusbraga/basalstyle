@@ -380,22 +380,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: #87877D;
 }
 /* Colors */
-.btnRed, .btnRed:visited {
-  border: 2px solid #CC0033;
-  background-color:#CC0033;
-}
-.btnRed:hover {
-  text-shadow: none;
-  background-color: #F36;
-}
-.btnOrange, .btnOrange:visited {
-  border: 2px solid #E2571E;
-  background-color:#E2571E;
-}
-.btnOrange:hover {
-  text-shadow: none;
-  background-color: #FF7300;
-}
 .btnMidori, .btnMidori:visited {
   border: 2px solid #393;
   background-color:#393;
@@ -411,22 +395,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .btnBlue:hover {
   text-shadow: none;
   background-color: #33B4FF;
-}
-.btnViolet, .btnViolet:visited {
-  border: 2px solid #9400D3;
-  background-color:#9400D3;
-}
-.btnViolet:hover {
-  text-shadow: none;
-  background-color: #C3F;
-}
-.btnMagenta, .btnMagenta:visited {
-  border: 2px solid #C0F;
-  background-color:#C0F;
-}
-.btnMagenta:hover {
-  text-shadow: none;
-  background-color: #CC66FF;
 }
 .submitButton, .submitButton:visited {
   color: #ffffff;
