@@ -45,7 +45,7 @@ img { vertical-align:middle;border-width:0;}
 fieldset { border:solid 1px #cdcdcd; }
 textarea { font-family:inherit; font-size:1.5em; margin:0 1.2em; padding:0.75em 0.5em 0.5em 0.75em; width:93%; border:solid 1px #cdcdcd; }
 
-a         { color: #0066cc; font-weight:700; text-decoration: none;}
+a         { color: #0066cc; }
 a:visited { color: #0066cc; }
 a:hover   { color: #E14B00; }
 a:active  { color: #0066cc; }
@@ -142,11 +142,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .navList a {
   font-size: 0.875em;
   line-height: 1.928em;
-  font-weight: 400;
+  text-decoration: none;
   margin: 0 0.642em;
   padding: 0 0.642em;
   display: block;
-  /* Transitions - Cross-Browser (Safari, Chrome, Mozilla and Opera)*/
   -webkit-transition: color 1s;
      -moz-transition: color 1s;
        -o-transition: color 1s;
