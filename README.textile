@@ -2,23 +2,7 @@ h1. BasalStyle
 
 Conjunto básico de CSS e HTML para prototipação rápida de Sites, WebApps e Formulários.
 
-h2. Roadmap
 
-h3. TODO
-* Estrutura básica em HTML5
-* Estrutura básica para Site: Abertura, Quem Somos e Contato.
-* Estrutura básica para WebApp: Abertura, Login, Dashboard e Minha Conta
-* Identidade visual para o projeto
-* Melhorar o tagline do projeto
-* Definir grade básica
-* Definir Relações tipográficas.
-* Resolver as esquizofrenia de inglês e português no projeto
-
-h3. Em Andamento
-* Estrutura básica HTML
-* Formulários horizontais
-* -HTML: Escolhe tags mínimos para o HEAD do HTML-
-* -Estrutura básica do CSS-
-* -Exemplos de Formulários Verticais e aplicações de erro.-
-* -Botões de Envio (submit)-
+h2. TODO
+* Funcionalidades para um "Responsive Design"
 
