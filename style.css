@@ -90,39 +90,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  .header, .content, .footer { max-width: 108em; margin:0 auto; padding: 0 0; }
 
  /* Header */
-.headerFrame {}
-
-.header{
-  padding: 0;
-  height: 10.8em;
-}
 
 /* Site ID */
-.siteID {
-  margin: 0 0 0;
-  padding: 35px 18px 0;
-}
-
-.siteLogo {
-  font-size: 2.1em;
-  line-height: 1.2em;
-  padding: 0;
-  margin: 0;
-}
-
-.siteTagline {
-  font-size: 1.2em;
-  padding: 0;
-  margin: 0;
-}
 
 /* Content */
-.content { }
 
 /* Footer */
-.footer { color: #999; }
-
-.footer h2 { padding-top: 0; }
 
 /* Navigation Combos */
 .navInline ul,
