@@ -89,14 +89,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
  .header, .content, .footer { max-width: 108em; margin:0 auto; padding: 0 0; }
 
- /* Header */
-
-/* Site ID */
-
-/* Content */
-
-/* Footer */
-
 /* Navigation Combos */
 .navInline ul,
 .navList ul {
@@ -135,8 +127,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  color: #000;
  font-weight: 700;
 }
-
-/* Posts (Articles, etc) */
 
 /* Forms */
 .formRow {
