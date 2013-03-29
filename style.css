@@ -373,7 +373,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: #9acdff;
 }
 
-/* Colors */
+
+/* Button Colors */
+
 .btnMidori,
 .btnMidori:visited {
   color: #f5f5f5;
