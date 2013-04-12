@@ -8,25 +8,25 @@ body {
   padding: 0;
 }
 
-h1 { font-size: 4.2em; line-height: 1.285em; margin: 0 0; padding: 0.380em 0.428em 0.261em; }
-h2 { font-size: 2.7em; line-height: 1.000em; margin: 0 0; padding: 0.259em 0.666em 0.740em; }
-h3 { font-size: 1.8em; line-height: 1.500em; margin: 0 0; padding: 0.500em 1.000em 1.000em; }
-h4 { font-size: 1.6em; line-height: 1.687em; margin: 0 0; padding: 0.500em 1.125em 1.187em; }
-h5 { font-size: 1.4em; line-height: 1.928em; margin: 0 0; padding: 0.642em 1.285em 1.285em; }
-h6 { font-size: 1.2em; line-height: 1.750em; margin: 0 0; padding: 1.083em 1.500em 1.666em; }
+h1 { font-size: 4.2em; line-height: 1.000em; margin: 0 0; padding: 0.785em 0.428em 0.309em; }
+h2 { font-size: 2.7em; line-height: 1.000em; margin: 0 0; padding: 0.851em 0.666em 0.592em; }
+h3 { font-size: 1.8em; line-height: 1.500em; margin: 0 0; padding: 0.200em 1.000em 0.750em; }
+h4 { font-size: 1.6em; line-height: 1.375em; margin: 0 0; padding: 0.375em 1.125em 1.000em; }
+h5 { font-size: 1.4em; line-height: 1.571em; margin: 0 0; padding: 0.500em 1.285em 1.071em; }
+h6 { font-size: 1.2em; line-height: 1.833em; margin: 0 0; padding: 0.583em 1.500em 1.250em; }
 
-p, li, dt, dd, th, td, caption{ font-size: 1.6em; line-height: 1.687em;}
+p, li, dt, dd, th, td, caption{ font-size: 1.6em; line-height: 1.375em; }
 
-li li, li p, li h1, li h2, li h3, li h4 { font-size: 1em;}
+li li, li p, li h1, li h2, li h3, li h4 { font-size: 1em; }
 
-p { margin: 0 0 0 0; padding: 0.5em 1.125em 1.187em;  }
+p { margin: 0 0 0 0; padding: 0.375em 1.125em 1.000em; }
 
-ul { margin: 0 0; padding: 0.7em 0 1.7em 5.4em; }
-ol { margin: 0 0; padding: 0.7em 0 1.7em 5.4em; }
+ul { margin: 0 0; padding: 0.6em 0 1.6em 5.4em; }
+ol { margin: 0 0; padding: 0.6em 0 1.6em 5.4em; }
 
-dl { margin: 0 0 0 0; padding: 0.7em 2.4em 1.7em; }
+dl { margin: 0 0 0 0; padding: 0.6em 0 1.6em 1.8em; }
 dt { margin: 0 0 0 0; padding: 0 0 0 0; font-weight: 700; }
-dd { margin: 0 0 0 0; padding: 0 0 0 0.75em; }
+dd { margin: 0 0 0 0; padding: 0 0 0 0; }
 
 table { border-collapse: collapse; width: 100%; margin: 0 0 0 1em; }
 th, caption { text-align: left; font-weight: 700; }
