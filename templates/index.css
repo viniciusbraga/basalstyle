@@ -54,19 +54,20 @@ body {
 }
 
 .col-5 + .col {
-  font-size: 0.8em;
+  font-size: 0.75em;
 }
 
 .col-5 + .col h2 {
   font-size: 2.5em;
-  line-height: 21px;
+  line-height: 0.88em;
   margin: 0;
-  padding: 11px 0 0 18px;
+  padding: 0.42em 0 0 1em;
 }
 
 .col-5 + .col p  {
-  line-height: 21px;
-  padding-left: 18px;
+  line-height: 1.833em;
+  padding-top: 0.333em;
+  padding-left: 1.5em;
 }
 
 /* Footer */
