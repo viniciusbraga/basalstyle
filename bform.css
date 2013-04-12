@@ -1,0 +1,259 @@
+/* Forms */
+
+.formRow {
+  margin: 0;
+  padding: 0 1.8em;
+  list-style: none;
+  min-height: 8.1em;
+}
+
+.formRow p,
+.formRow li,
+.formRow dt,
+.formRow dd {
+  font-size: 1.3em;
+}
+
+.formRow label,
+.formRow legend {
+  color: #000;
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: 1em;
+  padding: 0;
+  margin: 0;
+}
+
+.formRow textarea {
+  font-family:inherit;
+  font-size:1.5em;
+  margin:0;
+  padding:0.75em 0.5em 0.5em 0.75em;
+  width: 100%;
+  border: 1px solid #cdcdcd;
+}
+
+.formRow p {
+  color:#999;
+  line-height:1.4em;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.formRow:hover p,
+.formRow :focus + p {
+  color: #4c4c4c;
+  font-style: normal;
+}
+
+.labelBlock label,
+.formRow legend {
+  padding: 1.150em 0 0.3em;
+  display: block;
+}
+
+.inputText input {
+  font-size: 1.6em;
+  line-height: 1em;
+  vertical-align: middle;
+  margin: 6px 0;
+  padding: 0.35em;
+  width: 100%;
+  display: block;
+  border: 1px solid #999;
+  /* Border Radius - Cross-Browser */
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  /* Box Shadow - Cross-Browser */
+  -webkit-box-shadow: inset 0 1px 2px #CCC;
+     -moz-box-shadow: inset 0 1px 2px #CCC;
+          box-shadow: inset 0 1px 2px #CCC;
+  background-color: #F8F8F9;
+}
+
+.inputText input:focus,
+.inputText textarea:focus {
+  border: 1px solid #666666;
+  /* Box Shadow - Cross-Browser */
+  -webkit-box-shadow: inset 0 0 10px #CCC;
+     -moz-box-shadow: inset 0 0 10px #CCC;
+          box-shadow: inset 0 0 10px #CCC;
+  background-color: #ffffe6;
+}
+
+.inputText-66 input {
+  width: 66%;
+}
+
+.inputText-33 input {
+  width: 33%;
+}
+
+.inputRadio fieldset {
+  padding: 0;
+  border: none;
+}
+
+.inputRadio dl,
+.inputRadio dd {
+  margin: 0;
+  padding: 0;
+}
+
+.inputRadio label {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.inputRadio input {
+  display: inline-block;
+  margin-right: 0.66em
+}
+
+.selectDropdown select {
+  font-size: 1.2em;
+  margin: 6px 0;
+  padding: 2px 5px;
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid #DEDFE0;
+  border-radius: 4px 4px 4px 4px;
+  /* Box Shadow - Cross-Browser */
+  -webkit-box-shadow: 0 1px 0 #ADB1B7;
+     -moz-box-shadow: 0 1px 0 #ADB1B7;
+          box-shadow: 0 1px 0 #ADB1B7;
+  background-color: #F8F8F9;
+}
+
+.labelInline label {
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.666em;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+
+/* Form Errors */
+
+.errorList {
+  color: red;
+}
+
+.errorList p,
+.errorList li,
+.errorList dt,
+.errorList dd {
+  font-size: 1.3em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.errorList li + li,
+.errorList dd + dd {
+  line-height: 1.25em;
+  margin: 0;
+  padding-bottom:0.7em;
+}
+
+
+.formRow .errorList {
+  margin: 0;
+  padding: 0 0 0 1em;
+  border-left: 6px solid #F66;
+  list-style: none;
+}
+
+.formRow .errorList + input,
+.formRow .errorList + input + input,
+.formRow .errorList + textarea,
+.formRow .errorList + dl,
+.errorInput input {
+  margin: 0 0 6px;
+  padding: 4px 0 5px 5px;
+  box-shadow: none;
+  border: 1px solid #F66;
+  border-left: 6px solid #F66;
+  border-radius: 0;
+  background: #FFE4E1;
+}
+
+.formRow .errorList + dl {
+  border: none;
+  border-left: 6px solid #F66;
+}
+
+.errorInput label{
+  color: red;
+}
+
+
+/* Messages and Alerts */
+
+
+/* Buttons */
+
+.btnBasic,
+.btnBasic:visited {
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5em;
+  vertical-align: baseline;
+  text-decoration: none;
+  text-shadow: 0.5px 0.5px 2px rgba(255, 255, 255, 0.8);
+  margin: 0 0;
+  padding: 0.5em 1.333em 0.357em;
+  display: inline-block;
+  border: 1px solid #b4b4b4;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0 1px 1px 0 rgba(250, 250, 250, 0.4) inset,
+              0 -25px 30px 0 rgba(0, 0, 0, 0.3) inset;
+  background-color: #e6e6e6;
+}
+
+.btnBasic:hover,
+.btnBasic:focus {
+  color: #000;
+  text-shadow: none;
+  border: 1px solid #d1d1d1;
+  background-color: #f5f5f5;
+  outline: 0;
+
+}
+
+
+/* Button Colors */
+
+.btnMidori,
+.btnMidori:visited {
+  color: #f5f5f5;
+  text-shadow: 0.5px 0.5px 2px rgba(0,0,0,0.8);
+  border: 1px solid #393;
+  background-color:#33be33;
+}
+
+.btnMidori:hover {
+  color: #000;
+  text-shadow: none;
+  background-color: #33cc33;
+}
+
+.btnBlue,
+.btnBlue:visited {
+  color: #f5f5f5;
+  text-shadow: 0.5px 0.5px 2px rgba(0,0,0,0.8);
+  border: 1px solid #39F;
+  background-color:#0099ff;
+}
+
+.btnBlue:hover {
+  color: #000;
+  text-shadow: none;
+  background-color: #33B4FF;
+}
+
+/* End */

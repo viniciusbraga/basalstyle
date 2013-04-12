@@ -1,0 +1,108 @@
+/* Default HTML Tags */
+body {
+  color: #000;
+  font-size: 62.5%;
+  line-height: 1.375em;
+  font-family: helvetica,arial,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 { font-size: 4.2em; line-height: 1.000em; margin: 0 0; padding: 0.785em 0.428em 0.309em; }
+h2 { font-size: 2.7em; line-height: 1.000em; margin: 0 0; padding: 0.851em 0.666em 0.592em; }
+h3 { font-size: 1.8em; line-height: 1.500em; margin: 0 0; padding: 0.200em 1.000em 0.750em; }
+h4 { font-size: 1.6em; line-height: 1.375em; margin: 0 0; padding: 0.375em 1.125em 1.000em; }
+h5 { font-size: 1.4em; line-height: 1.571em; margin: 0 0; padding: 0.500em 1.285em 1.071em; }
+h6 { font-size: 1.2em; line-height: 1.833em; margin: 0 0; padding: 0.583em 1.500em 1.250em; }
+
+p, li, dt, dd, th, td, caption{ font-size: 1.6em; line-height: 1.375em; }
+
+li li, li p, li h1, li h2, li h3, li h4 { font-size: 1em; }
+
+p { margin: 0 0 0 0; padding: 0.375em 1.125em 1.000em; }
+
+ul { margin: 0 0; padding: 0.6em 0 1.6em 5.4em; }
+ol { margin: 0 0; padding: 0.6em 0 1.6em 5.4em; }
+
+dl { margin: 0 0 0 0; padding: 0.6em 0 1.6em 1.8em; }
+dt { margin: 0 0 0 0; padding: 0 0 0 0; font-weight: 700; }
+dd { margin: 0 0 0 0; padding: 0 0 0 0; }
+
+table { border-collapse: collapse; width: 100%; margin: 0 0 0 1em; }
+th, caption { text-align: left; font-weight: 700; }
+
+blockquote { margin: 0 0; padding: 2.4em 4.8em; }
+
+em { font-style: italic; }
+small { font-size: 0.75em; }
+strong, b { font-weight: 700; }
+
+code { color:#C06;font-size:1.2em; }
+
+hr { display:none; }
+img { vertical-align:middle;border-width:0;}
+
+fieldset { border:solid 1px #cdcdcd; }
+textarea { font-family:inherit; font-size:1.5em; margin:0 1.2em; padding:0.75em 0.5em 0.5em 0.75em; width:93%; border:solid 1px #cdcdcd; }
+
+a         { color: #0066cc; }
+a:visited { color: #0066cc; }
+a:hover   { color: #E14B00; }
+a:active  { color: #0066cc; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+
+/* apply a natural box layout model to all elements. Look, IE was right, huh? */
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/* Columns Structures */
+
+.col-1 { max-width:  15.000em; width: 12.5%; }
+.col-2 { max-width:  30.000em; width: 25.0%; }
+.col-3 { max-width:  45.000em; width: 37.5%; }
+.col-4 { max-width:  60.000em; width: 50.0%; }
+.col-5 { max-width:  75.000em; width: 62.5%; }
+.col-6 { max-width:  90.000em; width: 75.0%; }
+.col-7 { max-width: 105.500em; width: 87.5%; }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7 { float: left; }
+
+
+/* Columns Flex */
+
+.col-12 { width: 12.5%; }
+.col-25 { width: 25.0%; }
+.col-33 { width: 33.0%; }
+.col-50 { width: 50.0%; }
+.col-66 { width: 66.0%; }
+.col-75 { width: 75.0%; }
+
+.col-12, .col-25, .col-33, .col-50, .col-66, .col-75  { float: left;}
+
+.row, .col { overflow: hidden; }
+
+.row { max-width: 120em; width: 100%; margin:0 auto;}
+
+/* Columns Rulers, tricks and treats ;D */
+
+.rulerLeft { border-left: 1px solid #E6E6E6;}
+.rulerTop { border-top: 1px solid #E6E6E6;}
+.rulerRight { border-right: 1px solid #E6E6E6;}
+.rulerBottom { border-bottom: 1px solid #E6E6E6;}
+
+.floatLeft { float: left;}
+.floatRight { float: right;}
+
+.textAlignLeft { text-align: left;}
+.textAlignRight { text-align: right;}
+.textAlignCenter { text-align: center;}
+
+
+/* Debug Grid */
+
+.debug { background: url(images/grid-1200x22-baseline.png) repeat-y center top !important;}
+
+/* End */
