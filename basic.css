@@ -67,6 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .col-5 { max-width:  75.000em; width: 62.5%; }
 .col-6 { max-width:  90.000em; width: 75.0%; }
 .col-7 { max-width: 105.500em; width: 87.5%; }
+
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7 { float: left; }
 
 
@@ -78,7 +79,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .col-50 { width: 50.0%; }
 .col-66 { width: 66.0%; }
 .col-75 { width: 75.0%; }
+
 .col-12, .col-25, .col-33, .col-50, .col-66, .col-75  { float: left;}
+
 .row, .col { overflow: hidden; }
 
 .row { max-width: 120em; width: 100%; margin:0 auto;}
@@ -86,8 +89,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Columns Rulers, tricks and treats ;D */
 
 .rulerLeft { border-left: 1px solid #E6E6E6;}
-.rulerRight { border-right: 1px solid #E6E6E6;}
 .rulerTop { border-top: 1px solid #E6E6E6;}
+.rulerRight { border-right: 1px solid #E6E6E6;}
 .rulerBottom { border-bottom: 1px solid #E6E6E6;}
 
 .floatLeft { float: left;}
