@@ -17,26 +17,26 @@ body {
   border-color: #C2C1B6;
 }
 
+
  /* Header */
 
 .headerFrame {}
 
 .header{
   padding: 0;
-  height: 10.8em;
+  height: 11em;
 }
 
 /* Site ID */
 
 .siteID {
   margin: 0 0 0;
-  padding: 35px 18px 0;
+  padding: 4.7em 1.8em 0;
 }
 
 .siteLogo {
-    color: #D75A3C;
+  color: #D75A3C;
   font-size: 2.1em;
-  line-height: 1.2em;
   padding: 0;
   margin: 0;
 }
@@ -52,7 +52,7 @@ body {
 .docTitle {
   color: #D75A3C;
   font-weight: 400;
-  height: 81px;
+  height: 3.25em;
   padding: 33px 0 0 18px;
 }
 
