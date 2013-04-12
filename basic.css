@@ -81,6 +81,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .col-12, .col-25, .col-33, .col-50, .col-66, .col-75  { float: left;}
 .row, .col { overflow: hidden; }
 
+.row { max-width: 120em; width: 100%; margin:0 auto;}
 
 /* Columns Rulers, tricks and treats ;D */
 
