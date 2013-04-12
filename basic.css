@@ -39,7 +39,7 @@ strong, b { font-weight: 700; }
 
 code { color:#C06;font-size:1.2em; }
 
-hr { color: #CCC; }
+hr { display:none; }
 img { vertical-align:middle;border-width:0;}
 
 fieldset { border:solid 1px #cdcdcd; }
