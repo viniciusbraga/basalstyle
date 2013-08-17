@@ -1,0 +1,256 @@
+
+.headerNav {
+  min-height: 4.8em;
+}
+.headerNavLogo {
+  line-height: 4.8em;
+}
+.headerNavMain{
+  line-height: 4.8em;
+}
+
+/* Inline Navigation */
+.navInline {
+  vertical-align: middle;
+  display: inline-block;
+}
+.navInline ul {
+ margin: 0;
+ padding: 0;
+ min-height: 3.2em;
+}
+.navInline li {
+ font-size: 1em;
+ margin: 0;
+ padding: 0;
+ float: left;
+ list-style: none;
+ position: relative;
+}
+.navInline a {
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: 2.285em;
+  text-decoration: none;
+  margin: 0;
+  padding: 0 0.6em;
+  display: block;
+  -webkit-transition: color 0.3s, background-color 1s;
+     -moz-transition: color 0.3s, background-color 1s;
+       -o-transition: color 0.3s, background-color 1s;
+}
+.navInline a:hover {
+ color: #000;
+ background-color: #FFF;
+}
+.navInline .current > a {
+ color: #000;
+ font-weight: 700;
+}
+
+/* Search in Navigation */
+
+.searchForm {
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  height: 48px;
+}
+.searchForm form {
+  margin: 0;
+  padding: 0 16px;
+}
+.searchForm input[type="text"] {
+  color: #333;
+  font-size: 14px;
+  line-height: 24px;
+  min-height: 24px;
+  padding: 1px 4px;
+  width: 100%;
+  border: 1px solid #999;
+}
+.searchForm .searchIcon {
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+/* Submenu */
+.submenu:hover {
+  color: #000;
+  background-color: #FFF;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+.submenu:hover > a {
+  color: #000;
+  background-color: #FFF;
+  position: relative;
+  z-index: 9999;
+}
+.submenu ul {
+  padding: 0 0;
+  display: none;
+  position: absolute;
+  z-index: 9998;
+}
+.submenu:hover ul {
+  display: block;
+  background: inherit;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+.submenu ul li {
+  font-size: 1em;
+  min-height: 2em;
+  float: none;
+}
+.submenu ul li a {
+  margin: 0 0;
+  padding: 0 1em 0 0.6em;
+  display: block;
+}
+.submenu ul li a:hover {
+  color: #FFF;
+  background: #0066CC;
+}
+.navInline .icon-reorder { color: #999; }
+.navInline:hover .icon-reorder { color: #333; }
+.navInline .icon-chevron-down { color: #999; }
+
+
+/* Mobile Trigger Buttom */
+.navMobile {
+  display: none;
+}
+
+/* @media (max-width: 800px) */
+
+@media (max-width: 960px) {
+
+    /* Navigation */
+    .headerNav {
+      min-height: 4.8em;
+    }
+    .headerNavLogo {
+      line-height: 4.8em;
+      position: absolute;
+      top:0;
+    }
+    .headerNavMain{
+      line-height: 4.8em;
+    }
+    .headerNav .navInline {
+      position: relative;
+      right: 0;
+      margin: 0 8px 0 auto;
+      width: 42px;
+      text-align: right;
+      display: block;
+    }
+    .headerNav .navInline ul {
+      display: none;
+    }
+    .headerNav .navInline:hover ul {
+      margin: 0;
+      padding: 0;
+      display: block;
+      border-top: 0;
+      background-color: #FFF;
+      position: absolute;
+      right: 0;
+      z-index: 9998;
+    }
+    .headerNav .navInline ul:before {
+      content: " ";
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: block;
+      position: absolute;
+      z-index: -1;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+    .headerNav .navInline li {
+       float: none;
+       text-align: left;
+    }
+    .headerNav .navInline li a {
+      padding: 0 1em;
+      white-space: nowrap;
+    }
+    .headerNav .navInline li a:hover {
+      color: #FFF;
+      background: #0066CC;
+    }
+    .headerNav .navInline .submenu ul {
+      padding: 0;
+      display: block;
+      position: relative;
+      z-index: 1000;
+    }
+    .headerNav .submenu:hover {
+      box-shadow: none;
+    }
+    .headerNav .submenu:hover ul {
+      box-shadow: none;
+    }
+    .headerNav .submenu ul:before {
+      content: none;
+    }
+    .headerNav .navInline .submenu ul li a {
+      margin: 0 0;
+      padding: 0 1.2em;
+      display: block;
+    }
+    .headerNav .navMobile {
+      color: #333;
+      line-height: 40px;
+      text-align: center;
+      vertical-align: top;
+      width: 42px;
+      height: 40px;
+      margin: 0;
+      padding: 0;
+      display: block;
+      position: relative;
+    }
+    .headerNav .navMobile i {
+      font-size: 24px;
+      line-height: 40px;
+      vertical-align: middle;
+      padding: 0;
+      margin: 0;
+    }
+    .headerNav .navInline:hover .navMobile {
+     background-color: #FFF;
+    }
+    .headerNav .navInline:hover .navMobile:before {
+      content: " ";
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: block;
+      position: absolute;
+      z-index: -1;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .searchForm {
+      margin: o auto;
+      display: block;
+    }
+
+} /* END @media (max-width: 800px) */
+
+/* End
