@@ -134,9 +134,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 } /* END @media (max-width: 1200px) */
 
-/* @media (max-width: 960px) */
+/* @media (max-width: 800px) */
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
 
 .col-1 { width: 100%; }
 .col-2 { width: 100%; }
@@ -159,7 +159,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .floatLeft, .floatRight { float: none;}
 
 
-} /* END @media (max-width: 960px) */
+} /* END @media (max-width: 800px) */
 
 /* Debug Grid */
 
