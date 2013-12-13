@@ -71,16 +71,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* Columns Structures */
 
-.col-1 { width:  15.000em; }
-.col-2 { width:  30.000em; }
-.col-3 { width:  45.000em; }
-.col-4 { width:  60.000em; }
-.col-5 { width:  75.000em; }
-.col-6 { width:  90.000em; }
-.col-7 { width: 105.000em; }
-.col-8 { width: 120.000em; }
+.col-1  { max-width: 09.000em; }
+.col-2  { max-width: 18.000em; }
+.col-3  { max-width: 27.000em; }
+.col-4  { max-width: 36.000em; }
+.col-5  { max-width: 45.000em; }
+.col-6  { max-width: 54.000em; }
+.col-7  { max-width: 63.000em; }
+.col-8  { max-width: 72.000em; }
+.col-9  { max-width: 81.000em; }
+.col-10 { max-width: 90.000em; }
+.col-11 { max-width: 99.000em; }
+.col-12 { max-width: 108.00em; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7 { float: left; }
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: left; }
 
 
 /* Columns Flex */
@@ -94,7 +98,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .col70 { width: 70.0%; }
 .col75 { width: 75.0%; }
 
-.col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75  { float: left;}
+.col25, .col30, .col33, .col40, .col50, .col60, .col66, .col70, .col75  { float: left;}
 
 .col { overflow: hidden; }
 
@@ -123,14 +127,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @media (max-width: 1200px) {
 
-.col-1 { max-width: 12.000em; width:  12.5%; }
-.col-2 { max-width: 24.000em; width:  25.0%; }
-.col-3 { max-width: 36.000em; width:  37.5%; }
-.col-4 { max-width: 48.000em; width:  50.0%; }
-.col-5 { max-width: 60.000em; width:  62.5%; }
-.col-6 { max-width: 72.000em; width:  75.0%; }
-.col-7 { max-width: 84.000em; width:  87.5%; }
-.col-8 { max-width: 96.000em; width: 100.0%; }
+.col-1  { max-width: 09.000em; width: 08% }
+.col-2  { max-width: 18.000em; width: 16% }
+.col-3  { max-width: 27.000em; width: 24% }
+.col-4  { max-width: 36.000em; width: 32% }
+.col-5  { max-width: 45.000em; width: 40% }
+.col-6  { max-width: 54.000em; width: 48% }
+.col-7  { max-width: 63.000em; width: 56% }
+.col-8  { max-width: 72.000em; width: 64% }
+.col-9  { max-width: 81.000em; width: 72% }
+.col-10 { max-width: 90.000em; width: 80% }
+.col-11 { max-width: 99.000em; width: 88% }
+.col-12 { max-width: 108.00em; width: 96% }
+
 
 } /* END @media (max-width: 1200px) */
 
