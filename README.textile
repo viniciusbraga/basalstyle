@@ -2,15 +2,11 @@ h1. BasalStyle
 
 Conjunto básico de CSS e HTML para prototipação rápida de Sites, WebApps e Formulários.
 
-Para entender como aplicar no documento HTML, estude os exemplos no index.html dentro da pasta templates
+Para entender como aplicar no documento HTML, estude os exemplos no index.html.
 
 
 h2. Sobre o grid de colunas
 
-A largura máxima é de 1200px divididos em 8 colunas.
-
-A largura de texto máximo é de 1164px com 18px de afastamento nas laterais.
-
-A menor coluna é de 150px no total, com um espaço interno de 18px nas laterais e texto de largura máxima de 114px.
+A largura máxima é de 1080px divididos em 12 colunas.
 
 O afastamento do texto, nas colunas, está inserido no padding dos cabeçalhos (H1,H2,..), parágrafos e listas.
