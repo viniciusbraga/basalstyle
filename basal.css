@@ -180,7 +180,7 @@ body:after {
     transition: opacity 3s;
 }
 body:hover:after {
-    opacity: 0.3;
+    opacity: 0.5;
     transition: opacity 1s;
 }
 

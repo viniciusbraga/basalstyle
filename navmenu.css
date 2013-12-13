@@ -1,13 +1,8 @@
 
 .headerNav {
-  min-height: 4.8em;
-}
-.headerNavLogo {
-  line-height: 4.8em;
-}
-.headerNavMain{
-  line-height: 4.8em;
-}
+  min-height: 8.1em;
+.headerNavLogo {}
+.headerNavMain{}
 
 /* Inline Navigation */
 .navInline {
