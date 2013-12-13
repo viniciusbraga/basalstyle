@@ -1,4 +1,6 @@
+
 /* Default HTML Tags */
+
 body {
   color: #000;
   font-size: 62.5%;
@@ -186,11 +188,11 @@ body:after {
     right: 0;
     position: absolute;
     z-index: -1;
-    transition: opacity 3s;
+    transition: opacity 1.5s;
 }
 body:hover:after {
     opacity: 0.5;
-    transition: opacity 1s;
+    transition: opacity 0.5s;
 }
 
 /* End */
