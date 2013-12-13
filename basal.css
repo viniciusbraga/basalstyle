@@ -10,12 +10,14 @@ body {
   padding: 0;
 }
 
-h1 { font-size: 3.6em; line-height: 1.340em; margin: 0; padding: 18px 15px; min-height: 2.00em; }
-h2 { font-size: 2.5em; line-height: 1.000em; margin: 0; padding: 18px 15px; min-height: 2.77em; }
-h3 { font-size: 2.0em; line-height: 1.200em; margin: 0; padding: 18px 15px; }
-h4 { font-size: 1.6em; line-height: 1.562em; margin: 0; padding: 18px 15px; }
-h5 { font-size: 1.4em; line-height: 1.710em; margin: 0; padding: 18px 15px; }
-h6 { font-size: 1.2em; line-height: 2.000em; margin: 0; padding: 18px 15px; }
+h1 { font-size: 3.6em; line-height: 1.340em; min-height: 2.250em; padding: 0.22em 0.500em 0;  }
+h2 { font-size: 2.4em; line-height: 1.250em; min-height: 2.250em; padding: 0.58em 0.750em 0.29em;  }
+h3 { font-size: 2.1em; line-height: 1.285em; min-height: 2.571em; padding: 0.29em 0.857em 1.00em; }
+h4 { font-size: 1.8em; line-height: 1.562em; padding: 18px 18px; }
+h5 { font-size: 1.5em; line-height: 1.710em; padding: 18px 18px; }
+h6 { font-size: 1.2em; line-height: 2.000em; padding: 18px 18px; }
+
+h1,h2,h3,h4,h5,h6 { margin: 0; }
 
 p, li, dt, dd, th, td, caption { font-size: 1.8em; line-height: 1.5em; }
 
