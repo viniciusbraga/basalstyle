@@ -30,12 +30,12 @@ h4 + p,h5 + p,h6 + p { padding: 0em 1em 1.125em; }
 
 li li, li p, li h1, li h2, li h3, li h4 { font-size: 1em; }
 
-p  {padding: 0.375em 1em 1.125em; }
+p  { padding: 0.375em 1em 1.125em; }
 
-ul { padding: 0.6em 0 1.8em 5.4em; }
-ol { padding: 0.6em 0 1.8em 5.4em; }
+ul { padding: 0.6em 0 2.1em 4.2em; }
+ol { padding: 0.6em 0 2.1em 4.2em; }
 
-dl { padding: 0.6em 0 1.8em 5.4em; }
+dl { padding: 0.6em 0 2.1em 4.2em; }
 dt { padding: 0; font-weight: 700; }
 dd { padding: 0; }
 
