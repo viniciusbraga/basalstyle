@@ -90,7 +90,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: left; }
 
-
 /* Columns Flex */
 .col25 { width: 25.0%; }
 .col30 { width: 30.0%; }
@@ -183,7 +182,7 @@ body {
 body:after {
     content: "";
     background: url(images/grid-1080x27-baseline.png) repeat-y center top !important;
-    opacity: 0;
+    opacity: 0.5;
     top: 0;
     left: 0;
     bottom: 0;
@@ -192,9 +191,6 @@ body:after {
     z-index: -1;
     transition: opacity 1.5s;
 }
-body:hover:after {
-    opacity: 0.5;
-    transition: opacity 0.5s;
-}
+body:hover:after { opacity: 0.0; transition: opacity 0.5s; }
 
 /* End */
