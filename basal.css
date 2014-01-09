@@ -91,7 +91,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .col-11 { max-width: 99.000em; }
 .col-12 { max-width: 108.00em; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: left; }
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: left; width: 100%; }
 
 /* Columns Flex */
 .col25 { width: 25.0%; }
@@ -133,18 +133,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @media (max-width: 1200px) {
 
-.col-1  { max-width: 09.000em; width: 08% }
-.col-2  { max-width: 18.000em; width: 16% }
-.col-3  { max-width: 27.000em; width: 24% }
-.col-4  { max-width: 36.000em; width: 32% }
-.col-5  { max-width: 45.000em; width: 40% }
-.col-6  { max-width: 54.000em; width: 48% }
-.col-7  { max-width: 63.000em; width: 56% }
-.col-8  { max-width: 72.000em; width: 64% }
-.col-9  { max-width: 81.000em; width: 72% }
-.col-10 { max-width: 90.000em; width: 80% }
-.col-11 { max-width: 99.000em; width: 88% }
-.col-12 { max-width: 108.00em; width: 96% }
+.col-1  { max-width: 09.000em; width: 08%  }
+.col-2  { max-width: 18.000em; width: 16%  }
+.col-3  { max-width: 27.000em; width: 24%  }
+.col-4  { max-width: 36.000em; width: 32%  }
+.col-5  { max-width: 45.000em; width: 40%  }
+.col-6  { max-width: 54.000em; width: 48%  }
+.col-7  { max-width: 63.000em; width: 56%  }
+.col-8  { max-width: 72.000em; width: 64%  }
+.col-9  { max-width: 81.000em; width: 72%  }
+.col-10 { max-width: 90.000em; width: 80%  }
+.col-11 { max-width: 99.000em; width: 88%  }
+.col-12 { max-width: 108.00em; width: 100% }
 
 
 } /* END @media (max-width: 1200px) */
