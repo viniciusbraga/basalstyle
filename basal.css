@@ -96,7 +96,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .col-11 { max-width: 99.000em; }
 .col-12 { max-width: 108.00em; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: left; width: 100%; }
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: left; width: 100%; }
 
 /* Columns Flex */
 .col25 { width: 25.0%; }
@@ -109,7 +110,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .col70 { width: 70.0%; }
 .col75 { width: 75.0%; }
 
-.col25, .col30, .col33, .col40, .col50, .col60, .col66, .col70, .col75  { float: left;}
+.col25, .col30, .col33, .col40,
+.col50, .col60, .col66, .col70, .col75  { float: left;}
 
 .col { overflow: hidden; }
 
