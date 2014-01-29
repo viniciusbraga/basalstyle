@@ -50,7 +50,13 @@ strong, b { font-weight: 700; }
 
 code { color:#C06;font-size:1.2em; }
 
-hr { display:none; }
+hr {
+    border-top:solid 1px #E6E6E6;
+    border-bottom:solid 1px #F5F5F5;
+    border-left:0;
+    border-right:0;
+}
+
 img { margin: 0 auto; vertical-align:middle; border-width:0; }
 
 fieldset { border:solid 1px #cdcdcd; }
