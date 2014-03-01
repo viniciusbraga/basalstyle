@@ -74,7 +74,7 @@ a:visited { color: #0066cc; }
 a:hover   { color: #E14B00; }
 a:active  { color: #0066cc; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; margin:0; padding:0; }
+article, aside, details, figcaption, figure, footer, header, menu, nav, section { display:block; margin:0; padding:0; }
 
 /* apply a natural box layout model to all elements. Look, IE was right, huh? */
 
