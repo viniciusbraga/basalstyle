@@ -59,6 +59,7 @@ hr {
 
 img { margin: 0 auto; vertical-align:middle; border-width:0; }
 
+form { padding: 0; margin:0; }
 fieldset { border:solid 1px #cdcdcd; }
 textarea {
     font-family:inherit;
