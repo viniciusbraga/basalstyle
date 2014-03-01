@@ -110,8 +110,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .col70 { width: 70.0%; }
 .col75 { width: 75.0%; }
 
-.col25, .col30, .col33, .col40,
-.col50, .col60, .col66, .col70, .col75  { float: left;}
+.col25, .col30, .col33, .col40, .col50, .col60, .col66, .col70, .col75  { float: left;}
 
 .col { overflow: hidden; }
 
@@ -160,8 +159,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @media (max-width: 800px) {
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12,
-.col-12, .col-25, .col-33, .col-50, .col-66, .col-75 { width: 100%; float: none; max-width: none; }
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 { width: 100%; float: none; max-width: none; }
+
+.col25, .col30, .col33, .col40, .col50, .col60, .col66, .col70, .col75 { width: 100%; float: none; }
 
 .col { overflow: visible; display: block; }
 
