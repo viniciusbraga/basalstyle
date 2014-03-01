@@ -19,7 +19,9 @@
   color: #000;
   font-size: 1.4em;
   font-weight: 700;
-  line-height: 1em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 27px;
   padding: 0;
   margin: 0;
 }
@@ -48,38 +50,34 @@
 
 .labelBlock label,
 .formRow legend {
-  padding: 1.150em 0 0.3em;
   display: block;
 }
 
 .inputText input {
-  font-size: 1.6em;
-  line-height: 1em;
+  font-size: 2.0em;
+  font-family: inherit;
+  line-height: 1.4em;
+  letter-spacing: 0.03em;
   vertical-align: middle;
-  margin: 6px 0;
+  margin: 0;
   padding: 0.35em;
   width: 100%;
+  min-height: 10px;
   display: block;
-  border: 1px solid #999;
-  /* Border Radius - Cross-Browser */
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
-  /* Box Shadow - Cross-Browser */
-  -webkit-box-shadow: inset 0 1px 2px #CCC;
-     -moz-box-shadow: inset 0 1px 2px #CCC;
-          box-shadow: inset 0 1px 2px #CCC;
-  background-color: #F8F8F9;
+  border: none;
+  border-left: 6px solid #F5F5F5;
+  border-radius: 0;
+  background-color: #F5F5F5;
+  outline:none;
 }
 
 .inputText input:focus,
 .inputText textarea:focus {
-  border: 1px solid #666666;
-  /* Box Shadow - Cross-Browser */
-  -webkit-box-shadow: inset 0 0 10px #CCC;
-     -moz-box-shadow: inset 0 0 10px #CCC;
-          box-shadow: inset 0 0 10px #CCC;
-  background-color: #ffffe6;
+  border-left: 6px solid #33CC33;
+  -webkit-box-shadow: inset 0 2px 10px #E6E6E6;
+  -moz-box-shadow: inset 0 2px 10px #E6E6E6;
+  box-shadow: inset 0 2px 10px #E6E6E6;
+  background-color: #F5F5F5;
 }
 
 .inputText-66 input {
@@ -138,38 +136,38 @@
 
 /* Form Errors */
 
-.errorList {
+.errorlist {
   color: red;
 }
 
-.errorList p,
-.errorList li,
-.errorList dt,
-.errorList dd {
+.errorlist p,
+.errorlist li,
+.errorlist dt,
+.errorlist dd {
   font-size: 1.3em;
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
-.errorList li + li,
-.errorList dd + dd {
+.errorlist li + li,
+.errorlist dd + dd {
   line-height: 1.25em;
   margin: 0;
   padding-bottom:0.7em;
 }
 
 
-.formRow .errorList {
+.formRow .errorlist {
   margin: 0;
   padding: 0 0 0 1em;
   border-left: 6px solid #F66;
   list-style: none;
 }
 
-.formRow .errorList + input,
-.formRow .errorList + input + input,
-.formRow .errorList + textarea,
-.formRow .errorList + dl,
+.formRow .errorlist + input,
+.formRow .errorlist + input + input,
+.formRow .errorlist + textarea,
+.formRow .errorlist + dl,
 .errorInput input {
   margin: 0 0 6px;
   padding: 4px 0 5px 5px;
@@ -180,7 +178,7 @@
   background: #FFE4E1;
 }
 
-.formRow .errorList + dl {
+.formRow .errorlist + dl {
   border: none;
   border-left: 6px solid #F66;
 }
@@ -200,31 +198,27 @@
   color: #333;
   font-size: 16px;
   font-weight: 700;
-  line-height: 1em;
+  line-height: 2.5em;
   vertical-align: baseline;
   text-decoration: none;
-  text-shadow: 0.5px 0.5px 2px rgba(255, 255, 255, 0.8);
-  margin: 0 0;
-  padding: 0.9em 3em 0.8em ;
+  text-shadow: 0.5px 0.5px 6px rgba(0,0,0,0.2);
+  margin: 0 1.125em 0 0;
+  padding: 0 3em;
   display: inline-block;
-  border: 1px solid #b4b4b4;
-  border-radius: 4px;
+  border: none;
+  border-radius: 3px;
   position: relative;
-  box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.4) inset,
-              0 -25px 30px 0 rgba(0, 0, 0, 0.3) inset;
-  background-color: #e6e6e6;
+  background-color: #D9D9D9;
 }
 
 .btnBasic:hover,
 .btnBasic:focus {
-  color: #000;
-  text-shadow: none;
-  border: 1px solid #d1d1d1;
-  background-color: #f5f5f5;
+  color: #FFFFFF;
+  text-shadow: 0.5px 0.5px 6px rgba(0,0,0,0.4);
+  background-image: none;
+  background-color: #33CC33;
   outline: 0;
-
 }
-
 
 /* Button Colors */
 
@@ -233,7 +227,7 @@
   color: #f5f5f5;
   text-shadow: 0.5px 0.5px 2px rgba(0,0,0,0.8);
   border: 1px solid #393;
-  background-color:#33be33;
+  background-color:#33CC33;
 }
 
 .btnGreen:hover {
