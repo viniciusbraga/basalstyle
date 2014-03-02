@@ -29,16 +29,8 @@
 }
 
 .formRow p {
-  color:#999;
-  line-height:1.4em;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-}
-
-.formRow:hover p,
-.formRow :focus + p {
-  color: #4c4c4c;
-  font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 
 .labelBlock label,
