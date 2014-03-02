@@ -1,9 +1,8 @@
 
-/* Default HTML Tags
+/*
  *
- * 3,6,9,12,15,18,21,24,27,30,33,36,39,42,45...
- * 9,18,27,36,45,54...
- * 27,54,81,108...
+ * Default HTML Tags
+ *
  */
 
 body {
@@ -62,12 +61,12 @@ img { margin: 0 auto; vertical-align:middle; border-width:0; }
 form { padding: 0; margin:0; }
 fieldset { border:solid 1px #cdcdcd; }
 textarea {
-    font-family:inherit;
-    font-size:1.5em;
-    margin:0 1.2em;
-    padding:0.75em 0.5em 0.5em 0.75em;
-    width:93%;
-    border: 1px solid  #cdcdcd;
+  font-family:inherit;
+  font-size:1.5em;
+  margin:0 1.2em;
+  padding:0.75em 0.5em 0.5em 0.75em;
+  width:93%;
+  border: 1px solid  #cdcdcd;
 }
 
 a         { color: #0066cc; }
@@ -78,7 +77,6 @@ a:active  { color: #0066cc; }
 article, aside, details, figcaption, figure, footer, header, menu, nav, section { display:block; margin:0; padding:0; }
 
 /* apply a natural box layout model to all elements. Look, IE was right, huh? */
-
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
