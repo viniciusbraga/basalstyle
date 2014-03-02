@@ -12,6 +12,7 @@ body {
   font-family: Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #FFFFFF;
 }
 
 h1 { font-size: 3.6em; line-height: 1.250em; min-height: 2.250em; padding: 0.500em 0.500em 0;  }
