@@ -1,0 +1,207 @@
+
+/*
+ *
+ * Default HTML Tags
+ *
+ */
+
+body {
+  color: #000;
+  font-size: 62.5%;
+  line-height: 2.7em;
+  font-family: Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 { font-size: 3.6em; line-height: 1.250em; min-height: 2.250em; padding: 0.500em 0.500em 0;  }
+h2 { font-size: 2.4em; line-height: 1.125em; min-height: 3.375em; padding: 1.330em 0.750em 0.92em; }
+h3 { font-size: 2.1em; line-height: 1.285em; min-height: 2.571em; padding: 1.570em 0.857em 1.00em; }
+h4,
+h5,
+h6 { font-size: 1.8em; line-height: 1.500em; padding: 1.888em 1em 0; }
+
+h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dt,dd,blockquote { margin: 0; }
+
+p, li, dt, dd, th, td, caption { font-size: 1.8em; line-height: 1.5em; }
+
+h4 + p,h5 + p,h6 + p { padding: 0em 1em 1.125em; }
+
+li li, li p, li h1, li h2, li h3, li h4 { font-size: 1em; }
+
+p  { padding: 0.375em 1em 1.125em; }
+
+ul { padding: 0.6em 0 2.1em 4.2em; }
+ol { padding: 0.6em 0 2.1em 4.2em; }
+
+dl { padding: 0.6em 0 2.1em 4.2em; }
+dt { padding: 0; font-weight: 700; }
+dd { padding: 0; }
+
+table { border-collapse: collapse; width: 100%; margin: 0 0 0 1em; }
+th, caption { text-align: left; font-weight: 700; }
+
+blockquote { padding: 2.4em 4.8em; }
+
+em { font-style: italic; }
+small { font-size: 0.75em; line-height: 1em; }
+strong, b { font-weight: 700; }
+
+code { color:#C06;font-size:1.2em; }
+
+hr {
+    border-top:solid 1px #E6E6E6;
+    border-bottom:solid 1px #F5F5F5;
+    border-left:0;
+    border-right:0;
+}
+
+img { margin: 0 auto; vertical-align:middle; border-width:0; }
+
+form { padding: 0; margin:0; }
+fieldset { border:solid 1px #cdcdcd; }
+textarea {
+  font-family:inherit;
+  font-size:1.5em;
+  margin:0 1.2em;
+  padding:0.75em 0.5em 0.5em 0.75em;
+  width:93%;
+  border: 1px solid  #cdcdcd;
+}
+
+a         { color: #0066cc; }
+a:visited { color: #0066cc; }
+a:hover   { color: #E14B00; }
+a:active  { color: #0066cc; }
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section { display:block; margin:0; padding:0; }
+
+/* apply a natural box layout model to all elements. Look, IE was right, huh? */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/* Columns Structures */
+
+.col-1  { max-width: 09.000em; }
+.col-2  { max-width: 18.000em; }
+.col-3  { max-width: 27.000em; }
+.col-4  { max-width: 36.000em; }
+.col-5  { max-width: 45.000em; }
+.col-6  { max-width: 54.000em; }
+.col-7  { max-width: 63.000em; }
+.col-8  { max-width: 72.000em; }
+.col-9  { max-width: 81.000em; }
+.col-10 { max-width: 90.000em; }
+.col-11 { max-width: 99.000em; }
+.col-12 { max-width: 108.00em; }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: left; width: 100%; }
+
+/* Columns Flex */
+.col25 { width: 25.0%; }
+.col30 { width: 30.0%; }
+.col33 { width: 33.0%; }
+.col40 { width: 40.0%; }
+.col50 { width: 50.0%; }
+.col60 { width: 60.0%; }
+.col66 { width: 66.0%; }
+.col70 { width: 70.0%; }
+.col75 { width: 75.0%; }
+
+.col25, .col30, .col33, .col40, .col50, .col60, .col66, .col70, .col75  { float: left;}
+
+.col { overflow: hidden; }
+
+/* Centralize collumn and nulify the float */
+.container { margin: 0 auto; float: none;}
+
+/* Nicolas Gallagher's micro clearfix */
+.row { *zoom: 1; }
+.row:before, .row:after { content: " "; display: table; }
+.row:after { clear: both; }
+
+/* Columns Rulers, tricks and treats ;D */
+.rulerLeft { border-left: 1px solid #E6E6E6;}
+.rulerTop { border-top: 1px solid #E6E6E6;}
+.rulerRight { border-right: 1px solid #E6E6E6;}
+.rulerBottom { border-bottom: 1px solid #E6E6E6;}
+
+.floatLeft { float: left;}
+.floatRight { float: right;}
+
+.textAlignLeft { text-align: left;}
+.textAlignRight { text-align: right;}
+.textAlignCenter { text-align: center;}
+
+/* @media (max-width: 1024px) */
+
+@media (max-width: 1200px) {
+
+.col-1  { max-width: 09.000em; width: 08%  }
+.col-2  { max-width: 18.000em; width: 16%  }
+.col-3  { max-width: 27.000em; width: 24%  }
+.col-4  { max-width: 36.000em; width: 32%  }
+.col-5  { max-width: 45.000em; width: 40%  }
+.col-6  { max-width: 54.000em; width: 48%  }
+.col-7  { max-width: 63.000em; width: 56%  }
+.col-8  { max-width: 72.000em; width: 64%  }
+.col-9  { max-width: 81.000em; width: 72%  }
+.col-10 { max-width: 90.000em; width: 80%  }
+.col-11 { max-width: 99.000em; width: 88%  }
+.col-12 { max-width: 108.00em; width: 100% }
+
+
+} /* END @media (max-width: 1200px) */
+
+/* @media (max-width: 800px) */
+
+@media (max-width: 800px) {
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 { width: 100%; float: none; max-width: none; }
+
+.col25, .col30, .col33, .col40, .col50, .col60, .col66, .col70, .col75 { width: 100%; float: none; }
+
+.col { overflow: visible; display: block; }
+
+/* Columns Rulers, tricks and treats ;D */
+
+.rulerLeft, .rulerRight  { border-left: 0; border-right: 0;}
+
+.floatLeft, .floatRight { float: none;}
+
+
+} /* END @media (max-width: 800px) */
+
+/* Debug Grid */
+
+.debug {
+    display: block;
+    position: relative;
+}
+.debug:after {
+    content: "";
+    background: url(images/grid-1080x27-baseline.png) repeat-y center top !important;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    transition: opacity 1.5s;
+}
+.debug:hover:after { opacity: 0.0; transition: opacity 0.5s; }
+
+/* End */
