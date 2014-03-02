@@ -9,4 +9,16 @@ h2. Sobre o grid de colunas
 
 A largura máxima é de 1080px divididos em 12 colunas.
 
-O afastamento do texto, nas colunas, está inserido no padding dos cabeçalhos (H1,H2,..), parágrafos e listas.
+O afastamento do texto com relação às colunas, está no "paddind" dos elementos HTMLs, como: cabeçalhos (H1,H2,..), parágrafos e listas.
+
+h2. O que falta fazer
+
+1. Melhorar o uso do debug-grid
+2. Aplicar uma estratégia para as imagens em tablets e celulares.
+3. Fazer o grid com largura máxima de 1200 e entrelinha múltiplo de 5.
+4. Definir nomenclatura dos módulos principais dos templates (header, content e footer)
+5. Melhorar o design do menu pulldown da navegação
+6. Criar as regras para o header fixo
+7. Exemplos de site e aplicações
+8. Fazer versões com LESS
+9. Atualizar ícones para a versão mais atual do Font Awesome.
