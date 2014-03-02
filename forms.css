@@ -198,13 +198,14 @@ input[type="submit"]  {
   color: #000;
   font-size: 17px;
   font-weight: 400;
-  line-height: 2.2em;
+  line-height: 2.119em;
   vertical-align: baseline;
   text-decoration: none;
   text-shadow: 0.5px 0.5px 6px rgba(0,0,0,0.2);
   margin: 0 1.125em 0 0;
   padding: 0 2.5em;
   display: inline-block;
+  min-height: 2.119em;
   border: 1px solid #B3AAA1;
   border-radius: 3px;
   position: relative;
