@@ -203,6 +203,17 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
     z-index: -1;
     transition: opacity 1.5s;
 }
-.debug:hover:after { opacity: 0.0; transition: opacity 0.5s; }
+label[for="debug"] {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  vertical-align: top;
+  position: fixed;
+  top: 0;
+  right: 3px;
+  opacity: 0.5;
+}
+label[for="debug"]:hover { opacity: 1; }
+
 
 /* End */

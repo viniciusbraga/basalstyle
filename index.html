@@ -37,8 +37,7 @@
   </style>
 
 </head>
-<body class="debug">
-
+<body>
     <div class="headerFrame">
 
         <header class="header rulerBottom col-12 container" role="banner">
@@ -363,6 +362,8 @@
   <!-- END footer -->
 </div>
 <!-- END footerFrame -->
+
+<label for="debug"><i class="icon-check"></i> Grid <input type="checkbox" id="debug" onclick='var e=document.getElementsByTagName("body")[0];if(e.className.match(/(?:^|\s)debug(?!\S)/)){e.className=e.className.replace(/(?:^|\s)debug(?!\S)/g,"");}else{e.className ="debug";}'></label>
 
 <script src="http://www.basalstyle.dev/debug/live.js" type="text/javascript"></script>
 
