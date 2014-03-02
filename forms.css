@@ -7,6 +7,13 @@
   min-height: 8.1em;
 }
 
+.formRow p {
+  margin: 0;
+  padding: 0;
+}
+
+.formRow a { text-decoration: none; }
+
 .formRow label,
 .formRow legend {
   color: #000;
@@ -26,11 +33,6 @@
   padding:0.75em 0.5em 0.5em 0.75em;
   width: 100%;
   border: 1px solid #cdcdcd;
-}
-
-.formRow p {
-  margin: 0;
-  padding: 0;
 }
 
 .labelBlock label,
@@ -154,7 +156,6 @@
   margin: 0;
   padding-bottom:0.7em;
 }
-
 
 .formRow .errorlist {
   margin: 0;
