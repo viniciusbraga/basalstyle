@@ -7,13 +7,6 @@
   min-height: 8.1em;
 }
 
-.formRow p,
-.formRow li,
-.formRow dt,
-.formRow dd {
-  font-size: 1.3em;
-}
-
 .formRow label,
 .formRow legend {
   color: #000;
