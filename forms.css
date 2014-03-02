@@ -65,8 +65,8 @@
   min-height: 10px;
   display: block;
   border: none;
-  border-left: 6px solid #F5F5F5;
-  border-radius: 0;
+  border-left: 6px solid #D9D3CE;
+  border-radius: 0 3px 3px 0 ;
   background-color: #F5F5F5;
   outline:none;
 }
@@ -110,18 +110,29 @@
 }
 
 .selectDropdown select {
-  font-size: 1.2em;
-  margin: 6px 0;
-  padding: 2px 5px;
-  overflow: hidden;
-  display: inline-block;
-  border: 1px solid #DEDFE0;
-  border-radius: 4px 4px 4px 4px;
-  /* Box Shadow - Cross-Browser */
-  -webkit-box-shadow: 0 1px 0 #ADB1B7;
-     -moz-box-shadow: 0 1px 0 #ADB1B7;
-          box-shadow: 0 1px 0 #ADB1B7;
-  background-color: #F8F8F9;
+  color: #000;
+  font-size: 1.6em;
+  line-height: 2.6em;
+  padding: 0.6em 0.3em 0.6em 0.3em;
+  min-height: 36px;
+  width: 100%;
+  border: 1px solid #B3AAA1;
+  border-left: 6px solid #D9D3CE;
+  border-radius: 0 3px 3px 0 ;
+  background-color: #EFEDEB;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.1, #ffffff), color-stop(0.9, #EFEDEB));
+  background-image: -webkit-linear-gradient(#ffffff 10%, #EFEDEB 90%);
+  background-image: -moz-linear-gradient(#ffffff 10%, #EFEDEB 90%);
+  background-image: -o-linear-gradient(#ffffff 10%, #EFEDEB 90%);
+  background-image: linear-gradient(#ffffff 10%, #EFEDEB 90%);
+  outline: none;
+}
+
+.selectDropdown select:focus {
+  border-left: 6px solid #33CC33;
+  padding: 0.6em 0.3em 0.6em 0;
+  background-color: #F5F5F5;
+  outline: none;
 }
 
 .labelInline label {
