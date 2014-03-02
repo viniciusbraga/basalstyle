@@ -193,7 +193,8 @@
 /* Buttons */
 
 .btnBasic,
-.btnBasic:visited {
+.btnBasic:visited,
+input[type="submit"]  {
   color: #000;
   font-size: 17px;
   font-weight: 400;
@@ -216,7 +217,8 @@
 }
 
 .btnBasic:hover,
-.btnBasic:focus {
+.btnBasic:focus,
+input[type="submit"]:hover {
   color: #000;
   background-color: #E6E4E2;
   background-image: -webkit-gradient(linear, 0 100%, 0 0, color-stop(0.6, #E6E4E2), to(#FFFFFF));
@@ -225,6 +227,7 @@
   background-image: -o-linear-gradient(bottom, #E6E4E2 60%, #FFFFFF);
   background-image: linear-gradient(bottom,#E6E4E2 60%, #FFFFFF);
   outline: 0;
+  cursor: pointer;
 }
 
 /* Button Colors */
