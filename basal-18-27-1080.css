@@ -70,10 +70,10 @@ textarea {
   border: 1px solid  #cdcdcd;
 }
 
-a         { color: #0066cc; }
-a:visited { color: #0066cc; }
-a:hover   { color: #E14B00; }
-a:active  { color: #0066cc; }
+a         { color: #0099CC; }
+a:visited { color: #0099CC; }
+a:hover   { color: #33CCFF; }
+a:active  { color: #FF9900; }
 
 article, aside, details, figcaption, figure, footer, header, menu, nav, section { display:block; margin:0; padding:0; }
 
