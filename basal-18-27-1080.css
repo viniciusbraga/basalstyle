@@ -191,7 +191,7 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
 .debug:after {
   content: "";
   background: url(images/grid-1080x27-baseline.png) repeat-y center top !important;
-  opacity: 0.4;
+  opacity: 0.0;
   top: 0;
   left: 0;
   bottom: 0;
