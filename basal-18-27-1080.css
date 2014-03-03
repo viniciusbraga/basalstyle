@@ -157,51 +157,50 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
 
 @media (max-width: 800px) {
 
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12 { width: 100%; float: none; max-width: none; }
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 { width: 100%; float: none; max-width: none; }
 
-.col25, .col30, .col33, .col40, .col50, .col60, .col66, .col70, .col75 { width: 100%; float: none; }
+  .col25, .col30, .col33, .col40, .col50,
+  .col60, .col66, .col70, .col75 { width: 100%; float: none; }
 
-.col { overflow: visible; display: block; }
+  .col { overflow: visible; display: block; }
 
-/* Columns Rulers, tricks and treats ;D */
+  .rulerLeft, .rulerRight  { border-left: 0; border-right: 0;}
 
-.rulerLeft, .rulerRight  { border-left: 0; border-right: 0;}
-
-.floatLeft, .floatRight { float: none;}
-
+  .floatLeft, .floatRight { float: none;}
 
 } /* END @media (max-width: 800px) */
+
 
 /* Debug Grid */
 
 .debug {
-    display: block;
-    position: relative;
+  display: block;
+  position: relative;
 }
 .debug:after {
-    content: "";
-    background: url(images/grid-1080x27-baseline.png) repeat-y center top !important;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-    transition: opacity 1.5s;
+  content: "";
+  background: url(images/grid-1080x27-baseline.png) repeat-y center top !important;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  transition: opacity 1.5s;
 }
-.debug:hover:after  { opacity: 0; }
+.debug:hover:after { opacity: 0.4; transition: opacity 0.5s; }
 
 label[for="debug"] {
   font-size: 14px;
