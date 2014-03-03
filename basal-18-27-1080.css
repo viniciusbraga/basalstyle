@@ -78,6 +78,12 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
 /* apply a natural box layout model to all elements. Look, IE was right, huh? */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+/* Leading - Vertical Space */
+.leading-1 { padding-top: 2.70em }
+.leading-2 { padding-top: 5.40em }
+.leading-3 { padding-top: 8.10em }
+.leading-4 { padding-top: 10.8em }
+.leading-5 { padding-top: 13.5em }
 
 /* Columns Structures */
 
@@ -115,6 +121,34 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
 /* Centralize collumn and nulify the float */
 .container { margin: 0 auto; float: none;}
 
+/* Column spaces before */
+
+.spaceBefore-1  { margin-left: 09.000em; }
+.spaceBefore-2  { margin-left: 18.000em; }
+.spaceBefore-3  { margin-left: 27.000em; }
+.spaceBefore-4  { margin-left: 36.000em; }
+.spaceBefore-5  { margin-left: 45.000em; }
+.spaceBefore-6  { margin-left: 54.000em; }
+.spaceBefore-7  { margin-left: 63.000em; }
+.spaceBefore-8  { margin-left: 72.000em; }
+.spaceBefore-9  { margin-left: 81.000em; }
+.spaceBefore-10 { margin-left: 90.000em; }
+.spaceBefore-11 { margin-left: 99.000em; }
+.spaceBefore-12 { margin-left: 108.00em; }
+
+.spaceAfter-1  { margin-right: 09.000em; }
+.spaceAfter-2  { margin-right: 18.000em; }
+.spaceAfter-3  { margin-right: 27.000em; }
+.spaceAfter-4  { margin-right: 36.000em; }
+.spaceAfter-5  { margin-right: 45.000em; }
+.spaceAfter-6  { margin-right: 54.000em; }
+.spaceAfter-7  { margin-right: 63.000em; }
+.spaceAfter-8  { margin-right: 72.000em; }
+.spaceAfter-9  { margin-right: 81.000em; }
+.spaceAfter-10 { margin-right: 90.000em; }
+.spaceAfter-11 { margin-right: 99.000em; }
+.spaceAfter-12 { margin-right: 108.00em; }
+
 /* Nicolas Gallagher's micro clearfix */
 .row { *zoom: 1; }
 .row:before, .row:after { content: " "; display: table; }
@@ -150,6 +184,31 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
 .col-11 { max-width: 99.000em; width: 88%  }
 .col-12 { max-width: 108.00em; width: 100% }
 
+.spaceBefore-1  { margin-left: 08% ; }
+.spaceBefore-2  { margin-left: 16% ; }
+.spaceBefore-3  { margin-left: 24% ; }
+.spaceBefore-4  { margin-left: 32% ; }
+.spaceBefore-5  { margin-left: 40% ; }
+.spaceBefore-6  { margin-left: 48% ; }
+.spaceBefore-7  { margin-left: 56% ; }
+.spaceBefore-8  { margin-left: 64% ; }
+.spaceBefore-9  { margin-left: 72% ; }
+.spaceBefore-10 { margin-left: 80% ; }
+.spaceBefore-11 { margin-left: 88% ; }
+.spaceBefore-12 { margin-left: 100%; }
+
+.spaceAfter-1  { margin-right: 08% ; }
+.spaceAfter-2  { margin-right: 16% ; }
+.spaceAfter-3  { margin-right: 24% ; }
+.spaceAfter-4  { margin-right: 32% ; }
+.spaceAfter-5  { margin-right: 40% ; }
+.spaceAfter-6  { margin-right: 48% ; }
+.spaceAfter-7  { margin-right: 56% ; }
+.spaceAfter-8  { margin-right: 64% ; }
+.spaceAfter-9  { margin-right: 72% ; }
+.spaceAfter-10 { margin-right: 80% ; }
+.spaceAfter-11 { margin-right: 88% ; }
+.spaceAfter-12 { margin-right: 100%; }
 
 } /* END @media (max-width: 1200px) */
 
@@ -174,6 +233,31 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
   .col60, .col66, .col70, .col75 { width: 100%; float: none; }
 
   .col { overflow: visible; display: block; }
+
+  .spaceBefore-1,
+  .spaceBefore-2,
+  .spaceBefore-3,
+  .spaceBefore-4,
+  .spaceBefore-5,
+  .spaceBefore-6,
+  .spaceBefore-7,
+  .spaceBefore-8,
+  .spaceBefore-9,
+  .spaceBefore-10,
+  .spaceBefore-11,
+  .spaceBefore-12,
+  .spaceAfter-1,
+  .spaceAfter-2,
+  .spaceAfter-3,
+  .spaceAfter-4,
+  .spaceAfter-5,
+  .spaceAfter-6,
+  .spaceAfter-7,
+  .spaceAfter-8,
+  .spaceAfter-9,
+  .spaceAfter-10,
+  .spaceAfter-11,
+  .spaceAfter-12 { margin-left:0; margin-right:0; }
 
   .rulerLeft, .rulerRight  { border-left: 0; border-right: 0;}
 
