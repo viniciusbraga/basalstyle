@@ -184,31 +184,31 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
 .col-11 { max-width: 99.000em; width: 88%  }
 .col-12 { max-width: 108.00em; width: 100% }
 
-.spaceBefore-1  { margin-left: 08% ; }
-.spaceBefore-2  { margin-left: 16% ; }
-.spaceBefore-3  { margin-left: 24% ; }
-.spaceBefore-4  { margin-left: 32% ; }
-.spaceBefore-5  { margin-left: 40% ; }
-.spaceBefore-6  { margin-left: 48% ; }
-.spaceBefore-7  { margin-left: 56% ; }
-.spaceBefore-8  { margin-left: 64% ; }
-.spaceBefore-9  { margin-left: 72% ; }
-.spaceBefore-10 { margin-left: 80% ; }
-.spaceBefore-11 { margin-left: 88% ; }
-.spaceBefore-12 { margin-left: 100%; }
+.colBefore-1  { margin-left: 08% ; }
+.colBefore-2  { margin-left: 16% ; }
+.colBefore-3  { margin-left: 24% ; }
+.colBefore-4  { margin-left: 32% ; }
+.colBefore-5  { margin-left: 40% ; }
+.colBefore-6  { margin-left: 48% ; }
+.colBefore-7  { margin-left: 56% ; }
+.colBefore-8  { margin-left: 64% ; }
+.colBefore-9  { margin-left: 72% ; }
+.colBefore-10 { margin-left: 80% ; }
+.colBefore-11 { margin-left: 88% ; }
+.colBefore-12 { margin-left: 100%; }
 
-.spaceAfter-1  { margin-right: 08% ; }
-.spaceAfter-2  { margin-right: 16% ; }
-.spaceAfter-3  { margin-right: 24% ; }
-.spaceAfter-4  { margin-right: 32% ; }
-.spaceAfter-5  { margin-right: 40% ; }
-.spaceAfter-6  { margin-right: 48% ; }
-.spaceAfter-7  { margin-right: 56% ; }
-.spaceAfter-8  { margin-right: 64% ; }
-.spaceAfter-9  { margin-right: 72% ; }
-.spaceAfter-10 { margin-right: 80% ; }
-.spaceAfter-11 { margin-right: 88% ; }
-.spaceAfter-12 { margin-right: 100%; }
+.colAfter-1  { margin-right: 08% ; }
+.colAfter-2  { margin-right: 16% ; }
+.colAfter-3  { margin-right: 24% ; }
+.colAfter-4  { margin-right: 32% ; }
+.colAfter-5  { margin-right: 40% ; }
+.colAfter-6  { margin-right: 48% ; }
+.colAfter-7  { margin-right: 56% ; }
+.colAfter-8  { margin-right: 64% ; }
+.colAfter-9  { margin-right: 72% ; }
+.colAfter-10 { margin-right: 80% ; }
+.colAfter-11 { margin-right: 88% ; }
+.colAfter-12 { margin-right: 100%; }
 
 } /* END @media (max-width: 1200px) */
 
@@ -234,30 +234,36 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
 
   .col { overflow: visible; display: block; }
 
-  .spaceBefore-1,
-  .spaceBefore-2,
-  .spaceBefore-3,
-  .spaceBefore-4,
-  .spaceBefore-5,
-  .spaceBefore-6,
-  .spaceBefore-7,
-  .spaceBefore-8,
-  .spaceBefore-9,
-  .spaceBefore-10,
-  .spaceBefore-11,
-  .spaceBefore-12,
-  .spaceAfter-1,
-  .spaceAfter-2,
-  .spaceAfter-3,
-  .spaceAfter-4,
-  .spaceAfter-5,
-  .spaceAfter-6,
-  .spaceAfter-7,
-  .spaceAfter-8,
-  .spaceAfter-9,
-  .spaceAfter-10,
-  .spaceAfter-11,
-  .spaceAfter-12 { margin-left:0; margin-right:0; }
+  .colBefore-1,
+  .colBefore-2,
+  .colBefore-3,
+  .colBefore-4,
+  .colBefore-5,
+  .colBefore-6,
+  .colBefore-7,
+  .colBefore-8,
+  .colBefore-9,
+  .colBefore-10,
+  .colBefore-11,
+  .colBefore-12,
+  .colAfter-1,
+  .colAfter-2,
+  .colAfter-3,
+  .colAfter-4,
+  .colAfter-5,
+  .colAfter-6,
+  .colAfter-7,
+  .colAfter-8,
+  .colAfter-9,
+  .colAfter-10,
+  .colAfter-11,
+  .colAfter-12 { margin-left:0; margin-right:0; }
+
+  .leading-1,
+  .leading-2,
+  .leading-3,
+  .leading-4,
+  .leading-5 { padding-top: 2.7em; }
 
   .rulerLeft, .rulerRight  { border-left: 0; border-right: 0;}
 
