@@ -24,11 +24,11 @@ h1, h2 { letter-spacing: -0.030em; }
 
 h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dt,dd,blockquote { margin: 0; }
 
-p, li, dt, dd, th, td, caption { font-size: 1.8em; line-height: 1.5em; }
+p, li, dt, dd, th, td, caption { font-size: 1.7em; line-height: 1.5889em; }
 
 li li, li p, li h1, li h2, li h3, li h4 { font-size: 1em; }
 
-p  { padding: 0.375em 1em 1.125em; }
+p  { padding: 0.352em 1.059em 1.235em; }
 
 ul { padding: 0.6em 0 2.1em 4.2em; }
 ol { padding: 0.6em 0 2.1em 4.2em; }
