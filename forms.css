@@ -279,6 +279,13 @@ input[type="submit"]:hover {
   background-color:#FF6B4D;
 }
 
+/* Leading - Vertical Space */
+.formRow.leading-1 { padding-top: 2.70em; }
+.formRow.leading-2 { padding-top: 5.40em; }
+.formRow.leading-3 { padding-top: 8.10em; }
+.formRow.leading-4 { padding-top: 10.8em; }
+.formRow.leading-5 { padding-top: 13.5em; }
+
 @media (max-width: 800px) {
 
   .inputText-66 input,
@@ -286,6 +293,11 @@ input[type="submit"]:hover {
     width: 100%;
   }
 
+.formRow.leading-1,
+.formRow.leading-2,
+.formRow.leading-3,
+.formRow.leading-4,
+.formRow.leading-5 { padding-top: 2.7em; }
 
 } /* END @media (max-width: 800px) */
 
