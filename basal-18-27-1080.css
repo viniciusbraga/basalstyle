@@ -14,9 +14,9 @@ body {
   padding: 0;
 }
 
-h1 { font-size: 3.6em; line-height: 1.250em; padding: 0.500em 0.500em 0;min-height: 2.250em; }
-h2 { font-size: 2.8em; line-height: 1.180em; padding: 0 0.64em 0.325em; min-height: 1.930em; }
-h3 { font-size: 2.4em; line-height: 1.460em; padding: 0 0.857em 0.45em; min-height: 2.250em; }
+h1 { font-size: 3.6em; line-height: 1.250em; min-height: 2.250em; padding: 0.5em 0.47em 0;}
+h2 { font-size: 2.8em; line-height: 1.142em; min-height: 1.930em; padding: 0 0.64em 0.68em; }
+h3 { font-size: 2.4em; line-height: 1.460em; min-height: 2.250em; padding: 0 0.75em 0.45em; }
 h4 { font-size: 2.1em; line-height: 1.286em; padding: 0.24em 0.86em 1.05em; }
 h5, h6 { font-size: 1.8em; line-height: 1.5em; padding: 0.33em 1em 1.17em; }
 
@@ -28,7 +28,7 @@ p, li, dt, dd, th, td, caption { font-size: 1.7em; line-height: 1.5889em; }
 
 li li, li p, li h1, li h2, li h3, li h4 { font-size: 1em; }
 
-p  { padding: 0.352em 1.059em 1.235em; }
+p  { padding: 0.352em 1.059em 1.235em;}
 
 ul { padding: 0.6em 0 2.1em 4.2em; }
 ol { padding: 0.6em 0 2.1em 4.2em; }
@@ -167,9 +167,9 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
 .textAlignRight { text-align: right;}
 .textAlignCenter { text-align: center;}
 
-/* @media (max-width: 1024px) */
+/* @media (max-width: 1150px) */
 
-@media (max-width: 1200px) {
+@media (max-width: 1150px) {
 
 .col-1  { max-width: 09.000em; width: 08%  }
 .col-2  { max-width: 18.000em; width: 16%  }
@@ -281,16 +281,15 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
 .debug:after {
   content: "";
   background: url(images/grid-1080x27-baseline.png) repeat-y center top !important;
-  opacity: 0.0;
+  opacity: 0.4;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
   z-index: -1;
-  transition: opacity 1.5s;
+  transition: display 1.5s;
 }
-.debug:hover:after { opacity: 0.4; transition: opacity 0.5s; }
 
 label[for="debug"] {
   font-size: 14px;
