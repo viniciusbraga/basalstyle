@@ -176,6 +176,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /*
  * Columns Rulers, tricks and treats ;D
  */
+
 .rulerLeft { border-left: 1px solid #E6E6E6;}
 .rulerTop { border-top: 1px solid #E6E6E6;}
 .rulerRight { border-right: 1px solid #E6E6E6;}
@@ -239,12 +240,23 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 @media (max-width: 800px) {
 
-    h1 { font-size: 2.8em; line-height: 1.25em; padding: 0.5em 0.450em;}
-    h2 { font-size: 2.4em; line-height: 1.30em; padding: 0.5em 0.525em;}
-    h3 { font-size: 2.1em; line-height: 1.30em; padding: 0.5em 0.600em;}
-    h4 { font-size: 1.8em; line-height: 1.30em; padding: 0.5em 0.700em;}
-    h5 { font-size: 1.6em; line-height: 1.30em; padding: 0.5em 1em; }
-    h6 { font-size: 1.6em; line-height: 1.30em; padding: 0.5em 1em; }
+    h1 { font-size: 2.5em; line-height: 1.200em; padding: 0.5em 0.70em;}
+    h2 { font-size: 2.4em; line-height: 1.200em; padding: 0.5em 0.750em;}
+    h3 { font-size: 2.1em; line-height: 1.142em; padding: 0.5em 0.857em;}
+    h4 { font-size: 1.8em; line-height: 1.333em; padding: 0.5em 1.000em;}
+    h5 { font-size: 1.6em; line-height: 1.500em; padding: 0.5em 1.125em; }
+    h6 { font-size: 1.6em; line-height: 1.500em; padding: 0.5em 1.125em; }
+
+    p, li, dt, dd, th, td, caption { font-size: 1.4em; line-height: 1.714em; }
+
+    p  { padding: 0.352em 1.285em 1.235em;}
+
+    ul { padding: 0.6em 0 2.1em 4.2em; }
+    ol { padding: 0.6em 0 2.1em 4.2em; }
+
+    dl { padding: 0.6em 0 2.1em 4.2em; }
+    dt { padding: 0; font-weight: 700; }
+    dd { padding: 0; }
 
     blockquote {font-style: italic;margin: 0 0 2.7em 1em;padding: 0 3em 0 0.5em;}
 

@@ -13,7 +13,6 @@ O afastamento do texto com relação às colunas, está no "paddind" dos element
 
 h2. O que falta fazer
 
-# Aplicar uma estratégia para as imagens em tablets e celulares.
 # Acrescentar o formulário de busca no header.
 # Fazer o grid com largura máxima de 1200 e entrelinha múltiplo de 5.
 # Definir nomenclatura dos módulos principais dos templates (header, content e footer).
@@ -21,5 +20,6 @@ h2. O que falta fazer
 # Criar as regras para o header fixo.
 # Exemplos de site e aplicações.
 # Fazer versões com LESS.
+# -Aplicar uma estratégia para as imagens em tablets e celulares-.
 # -Melhorar o uso do debug-grid-
 # -Atualizar ícones para a versão mais atual do Font Awesome-.
