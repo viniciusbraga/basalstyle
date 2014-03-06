@@ -5,16 +5,18 @@
  *
  */
 
+html { font-size: 62.5%; }
+
 body {
   color: #000;
-  font-size: 62.5%;
+  font-size: 1em;
   line-height: 2.7em;
   font-family: Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 0;
 }
 
-h1 { font-size: 3.6em; line-height: 1.250em; min-height: 2.250em; padding: 0.5em 0.47em 0;}
+h1 { font-size: 3.6em; line-height: 1.250em; min-height: 2.250em; padding: 0.5em 0.47em 0 0.45em;}
 h2 { font-size: 2.8em; line-height: 1.142em; min-height: 1.930em; padding: 0 0.64em 0.68em; }
 h3 { font-size: 2.4em; line-height: 1.460em; min-height: 2.250em; padding: 0 0.75em 0.45em; }
 h4 { font-size: 2.1em; line-height: 1.286em; padding: 0.24em 0.86em 1.05em; }
@@ -40,7 +42,11 @@ dd { padding: 0; }
 table { border-collapse: collapse; width: 100%; margin: 0 0 0 1em; }
 th, caption { text-align: left; font-weight: 700; }
 
-blockquote { padding: 2.4em 4.8em; }
+blockquote {
+  margin: 0 0 2.7em 1.8em;
+  padding: 0 9em 0 0.25em;
+  border-left: 8px solid #E6E6E6;
+}
 
 em { font-style: italic; }
 small { font-size: 0.75em; line-height: 1em; }
@@ -79,11 +85,17 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 /* Leading - Vertical Space */
-.leading-1 { padding-top: 2.70em }
-.leading-2 { padding-top: 5.40em }
-.leading-3 { padding-top: 8.10em }
-.leading-4 { padding-top: 10.8em }
-.leading-5 { padding-top: 13.5em }
+.spacingBefore-1 { padding-top: 2.70em }
+.spacingBefore-2 { padding-top: 5.40em }
+.spacingBefore-3 { padding-top: 8.10em }
+.spacingBefore-4 { padding-top: 10.8em }
+.spacingBefore-5 { padding-top: 13.5em }
+
+.spacingAfter-1  { padding-bottom: 2.70em }
+.spacingAfter-2  { padding-bottom: 5.40em }
+.spacingAfter-3  { padding-bottom: 8.10em }
+.spacingAfter-4  { padding-bottom: 10.8em }
+.spacingAfter-5  { padding-bottom: 13.5em }
 
 /* Columns Structures */
 
@@ -121,33 +133,34 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
 /* Centralize collumn and nulify the float */
 .container { margin: 0 auto; float: none;}
 
-/* Column spaces before */
+/* Column am row spacing After and Before */
 
-.spaceBefore-1  { margin-left: 09.000em; }
-.spaceBefore-2  { margin-left: 18.000em; }
-.spaceBefore-3  { margin-left: 27.000em; }
-.spaceBefore-4  { margin-left: 36.000em; }
-.spaceBefore-5  { margin-left: 45.000em; }
-.spaceBefore-6  { margin-left: 54.000em; }
-.spaceBefore-7  { margin-left: 63.000em; }
-.spaceBefore-8  { margin-left: 72.000em; }
-.spaceBefore-9  { margin-left: 81.000em; }
-.spaceBefore-10 { margin-left: 90.000em; }
-.spaceBefore-11 { margin-left: 99.000em; }
-.spaceBefore-12 { margin-left: 108.00em; }
+.colBefore-1  { margin-left: 09.000em; }
+.colBefore-2  { margin-left: 18.000em; }
+.colBefore-3  { margin-left: 27.000em; }
+.colBefore-4  { margin-left: 36.000em; }
+.colBefore-5  { margin-left: 45.000em; }
+.colBefore-6  { margin-left: 54.000em; }
+.colBefore-7  { margin-left: 63.000em; }
+.colBefore-8  { margin-left: 72.000em; }
+.colBefore-9  { margin-left: 81.000em; }
+.colBefore-10 { margin-left: 90.000em; }
+.colBefore-11 { margin-left: 99.000em; }
+.colBefore-12 { margin-left: 108.00em; }
 
-.spaceAfter-1  { margin-right: 09.000em; }
-.spaceAfter-2  { margin-right: 18.000em; }
-.spaceAfter-3  { margin-right: 27.000em; }
-.spaceAfter-4  { margin-right: 36.000em; }
-.spaceAfter-5  { margin-right: 45.000em; }
-.spaceAfter-6  { margin-right: 54.000em; }
-.spaceAfter-7  { margin-right: 63.000em; }
-.spaceAfter-8  { margin-right: 72.000em; }
-.spaceAfter-9  { margin-right: 81.000em; }
-.spaceAfter-10 { margin-right: 90.000em; }
-.spaceAfter-11 { margin-right: 99.000em; }
-.spaceAfter-12 { margin-right: 108.00em; }
+.colAfter-1  { margin-right: 09.000em; }
+.colAfter-2  { margin-right: 18.000em; }
+.colAfter-3  { margin-right: 27.000em; }
+.colAfter-4  { margin-right: 36.000em; }
+.colAfter-5  { margin-right: 45.000em; }
+.colAfter-6  { margin-right: 54.000em; }
+.colAfter-7  { margin-right: 63.000em; }
+.colAfter-8  { margin-right: 72.000em; }
+.colAfter-9  { margin-right: 81.000em; }
+.colAfter-10 { margin-right: 90.000em; }
+.colAfter-11 { margin-right: 99.000em; }
+.colAfter-12 { margin-right: 108.00em; }
+
 
 /* Nicolas Gallagher's micro clearfix */
 .row { *zoom: 1; }
@@ -216,6 +229,20 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
 
 @media (max-width: 800px) {
 
+
+  h1 { font-size: 2.8em; line-height: 1.25em; padding: 0.5em 0.450em;}
+  h2 { font-size: 2.4em; line-height: 1.30em; padding: 0.5em 0.525em;}
+  h3 { font-size: 2.1em; line-height: 1.30em; padding: 0.5em 0.600em;}
+  h4 { font-size: 1.8em; line-height: 1.30em; padding: 0.5em 0.700em;}
+  h5, h6 { font-size: 1.6em; line-height: 1.3em; padding: 0.5em 1em; }
+
+  blockquote {
+    font-style: italic;
+    margin: 0 0 2.7em 1em;
+    padding: 0 3em 0 0.5em;
+    border-left: 9px solid #E6E6E6;
+  }
+
   .col-1,
   .col-2,
   .col-3,
@@ -259,11 +286,17 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
   .colAfter-11,
   .colAfter-12 { margin-left:0; margin-right:0; }
 
-  .leading-1,
-  .leading-2,
-  .leading-3,
-  .leading-4,
-  .leading-5 { padding-top: 2.7em; }
+  .spacingBefore-1,
+  .spacingBefore-2,
+  .spacingBefore-3,
+  .spacingBefore-4,
+  .spacingBefore-5 { padding-top: 1em; }
+
+  .spacingAfter-1,
+  .spacingAfter-2,
+  .spacingAfter-3,
+  .spacingAfter-4,
+  .spacingAfter-5 { padding-bottom: 1em; }
 
   .rulerLeft, .rulerRight  { border-left: 0; border-right: 0;}
 
@@ -291,15 +324,20 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
   transition: display 1.5s;
 }
 
-label[for="debug"] {
+.btnDebug {
+  color: #666666;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   vertical-align: top;
+  padding: 0 0.25em;
   position: fixed;
   top: 0;
-  right: 3px;
-  opacity: 0.4;
+  right: 0;
+  z-index: 1000;
+  opacity: 1;
+  background-color: #FFF;
+  border-radius: 0 0 6px 6px
 }
 
 /* End */
