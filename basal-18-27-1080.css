@@ -1,8 +1,7 @@
 
 /*
- *
- * Default HTML Tags
- *
+ * Etiquetas HTML
+ * obs: Não é necessário aplicar o CSS RESET com este código na página.
  */
 
 html { font-size: 62.5%; }
@@ -11,7 +10,7 @@ body {
   color: #000;
   font-size: 1em;
   line-height: 2.7em;
-  font-family: Helvetica,Arial,sans-serif;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -22,7 +21,7 @@ h3 { font-size: 2.4em; line-height: 1.460em; min-height: 2.250em; padding: 0 0.7
 h4 { font-size: 2.1em; line-height: 1.286em; padding: 0.24em 0.86em 1.05em; }
 h5, h6 { font-size: 1.8em; line-height: 1.5em; padding: 0.33em 1em 1.17em; }
 
-h1, h2 { letter-spacing: -0.030em; }
+h1, h2 { letter-spacing: -0.01em; }
 
 h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dt,dd,blockquote { margin: 0; }
 
@@ -42,11 +41,7 @@ dd { padding: 0; }
 table { border-collapse: collapse; width: 100%; margin: 0 0 0 1em; }
 th, caption { text-align: left; font-weight: 700; }
 
-blockquote {
-  margin: 0 0 2.7em 1.8em;
-  padding: 0 9em 0 0.25em;
-  border-left: 8px solid #E6E6E6;
-}
+blockquote { margin: 0 0 2.7em 1.8em; padding: 0 9em 0 0.25em; border-left: 8px solid #E6E6E6; }
 
 em { font-style: italic; }
 small { font-size: 0.75em; line-height: 1em; }
@@ -54,12 +49,7 @@ strong, b { font-weight: 700; }
 
 code { color:#C06;font-size:1.2em; }
 
-hr {
-    border-top:solid 1px #E6E6E6;
-    border-bottom:solid 1px #F5F5F5;
-    border-left:0;
-    border-right:0;
-}
+hr { border-top:solid 1px #E6E6E6; border-bottom:solid 1px #F5F5F5; border-left:0; border-right:0; }
 
 img { margin: 0 auto; vertical-align:middle; border-width:0; }
 
@@ -79,26 +69,15 @@ a:visited { color: #0099CC; }
 a:hover   { color: #33CCFF; }
 a:active  { color: #FF9900; }
 
-article, aside, details, figcaption, figure, footer, header, menu, nav, section { display:block; margin:0; padding:0; }
+header, menu, nav, article, section, aside, details, figcaption, figure, footer { display:block; margin:0; padding:0; }
 
-/* apply a natural box layout model to all elements. Look, IE was right, huh? */
+/* Aplica o modelo de caixa semelhante ao do IE */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/* Leading - Vertical Space */
-.spacingBefore-1 { padding-top: 2.70em }
-.spacingBefore-2 { padding-top: 5.40em }
-.spacingBefore-3 { padding-top: 8.10em }
-.spacingBefore-4 { padding-top: 10.8em }
-.spacingBefore-5 { padding-top: 13.5em }
 
-.spacingAfter-1  { padding-bottom: 2.70em }
-.spacingAfter-2  { padding-bottom: 5.40em }
-.spacingAfter-3  { padding-bottom: 8.10em }
-.spacingAfter-4  { padding-bottom: 10.8em }
-.spacingAfter-5  { padding-bottom: 13.5em }
-
-/* Columns Structures */
-
+/*
+ * Estruturas de Colunas fixas
+ */
 .col-1  { max-width: 09.000em; }
 .col-2  { max-width: 18.000em; }
 .col-3  { max-width: 27.000em; }
@@ -115,7 +94,7 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
 .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: left; width: 100%; }
 
-/* Columns Flex */
+/* Colunas usando porcentagem */
 .col25 { width: 25.0%; }
 .col30 { width: 30.0%; }
 .col33 { width: 33.0%; }
@@ -127,39 +106,65 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
 .col75 { width: 75.0%; }
 
 .col25, .col30, .col33, .col40, .col50, .col60, .col66, .col70, .col75  { float: left;}
-
 .col { overflow: hidden; }
 
-/* Centralize collumn and nulify the float */
+
+/*
+ * Anula o float e centraliza o <div> da coluna.
+ */
 .container { margin: 0 auto; float: none;}
 
-/* Column am row spacing After and Before */
 
-.colBefore-1  { margin-left: 09.000em; }
-.colBefore-2  { margin-left: 18.000em; }
-.colBefore-3  { margin-left: 27.000em; }
-.colBefore-4  { margin-left: 36.000em; }
-.colBefore-5  { margin-left: 45.000em; }
-.colBefore-6  { margin-left: 54.000em; }
-.colBefore-7  { margin-left: 63.000em; }
-.colBefore-8  { margin-left: 72.000em; }
-.colBefore-9  { margin-left: 81.000em; }
-.colBefore-10 { margin-left: 90.000em; }
-.colBefore-11 { margin-left: 99.000em; }
-.colBefore-12 { margin-left: 108.00em; }
+/*
+ * Leading
+ * Aplica o espaço de entrelinha correspondente no padding da caixa
+ * Deve ser aplicado em caixas (<div>,<header>,<section>,<articles>)
+ * que herdam o font-size do <body>
+ */
 
-.colAfter-1  { margin-right: 09.000em; }
-.colAfter-2  { margin-right: 18.000em; }
-.colAfter-3  { margin-right: 27.000em; }
-.colAfter-4  { margin-right: 36.000em; }
-.colAfter-5  { margin-right: 45.000em; }
-.colAfter-6  { margin-right: 54.000em; }
-.colAfter-7  { margin-right: 63.000em; }
-.colAfter-8  { margin-right: 72.000em; }
-.colAfter-9  { margin-right: 81.000em; }
-.colAfter-10 { margin-right: 90.000em; }
-.colAfter-11 { margin-right: 99.000em; }
-.colAfter-12 { margin-right: 108.00em; }
+.leadingTop-1 { padding-top: 2.70em }
+.leadingTop-2 { padding-top: 5.40em }
+.leadingTop-3 { padding-top: 8.10em }
+.leadingTop-4 { padding-top: 10.8em }
+.leadingTop-5 { padding-top: 13.5em }
+
+.leadingBottom-1  { padding-bottom: 2.70em }
+.leadingBottom-2  { padding-bottom: 5.40em }
+.leadingBottom-3  { padding-bottom: 8.10em }
+.leadingBottom-4  { padding-bottom: 10.8em }
+.leadingBottom-5  { padding-bottom: 13.5em }
+
+
+/*
+ * Aplica um espaço, em tamanho de coluna correspondente,
+ * ao lado esquerdo (colLeft) e ao lado direito (colRight)
+ */
+
+.colLeft-1  { margin-left: 09.000em; }
+.colLeft-2  { margin-left: 18.000em; }
+.colLeft-3  { margin-left: 27.000em; }
+.colLeft-4  { margin-left: 36.000em; }
+.colLeft-5  { margin-left: 45.000em; }
+.colLeft-6  { margin-left: 54.000em; }
+.colLeft-7  { margin-left: 63.000em; }
+.colLeft-8  { margin-left: 72.000em; }
+.colLeft-9  { margin-left: 81.000em; }
+.colLeft-10 { margin-left: 90.000em; }
+.colLeft-11 { margin-left: 99.000em; }
+.colLeft-12 { margin-left: 108.00em; }
+
+.colRight-1  { margin-right: 09.000em; }
+.colRight-2  { margin-right: 18.000em; }
+.colRight-3  { margin-right: 27.000em; }
+.colRight-4  { margin-right: 36.000em; }
+.colRight-5  { margin-right: 45.000em; }
+.colRight-6  { margin-right: 54.000em; }
+.colRight-7  { margin-right: 63.000em; }
+.colRight-8  { margin-right: 72.000em; }
+.colRight-9  { margin-right: 81.000em; }
+.colRight-10 { margin-right: 90.000em; }
+.colRight-11 { margin-right: 99.000em; }
+.colRight-12 { margin-right: 108.00em; }
 
 
 /* Nicolas Gallagher's micro clearfix */
@@ -167,7 +172,10 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
 .row:before, .row:after { content: " "; display: table; }
 .row:after { clear: both; }
 
-/* Columns Rulers, tricks and treats ;D */
+
+/*
+ * Columns Rulers, tricks and treats ;D
+ */
 .rulerLeft { border-left: 1px solid #E6E6E6;}
 .rulerTop { border-top: 1px solid #E6E6E6;}
 .rulerRight { border-right: 1px solid #E6E6E6;}
@@ -180,132 +188,110 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
 .textAlignRight { text-align: right;}
 .textAlignCenter { text-align: center;}
 
+
 /* @media (max-width: 1150px) */
 
 @media (max-width: 1150px) {
 
-.col-1  { max-width: 09.000em; width: 08%  }
-.col-2  { max-width: 18.000em; width: 16%  }
-.col-3  { max-width: 27.000em; width: 24%  }
-.col-4  { max-width: 36.000em; width: 32%  }
-.col-5  { max-width: 45.000em; width: 40%  }
-.col-6  { max-width: 54.000em; width: 48%  }
-.col-7  { max-width: 63.000em; width: 56%  }
-.col-8  { max-width: 72.000em; width: 64%  }
-.col-9  { max-width: 81.000em; width: 72%  }
-.col-10 { max-width: 90.000em; width: 80%  }
-.col-11 { max-width: 99.000em; width: 88%  }
-.col-12 { max-width: 108.00em; width: 100% }
+    .col-1  { max-width: 09.000em; width: 08%  }
+    .col-2  { max-width: 18.000em; width: 16%  }
+    .col-3  { max-width: 27.000em; width: 24%  }
+    .col-4  { max-width: 36.000em; width: 32%  }
+    .col-5  { max-width: 45.000em; width: 40%  }
+    .col-6  { max-width: 54.000em; width: 48%  }
+    .col-7  { max-width: 63.000em; width: 56%  }
+    .col-8  { max-width: 72.000em; width: 64%  }
+    .col-9  { max-width: 81.000em; width: 72%  }
+    .col-10 { max-width: 90.000em; width: 80%  }
+    .col-11 { max-width: 99.000em; width: 88%  }
+    .col-12 { max-width: 108.00em; width: 100% }
 
-.colBefore-1  { margin-left: 08% ; }
-.colBefore-2  { margin-left: 16% ; }
-.colBefore-3  { margin-left: 24% ; }
-.colBefore-4  { margin-left: 32% ; }
-.colBefore-5  { margin-left: 40% ; }
-.colBefore-6  { margin-left: 48% ; }
-.colBefore-7  { margin-left: 56% ; }
-.colBefore-8  { margin-left: 64% ; }
-.colBefore-9  { margin-left: 72% ; }
-.colBefore-10 { margin-left: 80% ; }
-.colBefore-11 { margin-left: 88% ; }
-.colBefore-12 { margin-left: 100%; }
+    .colLeft-1  { margin-left: 08% ; }
+    .colLeft-2  { margin-left: 16% ; }
+    .colLeft-3  { margin-left: 24% ; }
+    .colLeft-4  { margin-left: 32% ; }
+    .colLeft-5  { margin-left: 40% ; }
+    .colLeft-6  { margin-left: 48% ; }
+    .colLeft-7  { margin-left: 56% ; }
+    .colLeft-8  { margin-left: 64% ; }
+    .colLeft-9  { margin-left: 72% ; }
+    .colLeft-10 { margin-left: 80% ; }
+    .colLeft-11 { margin-left: 88% ; }
+    .colLeft-12 { margin-left: 100%; }
 
-.colAfter-1  { margin-right: 08% ; }
-.colAfter-2  { margin-right: 16% ; }
-.colAfter-3  { margin-right: 24% ; }
-.colAfter-4  { margin-right: 32% ; }
-.colAfter-5  { margin-right: 40% ; }
-.colAfter-6  { margin-right: 48% ; }
-.colAfter-7  { margin-right: 56% ; }
-.colAfter-8  { margin-right: 64% ; }
-.colAfter-9  { margin-right: 72% ; }
-.colAfter-10 { margin-right: 80% ; }
-.colAfter-11 { margin-right: 88% ; }
-.colAfter-12 { margin-right: 100%; }
+    .colRight-1  { margin-right: 08% ; }
+    .colRight-2  { margin-right: 16% ; }
+    .colRight-3  { margin-right: 24% ; }
+    .colRight-4  { margin-right: 32% ; }
+    .colRight-5  { margin-right: 40% ; }
+    .colRight-6  { margin-right: 48% ; }
+    .colRight-7  { margin-right: 56% ; }
+    .colRight-8  { margin-right: 64% ; }
+    .colRight-9  { margin-right: 72% ; }
+    .colRight-10 { margin-right: 80% ; }
+    .colRight-11 { margin-right: 88% ; }
+    .colRight-12 { margin-right: 100%; }
 
-} /* END @media (max-width: 1200px) */
+} /* Fim @media (max-width: 1200px) */
+
 
 /* @media (max-width: 800px) */
 
 @media (max-width: 800px) {
 
+    h1 { font-size: 2.8em; line-height: 1.25em; padding: 0.5em 0.450em;}
+    h2 { font-size: 2.4em; line-height: 1.30em; padding: 0.5em 0.525em;}
+    h3 { font-size: 2.1em; line-height: 1.30em; padding: 0.5em 0.600em;}
+    h4 { font-size: 1.8em; line-height: 1.30em; padding: 0.5em 0.700em;}
+    h5 { font-size: 1.6em; line-height: 1.30em; padding: 0.5em 1em; }
+    h6 { font-size: 1.6em; line-height: 1.30em; padding: 0.5em 1em; }
 
-  h1 { font-size: 2.8em; line-height: 1.25em; padding: 0.5em 0.450em;}
-  h2 { font-size: 2.4em; line-height: 1.30em; padding: 0.5em 0.525em;}
-  h3 { font-size: 2.1em; line-height: 1.30em; padding: 0.5em 0.600em;}
-  h4 { font-size: 1.8em; line-height: 1.30em; padding: 0.5em 0.700em;}
-  h5, h6 { font-size: 1.6em; line-height: 1.3em; padding: 0.5em 1em; }
+    blockquote {font-style: italic;margin: 0 0 2.7em 1em;padding: 0 3em 0 0.5em;}
 
-  blockquote {
-    font-style: italic;
-    margin: 0 0 2.7em 1em;
-    padding: 0 3em 0 0.5em;
-    border-left: 9px solid #E6E6E6;
-  }
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+    .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { width: 100%; float: none; max-width: none; }
 
-  .col-1,
-  .col-2,
-  .col-3,
-  .col-4,
-  .col-5,
-  .col-6,
-  .col-7,
-  .col-8,
-  .col-9,
-  .col-10,
-  .col-11,
-  .col-12 { width: 100%; float: none; max-width: none; }
+    .col25, .col30, .col33, .col40, .col50,
+    .col60, .col66, .col70, .col75 { width: 100%; float: none; }
 
-  .col25, .col30, .col33, .col40, .col50,
-  .col60, .col66, .col70, .col75 { width: 100%; float: none; }
+    .col { overflow: visible; display: block; }
 
-  .col { overflow: visible; display: block; }
+    .colLeft-1,  .colLeft-2,  .colLeft-3,  .colLeft-4,   .colLeft-5,  .colLeft-6,
+    .colLeft-7,  .colLeft-8,  .colLeft-9,  .colLeft-10,  .colLeft-11,
+    .colLeft-12,
+    .colRight-1, .colRight-2, .colRight-3, .colRight-4,  .colRight-5, .colRight-6,
+    .colRight-7, .colRight-8, .colRight-9, .colRight-10, .colRight-11,
+    .colRight-12 { margin-left:0; margin-right:0; }
 
-  .colBefore-1,
-  .colBefore-2,
-  .colBefore-3,
-  .colBefore-4,
-  .colBefore-5,
-  .colBefore-6,
-  .colBefore-7,
-  .colBefore-8,
-  .colBefore-9,
-  .colBefore-10,
-  .colBefore-11,
-  .colBefore-12,
-  .colAfter-1,
-  .colAfter-2,
-  .colAfter-3,
-  .colAfter-4,
-  .colAfter-5,
-  .colAfter-6,
-  .colAfter-7,
-  .colAfter-8,
-  .colAfter-9,
-  .colAfter-10,
-  .colAfter-11,
-  .colAfter-12 { margin-left:0; margin-right:0; }
+    .leadingTop-1,
+    .leadingTop-2,
+    .leadingTop-3,
+    .leadingTop-4,
+    .leadingTop-5 { padding-top: 1em; }
 
-  .spacingBefore-1,
-  .spacingBefore-2,
-  .spacingBefore-3,
-  .spacingBefore-4,
-  .spacingBefore-5 { padding-top: 1em; }
+    .leadingBottom-1,
+    .leadingBottom-2,
+    .leadingBottom-3,
+    .leadingBottom-4,
+    .leadingBottom-5 { padding-bottom: 1em; }
 
-  .spacingAfter-1,
-  .spacingAfter-2,
-  .spacingAfter-3,
-  .spacingAfter-4,
-  .spacingAfter-5 { padding-bottom: 1em; }
+    .rulerLeft, .rulerRight  { border-left: 0; border-right: 0;}
 
-  .rulerLeft, .rulerRight  { border-left: 0; border-right: 0;}
+    .floatLeft, .floatRight { float: none;}
 
-  .floatLeft, .floatRight { float: none;}
-
-} /* END @media (max-width: 800px) */
+} /* Fim @media (max-width: 800px) */
 
 
-/* Debug Grid */
+/*
+ * Grid de DEBUG de alinhamento
+ *
+ * Uso: Basta aplicar na página/template o <label> abaixo.
+ *      Certifique-se que a imagem com o grid esteja disponível.
+ *
+ * <label class="btnDebug" for="debug"> Grid <input type="checkbox" id="debug" onclick='var e=document.getElementsByTagName("body")[0],c="debug",re=new RegExp("(?:^|\\s)"+c+"(?!\\S)","g");if(e.className.match(re)){e.className=e.className.replace(re,"");}else{e.className=c;}'></label>
+ *
+ *
+ */
 
 .debug {
   display: block;
@@ -340,4 +326,4 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section 
   border-radius: 0 0 6px 6px
 }
 
-/* End */
+/* Fim */

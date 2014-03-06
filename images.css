@@ -1,5 +1,16 @@
-
-/* Images */
+/*
+ * Imagens
+ *
+ * Exemplo de aplicação:
+ * <span class="img img-col-4 frame-h-27x8">
+ *   <img src="nome_da_image.png" height="530" width="800">
+ * </span>
+ * Onde img-col-(número de coluna) especifica a largura máxima
+ * da caixa da imagem. Contudo, a imagem ficará menor,
+ * porque a regra CSS desconta os espaços laterais (padding)
+ * para o alinhamento com o texto.
+ *
+ */
 
 .img-col-1  { max-width: 09.000em; min-height: 8.1em;  }
 .img-col-2  { max-width: 18.000em; min-height: 13.5em; }
@@ -18,7 +29,7 @@
 .img-col-7,.img-col-8,.img-col-9,.img-col-10,.img-col-11,.img-col-12
 {
     width: 100%;
-    margin:0 auto;
+    margin:0 auto 0 auto;
     padding: 0 1.8em;
 }
 
@@ -28,7 +39,28 @@
 
 .img img { width: 100%; height: auto; }
 
+.imgLeft { margin:0 auto 0 0; }
+
+.imgRight { margin:0 0 0 auto; }
+
+
+/*
+ * img-align-text
+ * A imagem fica alinhada com a altura
+ * da letra capitular (cap height) do texto.
+ */
+
 .img-align-text { margin-top: 1.4em; margin-bottom: 1.3em }
+
+
+/*
+ * frame-h-(número de entrelinha)
+ * Tem momentos que você precisa forçar a altura da caixa da imagem.
+ * Esta classe especifica um tamanho limite, fazendo o recorte (crop) necessário.
+ * Ex: Preciso de uma caixa de imagem com no máximo 3 linhas,
+ *     basta usar a classe frame-h-27x3, tipo:
+ *     <span class="img img-col-4 frame-h-27x3">
+ */
 
 .frame-h-27x3   { height: 8.10em; min-height: 1em; overflow: hidden; }
 .frame-h-27x4   { height: 10.8em; min-height: 1em; overflow: hidden; }
@@ -46,7 +78,6 @@
 .frame-h-27x27  { height: 72.9em; min-height: 1em; overflow: hidden; }
 
 
-
 /* @media (max-width: 1150px) */
 
 @media (max-width: 1150px) {
@@ -58,6 +89,6 @@
         padding: 1.6em 1.8em
     }
 
-
 }
 
+/* Fim */
