@@ -1,0 +1,63 @@
+
+/* Images */
+
+.img-col-1  { max-width: 09.000em; min-height: 8.1em;  }
+.img-col-2  { max-width: 18.000em; min-height: 13.5em; }
+.img-col-3  { max-width: 27.000em; min-height: 16.2em; }
+.img-col-4  { max-width: 36.000em; min-height: 24.3em; }
+.img-col-5  { max-width: 45.000em; min-height: 29.7em; }
+.img-col-6  { max-width: 54.000em; min-height: 37.8em; }
+.img-col-7  { max-width: 63.000em; min-height: 40.5em; }
+.img-col-8  { max-width: 72.000em; min-height: 45.9em; }
+.img-col-9  { max-width: 81.000em; min-height: 54.0em; }
+.img-col-10 { max-width: 90.000em; min-height: 59.4em; }
+.img-col-11 { max-width: 99.000em; min-height: 64.8em; }
+.img-col-12 { max-width: 108.00em; min-height: 72.9em; }
+
+.img-col-1,.img-col-2,.img-col-3,.img-col-4,.img-col-5,.img-col-6,
+.img-col-7,.img-col-8,.img-col-9,.img-col-10,.img-col-11,.img-col-12
+{
+    width: 100%;
+    margin:0 auto;
+    padding: 0 1.8em;
+}
+
+.img { display: block; position: relative; }
+
+.img:after { content: ""; top:0; left:0; bottom:0; right:0; position:absolute;z-index:-1; }
+
+.img img { width: 100%; height: auto; }
+
+.img-align-text { margin-top: 1.4em; margin-bottom: 1.3em }
+
+.frame-h-27x3   { height: 8.10em; min-height: 1em; overflow: hidden; }
+.frame-h-27x4   { height: 10.8em; min-height: 1em; overflow: hidden; }
+.frame-h-27x5   { height: 13.5em; min-height: 1em; overflow: hidden; }
+.frame-h-27x6   { height: 16.2em; min-height: 1em; overflow: hidden; }
+.frame-h-27x8   { height: 21.6em; min-height: 1em; overflow: hidden; }
+.frame-h-27x9   { height: 24.3em; min-height: 1em; overflow: hidden; }
+.frame-h-27x11  { height: 29.7em; min-height: 1em; overflow: hidden; }
+.frame-h-27x14  { height: 37.8em; min-height: 1em; overflow: hidden; }
+.frame-h-27x15  { height: 40.5em; min-height: 1em; overflow: hidden; }
+.frame-h-27x18  { height: 48.6em; min-height: 1em; overflow: hidden; }
+.frame-h-27x20  { height: 54.0em; min-height: 1em; overflow: hidden; }
+.frame-h-27x22  { height: 59.4em; min-height: 1em; overflow: hidden; }
+.frame-h-27x24  { height: 64.8em; min-height: 1em; overflow: hidden; }
+.frame-h-27x27  { height: 72.9em; min-height: 1em; overflow: hidden; }
+
+
+
+/* @media (max-width: 1150px) */
+
+@media (max-width: 1150px) {
+
+    .img-col-1,.img-col-2,.img-col-3,.img-col-4,.img-col-5,.img-col-6,
+    .img-col-7,.img-col-8,.img-col-9,.img-col-10,.img-col-11,.img-col-12
+    {
+        min-height: 1em;
+        padding: 1.6em 1.8em
+    }
+
+
+}
+
