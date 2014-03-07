@@ -1,0 +1,322 @@
+/* Formulários  */
+
+.formRow {
+  margin: 0;
+  padding: 0 18px;
+  list-style: none;
+  min-height: 81px;
+}
+
+.formRow p {
+  margin: 0;
+  padding: 0;
+}
+
+.formRow a { text-decoration: none; }
+
+.formRow label,
+.formRow legend {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 27px;
+  padding: 0;
+  margin: 0;
+}
+
+.formRow textarea {
+  font-family:inherit;
+  font-size:1.5em;
+  margin:0;
+  padding:0.75em 0.5em 0.5em 0.75em;
+  width: 100%;
+  border: 1px solid #cdcdcd;
+}
+
+.labelBlock label,
+.formRow legend {
+  display: block;
+}
+
+.inputText input {
+  font-size: 2.0em;
+  font-family: inherit;
+  line-height: 1.4em;
+  letter-spacing: 0.03em;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0.35em;
+  width: 100%;
+  min-height: 10px;
+  display: block;
+  border: none;
+  border-left: 6px solid #D9D3CE;
+  border-radius: 0 3px 3px 0 ;
+  background-color: #F5F5F5;
+  outline:none;
+}
+
+.inputText input:focus,
+.inputText textarea:focus {
+  border-left: 6px solid #33CC33;
+  -webkit-box-shadow: inset 0 2px 10px #E6E6E6;
+  -moz-box-shadow: inset 0 2px 10px #E6E6E6;
+  box-shadow: inset 0 2px 10px #E6E6E6;
+  background-color: #F5F5F5;
+}
+
+.inputText-66 input {
+  width: 66%;
+}
+
+.inputText-33 input {
+  width: 33%;
+}
+
+.inputRadio fieldset {
+  padding: 0;
+  border: none;
+}
+
+.inputRadio ul,
+.inputRadio li,
+.inputRadio dl,
+.inputRadio dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.inputRadio label {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.inputRadio input {
+  display: inline-block;
+  margin-right: 0.66em
+}
+
+.selectDropdown select {
+  color: #000;
+  font-size: 1.6em;
+  line-height: 2.6em;
+  padding: 0.6em 0.3em 0.6em 0.3em;
+  min-height: 36px;
+  width: 100%;
+  border: 1px solid #B3AAA1;
+  border-left: 6px solid #D9D3CE;
+  border-radius: 0 3px 3px 0 ;
+  background-color: #EFEDEB;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.1, #ffffff), color-stop(0.9, #EFEDEB));
+  background-image: -webkit-linear-gradient(#ffffff 10%, #EFEDEB 90%);
+  background-image: -moz-linear-gradient(#ffffff 10%, #EFEDEB 90%);
+  background-image: -o-linear-gradient(#ffffff 10%, #EFEDEB 90%);
+  background-image: linear-gradient(#ffffff 10%, #EFEDEB 90%);
+  outline: none;
+}
+
+.selectDropdown select:focus {
+  border-left: 6px solid #33CC33;
+  padding: 0.6em 0.3em 0.6em 0;
+  background-color: #F5F5F5;
+  outline: none;
+}
+
+.labelInline label {
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.666em;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+
+/* Erros nos formulários */
+
+.errorlist {
+  color: red;
+}
+
+.errorlist p,
+.errorlist li,
+.errorlist dt,
+.errorlist dd {
+  font-size: 1.3em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.errorlist li + li,
+.errorlist dd + dd {
+  line-height: 1.25em;
+  margin: 0;
+  padding-bottom:0.7em;
+}
+
+.formRow .errorlist {
+  margin: 0;
+  padding: 0 0 0 1em;
+  border-left: 6px solid #F66;
+  list-style: none;
+}
+
+.formRow .errorlist + input,
+.formRow .errorlist + input + input,
+.formRow .errorlist + textarea,
+.formRow .errorlist + dl,
+.errorInput input {
+  margin: 0 0 6px;
+  padding: 4px 0 5px 5px;
+  box-shadow: none;
+  border: 1px solid #F66;
+  border-left: 6px solid #F66;
+  border-radius: 0;
+  background: #FFE4E1;
+}
+
+.formRow .errorlist + dl {
+  border: none;
+  border-left: 6px solid #F66;
+}
+
+.errorInput label{
+  color: red;
+}
+
+
+/* Mensagens e Alertas */
+
+
+/* Botões de Interface */
+
+.btnBasic,
+.btnBasic:visited,
+input[type="submit"]  {
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 2.119em;
+  vertical-align: baseline;
+  text-decoration: none;
+  text-shadow: 0.5px 0.5px 6px rgba(0,0,0,0.2);
+  margin: 0 1.125em 0 0;
+  padding: 0 2.5em;
+  display: inline-block;
+  min-height: 2.119em;
+  border: 1px solid #B3AAA1;
+  border-radius: 3px;
+  position: relative;
+  background-color: #EFEDEB;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.1, #ffffff), color-stop(0.9, #EFEDEB));
+  background-image: -webkit-linear-gradient(#ffffff 10%, #EFEDEB 90%);
+  background-image: -moz-linear-gradient(#ffffff 10%, #EFEDEB 90%);
+  background-image: -o-linear-gradient(#ffffff 10%, #EFEDEB 90%);
+  background-image: linear-gradient(#ffffff 10%, #EFEDEB 90%);
+}
+
+.btnBasic:hover,
+.btnBasic:focus,
+input[type="submit"]:hover {
+  color: #000;
+  background-color: #E6E4E2;
+  background-image: -webkit-gradient(linear, 0 100%, 0 0, color-stop(0.6, #E6E4E2), to(#FFFFFF));
+  background-image: -webkit-linear-gradient(bottom, #E6E4E2 60%, #FFFFFF);
+  background-image: -moz-linear-gradient(bottom, #E6E4E2 60%, #FFFFFF);
+  background-image: -o-linear-gradient(bottom, #E6E4E2 60%, #FFFFFF);
+  background-image: linear-gradient(bottom,#E6E4E2 60%, #FFFFFF);
+  outline: 0;
+  cursor: pointer;
+}
+
+/* Botões coloridos */
+
+.btnGreen,
+.btnGreen:visited {
+  color: #FFFFFF;
+  border: 1px solid #339933;
+  background-image: none;
+  background-color:#339933;
+}
+
+.btnGreen:hover {
+  color: #000;
+  text-shadow: none;
+  background-image: none;
+  background-color: #33cc33;
+}
+
+.btnBlue,
+.btnBlue:visited {
+  color: #FFFFFF;
+  border: 1px solid #39F;
+  background-image: none;
+  background-color:#3399FF;
+}
+
+.btnBlue:hover {
+  color: #000;
+  text-shadow: none;
+  background-image: none;
+  background-color: #66b3ff;
+}
+
+.btnRed,
+.btnRed:visited {
+  color: #FFFFFF;
+  border: 1px solid #FF0000;
+  background-image: none;
+  background-color:#FF2b00;
+}
+
+.btnRed:hover {
+  color: #000;
+  text-shadow: none;
+  background-image: none;
+  background-color:#FF6B4D;
+}
+
+/*
+ * Leading
+ * Aplica o espaço de entrelinha
+ * no padding-top ou padding-bottom da caixa.
+ * Nesta versão abaixo, a entrelinha base é de 2.7em
+ */
+
+.formRow.leadingTop-1 { padding-top: 27px  }
+.formRow.leadingTop-2 { padding-top: 54px  }
+.formRow.leadingTop-3 { padding-top: 81px  }
+.formRow.leadingTop-4 { padding-top: 108px }
+.formRow.leadingTop-5 { padding-top: 135px }
+
+.formRow.leadingBottom-1  { padding-bottom: 27px  }
+.formRow.leadingBottom-2  { padding-bottom: 54px  }
+.formRow.leadingBottom-3  { padding-bottom: 81px  }
+.formRow.leadingBottom-4  { padding-bottom: 108px }
+.formRow.leadingBottom-5  { padding-bottom: 135px }
+
+@media (max-width: 800px) {
+
+  .inputText-66 input,
+  .inputText-33 input {
+    width: 100%;
+  }
+
+  .formRow.leadingTop-1,
+  .formRow.leadingTop-2,
+  .formRow.leadingTop-3,
+  .formRow.leadingTop-4,
+  .formRow.leadingTop-5 { padding-top: 2.7em; }
+
+  .formRow.leadingBottom-1,
+  .formRow.leadingBottom-2,
+  .formRow.leadingBottom-3,
+  .formRow.leadingBottom-4,
+  .formRow.leadingBottom-5 { padding-bottom: 2.7em; }
+
+} /* Fim @media (max-width: 800px) */
+
+/* Fim */

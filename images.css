@@ -1,0 +1,96 @@
+/*
+ * Imagens
+ *
+ * Exemplo de aplicação:
+ * <span class="img img-col-4 frame-h-27x8">
+ *   <img src="nome_da_image.png" height="530" width="800">
+ * </span>
+ * Onde img-col-(número de coluna) especifica a largura máxima
+ * da caixa da imagem. Contudo, a imagem ficará menor,
+ * porque a regra CSS desconta os espaços laterais (padding)
+ * para o alinhamento com o texto.
+ *
+ */
+
+.img-col-1  { max-width: 09.000em; min-height: 81px;  }
+.img-col-2  { max-width: 18.000em; min-height: 135px; }
+.img-col-3  { max-width: 27.000em; min-height: 162px; }
+.img-col-4  { max-width: 36.000em; min-height: 243px; }
+.img-col-5  { max-width: 45.000em; min-height: 297px; }
+.img-col-6  { max-width: 54.000em; min-height: 378px; }
+.img-col-7  { max-width: 63.000em; min-height: 405px; }
+.img-col-8  { max-width: 72.000em; min-height: 459px; }
+.img-col-9  { max-width: 81.000em; min-height: 540px; }
+.img-col-10 { max-width: 90.000em; min-height: 594px; }
+.img-col-11 { max-width: 99.000em; min-height: 648px; }
+.img-col-12 { max-width: 108.00em; min-height: 729px; }
+
+.img-col-1,.img-col-2,.img-col-3,.img-col-4,.img-col-5,.img-col-6,
+.img-col-7,.img-col-8,.img-col-9,.img-col-10,.img-col-11,.img-col-12
+{
+    width: 100%;
+    margin:0 auto 0 auto;
+    padding: 0 18px;
+}
+
+.img { display: block; position: relative; }
+
+.img:after { content: ""; top:0; left:0; bottom:0; right:0; position:absolute;z-index:-1; }
+
+.img img { width: 100%; height: auto; }
+
+.imgLeft { margin:0 auto 0 0; }
+
+.imgRight { margin:0 0 0 auto; }
+
+
+/*
+ * img-align-text
+ * A imagem fica alinhada com a altura
+ * da letra capitular (cap height) do texto.
+ */
+
+.img-align-text { margin-top: 1.4em; margin-bottom: 1.3em }
+
+
+/*
+ * frame-h-(número de entrelinha)
+ * Tem momentos que você precisa forçar a altura da caixa da imagem.
+ * Esta classe especifica um tamanho limite, fazendo o recorte (crop) necessário.
+ * Ex: Preciso de uma caixa de imagem com no máximo 3 linhas,
+ *     basta usar a classe frame-h-27x3, tipo:
+ *     <span class="img img-col-4 frame-h-27x3">
+ */
+
+.frame-h-27x3   { height: 810px; min-height: 1em; overflow: hidden; }
+.frame-h-27x4   { height: 108px; min-height: 1em; overflow: hidden; }
+.frame-h-27x5   { height: 135px; min-height: 1em; overflow: hidden; }
+.frame-h-27x6   { height: 162px; min-height: 1em; overflow: hidden; }
+.frame-h-27x8   { height: 216px; min-height: 1em; overflow: hidden; }
+.frame-h-27x9   { height: 243px; min-height: 1em; overflow: hidden; }
+.frame-h-27x11  { height: 297px; min-height: 1em; overflow: hidden; }
+.frame-h-27x14  { height: 378px; min-height: 1em; overflow: hidden; }
+.frame-h-27x15  { height: 405px; min-height: 1em; overflow: hidden; }
+.frame-h-27x18  { height: 486px; min-height: 1em; overflow: hidden; }
+.frame-h-27x20  { height: 540px; min-height: 1em; overflow: hidden; }
+.frame-h-27x22  { height: 594px; min-height: 1em; overflow: hidden; }
+.frame-h-27x24  { height: 648px; min-height: 1em; overflow: hidden; }
+.frame-h-27x27  { height: 729px; min-height: 1em; overflow: hidden; }
+
+
+/* @media (max-width: 1150px) */
+
+@media (max-width: 1150px) {
+
+    .img-col-1,.img-col-2,.img-col-3,.img-col-4,.img-col-5,.img-col-6,
+    .img-col-7,.img-col-8,.img-col-9,.img-col-10,.img-col-11,.img-col-12
+    {
+        min-height: 1em;
+        padding: 1.6em 1.8em
+    }
+
+    .img-align-text { margin-top: 0; margin-bottom: 0; }
+
+}
+
+/* Fim */
