@@ -15,21 +15,22 @@ body {
   padding: 0;
 }
 
-h1 { font-size: 3.6em; line-height: 1.250em; min-height: 2.250em; padding: 0.5em 0.47em 0 0.45em;}
-h2 { font-size: 2.8em; line-height: 1.142em; min-height: 1.930em; padding: 0 0.64em 0.68em; }
-h3 { font-size: 2.4em; line-height: 1.460em; min-height: 2.250em; padding: 0 0.75em 0.45em; }
-h4 { font-size: 2.1em; line-height: 1.286em; padding: 0.24em 0.86em 1.05em; }
-h5, h6 { font-size: 1.8em; line-height: 1.5em; padding: 0.33em 1em 1.17em; }
+h1 { font-size: 36px; line-height: 45px; min-height: 81px; padding: 9px 16px; }
+h2 { font-size: 28px; line-height: 31px; min-height: 54px; padding: 0 18px 19px; }
+h3 { font-size: 24px; line-height: 34px; min-height: 54px; padding: 0 18px 10px; }
+h4 { font-size: 21px; line-height: 27px; padding: 5px 18px 22px; }
+h5 { font-size: 18px; line-height: 27px; padding: 6px 18px 21px; }
+h6 { font-size: 18px; line-height: 27px; padding: 6px 18px 21px; }
 
 h1, h2 { letter-spacing: -0.01em; }
 
 h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dt,dd,blockquote { margin: 0; }
 
-p, li, dt, dd, th, td, caption { font-size: 1.7em; line-height: 1.5889em; }
+p, li, dt, dd, th, td, caption { font-size: 17px; line-height: 27px; }
 
 li li, li p, li h1, li h2, li h3, li h4 { font-size: 1em; }
 
-p  { padding: 0.352em 1.059em 1.235em;}
+p  { padding: 0.352em 18px 1.235em;}
 
 ul { padding: 0.6em 0 2.1em 4.2em; }
 ol { padding: 0.6em 0 2.1em 4.2em; }
@@ -122,17 +123,17 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
  * que herdam o font-size do <body>
  */
 
-.leadingTop-1 { padding-top: 2.70em }
-.leadingTop-2 { padding-top: 5.40em }
-.leadingTop-3 { padding-top: 8.10em }
-.leadingTop-4 { padding-top: 10.8em }
-.leadingTop-5 { padding-top: 13.5em }
+.leadingTop-1 { padding-top: 27px  }
+.leadingTop-2 { padding-top: 54px  }
+.leadingTop-3 { padding-top: 81px  }
+.leadingTop-4 { padding-top: 108px }
+.leadingTop-5 { padding-top: 135px }
 
-.leadingBottom-1  { padding-bottom: 2.70em }
-.leadingBottom-2  { padding-bottom: 5.40em }
-.leadingBottom-3  { padding-bottom: 8.10em }
-.leadingBottom-4  { padding-bottom: 10.8em }
-.leadingBottom-5  { padding-bottom: 13.5em }
+.leadingBottom-1  { padding-bottom: 27px  }
+.leadingBottom-2  { padding-bottom: 54px  }
+.leadingBottom-3  { padding-bottom: 81px  }
+.leadingBottom-4  { padding-bottom: 108px }
+.leadingBottom-5  { padding-bottom: 135px }
 
 
 /*
@@ -189,6 +190,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .textAlignRight { text-align: right;}
 .textAlignCenter { text-align: center;}
 
+.brbl { display: block; }
 
 /* @media (max-width: 1150px) */
 
@@ -240,12 +242,12 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 @media (max-width: 800px) {
 
-    h1 { font-size: 2.5em; line-height: 1.200em; padding: 0.5em 0.70em;}
-    h2 { font-size: 2.4em; line-height: 1.200em; padding: 0.5em 0.750em;}
-    h3 { font-size: 2.1em; line-height: 1.142em; padding: 0.5em 0.857em;}
-    h4 { font-size: 1.8em; line-height: 1.333em; padding: 0.5em 1.000em;}
-    h5 { font-size: 1.6em; line-height: 1.500em; padding: 0.5em 1.125em; }
-    h6 { font-size: 1.6em; line-height: 1.500em; padding: 0.5em 1.125em; }
+    h1 { font-size: 2.5em; line-height: 1.200em; padding: 0.5em 18px;}
+    h2 { font-size: 2.4em; line-height: 1.200em; padding: 0.5em 18px;}
+    h3 { font-size: 2.1em; line-height: 1.142em; padding: 0.5em 18px;}
+    h4 { font-size: 1.8em; line-height: 1.333em; padding: 0.5em 18px;}
+    h5 { font-size: 1.6em; line-height: 1.500em; padding: 0.5em 18px;}
+    h6 { font-size: 1.6em; line-height: 1.500em; padding: 0.5em 18px;}
 
     p, li, dt, dd, th, td, caption { font-size: 1.4em; line-height: 1.714em; }
 
@@ -292,6 +294,62 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
     .floatLeft, .floatRight { float: none;}
 
 } /* Fim @media (max-width: 800px) */
+
+
+/*
+ * Anexo com complementos de tipografia e layout
+ */
+
+/* @media (max-width: 800px) */
+
+@media (min-width: 800px) {
+
+    /*
+     * Texto em colunas estreitas (4 ou 3 colunas de largura)
+     */
+
+    .col-small-text h1,
+    .col-small-text h2 {
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.03em;
+        min-height: 1em;
+        padding: 11px 18px 0;
+    }
+
+    .col-small-text h3,
+    .col-small-text h4 {
+        font-size: 15px;
+        line-height: 18px;
+        padding: 12px 18px 0;
+        min-height: 1em;
+    }
+
+    .col-small-text h5,
+    .col-small-text h6 {
+        font-size: 13px;
+        line-height: 18px;
+        padding: 12px 18px 0;
+        min-height: 1em;
+    }
+
+    .col-small-text p,
+    .col-small-text li,
+    .col-small-text dt,
+    .col-small-text dd,
+    .col-small-text th,
+    .col-small-text td,
+    .col-small-text caption {
+        font-size: 13px;
+        line-height: 18px;
+        padding: 12px 18px 10px;
+        min-height: 1em;
+    }
+
+    .nobr { white-space: nowrap; }
+
+
+}
 
 
 /*
