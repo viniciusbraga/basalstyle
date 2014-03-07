@@ -1,21 +1,22 @@
 h1. BasalStyle
 
-Conjunto básico de CSS e HTML para prototipação rápida de Sites, WebApps e Formulários (contemplando os seus possíveis erros).
+Conjunto básico de documentos de estilo (CSS) para prototipação rápida de Sites e Formulários (contemplando os seus possíveis erros).
 
-Este conjunto de HTML e folhas de estilo se propoẽm ser uma estrutura simples para construção de "wireframes" e protótipos, sem agregar demasiado estilo gráfico, mas respeitando uma relação tipográfica de boa qualidade visual.
+Este conjunto se propõe ser uma estrutura simples para construção de "wireframes" e protótipos, sem agregar demasiado estilo gráfico, mas respeitando uma relação tipográfica de boa qualidade visual.
 
 Para entender como aplicar no documento HTML, estude o exemplo do index.html na pasta.
 
 
-h2. Sobre o grid do documento basal_18_27_1080.css
+h2. Sobre o grid do documento basal-18-27-1080.css
 
-O grid é composto de um padrão de linhas verticais de 27px de altura. Ele serve como baseline da composição do texto e dos tamanhos verticais dos blocos de imagens. No entanto, as imagens poderão variar dentro destes blocos definidos de altura e largura.
+O grid é composto de um padrão de linhas verticais de 27px de altura. Ele serve como baseline da composição do texto e da altura dos bloco principais de conteúdo.
 
 A largura máxima do grid é de 1080px, divididos em 12 colunas de 90px.
 
-O afastamento do texto com relação às colunas, é composto de 18px em cada lado. Este afastamento está aplicado no "paddind" dos elementos HTMLs, como: cabeçalhos (H1,H2,..), parágrafos e listas.
+Não existe espaço aplicado nas caixa da coluna, contudo, existe um espaço de afastamento entre o texto/imagem e os limites da coluna.
 
-Não existe espaço aplicado nas caixas das colunas, contudo, existe o espaço visual entre o texto e imagem e os limites da coluna.
+O afastamento do texto com relação às colunas, é composto de 18px em cada lado. Este afastamento está aplicado no espaço interno (paddind) dos elementos HTMLs, como: cabeçalhos (H1,H2,..), parágrafos, listas e o bloco da imagem.
+
 
 
 h2. Falta fazer
