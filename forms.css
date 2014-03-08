@@ -121,7 +121,7 @@
 .selectDropdown select:hover {
   border: 1px solid #95a5a6;
   background-color: #ecf0f1;
-  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0), inset 0px 1px rgba(255,255,255,.2);
+  box-shadow: 0 0 1px #A0B2B3, inset 0px 1px rgba(255,255,255,.2);
   transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
   outline: none;
 }
@@ -139,6 +139,7 @@
   padding: 0;
   margin: 0;
   float: left;
+
 }
 
 
@@ -212,15 +213,17 @@
 .btnBasic:visited,
 input[type="submit"]  {
   color: #FFFFFF;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
   line-height: 44px;
+  letter-spacing: 0.005em;
   min-height: 44px;
-  vertical-align: baseline;
+  vertical-align: middle;
+  text-transform: uppercase;
   text-decoration: none;
-  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(255, 255, 255, 0.3);
   margin: 0 1.125em 0 0;
-  padding: 0 2.5em;
+  padding: 0 1.6em;
   display: inline-block;
   border: 0px solid #F5F5F5;
   border-radius: 2px;
@@ -240,24 +243,48 @@ input[type="submit"]:hover {
   cursor: pointer;
 }
 
+.btnIconLeft { padding-left: 1.2em; }
+.btnIconLeft .fa { padding-right: 0.5em; }
+
+.btnIconRight { padding-right: 1.5em; }
+.btnIconRight .fa { padding-left: 0.5em; }
+
 /* Botões coloridos */
 
 .btnGreen,
-.btnGreen:visited { background-color:#1abc9c; }
-.btnGreen:hover   { background-color:#16a085; }
+.btnGreen:visited,
+input[type="submit"].btnGreen,
+input[type="submit"].btnGreen:visited  { background-color:#1abc9c; }
+
+.btnGreen:hover,
+input[type="submit"].btnGreen:hover   { background-color:#16a085; }
+
 
 .btnBlue,
-.btnBlue:visited { background-color:#3498db; }
-.btnBlue:hover   { background-color:#2980b9; }
+.btnBlue:visited,
+input[type="submit"].btnBlue,
+input[type="submit"].btnBlue:visited   { background-color:#3498db; }
+
+.btnBlue:hover,
+input[type="submit"].btnBlue:hover     { background-color:#2980b9; }
+
 
 .btnOrange,
-.btnOrange:visited { background-color:#FF9900; }
-.btnOrange:hover   { background-color:#F08000;}
+.btnOrange:visited,
+input[type="submit"].btnOrange,
+input[type="submit"].btnOrange:visited   { background-color:#FF9900; }
+
+.btnOrange:hover,
+input[type="submit"].btnOrange:hover     { background-color:#F08000;}
 
 
 .btnRed,
-.btnRed:visited { background-color:#e74c3c; }
-.btnRed:hover   { background-color:#CC3300; }
+.btnRed:visited,
+input[type="submit"].btnRed,
+input[type="submit"].btnRed:visited   { background-color:#e74c3c; }
+
+.btnRed:hover,
+input[type="submit"].btnRed:hover     { background-color:#CC3300; }
 
 /*
  * Leading

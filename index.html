@@ -209,8 +209,8 @@
 
                 <h3>Menu Horizontal</h3>
 
-                <div class="row" style="min-height:189px;">
-                    <div class="col-8">
+                <div class="row" style="min-height:135px;">
+                    <div class="col-8 textAlignCenter">
 
                         <div class="navInline">
                             <div class="navMobile"><i class="fa fa-bars"></i></div>
@@ -258,7 +258,7 @@
                 <h2 id="Buttons">Botões</h2>
 
 
-                <div style="min-height:324px">
+                <div style="min-height:432px">
 
                     <p><a href="" class="btnBasic">btnBasic</a></p>
 
@@ -266,16 +266,21 @@
                         <a href="" class="btnBasic btnGreen">btnGreen</a>
                         <a href="" class="btnBasic btnBlue">btnBlue</a>
                         <a href="" class="btnBasic btnOrange">btnOrange</a>
-                        <a href="" class="btnBasic btnRed">btnRed <i class="fa fa-chevron-right"></i></a>
+                        <a href="" class="btnBasic btnRed btnIconRight">btnRed <i class="fa fa-chevron-right"></i></a>
                     </p>
-
+                    <p>
+                        <a href="" class="btnBasic btnIconLeft"><i class="fa fa-chevron-left"></i> Página Anterior</a>
+                        <a href="" class="btnBasic btnIconRight">Próxima Página <i class="fa fa-chevron-right"></i></a>
+                    </p>
                     <form action="#" method="get" accept-charset="utf-8">
                         <div class="formRow">
                             <p>
                                 <input type="submit" value="Enviar">  ou <a href="#">Cancelar</a>
                             </p>
                         </div>
-                        <p><button type="submit" class="btnBasic">Entrar <i class="fa fa-chevron-right"></i></button></p>
+                        <p>
+                            <button type="submit" class="btnBasic btnIconRight">Entrar <i class="fa fa-chevron-right"></i></button>
+                        </p>
                     </form>
 
                 </div>
@@ -304,6 +309,9 @@
                         <label for="id_zipcode">CEP</label>
                         <input type="text" id="id_zipcode" name="zipcode">
                     </div>
+
+                    <p><input class="btnBasic btnGreen" type="submit" value="Enviar">  ou <a href="#">Cancelar</a></p>
+
 
                     <div class="row leadingTop-1">
                         <div class="col50">
@@ -335,7 +343,7 @@
                     </div>
 
                     <div class="formRow labelBlock selectDropdown leadingTop-1">
-                        <label for="id_state">Estado (UF) </label>
+                        <label for="id_state">Estado (UF)</label>
                         <select id="id_state" name="state">
                             <option value="">Escolha uma opção</option>
                             <option value="UF_AC">Acre</option>
