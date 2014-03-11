@@ -8,35 +8,38 @@
     <!-- Mais info: http://www.chromium.org/developers/how-tos/chrome-frame-getting-started -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>BasalStyle - Formulários</title>
 
     <meta name="author" content="Vinicius Braga">
+
     <meta name="description" content="Conjunto básico de CSS para prototipação rápida de Sites e Formulários.">
 
 
     <!-- Adivinha! JavaScript para fazer os IEs entenderem os novos tags HTML5. -->
-<!--[if IE]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-<!-- Carrega a folha de estilo basalStyle -->
-<link rel="stylesheet" href="basal-18-27-1080.css">
-<link rel="stylesheet" href="forms.css">
-<link rel="stylesheet" href="navmenu.css">
-<link rel="stylesheet" href="images.css">
+    <!-- Carrega a folha de estilo basalStyle -->
+    <link rel="stylesheet" href="basal-18-27-1080.css">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="navmenu.css">
+    <link rel="stylesheet" href="images.css">
 
 
-<!-- Carrega CSS Externos -->
-<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,800,700' rel='stylesheet' type='text/css'>
+    <!-- Carrega CSS Externos -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,800,700' rel='stylesheet' type='text/css'>
 
-<style>
-    body { font-family: 'Open Sans', sans-serif; }
-    hr { display: none;}
-    .headerSite .siteLogo a, .headerSite .siteLogo a:visited { color: #006699; }
-    .headerSite .siteDescription { font-size: 1.25em; text-transform: uppercase; margin: -11px 0 0; padding-left: 1.55em; }
+    <style>
+        body { font-family:'Open Sans', sans-serif; }
+        hr {display: none ;}
+        .headerSite .siteLogo a, .headerSite .siteLogo a:visited { color: #000; }
+        .headerSite .siteDescription { font-size: 1.25em; text-transform: uppercase; margin: -11px 0 0; padding-left: 1.55em; }
 
-</style>
+    </style>
 
 </head>
 <body>
@@ -49,22 +52,33 @@
                 <p class="siteDescription">CSS e HTML para prototipação rápida de Sites, WebApps e Formulários.</p>
             </div>
 
-            <nav class="headerNav navInline " role="navigation">
-                <div class="navMobile"><i class="fa fa-bars"></i></div>
-                <ul class="rightMenu">
-                    <li><a href="#Typography">Tipografia</a></li>
-                    <li><a href="#Columns">Colunas</a></li>
-                    <li class="submenu">
-                        <a href="#Forms">Formulários <i class="fa fa-caret-down"></i></a>
-                        <ul>
-                            <li><a href="#FormInput">Texto</a></li>
-                            <li><a href="#FormRadio">Radios</a></li>
-                            <li><a href="#FormPulldown">Pulldown</a></li>
-                            <li><a href="#FormError">Erros</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#Buttons">Botões</a></li>
-                </ul>
+            <div class="headerSearch">
+                <form id="search-form" method="get" action="#" role="search">
+                    <label for="search">Buscar</label>
+                    <input type="text" id="search" name="s" value="" required="required" placeholder="Escreva a palavra chave">
+                    <button type="submit" id="search-submit"><i class="fa fa-search"></i> Buscar</button>
+                </form>
+            </div>
+
+            <nav class="headerNav navInline" role="navigation">
+                <div class="navMenu">
+                    <a href="javascript:void(0);" class="navMobile"><i class="fa fa-bars"></i></a>
+                    <ul>
+                        <li><a href="#Typography">Tipografia</a></li>
+                        <li><a href="#Columns">Colunas</a></li>
+                        <li class="submenu">
+                            <a href="javascript:void(0);"><i class="fa fa-caret-down"></i> Formulários </a>
+                            <ul>
+                                <li><a href="#FormInput">Texto</a></li>
+                                <li><a href="#FormRadio">Radios</a></li>
+                                <li><a href="#FormPulldown">Pulldown</a></li>
+                                <li><a href="#FormError">Erros</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#Buttons">Botões</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0);" class="navClose"><i class="fa fa-chevron-up"></i></a>
             </nav>
 
         </header><!-- END header -->
@@ -196,77 +210,94 @@
 
             </section>
 
-            <section class="leadingTop-2">
+            <section class="leadingTop-2" style="min-height:600px;">
                 <h2>Navegação (Bloco de Links)</h2>
 
                 <h3>Menu Horizontal</h3>
 
-                <div class="row" style="min-height:189px;">
-                    <div class="col-8">
+                <div class="row" style="min-height:135px;">
+                    <div class="col-8 textAlignCenter">
 
-                        <div class="navInline">
-                            <div class="navMobile"><i class="fa fa-bars"></i></div>
-                            <ul class="rightMenu">
-                                <li><a href="#">Abertura</a></li>
-                                <li class="submenu">
-                                    <a href="#">Artigos <i class="fa fa-caret-down"></i></a>
-                                    <ul>
-                                        <li><a href="#">Notícias</a></li>
-                                        <li><a href="#">Regional</a></li>
-                                        <li><a href="#">Internacionais</a></li>
-                                    </ul>
-                                </li>
-                                <li class="current"><a href="#">Planos &amp; Preços</a></li>
-                                <li><a href="#">Fale Conosco</a></li>
-                            </ul>
-                        </div>
+                        <nav class="navInline">
+                            <div class="navMenu">
+                                <a class="navMobile" href="javascript:void(0);" ><i class="fa fa-bars"></i></a>
+                                <ul>
+                                    <li><a href="#">Abertura</a></li>
+                                    <li class="submenu current">
+                                        <a href="javascript:void(0);">Artigos <i class="fa fa-caret-down"></i></a>
+                                        <ul>
+                                            <li><a href="#">Notícias</a></li>
+                                            <li class="current"><a href="#">Regional</a></li>
+                                            <li><a href="#">Internacionais</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Planos &amp; Preços</a></li>
+                                    <li><a href="#">Fale Conosco</a></li>
+                                </ul>
+                            </div>
+                            <a class="navClose" href="javascript:void(0);" ><i class="fa fa-chevron-up"></i></a>
+                        </nav>
 
 
                         <br>
 
-                        <div class="navInline">
+<!--                         <div class="navInline">
                             <div class="navMobile"><i class="fa fa-bars"></i></div>
-                            <ul>
+                            <ul class="rightMenu">
                                 <li><a href="#">Abertura</a></li>
                                 <li class="submenu current">
                                     <a href="#">Artigos <i class="fa fa-caret-down"></i></a>
-                                    <ul>
+                                    <ul >
                                         <li><a href="#">Notícias</a></li>
                                         <li class="current"><a href="#">Regional</a></li>
-                                        <!-- <li><a href="#">Internacionais</a></li> -->
+                                        <li><a href="#">Internacionais</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">Planos &amp; Preços</a></li>
                                 <li><a href="#">Fale Conosco</a></li>
                             </ul>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
                 <!-- row -->
             </section>
 
-            <h2 id="Buttons">Botões</h2>
+            <section>
+                <h2 id="Buttons">Botões</h2>
 
-            <div class="row">
 
-                <div class="col" style="min-height:324px">
+                <div style="min-height:648px">
+                    <p>Botões com etiqueta simples de âncora.</p>
 
                     <p><a href="" class="btnBasic">btnBasic</a></p>
 
-                    <p><a href="" class="btnBasic btnGreen">btnGreen</a> <a href="" class="btnBasic btnBlue">btnBlue</a> <a href="" class="btnBasic btnRed">btnRed <i class="fa fa-chevron-right"></i></a></p>
+                    <p>
+                        <a href="" class="btnBasic btnGreen">btnGreen</a>
+                        <a href="" class="btnBasic btnBlue">btnBlue</a>
+                        <a href="" class="btnBasic btnOrange">btnOrange</a>
+                        <a href="" class="btnBasic btnRed btnIconRight">btnRed <i class="fa fa-chevron-right"></i></a>
+                    </p>
 
+                    <p>Classes específicas para compensar visualmente a posição de ícones nos botões.</p>
+                    <p>
+                        <a href="" class="btnBasic btnIconLeft"><i class="fa fa-chevron-left"></i> Página Anterior</a>
+                        <a href="" class="btnBasic btnIconRight">Próxima Página <i class="fa fa-chevron-right"></i></a>
+                    </p>
+                    <p>Exemplos com etiqueta de &lt;submit&gt; e &lt;button&gt;.</p>
                     <form action="#" method="get" accept-charset="utf-8">
                         <div class="formRow">
                             <p>
                                 <input type="submit" value="Enviar">  ou <a href="#">Cancelar</a>
                             </p>
                         </div>
-                        <p><button type="submit" class="btnBasic">Entrar <i class="fa fa-chevron-right"></i></button></p>
+                        <p>
+                            <button type="submit" class="btnBasic btnIconRight">Entrar <i class="fa fa-chevron-right"></i></button>
+                        </p>
                     </form>
 
                 </div>
-                <!-- col -->
+            </section>
 
 
             <h2 id="Forms">Formulários</h2>
@@ -291,6 +322,9 @@
                         <label for="id_zipcode">CEP</label>
                         <input type="text" id="id_zipcode" name="zipcode">
                     </div>
+
+                    <p><button type="submit" class="btnBasic btnIconRight">Entrar <i class="fa fa-chevron-right"></i></button>  ou <a href="#">Cancelar</a></p>
+
 
                     <div class="row leadingTop-1">
                         <div class="col50">
@@ -322,7 +356,7 @@
                     </div>
 
                     <div class="formRow labelBlock selectDropdown leadingTop-1">
-                        <label for="id_state">Estado (UF) </label>
+                        <label for="id_state">Estado (UF)</label>
                         <select id="id_state" name="state">
                             <option value="">Escolha uma opção</option>
                             <option value="UF_AC">Acre</option>
@@ -341,7 +375,7 @@
 
             <h2 id="FormError">Erros no Formulário</h2>
 
-            <div class="row">
+            <div class="row" style="min-height:783px">
 
                 <div class="col-6">
                     <form action="" method="" accept-charset="utf-8">
@@ -411,7 +445,7 @@
     <hr>
     <div class="footerFrame">
         <footer class="footer rulerTop col-12 container" role="banner">
-            <div class="siteID">
+            <div class="siteID leadingTop-1">
                 <p class="siteLogo"><strong>basalStyle</strong></p>
                 <p class="siteTagline">CSS e HTML para prototipação rápida de Sites, WebApps e Formulários.</p>
             </div>
