@@ -7,7 +7,7 @@
 html { font-size: 62.5%; }
 
 body {
-  color: #000;
+  color: #2E3333;
   font-size: 1em;
   line-height: 2.7em;
   font-family: sans-serif;
@@ -65,10 +65,10 @@ textarea {
   border: 1px solid  #cdcdcd;
 }
 
-a         { color: #0099CC; }
-a:visited { color: #0099CC; }
-a:hover   { color: #33CCFF; }
-a:active  { color: #FF9900; }
+a         { color: #3498DB; }
+a:visited { color: #3498DB; }
+a:hover   { color: #2980B9; }
+a:active  { color: #E74C3C; }
 
 header, menu, nav, article, section, aside, details, figcaption, figure, footer { display:block; margin:0; padding:0; }
 
@@ -178,10 +178,10 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
  * Columns Rulers, tricks and treats ;D
  */
 
-.rulerLeft { border-left: 1px solid #E6E6E6;}
-.rulerTop { border-top: 1px solid #E6E6E6;}
-.rulerRight { border-right: 1px solid #E6E6E6;}
-.rulerBottom { border-bottom: 1px solid #E6E6E6;}
+.rulerLeft { border-left: 1px solid #C5CDCD;}
+.rulerTop { border-top: 1px solid #C5CDCD;}
+.rulerRight { border-right: 1px solid #C5CDCD;}
+.rulerBottom { border-bottom: 1px solid #C5CDCD;}
 
 .floatLeft { float: left;}
 .floatRight { float: right;}
@@ -190,7 +190,14 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .textAlignRight { text-align: right;}
 .textAlignCenter { text-align: center;}
 
+/*
+ * Impõe a quebra em bloco/ brbl
+ * Permite a quebrar de textos de uma manchete ou chamada em blocos determinados.
+ * Ex.: <h1>Tipografia Moderna e Futurismo/ <b class="brbl">Ação e Perspectiva</b></h1>
+ */
+
 .brbl { display: block; }
+
 
 /* @media (max-width: 1150px) */
 
@@ -235,7 +242,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
     .colRight-11 { margin-right: 88% ; }
     .colRight-12 { margin-right: 100%; }
 
-} /* Fim @media (max-width: 1200px) */
+} /* FIM @media (max-width: 1150px) */
 
 
 /* @media (max-width: 800px) */
@@ -293,14 +300,14 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
     .floatLeft, .floatRight { float: none;}
 
-} /* Fim @media (max-width: 800px) */
+} /* FIM @media (max-width: 800px) */
 
 
 /*
  * Anexo com complementos de tipografia e layout
  */
 
-/* @media (max-width: 800px) */
+/* @media (min-width: 800px) */
 
 @media (min-width: 800px) {
 
@@ -346,11 +353,17 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
         min-height: 1em;
     }
 
+
+    /*
+     * Evita quebra de palavras de um bloco inline/ nobr
+     * Ajuda na quebrar de um conjunto de palavras em títulos em destaque
+     * Ex.: <h1>Tipografia Moderna e Futurismo/ <b class="nobr">Ação e Perspectiva</b></h1>
+     */
+
     .nobr { white-space: nowrap; }
 
 
-}
-
+} /* FIM @media (min-width: 800px) */
 
 /*
  * Grid de DEBUG de alinhamento
@@ -388,7 +401,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   vertical-align: top;
   padding: 0 0.25em;
   position: fixed;
-  top: 0;
+  bottom: 0;
   right: 0;
   z-index: 1000;
   opacity: 1;
@@ -396,4 +409,4 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   border-radius: 0 0 6px 6px
 }
 
-/* Fim */
+/* FIM */
