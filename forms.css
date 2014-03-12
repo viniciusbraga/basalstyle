@@ -148,7 +148,8 @@
 .errorlist li,
 .errorlist dt,
 .errorlist dd {
-  font-size: 1.3em;
+  font-size: 1.4em;
+  padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -162,8 +163,7 @@
 
 .formRow .errorlist {
   margin: 0;
-  padding: 0 0 0 1em;
-  border-left: 6px solid #e74c3c;
+  padding: 0 0 0 0;
   list-style: none;
 }
 
@@ -174,10 +174,8 @@
 .errorInput input {
   margin: 0 0 6px;
   padding: 4px 0 5px 5px;
-  box-shadow: none;
-  border: 1px solid #e74c3c;
+  border: none;
   border-left: 6px solid #e74c3c;
-  border-radius: 0;
   background: #FFF4F3;
 }
 
