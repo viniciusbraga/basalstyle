@@ -40,41 +40,39 @@
   display: block;
 }
 
-.inputText input {
+.inputText input[type="text"] {
   font-size: 2.0em;
   font-family: inherit;
   line-height: 1.4em;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
   vertical-align: middle;
+  white-space: pre;
   margin: 0;
   padding: 0.35em;
   width: 100%;
   min-height: 10px;
   display: block;
-  border: none;
-  border-left: 6px solid #95a5a6;
   border-radius: 0 ;
-  background-color: #F5F5F5;
-  box-shadow: inset 0 2px 10px #C2CCCC;
+  border: 1px solid #F2F5F5;
+  background-color: #F2F5F5;
   outline:none;
-  transition: background-color 0.2s ease 0s;
+  transition: background-color 1s ease 0s,border 1s ease 0s;
+}
+.inputText input[type="text"]:hover {
+  border: 1px solid #C5CDCD;
+  background-color: #C5CDCD;
+  transition: background-color 1s ease 0s,border 1s ease 0s;
+}
+.inputText input[type="text"]:focus {
+  border: 1px solid #C5CDCD;
+  background-color: #F2F5F5;
 }
 
-.inputText input:hover {
-  background-color: #ecf0f1;
-  transition: background-color 0.2s ease 0s;
-}
-
-.inputText input:focus {
-  border-left: 6px solid #16a085;
-  background-color: #ecf0f1;
-}
-
-.inputText-66 input {
+.inputText-66 input[type="text"] {
   width: 66%;
 }
 
-.inputText-33 input {
+.inputText-33 input[type="text"] {
   width: 33%;
 }
 
@@ -111,21 +109,18 @@
   padding: 0.6em 0.3em 0.6em 0.3em;
   min-height: 36px;
   width: 100%;
-  border: 1px solid #F5F5F5;
-  background-color: #F5F5F5;
-  box-shadow:0 2px 10px #A0B2B3;
+  border: 1px solid #F2F5F5;
+  background-color: #F2F5F5;
+  box-shadow:0 2px 10px #C5CDCD;
   transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
   outline: none;
 }
-
 .selectDropdown select:hover {
-  border: 1px solid #95a5a6;
-  background-color: #ecf0f1;
-  box-shadow: 0 0 1px #A0B2B3, inset 0px 1px rgba(255,255,255,.2);
-  transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
+  border: 1px solid #C5CDCD;
+  background-color: #F2F5F5;
+  box-shadow: 0 0 1px #F2F5F5, inset 0px 1px rgba(255,255,255,.2);
   outline: none;
 }
-
 .selectDropdown select:focus {
   border: 1px solid #95a5a6;
   background-color: #ecf0f1;
@@ -153,7 +148,8 @@
 .errorlist li,
 .errorlist dt,
 .errorlist dd {
-  font-size: 1.3em;
+  font-size: 1.4em;
+  padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -167,8 +163,7 @@
 
 .formRow .errorlist {
   margin: 0;
-  padding: 0 0 0 1em;
-  border-left: 6px solid #e74c3c;
+  padding: 0 0 0 0;
   list-style: none;
 }
 
@@ -179,10 +174,8 @@
 .errorInput input {
   margin: 0 0 6px;
   padding: 4px 0 5px 5px;
-  box-shadow: none;
-  border: 1px solid #e74c3c;
+  border: none;
   border-left: 6px solid #e74c3c;
-  border-radius: 0;
   background: #FFF4F3;
 }
 
@@ -212,33 +205,29 @@
 .btnBasic,
 .btnBasic:visited,
 input[type="submit"]  {
-  color: #FFFFFF;
-  font-size: 16px;
+  color: #2E3333;
+  font-size: 14px;
   font-weight: bold;
-  line-height: 44px;
-  letter-spacing: 0.005em;
-  min-height: 44px;
+  line-height: 42px;
+  min-height: 42px;
   vertical-align: middle;
   text-transform: uppercase;
   text-decoration: none;
-  text-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
   margin: 0 1.125em 0 0;
   padding: 0 1.6em;
   display: inline-block;
-  border: 0px solid #F5F5F5;
-  border-radius: 2px;
+  border:0;
+  border-radius: 3px;
   position: relative;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px rgba(255, 255, 255, 0.2) inset;
-  background-color: #C5CDCD;
-  transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
+  background-color: #C5CDCD ;
+  transition: background-color ease 0.5s;
 }
 
 .btnBasic:hover,
 .btnBasic:focus,
 input[type="submit"]:hover {
+  color: #F2F5F5;
   background-color: #95A5A5;
-  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0), inset 0px 1px rgba(255,255,255,.2);
-  transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
   outline: 0;
   cursor: pointer;
 }
@@ -254,37 +243,37 @@ input[type="submit"]:hover {
 .btnGreen,
 .btnGreen:visited,
 input[type="submit"].btnGreen,
-input[type="submit"].btnGreen:visited  { background-color:#1abc9c; }
+input[type="submit"].btnGreen:visited  { color: #FFF; background-color:#1abc9c; }
 
 .btnGreen:hover,
-input[type="submit"].btnGreen:hover   { background-color:#16a085; }
+input[type="submit"].btnGreen:hover    { color: #FFF; background-color:#16a085; }
 
 
 .btnBlue,
 .btnBlue:visited,
 input[type="submit"].btnBlue,
-input[type="submit"].btnBlue:visited   { background-color:#3498db; }
+input[type="submit"].btnBlue:visited   { color: #FFF; background-color:#3498db; }
 
 .btnBlue:hover,
-input[type="submit"].btnBlue:hover     { background-color:#2980b9; }
+input[type="submit"].btnBlue:hover     { color: #FFF; background-color:#2980b9; }
 
 
 .btnOrange,
 .btnOrange:visited,
 input[type="submit"].btnOrange,
-input[type="submit"].btnOrange:visited   { background-color:#FF9900; }
+input[type="submit"].btnOrange:visited   { color: #FFF; background-color:#FF9900; }
 
 .btnOrange:hover,
-input[type="submit"].btnOrange:hover     { background-color:#F08000;}
+input[type="submit"].btnOrange:hover     { color: #FFF; background-color:#F08000;}
 
 
 .btnRed,
 .btnRed:visited,
 input[type="submit"].btnRed,
-input[type="submit"].btnRed:visited   { background-color:#e74c3c; }
+input[type="submit"].btnRed:visited   { color: #FFF; background-color:#e74c3c; }
 
 .btnRed:hover,
-input[type="submit"].btnRed:hover     { background-color:#CC3300; }
+input[type="submit"].btnRed:hover     { color: #FFF; background-color:#CC3300; }
 
 /*
  * Leading
