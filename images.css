@@ -62,21 +62,35 @@
  *     <span class="img img-col-4 frame-h-27x3">
  */
 
-.frame-h-27x3   { height: 810px; min-height: 1em; overflow: hidden; }
-.frame-h-27x4   { height: 108px; min-height: 1em; overflow: hidden; }
-.frame-h-27x5   { height: 135px; min-height: 1em; overflow: hidden; }
-.frame-h-27x6   { height: 162px; min-height: 1em; overflow: hidden; }
-.frame-h-27x8   { height: 216px; min-height: 1em; overflow: hidden; }
-.frame-h-27x9   { height: 243px; min-height: 1em; overflow: hidden; }
-.frame-h-27x11  { height: 297px; min-height: 1em; overflow: hidden; }
-.frame-h-27x14  { height: 378px; min-height: 1em; overflow: hidden; }
-.frame-h-27x15  { height: 405px; min-height: 1em; overflow: hidden; }
-.frame-h-27x18  { height: 486px; min-height: 1em; overflow: hidden; }
-.frame-h-27x20  { height: 540px; min-height: 1em; overflow: hidden; }
-.frame-h-27x22  { height: 594px; min-height: 1em; overflow: hidden; }
-.frame-h-27x24  { height: 648px; min-height: 1em; overflow: hidden; }
-.frame-h-27x27  { height: 729px; min-height: 1em; overflow: hidden; }
+.frame-h-27x3   { height: 810px; }
+.frame-h-27x4   { height: 108px; }
+.frame-h-27x5   { height: 135px; }
+.frame-h-27x6   { height: 162px; }
+.frame-h-27x8   { height: 216px; }
+.frame-h-27x9   { height: 243px; }
+.frame-h-27x11  { height: 297px; }
+.frame-h-27x14  { height: 378px; }
+.frame-h-27x15  { height: 405px; }
+.frame-h-27x18  { height: 486px; }
+.frame-h-27x20  { height: 540px; }
+.frame-h-27x22  { height: 594px; }
+.frame-h-27x24  { height: 648px; }
+.frame-h-27x27  { height: 729px; }
 
+.frame-h-27x3,
+.frame-h-27x4,
+.frame-h-27x5,
+.frame-h-27x6,
+.frame-h-27x8,
+.frame-h-27x9,
+.frame-h-27x11,
+.frame-h-27x14,
+.frame-h-27x15,
+.frame-h-27x18,
+.frame-h-27x20,
+.frame-h-27x22,
+.frame-h-27x24,
+.frame-h-27x27  { min-height: 1em; overflow: hidden; }
 
 /* @media (max-width: 1150px) */
 
@@ -91,6 +105,20 @@
 
     .img-align-text { margin-top: 0; margin-bottom: 0; }
 
+    .frame-h-27x3,
+    .frame-h-27x4,
+    .frame-h-27x5,
+    .frame-h-27x6,
+    .frame-h-27x8,
+    .frame-h-27x9,
+    .frame-h-27x11,
+    .frame-h-27x14,
+    .frame-h-27x15,
+    .frame-h-27x18,
+    .frame-h-27x20,
+    .frame-h-27x22,
+    .frame-h-27x24,
+    .frame-h-27x27  { height: auto; min-height: 1em; overflow: hidden; }
 }
 
 /* Fim */
