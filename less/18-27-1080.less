@@ -1,0 +1,413 @@
+@charset "UTF-8";
+
+@import "_vars.less";
+
+/*
+ * Etiquetas HTML
+ * obs: Não é necessário aplicar o CSS RESET com este código na página.
+ */
+
+html { font-size: 62.5%; }
+
+body {
+  color: #2E3333;
+  font-size: 1em;
+  line-height: 2.7em;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 { font-size: 36px; line-height: 46px; min-height: 81px; padding: 16px 16px 0; }
+h2 { font-size: 28px; line-height: 31px; min-height: 54px; padding: 0 18px 19px; }
+h3 { font-size: 24px; line-height: 34px; min-height: 54px; padding: 0 18px 10px; }
+h4 { font-size: 21px; line-height: 27px; padding: 5px 18px 22px; }
+h5 { font-size: 18px; line-height: 27px; padding: 6px 18px 21px; }
+h6 { font-size: 18px; line-height: 27px; padding: 6px 18px 21px; }
+
+h1, h2 { letter-spacing: -0.01em; }
+
+h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dt,dd,blockquote { margin: 0; }
+
+p, li, dt, dd, th, td, caption { font-size: 17px; line-height: 27px; }
+
+li li, li p, li h1, li h2, li h3, li h4 { font-size: 1em; }
+
+p  { padding: 0.352em 18px 1.235em;}
+
+ul { padding: 0.6em 0 2.1em 4.2em; }
+ol { padding: 0.6em 0 2.1em 4.2em; }
+
+dl { padding: 0.6em 0 2.1em 18px; }
+dt { padding: 27px 0 0; font-weight: 700; }
+dd { padding: 0; }
+
+table { border-collapse: collapse; width: 100%; margin: 0 0 0 1em; }
+th, caption { text-align: left; font-weight: 700; }
+
+blockquote { margin: 0 0 2.7em 1.8em; padding: 0 9em 0 0.25em; border-left: 8px solid #E6E6E6; }
+
+em { font-style: italic; }
+small { font-size: 0.75em; line-height: 1em; }
+strong, b { font-weight: 700; }
+
+code { color:#C06;font-size:1.2em; }
+
+hr { border-top:solid 1px #E6E6E6; border-bottom:solid 1px #F5F5F5; border-left:0; border-right:0; }
+
+img { margin: 0 auto; vertical-align:middle; border-width:0; }
+
+form { padding: 0; margin:0; }
+fieldset { border:solid 1px #cdcdcd; }
+textarea {
+  font-family:inherit;
+  font-size:1.5em;
+  margin:0 1.2em;
+  padding:0.75em 0.5em 0.5em 0.75em;
+  width:93%;
+  border: 1px solid  #cdcdcd;
+}
+
+a         { color: #3498DB; }
+a:visited { color: #3498DB; }
+a:hover   { color: #2980B9; }
+a:active  { color: #E74C3C; }
+
+header, menu, nav, article, section, aside, details, figcaption, figure, footer { display:block; margin:0; padding:0; }
+
+/* Aplica o modelo de caixa semelhante ao do IE */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*
+ * Estruturas de Colunas fixas
+ */
+.col-1  { max-width: 09.000em; }
+.col-2  { max-width: 18.000em; }
+.col-3  { max-width: 27.000em; }
+.col-4  { max-width: 36.000em; }
+.col-5  { max-width: 45.000em; }
+.col-6  { max-width: 54.000em; }
+.col-7  { max-width: 63.000em; }
+.col-8  { max-width: 72.000em; }
+.col-9  { max-width: 81.000em; }
+.col-10 { max-width: 90.000em; }
+.col-11 { max-width: 99.000em; }
+.col-12 { max-width: 108.00em; }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: left; width: 100%; }
+
+/* Colunas usando porcentagem */
+.col25 { width: 25.0%; }
+.col30 { width: 30.0%; }
+.col33 { width: 33.0%; }
+.col40 { width: 40.0%; }
+.col50 { width: 50.0%; }
+.col60 { width: 60.0%; }
+.col66 { width: 66.0%; }
+.col70 { width: 70.0%; }
+.col75 { width: 75.0%; }
+
+.col25, .col30, .col33, .col40, .col50, .col60, .col66, .col70, .col75  { float: left;}
+.col { overflow: hidden; }
+
+
+/*
+ * Anula o float e centraliza o <div> da coluna.
+ */
+.container { margin: 0 auto; float: none;}
+
+
+/*
+ * Leading
+ * Aplica o espaço de entrelinha correspondente no padding da caixa
+ * Deve ser aplicado em caixas (<div>,<header>,<section>,<articles>)
+ * que herdam o font-size do <body>
+ */
+
+.leadingTop-1 { padding-top: 27px  }
+.leadingTop-2 { padding-top: 54px  }
+.leadingTop-3 { padding-top: 81px  }
+.leadingTop-4 { padding-top: 108px }
+.leadingTop-5 { padding-top: 135px }
+
+.leadingBottom-1  { padding-bottom: 27px  }
+.leadingBottom-2  { padding-bottom: 54px  }
+.leadingBottom-3  { padding-bottom: 81px  }
+.leadingBottom-4  { padding-bottom: 108px }
+.leadingBottom-5  { padding-bottom: 135px }
+
+
+/*
+ * Aplica um espaço, em tamanho de coluna correspondente,
+ * ao lado esquerdo (colLeft) e ao lado direito (colRight)
+ */
+
+.colLeft-1  { margin-left: 09.000em; }
+.colLeft-2  { margin-left: 18.000em; }
+.colLeft-3  { margin-left: 27.000em; }
+.colLeft-4  { margin-left: 36.000em; }
+.colLeft-5  { margin-left: 45.000em; }
+.colLeft-6  { margin-left: 54.000em; }
+.colLeft-7  { margin-left: 63.000em; }
+.colLeft-8  { margin-left: 72.000em; }
+.colLeft-9  { margin-left: 81.000em; }
+.colLeft-10 { margin-left: 90.000em; }
+.colLeft-11 { margin-left: 99.000em; }
+.colLeft-12 { margin-left: 108.00em; }
+
+.colRight-1  { margin-right: 09.000em; }
+.colRight-2  { margin-right: 18.000em; }
+.colRight-3  { margin-right: 27.000em; }
+.colRight-4  { margin-right: 36.000em; }
+.colRight-5  { margin-right: 45.000em; }
+.colRight-6  { margin-right: 54.000em; }
+.colRight-7  { margin-right: 63.000em; }
+.colRight-8  { margin-right: 72.000em; }
+.colRight-9  { margin-right: 81.000em; }
+.colRight-10 { margin-right: 90.000em; }
+.colRight-11 { margin-right: 99.000em; }
+.colRight-12 { margin-right: 108.00em; }
+
+
+/* Nicolas Gallagher's micro clearfix */
+.row { *zoom: 1; }
+.row:before, .row:after { content: " "; display: table; }
+.row:after { clear: both; }
+
+
+/*
+ * Columns Rulers, tricks and treats ;D
+ */
+
+.rulerLeft { border-left: 1px solid #C5CDCD;}
+.rulerTop { border-top: 1px solid #C5CDCD;}
+.rulerRight { border-right: 1px solid #C5CDCD;}
+.rulerBottom { border-bottom: 1px solid #C5CDCD;}
+
+.floatLeft { float: left;}
+.floatRight { float: right;}
+
+.textAlignLeft { text-align: left;}
+.textAlignRight { text-align: right;}
+.textAlignCenter { text-align: center;}
+
+/*
+ * Impõe a quebra em bloco/ brbl
+ * Permite a quebrar de textos de uma manchete ou chamada em blocos determinados.
+ * Ex.: <h1>Tipografia Moderna e Futurismo/ <b class="brbl">Ação e Perspectiva</b></h1>
+ */
+
+.brbl { display: block; }
+
+/*
+ * Evita quebra de palavras de um bloco inline/ nobr
+ * Ajuda na quebrar de um conjunto de palavras em títulos em destaque
+ * Ex.: <h1>Tipografia Moderna e Futurismo/ <b class="nobr">Ação e Perspectiva</b></h1>
+ */
+
+.nobr { white-space: nowrap; }
+
+
+/* @media (max-width: 1150px) */
+
+@media (max-width: 1150px) {
+
+    .col-1  { max-width: 09.000em; width: 08%  }
+    .col-2  { max-width: 18.000em; width: 16%  }
+    .col-3  { max-width: 27.000em; width: 24%  }
+    .col-4  { max-width: 36.000em; width: 32%  }
+    .col-5  { max-width: 45.000em; width: 40%  }
+    .col-6  { max-width: 54.000em; width: 48%  }
+    .col-7  { max-width: 63.000em; width: 56%  }
+    .col-8  { max-width: 72.000em; width: 64%  }
+    .col-9  { max-width: 81.000em; width: 72%  }
+    .col-10 { max-width: 90.000em; width: 80%  }
+    .col-11 { max-width: 99.000em; width: 88%  }
+    .col-12 { max-width: 108.00em; width: 100% }
+
+    .colLeft-1  { margin-left: 08% ; }
+    .colLeft-2  { margin-left: 16% ; }
+    .colLeft-3  { margin-left: 24% ; }
+    .colLeft-4  { margin-left: 32% ; }
+    .colLeft-5  { margin-left: 40% ; }
+    .colLeft-6  { margin-left: 48% ; }
+    .colLeft-7  { margin-left: 56% ; }
+    .colLeft-8  { margin-left: 64% ; }
+    .colLeft-9  { margin-left: 72% ; }
+    .colLeft-10 { margin-left: 80% ; }
+    .colLeft-11 { margin-left: 88% ; }
+    .colLeft-12 { margin-left: 100%; }
+
+    .colRight-1  { margin-right: 08% ; }
+    .colRight-2  { margin-right: 16% ; }
+    .colRight-3  { margin-right: 24% ; }
+    .colRight-4  { margin-right: 32% ; }
+    .colRight-5  { margin-right: 40% ; }
+    .colRight-6  { margin-right: 48% ; }
+    .colRight-7  { margin-right: 56% ; }
+    .colRight-8  { margin-right: 64% ; }
+    .colRight-9  { margin-right: 72% ; }
+    .colRight-10 { margin-right: 80% ; }
+    .colRight-11 { margin-right: 88% ; }
+    .colRight-12 { margin-right: 100%; }
+
+} /* FIM @media (max-width: 1150px) */
+
+
+/*
+ * Anexo com complementos de tipografia e layout
+ */
+
+/* @media (min-width: 801px) */
+
+@media (min-width: 801px) {
+
+    /*
+     * Texto em colunas estreitas (4 ou 3 colunas de largura)
+     */
+
+    .col-small-text h1,
+    .col-small-text h2 {
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.03em;
+        min-height: 1em;
+        padding: 11px 18px 0;
+    }
+
+    .col-small-text h3,
+    .col-small-text h4 {
+        font-size: 15px;
+        line-height: 18px;
+        padding: 12px 18px 0;
+        min-height: 1em;
+    }
+
+    .col-small-text h5,
+    .col-small-text h6 {
+        font-size: 13px;
+        line-height: 18px;
+        padding: 12px 18px 0;
+        min-height: 1em;
+    }
+
+    .col-small-text p,
+    .col-small-text li,
+    .col-small-text dt,
+    .col-small-text dd,
+    .col-small-text th,
+    .col-small-text td,
+    .col-small-text caption {
+        font-size: 13px;
+        line-height: 18px;
+        padding: 12px 18px 10px;
+        min-height: 1em;
+    }
+
+
+} /* FIM @media (min-width: 801px) */
+
+
+
+/* @media (max-width: 800px) */
+
+@media (max-width: 800px) {
+
+    h1 { font-size: 2.5em; line-height: 1.200em; padding: 0.5em 18px;}
+    h2 { font-size: 2.4em; line-height: 1.200em; padding: 0.5em 18px;}
+    h3 { font-size: 2.1em; line-height: 1.142em; padding: 0.5em 18px;}
+    h4 { font-size: 1.8em; line-height: 1.333em; padding: 0.5em 18px;}
+    h5 { font-size: 1.7em; line-height: 1.500em; padding: 0.5em 18px;}
+    h6 { font-size: 1.7em; line-height: 1.500em; padding: 0.5em 18px;}
+
+
+    p  { padding: 0.352em 18px 1.235em;}
+
+    ul, ol { padding: 0.6em 18px 2.1em 46px; }
+
+    dl { padding: 0.6em 18px 2.1em 18px; }
+    dt { padding: 0; font-weight: 700; }
+
+    blockquote {font-style: italic; margin: 27px 18px; padding: 0;}
+
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+    .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { width: 100%; float: none; max-width: none; }
+
+    .col25, .col30, .col33, .col40, .col50,
+    .col60, .col66, .col70, .col75 { width: 100%; float: none; }
+
+    .col { overflow: visible; display: block; }
+
+    .colLeft-1,  .colLeft-2,  .colLeft-3,  .colLeft-4,   .colLeft-5,  .colLeft-6,
+    .colLeft-7,  .colLeft-8,  .colLeft-9,  .colLeft-10,  .colLeft-11,
+    .colLeft-12,
+    .colRight-1, .colRight-2, .colRight-3, .colRight-4,  .colRight-5, .colRight-6,
+    .colRight-7, .colRight-8, .colRight-9, .colRight-10, .colRight-11,
+    .colRight-12 { margin-left:0; margin-right:0; }
+
+    .leadingTop-1,
+    .leadingTop-2,
+    .leadingTop-3,
+    .leadingTop-4,
+    .leadingTop-5 { padding-top: 1em; }
+
+    .leadingBottom-1,
+    .leadingBottom-2,
+    .leadingBottom-3,
+    .leadingBottom-4,
+    .leadingBottom-5 { padding-bottom: 1em; }
+
+    .rulerLeft, .rulerRight  { border-left: 0; border-right: 0;}
+
+    .floatLeft, .floatRight { float: none;}
+
+} /* FIM @media (max-width: 800px) */
+
+
+/*
+ * Grid de DEBUG de alinhamento
+ *
+ * Uso: Basta aplicar na página/template o <label> abaixo.
+ *      Certifique-se que a imagem com o grid esteja disponível.
+ *
+ * <label class="btnDebug" for="debug"> Grid <input type="checkbox" id="debug" onclick='var e=document.getElementsByTagName("body")[0],c="debug",re=new RegExp("(?:^|\\s)"+c+"(?!\\S)","g");if(e.className.match(re)){e.className=e.className.replace(re,"");}else{e.className=c;}'></label>
+ *
+ *
+ */
+
+.debug {
+  display: block;
+  position: relative;
+}
+.debug:after {
+  content: "";
+  background: url(images/grid-1080x27-baseline.png) repeat-y center top !important;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  transition: display 1.5s;
+}
+
+.btnDebug {
+  color: #666666;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  vertical-align: top;
+  padding: 0 0.25em;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  opacity: 1;
+  background-color: #FFF;
+  border-radius: 0 0 6px 6px
+}
+
+/* FIM */
