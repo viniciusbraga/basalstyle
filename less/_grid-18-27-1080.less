@@ -23,12 +23,12 @@
  * obs: Não é necessário aplicar o CSS RESET com este código na página.
  */
 
-html { font-size: 62.5%; }
+html { font-size: 62.5%; background-color: @basal-color-background; }
 
 body {
-  color: #2E3333;
+  color: @basal-color-text;
   font-size: 1em;
-  line-height: 2.7em;
+  line-height: 2.7;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
@@ -69,25 +69,32 @@ strong, b { font-weight: 700; }
 
 code { color:#C06;font-size:1.2em; }
 
-hr { border-top:solid 1px #E6E6E6; border-bottom:solid 1px #F5F5F5; border-left:0; border-right:0; }
+hr {
+  border-left:   0;
+  border-right:  0;
+  border-top:    solid 1px lighten( @basal-color-ruler, 50% );
+  border-bottom: solid 1px @basal-color-ruler;
+}
 
 img { margin: 0 auto; vertical-align:middle; border-width:0; }
 
 form { padding: 0; margin:0; }
-fieldset { border:solid 1px #cdcdcd; }
+
+fieldset { border:solid 1px @basal-color-ruler; }
+
 textarea {
   font-family:inherit;
   font-size:1.5em;
   margin:0 1.2em;
   padding:0.75em 0.5em 0.5em 0.75em;
   width:93%;
-  border: 1px solid  #cdcdcd;
+  border: 1px solid  @basal-color-ruler;
 }
 
-a         { color: #3498DB; }
-a:visited { color: #3498DB; }
-a:hover   { color: #2980B9; }
-a:active  { color: #E74C3C; }
+a         { color: @basal-link-color; }
+a:visited { color: @basal-link-color-visited; }
+a:hover   { color: @basal-link-color-hover; }
+a:active  { color: @basal-link-color-active; }
 
 header, menu, nav, article, section, aside, details, figcaption, figure, footer { display:block; margin:0; padding:0; }
 
@@ -197,12 +204,12 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
  * Columns Rulers, tricks and treats ;D
  */
 
-.rulerLeft { border-left: 1px solid #C5CDCD;}
-.rulerTop { border-top: 1px solid #C5CDCD;}
-.rulerRight { border-right: 1px solid #C5CDCD;}
-.rulerBottom { border-bottom: 1px solid #C5CDCD;}
+.rulerLeft   { border-left:   1px solid @basal-color-ruler;}
+.rulerTop    { border-top:    1px solid @basal-color-ruler;}
+.rulerRight  { border-right:  1px solid @basal-color-ruler;}
+.rulerBottom { border-bottom: 1px solid @basal-color-ruler;}
 
-.floatLeft { float: left;}
+.floatLeft  { float: left;}
 .floatRight { float: right;}
 
 .textAlignLeft { text-align: left;}
