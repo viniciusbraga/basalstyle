@@ -1,0 +1,154 @@
+
+/* Cabeçalho do Site e Navegação */
+
+.header {
+  position: relative;
+  min-height: 108px;
+}
+
+.headerSite {
+  width: 75%;
+}
+.headerSite a {
+  text-decoration: none;
+}
+.headerSite .siteLogo {
+  font-size: 1em;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+}
+.headerSite .siteLogo a {
+  color: #000;
+  font-size: 3.6em;
+  line-height: 2.25em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 0 0 0.5em;
+  width: 320px;
+  height: 81px;
+  display: block;
+}
+.headerSite .siteDescription {
+  font-size: 1.6em;
+  line-height: 1em;
+  margin: 0;
+  padding: 0 1.13em;
+}
+
+.headerNav {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  z-index: 10;
+}
+
+
+/* Fomulário de Busca no Header do Site */
+
+.headerSearch {
+  vertical-align: middle;
+  display: block;
+  margin: 0;
+  padding:0;
+  position: absolute;
+  top: 12px;
+  right: 18px;
+}
+
+.headerSearch form {
+  margin: 0;
+  padding: 0;
+}
+.headerSearch label { display: none;}
+
+.headerSearch input[type="text"] {
+  color: #333;
+  font-size: 16px;
+  line-height: 27px;
+  font-family: inherit;
+  min-height: 27px;
+  padding: 1px 6px;
+  margin: 0;
+  width: 270px;
+  border: 1px solid #C5CDCD;
+}
+.headerSearch button[type="submit"] {
+  color: #333;
+  font-size: 14px;
+  line-height: 30px;
+  padding:0;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  box-shadow: none;
+  overflow: hidden;
+  display: block;
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10
+}
+
+
+/* @media (max-width: 800px) */
+
+@media (max-width: 800px) {
+
+    /* Cabeçalho do Site e Navegação */
+
+    .header{
+      position: relative;
+      min-height: 13.5em;
+    }
+    .headerSite {
+      width: 100%;
+    }
+
+    .headerSite .siteDescription {
+      width: 100%;
+    }
+
+    .headerNav {
+      position: absolute;
+      top: 2.0em;
+      right: 0;
+      z-index: 10;
+    }
+
+
+    /* Cabeçalho do Site e Navegação */
+
+    .headerSearch {
+      vertical-align: middle;
+      display: block;
+      margin: 0 auto;
+      padding: 20px 0;
+      max-width: 270px;
+      position: relative;
+      top: 0;
+      right: 0;
+    }
+
+    .headerSearch button[type="submit"] {
+      color: #333;
+      font-size: 14px;
+      line-height: 30px;
+      padding:0;
+      width: 30px;
+      height: 30px;
+      border: 0;
+      box-shadow: none;
+      overflow: hidden;
+      display: block;
+      background: none;
+      position: absolute;
+      top: 20px;
+      right: 0;
+      z-index: 10;
+    }
+
+} /* FIM @media (max-width: 800px) */
+
+/* FIM Cabeçalho do Site e Navegação */
