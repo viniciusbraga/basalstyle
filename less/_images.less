@@ -1,0 +1,146 @@
+
+/*
+ * Imagens
+ *
+ * Exemplo de aplicação:
+ * <span class="img img-col-4 frame-h-27x8">
+ *   <img src="nome_da_image.png" height="530" width="800">
+ * </span>
+ * Onde img-col-(número de coluna) especifica a largura máxima
+ * da caixa da imagem. Contudo, a imagem ficará menor,
+ * porque a regra CSS desconta os espaços laterais (padding)
+ * para o alinhamento com o texto.
+ *
+ */
+
+.img-col-1  { max-width: @col * 1  ; min-height: 81px;  }
+.img-col-2  { max-width: @col * 2  ; min-height: 135px; }
+.img-col-3  { max-width: @col * 3  ; min-height: 162px; }
+.img-col-4  { max-width: @col * 4  ; min-height: 243px; }
+.img-col-5  { max-width: @col * 5  ; min-height: 297px; }
+.img-col-6  { max-width: @col * 6  ; min-height: 378px; }
+.img-col-7  { max-width: @col * 7  ; min-height: 405px; }
+.img-col-8  { max-width: @col * 8  ; min-height: 459px; }
+.img-col-9  { max-width: @col * 9  ; min-height: 540px; }
+.img-col-10 { max-width: @col * 10 ; min-height: 594px; }
+.img-col-11 { max-width: @col * 11 ; min-height: 648px; }
+.img-col-12 { max-width: @col * 12 ; min-height: 729px; }
+
+.img-col-1,.img-col-2,.img-col-3,.img-col-4,.img-col-5,.img-col-6,
+.img-col-7,.img-col-8,.img-col-9,.img-col-10,.img-col-11,.img-col-12
+{
+    width: 100%;
+    margin:0 auto;
+    padding: 0 @col-padding;
+}
+
+.img {
+    display: block;
+    position: relative;
+}
+
+.img:after {
+    content: "";
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    position:absolute;
+    z-index:-1;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+.imgLeft {
+    margin:0 auto 0 0;
+}
+
+.imgRight {
+    margin:0 0 0 auto;
+}
+
+
+/*
+ * img-align-text
+ * A imagem fica alinhada com a altura
+ * da letra capitular (cap height) do texto.
+ */
+
+.img-align-text {
+    margin-top: 1.4em;
+    margin-bottom: 1.3em;
+}
+
+
+/*
+ * frame-h-(número de entrelinha)
+ * Tem momentos que você precisa forçar a altura da caixa da imagem.
+ * Esta classe especifica um tamanho limite, fazendo o recorte (crop) necessário.
+ * Ex: Preciso de uma caixa de imagem com no máximo 3 linhas,
+ *     basta usar a classe frame-h-27x3, tipo:
+ *     <span class="img img-col-4 frame-h-27x3">
+ */
+
+.frame-h-27x3   { height: @grid-y * 3px ; }
+.frame-h-27x4   { height: @grid-y * 4px ; }
+.frame-h-27x5   { height: @grid-y * 5px ; }
+.frame-h-27x6   { height: @grid-y * 6px ; }
+.frame-h-27x8   { height: @grid-y * 8px ; }
+.frame-h-27x9   { height: @grid-y * 9px ; }
+.frame-h-27x11  { height: @grid-y * 11px; }
+.frame-h-27x14  { height: @grid-y * 14px; }
+.frame-h-27x15  { height: @grid-y * 15px; }
+.frame-h-27x18  { height: @grid-y * 18px; }
+.frame-h-27x20  { height: @grid-y * 20px; }
+.frame-h-27x22  { height: @grid-y * 22px; }
+.frame-h-27x24  { height: @grid-y * 24px; }
+.frame-h-27x27  { height: @grid-y * 27px; }
+
+.frame-h-27x3,
+.frame-h-27x4,
+.frame-h-27x5,
+.frame-h-27x6,
+.frame-h-27x8,
+.frame-h-27x9,
+.frame-h-27x11,
+.frame-h-27x14,
+.frame-h-27x15,
+.frame-h-27x18,
+.frame-h-27x20,
+.frame-h-27x22,
+.frame-h-27x24,
+.frame-h-27x27  { min-height: 1em; overflow: hidden; }
+
+/* @media (max-width: 1150px) */
+
+@media (max-width: 1150px) {
+
+    .img-col-1,.img-col-2,.img-col-3,.img-col-4,.img-col-5,.img-col-6,
+    .img-col-7,.img-col-8,.img-col-9,.img-col-10,.img-col-11,.img-col-12
+    {
+        min-height: 1em;
+        padding: 1.6em @col-padding
+    }
+
+    .img-align-text { margin-top: 0; margin-bottom: 0; }
+
+    .frame-h-27x3,
+    .frame-h-27x4,
+    .frame-h-27x5,
+    .frame-h-27x6,
+    .frame-h-27x8,
+    .frame-h-27x9,
+    .frame-h-27x11,
+    .frame-h-27x14,
+    .frame-h-27x15,
+    .frame-h-27x18,
+    .frame-h-27x20,
+    .frame-h-27x22,
+    .frame-h-27x24,
+    .frame-h-27x27  { height: auto; min-height: 1em; overflow: hidden; }
+}
+
+/* Fim */
