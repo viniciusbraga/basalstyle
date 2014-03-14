@@ -5,11 +5,12 @@
  */
 html {
   font-size: 62.5%;
+  background-color: #ffffff;
 }
 body {
-  color: #2E3333;
+  color: #262626;
   font-size: 1em;
-  line-height: 2.7em;
+  line-height: 2.7;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
@@ -35,16 +36,19 @@ h3 {
 h4 {
   font-size: 21px;
   line-height: 27px;
+  min-height: 54px;
   padding: 5px 18px 22px;
 }
 h5 {
   font-size: 18px;
   line-height: 27px;
+  min-height: 54px;
   padding: 6px 18px 21px;
 }
 h6 {
   font-size: 18px;
   line-height: 27px;
+  min-height: 54px;
   padding: 6px 18px 21px;
 }
 h1,
@@ -134,10 +138,10 @@ code {
   font-size: 1.2em;
 }
 hr {
-  border-top: solid 1px #E6E6E6;
-  border-bottom: solid 1px #F5F5F5;
   border-left: 0;
   border-right: 0;
+  border-top: solid 1px #ffffff;
+  border-bottom: solid 1px #c5cdcd;
 }
 img {
   margin: 0 auto;
@@ -149,7 +153,7 @@ form {
   margin: 0;
 }
 fieldset {
-  border: solid 1px #cdcdcd;
+  border: solid 1px #c5cdcd;
 }
 textarea {
   font-family: inherit;
@@ -157,19 +161,19 @@ textarea {
   margin: 0 1.2em;
   padding: 0.75em 0.5em 0.5em 0.75em;
   width: 93%;
-  border: 1px solid  #cdcdcd;
+  border: 1px solid #c5cdcd;
 }
 a {
-  color: #3498DB;
+  color: #3498db;
 }
 a:visited {
-  color: #3498DB;
+  color: #217dbb;
 }
 a:hover {
-  color: #2980B9;
+  color: #2980b9;
 }
 a:active {
-  color: #E74C3C;
+  color: #db7734;
 }
 header,
 menu,
@@ -422,16 +426,16 @@ footer {
  * Columns Rulers, tricks and treats ;D
  */
 .rulerLeft {
-  border-left: 1px solid #C5CDCD;
+  border-left: 1px solid #c5cdcd;
 }
 .rulerTop {
-  border-top: 1px solid #C5CDCD;
+  border-top: 1px solid #c5cdcd;
 }
 .rulerRight {
-  border-right: 1px solid #C5CDCD;
+  border-right: 1px solid #c5cdcd;
 }
 .rulerBottom {
-  border-bottom: 1px solid #C5CDCD;
+  border-bottom: 1px solid #c5cdcd;
 }
 .floatLeft {
   float: left;
