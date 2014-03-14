@@ -1,22 +1,4 @@
 @charset "UTF-8";
-/* Cores */
-/* Cinza Branco    =  #F2F5F5 */
-/* Cinza Claro     =  #C5CDCD */
-/* Cinza Médio     =  #95A5A5 */
-/* Cinza Escuro    =  #7F8C8C */
-/* Cinza Preto     =  #2E3333 */
-/* Azul Claro      =  #93C6E8 */
-/* Azul Médio      =  #3498DB */
-/* Azul Escuro     =  #2980B9 */
-/* Verde Claro     =          */
-/* Verde Médio     =  #1abc9c */
-/* Verde Escuro    =  #16a085 */
-/* Laranja Claro   =          */
-/* Laranja Médio   =  #FF9900 */
-/* Laranja Escuro  =  #F08000 */
-/* Vermelho Claro  =  #FF9B96 */
-/* Vermelho Médio  =  #E74C3C */
-/* Vermelho Escuro =  #CC3300 */
 /*
  * Etiquetas HTML
  * obs: Não é necessário aplicar o CSS RESET com este código na página.
@@ -826,4 +808,984 @@ footer {
   background-color: #FFF;
   border-radius: 0 0 6px 6px;
 }
-/* FIM */
+/* FIM Grid e Normalizador */
+/* Menu navInline */
+.navInline {
+  vertical-align: middle;
+  display: inline-block;
+}
+.navInline ul {
+  margin: 0;
+  padding: 0 0.9em;
+}
+.navInline li {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+  position: relative;
+}
+.navInline li a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 44px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0 0.7em;
+  display: block;
+  transition: color 0.3s, background-color 1s;
+}
+.navInline li a:hover {
+  color: #000;
+  background-color: #F5F5F5;
+}
+.navInline .current > a {
+  color: #000;
+  font-weight: 700;
+}
+.navMobile,
+.navClose {
+  display: none;
+}
+/* Submenu de links do Menu navInline */
+.submenu {
+  position: relative;
+  overflow: hidden;
+}
+.submenu:hover {
+  color: #000;
+  overflow: visible;
+}
+.submenu ul {
+  margin: -5px 0 0;
+  padding: 0 ;
+  opacity: 0;
+  border: 1px solid #95A5A5;
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  z-index: 9995;
+}
+.submenu ul:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border: 1px solid #95A5A5;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  z-index: -9994;
+  -webkit-transform-origin: 0 0;
+  -webkit-transform: rotate(45deg);
+  transform-origin: 0 0;
+  transform: rotate(45deg);
+}
+.submenu ul:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 20px;
+  background: #FFF;
+}
+.submenu:hover ul {
+  margin: 0 0 0;
+  opacity: 1;
+  -webkit-transition: opacity 0.6s, margin 1s;
+  transition: opacity 0.6s, margin 1s;
+}
+.submenu ul li {
+  font-size: 1em;
+  min-width: 200px;
+  min-height: 44px;
+  float: none;
+}
+.submenu ul li a {
+  margin: 0 0;
+  padding: 0 1em;
+  display: block;
+  border-bottom: 1px solid #C5CDCD;
+  text-align: left;
+}
+.submenu ul li a:hover {
+  color: #FFF;
+  background: #3498DB;
+}
+/* @media (max-width: 800px) */
+@media (max-width: 800px) {
+  /* Menu navInline */
+  .navInline {
+    text-align: right;
+    vertical-align: middle;
+    margin: 0 10px;
+    min-height: 45px;
+    width: 45px;
+    position: relative;
+    display: inline-block;
+  }
+  .navInline .navMenu > ul {
+    width: 250px;
+    margin: -5px 0 0 0;
+    padding: 0;
+    display: block;
+    height: 0;
+    opacity: 0.3;
+    overflow: hidden;
+    position: relative;
+    right: 205px;
+    background: #C5CDCD;
+  }
+  .navMenu {
+    position: relative;
+  }
+  .navMenu:hover ul {
+    margin-top: 0;
+    opacity: 1;
+    height: auto;
+    transition: margin 1s, height 2s, opacity 1s;
+  }
+  .navInline li {
+    float: none;
+    text-align: left;
+  }
+  .navInline li a {
+    color: #000;
+    font-weight: nomral;
+    padding: 0 1em;
+    border-bottom: 1px solid #F2F5F5;
+    white-space: nowrap;
+  }
+  .navInline li a:hover {
+    color: #FFF;
+    background: #0066CC;
+  }
+  .navMobile,
+  .navClose {
+    color: #7F8C8C;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 45px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    margin: 0 0 0 auto;
+    padding: 0;
+    display: block;
+  }
+  .navClose {
+    color: #7F8C8C;
+    font-size: 18px;
+    text-align: center;
+    display: none;
+    opacity: 0;
+    transition: opacity 6s;
+  }
+  .navInline:hover .navMobile,
+  .navInline:hover .navClose {
+    color: #FFF;
+    background-color: #C5CDCD;
+    display: block;
+    opacity: 1;
+  }
+  /* Submenu */
+  .submenu ul {
+    padding: 0;
+    display: block;
+    position: relative;
+    z-index: 1000;
+    background-color: #C5CDCD;
+    box-shadow: none;
+    border: none;
+  }
+  .submenu ul:after,
+  .submenu ul:before {
+    display: none;
+  }
+  .navInline .submenu ul li a {
+    margin: 0 0;
+    padding: 0 1.2em 0 2em;
+    border-bottom: 1px solid #F2F5F5;
+    display: block;
+  }
+}
+/* FIM @media (max-width: 800px) */
+/* FIM Menu navInline */
+/* Submenu do navInline */
+.submenu {
+  position: relative;
+  overflow: hidden;
+}
+.submenu:hover {
+  color: #000;
+  overflow: visible;
+}
+.submenu ul {
+  margin: -5px 0 0;
+  padding: 0 ;
+  opacity: 0;
+  border: 1px solid #95A5A5;
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  z-index: 9995;
+}
+.submenu ul:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border: 1px solid #95A5A5;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  z-index: -9994;
+  -webkit-transform-origin: 0 0;
+  -webkit-transform: rotate(45deg);
+  transform-origin: 0 0;
+  transform: rotate(45deg);
+}
+.submenu ul:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 20px;
+  background: #FFF;
+}
+.submenu:hover ul {
+  margin: 0 0 0;
+  opacity: 1;
+  -webkit-transition: opacity 0.6s, margin 1s;
+  transition: opacity 0.6s, margin 1s;
+}
+.submenu ul li {
+  font-size: 1em;
+  min-width: 200px;
+  min-height: 44px;
+  float: none;
+}
+.submenu ul li a {
+  margin: 0 0;
+  padding: 0 1em;
+  display: block;
+  border-bottom: 1px solid #C5CDCD;
+  text-align: left;
+}
+.submenu ul li a:hover {
+  color: #FFF;
+  background: #3498DB;
+}
+/* Submenu @media (max-width: 800px) */
+@media (max-width: 800px) {
+  /* Submenu */
+  .submenu ul {
+    padding: 0;
+    display: block;
+    position: relative;
+    z-index: 1000;
+    background-color: #C5CDCD;
+    box-shadow: none;
+    border: none;
+  }
+  .submenu ul:after,
+  .submenu ul:before {
+    display: none;
+  }
+  .navInline .submenu ul li a {
+    margin: 0 0;
+    padding: 0 1.2em 0 2em;
+    border-bottom: 1px solid #F2F5F5;
+    display: block;
+  }
+}
+/* FIM Submenu @media (max-width: 800px) */
+/* FIM Submenu do navInline */
+/* Cabeçalho do Site e Navegação */
+.header {
+  position: relative;
+  min-height: 108px;
+}
+.headerSite {
+  width: 75%;
+}
+.headerSite a {
+  text-decoration: none;
+}
+.headerSite .siteLogo {
+  font-size: 1em;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+}
+.headerSite .siteLogo a {
+  color: #000;
+  font-size: 3.6em;
+  line-height: 2.25em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 0 0 0.5em;
+  width: 320px;
+  height: 81px;
+  display: block;
+}
+.headerSite .siteDescription {
+  font-size: 1.6em;
+  line-height: 1em;
+  margin: 0;
+  padding: 0 1.13em;
+}
+.headerNav {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  z-index: 10;
+}
+/* Fomulário de Busca no Header do Site */
+.headerSearch {
+  vertical-align: middle;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 12px;
+  right: 18px;
+}
+.headerSearch form {
+  margin: 0;
+  padding: 0;
+}
+.headerSearch label {
+  display: none;
+}
+.headerSearch input[type="text"] {
+  color: #333;
+  font-size: 16px;
+  line-height: 27px;
+  font-family: inherit;
+  min-height: 27px;
+  padding: 1px 6px;
+  margin: 0;
+  width: 270px;
+  border: 1px solid #C5CDCD;
+}
+.headerSearch button[type="submit"] {
+  color: #333;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  box-shadow: none;
+  overflow: hidden;
+  display: block;
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+/* @media (max-width: 800px) */
+@media (max-width: 800px) {
+  /* Cabeçalho do Site e Navegação */
+  .header {
+    position: relative;
+    min-height: 13.5em;
+  }
+  .headerSite {
+    width: 100%;
+  }
+  .headerSite .siteDescription {
+    width: 100%;
+  }
+  .headerNav {
+    position: absolute;
+    top: 2.0em;
+    right: 0;
+    z-index: 10;
+  }
+  /* Cabeçalho do Site e Navegação */
+  .headerSearch {
+    vertical-align: middle;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 270px;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .headerSearch button[type="submit"] {
+    color: #333;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    box-shadow: none;
+    overflow: hidden;
+    display: block;
+    background: none;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 10;
+  }
+}
+/* FIM @media (max-width: 800px) */
+/* FIM Cabeçalho do Site e Navegação */
+/* Formulários  */
+.formRow {
+  margin: 0;
+  padding: 0 18px;
+  list-style: none;
+  min-height: 81px;
+}
+.formRow p {
+  margin: 0;
+  padding: 0;
+}
+.formRow a {
+  text-decoration: none;
+}
+.formRow label,
+.formRow legend {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 27px;
+  padding: 0;
+  margin: 0;
+}
+.formRow textarea {
+  font-family: inherit;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0.75em 0.5em 0.5em 0.75em;
+  width: 100%;
+  border: 1px solid #cdcdcd;
+}
+.labelBlock label,
+.formRow legend {
+  display: block;
+}
+.inputText input[type="text"] {
+  font-size: 2.0em;
+  font-family: inherit;
+  line-height: 1.4em;
+  letter-spacing: 0.06em;
+  vertical-align: middle;
+  white-space: pre;
+  margin: 0;
+  padding: 0.35em;
+  width: 100%;
+  min-height: 10px;
+  display: block;
+  border-radius: 0 ;
+  border: 1px solid #F2F5F5;
+  background-color: #F2F5F5;
+  outline: none;
+  transition: background-color 1s ease 0s, border 1s ease 0s;
+}
+.inputText input[type="text"]:hover {
+  border: 1px solid #C5CDCD;
+  background-color: #C5CDCD;
+  transition: background-color 1s ease 0s, border 1s ease 0s;
+}
+.inputText input[type="text"]:focus {
+  border: 1px solid #C5CDCD;
+  background-color: #F2F5F5;
+}
+.inputText-66 input[type="text"] {
+  width: 66%;
+}
+.inputText-33 input[type="text"] {
+  width: 33%;
+}
+.inputRadio fieldset {
+  padding: 0;
+  border: none;
+}
+.inputRadio ul,
+.inputRadio li,
+.inputRadio dl,
+.inputRadio dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.inputRadio label {
+  font-size: 1em;
+  font-weight: 300;
+}
+.inputRadio input {
+  display: inline-block;
+  margin-right: 0.66em;
+}
+.selectDropdown select {
+  color: #000;
+  font-family: inherit;
+  font-size: 1.6em;
+  line-height: 40px;
+  margin: 0;
+  padding: 0.6em 0.3em 0.6em 0.3em;
+  min-height: 36px;
+  width: 100%;
+  border: 1px solid #F2F5F5;
+  background-color: #F2F5F5;
+  box-shadow: 0 2px 10px #C5CDCD;
+  transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
+  outline: none;
+}
+.selectDropdown select:hover {
+  border: 1px solid #C5CDCD;
+  background-color: #F2F5F5;
+  box-shadow: 0 0 1px #f2f5f5, inset 0px 1px rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+.selectDropdown select:focus {
+  border: 1px solid #95a5a6;
+  background-color: #ecf0f1;
+  outline: none;
+}
+.labelInline label {
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.666em;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+/* Erros nos formulários */
+.errorlist {
+  color: #e74c3c;
+}
+.errorlist p,
+.errorlist li,
+.errorlist dt,
+.errorlist dd {
+  font-size: 1.4em;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.errorlist li + li,
+.errorlist dd + dd {
+  line-height: 1.25em;
+  margin: 0;
+  padding-bottom: 0.7em;
+}
+.formRow .errorlist {
+  margin: 0;
+  padding: 0 0 0 0;
+  list-style: none;
+}
+.formRow .errorlist + input,
+.formRow .errorlist + input + input,
+.formRow .errorlist + textarea,
+.formRow .errorlist + dl,
+.errorInput input {
+  margin: 0 0 6px;
+  padding: 4px 0 5px 5px;
+  border: none;
+  border-left: 6px solid #e74c3c;
+  background: #FFF4F3;
+}
+.formRow .errorlist + dl {
+  border: none;
+  border-left: 6px solid #e74c3c;
+}
+.errorInput label {
+  color: #e74c3c;
+}
+.errorInput input:hover {
+  background: #FFF4F3;
+}
+.errorInput input:focus {
+  border: none;
+  border-left: 6px solid #16a085;
+  background-color: #ecf0f1;
+}
+/* Mensagens e Alertas */
+/*
+ * Leading
+ * Aplica o espaço de entrelinha
+ * no padding-top ou padding-bottom da caixa.
+ * Nesta versão abaixo, a entrelinha base é de 2.7em
+ */
+.formRow.leadingTop-1 {
+  padding-top: 27px;
+}
+.formRow.leadingTop-2 {
+  padding-top: 54px;
+}
+.formRow.leadingTop-3 {
+  padding-top: 81px;
+}
+.formRow.leadingTop-4 {
+  padding-top: 108px;
+}
+.formRow.leadingTop-5 {
+  padding-top: 135px;
+}
+.formRow.leadingBottom-1 {
+  padding-bottom: 27px;
+}
+.formRow.leadingBottom-2 {
+  padding-bottom: 54px;
+}
+.formRow.leadingBottom-3 {
+  padding-bottom: 81px;
+}
+.formRow.leadingBottom-4 {
+  padding-bottom: 108px;
+}
+.formRow.leadingBottom-5 {
+  padding-bottom: 135px;
+}
+@media (max-width: 800px) {
+  .inputText-66 input,
+  .inputText-33 input {
+    width: 100%;
+  }
+  .formRow.leadingTop-1,
+  .formRow.leadingTop-2,
+  .formRow.leadingTop-3,
+  .formRow.leadingTop-4,
+  .formRow.leadingTop-5 {
+    padding-top: 2.7em;
+  }
+  .formRow.leadingBottom-1,
+  .formRow.leadingBottom-2,
+  .formRow.leadingBottom-3,
+  .formRow.leadingBottom-4,
+  .formRow.leadingBottom-5 {
+    padding-bottom: 2.7em;
+  }
+}
+/* Fim @media (max-width: 800px) */
+/* Formulários  */
+/* Botões de Interface */
+.btnBasic,
+.btnBasic:visited,
+input[type="submit"] {
+  color: #2E3333;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 42px;
+  min-height: 42px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 1.125em 0 0;
+  padding: 0 1.6em;
+  display: inline-block;
+  border: 0;
+  border-radius: 3px;
+  position: relative;
+  background-color: #C5CDCD ;
+  transition: background-color ease 0.5s;
+}
+.btnBasic:hover,
+.btnBasic:focus,
+input[type="submit"]:hover {
+  color: #F2F5F5;
+  background-color: #95A5A5;
+  outline: 0;
+  cursor: pointer;
+}
+.btnIconLeft {
+  padding-left: 1.2em;
+}
+.btnIconLeft .fa {
+  padding-right: 0.5em;
+}
+.btnIconRight {
+  padding-right: 1.5em;
+}
+.btnIconRight .fa {
+  padding-left: 0.5em;
+}
+/* Botões coloridos */
+.btnGreen,
+.btnGreen:visited,
+input[type="submit"].btnGreen,
+input[type="submit"].btnGreen:visited {
+  color: #FFF;
+  background-color: #1abc9c;
+}
+.btnGreen:hover,
+input[type="submit"].btnGreen:hover {
+  color: #FFF;
+  background-color: #16a085;
+}
+.btnBlue,
+.btnBlue:visited,
+input[type="submit"].btnBlue,
+input[type="submit"].btnBlue:visited {
+  color: #FFF;
+  background-color: #3498db;
+}
+.btnBlue:hover,
+input[type="submit"].btnBlue:hover {
+  color: #FFF;
+  background-color: #2980b9;
+}
+.btnOrange,
+.btnOrange:visited,
+input[type="submit"].btnOrange,
+input[type="submit"].btnOrange:visited {
+  color: #FFF;
+  background-color: #FF9900;
+}
+.btnOrange:hover,
+input[type="submit"].btnOrange:hover {
+  color: #FFF;
+  background-color: #F08000;
+}
+.btnRed,
+.btnRed:visited,
+input[type="submit"].btnRed,
+input[type="submit"].btnRed:visited {
+  color: #FFF;
+  background-color: #e74c3c;
+}
+.btnRed:hover,
+input[type="submit"].btnRed:hover {
+  color: #FFF;
+  background-color: #CC3300;
+}
+/* FIM Botões de Interface  */
+/*
+ * Imagens
+ *
+ * Exemplo de aplicação:
+ * <span class="img img-col-4 frame-h-27x8">
+ *   <img src="nome_da_image.png" height="530" width="800">
+ * </span>
+ * Onde img-col-(número de coluna) especifica a largura máxima
+ * da caixa da imagem. Contudo, a imagem ficará menor,
+ * porque a regra CSS desconta os espaços laterais (padding)
+ * para o alinhamento com o texto.
+ *
+ */
+.img-col-1 {
+  max-width: 90px;
+  min-height: 81px;
+}
+.img-col-2 {
+  max-width: 180px;
+  min-height: 135px;
+}
+.img-col-3 {
+  max-width: 270px;
+  min-height: 162px;
+}
+.img-col-4 {
+  max-width: 360px;
+  min-height: 243px;
+}
+.img-col-5 {
+  max-width: 450px;
+  min-height: 297px;
+}
+.img-col-6 {
+  max-width: 540px;
+  min-height: 378px;
+}
+.img-col-7 {
+  max-width: 630px;
+  min-height: 405px;
+}
+.img-col-8 {
+  max-width: 720px;
+  min-height: 459px;
+}
+.img-col-9 {
+  max-width: 810px;
+  min-height: 540px;
+}
+.img-col-10 {
+  max-width: 900px;
+  min-height: 594px;
+}
+.img-col-11 {
+  max-width: 990px;
+  min-height: 648px;
+}
+.img-col-12 {
+  max-width: 1080px;
+  min-height: 729px;
+}
+.img-col-1,
+.img-col-2,
+.img-col-3,
+.img-col-4,
+.img-col-5,
+.img-col-6,
+.img-col-7,
+.img-col-8,
+.img-col-9,
+.img-col-10,
+.img-col-11,
+.img-col-12 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+.img {
+  display: block;
+  position: relative;
+}
+.img:after {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.img img {
+  width: 100%;
+  height: auto;
+}
+.imgLeft {
+  margin: 0 auto 0 0;
+}
+.imgRight {
+  margin: 0 0 0 auto;
+}
+/*
+ * img-align-text
+ * A imagem fica alinhada com a altura
+ * da letra capitular (cap height) do texto.
+ */
+.img-align-text {
+  margin-top: 1.4em;
+  margin-bottom: 1.3em;
+}
+/*
+ * frame-h-(número de entrelinha)
+ * Tem momentos que você precisa forçar a altura da caixa da imagem.
+ * Esta classe especifica um tamanho limite, fazendo o recorte (crop) necessário.
+ * Ex: Preciso de uma caixa de imagem com no máximo 3 linhas,
+ *     basta usar a classe frame-h-27x3, tipo:
+ *     <span class="img img-col-4 frame-h-27x3">
+ */
+.frame-h-27x3 {
+  height: 81px;
+}
+.frame-h-27x4 {
+  height: 108px;
+}
+.frame-h-27x5 {
+  height: 135px;
+}
+.frame-h-27x6 {
+  height: 162px;
+}
+.frame-h-27x8 {
+  height: 216px;
+}
+.frame-h-27x9 {
+  height: 243px;
+}
+.frame-h-27x11 {
+  height: 297px;
+}
+.frame-h-27x14 {
+  height: 378px;
+}
+.frame-h-27x15 {
+  height: 405px;
+}
+.frame-h-27x18 {
+  height: 486px;
+}
+.frame-h-27x20 {
+  height: 540px;
+}
+.frame-h-27x22 {
+  height: 594px;
+}
+.frame-h-27x24 {
+  height: 648px;
+}
+.frame-h-27x27 {
+  height: 729px;
+}
+.frame-h-27x3,
+.frame-h-27x4,
+.frame-h-27x5,
+.frame-h-27x6,
+.frame-h-27x8,
+.frame-h-27x9,
+.frame-h-27x11,
+.frame-h-27x14,
+.frame-h-27x15,
+.frame-h-27x18,
+.frame-h-27x20,
+.frame-h-27x22,
+.frame-h-27x24,
+.frame-h-27x27 {
+  min-height: 1em;
+  overflow: hidden;
+}
+/* @media (max-width: 1150px) */
+@media (max-width: 1150px) {
+  .img-col-1,
+  .img-col-2,
+  .img-col-3,
+  .img-col-4,
+  .img-col-5,
+  .img-col-6,
+  .img-col-7,
+  .img-col-8,
+  .img-col-9,
+  .img-col-10,
+  .img-col-11,
+  .img-col-12 {
+    min-height: 1em;
+    padding: 1.6em 18px;
+  }
+  .img-align-text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .frame-h-27x3,
+  .frame-h-27x4,
+  .frame-h-27x5,
+  .frame-h-27x6,
+  .frame-h-27x8,
+  .frame-h-27x9,
+  .frame-h-27x11,
+  .frame-h-27x14,
+  .frame-h-27x15,
+  .frame-h-27x18,
+  .frame-h-27x20,
+  .frame-h-27x22,
+  .frame-h-27x24,
+  .frame-h-27x27 {
+    height: auto;
+    min-height: 1em;
+    overflow: hidden;
+  }
+}
+/* FIM Imagens */
