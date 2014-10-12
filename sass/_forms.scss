@@ -1,0 +1,256 @@
+
+/* Formulários  */
+
+.form-row {
+  margin: 0;
+  padding: 0 $basal-padding;
+  list-style: none;
+  min-height: $basal-leading * 3;
+}
+
+.form-row p {
+  margin: 0;
+  padding: 0;
+}
+
+.form-row a { text-decoration: none; }
+
+.form-row label,
+.form-row legend {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: $basal-leading;
+    letter-spacing: 0.06em;
+    text-transform: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.form-row textarea {
+  font-family:inherit;
+  font-size:1.5em;
+  margin:0;
+  padding:0.75em 0.5em 0.5em 0.75em;
+  width: 100%;
+  border: 1px solid #D9D9D9;
+  border-bottom: 2px solid #CCCCCC;
+  border-right: 2px solid #CCCCCC;
+}
+
+.label-block label,
+.form-row legend {
+  display: block;
+}
+
+.input-text input[type="text"] {
+  font-size: 2.0em;
+  font-family: inherit;
+  line-height: 1.4em;
+  letter-spacing: 0.06em;
+  vertical-align: middle;
+  white-space: pre;
+  margin: 0;
+  padding: 0.35em 0.6em;
+  width: 100%;
+  min-height: 1em;
+  display: block;
+    border:1px solid #BFBFBF;
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 3px #CCCCCB;
+    background-color:#F8F8F9;
+  outline:none;
+  transition: background-color 1s ease 0s,border 1s ease 0s;
+}
+.input-text input[type="text"]:hover {
+  border: 1px solid #999999;
+  background-color: #FFF7CC;
+  transition: background-color 1s ease 0s,border 1s ease 0s;
+}
+.input-text input[type="text"]:focus {
+  border: 1px solid #999999;
+  background-color: #FFF7CC;
+}
+
+.input-text-66 input[type="text"] {
+  width: 66%;
+}
+
+.input-text-33 input[type="text"] {
+  width: 33%;
+}
+
+.input-radio fieldset {
+  padding: 0;
+  border: none;
+}
+
+.input-radio ul,
+.input-radio dl {
+  margin: 0;
+  padding: 0 0 $basal-leading;
+  list-style: none;
+}
+.input-radio li,
+.input-radio dt,
+.input-radio dd {
+  font-size: 1.4em;
+  line-height: $basal-leading;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.input-radio label {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.input-radio input {
+  display: inline-block;
+  margin-right: 0.66em
+}
+
+.select-dropdown select {
+  color: #000;
+  font-family: inherit;
+  font-size: 1.6em;
+  line-height: 40px;
+  margin: 0;
+  padding: 0.6em 0.3em 0.6em 0.3em;
+  min-height: 36px;
+  width: 100%;
+    border:1px solid #BFBFBF;
+    border-bottom:2px solid #BFBFBF;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px #CCCCCB;
+    background-color:#F8F8F9;
+  transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
+  outline: none;
+}
+.select-dropdown select:hover {
+  border: 1px solid #999999;
+  background-color: #FFF7CC;
+  outline: none;
+}
+.select-dropdown select:focus {
+  border: 1px solid #999999;
+  background-color: #FFF7CC;
+  outline: none;
+}
+
+.label-inline label {
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.666em;
+  padding: 0;
+  margin: 0;
+  float: left;
+
+}
+
+
+/* Erros nos formulários */
+
+.errorlist {
+  color: #e74c3c;
+}
+
+.errorlist p,
+.errorlist li,
+.errorlist dt,
+.errorlist dd {
+  font-size: 1.4em;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.errorlist li + li,
+.errorlist dd + dd {
+  line-height: 1.25em;
+  margin: 0;
+  padding-bottom:0.7em;
+}
+
+.form-row .errorlist {
+  margin: 0;
+  padding: 0 0 0 0;
+  list-style: none;
+}
+
+.form-row .errorlist + input,
+.form-row .errorlist + input + input,
+.form-row .errorlist + textarea,
+.form-row .errorlist + dl,
+.error-input input {
+  margin: 0 0 6px;
+  padding: 4px 0 5px 5px;
+  border: none;
+  border-left: 6px solid #e74c3c;
+  background: #FFF4F3;
+}
+
+
+.form-row .errorlist + dl {
+  border: none;
+  border-left: 6px solid #e74c3c;
+}
+
+.error-input label{
+  color: #e74c3c;
+}
+
+.error-input input:hover { background: #FFF4F3; }
+
+.error-input input:focus {
+  border: none;
+  border-left: 6px solid #16a085;
+  background-color: #ecf0f1;
+}
+
+/* Mensagens e Alertas */
+
+
+/*
+ * Leading
+ * Aplica o espaço de entrelinha
+ * no padding-top ou padding-bottom da caixa.
+ * Nesta versão abaixo, a entrelinha base é de 2.7em
+ */
+
+.form-row.leading-top-1 { padding-top: 27px  }
+.form-row.leading-top-2 { padding-top: 54px  }
+.form-row.leading-top-3 { padding-top: 81px  }
+.form-row.leading-top-4 { padding-top: 108px }
+.form-row.leading-top-5 { padding-top: 135px }
+
+.form-row.leading-bottom-1  { padding-bottom: 27px  }
+.form-row.leading-bottom-2  { padding-bottom: 54px  }
+.form-row.leading-bottom-3  { padding-bottom: 81px  }
+.form-row.leading-bottom-4  { padding-bottom: 108px }
+.form-row.leading-bottom-5  { padding-bottom: 135px }
+
+@media (max-width: 800px) {
+
+  .input-text-66 input,
+  .input-text-33 input {
+    width: 100%;
+  }
+
+  .form-row.leading-top-1,
+  .form-row.leading-top-2,
+  .form-row.leading-top-3,
+  .form-row.leading-top-4,
+  .form-row.leading-top-5 { padding-top: 2.7em; }
+
+  .form-row.leading-bottom-1,
+  .form-row.leading-bottom-2,
+  .form-row.leading-bottom-3,
+  .form-row.leading-bottom-4,
+  .form-row.leading-bottom-5 { padding-bottom: 2.7em; }
+
+} /* Fim @media (max-width: 800px) */
+
+/* Formulários  */

@@ -3,34 +3,40 @@
 
 .header {
   position: relative;
-  min-height: 108px;
+  min-height: $basal-leading * 3;
 }
 
-.headerSite {
+.header-site {
   width: 75%;
 }
-.headerSite a {
+
+.header-site a {
   text-decoration: none;
 }
-.headerSite .siteLogo {
-  font-size: 1em;
-  line-height: 1em;
-  margin: 0;
-  padding: 0;
+
+.header-site .site-logo {
+    font-size: 1em;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    min-height: 1em;
+    max-height: $basal-leading * 3;
 }
-.headerSite .siteLogo a {
-  color: #000;
-  font-size: 3.6em;
-  line-height: 2.25em;
-  font-weight: 700;
-  margin: 0;
-  padding: 0 0 0 0.5em;
-  width: 320px;
-  height: 81px;
-  display: block;
+
+.header-site .site-logo a {
+    color: #000;
+    font-size: 3.2em;
+    line-height: 2.25em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 0 0 0.5em;
+    width: 320px;
+    height: 60px;
+    display: block;
 }
-.headerSite .siteDescription {
-  font-size: 1.6em;
+
+.header-site .site-description {
+  font-size: 1.4em;
   line-height: 1em;
   margin: 0;
   padding: 0 1.13em;
@@ -60,6 +66,7 @@
   margin: 0;
   padding: 0;
 }
+
 .headerSearch label { display: none;}
 
 .headerSearch input[type="text"] {
@@ -77,7 +84,7 @@
   color: #333;
   font-size: 14px;
   line-height: 30px;
-  padding:0;
+  padding: 0;
   width: 30px;
   height: 30px;
   border: 0;
@@ -102,11 +109,11 @@
       position: relative;
       min-height: 13.5em;
     }
-    .headerSite {
+    .header-site {
       width: 100%;
     }
 
-    .headerSite .siteDescription {
+    .header-site .site-description {
       width: 100%;
     }
 
@@ -135,7 +142,7 @@
       color: #333;
       font-size: 14px;
       line-height: 30px;
-      padding:0;
+      padding: 0;
       width: 30px;
       height: 30px;
       border: 0;
