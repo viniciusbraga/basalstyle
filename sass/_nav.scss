@@ -55,7 +55,7 @@
   margin: -5px 0 0;
   padding: 0 ;
   opacity: 0;
-  border: 1px solid #95A5A5;
+  border: none;
   background-color: #FFF;
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
   position: absolute;
@@ -66,7 +66,7 @@
   width: 20px;
   height: 20px;
   display: block;
-  border: 1px solid #95A5A5;
+  border: none;
   background-color: #FFFFFF;
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
   position: absolute;
@@ -104,7 +104,6 @@
   margin: 0 0;
   padding: 0 1em;
   display: block;
-  border-bottom: 1px solid #C5CDCD;
   text-align: left;
 }
 .submenu ul li a:hover {

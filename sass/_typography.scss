@@ -1,0 +1,298 @@
+﻿/*
+ * Etiquetas HTML
+ * obs: Não é necessário aplicar o CSS RESET com este código na página.
+ */
+
+html {
+    font-size: 62.5%;
+    background-color: $basal-color-background;
+}
+
+body {
+    color: $basal-color-text;
+    font-size: 1em;
+    line-height: 2.7;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+ }
+
+/* Titulagem */
+
+h1 {
+    font-size: 4.0em;
+    line-height: 60px;
+    min-height: $basal-leading * 3;
+    padding: 13px 0 17px;
+    }
+
+h2 {
+    font-size: 3.2em;
+    line-height: 42px;
+    min-height: $basal-leading * 3;
+    padding: 26px 0 10px;
+}
+
+h3 {
+    font-size: 2.8em;
+    line-height: 38px;
+    min-height: $basal-leading * 3;
+    padding: 30px 0 14px;
+}
+
+h4 {
+    font-size: 2.3em;
+    line-height: $basal-leading;
+    min-height: $basal-leading * 2;
+    padding: 35px 0 25px;
+}
+
+h5 {
+    font-size: 1.7em;
+    line-height: $basal-leading;
+    min-height: $basal-leading * 2;
+    padding: 7px 0 23px;
+}
+
+h6 {
+    font-size: 1.3em;
+    line-height: 20px;
+    min-height: $basal-leading * 2;
+    padding: 14px 0 3px;
+}
+
+h1, h2 {
+    letter-spacing: -0.006em;
+    word-spacing: -0.05em;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dt,dd,blockquote {
+    margin: 0 $basal-padding;
+}
+
+p, li, dt, dd, th, td, caption {
+    font-size: 1.8em;
+    line-height: $basal-leading;
+}
+
+li li, li p, li h1, li h2, li h3, li h4 {
+    font-size: 1em;
+}
+
+p  { padding: 7px 0 23px; }
+
+ul, ol { padding: 0.7em 0 2.3em 3.9em; }
+
+dl { padding: 0.7em 0 2.3em 2.4em; }
+
+dt { font-weight: 700; margin: 0; padding: 0; }
+
+dd { margin: 0; padding: 0; }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 0 0 1em;
+}
+
+th, caption {
+    text-align: left;
+    font-weight: 700;
+}
+
+blockquote {
+    margin: 0 0 $basal-leading $basal-padding;
+    padding: 0 9em 0 0.25em;
+    border-left: 8px solid fadeout( $basal-color-ruler , 50%);
+}
+
+em { font-style: italic; }
+
+small { font-size: 0.75em; line-height: 1em; }
+
+strong, b { font-weight: 700; }
+
+code, tt {
+    color: #C06;
+    font-size: 1.2em;
+    line-height: 1em;
+}
+
+hr {
+    border-left:   0;
+    border-right:  0;
+    border-top:    solid 1px lighten( $basal-color-ruler, 50% );
+    border-bottom: solid 1px $basal-color-ruler;
+}
+
+img {
+    margin: 0 auto;
+    vertical-align: middle;
+    border-width: 0;
+}
+
+form {
+    padding: 0;
+    margin: 0;
+}
+
+fieldset {
+    border: solid 1px $basal-color-ruler;
+}
+
+textarea {
+    font-family: inherit;
+    font-size: 1.5em;
+    margin: 0 1.2em;
+    padding: 0.75em 0.5em 0.5em 0.75em;
+    width: 93%;
+    border: 1px solid  $basal-color-ruler;
+}
+
+a         { color: $basal-color-link; }
+a:hover   { color: $basal-color-link-hover; }
+a:active  { color: $basal-color-link-active; }
+a:visited { color: $basal-color-link-visited; }
+
+header, menu, nav, article, section, aside, details, figcaption, figure, footer {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+/* Aplica o modelo de caixa semelhante ao do IE */
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+ * Columns Rulers, tricks and treats
+ */
+
+.ruler-left   { border-left:   1px solid $basal-color-ruler; }
+.ruler-top    { border-top:    1px solid $basal-color-ruler; }
+.ruler-right  { border-right:  1px solid $basal-color-ruler; }
+.ruler-bottom { border-bottom: 1px solid $basal-color-ruler; }
+
+.float-left       { float: left; }
+.float-right      { float: right; }
+
+.text-align-left   { text-align: left; }
+.text-align-right  { text-align: right; }
+.text-align-center { text-align: center; }
+
+/*
+ * Impõe a quebra em bloco/ brbk
+ * Permite a quebrar de textos de uma manchete ou chamada em blocos determinados.
+ * Ex.: <h1>Tipografia Moderna e Futurismo/ <b class="brbk">Ação e Perspectiva</b></h1>
+ */
+
+.brbk { display: block; }
+
+/*
+ * Evita quebra de palavras de um bloco inline/ brno
+ * Ajuda na quebrar de um conjunto de palavras em títulos em destaque
+ * Ex.: <h1>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva</b></h1>
+ */
+
+.brno { white-space: nowrap; }
+
+
+/*
+ * Anexo com complementos de tipografia e layout
+ */
+
+
+.text-smaller p,
+.text-smaller li,
+.text-smaller dt,
+.text-smaller dd,
+.text-smaller th,
+.text-smaller td,
+.text-smaller caption {
+    font-size: 1.4em;
+    line-height: $basal-leading * 0.9;
+}
+
+.text-smaller h1,
+.text-smaller h2,
+.text-smaller h3,
+.text-smaller h4,
+.text-smaller h5,
+.text-smaller h6 {
+    font-size: 2.4em;
+    font-weight: 300;
+    line-height: $basal-leading;
+    min-height: 0;
+    padding: 5px 0 0;
+    display: inline-block;
+    }
+
+.text-smaller h2 { font-size: 2.1em; }
+.text-smaller h3 { font-size: 1.8em; }
+.text-smaller h4 { font-size: 1.6em; }
+
+.text-smaller p  { padding: 2px 0 23px; }
+
+.text-smaller ul,
+.text-smaller ol { padding: 7px 0 23px 42px; }
+
+.text-smaller dl { padding: 0 0 $basal-leading; }
+
+.text-smaller dt { padding: $basal-leading 0 0; font-weight: 700; }
+
+.text-smaller dd { padding: 0; }
+
+
+.text-smallest p,
+.text-smallest li,
+.text-smallest dt,
+.text-smallest dd,
+.text-smallest th,
+.text-smallest td,
+.text-smallest caption {
+    font-size: 1.2em;
+    line-height: $basal-leading * 0.6;
+}
+
+.text-smallest h1,
+.text-smallest h2,
+.text-smallest h3,
+.text-smallest h4,
+.text-smallest h5,
+.text-smallest h6 {
+    font-size: 2.4em;
+    font-weight: 300;
+    line-height: $basal-leading;
+    min-height: 0;
+    padding: 5px 0 0;
+    display: inline-block;
+    }
+
+
+.text-smallest h2 { font-size: 2.1em; }
+.text-smallest h3 { font-size: 1.8em; }
+.text-smallest h4 { font-size: 1.6em; }
+
+.text-smallest p  { padding: 15px 0 15px; }
+
+
+
+@media (min-width: 900px) {
+
+
+}
+
+/* FIM @media (min-width: 801px) */
+
+
+@media (max-width: 800px) {
+
+    .brno { white-space: normal; }
+
+}
+/* FIM (max-width: 800px) */
+
+

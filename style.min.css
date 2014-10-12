@@ -1,0 +1,577 @@
+@charset "UTF-8";
+/* Etiquetas HTML obs: Não é necessário aplicar o CSS RESET com este código na página. */
+html { font-size: 62.5%; background-color: white; }
+
+body { color: #111100; font-size: 1em; line-height: 2.7; font-family: sans-serif; margin: 0; padding: 0; }
+
+/* Titulagem */
+h1 { font-size: 4.0em; line-height: 60px; min-height: 90px; padding: 13px 0 17px; }
+
+h2 { font-size: 3.2em; line-height: 42px; min-height: 90px; padding: 26px 0 10px; }
+
+h3 { font-size: 2.8em; line-height: 38px; min-height: 90px; padding: 30px 0 14px; }
+
+h4 { font-size: 2.3em; line-height: 30px; min-height: 60px; padding: 35px 0 25px; }
+
+h5 { font-size: 1.7em; line-height: 30px; min-height: 60px; padding: 7px 0 23px; }
+
+h6 { font-size: 1.3em; line-height: 20px; min-height: 60px; padding: 14px 0 3px; }
+
+h1, h2 { letter-spacing: -0.006em; word-spacing: -0.05em; }
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd, blockquote { margin: 0 15px; }
+
+p, li, dt, dd, th, td, caption { font-size: 1.8em; line-height: 30px; }
+
+li li, li p, li h1, li h2, li h3, li h4 { font-size: 1em; }
+
+p { padding: 7px 0 23px; }
+
+ul, ol { padding: 0.7em 0 2.3em 3.9em; }
+
+dl { padding: 0.7em 0 2.3em 2.4em; }
+
+dt { font-weight: 700; margin: 0; padding: 0; }
+
+dd { margin: 0; padding: 0; }
+
+table { border-collapse: collapse; width: 100%; margin: 0 0 0 1em; }
+
+th, caption { text-align: left; font-weight: 700; }
+
+blockquote { margin: 0 0 30px 15px; padding: 0 9em 0 0.25em; border-left: 8px solid fadeout(#c5cdcd, 50%); }
+
+em { font-style: italic; }
+
+small { font-size: 0.75em; line-height: 1em; }
+
+strong, b { font-weight: 700; }
+
+code, tt { color: #C06; font-size: 1.2em; line-height: 1em; }
+
+hr { border-left: 0; border-right: 0; border-top: solid 1px white; border-bottom: solid 1px #c5cdcd; }
+
+img { margin: 0 auto; vertical-align: middle; border-width: 0; }
+
+form { padding: 0; margin: 0; }
+
+fieldset { border: solid 1px #c5cdcd; }
+
+textarea { font-family: inherit; font-size: 1.5em; margin: 0 1.2em; padding: 0.75em 0.5em 0.5em 0.75em; width: 93%; border: 1px solid #c5cdcd; }
+
+a { color: #3498db; }
+
+a:hover { color: #2980b9; }
+
+a:active { color: #cb6724; }
+
+a:visited { color: #217dbb; }
+
+header, menu, nav, article, section, aside, details, figcaption, figure, footer { display: block; margin: 0; padding: 0; }
+
+/* Aplica o modelo de caixa semelhante ao do IE */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Columns Rulers, tricks and treats */
+.ruler-left { border-left: 1px solid #c5cdcd; }
+
+.ruler-top { border-top: 1px solid #c5cdcd; }
+
+.ruler-right { border-right: 1px solid #c5cdcd; }
+
+.ruler-bottom { border-bottom: 1px solid #c5cdcd; }
+
+.float-left { float: left; }
+
+.float-right { float: right; }
+
+.text-align-left { text-align: left; }
+
+.text-align-right { text-align: right; }
+
+.text-align-center { text-align: center; }
+
+/* Impõe a quebra em bloco/ brbk Permite a quebrar de textos de uma manchete ou chamada em blocos determinados. Ex.: <h1>Tipografia Moderna e Futurismo/ <b class="brbk">Ação e Perspectiva</b></h1> */
+.brbk { display: block; }
+
+/* Evita quebra de palavras de um bloco inline/ brno Ajuda na quebrar de um conjunto de palavras em títulos em destaque Ex.: <h1>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva</b></h1> */
+.brno { white-space: nowrap; }
+
+/* Anexo com complementos de tipografia e layout */
+.text-smaller p, .text-smaller li, .text-smaller dt, .text-smaller dd, .text-smaller th, .text-smaller td, .text-smaller caption { font-size: 1.4em; line-height: 27px; }
+
+.text-smaller h1, .text-smaller h2, .text-smaller h3, .text-smaller h4, .text-smaller h5, .text-smaller h6 { font-size: 2.4em; font-weight: 300; line-height: 30px; min-height: 0; padding: 5px 0 0; display: inline-block; }
+
+.text-smaller h2 { font-size: 2.1em; }
+
+.text-smaller h3 { font-size: 1.8em; }
+
+.text-smaller h4 { font-size: 1.6em; }
+
+.text-smaller p { padding: 2px 0 23px; }
+
+.text-smaller ul, .text-smaller ol { padding: 7px 0 23px 42px; }
+
+.text-smaller dl { padding: 0 0 30px; }
+
+.text-smaller dt { padding: 30px 0 0; font-weight: 700; }
+
+.text-smaller dd { padding: 0; }
+
+.text-smallest p, .text-smallest li, .text-smallest dt, .text-smallest dd, .text-smallest th, .text-smallest td, .text-smallest caption { font-size: 1.2em; line-height: 18px; }
+
+.text-smallest h1, .text-smallest h2, .text-smallest h3, .text-smallest h4, .text-smallest h5, .text-smallest h6 { font-size: 2.4em; font-weight: 300; line-height: 30px; min-height: 0; padding: 5px 0 0; display: inline-block; }
+
+.text-smallest h2 { font-size: 2.1em; }
+
+.text-smallest h3 { font-size: 1.8em; }
+
+.text-smallest h4 { font-size: 1.6em; }
+
+.text-smallest p { padding: 15px 0 15px; }
+
+/* FIM @media (min-width: 801px) */
+@media (max-width: 800px) { .brno { white-space: normal; } }
+/* FIM (max-width: 800px) */
+/* Estruturas de Colunas fixas */
+.desktop-1 { max-width: 95px; }
+
+.desktop-2 { max-width: 190px; }
+
+.desktop-3 { max-width: 285px; }
+
+.desktop-4 { max-width: 380px; }
+
+.desktop-5 { max-width: 475px; }
+
+.desktop-6 { max-width: 570px; }
+
+.desktop-7 { max-width: 665px; }
+
+.desktop-8 { max-width: 760px; }
+
+.desktop-9 { max-width: 855px; }
+
+.desktop-10 { max-width: 950px; }
+
+.desktop-11 { max-width: 1045px; }
+
+.desktop-12 { max-width: 1140px; }
+
+.desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { float: left; width: 100%; }
+
+/* Colunas usando porcentagem */
+.col-25 { width: 25.0%; }
+
+.col-30 { width: 30.0%; }
+
+.col-33 { width: 33.0%; }
+
+.col-40 { width: 40.0%; }
+
+.col-50 { width: 50.0%; }
+
+.col-60 { width: 60.0%; }
+
+.col-66 { width: 66.0%; }
+
+.col-70 { width: 70.0%; }
+
+.col-75 { width: 75.0%; }
+
+.col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 { float: left; }
+
+.col { overflow: hidden; }
+
+/* Anula o float e centraliza o <div> da coluna. */
+.container { margin: 0 auto; float: none; }
+
+/* Leading Aplica o espaço de entrelinha correspondente no padding de topo e da base da caixa Deve ser aplicado em caixas (<div>,<header>,<section>,<articles>) que herdam o font-size do <body> */
+.leading-top-1 { padding-top: 30px; }
+
+.leading-top-2 { padding-top: 60px; }
+
+.leading-top-3 { padding-top: 90px; }
+
+.leading-top-4 { padding-top: 120px; }
+
+.leading-top-5 { padding-top: 150px; }
+
+.leading-bottom-1 { padding-top: 30px; }
+
+.leading-bottom-2 { padding-top: 60px; }
+
+.leading-bottom-3 { padding-top: 90px; }
+
+.leading-bottom-4 { padding-top: 120px; }
+
+.leading-bottom-5 { padding-top: 150px; }
+
+/* Aplica um espaço em tamanho de coluna correspondente, ao lado esquerdo (col-left) e ao lado direito (col-right) */
+.col-left-1 { margin-left: 95px; }
+
+.col-left-2 { margin-left: 190px; }
+
+.col-left-3 { margin-left: 285px; }
+
+.col-left-4 { margin-left: 380px; }
+
+.col-left-5 { margin-left: 475px; }
+
+.col-left-6 { margin-left: 570px; }
+
+.col-left-7 { margin-left: 665px; }
+
+.col-left-8 { margin-left: 760px; }
+
+.col-left-9 { margin-left: 855px; }
+
+.col-left-10 { margin-left: 950px; }
+
+.col-left-11 { margin-left: 1045px; }
+
+.col-right-1 { margin-right: 95px; }
+
+.col-right-2 { margin-right: 190px; }
+
+.col-right-3 { margin-right: 285px; }
+
+.col-right-4 { margin-right: 380px; }
+
+.col-right-5 { margin-right: 475px; }
+
+.col-right-6 { margin-right: 570px; }
+
+.col-right-7 { margin-right: 665px; }
+
+.col-right-8 { margin-right: 760px; }
+
+.col-right-9 { margin-right: 855px; }
+
+.col-right-10 { margin-right: 950px; }
+
+.col-right-11 { margin-right: 1045px; }
+
+@media screen and (max-width: 1150px) { .desktop-1 { width: 8%; }
+  .desktop-2 { width: 16%; }
+  .desktop-3 { width: 24%; }
+  .desktop-4 { width: 32%; }
+  .desktop-5 { width: 40%; }
+  .desktop-6 { width: 48%; }
+  .desktop-7 { width: 56%; }
+  .desktop-8 { width: 64%; }
+  .desktop-9 { width: 72%; }
+  .desktop-10 { width: 80%; }
+  .desktop-11 { width: 88%; }
+  .desktop-12 { width: 96%; } }
+@media screen and (max-width: 800px) { .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { width: 100%; float: none; max-width: none; }
+  .tablet-1 { width: 25%; float: left; }
+  .tablet-2 { width: 50%; float: left; }
+  .tablet-3 { width: 75%; float: left; } }
+@media screen and (max-width: 700px) { .tablet-1, .tablet-2, .tablet-3 { width: 100%; float: none; }
+  .col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 { width: 100%; float: none; }
+  .col { overflow: visible; display: block; }
+  .mobile-2 { width: 50%; float: left; }
+  .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11, .col-left-12 { margin-left: 0; }
+  .col-right-1, .col-right-2, .col-right-3, .col-right-4, .col-right-5, .col-right-6, .col-right-7, .col-right-8, .col-right-9, .col-right-10, .col-right-11, .col-right-12 { margin-right: 0; }
+  .leading-top-1, .leading-top-2, .leading-top-3, .leading-top-4, .leading-top-5 { padding-top: 1em; }
+  .leading-bottom-1, .leading-bottom-2, .leading-bottom-3, .leading-bottom-4, .leading-bottom-5 { padding-bottom: 1em; } }
+@media screen and (max-width: 360px) { .mobile-2 { width: 100%; float: none; } }
+/* Nicolas Gallagher's micro clearfix */
+.row { *zoom: 1; }
+
+.row:before, .row:after { content: " "; display: table; }
+
+.row:after { clear: both; }
+
+/* Grid de DEBUG de alinhamento  Uso: Basta aplicar na página/template o <label> abaixo. Certifique-se que a imagem com o grid esteja disponível.  <label class="btnDebug" for="debug"> Grid <input type="checkbox" id="debug" onclick='var e=document.getElementsByTagName("body")[0],c="debug",re=new RegExp("(?:^|\s)"+c+"(?!\S)","g");if(e.className.match(re)){e.className=e.className.replace(re,"");}else{e.className+=" "+c;this.checked=true;}'></label>   */
+.debug { display: block; position: relative; }
+
+.debug:after { content: ""; background: url(images/grid-15-30-95-1140.png) repeat-y center top !important; opacity: 0.8; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: 2; transition: display 1.5s; }
+
+.btnDebug { color: #666666; font-size: 14px; line-height: 20px; text-transform: uppercase; vertical-align: top; padding: 0 0.25em; position: fixed; top: 0; right: 0; z-index: 1000; opacity: 1; background-color: #FFF; border-radius: 0 0 6px 6px; }
+
+/* FIM Grid e Normalizador */
+/* Cabeçalho do Site e Navegação */
+.header { position: relative; min-height: 90px; }
+
+.header-site { width: 75%; }
+
+.header-site a { text-decoration: none; }
+
+.header-site .site-logo { font-size: 1em; line-height: 1em; margin: 0; padding: 0; min-height: 1em; max-height: 90px; }
+
+.header-site .site-logo a { color: #000; font-size: 3.2em; line-height: 2.25em; font-weight: 700; margin: 0; padding: 0 0 0 0.5em; width: 320px; height: 60px; display: block; }
+
+.header-site .site-description { font-size: 1.4em; line-height: 1em; margin: 0; padding: 0 1.13em; }
+
+.headerNav { position: absolute; top: 52px; right: 0; z-index: 10; }
+
+/* Fomulário de Busca no Header do Site */
+.headerSearch { vertical-align: middle; display: block; margin: 0; padding: 0; position: absolute; top: 12px; right: 18px; }
+
+.headerSearch form { margin: 0; padding: 0; }
+
+.headerSearch label { display: none; }
+
+.headerSearch input[type="text"] { color: #333; font-size: 16px; line-height: 27px; font-family: inherit; min-height: 27px; padding: 1px 6px; margin: 0; width: 270px; border: 1px solid #C5CDCD; }
+
+.headerSearch button[type="submit"] { color: #333; font-size: 14px; line-height: 30px; padding: 0; width: 30px; height: 30px; border: 0; box-shadow: none; overflow: hidden; display: block; background: none; position: absolute; top: 0; right: 0; z-index: 10; }
+
+/* @media (max-width: 800px) */
+@media (max-width: 800px) { /* Cabeçalho do Site e Navegação */
+  .header { position: relative; min-height: 13.5em; }
+  .header-site { width: 100%; }
+  .header-site .site-description { width: 100%; }
+  .headerNav { position: absolute; top: 2.0em; right: 0; z-index: 10; }
+  /* Cabeçalho do Site e Navegação */
+  .headerSearch { vertical-align: middle; display: block; margin: 0 auto; padding: 20px 0; max-width: 270px; position: relative; top: 0; right: 0; }
+  .headerSearch button[type="submit"] { color: #333; font-size: 14px; line-height: 30px; padding: 0; width: 30px; height: 30px; border: 0; box-shadow: none; overflow: hidden; display: block; background: none; position: absolute; top: 20px; right: 0; z-index: 10; } }
+/* FIM @media (max-width: 800px) */
+/* FIM Cabeçalho do Site e Navegação */
+/* Menu navInline */
+.navInline { vertical-align: middle; display: inline-block; }
+
+.navInline ul { margin: 0; padding: 0 0.9em; }
+
+.navInline li { font-size: 1em; margin: 0; padding: 0; float: left; list-style: none; position: relative; }
+
+.navInline li a { font-size: 14px; font-weight: 400; line-height: 44px; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0 0.7em; display: block; transition: color 0.3s, background-color 1s; }
+
+.navInline li a:hover { color: #000; background-color: #F5F5F5; }
+
+.navInline .current > a { color: #000; font-weight: 700; }
+
+.navMobile, .navClose { display: none; }
+
+/* Submenu de links do Menu navInline */
+.submenu { position: relative; overflow: hidden; }
+
+.submenu:hover { color: #000; overflow: visible; }
+
+.submenu ul { margin: -5px 0 0; padding: 0; opacity: 0; border: none; background-color: #FFF; box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); position: absolute; z-index: 9995; }
+
+.submenu ul:after { content: ""; width: 20px; height: 20px; display: block; border: none; background-color: #FFFFFF; box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); position: absolute; top: -10px; left: 20px; z-index: -9994; -webkit-transform-origin: 0 0; -webkit-transform: rotate(45deg); transform-origin: 0 0; transform: rotate(45deg); }
+
+.submenu ul:before { content: ""; position: absolute; top: 0; left: 0; display: block; width: 100%; height: 20px; background: #FFF; }
+
+.submenu:hover ul { margin: 0 0 0; opacity: 1; -webkit-transition: opacity 0.6s, margin 1s; transition: opacity 0.6s, margin 1s; }
+
+.submenu ul li { font-size: 1em; min-width: 200px; min-height: 44px; float: none; }
+
+.submenu ul li a { margin: 0 0; padding: 0 1em; display: block; text-align: left; }
+
+.submenu ul li a:hover { color: #FFF; background: #3498DB; }
+
+/* @media (max-width: 800px) */
+@media (max-width: 800px) { /* Menu navInline */
+  .navInline { text-align: right; vertical-align: middle; margin: 0 10px; min-height: 45px; width: 45px; position: relative; display: inline-block; }
+  .navInline .navMenu > ul { width: 250px; margin: -5px 0 0 0; padding: 0; display: block; height: 0; opacity: 0.3; overflow: hidden; position: relative; right: 205px; background: #C5CDCD; }
+  .navMenu { position: relative; }
+  .navMenu:hover ul { margin-top: 0; opacity: 1; height: auto; transition: margin 1s, height 2s, opacity 1s; }
+  .navInline li { float: none; text-align: left; }
+  .navInline li a { color: #000; font-weight: nomral; padding: 0 1em; border-bottom: 1px solid #F2F5F5; white-space: nowrap; }
+  .navInline li a:hover { color: #FFF; background: #0066CC; }
+  .navMobile, .navClose { color: #7F8C8C; font-size: 28px; font-weight: bold; line-height: 45px; text-transform: uppercase; text-decoration: none; text-align: center; width: 45px; height: 45px; margin: 0 0 0 auto; padding: 0; display: block; }
+  .navClose { color: #7F8C8C; font-size: 18px; text-align: center; display: none; opacity: 0; transition: opacity 6s; }
+  .navInline:hover .navMobile, .navInline:hover .navClose { color: #FFF; background-color: #C5CDCD; display: block; opacity: 1; }
+  /* Submenu */
+  .submenu ul { padding: 0; display: block; position: relative; z-index: 1000; background-color: #C5CDCD; box-shadow: none; border: none; }
+  .submenu ul:after, .submenu ul:before { display: none; }
+  .navInline .submenu ul li a { margin: 0 0; padding: 0 1.2em 0 2em; border-bottom: 1px solid #F2F5F5; display: block; } }
+/* FIM @media (max-width: 800px) */
+/* FIM Menu navInline */
+/* Imagens  Exemplo de aplicação: <span class="img img-col-4 frame-h-27x8"> <img src="nome_da_image.png" height="530" width="800"> </span> Onde img-col-(número de coluna) especifica a largura máxima da caixa da imagem. Contudo, a imagem ficará menor, porque a regra CSS desconta os espaços laterais (padding) para o alinhamento com o texto. */
+.img-col-1 { max-width: 95px; min-height: 90px; }
+
+.img-col-2 { max-width: 190px; min-height: 150px; }
+
+.img-col-3 { max-width: 285px; min-height: 180px; }
+
+.img-col-4 { max-width: 380px; min-height: 270px; }
+
+.img-col-5 { max-width: 475px; min-height: 330px; }
+
+.img-col-6 { max-width: 570px; min-height: 420px; }
+
+.img-col-7 { max-width: 665px; min-height: 450px; }
+
+.img-col-8 { max-width: 760px; min-height: 510px; }
+
+.img-col-9 { max-width: 855px; min-height: 600px; }
+
+.img-col-10 { max-width: 950px; min-height: 660px; }
+
+.img-col-11 { max-width: 1045px; min-height: 720px; }
+
+.img-col-12 { max-width: 1140px; min-height: 810px; }
+
+.img-col-1, .img-col-2, .img-col-3, .img-col-4, .img-col-5, .img-col-6, .img-col-7, .img-col-8, .img-col-9, .img-col-10, .img-col-11, .img-col-12 { width: 100%; margin: 0 auto; padding: 0 15px; }
+
+.img { display: block; position: relative; }
+
+.img:after { content: ""; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1; }
+
+.img img { width: 100%; height: auto; }
+
+.imgLeft { margin: 0 auto 0 0; }
+
+.imgRight { margin: 0 0 0 auto; }
+
+/* img-align-text A imagem fica alinhada com a altura da letra capitular (cap height) do texto. */
+.img-align-title { margin-top: 3em; }
+
+.img-align-text { margin-top: 14px; margin-bottom: 16px; }
+
+/* frame-h-(número de entrelinha) Tem momentos que você precisa forçar a altura da caixa da imagem. Esta classe especifica um tamanho limite, fazendo o recorte (crop) necessário. Ex: Preciso de uma caixa de imagem com no máximo 3 linhas, basta usar a classe frame-h-27x3, tipo: <span class="img img-col-4 frame-h-27x3"> */
+.frame-h-3 { height: 90px; }
+
+.frame-h-4 { height: 120px; }
+
+.frame-h-5 { height: 150px; }
+
+.frame-h-6 { height: 180px; }
+
+.frame-h-8 { height: 240px; }
+
+.frame-h-9 { height: 270px; }
+
+.frame-h-11 { height: 330px; }
+
+.frame-h-14 { height: 420px; }
+
+.frame-h-15 { height: 450px; }
+
+.frame-h-18 { height: 540px; }
+
+.frame-h-20 { height: 600px; }
+
+.frame-h-22 { height: 660px; }
+
+.frame-h-24 { height: 720px; }
+
+.frame-h-27 { height: 810px; }
+
+.frame-h-3, .frame-h-4, .frame-h-5, .frame-h-6, .frame-h-8, .frame-h-9, .frame-h-11, .frame-h-14, .frame-h-15, .frame-h-18, .frame-h-20, .frame-h-22, .frame-h-24, .frame-h-27 { min-height: 1em; overflow: hidden; }
+
+/* @media (max-width: 1150px) */
+@media (max-width: 1150px) { .img-col-1, .img-col-2, .img-col-3, .img-col-4, .img-col-5, .img-col-6, .img-col-7, .img-col-8, .img-col-9, .img-col-10, .img-col-11, .img-col-12 { min-height: 1em; padding: 1.6em 15px; }
+  .img-align-text { margin-top: 0; margin-bottom: 0; }
+  .frame-h-3, .frame-h-4, .frame-h-5, .frame-h-6, .frame-h-8, .frame-h-9, .frame-h-11, .frame-h-14, .frame-h-15, .frame-h-18, .frame-h-20, .frame-h-22, .frame-h-24, .frame-h-27 { height: auto; min-height: 1em; overflow: hidden; } }
+/*  FIM Imagens * / */
+/* Formulários  */
+.formRow { margin: 0; padding: 0 18px; list-style: none; min-height: 81px; }
+
+.formRow p { margin: 0; padding: 0; }
+
+.formRow a { text-decoration: none; }
+
+.formRow label, .formRow legend { color: #000; font-size: 14px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; line-height: 27px; padding: 0; margin: 0; }
+
+.formRow textarea { font-family: inherit; font-size: 1.5em; margin: 0; padding: 0.75em 0.5em 0.5em 0.75em; width: 100%; border: 1px solid #cdcdcd; }
+
+.labelBlock label, .formRow legend { display: block; }
+
+.inputText input[type="text"] { font-size: 2.0em; font-family: inherit; line-height: 1.4em; letter-spacing: 0.06em; vertical-align: middle; white-space: pre; margin: 0; padding: 0.35em; width: 100%; min-height: 10px; display: block; border-radius: 0; border: 1px solid #F2F5F5; background-color: #F2F5F5; outline: none; transition: background-color 1s ease 0s,border 1s ease 0s; }
+
+.inputText input[type="text"]:hover { border: 1px solid #C5CDCD; background-color: #C5CDCD; transition: background-color 1s ease 0s,border 1s ease 0s; }
+
+.inputText input[type="text"]:focus { border: 1px solid #C5CDCD; background-color: #F2F5F5; }
+
+.inputText-66 input[type="text"] { width: 66%; }
+
+.inputText-33 input[type="text"] { width: 33%; }
+
+.inputRadio fieldset { padding: 0; border: none; }
+
+.inputRadio ul, .inputRadio li, .inputRadio dl, .inputRadio dd { margin: 0; padding: 0; list-style: none; }
+
+.inputRadio label { font-size: 1em; font-weight: 300; }
+
+.inputRadio input { display: inline-block; margin-right: 0.66em; }
+
+.selectDropdown select { color: #000; font-family: inherit; font-size: 1.6em; line-height: 40px; margin: 0; padding: 0.6em 0.3em 0.6em 0.3em; min-height: 36px; width: 100%; border: 1px solid #F2F5F5; background-color: #F2F5F5; box-shadow: 0 2px 10px #C5CDCD; transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s; outline: none; }
+
+.selectDropdown select:hover { border: 1px solid #C5CDCD; background-color: #F2F5F5; box-shadow: 0 0 1px #f2f5f5, inset 0px 1px rgba(255, 255, 255, 0.2); outline: none; }
+
+.selectDropdown select:focus { border: 1px solid #95a5a6; background-color: #ecf0f1; outline: none; }
+
+.labelInline label { font-size: 1.2em; font-weight: 400; line-height: 1.666em; padding: 0; margin: 0; float: left; }
+
+/* Erros nos formulários */
+.errorlist { color: #e74c3c; }
+
+.errorlist p, .errorlist li, .errorlist dt, .errorlist dd { font-size: 1.4em; padding-top: 0; padding-bottom: 0; margin-bottom: 0; }
+
+.errorlist li + li, .errorlist dd + dd { line-height: 1.25em; margin: 0; padding-bottom: 0.7em; }
+
+.formRow .errorlist { margin: 0; padding: 0 0 0 0; list-style: none; }
+
+.formRow .errorlist + input, .formRow .errorlist + input + input, .formRow .errorlist + textarea, .formRow .errorlist + dl, .errorInput input { margin: 0 0 6px; padding: 4px 0 5px 5px; border: none; border-left: 6px solid #e74c3c; background: #FFF4F3; }
+
+.formRow .errorlist + dl { border: none; border-left: 6px solid #e74c3c; }
+
+.errorInput label { color: #e74c3c; }
+
+.errorInput input:hover { background: #FFF4F3; }
+
+.errorInput input:focus { border: none; border-left: 6px solid #16a085; background-color: #ecf0f1; }
+
+/* Mensagens e Alertas */
+/* Leading Aplica o espaço de entrelinha no padding-top ou padding-bottom da caixa. Nesta versão abaixo, a entrelinha base é de 2.7em */
+.formRow.leadingTop-1 { padding-top: 27px; }
+
+.formRow.leadingTop-2 { padding-top: 54px; }
+
+.formRow.leadingTop-3 { padding-top: 81px; }
+
+.formRow.leadingTop-4 { padding-top: 108px; }
+
+.formRow.leadingTop-5 { padding-top: 135px; }
+
+.formRow.leadingBottom-1 { padding-bottom: 27px; }
+
+.formRow.leadingBottom-2 { padding-bottom: 54px; }
+
+.formRow.leadingBottom-3 { padding-bottom: 81px; }
+
+.formRow.leadingBottom-4 { padding-bottom: 108px; }
+
+.formRow.leadingBottom-5 { padding-bottom: 135px; }
+
+@media (max-width: 800px) { .inputText-66 input, .inputText-33 input { width: 100%; }
+  .formRow.leadingTop-1, .formRow.leadingTop-2, .formRow.leadingTop-3, .formRow.leadingTop-4, .formRow.leadingTop-5 { padding-top: 2.7em; }
+  .formRow.leadingBottom-1, .formRow.leadingBottom-2, .formRow.leadingBottom-3, .formRow.leadingBottom-4, .formRow.leadingBottom-5 { padding-bottom: 2.7em; } }
+/* Fim @media (max-width: 800px) */
+/* Formulários  */
+/* Botões de Interface */
+.btnBasic, .btnBasic:visited, input[type="submit"] { color: #2E3333; font-size: 14px; font-weight: bold; line-height: 42px; min-height: 42px; vertical-align: middle; text-transform: uppercase; text-decoration: none; margin: 0 1.125em 0 0; padding: 0 1.6em; display: inline-block; border: 0; border-radius: 3px; position: relative; background-color: #c5cdcd; transition: background-color ease 0.5s; }
+
+.btnBasic:hover, .btnBasic:focus, input[type="submit"]:hover { color: #F2F5F5; background-color: #95A5A5; outline: 0; cursor: pointer; }
+
+.btnIconLeft { padding-left: 1.2em; }
+
+.btnIconLeft .fa { padding-right: 0.5em; }
+
+.btnIconRight { padding-right: 1.5em; }
+
+.btnIconRight .fa { padding-left: 0.5em; }
+
+/* Botões coloridos */
+.btnGreen, .btnGreen:visited, input[type="submit"].btnGreen, input[type="submit"].btnGreen:visited { color: #FFF; background-color: #1abc9c; }
+
+.btnGreen:hover, input[type="submit"].btnGreen:hover { color: #FFF; background-color: #16a085; }
+
+.btnBlue, .btnBlue:visited, input[type="submit"].btnBlue, input[type="submit"].btnBlue:visited { color: #FFF; background-color: #3498db; }
+
+.btnBlue:hover, input[type="submit"].btnBlue:hover { color: #FFF; background-color: #2980b9; }
+
+.btnOrange, .btnOrange:visited, input[type="submit"].btnOrange, input[type="submit"].btnOrange:visited { color: #FFF; background-color: #FF9900; }
+
+.btnOrange:hover, input[type="submit"].btnOrange:hover { color: #FFF; background-color: #F08000; }
+
+.btnRed, .btnRed:visited, input[type="submit"].btnRed, input[type="submit"].btnRed:visited { color: #FFF; background-color: #e74c3c; }
+
+.btnRed:hover, input[type="submit"].btnRed:hover { color: #FFF; background-color: #CC3300; }
+
+/* FIM Botões de Interface  */

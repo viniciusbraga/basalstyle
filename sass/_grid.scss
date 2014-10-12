@@ -1,0 +1,282 @@
+﻿/*
+ * Estruturas de Colunas fixas
+ */
+
+@for $i from 1 through $basal-col-number {
+
+    .desktop-#{$i} {
+        max-width: $basal-col-fixed * $i;
+    }
+
+}
+
+.desktop-1,
+.desktop-2,
+.desktop-3,
+.desktop-4,
+.desktop-5,
+.desktop-6,
+.desktop-7,
+.desktop-8,
+.desktop-9,
+.desktop-10,
+.desktop-11,
+.desktop-12 {
+    float: left;
+    width: 100%;
+}
+
+
+/* Colunas usando porcentagem */
+.col-25 { width: 25.0%; }
+
+.col-30 { width: 30.0%; }
+
+.col-33 { width: 33.0%; }
+
+.col-40 { width: 40.0%; }
+
+.col-50 { width: 50.0%; }
+
+.col-60 { width: 60.0%; }
+
+.col-66 { width: 66.0%; }
+
+.col-70 { width: 70.0%; }
+
+.col-75 { width: 75.0%; }
+
+
+.col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 {
+    float: left;
+}
+
+.col { overflow: hidden; }
+
+
+/*
+ * Anula o float e centraliza o <div> da coluna.
+ */
+
+.container { margin: 0 auto; float: none; }
+
+
+/*
+ * Leading
+ * Aplica o espaço de entrelinha correspondente no padding de topo e da base da caixa
+ * Deve ser aplicado em caixas (<div>,<header>,<section>,<articles>)
+ * que herdam o font-size do <body>
+ */
+
+@for $i from 1 through 5 {
+
+    .leading-top-#{$i} {
+        padding-top: $basal-leading * $i;
+    }
+
+}
+
+
+@for $i from 1 through 5 {
+
+    .leading-bottom-#{$i} {
+        padding-top: $basal-leading * $i;
+    }
+
+}
+
+
+/*
+ * Aplica um espaço em tamanho de coluna correspondente,
+ * ao lado esquerdo (col-left) e ao lado direito (col-right)
+ */
+
+@for $i from 1 through $basal-col-number - 1 {
+
+    .col-left-#{$i} {
+        margin-left: $basal-col-fixed * $i;
+    }
+
+}
+
+@for $i from 1 through $basal-col-number - 1 {
+
+    .col-right-#{$i} {
+        margin-right: $basal-col-fixed * $i;
+    }
+
+}
+
+
+
+@media screen and  (max-width: 1150px) {
+
+    @for $i from 1 through $basal-col-number {
+
+        .desktop-#{$i} {
+            width: 8% * $i;
+        }
+
+    }
+
+}
+
+
+@media screen and  (max-width: 800px){
+
+    .desktop-1,
+    .desktop-2,
+    .desktop-3,
+    .desktop-4,
+    .desktop-5,
+    .desktop-6,
+    .desktop-7,
+    .desktop-8,
+    .desktop-9,
+    .desktop-10,
+    .desktop-11,
+    .desktop-12 {
+        width: 100%;
+        float: none;
+        max-width: none;
+    }
+
+    .tablet-1 { width: 25%; float: left; }
+    .tablet-2 { width: 50%; float: left; }
+    .tablet-3 { width: 75%; float: left; }
+
+}
+
+
+// Mobile
+
+@media screen and (max-width: 700px) {
+
+    .tablet-1,
+    .tablet-2,
+    .tablet-3 { width: 100%; float: none; }
+
+    .col-25,
+    .col-30,
+    .col-33,
+    .col-40,
+    .col-50,
+    .col-60,
+    .col-66,
+    .col-70,
+    .col-75 { width: 100%; float: none; }
+
+    .col { overflow: visible; display: block; }
+
+    .mobile-2 { width: 50%; float: left;}
+
+    .col-left-1,
+    .col-left-2,
+    .col-left-3,
+    .col-left-4,
+    .col-left-5,
+    .col-left-6,
+    .col-left-7,
+    .col-left-8,
+    .col-left-9,
+    .col-left-10,
+    .col-left-11,
+    .col-left-12 { margin-left: 0; }
+
+    .col-right-1,
+    .col-right-2,
+    .col-right-3,
+    .col-right-4,
+    .col-right-5,
+    .col-right-6,
+    .col-right-7,
+    .col-right-8,
+    .col-right-9,
+    .col-right-10,
+    .col-right-11,
+    .col-right-12 { margin-right: 0; }
+
+    .leading-top-1,
+    .leading-top-2,
+    .leading-top-3,
+    .leading-top-4,
+    .leading-top-5 { padding-top: 1em; }
+
+
+    .leading-bottom-1,
+    .leading-bottom-2,
+    .leading-bottom-3,
+    .leading-bottom-4,
+    .leading-bottom-5 { padding-bottom: 1em; }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .mobile-2 { width: 100%; float: none;}
+
+}
+
+
+/* Nicolas Gallagher's micro clearfix */
+.row {
+    *zoom: 1;
+}
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+
+
+/*
+ * Grid de DEBUG de alinhamento
+ *
+ * Uso: Basta aplicar na página/template o <label> abaixo.
+ *      Certifique-se que a imagem com o grid esteja disponível.
+ *
+ * <label class="btnDebug" for="debug"> Grid <input type="checkbox" id="debug" onclick='var e=document.getElementsByTagName("body")[0],c="debug",re=new RegExp("(?:^|\\s)"+c+"(?!\\S)","g");if(e.className.match(re)){e.className=e.className.replace(re,"");}else{e.className+=" "+c;this.checked=true;}'></label>
+ *
+ *
+ */
+
+
+.debug {
+    display: block;
+    position: relative;
+}
+
+.debug:after {
+    content: "";
+    background: url(images/grid-15-30-95-1140.png) repeat-y center top !important;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    transition: display 1.5s;
+}
+
+.btnDebug {
+    color: #666666;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    vertical-align: top;
+    padding: 0 0.25em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    opacity: 1;
+    background-color: #FFF;
+    border-radius: 0 0 6px 6px;
+}
+
+
+/* FIM Grid e Normalizador */
