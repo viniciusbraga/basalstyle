@@ -289,62 +289,59 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .debug:after { content: ""; background: url(images/grid-15-30-95-1140.png) repeat-y center top !important; opacity: 0.8; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: 2; transition: display 1.5s; }
 
-.btnDebug { color: #666666; font-size: 14px; line-height: 20px; text-transform: uppercase; vertical-align: top; padding: 0 0.25em; position: fixed; top: 0; right: 0; z-index: 1000; opacity: 1; background-color: #FFF; border-radius: 0 0 6px 6px; }
+.btnDebug { color: #666666; font-size: 14px; line-height: 20px; text-transform: uppercase; vertical-align: top; padding: 0 0.25em; position: fixed; bottom: 0; right: 0; z-index: 1000; opacity: 1; background-color: #FFF; border-radius: 0 0 6px 6px; }
 
 /* FIM Grid e Normalizador */
 /* Cabeçalho do Site e Navegação */
 .header { position: relative; min-height: 90px; }
 
-.header-site { width: 75%; }
-
 .header-site a { text-decoration: none; }
 
 .header-site .site-logo { font-size: 1em; line-height: 1em; margin: 0; padding: 0; min-height: 1em; max-height: 90px; }
 
-.header-site .site-logo a { color: #000; font-size: 3.2em; line-height: 2.25em; font-weight: 700; margin: 0; padding: 0 0 0 0.5em; width: 320px; height: 60px; display: block; }
+.header-site .site-logo a { color: #000; font-size: 3em; line-height: 2.25em; font-weight: 700; margin: 0; padding: 0 0 0 0.5em; width: 300px; height: 60px; display: block; }
 
-.header-site .site-description { font-size: 1.4em; line-height: 1em; margin: 0; padding: 0 1.13em; }
-
-.headerNav { position: absolute; top: 52px; right: 0; z-index: 10; }
+.header-site .site-description { font-size: 1.4em; line-height: 1.5em; margin: 0; padding: 0 1.13em; }
 
 /* Fomulário de Busca no Header do Site */
-.headerSearch { vertical-align: middle; display: block; margin: 0; padding: 0; position: absolute; top: 12px; right: 18px; }
+.header-search { vertical-align: middle; display: block; margin: 0; padding: 0; position: absolute; top: 20px; right: 15px; }
 
-.headerSearch form { margin: 0; padding: 0; }
+.header-search form { margin: 0; padding: 0; }
 
-.headerSearch label { display: none; }
+.header-search label { display: none; }
 
-.headerSearch input[type="text"] { color: #333; font-size: 16px; line-height: 27px; font-family: inherit; min-height: 27px; padding: 1px 6px; margin: 0; width: 270px; border: 1px solid #C5CDCD; }
+.header-search input[type="text"] { color: #333; font-size: 16px; line-height: 27px; font-family: inherit; min-height: 27px; padding: 1px 6px; margin: 0 auto; width: 270px; border: 1px solid #C5CDCD; display: block; }
 
-.headerSearch button[type="submit"] { color: #333; font-size: 14px; line-height: 30px; padding: 0; width: 30px; height: 30px; border: 0; box-shadow: none; overflow: hidden; display: block; background: none; position: absolute; top: 0; right: 0; z-index: 10; }
+.header-search button[type="submit"] { color: #333; font-size: 14px; line-height: 30px; padding: 0; width: 30px; height: 30px; border: 0; box-shadow: none; overflow: hidden; display: block; background: none; position: absolute; top: 0; right: 0; z-index: 10; }
 
 /* @media (max-width: 800px) */
 @media (max-width: 800px) { /* Cabeçalho do Site e Navegação */
   .header { position: relative; min-height: 13.5em; }
   .header-site { width: 100%; }
-  .header-site .site-description { width: 100%; }
-  .headerNav { position: absolute; top: 2.0em; right: 0; z-index: 10; }
+  .header-site .site-description { width: 100%; padding-top: 5px; padding-bottom: 5px; }
+  #header-nav { position: absolute; top: 0; right: 5px; z-index: 10; padding: 0; margin: 0; }
   /* Cabeçalho do Site e Navegação */
-  .headerSearch { vertical-align: middle; display: block; margin: 0 auto; padding: 20px 0; max-width: 270px; position: relative; top: 0; right: 0; }
-  .headerSearch button[type="submit"] { color: #333; font-size: 14px; line-height: 30px; padding: 0; width: 30px; height: 30px; border: 0; box-shadow: none; overflow: hidden; display: block; background: none; position: absolute; top: 20px; right: 0; z-index: 10; } }
+  .header-search { vertical-align: middle; display: block; margin: 0 auto; padding: 30px 0; max-width: 100%; position: relative; top: 0; right: 0; background: rgba(0, 0, 0, 0.05); }
+  .header-search form { margin: 0 auto; width: 270px; position: relative; }
+  .header-search button[type="submit"] { color: #333; font-size: 18px; line-height: 27px; padding: 0; width: 40px; height: 30px; border: 0; box-shadow: none; overflow: hidden; display: block; background: none; position: absolute; top: 0; right: 0; z-index: 10; } }
 /* FIM @media (max-width: 800px) */
 /* FIM Cabeçalho do Site e Navegação */
 /* Menu navInline */
-.navInline { vertical-align: middle; display: inline-block; }
+.nav-inline { vertical-align: middle; padding: 10px 0; display: inline-block; }
 
-.navInline ul { margin: 0; padding: 0 0.9em; }
+.nav-inline ul { margin: 0; padding: 0 0.9em; }
 
-.navInline li { font-size: 1em; margin: 0; padding: 0; float: left; list-style: none; position: relative; }
+.nav-inline li { font-size: 1em; margin: 0; padding: 0; float: left; list-style: none; position: relative; }
 
-.navInline li a { font-size: 14px; font-weight: 400; line-height: 44px; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0 0.7em; display: block; transition: color 0.3s, background-color 1s; }
+.nav-inline li a { font-size: 14px; font-weight: 400; line-height: 38px; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0 0.7em; display: block; transition: color 0.3s, background-color 1s; }
 
-.navInline li a:hover { color: #000; background-color: #F5F5F5; }
+.nav-inline li a:hover { color: #000; background-color: #F5F5F5; }
 
-.navInline .current > a { color: #000; font-weight: 700; }
+.nav-inline .current > a { color: #000; font-weight: 700; }
 
-.navMobile, .navClose { display: none; }
+.nav-mobile, .nav-close { display: none; }
 
-/* Submenu de links do Menu navInline */
+/* Submenu de links do Menu nav-inline */
 .submenu { position: relative; overflow: hidden; }
 
 .submenu:hover { color: #000; overflow: visible; }
@@ -364,23 +361,24 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .submenu ul li a:hover { color: #FFF; background: #3498DB; }
 
 /* @media (max-width: 800px) */
-@media (max-width: 800px) { /* Menu navInline */
-  .navInline { text-align: right; vertical-align: middle; margin: 0 10px; min-height: 45px; width: 45px; position: relative; display: inline-block; }
-  .navInline .navMenu > ul { width: 250px; margin: -5px 0 0 0; padding: 0; display: block; height: 0; opacity: 0.3; overflow: hidden; position: relative; right: 205px; background: #C5CDCD; }
-  .navMenu { position: relative; }
-  .navMenu:hover ul { margin-top: 0; opacity: 1; height: auto; transition: margin 1s, height 2s, opacity 1s; }
-  .navInline li { float: none; text-align: left; }
-  .navInline li a { color: #000; font-weight: nomral; padding: 0 1em; border-bottom: 1px solid #F2F5F5; white-space: nowrap; }
-  .navInline li a:hover { color: #FFF; background: #0066CC; }
-  .navMobile, .navClose { color: #7F8C8C; font-size: 28px; font-weight: bold; line-height: 45px; text-transform: uppercase; text-decoration: none; text-align: center; width: 45px; height: 45px; margin: 0 0 0 auto; padding: 0; display: block; }
-  .navClose { color: #7F8C8C; font-size: 18px; text-align: center; display: none; opacity: 0; transition: opacity 6s; }
-  .navInline:hover .navMobile, .navInline:hover .navClose { color: #FFF; background-color: #C5CDCD; display: block; opacity: 1; }
+@media (max-width: 800px) { /* Menu nav-inline */
+  .nav-inline { text-align: right; vertical-align: middle; margin: 0 10px; min-height: 45px; width: 45px; position: relative; display: inline-block; }
+  .nav-inline .nav-menu > ul { width: 250px; margin: -5px 0 0 0; padding: 0; display: block; height: 0; opacity: 0.3; overflow: hidden; position: relative; right: 205px; background: #FFFFFF; }
+  .nav-menu { position: relative; }
+  .nav-menu:hover ul { margin-top: -5px; height: auto; opacity: 1; transition: margin 1s, height 2s, opacity 1s; }
+  .nav-menu:hover > ul { border: 3px solid #CCCCCC; }
+  .nav-inline li { float: none; text-align: left; }
+  .nav-inline li a { color: #000; font-weight: nomral; padding: 0 1em; border-bottom: 1px solid #F2F5F5; white-space: nowrap; }
+  .nav-inline li a:hover { color: #FFF; background: #0066CC; }
+  .nav-mobile, .nav-close { color: #7F8C8C; font-size: 28px; font-weight: bold; line-height: 38px; text-transform: uppercase; text-decoration: none; text-align: center; width: 43px; height: 43px; margin: 0 0 0 auto; padding: 0; display: block; z-index: 3; border: 3px solid #CCCCCC; border-top: none; background-color: #fff; }
+  .nav-close { color: #7F8C8C; font-size: 18px; text-align: center; display: none; opacity: 0; transition: opacity 6s; }
+  .nav-inline:hover .nav-mobile, .nav-inline:hover .nav-close { display: block; opacity: 1; border-bottom: none; }
   /* Submenu */
-  .submenu ul { padding: 0; display: block; position: relative; z-index: 1000; background-color: #C5CDCD; box-shadow: none; border: none; }
+  .submenu ul { padding: 0; display: block; position: relative; z-index: 1000; background-color: #FFFFFF; box-shadow: none; }
   .submenu ul:after, .submenu ul:before { display: none; }
-  .navInline .submenu ul li a { margin: 0 0; padding: 0 1.2em 0 2em; border-bottom: 1px solid #F2F5F5; display: block; } }
+  .nav-inline .submenu ul li a { margin: 0 0; padding: 0 1.2em 0 2em; border-bottom: 1px solid #F2F5F5; display: block; } }
 /* FIM @media (max-width: 800px) */
-/* FIM Menu navInline */
+/* FIM Menu nav-inline */
 /* Imagens  Exemplo de aplicação: <span class="img img-col-4 frame-h-27x8"> <img src="nome_da_image.png" height="530" width="800"> </span> Onde img-col-(número de coluna) especifica a largura máxima da caixa da imagem. Contudo, a imagem ficará menor, porque a regra CSS desconta os espaços laterais (padding) para o alinhamento com o texto. */
 .img-col-1 { max-width: 95px; min-height: 90px; }
 

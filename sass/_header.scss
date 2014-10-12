@@ -6,10 +6,6 @@
   min-height: $basal-leading * 3;
 }
 
-.header-site {
-  width: 75%;
-}
-
 .header-site a {
   text-decoration: none;
 }
@@ -25,62 +21,57 @@
 
 .header-site .site-logo a {
     color: #000;
-    font-size: 3.2em;
+    font-size: 3em;
     line-height: 2.25em;
     font-weight: 700;
     margin: 0;
     padding: 0 0 0 0.5em;
-    width: 320px;
+    width: 300px;
     height: 60px;
     display: block;
 }
 
 .header-site .site-description {
   font-size: 1.4em;
-  line-height: 1em;
+  line-height: 1.5em;
   margin: 0;
   padding: 0 1.13em;
 }
 
-.headerNav {
-  position: absolute;
-  top: 52px;
-  right: 0;
-  z-index: 10;
-}
 
 
 /* Fomulário de Busca no Header do Site */
 
-.headerSearch {
+.header-search {
   vertical-align: middle;
   display: block;
   margin: 0;
   padding:0;
   position: absolute;
-  top: 12px;
-  right: 18px;
+  top: 20px;
+  right: 15px;
 }
 
-.headerSearch form {
+.header-search form {
   margin: 0;
   padding: 0;
 }
 
-.headerSearch label { display: none;}
+.header-search label { display: none;}
 
-.headerSearch input[type="text"] {
+.header-search input[type="text"] {
   color: #333;
   font-size: 16px;
   line-height: 27px;
   font-family: inherit;
   min-height: 27px;
   padding: 1px 6px;
-  margin: 0;
+  margin: 0 auto;
   width: 270px;
   border: 1px solid #C5CDCD;
+  display: block;
 }
-.headerSearch button[type="submit"] {
+.header-search button[type="submit"] {
   color: #333;
   font-size: 14px;
   line-height: 30px;
@@ -105,45 +96,56 @@
 
     /* Cabeçalho do Site e Navegação */
 
-    .header{
+    .header {
       position: relative;
       min-height: 13.5em;
     }
+
     .header-site {
       width: 100%;
     }
 
     .header-site .site-description {
       width: 100%;
+      padding-top: 5px;
+      padding-bottom: 5px;
     }
 
-    .headerNav {
+    #header-nav {
       position: absolute;
-      top: 2.0em;
-      right: 0;
+      top: 0;
+      right: 5px;
       z-index: 10;
+      padding: 0;
+      margin: 0;
     }
-
 
     /* Cabeçalho do Site e Navegação */
 
-    .headerSearch {
+    .header-search {
       vertical-align: middle;
       display: block;
       margin: 0 auto;
-      padding: 20px 0;
-      max-width: 270px;
+      padding: 30px 0;
+      max-width: 100%;
       position: relative;
       top: 0;
       right: 0;
+      background: rgba(0,0,0,0.05);
     }
 
-    .headerSearch button[type="submit"] {
+    .header-search form {
+        margin: 0 auto;
+        width: 270px;
+        position: relative;
+    }
+
+    .header-search button[type="submit"] {
       color: #333;
-      font-size: 14px;
-      line-height: 30px;
+      font-size: 18px;
+      line-height: 27px;
       padding: 0;
-      width: 30px;
+      width: 40px;
       height: 30px;
       border: 0;
       box-shadow: none;
@@ -151,7 +153,7 @@
       display: block;
       background: none;
       position: absolute;
-      top: 20px;
+      top: 0;
       right: 0;
       z-index: 10;
     }

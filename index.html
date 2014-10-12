@@ -49,7 +49,7 @@
                 <p class="site-description">CSS e HTML para prototipação rápida de Sites, WebApps e Formulários.</p>
             </div>
 
-            <div class="headerSearch">
+            <div class="header-search">
                 <form id="search-form" method="get" action="#" role="search">
                     <label for="search">Busca</label>
                     <input type="text" id="search" name="s" value="" required="required" placeholder="Busca">
@@ -57,14 +57,14 @@
                 </form>
             </div>
 
-            <nav class="headerNav navInline" role="navigation">
-                <div class="navMenu">
-                    <a href="javascript:void(0);" class="navMobile"><i class="fa fa-bars"></i></a>
+            <nav id="header-nav" class="nav-inline" role="navigation">
+                <div class="nav-menu">
+                    <a href="javascript:void(0);" class="nav-mobile"><i class="fa fa-bars"></i></a>
                     <ul>
                         <li><a href="#Typography">Tipografia</a></li>
                         <li><a href="#Columns">Colunas</a></li>
                         <li class="submenu">
-                            <a href="javascript:void(0);"><i class="fa fa-caret-down"></i> Formulários </a>
+                            <a href="javascript:void(0);">Formulários <i class="fa fa-chevron-down"></i></a>
                             <ul>
                                 <li><a href="#FormInput">Texto</a></li>
                                 <li><a href="#FormRadio">Radios</a></li>
@@ -75,7 +75,7 @@
                         <li><a href="#Buttons">Botões</a></li>
                     </ul>
                 </div>
-                <a href="javascript:void(0);" class="navClose"><i class="fa fa-chevron-up"></i></a>
+                <!-- <a href="javascript:void(0);" class="nav-close"><i class="fa fa-chevron-up"></i></a> -->
             </nav>
 
         </header><!-- END header -->
@@ -219,9 +219,9 @@
                 <div class="row" style="min-height:135px;">
                     <div class="desktop-8 textAlignCenter">
 
-                        <nav class="navInline">
-                            <div class="navMenu">
-                                <a class="navMobile" href="javascript:void(0);" ><i class="fa fa-bars"></i></a>
+                        <nav class="nav-inline">
+                            <div class="nav-menu">
+                                <a class="nav-mobile" href="javascript:void(0);" ><i class="fa fa-bars"></i></a>
                                 <ul>
                                     <li><a href="#">Abertura</a></li>
                                     <li class="submenu current">
@@ -236,7 +236,7 @@
                                     <li><a href="#">Fale Conosco</a></li>
                                 </ul>
                             </div>
-                            <a class="navClose" href="javascript:void(0);" ><i class="fa fa-chevron-up"></i></a>
+                            <a class="nav-close" href="javascript:void(0);" ><i class="fa fa-chevron-up"></i></a>
                         </nav>
 
                     </div>
@@ -435,6 +435,7 @@
         <!-- END footer -->
     </div>
     <!-- END footerFrame -->
+
 
     <label class="btnDebug" for="debug"> Grid <input type="checkbox" id="debug" onclick='var e=document.getElementsByTagName("body")[0],c="debug",re=new RegExp("(?:^|\\s)"+c+"(?!\\S)","g");if(e.className.match(re)){e.className=e.className.replace(re,"");}else{e.className+=" "+c;this.checked=true;}'></label>
 
