@@ -287,54 +287,51 @@
 
                 <form action="" method="" accept-charset="utf-8">
 
-                    <div class="formRow labelBlock inputText">
+                    <div class="form-row label-block input-text">
                         <label for="id_name">Nome</label>
                         <input type="text" id="id_name" name="name" value="">
                     </div>
 
-                    <div class="formRow labelBlock inputText inputText-66">
+                    <div class="form-row label-block input-text input-text-66">
                         <label for="id_city">Cidade</label>
                         <input type="text" id="id_city" name="city">
                     </div>
 
-                    <div class="formRow labelBlock inputText inputText-33">
+                    <div class="form-row label-block input-text input-text-33">
                         <label for="id_zipcode">CEP</label>
                         <input type="text" id="id_zipcode" name="zipcode">
                     </div>
 
-                    <p><button type="submit" class="btn-basic btn-icon-right">Entrar <i class="fa fa-chevron-right"></i></button>  ou <a href="#">Cancelar</a></p>
-
-
-                    <div class="row leading-top-1">
+                    <div class="row">
                         <div class="col-50">
-                            <div class="formRow inputRadio formLabelDesc">
+                            <div class="form-row input-radio form-label-desc">
                                 <fieldset>
                                     <legend>Estado Civil</legend>
-                                    <dl>
-                                        <dd><input id="id_ec_1" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_1">Solteiro</label></dd>
-                                        <dd><input id="id_ec_2" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_2">Casado</label></dd>
-                                        <dd><input id="id_ec_3" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_3">Separado</label></dd>
-                                        <dd><input id="id_ec_4" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_4">Divorciado</label></dd>
-                                        <dd><input id="id_ec_5" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_5">Viúvo</label></dd>
-                                    </dl>
+                                    <ul>
+                                        <li><input id="id_ec_1" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_1">Solteiro</label></li>
+                                        <li><input id="id_ec_2" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_2">Casado</label></li>
+                                        <li><input id="id_ec_3" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_3">Separado</label></li>
+                                        <li><input id="id_ec_4" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_4">Divorciado</label></li>
+                                        <li><input id="id_ec_5" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_5">Viúvo</label></li>
+                                    </ul>
                                 </fieldset>
                             </div>
                         </div>
                         <div class="col-50">
-                            <div class="formRow inputRadio formLabelDesc">
+                            <div class="form-row input-radio form-label-desc">
                                 <fieldset>
                                     <legend>Opções com Checkbox</legend>
-                                    <ul>
-                                        <li><input id="id_cb_1" type="checkbox" name="estado_civil" value="overnight" /><label for="id_cb_1">Opção 1</label></li>
-                                        <li><input id="id_cb_2" type="checkbox" name="estado_civil" value="overnight" /><label for="id_cb_2">Opção 2</label></li>
-                                    </ul>
+                                    <dl>
+                                        <dd><input id="id_cb_1" type="checkbox" name="estado_civil" value="overnight" /><label for="id_cb_1">Opção 1</label></dd>
+                                        <dd><input id="id_cb_2" type="checkbox" name="estado_civil" value="overnight" /><label for="id_cb_2">Opção 2</label></dd>
+                                    </dl>
                                 </fieldset>
                             </div>
                         </div>
 
                     </div>
 
-                    <div class="formRow labelBlock selectDropdown leading-top-1">
+                    <div class="form-row label-block select-dropdown">
                         <label for="id_state">Estado (UF)</label>
                         <select id="id_state" name="state">
                             <option value="">Escolha uma opção</option>
@@ -345,9 +342,14 @@
                         </select>
                     </div>
 
-                    <div class="formRow labelBlock inputText leading-top-1">
+                    <div class="form-row label-block input-text ">
                         <label>Observações</label> <textarea name=""></textarea>
                     </div>
+
+                    <div class="form-row leading-top-1">
+                        <p><button type="submit" class="btn-basic btn-icon-right">Entrar <i class="fa fa-chevron-right"></i></button>  ou <a href="#">Cancelar</a></p>
+                    </div>
+
                 </form>
 
             </div></div>
@@ -359,7 +361,7 @@
                 <div class="col-6">
                     <form action="" method="" accept-charset="utf-8">
 
-                        <div class="formRow labelBlock inputText">
+                        <div class="form-row label-block input-text">
                             <label for="id_email">Email</label>
                             <ul class="errorlist">
                                 <li>Este campo é obrigatório.</li>
@@ -368,7 +370,7 @@
                             <input type="text" id="id_email" name="name" value="">
                         </div>
 
-                        <div class="formRow inputRadio formLabelDesc">
+                        <div class="form-row input-radio form-label-desc">
                             <fieldset>
                                 <legend>Estado Civil</legend>
                                 <ul class="errorlist">
@@ -398,12 +400,12 @@
                             </dl>
                         </div>
 
-                        <div class="formRow labelBlock inputText errorInput">
+                        <div class="form-row label-block input-text error-input">
                             <label>Nome Completo</label>
                             <input type="text" id="id_subject" name="name">
                         </div>
 
-                        <div class="formRow labelBlock inputText errorInput">
+                        <div class="form-row label-block input-text error-input">
                             <label>Email</label>
                             <input type="text" id="id_subject" name="address">
                         </div>
