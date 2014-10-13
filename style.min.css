@@ -532,34 +532,11 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .error-input input:focus { border: none; border-left: 6px solid #16a085; background-color: #ecf0f1; }
 
 /* Mensagens e Alertas */
-/* Leading Aplica o espaço de entrelinha no padding-top ou padding-bottom da caixa. Nesta versão abaixo, a entrelinha base é de 2.7em */
-.form-row.leading-top-1 { padding-top: 27px; }
-
-.form-row.leading-top-2 { padding-top: 54px; }
-
-.form-row.leading-top-3 { padding-top: 81px; }
-
-.form-row.leading-top-4 { padding-top: 108px; }
-
-.form-row.leading-top-5 { padding-top: 135px; }
-
-.form-row.leading-bottom-1 { padding-bottom: 27px; }
-
-.form-row.leading-bottom-2 { padding-bottom: 54px; }
-
-.form-row.leading-bottom-3 { padding-bottom: 81px; }
-
-.form-row.leading-bottom-4 { padding-bottom: 108px; }
-
-.form-row.leading-bottom-5 { padding-bottom: 135px; }
-
-@media (max-width: 800px) { .input-text-66 input, .input-text-33 input { width: 100%; }
-  .form-row.leading-top-1, .form-row.leading-top-2, .form-row.leading-top-3, .form-row.leading-top-4, .form-row.leading-top-5 { padding-top: 2.7em; }
-  .form-row.leading-bottom-1, .form-row.leading-bottom-2, .form-row.leading-bottom-3, .form-row.leading-bottom-4, .form-row.leading-bottom-5 { padding-bottom: 2.7em; } }
+@media (max-width: 800px) { .input-text-66 input[type="text"], .input-text-33 input[type="text"] { width: 100%; } }
 /* Fim @media (max-width: 800px) */
 /* Formulários  */
 /* Botões de Interface */
-.btn-basic, .btn-basic:visited, input[type="submit"] { color: #2E3333; font-size: 14px; font-weight: bold; line-height: 42px; min-height: 42px; vertical-align: middle; text-transform: uppercase; text-decoration: none; margin: 0 1.125em 0 0; padding: 0 1.6em; display: inline-block; border: 0; border-radius: 3px; position: relative; background-color: #c5cdcd; transition: background-color ease 0.5s; }
+.btn-basic, .btn-basic:visited, input[type="submit"] { color: #2E3333; font-size: 14px; font-weight: bold; line-height: 42px; min-height: 42px; vertical-align: middle; text-transform: uppercase; text-decoration: none; margin: 0.5em 1em 0.5em 0; padding: 0 1.6em; display: inline-block; border: 0; border-radius: 3px; position: relative; background-color: #c5cdcd; transition: background-color ease 0.5s; }
 
 .btn-basic:hover, .btn-basic:focus, input[type="submit"]:hover { color: #F2F5F5; background-color: #95A5A5; outline: 0; cursor: pointer; }
 
