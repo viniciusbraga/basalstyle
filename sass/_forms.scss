@@ -3,7 +3,7 @@
 
 .form-row {
   margin: 0;
-  padding: 0 $basal-padding;
+  padding: 0;
   list-style: none;
   min-height: $basal-leading * 3;
 }
@@ -216,10 +216,15 @@
 
 @media (max-width: 800px) {
 
+.form-row {
+  padding: 0 $basal-padding;
+}
+
   .input-text-66 input[type="text"] ,
   .input-text-33 input[type="text"]  {
     width: 100%;
   }
+
 
 } /* Fim @media (max-width: 800px) */
 

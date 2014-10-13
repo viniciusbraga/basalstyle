@@ -67,7 +67,7 @@ h1, h2 {
 }
 
 h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dt,dd,blockquote {
-    margin: 0 $basal-padding;
+    margin: 0;
 }
 
 p, li, dt, dd, th, td, caption {
@@ -205,87 +205,92 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
  */
 
 
-.text-smaller p,
-.text-smaller li,
-.text-smaller dt,
-.text-smaller dd,
-.text-smaller th,
-.text-smaller td,
-.text-smaller caption {
+.text-small p,
+.text-small li,
+.text-small dt,
+.text-small dd,
+.text-small th,
+.text-small td,
+.text-small caption {
     font-size: 1.4em;
-    line-height: $basal-leading * 0.9;
+    line-height: $basal-leading * 0.8;
 }
 
-.text-smaller h1,
-.text-smaller h2,
-.text-smaller h3,
-.text-smaller h4,
-.text-smaller h5,
-.text-smaller h6 {
-    font-size: 2.4em;
-    font-weight: 300;
+.text-small h1,
+.text-small h2,
+.text-small h3,
+.text-small h4,
+.text-small h5,
+.text-small h6 {
+    font-size: 1.6em;
     line-height: $basal-leading;
     min-height: 0;
     padding: 5px 0 0;
     display: inline-block;
     }
 
-.text-smaller h2 { font-size: 2.1em; }
-.text-smaller h3 { font-size: 1.8em; }
-.text-smaller h4 { font-size: 1.6em; }
+.text-small h1 { font-size: 2.4em; }
+.text-small h2 { font-size: 2.1em; }
+.text-small h3 { font-size: 1.8em; }
 
-.text-smaller p  { padding: 2px 0 23px; }
+.text-small p  { padding: 2px 0 23px; }
 
-.text-smaller ul,
-.text-smaller ol { padding: 7px 0 23px 42px; }
+.text-small ul,
+.text-small ol { padding: 7px 0 23px 42px; }
 
-.text-smaller dl { padding: 0 0 $basal-leading; }
+.text-small dl { padding: 0 0 $basal-leading; }
 
-.text-smaller dt { padding: $basal-leading 0 0; font-weight: 700; }
+.text-small dt { padding: $basal-leading 0 0; font-weight: 700; }
 
-.text-smaller dd { padding: 0; }
+.text-small dd { padding: 0; }
 
 
-.text-smallest p,
-.text-smallest li,
-.text-smallest dt,
-.text-smallest dd,
-.text-smallest th,
-.text-smallest td,
-.text-smallest caption {
+.text-legend p,
+.text-legend li,
+.text-legend dt,
+.text-legend dd,
+.text-legend th,
+.text-legend td,
+.text-legend caption {
     font-size: 1.2em;
     line-height: $basal-leading * 0.6;
 }
 
-.text-smallest h1,
-.text-smallest h2,
-.text-smallest h3,
-.text-smallest h4,
-.text-smallest h5,
-.text-smallest h6 {
-    font-size: 2.4em;
-    font-weight: 300;
+.text-legend h1,
+.text-legend h2,
+.text-legend h3,
+.text-legend h4,
+.text-legend h5,
+.text-legend h6 {
+    font-size: 1.4em;
     line-height: $basal-leading;
     min-height: 0;
-    padding: 5px 0 0;
-    display: inline-block;
+    padding: 1em 0 0;
     }
 
+.text-legend h1 { font-size: 1.8em; }
+.text-legend h2 { font-size: 1.6em; }
 
-.text-smallest h2 { font-size: 2.1em; }
-.text-smallest h3 { font-size: 1.8em; }
-.text-smallest h4 { font-size: 1.6em; }
+.text-legend p  { padding: 0.5em 0; }
 
-.text-smallest p  { padding: 15px 0 15px; }
+.text-legend h1 + p,
+.text-legend h2 + p,
+.text-legend h3 + p,
+.text-legend h4 + p,
+.text-legend h5 + p,
+.text-legend h6 + p { padding: 0 0 0.5em; }
 
 
 
-@media (min-width: 900px) {
+/* @media (min-width: 1150px) */
+@media screen and  (max-width: 1150px) {
 
+    figcaption {
+        position: relative;
+    }
 
 }
-
-/* FIM @media (min-width: 801px) */
+/* FIM @media (min-width: 1150px) */
 
 
 @media (max-width: 800px) {
@@ -312,6 +317,13 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
         padding: 0 0 0 0.25em;
     }
 
+    h1,h2,h3,h4,h5,h6,p,ul,ol,dl,blockquote {
+        margin: 0 $basal-padding;
+    }
+
+    figcaption {
+        position: relative;
+    }
 
     .brno { white-space: normal; }
 

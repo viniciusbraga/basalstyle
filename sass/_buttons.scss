@@ -39,7 +39,7 @@ input[type="submit"]:hover {
 
 .btn-row {
     margin: 0;
-    padding: 0 $basal-padding;
+    padding: 0;
     min-height: $basal-leading * 2;
 }
 
@@ -79,5 +79,16 @@ input[type="submit"].btnRed:visited   { color: #FFF; background-color: #e74c3c; 
 
 .btn-red:hover,
 input[type="submit"].btnRed:hover     { color: #FFF; background-color: #CC3300; }
+
+
+@media (max-width: 800px) {
+
+.btn-row {
+  padding: 0 $basal-padding;
+}
+
+
+
+} /* Fim @media (max-width: 800px) */
 
 /* FIM Botões de Interface  */

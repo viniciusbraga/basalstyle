@@ -107,6 +107,20 @@
 
 }
 
+/*
+ * Aplica o gutter entre as colunas usando o padding interno de cada coluna aplicada.
+ *
+ */
+
+.gutter {
+    padding-left: $basal-gutter;
+    padding-right: $basal-gutter;
+}
+
+.gutter-left  { padding-left: $basal-gutter;  }
+
+.gutter-right { padding-right: $basal-gutter; }
+
 
 
 @media screen and  (max-width: 1150px) {
@@ -144,6 +158,11 @@
     .tablet-1 { width: 25%; float: left; }
     .tablet-2 { width: 50%; float: left; }
     .tablet-3 { width: 75%; float: left; }
+
+    .gutter, .gutter-left, .gutter-right { padding: 0; }
+
+
+
 
 }
 

@@ -1,0 +1,122 @@
+
+/*  Imagens
+
+    Exemplo de aplicação:
+    <div class="img img-align-text frame-h-27x8">
+      <img src="nome_da_image.png" height="530" width="800">
+    </div>
+    Onde img-col-(número de coluna) especifica a largura máxima
+    da caixa da imagem. Contudo, a imagem ficará menor,
+    porque a regra CSS desconta os espaços laterais (padding)
+    para o alinhamento com o texto.
+*/
+
+.img {
+    display: block;
+    position: relative;
+}
+
+.img:after {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption, .img-legend {
+    font-size: 1em;
+    line-height: 1.3em;
+    text-align: right;
+    padding: 0.3em 0 0.7em;
+    width: 100%;
+    min-height: $basal-leading;
+    position: absolute;
+    bottom: 0;
+    background-color: #ffffff;
+}
+
+figcaption a,
+.img-legend a { text-decoration: none; }
+
+/*
+    img-align-text
+    A imagem fica alinhada com a altura
+    da letra capitular (cap height) do texto.
+*/
+
+.img-align-title {
+    margin-top: 0;
+}
+
+.img-align-text {
+    padding-top: 1.4em;
+    margin-bottom: 0;
+}
+
+
+
+/*
+    paspatour-(número de entrelinha)
+    Tem momentos que você precisa forçar a altura da caixa da imagem.
+    Esta classe especifica um tamanho limite, fazendo o recorte (crop) necessário.
+    Ex: Preciso de uma caixa de imagem com no máximo 3 linhas,
+        basta usar a classe frame-h-27x3, tipo:
+        <div class="img paspatour-7">
+*/
+
+
+@for $i from 1 through 20 {
+
+    .paspatour-#{$i} {
+        height: $basal-leading * $i;
+        min-height: 1em;
+        overflow: hidden;
+    }
+
+}
+
+
+/* @media (max-width: 1150px) */
+
+@media (max-width: 1150px) {
+
+    .img { padding: ($basal-leading / 2) 0; }
+
+
+    .img-align-text {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    @for $i from 1 through 20 {
+
+        .paspatour-#{$i} {
+            height: auto;
+            min-height: 1em;
+            overflow: hidden;
+        }
+
+    }
+
+}
+/* @media (max-width: 1150px) */
+
+/* @media (max-width: 800px) */
+
+@media (max-width: 800px) {
+
+    .img { padding: ($basal-leading / 2) $basal-padding; }
+
+}
+/* @media (max-width: 800px) */
+
+/* FIM Imagens */
+
