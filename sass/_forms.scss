@@ -113,21 +113,21 @@
 }
 
 .select-dropdown select {
-  color: #000;
-  font-family: inherit;
-  font-size: 1.6em;
-  line-height: 40px;
-  margin: 0;
-  padding: 0.6em 0.3em 0.6em 0.3em;
-  min-height: 36px;
-  width: 100%;
+    color: #000;
+    font-family: inherit;
+    font-size: 1.6em;
+    line-height: 40px;
+    margin: 0;
+    padding: 0.6em 0.3em 0.6em 0.3em;
+    min-height: 36px;
+    width: 100%;
     border:1px solid #BFBFBF;
     border-bottom:2px solid #BFBFBF;
     border-radius: 3px;
     box-shadow: 1px 1px 3px #CCCCCB;
     background-color:#F8F8F9;
-  transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
-  outline: none;
+    transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
+    outline: none;
 }
 .select-dropdown select:hover {
   border: 1px solid #999999;
@@ -213,43 +213,13 @@
 /* Mensagens e Alertas */
 
 
-/*
- * Leading
- * Aplica o espaço de entrelinha
- * no padding-top ou padding-bottom da caixa.
- * Nesta versão abaixo, a entrelinha base é de 2.7em
- */
-
-.form-row.leading-top-1 { padding-top: 27px  }
-.form-row.leading-top-2 { padding-top: 54px  }
-.form-row.leading-top-3 { padding-top: 81px  }
-.form-row.leading-top-4 { padding-top: 108px }
-.form-row.leading-top-5 { padding-top: 135px }
-
-.form-row.leading-bottom-1  { padding-bottom: 27px  }
-.form-row.leading-bottom-2  { padding-bottom: 54px  }
-.form-row.leading-bottom-3  { padding-bottom: 81px  }
-.form-row.leading-bottom-4  { padding-bottom: 108px }
-.form-row.leading-bottom-5  { padding-bottom: 135px }
 
 @media (max-width: 800px) {
 
-  .input-text-66 input,
-  .input-text-33 input {
+  .input-text-66 input[type="text"] ,
+  .input-text-33 input[type="text"]  {
     width: 100%;
   }
-
-  .form-row.leading-top-1,
-  .form-row.leading-top-2,
-  .form-row.leading-top-3,
-  .form-row.leading-top-4,
-  .form-row.leading-top-5 { padding-top: 2.7em; }
-
-  .form-row.leading-bottom-1,
-  .form-row.leading-bottom-2,
-  .form-row.leading-bottom-3,
-  .form-row.leading-bottom-4,
-  .form-row.leading-bottom-5 { padding-bottom: 2.7em; }
 
 } /* Fim @media (max-width: 800px) */
 

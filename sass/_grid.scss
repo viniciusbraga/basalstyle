@@ -278,5 +278,10 @@
     border-radius: 0 0 6px 6px;
 }
 
+@media (max-width: 800px) {
+
+    .btnDebug { display: none; }
+
+}
 
 /* FIM Grid e Normalizador */

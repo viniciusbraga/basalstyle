@@ -39,7 +39,7 @@ table { border-collapse: collapse; width: 100%; margin: 0 0 0 1em; }
 
 th, caption { text-align: left; font-weight: 700; }
 
-blockquote { margin: 0 0 30px 15px; padding: 0 9em 0 0.25em; border-left: 8px solid fadeout(#c5cdcd, 50%); }
+blockquote { margin: 0 0 30px 15px; padding: 0 9em 0 0.25em; border-left: 8px solid #c5cdcd; }
 
 em { font-style: italic; }
 
@@ -131,7 +131,13 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .text-smallest p { padding: 15px 0 15px; }
 
 /* FIM @media (min-width: 801px) */
-@media (max-width: 800px) { .brno { white-space: normal; } }
+@media (max-width: 800px) { h1, h2, h3, h4, h5, h6 { font-size: 3em; line-height: 1.3em; min-height: 1em; }
+  h2 { font-size: 2.6em; }
+  h3 { font-size: 2.0em; }
+  h4, h5, h6 { font-size: 1.6em; }
+  p, li, dt, dd, th, td, caption { font-size: 1.6em; line-height: 1.7em; }
+  blockquote { margin: 1em 15px; padding: 0 0 0 0.25em; }
+  .brno { white-space: normal; } }
 /* FIM (max-width: 800px) */
 /* Estruturas de Colunas fixas */
 .desktop-1 { max-width: 95px; }
@@ -289,22 +295,25 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .debug:after { content: ""; background: url(images/grid-15-30-95-1140.png) repeat-y center top !important; opacity: 0.8; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: 2; transition: display 1.5s; }
 
-.btnDebug { color: #666666; font-size: 14px; line-height: 20px; text-transform: uppercase; vertical-align: top; padding: 0 0.25em; position: fixed; bottom: 0; right: 0; z-index: 1000; opacity: 1; background-color: #FFF; border-radius: 0 0 6px 6px; }
+.btnDebug { color: #666666; font-size: 14px; line-height: 20px; text-transform: uppercase; vertical-align: top; padding: 0 0.25em; position: fixed; top: 0; right: 0; z-index: 1000; opacity: 1; background-color: #FFF; border-radius: 0 0 6px 6px; }
 
+@media (max-width: 800px) { .btnDebug { display: none; } }
 /* FIM Grid e Normalizador */
 /* Cabeçalho do Site e Navegação */
 .header { position: relative; min-height: 90px; }
 
-.header-site a { text-decoration: none; }
+.header a { text-decoration: none; }
 
-.header-site .site-logo { font-size: 1em; line-height: 1em; margin: 0; padding: 0; min-height: 1em; max-height: 90px; }
+.site-logo { padding: 0 15px; }
 
-.header-site .site-logo a { color: #000; font-size: 3em; line-height: 2.25em; font-weight: 700; margin: 0; padding: 0 0 0 0.5em; width: 300px; height: 60px; display: block; }
+.site-logo h1 { font-size: 1em; line-height: 1em; min-height: 1em; margin: 0; padding: 10px 0 0; }
 
-.header-site .site-description { font-size: 1.4em; line-height: 1.5em; margin: 0; padding: 0 1.13em; }
+.site-logo h1 a { color: #000; font-size: 2.8em; line-height: 50px; padding-top: 10px; }
+
+.site-logo .site-description { font-size: 1.2em; line-height: 1.5em; margin: 0; padding: 0 0; }
 
 /* Fomulário de Busca no Header do Site */
-.header-search { vertical-align: middle; display: block; margin: 0; padding: 0; position: absolute; top: 20px; right: 15px; }
+.header-search { vertical-align: middle; display: block; margin: 0; padding: 0; position: absolute; top: 10px; right: 15px; }
 
 .header-search form { margin: 0; padding: 0; }
 
@@ -317,23 +326,26 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* @media (max-width: 800px) */
 @media (max-width: 800px) { /* Cabeçalho do Site e Navegação */
   .header { position: relative; min-height: 13.5em; }
-  .header-site { width: 100%; }
-  .header-site .site-description { width: 100%; padding-top: 5px; padding-bottom: 5px; }
-  #header-nav { position: absolute; top: 0; right: 5px; z-index: 10; padding: 0; margin: 0; }
+  .site-logo { width: 100%; }
+  .site-logo h1 { font-size: 1em; line-height: 1em; min-height: 1em; margin: 0; padding: 0; }
+  .site-logo h1 a { color: #000; font-size: 2.8em; line-height: 50px; padding-top: 10px; }
+  .site-logo .site-description { width: 100%; padding-top: 0; padding-bottom: 10px; }
   /* Cabeçalho do Site e Navegação */
-  .header-search { vertical-align: middle; display: block; margin: 0 auto; padding: 30px 0; max-width: 100%; position: relative; top: 0; right: 0; background: rgba(0, 0, 0, 0.05); }
+  .header-search { vertical-align: middle; display: block; margin: 0 auto; padding: 20px 0; max-width: 100%; position: relative; top: 0; right: 0; background: rgba(0, 0, 0, 0.05); }
   .header-search form { margin: 0 auto; width: 270px; position: relative; }
   .header-search button[type="submit"] { color: #333; font-size: 18px; line-height: 27px; padding: 0; width: 40px; height: 30px; border: 0; box-shadow: none; overflow: hidden; display: block; background: none; position: absolute; top: 0; right: 0; z-index: 10; } }
 /* FIM @media (max-width: 800px) */
 /* FIM Cabeçalho do Site e Navegação */
 /* Menu navInline */
-.nav-inline { vertical-align: middle; padding: 10px 0; display: inline-block; }
+#header-nav { position: absolute; top: 45px; right: 5px; z-index: 10; padding: 0; margin: 0; }
+
+.nav-inline { vertical-align: middle; padding: 0 0; display: inline-block; }
 
 .nav-inline ul { margin: 0; padding: 0 0.9em; }
 
 .nav-inline li { font-size: 1em; margin: 0; padding: 0; float: left; list-style: none; position: relative; }
 
-.nav-inline li a { font-size: 14px; font-weight: 400; line-height: 38px; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0 0.7em; display: block; transition: color 0.3s, background-color 1s; }
+.nav-inline li a { font-size: 14px; font-weight: 400; line-height: 40px; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0 0.7em; display: block; transition: color 0.3s, background-color 1s; }
 
 .nav-inline li a:hover { color: #000; background-color: #F5F5F5; }
 
@@ -361,16 +373,18 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .submenu ul li a:hover { color: #FFF; background: #3498DB; }
 
 /* @media (max-width: 800px) */
-@media (max-width: 800px) { /* Menu nav-inline */
+@media (max-width: 800px) { #header-nav { top: -3px; right: 5px; }
+  /* Menu nav-inline */
   .nav-inline { text-align: right; vertical-align: middle; margin: 0 10px; min-height: 45px; width: 45px; position: relative; display: inline-block; }
-  .nav-inline .nav-menu > ul { width: 250px; margin: -5px 0 0 0; padding: 0; display: block; height: 0; opacity: 0.3; overflow: hidden; position: relative; right: 205px; background: #FFFFFF; }
+  .nav-inline .nav-menu > ul { width: 250px; margin: -5px 0 0 0; padding: 0; display: block; height: 0; opacity: 0.3; overflow: hidden; position: relative; background: #FFFFFF; }
+  #header-nav .nav-inline .nav-menu > ul { right: 205px; }
   .nav-menu { position: relative; }
   .nav-menu:hover ul { margin-top: -5px; height: auto; opacity: 1; transition: margin 1s, height 2s, opacity 1s; }
   .nav-menu:hover > ul { border: 3px solid #CCCCCC; }
   .nav-inline li { float: none; text-align: left; }
   .nav-inline li a { color: #000; font-weight: nomral; padding: 0 1em; border-bottom: 1px solid #F2F5F5; white-space: nowrap; }
   .nav-inline li a:hover { color: #FFF; background: #0066CC; }
-  .nav-mobile, .nav-close { color: #7F8C8C; font-size: 28px; font-weight: bold; line-height: 38px; text-transform: uppercase; text-decoration: none; text-align: center; width: 43px; height: 43px; margin: 0 0 0 auto; padding: 0; display: block; z-index: 3; border: 3px solid #CCCCCC; border-top: none; background-color: #fff; }
+  .nav-mobile, .nav-close { color: #7F8C8C; font-size: 28px; font-weight: bold; line-height: 38px; text-transform: uppercase; text-decoration: none; text-align: center; width: 43px; height: 43px; margin: 0 0 0 auto; padding: 0; display: block; z-index: 3; border: 3px solid #CCCCCC; background-color: #fff; }
   .nav-close { color: #7F8C8C; font-size: 18px; text-align: center; display: none; opacity: 0; transition: opacity 6s; }
   .nav-inline:hover .nav-mobile, .nav-inline:hover .nav-close { display: block; opacity: 1; border-bottom: none; }
   /* Submenu */
@@ -518,34 +532,11 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .error-input input:focus { border: none; border-left: 6px solid #16a085; background-color: #ecf0f1; }
 
 /* Mensagens e Alertas */
-/* Leading Aplica o espaço de entrelinha no padding-top ou padding-bottom da caixa. Nesta versão abaixo, a entrelinha base é de 2.7em */
-.form-row.leading-top-1 { padding-top: 27px; }
-
-.form-row.leading-top-2 { padding-top: 54px; }
-
-.form-row.leading-top-3 { padding-top: 81px; }
-
-.form-row.leading-top-4 { padding-top: 108px; }
-
-.form-row.leading-top-5 { padding-top: 135px; }
-
-.form-row.leading-bottom-1 { padding-bottom: 27px; }
-
-.form-row.leading-bottom-2 { padding-bottom: 54px; }
-
-.form-row.leading-bottom-3 { padding-bottom: 81px; }
-
-.form-row.leading-bottom-4 { padding-bottom: 108px; }
-
-.form-row.leading-bottom-5 { padding-bottom: 135px; }
-
-@media (max-width: 800px) { .input-text-66 input, .input-text-33 input { width: 100%; }
-  .form-row.leading-top-1, .form-row.leading-top-2, .form-row.leading-top-3, .form-row.leading-top-4, .form-row.leading-top-5 { padding-top: 2.7em; }
-  .form-row.leading-bottom-1, .form-row.leading-bottom-2, .form-row.leading-bottom-3, .form-row.leading-bottom-4, .form-row.leading-bottom-5 { padding-bottom: 2.7em; } }
+@media (max-width: 800px) { .input-text-66 input[type="text"], .input-text-33 input[type="text"] { width: 100%; } }
 /* Fim @media (max-width: 800px) */
 /* Formulários  */
 /* Botões de Interface */
-.btn-basic, .btn-basic:visited, input[type="submit"] { color: #2E3333; font-size: 14px; font-weight: bold; line-height: 42px; min-height: 42px; vertical-align: middle; text-transform: uppercase; text-decoration: none; margin: 0 1.125em 0 0; padding: 0 1.6em; display: inline-block; border: 0; border-radius: 3px; position: relative; background-color: #c5cdcd; transition: background-color ease 0.5s; }
+.btn-basic, .btn-basic:visited, input[type="submit"] { color: #2E3333; font-size: 14px; font-weight: bold; line-height: 42px; min-height: 42px; vertical-align: middle; text-transform: uppercase; text-decoration: none; margin: 0.5em 1em 0.5em 0; padding: 0 1.6em; display: inline-block; border: 0; border-radius: 3px; position: relative; background-color: #c5cdcd; transition: background-color ease 0.5s; }
 
 .btn-basic:hover, .btn-basic:focus, input[type="submit"]:hover { color: #F2F5F5; background-color: #95A5A5; outline: 0; cursor: pointer; }
 

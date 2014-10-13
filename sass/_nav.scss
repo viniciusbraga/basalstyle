@@ -1,9 +1,18 @@
 
 /* Menu navInline */
 
+#header-nav {
+  position: absolute;
+  top: 45px;
+  right: 5px;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+}
+
 .nav-inline {
     vertical-align: middle;
-    padding: 10px 0;
+    padding: 0 0;
     display: inline-block;
 }
 
@@ -24,7 +33,7 @@
 .nav-inline li a {
   font-size: 14px;
   font-weight: 400;
-  line-height: 38px;
+  line-height: 40px;
   text-decoration: none;
   text-transform: uppercase;
   margin: 0;
@@ -117,6 +126,11 @@
 
 @media (max-width: 800px) {
 
+    #header-nav {
+      top: -3px;
+      right: 5px;
+    }
+
     /* Menu nav-inline */
 
     .nav-inline {
@@ -138,8 +152,11 @@
         opacity: 0.3;
         overflow: hidden;
         position: relative;
-        right: 205px;
         background: #FFFFFF;
+    }
+
+    #header-nav .nav-inline .nav-menu > ul {
+        right: 205px;
     }
 
     .nav-menu {
@@ -191,7 +208,6 @@
       display: block;
       z-index: 3;
       border: 3px solid #CCCCCC;
-      border-top: none;
       background-color: #fff;
     }
 
