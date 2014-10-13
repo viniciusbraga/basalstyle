@@ -98,39 +98,41 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .brno { white-space: nowrap; }
 
 /* Anexo com complementos de tipografia e layout */
-.text-smaller p, .text-smaller li, .text-smaller dt, .text-smaller dd, .text-smaller th, .text-smaller td, .text-smaller caption { font-size: 1.4em; line-height: 27px; }
+.text-small p, .text-small li, .text-small dt, .text-small dd, .text-small th, .text-small td, .text-small caption { font-size: 1.4em; line-height: 24px; }
 
-.text-smaller h1, .text-smaller h2, .text-smaller h3, .text-smaller h4, .text-smaller h5, .text-smaller h6 { font-size: 2.4em; font-weight: 300; line-height: 30px; min-height: 0; padding: 5px 0 0; display: inline-block; }
+.text-small h1, .text-small h2, .text-small h3, .text-small h4, .text-small h5, .text-small h6 { font-size: 1.6em; line-height: 30px; min-height: 0; padding: 5px 0 0; display: inline-block; }
 
-.text-smaller h2 { font-size: 2.1em; }
+.text-small h1 { font-size: 2.4em; }
 
-.text-smaller h3 { font-size: 1.8em; }
+.text-small h2 { font-size: 2.1em; }
 
-.text-smaller h4 { font-size: 1.6em; }
+.text-small h3 { font-size: 1.8em; }
 
-.text-smaller p { padding: 2px 0 23px; }
+.text-small p { padding: 2px 0 23px; }
 
-.text-smaller ul, .text-smaller ol { padding: 7px 0 23px 42px; }
+.text-small ul, .text-small ol { padding: 7px 0 23px 42px; }
 
-.text-smaller dl { padding: 0 0 30px; }
+.text-small dl { padding: 0 0 30px; }
 
-.text-smaller dt { padding: 30px 0 0; font-weight: 700; }
+.text-small dt { padding: 30px 0 0; font-weight: 700; }
 
-.text-smaller dd { padding: 0; }
+.text-small dd { padding: 0; }
 
-.text-smallest p, .text-smallest li, .text-smallest dt, .text-smallest dd, .text-smallest th, .text-smallest td, .text-smallest caption { font-size: 1.2em; line-height: 18px; }
+.text-legend p, .text-legend li, .text-legend dt, .text-legend dd, .text-legend th, .text-legend td, .text-legend caption { font-size: 1.2em; line-height: 18px; }
 
-.text-smallest h1, .text-smallest h2, .text-smallest h3, .text-smallest h4, .text-smallest h5, .text-smallest h6 { font-size: 2.4em; font-weight: 300; line-height: 30px; min-height: 0; padding: 5px 0 0; display: inline-block; }
+.text-legend h1, .text-legend h2, .text-legend h3, .text-legend h4, .text-legend h5, .text-legend h6 { font-size: 1.4em; line-height: 30px; min-height: 0; padding: 1em 0 0; }
 
-.text-smallest h2 { font-size: 2.1em; }
+.text-legend h1 { font-size: 1.8em; }
 
-.text-smallest h3 { font-size: 1.8em; }
+.text-legend h2 { font-size: 1.6em; }
 
-.text-smallest h4 { font-size: 1.6em; }
+.text-legend p { padding: 0.5em 0; }
 
-.text-smallest p { padding: 15px 0 15px; }
+.text-legend h1 + p, .text-legend h2 + p, .text-legend h3 + p, .text-legend h4 + p, .text-legend h5 + p, .text-legend h6 + p { padding: 0 0 0.5em; }
 
-/* FIM @media (min-width: 801px) */
+/* @media (min-width: 1150px) */
+@media screen and (max-width: 1150px) { figcaption { position: relative; } }
+/* FIM @media (min-width: 1150px) */
 @media (max-width: 800px) { h1, h2, h3, h4, h5, h6 { font-size: 3em; line-height: 1.3em; min-height: 1em; }
   h2 { font-size: 2.6em; }
   h3 { font-size: 2.0em; }
@@ -138,6 +140,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   p, li, dt, dd, th, td, caption { font-size: 1.6em; line-height: 1.7em; }
   blockquote { margin: 1em 15px; padding: 0 0 0 0.25em; }
   h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote { margin: 0 15px; }
+  figcaption { position: relative; }
   .brno { white-space: normal; } }
 /* FIM (max-width: 800px) */
 /* Estruturas de Colunas fixas */
@@ -403,87 +406,93 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* FIM @media (max-width: 800px) */
 /* FIM Menu nav-inline */
 /*  Imagens
- Exemplo de aplicação: <span class="img img-col-4 frame-h-27x8"> <img src="nome_da_image.png" height="530" width="800"> </span> Onde img-col-(número de coluna) especifica a largura máxima da caixa da imagem. Contudo, a imagem ficará menor, porque a regra CSS desconta os espaços laterais (padding) para o alinhamento com o texto.
+ Exemplo de aplicação: <div class="img img-align-text frame-h-27x8"> <img src="nome_da_image.png" height="530" width="800"> </div> Onde img-col-(número de coluna) especifica a largura máxima da caixa da imagem. Contudo, a imagem ficará menor, porque a regra CSS desconta os espaços laterais (padding) para o alinhamento com o texto.
 */
-.img-col-1 { max-width: 95px; min-height: 90px; }
-
-.img-col-2 { max-width: 190px; min-height: 150px; }
-
-.img-col-3 { max-width: 285px; min-height: 180px; }
-
-.img-col-4 { max-width: 380px; min-height: 270px; }
-
-.img-col-5 { max-width: 475px; min-height: 330px; }
-
-.img-col-6 { max-width: 570px; min-height: 420px; }
-
-.img-col-7 { max-width: 665px; min-height: 450px; }
-
-.img-col-8 { max-width: 760px; min-height: 510px; }
-
-.img-col-9 { max-width: 855px; min-height: 600px; }
-
-.img-col-10 { max-width: 950px; min-height: 660px; }
-
-.img-col-11 { max-width: 1045px; min-height: 720px; }
-
-.img-col-12 { max-width: 1140px; min-height: 810px; }
-
-.img-col-1, .img-col-2, .img-col-3, .img-col-4, .img-col-5, .img-col-6, .img-col-7, .img-col-8, .img-col-9, .img-col-10, .img-col-11, .img-col-12 { width: 100%; margin: 0 auto; padding: 0; }
-
 .img { display: block; position: relative; }
 
 .img:after { content: ""; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1; }
 
 .img img { width: 100%; height: auto; }
 
-.img-align-left { margin: 0 auto 0 0; }
+figcaption, .img-legend { font-size: 1em; line-height: 1.3em; text-align: right; padding: 0.25em 0 0.75em; width: 100%; position: absolute; bottom: 0; background-color: #ffffff; }
 
-.img-align-right { margin: 0 0 0 auto; }
+figcaption a, .img-legend a { text-decoration: none; }
 
 /* img-align-text A imagem fica alinhada com a altura da letra capitular (cap height) do texto.
 */
-.img-align-title { margin-top: 3em; }
+.img-align-title { margin-top: 0; }
 
-.img-align-text { margin-top: 14px; margin-bottom: 16px; }
+.img-align-text { padding-top: 1.4em; margin-bottom: 0; }
 
-/* frame-h-(número de entrelinha) Tem momentos que você precisa forçar a altura da caixa da imagem. Esta classe especifica um tamanho limite, fazendo o recorte (crop) necessário. Ex: Preciso de uma caixa de imagem com no máximo 3 linhas, basta usar a classe frame-h-27x3, tipo: <span class="img img-col-4 frame-h-27x3">
+/* paspatour-(número de entrelinha) Tem momentos que você precisa forçar a altura da caixa da imagem. Esta classe especifica um tamanho limite, fazendo o recorte (crop) necessário. Ex: Preciso de uma caixa de imagem com no máximo 3 linhas, basta usar a classe frame-h-27x3, tipo: <div class="img paspatour-7">
 */
-.frame-h-3 { height: 90px; }
+.paspatour-1 { height: 30px; min-height: 1em; overflow: hidden; }
 
-.frame-h-4 { height: 120px; }
+.paspatour-2 { height: 60px; min-height: 1em; overflow: hidden; }
 
-.frame-h-5 { height: 150px; }
+.paspatour-3 { height: 90px; min-height: 1em; overflow: hidden; }
 
-.frame-h-6 { height: 180px; }
+.paspatour-4 { height: 120px; min-height: 1em; overflow: hidden; }
 
-.frame-h-8 { height: 240px; }
+.paspatour-5 { height: 150px; min-height: 1em; overflow: hidden; }
 
-.frame-h-9 { height: 270px; }
+.paspatour-6 { height: 180px; min-height: 1em; overflow: hidden; }
 
-.frame-h-11 { height: 330px; }
+.paspatour-7 { height: 210px; min-height: 1em; overflow: hidden; }
 
-.frame-h-14 { height: 420px; }
+.paspatour-8 { height: 240px; min-height: 1em; overflow: hidden; }
 
-.frame-h-15 { height: 450px; }
+.paspatour-9 { height: 270px; min-height: 1em; overflow: hidden; }
 
-.frame-h-18 { height: 540px; }
+.paspatour-10 { height: 300px; min-height: 1em; overflow: hidden; }
 
-.frame-h-20 { height: 600px; }
+.paspatour-11 { height: 330px; min-height: 1em; overflow: hidden; }
 
-.frame-h-22 { height: 660px; }
+.paspatour-12 { height: 360px; min-height: 1em; overflow: hidden; }
 
-.frame-h-24 { height: 720px; }
+.paspatour-13 { height: 390px; min-height: 1em; overflow: hidden; }
 
-.frame-h-27 { height: 810px; }
+.paspatour-14 { height: 420px; min-height: 1em; overflow: hidden; }
 
-.frame-h-3, .frame-h-4, .frame-h-5, .frame-h-6, .frame-h-8, .frame-h-9, .frame-h-11, .frame-h-14, .frame-h-15, .frame-h-18, .frame-h-20, .frame-h-22, .frame-h-24, .frame-h-27 { min-height: 1em; overflow: hidden; }
+.paspatour-15 { height: 450px; min-height: 1em; overflow: hidden; }
+
+.paspatour-16 { height: 480px; min-height: 1em; overflow: hidden; }
+
+.paspatour-17 { height: 510px; min-height: 1em; overflow: hidden; }
+
+.paspatour-18 { height: 540px; min-height: 1em; overflow: hidden; }
+
+.paspatour-19 { height: 570px; min-height: 1em; overflow: hidden; }
+
+.paspatour-20 { height: 600px; min-height: 1em; overflow: hidden; }
 
 /* @media (max-width: 1150px) */
-@media (max-width: 1150px) { .img-col-1, .img-col-2, .img-col-3, .img-col-4, .img-col-5, .img-col-6, .img-col-7, .img-col-8, .img-col-9, .img-col-10, .img-col-11, .img-col-12 { min-height: 1em; padding: 1.6em 15px; }
+@media (max-width: 1150px) { .img { padding: 15px 0; }
   .img-align-text { margin-top: 0; margin-bottom: 0; }
-  .frame-h-3, .frame-h-4, .frame-h-5, .frame-h-6, .frame-h-8, .frame-h-9, .frame-h-11, .frame-h-14, .frame-h-15, .frame-h-18, .frame-h-20, .frame-h-22, .frame-h-24, .frame-h-27 { height: auto; min-height: 1em; overflow: hidden; } }
+  .paspatour-1 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-2 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-3 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-4 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-5 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-6 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-7 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-8 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-9 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-10 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-11 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-12 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-13 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-14 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-15 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-16 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-17 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-18 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-19 { height: auto; min-height: 1em; overflow: hidden; }
+  .paspatour-20 { height: auto; min-height: 1em; overflow: hidden; } }
 /* @media (max-width: 1150px) */
+/* @media (max-width: 800px) */
+@media (max-width: 800px) { .img { padding: 15px 15px; } }
+/* @media (max-width: 800px) */
 /* FIM Imagens */
 /* Formulários  */
 .form-row { margin: 0; padding: 0; list-style: none; min-height: 90px; }
