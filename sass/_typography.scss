@@ -67,7 +67,7 @@ h1, h2 {
 }
 
 h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dt,dd,blockquote {
-    margin: 0 $basal-padding;
+    margin: 0;
 }
 
 p, li, dt, dd, th, td, caption {
@@ -312,6 +312,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
         padding: 0 0 0 0.25em;
     }
 
+    h1,h2,h3,h4,h5,h6,p,ul,ol,dl,blockquote {
+        margin: 0 $basal-padding;
+    }
 
     .brno { white-space: normal; }
 

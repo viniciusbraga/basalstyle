@@ -19,7 +19,7 @@ h6 { font-size: 1.3em; line-height: 20px; min-height: 60px; padding: 14px 0 3px;
 
 h1, h2 { letter-spacing: -0.006em; word-spacing: -0.05em; }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd, blockquote { margin: 0 15px; }
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd, blockquote { margin: 0; }
 
 p, li, dt, dd, th, td, caption { font-size: 1.8em; line-height: 30px; }
 
@@ -137,6 +137,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   h4, h5, h6 { font-size: 1.6em; }
   p, li, dt, dd, th, td, caption { font-size: 1.6em; line-height: 1.7em; }
   blockquote { margin: 1em 15px; padding: 0 0 0 0.25em; }
+  h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote { margin: 0 15px; }
   .brno { white-space: normal; } }
 /* FIM (max-width: 800px) */
 /* Estruturas de Colunas fixas */
@@ -258,6 +259,13 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .col-right-11 { margin-right: 1045px; }
 
+/* Aplica o gutter entre as colunas usando o padding interno de cada coluna aplicada.  */
+.gutter { padding-left: 15px; padding-right: 15px; }
+
+.gutter-left { padding-left: 15px; }
+
+.gutter-right { padding-right: 15px; }
+
 @media screen and (max-width: 1150px) { .desktop-1 { width: 8%; }
   .desktop-2 { width: 16%; }
   .desktop-3 { width: 24%; }
@@ -273,7 +281,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 @media screen and (max-width: 800px) { .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { width: 100%; float: none; max-width: none; }
   .tablet-1 { width: 25%; float: left; }
   .tablet-2 { width: 50%; float: left; }
-  .tablet-3 { width: 75%; float: left; } }
+  .tablet-3 { width: 75%; float: left; }
+  .gutter, .gutter-left, .gutter-right { padding: 0; } }
 @media screen and (max-width: 700px) { .tablet-1, .tablet-2, .tablet-3 { width: 100%; float: none; }
   .col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 { width: 100%; float: none; }
   .col { overflow: visible; display: block; }
@@ -304,16 +313,16 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .header a { text-decoration: none; }
 
-.site-logo { padding: 0 15px; }
+.site-logo { padding: 0; }
 
 .site-logo h1 { font-size: 1em; line-height: 1em; min-height: 1em; margin: 0; padding: 10px 0 0; }
 
 .site-logo h1 a { color: #000; font-size: 2.8em; line-height: 50px; padding-top: 10px; }
 
-.site-logo .site-description { font-size: 1.2em; line-height: 1.5em; margin: 0; padding: 0 0; }
+.site-logo .site-description { font-size: 1.2em; line-height: 1.5em; margin: 0; padding: 0; }
 
 /* Fomulário de Busca no Header do Site */
-.header-search { vertical-align: middle; display: block; margin: 0; padding: 0; position: absolute; top: 10px; right: 15px; }
+.header-search { vertical-align: middle; display: block; margin: 0; padding: 0; position: absolute; top: 16px; right: 0; }
 
 .header-search form { margin: 0; padding: 0; }
 
@@ -326,7 +335,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* @media (max-width: 800px) */
 @media (max-width: 800px) { /* Cabeçalho do Site e Navegação */
   .header { position: relative; min-height: 13.5em; }
-  .site-logo { width: 100%; }
+  .site-logo { width: 100%; padding: 0 15px; }
   .site-logo h1 { font-size: 1em; line-height: 1em; min-height: 1em; margin: 0; padding: 0; }
   .site-logo h1 a { color: #000; font-size: 2.8em; line-height: 50px; padding-top: 10px; }
   .site-logo .site-description { width: 100%; padding-top: 0; padding-bottom: 10px; }
@@ -337,11 +346,11 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* FIM @media (max-width: 800px) */
 /* FIM Cabeçalho do Site e Navegação */
 /* Menu navInline */
-#header-nav { position: absolute; top: 45px; right: 5px; z-index: 10; padding: 0; margin: 0; }
+#header-nav { position: absolute; top: 50px; right: 0; z-index: 10; padding: 0; margin: 0; }
 
 .nav-inline { vertical-align: middle; padding: 0 0; display: inline-block; }
 
-.nav-inline ul { margin: 0; padding: 0 0.9em; }
+.nav-inline ul { margin: 0; padding: 0; }
 
 .nav-inline li { font-size: 1em; margin: 0; padding: 0; float: left; list-style: none; position: relative; }
 
@@ -393,7 +402,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .nav-inline .submenu ul li a { margin: 0 0; padding: 0 1.2em 0 2em; border-bottom: 1px solid #F2F5F5; display: block; } }
 /* FIM @media (max-width: 800px) */
 /* FIM Menu nav-inline */
-/* Imagens  Exemplo de aplicação: <span class="img img-col-4 frame-h-27x8"> <img src="nome_da_image.png" height="530" width="800"> </span> Onde img-col-(número de coluna) especifica a largura máxima da caixa da imagem. Contudo, a imagem ficará menor, porque a regra CSS desconta os espaços laterais (padding) para o alinhamento com o texto. */
+/*  Imagens
+ Exemplo de aplicação: <span class="img img-col-4 frame-h-27x8"> <img src="nome_da_image.png" height="530" width="800"> </span> Onde img-col-(número de coluna) especifica a largura máxima da caixa da imagem. Contudo, a imagem ficará menor, porque a regra CSS desconta os espaços laterais (padding) para o alinhamento com o texto.
+*/
 .img-col-1 { max-width: 95px; min-height: 90px; }
 
 .img-col-2 { max-width: 190px; min-height: 150px; }
@@ -418,7 +429,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .img-col-12 { max-width: 1140px; min-height: 810px; }
 
-.img-col-1, .img-col-2, .img-col-3, .img-col-4, .img-col-5, .img-col-6, .img-col-7, .img-col-8, .img-col-9, .img-col-10, .img-col-11, .img-col-12 { width: 100%; margin: 0 auto; padding: 0 15px; }
+.img-col-1, .img-col-2, .img-col-3, .img-col-4, .img-col-5, .img-col-6, .img-col-7, .img-col-8, .img-col-9, .img-col-10, .img-col-11, .img-col-12 { width: 100%; margin: 0 auto; padding: 0; }
 
 .img { display: block; position: relative; }
 
@@ -426,16 +437,18 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .img img { width: 100%; height: auto; }
 
-.imgLeft { margin: 0 auto 0 0; }
+.img-align-left { margin: 0 auto 0 0; }
 
-.imgRight { margin: 0 0 0 auto; }
+.img-align-right { margin: 0 0 0 auto; }
 
-/* img-align-text A imagem fica alinhada com a altura da letra capitular (cap height) do texto. */
+/* img-align-text A imagem fica alinhada com a altura da letra capitular (cap height) do texto.
+*/
 .img-align-title { margin-top: 3em; }
 
 .img-align-text { margin-top: 14px; margin-bottom: 16px; }
 
-/* frame-h-(número de entrelinha) Tem momentos que você precisa forçar a altura da caixa da imagem. Esta classe especifica um tamanho limite, fazendo o recorte (crop) necessário. Ex: Preciso de uma caixa de imagem com no máximo 3 linhas, basta usar a classe frame-h-27x3, tipo: <span class="img img-col-4 frame-h-27x3"> */
+/* frame-h-(número de entrelinha) Tem momentos que você precisa forçar a altura da caixa da imagem. Esta classe especifica um tamanho limite, fazendo o recorte (crop) necessário. Ex: Preciso de uma caixa de imagem com no máximo 3 linhas, basta usar a classe frame-h-27x3, tipo: <span class="img img-col-4 frame-h-27x3">
+*/
 .frame-h-3 { height: 90px; }
 
 .frame-h-4 { height: 120px; }
@@ -470,9 +483,10 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 @media (max-width: 1150px) { .img-col-1, .img-col-2, .img-col-3, .img-col-4, .img-col-5, .img-col-6, .img-col-7, .img-col-8, .img-col-9, .img-col-10, .img-col-11, .img-col-12 { min-height: 1em; padding: 1.6em 15px; }
   .img-align-text { margin-top: 0; margin-bottom: 0; }
   .frame-h-3, .frame-h-4, .frame-h-5, .frame-h-6, .frame-h-8, .frame-h-9, .frame-h-11, .frame-h-14, .frame-h-15, .frame-h-18, .frame-h-20, .frame-h-22, .frame-h-24, .frame-h-27 { height: auto; min-height: 1em; overflow: hidden; } }
-/*  FIM Imagens * / */
+/* @media (max-width: 1150px) */
+/* FIM Imagens */
 /* Formulários  */
-.form-row { margin: 0; padding: 0 15px; list-style: none; min-height: 90px; }
+.form-row { margin: 0; padding: 0; list-style: none; min-height: 90px; }
 
 .form-row p { margin: 0; padding: 0; }
 
@@ -532,7 +546,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .error-input input:focus { border: none; border-left: 6px solid #16a085; background-color: #ecf0f1; }
 
 /* Mensagens e Alertas */
-@media (max-width: 800px) { .input-text-66 input[type="text"], .input-text-33 input[type="text"] { width: 100%; } }
+@media (max-width: 800px) { .form-row { padding: 0 15px; }
+  .input-text-66 input[type="text"], .input-text-33 input[type="text"] { width: 100%; } }
 /* Fim @media (max-width: 800px) */
 /* Formulários  */
 /* Botões de Interface */
@@ -548,7 +563,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .btn-icon-right .fa { padding-left: 0.5em; }
 
-.btn-row { margin: 0; padding: 0 15px; min-height: 60px; }
+.btn-row { margin: 0; padding: 0; min-height: 60px; }
 
 /* Botões coloridos */
 .btn-green, .btn-green:visited, input[type="submit"].btnGreen, input[type="submit"].btnGreen:visited { color: #FFF; background-color: #1abc9c; }
@@ -567,4 +582,6 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .btn-red:hover, input[type="submit"].btnRed:hover { color: #FFF; background-color: #CC3300; }
 
+@media (max-width: 800px) { .btn-row { padding: 0 15px; } }
+/* Fim @media (max-width: 800px) */
 /* FIM Botões de Interface  */

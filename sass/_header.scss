@@ -9,7 +9,7 @@
 .header a { text-decoration: none; }
 
 .site-logo {
-    padding: 0 15px;
+    padding: 0;
 }
 
 .site-logo h1 {
@@ -31,7 +31,7 @@
   font-size: 1.2em;
   line-height: 1.5em;
   margin: 0;
-  padding: 0 0;
+  padding: 0;
 }
 
 
@@ -44,8 +44,8 @@
   margin: 0;
   padding:0;
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 16px;
+  right: 0;
 }
 
 .header-search form {
@@ -99,6 +99,7 @@
 
     .site-logo {
       width: 100%;
+      padding: 0 $basal-padding;
     }
 
     .site-logo h1 {
