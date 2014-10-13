@@ -6,36 +6,32 @@
   min-height: $basal-leading * 3;
 }
 
-.header-site a {
-  text-decoration: none;
+.header a { text-decoration: none; }
+
+.site-logo {
+    padding: 0 15px;
 }
 
-.header-site .site-logo {
+.site-logo h1 {
     font-size: 1em;
     line-height: 1em;
-    margin: 0;
-    padding: 0;
     min-height: 1em;
-    max-height: $basal-leading * 3;
-}
-
-.header-site .site-logo a {
-    color: #000;
-    font-size: 3em;
-    line-height: 2.25em;
-    font-weight: 700;
     margin: 0;
-    padding: 0 0 0 0.5em;
-    width: 300px;
-    height: 60px;
-    display: block;
+    padding: 10px 0 0;
 }
 
-.header-site .site-description {
-  font-size: 1.4em;
+.site-logo h1 a {
+    color: #000;
+    font-size: 2.8em;
+    line-height: 50px;
+    padding-top: 10px;
+}
+
+.site-logo .site-description {
+  font-size: 1.2em;
   line-height: 1.5em;
   margin: 0;
-  padding: 0 1.13em;
+  padding: 0 0;
 }
 
 
@@ -48,7 +44,7 @@
   margin: 0;
   padding:0;
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 15px;
 }
 
@@ -101,24 +97,31 @@
       min-height: 13.5em;
     }
 
-    .header-site {
+    .site-logo {
       width: 100%;
     }
 
-    .header-site .site-description {
-      width: 100%;
-      padding-top: 5px;
-      padding-bottom: 5px;
+    .site-logo h1 {
+        font-size: 1em;
+        line-height: 1em;
+        min-height: 1em;
+        margin: 0;
+        padding: 0;
     }
 
-    #header-nav {
-      position: absolute;
-      top: 0;
-      right: 5px;
-      z-index: 10;
-      padding: 0;
-      margin: 0;
+    .site-logo h1 a {
+        color: #000;
+        font-size: 2.8em;
+        line-height: 50px;
+        padding-top: 10px;
     }
+
+    .site-logo .site-description {
+      width: 100%;
+      padding-top: 0;
+      padding-bottom: 10px;
+    }
+
 
     /* Cabeçalho do Site e Navegação */
 
@@ -126,7 +129,7 @@
       vertical-align: middle;
       display: block;
       margin: 0 auto;
-      padding: 30px 0;
+      padding: 20px 0;
       max-width: 100%;
       position: relative;
       top: 0;
