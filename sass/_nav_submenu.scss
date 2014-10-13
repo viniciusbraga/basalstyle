@@ -1,0 +1,107 @@
+
+/* Submenu do navInline */
+
+.submenu { position: relative; overflow: hidden; }
+
+.submenu:hover { color: #000; overflow: visible; }
+
+.submenu ul {
+  margin: -5px 0 0;
+  padding: 0 ;
+  opacity: 0;
+  border: 1px solid #95A5A5;
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  position: absolute;
+  z-index: 9995;
+}
+
+.submenu ul:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border: 1px solid #95A5A5;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  position: absolute;
+  top:-10px;
+  left: 20px;
+  z-index: -9994;
+  -webkit-transform-origin: 0 0;
+  -webkit-transform: rotate(45deg);
+  transform-origin: 0 0;
+  transform: rotate(45deg);
+}
+
+.submenu ul:before {
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  display: block;
+  width: 100%;
+  height: 20px;
+  background: #FFF;
+}
+
+.submenu:hover ul {
+  margin: 0 0 0;
+  opacity: 1;
+  -webkit-transition: opacity 0.6s, margin 1s;
+  transition: opacity 0.6s, margin 1s;
+}
+
+.submenu ul li {
+  font-size: 1em;
+  min-width: 200px;
+  min-height: 44px;
+  float: none;
+}
+
+.submenu ul li a {
+  margin: 0 0;
+  padding: 0 1em;
+  display: block;
+  border-bottom: 1px solid #C5CDCD;
+  text-align: left;
+}
+
+.submenu ul li a:hover {
+  color: #FFF;
+  background: #3498DB;
+}
+
+
+/* Submenu @media (max-width: 800px) */
+
+@media (max-width: 800px) {
+
+    /* Submenu */
+
+    .submenu ul {
+      padding: 0;
+      display: block;
+      position: relative;
+      z-index: 1000;
+      background-color: #C5CDCD;
+      box-shadow: none;
+      border: 1px solid rgb(255,0,0);
+    }
+
+    .submenu ul:after,
+    .submenu ul:before {
+      display: none;
+    }
+
+    .nav-inline .submenu ul li a {
+      margin: 0 0;
+      padding: 0 1.2em 0 2em;
+      border-bottom: 1px solid #F2F5F5;
+      display: block;
+    }
+
+
+} /* FIM Submenu @media (max-width: 800px) */
+
+/* FIM Submenu do navInline */

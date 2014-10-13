@@ -1,0 +1,167 @@
+
+/* Cabeçalho do Site e Navegação */
+
+.header {
+  position: relative;
+  min-height: $basal-leading * 3;
+}
+
+.header a { text-decoration: none; }
+
+.site-logo {
+    padding: 0;
+}
+
+.site-logo h1 {
+    font-size: 1em;
+    line-height: 1em;
+    min-height: 1em;
+    margin: 0;
+    padding: 10px 0 0;
+}
+
+.site-logo h1 a {
+    color: #000;
+    font-size: 2.8em;
+    line-height: 50px;
+    padding-top: 10px;
+}
+
+.site-logo .site-description {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Fomulário de Busca no Header do Site */
+
+.header-search {
+  vertical-align: middle;
+  display: block;
+  margin: 0;
+  padding:0;
+  position: absolute;
+  top: 16px;
+  right: 0;
+}
+
+.header-search form {
+  margin: 0;
+  padding: 0;
+}
+
+.header-search label { display: none;}
+
+.header-search input[type="text"] {
+  color: #333;
+  font-size: 16px;
+  line-height: 27px;
+  font-family: inherit;
+  min-height: 27px;
+  padding: 1px 6px;
+  margin: 0 auto;
+  width: 270px;
+  border: 1px solid #C5CDCD;
+  display: block;
+}
+.header-search button[type="submit"] {
+  color: #333;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  box-shadow: none;
+  overflow: hidden;
+  display: block;
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10
+}
+
+
+/* @media (max-width: 800px) */
+
+@media (max-width: 800px) {
+
+    /* Cabeçalho do Site e Navegação */
+
+    .header {
+      position: relative;
+      min-height: 13.5em;
+    }
+
+    .site-logo {
+      width: 100%;
+      padding: 0 $basal-padding;
+    }
+
+    .site-logo h1 {
+        font-size: 1em;
+        line-height: 1em;
+        min-height: 1em;
+        margin: 0;
+        padding: 0;
+    }
+
+    .site-logo h1 a {
+        color: #000;
+        font-size: 2.8em;
+        line-height: 50px;
+        padding-top: 10px;
+    }
+
+    .site-logo .site-description {
+      width: 100%;
+      padding-top: 0;
+      padding-bottom: 10px;
+    }
+
+
+    /* Cabeçalho do Site e Navegação */
+
+    .header-search {
+      vertical-align: middle;
+      display: block;
+      margin: 0 auto;
+      padding: 20px 0;
+      max-width: 100%;
+      position: relative;
+      top: 0;
+      right: 0;
+      background: rgba(0,0,0,0.05);
+    }
+
+    .header-search form {
+        margin: 0 auto;
+        width: 270px;
+        position: relative;
+    }
+
+    .header-search button[type="submit"] {
+      color: #333;
+      font-size: 18px;
+      line-height: 27px;
+      padding: 0;
+      width: 40px;
+      height: 30px;
+      border: 0;
+      box-shadow: none;
+      overflow: hidden;
+      display: block;
+      background: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+    }
+
+} /* FIM @media (max-width: 800px) */
+
+/* FIM Cabeçalho do Site e Navegação */
