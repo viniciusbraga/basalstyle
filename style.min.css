@@ -414,7 +414,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .img img { width: 100%; height: auto; }
 
-figcaption, .img-legend { font-size: 1em; line-height: 1.3em; text-align: right; padding: 0.25em 0 0.75em; width: 100%; position: absolute; bottom: 0; background-color: #ffffff; }
+figcaption, .img-legend { font-size: 1em; line-height: 1.3em; text-align: right; padding: 0.3em 0 0.7em; width: 100%; min-height: 30px; position: absolute; bottom: 0; background-color: #ffffff; }
 
 figcaption a, .img-legend a { text-decoration: none; }
 
