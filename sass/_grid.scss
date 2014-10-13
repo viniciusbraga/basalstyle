@@ -113,13 +113,13 @@
  */
 
 .gutter {
-    padding-left: $basal-padding;
-    padding-right: $basal-padding;
+    padding-left: $basal-gutter;
+    padding-right: $basal-gutter;
 }
 
-.gutter-left  { padding-left: $basal-padding;  }
+.gutter-left  { padding-left: $basal-gutter;  }
 
-.gutter-right { padding-right: $basal-padding; }
+.gutter-right { padding-right: $basal-gutter; }
 
 
 
