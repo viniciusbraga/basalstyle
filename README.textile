@@ -2,31 +2,7 @@ h1. BasalStyle
 
 Conjunto básico de documentos de estilo (CSS) para prototipação rápida de Sites e Formulários (contemplando os seus possíveis erros).
 
-Este conjunto se propõe ser uma estrutura simples para construção de "wireframes" e protótipos, sem agregar demasiado estilo gráfico, mas respeitando uma relação tipográfica de boa qualidade visual.
+Este conjunto se propõe ser uma estrutura simples para construção de "wireframes" e protótipos, sem empregar demasiado estilo gráfico, mas respeitando uma relação tipográfica de boa qualidade visual.
 
 Para entender como aplicar no documento HTML, estude o exemplo do index.html na pasta.
 
-
-h2. Sobre o grid do documento 18-27-1080.css
-
-O grid é composto de um padrão de linhas verticais de 27px de altura. Ele serve como baseline da composição do texto e da altura dos bloco principais de conteúdo.
-
-A largura máxima do grid é de 1080px, divididos em 12 colunas de 90px.
-
-Não existe espaço aplicado nas caixa da coluna, contudo, existe um espaço de afastamento entre o texto/imagem e os limites da coluna.
-
-O afastamento do texto com relação às colunas, é composto de 18px em cada lado. Este afastamento está aplicado no espaço interno (paddind) dos elementos HTMLs, como: cabeçalhos (H1,H2,..), parágrafos, listas e o bloco da imagem.
-
-
-
-h2. Falta fazer
-
-# Fazer versões com LESS.
-# Exemplos de site e aplicações.
-# Criar as regras para o header fixo.
-# Fazer o grid com largura máxima de 1200 e entrelinha múltiplo de 5.
-# -Acrescentar o formulário de busca no header-.
-# -Melhorar o design do menu pulldown da navegação-.
-# -Aplicar uma estratégia para as imagens em tablets e celulares-.
-# -Melhorar o uso do debug-grid-
-# -Atualizar ícones para a versão mais atual do Font Awesome-.
