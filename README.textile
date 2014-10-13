@@ -6,3 +6,6 @@ Este conjunto se propõe ser uma estrutura simples para construção de "wirefra
 
 Para entender como aplicar no documento HTML, estude o exemplo do index.html na pasta.
 
+h2. License
+
+MIT
