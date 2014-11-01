@@ -60,6 +60,14 @@
 
 .container { margin: 0 auto; float: none; }
 
+/*
+ * Esconde o elemento HTML em diferente modos de apresentação
+ *
+ */
+
+.hide,
+.hide-desktop { display: none; }
+.screen-reader-only { position: absolute; visibility: hidden; }
 
 /*
  * Leading
@@ -121,6 +129,22 @@
 
 .gutter-right { padding-right: $basal-gutter; }
 
+
+/*
+    Altura mínima do elemento HTML
+    Tem momentos que você precisa de uma altura mínima do elemento HTML.
+    Esta classe especifica a altura mínima, sem atrapalhar caso cresça a quantidade de elemntos na caixa.
+    Ex: Um uso comum é aplicar a altura mínima numa linha: <div class="row min-h-7">
+*/
+
+
+@for $i from 1 through 40 {
+
+    .min-h-#{$i} {
+        min-height: $basal-leading * $i;
+    }
+
+}
 
 
 @media screen and  (max-width: 1150px) {
@@ -227,6 +251,10 @@
     .leading-bottom-3,
     .leading-bottom-4,
     .leading-bottom-5 { padding-bottom: 1em; }
+
+
+    .hide-desktop { display: block; }
+    .hide-mobile  { display: none; }
 
 }
 
