@@ -60,6 +60,14 @@
 
 .container { margin: 0 auto; float: none; }
 
+/*
+ * Esconde o elemento HTML em diferente modos de apresentação
+ *
+ */
+
+.hide,
+.hide-desktop { display: none; }
+.screen-reader-only { position: absolute; visibility: hidden; }
 
 /*
  * Leading
@@ -233,6 +241,10 @@
 @media screen and (max-width: 360px) {
 
     .mobile-2 { width: 100%; float: none;}
+
+
+    .hide-desktop { display: block; }
+    .hide-mobile  { display: none; }
 
 }
 
