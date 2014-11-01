@@ -2,11 +2,7 @@
 <!-- Define a linguagem de conteúdo para Português do Brasil -->
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-
-    <!-- Este Metatag comanda o browser renderizar com o plugin Google Chrome Frame caso esteja instalado. -->
-    <!-- Mais info: http://www.chromium.org/developers/how-tos/chrome-frame-getting-started -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -76,15 +72,15 @@
     </header>
     <!-- END header -->
 
-
     <hr class="hide">
-
 
     <div class="content desktop-12 container">
 
         <section class="row leading-top-1">
+            <header>
+                <h2 id="Typography" class="min-h-3">Tipografia</h2>
+            </header>
 
-            <h2 id="Typography min-h-3">Tipografia</h2>
 
             <div class="row">
                 <div class="desktop-12">
@@ -120,9 +116,11 @@
                         Na maioria dos casos, uma composição tipográfica deve ser especialmente legível e visualmente envolvente, sem desconsiderar o contexto em que é lido e os objetivos da sua publicação. Em trabalhos de design gráfico experimental (ou de vanguarda) os objetivos formais extrapolam a funcionalidade do texto, portanto questões como legibilidade, nesses casos, podem acabar sendo relativas.</p>
 
 
-                    <div>
-                        <h3>Tipografia Moderna e Futurismo/ Ação e Perspectiva/ H3</h3>
-                    </div>
+
+                    <h3>Tipografia Moderna e Futurismo/ Ação e Perspectiva/ H3</h3>
+
+                    <!-- Abaixo, um exemplo de linha e colunas flexíveis sem respeito ao grid
+                         Cada coluna divide a linha em 50%, sem se preocupar com o grid -->
 
                     <div class="row">
                         <div class="col-50">
@@ -217,7 +215,7 @@
 
         </section>
 
-        <section class="leading-top-2 min-h-15">
+        <section class="leading-top-2 min-h-13">
             <h2>Navegação (Bloco de Links)</h2>
 
             <h3>Menu Horizontal</h3>
@@ -283,146 +281,145 @@
             </div>
         </section>
 
+        <section class="min-h-34">
+            <header>
+                <h2 id="Form">Formulários</h2>
+                <h3 id="FormInput">Campos de Texto</h3>
+            </header>
 
-        <h2 id="Forms">Formulários</h2>
+            <div class="row">
+                <div class="col-50">
+                    <form action="/">
 
-        <h3 id="FormInput">Campos de Texto</h3>
-
-        <div class="row"> <div class="col-50">
-
-            <form action="" method="" accept-charset="utf-8">
-
-                <div class="form-row label-block input-text">
-                    <label for="id_name">Nome</label>
-                    <input type="text" id="id_name" name="name" value="">
-                </div>
-
-                <div class="form-row label-block input-text input-text-66">
-                    <label for="id_city">Cidade</label>
-                    <input type="text" id="id_city" name="city">
-                </div>
-
-                <div class="form-row label-block input-text input-text-33">
-                    <label for="id_zipcode">CEP</label>
-                    <input type="text" id="id_zipcode" name="zipcode">
-                </div>
-
-                <div class="row">
-                    <div class="col-50">
-                        <div class="form-row input-radio form-label-desc">
-                            <fieldset>
-                                <legend>Estado Civil</legend>
-                                <ul>
-                                    <li><input id="id_ec_1" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_1">Solteiro</label></li>
-                                    <li><input id="id_ec_2" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_2">Casado</label></li>
-                                    <li><input id="id_ec_3" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_3">Separado</label></li>
-                                    <li><input id="id_ec_4" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_4">Divorciado</label></li>
-                                    <li><input id="id_ec_5" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_5">Viúvo</label></li>
-                                </ul>
-                            </fieldset>
+                        <div class="form-row label-block input-text">
+                            <label for="id-01">Nome</label>
+                            <input type="text" id="id-01" name="name" value="">
                         </div>
-                    </div>
-                    <div class="col-50">
-                        <div class="form-row input-radio form-label-desc">
-                            <fieldset>
-                                <legend>Opções com Checkbox</legend>
-                                <dl>
-                                    <dd><input id="id_cb_1" type="checkbox" name="estado_civil" value="overnight" /><label for="id_cb_1">Opção 1</label></dd>
-                                    <dd><input id="id_cb_2" type="checkbox" name="estado_civil" value="overnight" /><label for="id_cb_2">Opção 2</label></dd>
-                                </dl>
-                            </fieldset>
+
+                        <div class="form-row label-block input-text input-text-66">
+                            <label for="id-02">Cidade</label>
+                            <input type="text" id="id-02" name="city">
                         </div>
-                    </div>
 
+                        <div class="form-row label-block input-text input-text-33">
+                            <label for="id-03">CEP</label>
+                            <input type="text" id="id-03" name="zipcode">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-50">
+                                <div class="form-row input-radio form-label-desc">
+                                    <fieldset>
+                                        <legend>Estado Civil</legend>
+                                        <ul>
+                                            <li><input id="id-04" type="radio" name="estado_civil" value="overnight" /><label for="id-04">Solteiro</label></li>
+                                            <li><input id="id-05" type="radio" name="estado_civil" value="overnight" /><label for="id-05">Casado</label></li>
+                                            <li><input id="id-06" type="radio" name="estado_civil" value="overnight" /><label for="id-06">Separado</label></li>
+                                            <li><input id="id-07" type="radio" name="estado_civil" value="overnight" /><label for="id-07">Divorciado</label></li>
+                                            <li><input id="id-08" type="radio" name="estado_civil" value="overnight" /><label for="id-08">Viúvo</label></li>
+                                        </ul>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="col-50">
+                                <div class="form-row input-radio form-label-desc">
+                                    <fieldset>
+                                        <legend>Opções com Checkbox</legend>
+                                        <ul>
+                                            <li><input id="id-09" type="checkbox" name="estado_civil" value="overnight" /><label for="id-09">Opção 1</label></li>
+                                            <li><input id="id-10" type="checkbox" name="estado_civil" value="overnight" /><label for="id-10">Opção 2</label></li>
+                                        </ul>
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-row label-block select-dropdown">
+                            <label for="id-11">Estado (UF)</label>
+                            <select id="id-11" name="state">
+                                <option value="">Escolha uma opção</option>
+                                <option value="UF_AC">Acre</option>
+                                <option value="UF_RN">Rio Grande do Norte</option>
+                                <option value="UF_RJ">Rio de Janeiro</option>
+                                <option value="UF_PA">Pará</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row label-block input-text min-h-10">
+                            <label>Observações</label> <textarea name=""></textarea>
+                        </div>
+
+                        <div class="leading-top-1 min-h-5">
+                            <p class="btn-row "><button type="submit" class="btn-basic btn-icon-right">Entrar <i class="fa fa-chevron-right"></i></button>  ou <a href="#">Cancelar</a></p>
+                        </div>
+
+                    </form>
                 </div>
-
-                <div class="form-row label-block select-dropdown">
-                    <label for="id_state">Estado (UF)</label>
-                    <select id="id_state" name="state">
-                        <option value="">Escolha uma opção</option>
-                        <option value="UF_AC">Acre</option>
-                        <option value="UF_RN">Rio Grande do Norte</option>
-                        <option value="UF_RJ">Rio de Janeiro</option>
-                        <option value="UF_PA">Pará</option>
-                    </select>
-                </div>
-
-                <div class="form-row label-block input-text min-h-10">
-                    <label>Observações</label> <textarea name=""></textarea>
-                </div>
-
-                <div class="leading-top-1 min-h-5">
-                    <p class="btn-row "><button type="submit" class="btn-basic btn-icon-right">Entrar <i class="fa fa-chevron-right"></i></button>  ou <a href="#">Cancelar</a></p>
-                </div>
-
-            </form>
-
-        </div></div>
-
-        <h2 id="FormError">Erros no Formulário</h2>
-
-        <div class="row">
-
-            <div class="col-6">
-                <form action="" method="" accept-charset="utf-8">
-
-                    <div class="form-row label-block input-text">
-                        <label for="id_email">Email</label>
-                        <ul class="errorlist">
-                            <li>Este campo é obrigatório.</li>
-                            <li>Um exemplo de uma segunda ou mais linhas de erro no mesmo campo.</li>
-                        </ul>
-                        <input type="text" id="id_email" name="name" value="">
-                    </div>
-
-                    <div class="form-row input-radio form-label-desc">
-                        <fieldset>
-                            <legend>Estado Civil</legend>
-                            <ul class="errorlist">
-                                <li>É preciso escolher uma opção abaixo.</li>
-                            </ul>
-                            <dl>
-                                <dd><input id="id_ec_1" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_1">Solteiro</label></dd>
-                                <dd><input id="id_ec_2" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_2">Casado</label></dd>
-                                <dd><input id="id_ec_3" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_3">Separado</label></dd>
-                                <dd><input id="id_ec_4" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_4">Divorciado</label></dd>
-                                <dd><input id="id_ec_5" type="radio" name="estado_civil" value="overnight" /><label for="id_ec_5">Viúvo</label></dd>
-                            </dl>
-                        </fieldset>
-                    </div>
-                    <div class="leading-top-1">
-                        <h3>Erros agregados no topo do formulário</h3>
-                    </div>
-
-                    <div class="errorlist">
-                        <p>O fomulário contêm erros nos campos, são eles:</p>
-                        <dl>
-                            <dt>Nome Completo</dt>
-                            <dd>Este campo é obrigatório.</dd>
-                            <dt>Email</dt>
-                            <dd>Este campo é obrigatório.</dd>
-                            <dd>Um exemplo de uma segunda ou mais linhas de erro no mesmo campo.</dd>
-                        </dl>
-                    </div>
-
-                    <div class="form-row label-block input-text error-input">
-                        <label>Nome Completo</label>
-                        <input type="text" id="id_subject" name="name">
-                    </div>
-
-                    <div class="form-row label-block input-text error-input">
-                        <label>Email</label>
-                        <input type="text" id="id_subject" name="address">
-                    </div>
-                </form>
 
             </div>
+        </section>
 
-        </div>
+        <section>
+            <header>
+                <h2 id="FormError">Erros no Formulário</h2>
+            </header>
+
+            <form action="/" class="min-h-13">
+                <div class="form-row label-block input-text">
+                    <label for="id-12">Email</label>
+                    <ul class="errorlist">
+                        <li>Este campo é obrigatório.</li>
+                        <li>Um exemplo de uma segunda ou mais linhas de erro no mesmo campo.</li>
+                    </ul>
+                    <input type="text" id="id-12" name="name" value="">
+                </div>
+
+                <div class="form-row input-radio form-label-desc">
+                    <fieldset>
+                        <legend>Estado Civil</legend>
+                        <ul class="errorlist">
+                            <li>É preciso escolher uma opção abaixo.</li>
+                        </ul>
+                        <ul>
+                            <li><input id="id-13" type="radio" name="estado_civil" value="overnight" /><label for="id-13">Solteiro</label></li>
+                            <li><input id="id-14" type="radio" name="estado_civil" value="overnight" /><label for="id-14">Casado</label></li>
+                            <li><input id="id-15" type="radio" name="estado_civil" value="overnight" /><label for="id-15">Separado</label></li>
+                            <li><input id="id-16" type="radio" name="estado_civil" value="overnight" /><label for="id-16">Divorciado</label></li>
+                            <li><input id="id-17" type="radio" name="estado_civil" value="overnight" /><label for="id-17">Viúvo</label></li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </form>
+
+            <h3>Erros agregados no topo do formulário</h3>
+
+            <form action="/" accept-charset="utf-8" class="min-h-15">
+
+                <div class="errorlist">
+                    <p>O fomulário contêm erros nos campos, são eles:</p>
+                    <dl>
+                        <dt>Nome Completo</dt>
+                        <dd>Este campo é obrigatório.</dd>
+                        <dt>Email</dt>
+                        <dd>Este campo é obrigatório.</dd>
+                        <dd>Um exemplo de uma segunda ou mais linhas de erro no mesmo campo.</dd>
+                    </dl>
+                </div>
+
+                <div class="form-row label-block input-text error-input">
+                    <label for="id-18">Nome Completo</label>
+                    <input type="text" id="id-18" name="name">
+                </div>
+
+                <div class="form-row label-block input-text error-input">
+                    <label for="id-19">Email</label>
+                    <input type="text" id="id-19" name="address">
+                </div>
+            </form>
 
 
-        </div>
-        <!-- row -->
+        </section>
 
 
     </div>
@@ -430,10 +427,10 @@
 
     <hr class="hide">
 
-    <footer class="footer rulerTop desktop-12 container" role="banner">
+    <footer class="footer rulerTop desktop-12 container">
         <div class="siteID leading-top-1">
-            <p class="siteLogo"><strong>basalStyle</strong></p>
-            <p class="siteTagline">CSS e HTML para prototipação rápida de Sites, WebApps e Formulários.</p>
+            <p class="site-logo"><strong>basalStyle</strong></p>
+            <p class="site-description">CSS e HTML para prototipação rápida de Sites, WebApps e Formulários.</p>
         </div>
     </footer>
     <!-- END footer -->
