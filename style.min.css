@@ -316,6 +316,46 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .min-h-20 { min-height: 600px; }
 
+.min-h-21 { min-height: 630px; }
+
+.min-h-22 { min-height: 660px; }
+
+.min-h-23 { min-height: 690px; }
+
+.min-h-24 { min-height: 720px; }
+
+.min-h-25 { min-height: 750px; }
+
+.min-h-26 { min-height: 780px; }
+
+.min-h-27 { min-height: 810px; }
+
+.min-h-28 { min-height: 840px; }
+
+.min-h-29 { min-height: 870px; }
+
+.min-h-30 { min-height: 900px; }
+
+.min-h-31 { min-height: 930px; }
+
+.min-h-32 { min-height: 960px; }
+
+.min-h-33 { min-height: 990px; }
+
+.min-h-34 { min-height: 1020px; }
+
+.min-h-35 { min-height: 1050px; }
+
+.min-h-36 { min-height: 1080px; }
+
+.min-h-37 { min-height: 1110px; }
+
+.min-h-38 { min-height: 1140px; }
+
+.min-h-39 { min-height: 1170px; }
+
+.min-h-40 { min-height: 1200px; }
+
 @media screen and (max-width: 1150px) { .desktop-1 { width: 8%; }
   .desktop-2 { width: 16%; }
   .desktop-3 { width: 24%; }
@@ -443,7 +483,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .nav-menu:hover ul { margin-top: -5px; height: auto; opacity: 1; transition: margin 1s, height 2s, opacity 1s; }
   .nav-menu:hover > ul { border: 3px solid #CCCCCC; }
   .nav-inline li { float: none; text-align: left; }
-  .nav-inline li a { color: #000; font-weight: nomral; padding: 0 1em; border-bottom: 1px solid #F2F5F5; white-space: nowrap; }
+  .nav-inline li a { color: #000; font-weight: normal; padding: 0 1em; border-bottom: 1px solid #F2F5F5; white-space: nowrap; }
   .nav-inline li a:hover { color: #FFF; background: #0066CC; }
   .nav-mobile, .nav-close { color: #7F8C8C; font-size: 28px; font-weight: bold; line-height: 38px; text-transform: uppercase; text-decoration: none; text-align: center; width: 43px; height: 43px; margin: 0 0 0 auto; padding: 0; display: block; z-index: 3; border: 3px solid #CCCCCC; background-color: #fff; }
   .nav-close { color: #7F8C8C; font-size: 18px; text-align: center; display: none; opacity: 0; transition: opacity 6s; }
@@ -550,7 +590,7 @@ figcaption a, .img-legend a { text-decoration: none; }
 
 .form-row a { text-decoration: none; }
 
-.form-row label, .form-row legend { color: #000; font-size: 14px; font-weight: 700; line-height: 30px; letter-spacing: 0.06em; text-transform: normal; padding: 0; margin: 0; }
+.form-row label, .form-row legend { color: #000; font-size: 14px; font-weight: 700; line-height: 30px; letter-spacing: 0.06em; text-transform: none; padding: 0; margin: 0; }
 
 .form-row textarea { font-family: inherit; font-size: 1.5em; margin: 0; padding: 0.75em 0.5em 0.5em 0.75em; width: 100%; border: 1px solid #D9D9D9; border-bottom: 2px solid #CCCCCC; border-right: 2px solid #CCCCCC; }
 

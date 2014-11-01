@@ -138,7 +138,7 @@
 */
 
 
-@for $i from 1 through 20 {
+@for $i from 1 through 40 {
 
     .min-h-#{$i} {
         min-height: $basal-leading * $i;
