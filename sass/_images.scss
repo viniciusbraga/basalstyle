@@ -11,6 +11,11 @@
     para o alinhamento com o texto.
 */
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .img {
     display: block;
     position: relative;
@@ -26,10 +31,6 @@
     z-index: -1;
 }
 
-.img img {
-    width: 100%;
-    height: auto;
-}
 
 figcaption, .img-legend {
     font-size: 1em;
@@ -45,6 +46,7 @@ figcaption, .img-legend {
 
 figcaption a,
 .img-legend a { text-decoration: none; }
+
 
 /*
     img-align-text
@@ -65,13 +67,12 @@ figcaption a,
 
 /*
     paspatour-(número de entrelinha)
-    Tem momentos que você precisa forçar a altura da caixa da imagem.
+    Tem momentos que você precisa de uma altura mínima da caixa da imagem.
     Esta classe especifica um tamanho limite, fazendo o recorte (crop) necessário.
     Ex: Preciso de uma caixa de imagem com no máximo 3 linhas,
-        basta usar a classe frame-h-27x3, tipo:
+        basta usar a classe paspatour-7, tipo:
         <div class="img paspatour-7">
 */
-
 
 @for $i from 1 through 20 {
 
