@@ -80,20 +80,19 @@
 
     <div class="content desktop-12 container">
 
-        <section class="row leading-top-1">
+        <section class="row">
             <header>
-                <h2 id="Heading" class="min-h-3">Titulagens</h2>
+                <h2 id="Heading">Titulagens</h2>
             </header>
-
 
             <div class="row">
                 <div class="desktop-12">
-                    <h1>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva - H1</b></h1>
-                    <h2>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva - H2</b></h2>
-                    <h3>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva - H3</b></h3>
-                    <h4>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva - H4</b></h4>
-                    <h5>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva - H5</b></h5>
-                    <h6>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva - H6</b></h6>
+                    <h1>Tipografia Moderna e Futurismo/ <span class="brno">Ação e Perspectiva - H1</span></h1>
+                    <h2>Tipografia Moderna e Futurismo/ <span claspanss="brno">Ação e Perspectiva - H2</span></h2>
+                    <h3>Tipografia Moderna e Futurismo/ <span class="brno">Ação e Perspectiva - H3</span></h3>
+                    <h4>Tipografia Moderna e Futurismo/ <span class="brno">Ação e Perspectiva - H4</span></h4>
+                    <h5>Tipografia Moderna e Futurismo/ <span class="brno">Ação e Perspectiva - H5</span></h5>
+                    <h6>Tipografia Moderna e Futurismo/ <span class="brno">Ação e Perspectiva - H6</span></h6>
                 </div>
 
             </div>
@@ -101,7 +100,7 @@
 
         <section class="row leading-top-1">
             <header>
-                <h2 id="TextAndImages" class="min-h-3">Texto e Imagens</h2>
+                <h2 id="TextAndImages">Texto e Imagens</h2>
             </header>
 
             <div class="row leading-top-1">
@@ -226,7 +225,9 @@
         </section>
 
         <section class="leading-top-2 min-h-13">
-            <h2>Navegação (Bloco de Links)</h2>
+            <header>
+                <h2>Navegação (Bloco de Links)</h2>
+            </header>
 
             <h3>Menu Horizontal</h3>
 
@@ -284,8 +285,8 @@
         <section class="min-h-34">
             <header>
                 <h2 id="Form">Formulários</h2>
-                <h3 id="FormInput">Campos de Texto</h3>
             </header>
+            <h3 id="FormInput">Campos de Texto</h3>
 
             <div class="row">
                 <div class="col-50">
@@ -306,7 +307,7 @@
                             <input type="text" id="id-03" name="zipcode">
                         </div>
 
-                        <div class="row">
+                        <div id="FormRadio" class="row">
                             <div class="col-50">
                                 <div class="form-row input-radio form-label-desc">
                                     <fieldset>
@@ -335,7 +336,7 @@
 
                         </div>
 
-                        <div id="FormPulldown" class="form-row label-block select-dropdown">
+                        <div id="Form" class="form-row label-block select-dropdown">
                             <label for="id-11">Estado (UF)</label>
                             <select id="id-11" name="state">
                                 <option value="">Escolha uma opção</option>
@@ -359,6 +360,7 @@
 
             </div>
         </section>
+
 
         <section>
             <header>
@@ -461,15 +463,15 @@
 
     <hr class="hide">
 
-    <footer class="footer rulerTop desktop-12 container">
-        <div class="siteID leading-top-1">
-            <p class="site-logo"><strong>basalStyle</strong></p>
-            <p class="site-description">CSS e HTML para prototipação rápida de Sites, WebApps e Formulários.</p>
-        </div>
-    </footer>
-    <!-- END footer -->
-
-
+    <div class="ruler-top">
+        <footer class="footer desktop-12 container">
+            <div class="leading-top-1">
+                <p>basalStyle</p>
+                <p>CSS e HTML para prototipação rápida de Sites, WebApps e Formulários.</p>
+            </div>
+        </footer>
+        <!-- END footer -->
+    </div>
 
     <label class="btnDebug" for="debug"> Grid <input type="checkbox" id="debug" onclick='var e=document.getElementsByTagName("body")[0],c="debug",re=new RegExp("(?:^|\\s)"+c+"(?!\\S)","g");if(e.className.match(re)){e.className=e.className.replace(re,"");}else{e.className+=" "+c;this.checked=true;}'></label>
 
