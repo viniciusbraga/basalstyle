@@ -32,45 +32,49 @@
 </head>
 <body>
 
-    <header class="header rulerBottom desktop-12 container" role="banner">
+    <div class="row ruler-bottom min-h-3">
 
-        <div class="site-logo">
-            <h1><a href="#" rel="home">BasalStyle</a></h1>
-            <p class="site-description screen-reader-only">CSS e HTML para prototipação rápida de Sites e Formulários.</p>
-        </div>
+        <header class="header header-inline row desktop-12 container" role="banner">
 
-        <div class="header-search">
-            <form id="search-form" method="get" action="#" role="search">
-                <label for="search">Busca</label>
-                <input type="text" id="search" name="s" value="" required="required" placeholder="Busca">
-                <button type="submit" id="search-submit"><i class="fa fa-search"></i> Buscar</button>
-            </form>
-        </div>
+            <div class="site-logo">
+                <h1><a href="#" rel="home">BasalStyle</a></h1>
+                <p class="site-description screen-reader-only">CSS e HTML para prototipação rápida de Sites e Formulários.</p>
+            </div>
 
-        <div id="header-nav">
             <nav class="nav-inline" role="navigation">
-                <div class="nav-menu">
-                    <a href="javascript:void(0);" class="nav-mobile"><i class="fa fa-bars"></i></a>
-                    <ul>
-                        <li><a href="#Heading">Titulagem</a></li>
-                        <li><a href="#TextAndImages">Texto e Imagens</a></li>
-                        <li class="submenu">
-                            <a href="javascript:void(0);">Formulários <i class="fa fa-chevron-down"></i></a>
-                            <ul>
-                                <li><a href="#FormInput">Input Text</a></li>
-                                <li><a href="#FormRadio">Radio Buttons</a></li>
-                                <li><a href="#FormPulldown">Pulldown</a></li>
-                                <li><a href="#FormError">Erros</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#Buttons">Botões</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
 
-    </header>
-    <!-- END header -->
+                <a href="javascript:void(0);" class="nav-mobile"><i class="fa fa-bars"></i></a>
+
+                <ul>
+                    <li><a href="#Heading">Titulagem</a></li>
+                    <li><a href="#TextAndImages">Texto e Imagens</a></li>
+                    <li class="submenu">
+                        <a href="javascript:void(0);">Formulários <i class="fa fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#FormInput">Input Text</a></li>
+                            <li><a href="#FormRadio">Radio Buttons</a></li>
+                            <li><a href="#FormPulldown">Pulldown</a></li>
+                            <li><a href="#FormError">Erros</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Buttons">Botões</a></li>
+                </ul>
+
+            </nav>
+
+            <div class="header-search">
+                <form id="search-form" method="get" action="#" role="search">
+                    <label for="search">Busca</label>
+                    <input type="text" id="search" name="s" value="" required="required" placeholder="Busca">
+                    <button type="submit" id="search-submit"><i class="fa fa-search"></i> Buscar</button>
+                </form>
+            </div>
+
+        </header>
+        <!-- END header -->
+
+    </div>
+
 
     <hr class="hide">
 
@@ -229,107 +233,52 @@
             <div class="row min-h-5">
                 <div class="desktop-8 textAlignCenter">
 
-                    <nav class="nav-inline">
-                        <div class="nav-menu">
-                            <a class="nav-mobile" href="javascript:void(0);" ><i class="fa fa-bars"></i></a>
+                    <div class="header header-inline">
+                        <nav class="nav-inline" role="navigation">
+
+                            <a href="javascript:void(0);" class="nav-mobile"><i class="fa fa-bars"></i></a>
+
                             <ul>
-                                <li><a href="#">Abertura</a></li>
-                                <li class="submenu current">
-                                    <a href="javascript:void(0);">Artigos <i class="fa fa-caret-down"></i></a>
+                                <li><a href="#Heading">Titulagem</a></li>
+                                <li><a href="#TextAndImages">Texto e Imagens</a></li>
+                                <li class="submenu">
+                                    <a href="javascript:void(0);">Formulários <i class="fa fa-chevron-down"></i></a>
                                     <ul>
-                                        <li><a href="#">Notícias</a></li>
-                                        <li class="current"><a href="#">Regional</a></li>
-                                        <li><a href="#">Internacionais</a></li>
+                                        <li><a href="#FormInput">Input Text</a></li>
+                                        <li><a href="#FormRadio">Radio Buttons</a></li>
+                                        <li><a href="#FormPulldown">Pulldown</a></li>
+                                        <li><a href="#FormError">Erros</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Planos &amp; Preços</a></li>
-                                <li><a href="#">Fale Conosco</a></li>
+                                <li><a href="#Buttons">Botões</a></li>
                             </ul>
-                        </div>
+
+                        </nav>
+                    </div>
+
+                    <nav class="nav-inline" role="navigation">
+
+                        <ul>
+                            <li><a href="#Heading">Titulagem</a></li>
+                            <li><a href="#TextAndImages">Texto e Imagens</a></li>
+                            <li class="submenu">
+                                <a href="javascript:void(0);">Formulários <i class="fa fa-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="#FormInput">Input Text</a></li>
+                                    <li><a href="#FormRadio">Radio Buttons</a></li>
+                                    <li><a href="#FormPulldown">Pulldown</a></li>
+                                    <li><a href="#FormError">Erros</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Buttons">Botões</a></li>
+                        </ul>
+
                     </nav>
+
 
                 </div>
             </div>
             <!-- row -->
-        </section>
-
-        <section class="min-h-34">
-            <header>
-                <h2 id="Form">Formulários</h2>
-                <h3 id="FormInput">Campos de Texto</h3>
-            </header>
-
-            <div class="row">
-                <div class="col-50">
-                    <form action="/">
-
-                        <div class="form-row label-block input-text">
-                            <label for="id-01">Nome</label>
-                            <input type="text" id="id-01" name="name" value="">
-                        </div>
-
-                        <div class="form-row label-block input-text input-text-66">
-                            <label for="id-02">Cidade</label>
-                            <input type="text" id="id-02" name="city">
-                        </div>
-
-                        <div class="form-row label-block input-text input-text-33">
-                            <label for="id-03">CEP</label>
-                            <input type="text" id="id-03" name="zipcode">
-                        </div>
-
-                        <div id="FormRadio" class="row">
-                            <div class="col-50">
-                                <div class="form-row input-radio form-label-desc">
-                                    <fieldset>
-                                        <legend>Estado Civil</legend>
-                                        <ul>
-                                            <li><input id="id-04" type="radio" name="estado_civil" value="overnight" /><label for="id-04">Solteiro</label></li>
-                                            <li><input id="id-05" type="radio" name="estado_civil" value="overnight" /><label for="id-05">Casado</label></li>
-                                            <li><input id="id-06" type="radio" name="estado_civil" value="overnight" /><label for="id-06">Separado</label></li>
-                                            <li><input id="id-07" type="radio" name="estado_civil" value="overnight" /><label for="id-07">Divorciado</label></li>
-                                            <li><input id="id-08" type="radio" name="estado_civil" value="overnight" /><label for="id-08">Viúvo</label></li>
-                                        </ul>
-                                    </fieldset>
-                                </div>
-                            </div>
-                            <div class="col-50">
-                                <div class="form-row input-radio form-label-desc">
-                                    <fieldset>
-                                        <legend>Opções com Checkbox</legend>
-                                        <ul>
-                                            <li><input id="id-09" type="checkbox" name="estado_civil" value="overnight" /><label for="id-09">Opção 1</label></li>
-                                            <li><input id="id-10" type="checkbox" name="estado_civil" value="overnight" /><label for="id-10">Opção 2</label></li>
-                                        </ul>
-                                    </fieldset>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div id="Form" class="form-row label-block select-dropdown">
-                            <label for="id-11">Estado (UF)</label>
-                            <select id="id-11" name="state">
-                                <option value="">Escolha uma opção</option>
-                                <option value="UF_AC">Acre</option>
-                                <option value="UF_RN">Rio Grande do Norte</option>
-                                <option value="UF_RJ">Rio de Janeiro</option>
-                                <option value="UF_PA">Pará</option>
-                            </select>
-                        </div>
-
-                        <div class="form-row label-block input-text min-h-10">
-                            <label>Observações</label> <textarea name=""></textarea>
-                        </div>
-
-                        <div class="leading-top-1 min-h-5">
-                            <p class="btn-row "><button type="submit" class="btn-basic btn-icon-right">Entrar <i class="fa fa-chevron-right"></i></button>  ou <a href="#">Cancelar</a></p>
-                        </div>
-
-                    </form>
-                </div>
-
-            </div>
         </section>
 
         <section class="min-h-34">
