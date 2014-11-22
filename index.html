@@ -32,64 +32,67 @@
 </head>
 <body>
 
-    <header class="header rulerBottom desktop-12 container" role="banner">
+    <div class="row ruler-bottom min-h-3">
 
-        <div class="site-logo">
-            <h1><a href="#" rel="home">BasalStyle</a></h1>
-            <p class="site-description screen-reader-only">CSS e HTML para prototipação rápida de Sites e Formulários.</p>
-        </div>
+        <header class="header header-inline row desktop-12 container" role="banner">
 
-        <div class="header-search">
-            <form id="search-form" method="get" action="#" role="search">
-                <label for="search">Busca</label>
-                <input type="text" id="search" name="s" value="" required="required" placeholder="Busca">
-                <button type="submit" id="search-submit"><i class="fa fa-search"></i> Buscar</button>
-            </form>
-        </div>
+            <div class="site-logo">
+                <h1><a href="#" rel="home">BasalStyle</a></h1>
+                <p class="site-description screen-reader-only">CSS e HTML para prototipação rápida de Sites e Formulários.</p>
+            </div>
 
-        <div id="header-nav">
             <nav class="nav-inline" role="navigation">
-                <div class="nav-menu">
-                    <a href="javascript:void(0);" class="nav-mobile"><i class="fa fa-bars"></i></a>
-                    <ul>
-                        <li><a href="#Heading">Titulagem</a></li>
-                        <li><a href="#TextAndImages">Texto e Imagens</a></li>
-                        <li class="submenu">
-                            <a href="javascript:void(0);">Formulários <i class="fa fa-chevron-down"></i></a>
-                            <ul>
-                                <li><a href="#FormInput">Input Text</a></li>
-                                <li><a href="#FormRadio">Radio Buttons</a></li>
-                                <li><a href="#FormPulldown">Pulldown</a></li>
-                                <li><a href="#FormError">Erros</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#Buttons">Botões</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
 
-    </header>
-    <!-- END header -->
+                <a href="javascript:void(0);" class="nav-mobile"><i class="fa fa-bars"></i></a>
+
+                <ul>
+                    <li><a href="#Heading">Titulagem</a></li>
+                    <li><a href="#TextAndImages">Texto e Imagens</a></li>
+                    <li class="submenu">
+                        <a href="javascript:void(0);">Formulários <i class="fa fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#FormInput">Input Text</a></li>
+                            <li><a href="#FormRadio">Radio Buttons</a></li>
+                            <li><a href="#FormPulldown">Pulldown</a></li>
+                            <li><a href="#FormError">Erros</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Buttons">Botões</a></li>
+                </ul>
+
+            </nav>
+
+            <div class="header-search">
+                <form id="search-form" method="get" action="#" role="search">
+                    <label for="search">Busca</label>
+                    <input type="text" id="search" name="s" value="" required="required" placeholder="Busca">
+                    <button type="submit" id="search-submit"><i class="fa fa-search"></i> Buscar</button>
+                </form>
+            </div>
+
+        </header>
+        <!-- END header -->
+
+    </div>
+
 
     <hr class="hide">
 
     <div class="content desktop-12 container">
 
-        <section class="row leading-top-1">
+        <section class="row">
             <header>
-                <h2 id="Heading" class="min-h-3">Titulagens</h2>
+                <h2 id="Heading">Titulagens</h2>
             </header>
-
 
             <div class="row">
                 <div class="desktop-12">
-                    <h1>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva - H1</b></h1>
-                    <h2>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva - H2</b></h2>
-                    <h3>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva - H3</b></h3>
-                    <h4>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva - H4</b></h4>
-                    <h5>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva - H5</b></h5>
-                    <h6>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva - H6</b></h6>
+                    <h1>Tipografia Moderna e Futurismo/ <span class="brno">Ação e Perspectiva - H1</span></h1>
+                    <h2>Tipografia Moderna e Futurismo/ <span claspanss="brno">Ação e Perspectiva - H2</span></h2>
+                    <h3>Tipografia Moderna e Futurismo/ <span class="brno">Ação e Perspectiva - H3</span></h3>
+                    <h4>Tipografia Moderna e Futurismo/ <span class="brno">Ação e Perspectiva - H4</span></h4>
+                    <h5>Tipografia Moderna e Futurismo/ <span class="brno">Ação e Perspectiva - H5</span></h5>
+                    <h6>Tipografia Moderna e Futurismo/ <span class="brno">Ação e Perspectiva - H6</span></h6>
                 </div>
 
             </div>
@@ -97,7 +100,7 @@
 
         <section class="row leading-top-1">
             <header>
-                <h2 id="TextAndImages" class="min-h-3">Texto e Imagens</h2>
+                <h2 id="TextAndImages">Texto e Imagens</h2>
             </header>
 
             <div class="row leading-top-1">
@@ -222,31 +225,57 @@
         </section>
 
         <section class="leading-top-2 min-h-13">
-            <h2>Navegação (Bloco de Links)</h2>
+            <header>
+                <h2>Navegação (Bloco de Links)</h2>
+            </header>
 
             <h3>Menu Horizontal</h3>
 
             <div class="row min-h-5">
                 <div class="desktop-8 textAlignCenter">
 
-                    <nav class="nav-inline">
-                        <div class="nav-menu">
-                            <a class="nav-mobile" href="javascript:void(0);" ><i class="fa fa-bars"></i></a>
+                    <div class="header header-inline">
+                        <nav class="nav-inline" role="navigation">
+
+                            <a href="javascript:void(0);" class="nav-mobile"><i class="fa fa-bars"></i></a>
+
                             <ul>
-                                <li><a href="#">Abertura</a></li>
-                                <li class="submenu current">
-                                    <a href="javascript:void(0);">Artigos <i class="fa fa-caret-down"></i></a>
+                                <li><a href="#Heading">Titulagem</a></li>
+                                <li><a href="#TextAndImages">Texto e Imagens</a></li>
+                                <li class="submenu">
+                                    <a href="javascript:void(0);">Formulários <i class="fa fa-chevron-down"></i></a>
                                     <ul>
-                                        <li><a href="#">Notícias</a></li>
-                                        <li class="current"><a href="#">Regional</a></li>
-                                        <li><a href="#">Internacionais</a></li>
+                                        <li><a href="#FormInput">Input Text</a></li>
+                                        <li><a href="#FormRadio">Radio Buttons</a></li>
+                                        <li><a href="#FormPulldown">Pulldown</a></li>
+                                        <li><a href="#FormError">Erros</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Planos &amp; Preços</a></li>
-                                <li><a href="#">Fale Conosco</a></li>
+                                <li><a href="#Buttons">Botões</a></li>
                             </ul>
-                        </div>
+
+                        </nav>
+                    </div>
+
+                    <nav class="nav-inline" role="navigation">
+
+                        <ul>
+                            <li><a href="#Heading">Titulagem</a></li>
+                            <li><a href="#TextAndImages">Texto e Imagens</a></li>
+                            <li class="submenu">
+                                <a href="javascript:void(0);">Formulários <i class="fa fa-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="#FormInput">Input Text</a></li>
+                                    <li><a href="#FormRadio">Radio Buttons</a></li>
+                                    <li><a href="#FormPulldown">Pulldown</a></li>
+                                    <li><a href="#FormError">Erros</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Buttons">Botões</a></li>
+                        </ul>
+
                     </nav>
+
 
                 </div>
             </div>
@@ -256,8 +285,8 @@
         <section class="min-h-34">
             <header>
                 <h2 id="Form">Formulários</h2>
-                <h3 id="FormInput">Campos de Texto</h3>
             </header>
+            <h3 id="FormInput">Campos de Texto</h3>
 
             <div class="row">
                 <div class="col-50">
@@ -332,84 +361,6 @@
             </div>
         </section>
 
-        <section class="min-h-34">
-            <header>
-                <h2 id="Form">Formulários</h2>
-                <h3 id="FormInput">Campos de Texto</h3>
-            </header>
-
-            <div class="row">
-                <div class="col-50">
-                    <form action="/">
-
-                        <div class="form-row label-block input-text">
-                            <label for="id-01">Nome</label>
-                            <input type="text" id="id-01" name="name" value="">
-                        </div>
-
-                        <div class="form-row label-block input-text input-text-66">
-                            <label for="id-02">Cidade</label>
-                            <input type="text" id="id-02" name="city">
-                        </div>
-
-                        <div class="form-row label-block input-text input-text-33">
-                            <label for="id-03">CEP</label>
-                            <input type="text" id="id-03" name="zipcode">
-                        </div>
-
-                        <div class="row">
-                            <div class="col-50">
-                                <div class="form-row input-radio form-label-desc">
-                                    <fieldset>
-                                        <legend>Estado Civil</legend>
-                                        <ul>
-                                            <li><input id="id-04" type="radio" name="estado_civil" value="overnight" /><label for="id-04">Solteiro</label></li>
-                                            <li><input id="id-05" type="radio" name="estado_civil" value="overnight" /><label for="id-05">Casado</label></li>
-                                            <li><input id="id-06" type="radio" name="estado_civil" value="overnight" /><label for="id-06">Separado</label></li>
-                                            <li><input id="id-07" type="radio" name="estado_civil" value="overnight" /><label for="id-07">Divorciado</label></li>
-                                            <li><input id="id-08" type="radio" name="estado_civil" value="overnight" /><label for="id-08">Viúvo</label></li>
-                                        </ul>
-                                    </fieldset>
-                                </div>
-                            </div>
-                            <div class="col-50">
-                                <div class="form-row input-radio form-label-desc">
-                                    <fieldset>
-                                        <legend>Opções com Checkbox</legend>
-                                        <ul>
-                                            <li><input id="id-09" type="checkbox" name="estado_civil" value="overnight" /><label for="id-09">Opção 1</label></li>
-                                            <li><input id="id-10" type="checkbox" name="estado_civil" value="overnight" /><label for="id-10">Opção 2</label></li>
-                                        </ul>
-                                    </fieldset>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div id="FormPulldown" class="form-row label-block select-dropdown">
-                            <label for="id-11">Estado (UF)</label>
-                            <select id="id-11" name="state">
-                                <option value="">Escolha uma opção</option>
-                                <option value="UF_AC">Acre</option>
-                                <option value="UF_RN">Rio Grande do Norte</option>
-                                <option value="UF_RJ">Rio de Janeiro</option>
-                                <option value="UF_PA">Pará</option>
-                            </select>
-                        </div>
-
-                        <div class="form-row label-block input-text min-h-10">
-                            <label>Observações</label> <textarea name=""></textarea>
-                        </div>
-
-                        <div class="leading-top-1 min-h-5">
-                            <p class="btn-row "><button type="submit" class="btn-basic btn-icon-right">Entrar <i class="fa fa-chevron-right"></i></button>  ou <a href="#">Cancelar</a></p>
-                        </div>
-
-                    </form>
-                </div>
-
-            </div>
-        </section>
 
         <section>
             <header>
@@ -512,15 +463,15 @@
 
     <hr class="hide">
 
-    <footer class="footer rulerTop desktop-12 container">
-        <div class="siteID leading-top-1">
-            <p class="site-logo"><strong>basalStyle</strong></p>
-            <p class="site-description">CSS e HTML para prototipação rápida de Sites, WebApps e Formulários.</p>
-        </div>
-    </footer>
-    <!-- END footer -->
-
-
+    <div class="ruler-top">
+        <footer class="footer desktop-12 container">
+            <div class="leading-top-1">
+                <p>basalStyle</p>
+                <p>CSS e HTML para prototipação rápida de Sites, WebApps e Formulários.</p>
+            </div>
+        </footer>
+        <!-- END footer -->
+    </div>
 
     <label class="btnDebug" for="debug"> Grid <input type="checkbox" id="debug" onclick='var e=document.getElementsByTagName("body")[0],c="debug",re=new RegExp("(?:^|\\s)"+c+"(?!\\S)","g");if(e.className.match(re)){e.className=e.className.replace(re,"");}else{e.className+=" "+c;this.checked=true;}'></label>
 
