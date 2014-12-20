@@ -37,14 +37,22 @@ figure:after {
 figcaption,
 .img-legend {
     font-size: 1em;
-    line-height: 1.3em;
+    line-height: 1em;
     text-align: right;
-    padding: 0.5em 1em 0.7em;
+    padding: 1.10em 1em 0;
     width: 100%;
     min-height: $basal-leading;
     position: absolute;
     bottom: 0;
+    background-color: none;
+    opacity: 0.15;
+    transition: opacity 1s, background-color 1s;
+}
+
+figure:hover figcaption,
+.img:hover .img-legend {
     background-color: rgba(255,255,255,0.6);
+    opacity: 1;
 }
 
 figcaption a,
@@ -96,7 +104,10 @@ figcaption a,
     figure { padding: ($basal-leading / 2) 0; }
 
     figcaption,
-    .img-legend { position: relative; }
+    .img-legend {
+        position: relative;
+        opacity: 1;
+    }
 
     .img-align-text {
         margin-top: 0;

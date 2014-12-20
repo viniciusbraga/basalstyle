@@ -500,7 +500,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .img:after, figure:after { content: ""; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1; }
 
-figcaption, .img-legend { font-size: 1em; line-height: 1.3em; text-align: right; padding: 0.5em 1em 0.7em; width: 100%; min-height: 30px; position: absolute; bottom: 0; background-color: rgba(255, 255, 255, 0.6); }
+figcaption, .img-legend { font-size: 1em; line-height: 1em; text-align: right; padding: 1.10em 1em 0; width: 100%; min-height: 30px; position: absolute; bottom: 0; background-color: none; opacity: 0.15; transition: opacity 1s, background-color 1s; }
+
+figure:hover figcaption, .img:hover .img-legend { background-color: rgba(255, 255, 255, 0.6); opacity: 1; }
 
 figcaption a, .img-legend a { text-decoration: none; }
 
@@ -554,7 +556,7 @@ figcaption a, .img-legend a { text-decoration: none; }
 
 /* @media (max-width: 1150px) */
 @media (max-width: 1150px) { .img, figure { padding: 15px 0; }
-  figcaption, .img-legend { position: relative; }
+  figcaption, .img-legend { position: relative; opacity: 1; }
   .img-align-text { margin-top: 0; margin-bottom: 0; }
   .paspatour-1 { height: auto; min-height: 1em; overflow: hidden; }
   .paspatour-2 { height: auto; min-height: 1em; overflow: hidden; }
