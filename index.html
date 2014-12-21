@@ -46,28 +46,19 @@
                 <ul>
                     <li><a href="#Heading">Titulagem</a></li>
                     <li><a href="#TextAndImages">Texto e Imagens</a></li>
-                    <li class="submenu current">
+                    <li><a href="#Menus">menus</a></li>
+                    <li class="submenu">
                         <a href="javascript:void(0);">Formulários</a>
                         <ul>
                             <li><a href="#FormInput">Input Text</a></li>
-                            <li class="current"><a href="#FormRadio">Radio Buttons</a></li>
+                            <li><a href="#FormRadio">Radio Buttons</a></li>
                             <li><a href="#FormPulldown">Pulldown</a></li>
                             <li><a href="#FormError">Erros</a></li>
                         </ul>
                     </li>
                     <li><a href="#Buttons">Botões</a></li>
-                    <li>
-                        <div class="header-search">
-                            <form id="search-form" method="get" action="#" role="search">
-                                <label for="search">Busca</label>
-                                <input type="text" id="search" name="s" value="" required="required" placeholder="Busca">
-                                <button type="submit" id="search-submit"><i class="fa fa-search"></i> Buscar</button>
-                            </form>
-                        </div>
-                    </li>
                 </ul>
             </nav>
-
 
         </header>
         <!-- END header -->
@@ -225,41 +216,63 @@
 
         <section class="leading-top-2 min-h-13">
             <header>
-                <h2>Navegação (Bloco de Links)</h2>
+                <h2 id="Menus">Navegação (Bloco de Links)</h2>
             </header>
 
             <h3>Menu Horizontal</h3>
 
-            <div class="row min-h-5">
-                <div class="desktop-8 textAlignCenter">
+            <div class="row">
+                <div class="desktop-8">
+                    <h4>Menu no Header e com Busca</h4>
+                    <p>Este exemplo é de uso do menu no Header do site e aplicando a Busca como último item do Menu. Também tem um exemplo de item do menu selecionado e seu sub-item.</p>
+                </div>
+            </div>
 
-                    <div class="header header-inline">
-                        <nav class="nav-inline" role="navigation">
+            <div class="row">
+                <header class="header header-inline row desktop-12 container" role="banner">
 
-                            <a href="javascript:void(0);" class="nav-mobile"><i class="fa fa-bars"></i></a>
-
-                            <ul>
-                                <li><a href="#Heading">Titulagem</a></li>
-                                <li><a href="#TextAndImages">Texto e Imagens</a></li>
-                                <li class="submenu">
-                                    <a href="javascript:void(0);">Formulários <i class="fa fa-chevron-down"></i></a>
-                                    <ul>
-                                        <li><a href="#FormInput">Input Text</a></li>
-                                        <li><a href="#FormRadio">Radio Buttons</a></li>
-                                        <li><a href="#FormPulldown">Pulldown</a></li>
-                                        <li><a href="#FormError">Erros</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#Buttons">Botões</a></li>
-                            </ul>
-
-                        </nav>
+                    <div class="site-logo desktop-3">
+                        <h1><a href="#" rel="home">Nome do Site</a></h1>
+                        <p class="site-description screen-reader-only">CSS e HTML para prototipação rápida de Sites e Formulários.</p>
                     </div>
 
                     <nav class="nav-inline" role="navigation">
-
+                        <a href="javascript:void(0);" class="nav-mobile"><i class="fa fa-bars"></i></a>
                         <ul>
                             <li><a href="#Heading">Titulagem</a></li>
+                            <li><a href="#TextAndImages">Texto e Imagens</a></li>
+                            <li class="submenu current">
+                                <a href="javascript:void(0);">Formulários</a>
+                                <ul>
+                                    <li><a href="#FormInput">Input Text</a></li>
+                                    <li class="current"><a href="#FormRadio">Radio Buttons</a></li>
+                                    <li><a href="#FormPulldown">Pulldown</a></li>
+                                    <li><a href="#FormError">Erros</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Buttons">Botões</a></li>
+                            <li>
+                                <div class="header-search">
+                                    <form id="search-form" method="get" action="#" role="search">
+                                        <label for="search">Busca</label>
+                                        <input type="text" id="search" name="s" value="" required="required" placeholder="Busca">
+                                        <button type="submit" id="search-submit"><i class="fa fa-search"></i> Buscar</button>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </header>
+            </div>
+
+            <h4>Menu horizontal de uso normal</h4>
+
+            <div class="row min-h-5">
+                <div class="desktop-8">
+                    <div class="nav-inline" role="navigation">
+                        <ul>
+                            <li class="current"><a href="#Heading">Titulagem</a></li>
                             <li><a href="#TextAndImages">Texto e Imagens</a></li>
                             <li class="submenu">
                                 <a href="javascript:void(0);">Formulários <i class="fa fa-chevron-down"></i></a>
@@ -272,11 +285,9 @@
                             </li>
                             <li><a href="#Buttons">Botões</a></li>
                         </ul>
-
-                    </nav>
-
-
+                    </div>
                 </div>
+
             </div>
             <!-- row -->
         </section>

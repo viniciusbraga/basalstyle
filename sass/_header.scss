@@ -97,8 +97,20 @@
 }
 
 .header-inline .nav-inline {
-      margin: 23px 0;
+    position: absolute;
+    right: 0;
+    margin: 23px 0;
 }
+
+.header-inline .nav-inline li {
+    margin: 0 0 0 1.4em;
+}
+
+.header-inline .submenu ul li {
+      margin: 0;
+      padding: 0;
+}
+
 
 
 /* @media (max-width: 1150px) */
@@ -113,6 +125,8 @@
           padding-bottom: 20px;
     }
 }
+
+
 
 /* @media (max-width: 1000px) */
 
@@ -137,7 +151,7 @@
     }
 
 
-    /* Cabeçalho do Site e Navegação */
+    /* Fomulário de Busca */
 
     .header-search {
       vertical-align: middle;
@@ -167,6 +181,49 @@
       top: 0;
       right: 0;
       z-index: 10;
+    }
+
+    /* Header inline */
+
+    .header-inline .nav-inline {
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+        overflow: hidden;
+        background: #fff;
+        position: absolute;
+        right: $basal-padding;
+        z-index: 9999;
+    }
+
+    .header-inline .nav-inline:hover {
+        position: absolute;
+        height: auto;
+        width: auto;
+        box-shadow: 0 5px 10px #CCC;
+    }
+
+    .header-inline .nav-inline > ul {
+        border: none;
+    }
+
+    .header-inline .nav-inline li {
+        margin: 0;
+        padding-left: 0;
+        border: none;
+    }
+
+    .header-inline .nav-inline li a {
+        padding: 0 2em 0 1em;
+    }
+
+    .header-inline .submenu ul li {
+          margin: 0;
+          padding: 0 0 0 1em;
+    }
+
+    .header-inline .nav-inline:hover .nav-mobile {
+        color: $grey-darkest;
     }
 
 

@@ -6,8 +6,6 @@
     margin: 0 0;
     padding: 0 0;
     display: inline-block;
-    position: absolute;
-    right: 0;
 }
 
 .nav-inline ul {
@@ -26,7 +24,7 @@
 
 .nav-inline li {
     font-size: 1em;
-    margin: 0 0 0 1.4em;
+    margin: 0 1.4em 0 0;
     padding: 0 0;
     float: left;
     list-style: none;
@@ -159,10 +157,13 @@
 }
 
 
-
 /* @media (max-width: 1000px) */
 
 @media (max-width: 1000px) {
+
+    .nav-inline {
+        display: block;
+    }
 
     .nav-mobile {
         color: $grey-base;
@@ -174,47 +175,43 @@
         display: block;
     }
 
-    .nav-mobile:hover,
-    .header-inline .nav-inline:hover .nav-mobile {
+    .nav-mobile:hover {
         color: $grey-darkest;
-    }
-
-    .header-inline .nav-inline {
-        position: absolute;
-        right: $basal-padding;
-        overflow: hidden;
-        height: 40px;
-        width: 40px;
-        z-index: 9999;
-        background: #fff;
-    }
-
-    .header-inline .nav-inline:hover {
-        position: absolute;
-        height: auto;
-        width: auto;
-        box-shadow: 0 5px 10px #CCC;
-    }
-
-    .header-inline li a {
-            padding: 0 2em 0 1em;
     }
 
     .nav-inline > ul {
         background: #fff;
+        border-top: 1px solid $grey-light;
+        border-bottom: 1px solid $grey-light;
     }
 
     .nav-inline li {
         margin: 0;
+        padding-left: 15px;
         float: none;
+        border-top: 1px solid $grey-light;
+        border-bottom: 1px solid $grey-light;
     }
 
     .nav-inline li a {
         border: none;
     }
 
+    .nav-inline .submenu {
+        padding-left: 0;
+    }
+
+    .nav-inline .submenu > a {
+        padding-left: 15px;
+    }
+
+    .submenu li {
+        border-top: 1px solid $grey-light;
+        border-bottom: none;
+    }
+
     .submenu li a {
-        padding-left: 2em;
+        padding-left: 1em;
     }
 
     .submenu .fa-chevron-down {
