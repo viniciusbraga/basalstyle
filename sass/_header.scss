@@ -9,6 +9,7 @@
 
 .site-logo {
     vertical-align: middle;
+    margin: 15px 0;
     padding: 0;
     height: 60px;
 }
@@ -45,7 +46,7 @@
 .header-search {
   vertical-align: middle;
   display: block;
-  margin: 0;
+  margin: 6px 0 0 $basal-padding;
   padding: 0 0 0 $basal-padding;
   width: 190px;
   position: relative;
@@ -90,25 +91,26 @@
 
 /* Header inline */
 
-.header-inline {
-    padding-top: 15px;
-}
-
 .header-inline .site-logo {
-    width: 190px;
     display: inline-block;
+    float: none;
 }
 
-.header-inline .header-search {
-      position: absolute;
-      right: 0;
-      top: 29px;
+.header-inline .nav-inline {
+    position: absolute;
+    right: 0;
+    margin: 23px 0;
 }
 
-.header-inline .header-search {
-    margin: 0 0 0 auto;
-    display: inline-block;
+.header-inline .nav-inline li {
+    margin: 0 0 0 1.4em;
 }
+
+.header-inline .submenu ul li {
+      margin: 0;
+      padding: 0;
+}
+
 
 
 /* @media (max-width: 1150px) */
@@ -121,13 +123,14 @@
           top: 0;
           display: block;
           padding-bottom: 20px;
-          margin: 0 auto;
     }
 }
 
-/* @media (max-width: 800px) */
 
-@media (max-width: 800px) {
+
+/* @media (max-width: 1000px) */
+
+@media (max-width: 1000px) {
 
     /* Cabeçalho do Site e Navegação */
 
@@ -148,23 +151,17 @@
     }
 
 
-    /* Cabeçalho do Site e Navegação */
+    /* Fomulário de Busca */
 
     .header-search {
       vertical-align: middle;
       display: block;
-      margin: 0 auto;
+      margin: 0 10px;
       padding: 20px 0;
-      max-width: 100%;
-      position: relative;
-      top: 0;
-      right: 0;
-      background: rgba(0,0,0,0.1);
     }
 
     .header-search form {
         margin: 0 auto;
-        width: 270px;
         position: relative;
     }
 
@@ -186,10 +183,50 @@
       z-index: 10;
     }
 
-    .header-inline .header-search {
-          width: 100%;
+    /* Header inline */
+
+    .header-inline .nav-inline {
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+        overflow: hidden;
+        background: #fff;
+        position: absolute;
+        right: $basal-padding;
+        z-index: 9999;
     }
 
-} /* FIM @media (max-width: 800px) */
+    .header-inline .nav-inline:hover {
+        position: absolute;
+        height: auto;
+        width: auto;
+        box-shadow: 0 5px 10px #CCC;
+    }
+
+    .header-inline .nav-inline > ul {
+        border: none;
+    }
+
+    .header-inline .nav-inline li {
+        margin: 0;
+        padding-left: 0;
+        border: none;
+    }
+
+    .header-inline .nav-inline li a {
+        padding: 0 2em 0 1em;
+    }
+
+    .header-inline .submenu ul li {
+          margin: 0;
+          padding: 0 0 0 1em;
+    }
+
+    .header-inline .nav-inline:hover .nav-mobile {
+        color: $grey-darkest;
+    }
+
+
+} /* FIM @media (max-width: 1000px) */
 
 /* FIM Cabeçalho do Site e Navegação */
