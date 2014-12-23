@@ -57,14 +57,9 @@ figcaption a,
     da letra capitular (cap height) do texto.
 */
 
-.img-align-title {
-    margin-top: 0;
-}
+.img-align-title { margin-top: 0; }
 
-.img-align-text {
-    padding-top: 1.4em;
-    margin-bottom: 0;
-}
+.img-align-text { padding-top: 1.4em; }
 
 
 
@@ -76,9 +71,7 @@ figcaption a,
     figure { padding: ($basal-leading / 2) 0; }
 
     figcaption,
-    .img-legend {
-        position: relative;
-    }
+    .img-legend { position: relative; }
 
     .img-align-text {
         margin-top: 0;
