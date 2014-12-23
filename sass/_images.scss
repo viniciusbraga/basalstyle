@@ -76,29 +76,9 @@ figcaption a,
 
 
 
-/*
-    paspatour-(número de entrelinha)
-    Tem momentos que você precisa de uma altura mínima da caixa da imagem.
-    Esta classe especifica um tamanho limite, fazendo o recorte (crop) necessário.
-    Ex: Preciso de uma caixa de imagem com no máximo 3 linhas,
-        basta usar a classe paspatour-7, tipo:
-        <div class="img paspatour-7">
-*/
+/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
 
-@for $i from 1 through 20 {
-
-    .paspatour-#{$i} {
-        height: $basal-leading * $i;
-        min-height: 1em;
-        overflow: hidden;
-    }
-
-}
-
-
-/* @media (max-width: 1150px) */
-
-@media (max-width: 1150px) {
+@media (max-width: ($basal-max-width + 10)) {
 
     .img,
     figure { padding: ($basal-leading / 2) 0; }
@@ -114,18 +94,9 @@ figcaption a,
         margin-bottom: 0;
     }
 
-    @for $i from 1 through 20 {
-
-        .paspatour-#{$i} {
-            height: auto;
-            min-height: 1em;
-            overflow: hidden;
-        }
-
-    }
-
 }
-/* @media (max-width: 1150px) */
+/* FIM do primeiro ajuste de layout */
+
 
 /* @media (max-width: 800px) */
 

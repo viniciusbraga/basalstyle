@@ -132,7 +132,6 @@
     Ex: Um uso comum é aplicar a altura mínima numa linha: <div class="row min-h-7">
 */
 
-
 @for $i from 1 through 40 {
 
     .min-h-#{$i} {
@@ -140,6 +139,21 @@
     }
 }
 
+/*
+    Altura máxima do bloco HTML
+    Ex: Um uso comum é aplicar a altura mínima numa linha: <div class="row min-h-7">
+*/
+
+@for $i from 1 through 20 {
+
+    .max-h-#{$i} {
+        height: $basal-leading * $i;
+        min-height: 1em;
+        overflow: hidden;
+    }
+}
+
+/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
 
 @media screen and  (max-width: ($basal-max-width + 10) ) {
 
@@ -164,8 +178,17 @@
         }
     }
 
-}
+    @for $i from 1 through 20 {
 
+        .max-h-#{$i} {
+            height: auto;
+            min-height: 1em;
+            overflow: hidden;
+        }
+    }
+
+}
+/* FIM do primeiro ajuste de layout */
 
 @media screen and  (max-width: 800px){
 

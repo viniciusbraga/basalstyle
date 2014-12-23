@@ -282,15 +282,16 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 
 
-/* @media (min-width: 1150px) */
-@media screen and  (max-width: 1150px) {
+/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
+
+@media (max-width: ($basal-max-width + 10)) {
 
     figcaption {
         position: relative;
     }
 
 }
-/* FIM @media (min-width: 1150px) */
+/* FIM do primeiro ajuste de layout */
 
 
 @media (max-width: 800px) {

@@ -112,9 +112,9 @@
 
 
 
-/* @media (max-width: 1150px) */
+/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
 
-@media (max-width: 1150px) {
+@media (max-width: ($basal-max-width + 10)) {
 
     .header-inline .header-search {
           position: relative;
@@ -124,7 +124,7 @@
           padding-bottom: 20px;
     }
 }
-
+/* FIM do primeiro ajuste de layout */
 
 
 /* @media (max-width: 1000px) */

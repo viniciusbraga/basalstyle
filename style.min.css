@@ -130,9 +130,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .text-legend h1 + p, .text-legend h2 + p, .text-legend h3 + p, .text-legend h4 + p, .text-legend h5 + p, .text-legend h6 + p { padding: 0 0 0.5em; }
 
-/* @media (min-width: 1150px) */
-@media screen and (max-width: 1150px) { figcaption { position: relative; } }
-/* FIM @media (min-width: 1150px) */
+/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
+@media (max-width: 1150px) { figcaption { position: relative; } }
+/* FIM do primeiro ajuste de layout */
 @media (max-width: 800px) { h1, h2, h3, h4, h5, h6 { font-size: 3em; line-height: 1.3em; min-height: 1em; }
   h2 { font-size: 2.6em; }
   h3 { font-size: 2.0em; }
@@ -356,6 +356,49 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .min-h-40 { min-height: 1200px; }
 
+/* Altura máxima do bloco HTML Ex: Um uso comum é aplicar a altura mínima numa linha: <div class="row min-h-7">
+*/
+.max-h-1 { height: 30px; min-height: 1em; overflow: hidden; }
+
+.max-h-2 { height: 60px; min-height: 1em; overflow: hidden; }
+
+.max-h-3 { height: 90px; min-height: 1em; overflow: hidden; }
+
+.max-h-4 { height: 120px; min-height: 1em; overflow: hidden; }
+
+.max-h-5 { height: 150px; min-height: 1em; overflow: hidden; }
+
+.max-h-6 { height: 180px; min-height: 1em; overflow: hidden; }
+
+.max-h-7 { height: 210px; min-height: 1em; overflow: hidden; }
+
+.max-h-8 { height: 240px; min-height: 1em; overflow: hidden; }
+
+.max-h-9 { height: 270px; min-height: 1em; overflow: hidden; }
+
+.max-h-10 { height: 300px; min-height: 1em; overflow: hidden; }
+
+.max-h-11 { height: 330px; min-height: 1em; overflow: hidden; }
+
+.max-h-12 { height: 360px; min-height: 1em; overflow: hidden; }
+
+.max-h-13 { height: 390px; min-height: 1em; overflow: hidden; }
+
+.max-h-14 { height: 420px; min-height: 1em; overflow: hidden; }
+
+.max-h-15 { height: 450px; min-height: 1em; overflow: hidden; }
+
+.max-h-16 { height: 480px; min-height: 1em; overflow: hidden; }
+
+.max-h-17 { height: 510px; min-height: 1em; overflow: hidden; }
+
+.max-h-18 { height: 540px; min-height: 1em; overflow: hidden; }
+
+.max-h-19 { height: 570px; min-height: 1em; overflow: hidden; }
+
+.max-h-20 { height: 600px; min-height: 1em; overflow: hidden; }
+
+/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
 @media screen and (max-width: 1150px) { .desktop-1 { width: 8%; }
   .desktop-2 { width: 16%; }
   .desktop-3 { width: 24%; }
@@ -389,7 +432,28 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .col-right-8 { margin-right: 64%; }
   .col-right-9 { margin-right: 72%; }
   .col-right-10 { margin-right: 80%; }
-  .col-right-11 { margin-right: 88%; } }
+  .col-right-11 { margin-right: 88%; }
+  .max-h-1 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-2 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-3 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-4 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-5 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-6 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-7 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-8 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-9 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-10 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-11 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-12 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-13 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-14 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-15 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-16 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-17 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-18 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-19 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-20 { height: auto; min-height: 1em; overflow: hidden; } }
+/* FIM do primeiro ajuste de layout */
 @media screen and (max-width: 800px) { .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { width: 100%; float: none; max-width: none; }
   .tablet-1 { width: 25%; float: left; }
   .tablet-2 { width: 50%; float: left; }
@@ -455,8 +519,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .header-inline .submenu ul li { margin: 0; padding: 0; }
 
-/* @media (max-width: 1150px) */
+/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
 @media (max-width: 1150px) { .header-inline .header-search { position: relative; right: 0; top: 0; display: block; padding-bottom: 20px; } }
+/* FIM do primeiro ajuste de layout */
 /* @media (max-width: 1000px) */
 @media (max-width: 1000px) { /* Cabeçalho do Site e Navegação */
   .header { position: relative; min-height: 13.5em; }
@@ -544,73 +609,11 @@ figcaption a, .img-legend a { text-decoration: none; }
 
 .img-align-text { padding-top: 1.4em; margin-bottom: 0; }
 
-/* paspatour-(número de entrelinha) Tem momentos que você precisa de uma altura mínima da caixa da imagem. Esta classe especifica um tamanho limite, fazendo o recorte (crop) necessário. Ex: Preciso de uma caixa de imagem com no máximo 3 linhas, basta usar a classe paspatour-7, tipo: <div class="img paspatour-7">
-*/
-.paspatour-1 { height: 30px; min-height: 1em; overflow: hidden; }
-
-.paspatour-2 { height: 60px; min-height: 1em; overflow: hidden; }
-
-.paspatour-3 { height: 90px; min-height: 1em; overflow: hidden; }
-
-.paspatour-4 { height: 120px; min-height: 1em; overflow: hidden; }
-
-.paspatour-5 { height: 150px; min-height: 1em; overflow: hidden; }
-
-.paspatour-6 { height: 180px; min-height: 1em; overflow: hidden; }
-
-.paspatour-7 { height: 210px; min-height: 1em; overflow: hidden; }
-
-.paspatour-8 { height: 240px; min-height: 1em; overflow: hidden; }
-
-.paspatour-9 { height: 270px; min-height: 1em; overflow: hidden; }
-
-.paspatour-10 { height: 300px; min-height: 1em; overflow: hidden; }
-
-.paspatour-11 { height: 330px; min-height: 1em; overflow: hidden; }
-
-.paspatour-12 { height: 360px; min-height: 1em; overflow: hidden; }
-
-.paspatour-13 { height: 390px; min-height: 1em; overflow: hidden; }
-
-.paspatour-14 { height: 420px; min-height: 1em; overflow: hidden; }
-
-.paspatour-15 { height: 450px; min-height: 1em; overflow: hidden; }
-
-.paspatour-16 { height: 480px; min-height: 1em; overflow: hidden; }
-
-.paspatour-17 { height: 510px; min-height: 1em; overflow: hidden; }
-
-.paspatour-18 { height: 540px; min-height: 1em; overflow: hidden; }
-
-.paspatour-19 { height: 570px; min-height: 1em; overflow: hidden; }
-
-.paspatour-20 { height: 600px; min-height: 1em; overflow: hidden; }
-
-/* @media (max-width: 1150px) */
+/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
 @media (max-width: 1150px) { .img, figure { padding: 15px 0; }
   figcaption, .img-legend { position: relative; opacity: 1; }
-  .img-align-text { margin-top: 0; margin-bottom: 0; }
-  .paspatour-1 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-2 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-3 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-4 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-5 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-6 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-7 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-8 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-9 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-10 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-11 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-12 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-13 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-14 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-15 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-16 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-17 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-18 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-19 { height: auto; min-height: 1em; overflow: hidden; }
-  .paspatour-20 { height: auto; min-height: 1em; overflow: hidden; } }
-/* @media (max-width: 1150px) */
+  .img-align-text { margin-top: 0; margin-bottom: 0; } }
+/* FIM do primeiro ajuste de layout */
 /* @media (max-width: 800px) */
 @media (max-width: 800px) { .img, figure { padding: 15px 15px; } }
 /* @media (max-width: 800px) */
