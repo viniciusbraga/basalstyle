@@ -7,7 +7,6 @@
     .desktop-#{$i} {
         max-width: $basal-col-fixed * $i;
     }
-
 }
 
 .desktop-1,
@@ -81,7 +80,6 @@
     .leading-top-#{$i} {
         padding-top: $basal-leading * $i;
     }
-
 }
 
 
@@ -90,7 +88,6 @@
     .leading-bottom-#{$i} {
         padding-top: $basal-leading * $i;
     }
-
 }
 
 
@@ -104,7 +101,6 @@
     .col-left-#{$i} {
         margin-left: $basal-col-fixed * $i;
     }
-
 }
 
 @for $i from 1 through $basal-col-number - 1 {
@@ -112,7 +108,6 @@
     .col-right-#{$i} {
         margin-right: $basal-col-fixed * $i;
     }
-
 }
 
 /*
@@ -143,7 +138,6 @@
     .min-h-#{$i} {
         min-height: $basal-leading * $i;
     }
-
 }
 
 
@@ -184,9 +178,6 @@
     .tablet-3 { width: 75%; float: left; }
 
     .gutter, .gutter-left, .gutter-right { padding: 0; }
-
-
-
 
 }
 
@@ -245,13 +236,11 @@
     .leading-top-4,
     .leading-top-5 { padding-top: 1em; }
 
-
     .leading-bottom-1,
     .leading-bottom-2,
     .leading-bottom-3,
     .leading-bottom-4,
     .leading-bottom-5 { padding-bottom: 1em; }
-
 
     .hide-desktop { display: block; }
     .hide-mobile  { display: none; }
