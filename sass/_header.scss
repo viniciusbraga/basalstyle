@@ -7,9 +7,8 @@
 
 .site-logo {
     vertical-align: middle;
-    margin: 15px 0;
+    margin: 15px 0 0;
     padding: 0;
-    height: 60px;
 }
 
 .site-logo h1 {
@@ -23,8 +22,8 @@
 .site-logo h1 a {
     color: #000;
     font-size: 30px;
-    line-height: 54px;
-    height: 60px;
+    line-height: 1.8em;
+    height: 50px;
     display: block;
     margin: 0;
     overflow: hidden;
@@ -33,6 +32,7 @@
 .site-logo .site-description {
   font-size: 1.2em;
   line-height: 1.5em;
+  max-height: 20px;
   margin: 0;
   padding: 0;
 }
@@ -96,7 +96,7 @@
 }
 
 .header-inline .nav-inline {
-    margin: 23px 0;
+    margin: 2.2em 0;
     position: absolute;
     right: 0;
 }

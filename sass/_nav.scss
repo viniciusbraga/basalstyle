@@ -34,17 +34,16 @@
 }
 
 .nav-inline li a {
-    font-size: 14px;
+    font-size: 1.4em;
     font-weight: 400;
-    line-height: 42px;
+    line-height: 45px;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
     margin: 0 ;
     padding: 0 ;
     display: block;
-    border-top: 2px solid transparent;
-    transition: color 0.3s, border-color 1s;
+    transition: color 0.3s;
 }
 
 .nav-inline li a:hover {
@@ -61,7 +60,6 @@
 .nav-inline .current-custom-parent > a {
     color: #000;
     font-weight: 700;
-    border-top-color: $grey-light;
 }
 
 .nav-mobile, .nav-close { display: none; }
@@ -139,7 +137,6 @@
     }
     .submenu ul li a:hover {
       color: #FFF;
-      border-top: none;
       background: #3498DB;
     }
 
@@ -152,7 +149,6 @@
     .submenu .current-custom-parent > a {
         color: #000;
         font-weight: 700;
-        border: none;
     }
 
 

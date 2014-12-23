@@ -45,10 +45,10 @@
                 <a href="javascript:void(0);" class="nav-mobile"><i class="fa fa-bars"></i></a>
                 <ul>
                     <li><a href="#Heading">Titulagem</a></li>
-                    <li><a href="#TextAndImages">Texto e Imagens</a></li>
+                    <li class="current"><a href="#TextAndImages">Texto e Imagens</a></li>
                     <li><a href="#Menus">menus</a></li>
                     <li class="submenu">
-                        <a href="javascript:void(0);">Formulários</a>
+                        <a href="#Form">Formulários</a>
                         <ul>
                             <li><a href="#FormInput">Input Text</a></li>
                             <li><a href="#FormRadio">Radio Buttons</a></li>
@@ -233,19 +233,20 @@
 
                     <div class="site-logo desktop-3">
                         <h1><a href="#" rel="home">Nome do Site</a></h1>
-                        <p class="site-description screen-reader-only">CSS e HTML para prototipação rápida de Sites e Formulários.</p>
+                        <p class="site-description">Uma descrição do site com poucas palavras</p>
                     </div>
 
                     <nav class="nav-inline" role="navigation">
                         <a href="javascript:void(0);" class="nav-mobile"><i class="fa fa-bars"></i></a>
                         <ul>
                             <li><a href="#Heading">Titulagem</a></li>
-                            <li><a href="#TextAndImages">Texto e Imagens</a></li>
-                            <li class="submenu current">
-                                <a href="javascript:void(0);">Formulários</a>
+                            <li class="current"><a href="#TextAndImages">Texto e Imagens</a></li>
+                            <li><a href="#Menus">menus</a></li>
+                            <li class="submenu">
+                                <a href="#Form">Formulários</a>
                                 <ul>
                                     <li><a href="#FormInput">Input Text</a></li>
-                                    <li class="current"><a href="#FormRadio">Radio Buttons</a></li>
+                                    <li><a href="#FormRadio">Radio Buttons</a></li>
                                     <li><a href="#FormPulldown">Pulldown</a></li>
                                     <li><a href="#FormError">Erros</a></li>
                                 </ul>
@@ -346,7 +347,7 @@
 
                         </div>
 
-                        <div id="Form" class="form-row label-block select-dropdown">
+                        <div id="FormPulldown" class="form-row label-block select-dropdown">
                             <label for="id-11">Estado (UF)</label>
                             <select id="id-11" name="state">
                                 <option value="">Escolha uma opção</option>

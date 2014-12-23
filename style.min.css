@@ -427,13 +427,13 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .header a { text-decoration: none; }
 
-.site-logo { vertical-align: middle; margin: 15px 0; padding: 0; height: 60px; }
+.site-logo { vertical-align: middle; margin: 15px 0 0; padding: 0; }
 
 .site-logo h1 { font-size: 1em; line-height: 1em; min-height: 1em; margin: 0; padding: 0; }
 
-.site-logo h1 a { color: #000; font-size: 30px; line-height: 54px; height: 60px; display: block; margin: 0; overflow: hidden; }
+.site-logo h1 a { color: #000; font-size: 30px; line-height: 1.8em; height: 50px; display: block; margin: 0; overflow: hidden; }
 
-.site-logo .site-description { font-size: 1.2em; line-height: 1.5em; margin: 0; padding: 0; }
+.site-logo .site-description { font-size: 1.2em; line-height: 1.5em; max-height: 20px; margin: 0; padding: 0; }
 
 /* Fomulário de Busca no Header do Site */
 .header-search { vertical-align: middle; display: block; margin: 6px 0 0 15px; padding: 0 0 0 15px; width: 190px; position: relative; }
@@ -449,7 +449,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Header inline */
 .header-inline .site-logo { display: block; position: absolute; left: 0; }
 
-.header-inline .nav-inline { margin: 23px 0; position: absolute; right: 0; }
+.header-inline .nav-inline { margin: 2.2em 0; position: absolute; right: 0; }
 
 .header-inline .nav-inline li { margin: 0 0 0 1.4em; }
 
@@ -487,11 +487,11 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .nav-inline li { font-size: 1em; margin: 0 1.4em 0 0; padding: 0 0; float: left; list-style: none; position: relative; }
 
-.nav-inline li a { font-size: 14px; font-weight: 400; line-height: 42px; font-weight: 700; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; display: block; border-top: 2px solid transparent; transition: color 0.3s, border-color 1s; }
+.nav-inline li a { font-size: 1.4em; font-weight: 400; line-height: 45px; font-weight: 700; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; display: block; transition: color 0.3s; }
 
 .nav-inline li a:hover { color: #000; border-top-color: #2e3333; }
 
-.nav-inline .current > a, .nav-inline .current-menu-item > a, .nav-inline .current_page_item > a, .nav-inline .current-post-ancestor > a, .nav-inline .current-menu-ancestor > a, .nav-inline .current-menu-parent > a, .nav-inline .current-custom-parent > a { color: #000; font-weight: 700; border-top-color: #c5cdcd; }
+.nav-inline .current > a, .nav-inline .current-menu-item > a, .nav-inline .current_page_item > a, .nav-inline .current-post-ancestor > a, .nav-inline .current-menu-ancestor > a, .nav-inline .current-menu-parent > a, .nav-inline .current-custom-parent > a { color: #000; font-weight: 700; }
 
 .nav-mobile, .nav-close { display: none; }
 
@@ -506,8 +506,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .submenu:hover ul { margin: 0 0 0; opacity: 1; -webkit-transition: opacity 0.6s, margin 1s; transition: opacity 0.6s, margin 1s; }
   .submenu ul li { font-size: 1em; min-width: 200px; min-height: 44px; margin: 0; padding: 0; float: none; }
   .submenu ul li a { margin: 0 0; padding: 0 1em; display: block; text-align: left; }
-  .submenu ul li a:hover { color: #FFF; border-top: none; background: #3498DB; }
-  .submenu .current > a, .submenu .current-menu-item > a, .submenu .current_page_item > a, .submenu .current-post-ancestor > a, .submenu .current-menu-ancestor > a, .submenu .current-menu-parent > a, .submenu .current-custom-parent > a { color: #000; font-weight: 700; border: none; } }
+  .submenu ul li a:hover { color: #FFF; background: #3498DB; }
+  .submenu .current > a, .submenu .current-menu-item > a, .submenu .current_page_item > a, .submenu .current-post-ancestor > a, .submenu .current-menu-ancestor > a, .submenu .current-menu-parent > a, .submenu .current-custom-parent > a { color: #000; font-weight: 700; } }
 /* @media (max-width: 1000px) */
 @media (max-width: 1000px) { .nav-inline { display: block; }
   .nav-mobile { color: #95a5a5; font-size: 28px; line-height: 30px; margin: 0 0 0 auto; padding: 5px 8px; width: 40px; display: block; }
