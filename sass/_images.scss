@@ -33,26 +33,18 @@ figure:after {
     z-index: -1;
 }
 
-
 figcaption,
 .img-legend {
     font-size: 1em;
     line-height: 1em;
     text-align: right;
-    padding: 1.10em 1em 0;
+    padding: 1.10em 0.5em 0;
     width: 100%;
     min-height: $basal-leading;
+    background-color: #ffffff;
+    opacity: 1;
     position: absolute;
     bottom: 0;
-    background-color: none;
-    opacity: 0.15;
-    transition: opacity 1s, background-color 1s;
-}
-
-figure:hover figcaption,
-.img:hover .img-legend {
-    background-color: rgba(255,255,255,0.6);
-    opacity: 1;
 }
 
 figcaption a,
@@ -65,67 +57,30 @@ figcaption a,
     da letra capitular (cap height) do texto.
 */
 
-.img-align-title {
-    margin-top: 0;
-}
+.img-align-title { margin-top: 0; }
 
-.img-align-text {
-    padding-top: 1.4em;
-    margin-bottom: 0;
-}
+.img-align-text { padding-top: 1.4em; }
 
 
 
-/*
-    paspatour-(número de entrelinha)
-    Tem momentos que você precisa de uma altura mínima da caixa da imagem.
-    Esta classe especifica um tamanho limite, fazendo o recorte (crop) necessário.
-    Ex: Preciso de uma caixa de imagem com no máximo 3 linhas,
-        basta usar a classe paspatour-7, tipo:
-        <div class="img paspatour-7">
-*/
+/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
 
-@for $i from 1 through 20 {
-
-    .paspatour-#{$i} {
-        height: $basal-leading * $i;
-        min-height: 1em;
-        overflow: hidden;
-    }
-
-}
-
-
-/* @media (max-width: 1150px) */
-
-@media (max-width: 1150px) {
+@media (max-width: ($basal-max-width + 10)) {
 
     .img,
     figure { padding: ($basal-leading / 2) 0; }
 
     figcaption,
-    .img-legend {
-        position: relative;
-        opacity: 1;
-    }
+    .img-legend { position: relative; }
 
     .img-align-text {
         margin-top: 0;
         margin-bottom: 0;
     }
 
-    @for $i from 1 through 20 {
-
-        .paspatour-#{$i} {
-            height: auto;
-            min-height: 1em;
-            overflow: hidden;
-        }
-
-    }
-
 }
-/* @media (max-width: 1150px) */
+/* FIM do primeiro ajuste de layout */
+
 
 /* @media (max-width: 800px) */
 

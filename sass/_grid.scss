@@ -68,25 +68,38 @@
 .hide-desktop { display: none; }
 .screen-reader-only { position: absolute; visibility: hidden; }
 
+
 /*
- * Leading
- * Aplica o espaço de entrelinha correspondente no padding de topo e da base da caixa
+ * Aplica o espaço de entrelinha no Padding ou na Margin da caixa
  * Deve ser aplicado em caixas (<div>,<header>,<section>,<articles>)
- * que herdam o font-size do <body>
+ *
  */
 
 @for $i from 1 through 5 {
 
-    .leading-top-#{$i} {
+    .padding-top-#{$i} {
         padding-top: $basal-leading * $i;
     }
 }
 
+@for $i from 1 through 5 {
+
+    .padding-bottom-#{$i} {
+        padding-bottom: $basal-leading * $i;
+    }
+}
 
 @for $i from 1 through 5 {
 
-    .leading-bottom-#{$i} {
-        padding-top: $basal-leading * $i;
+    .margin-top-#{$i} {
+        margin-top: $basal-leading * $i;
+    }
+}
+
+@for $i from 1 through 5 {
+
+    .margin-bottom-#{$i} {
+        margin-bottom: $basal-leading * $i;
     }
 }
 
@@ -132,7 +145,6 @@
     Ex: Um uso comum é aplicar a altura mínima numa linha: <div class="row min-h-7">
 */
 
-
 @for $i from 1 through 40 {
 
     .min-h-#{$i} {
@@ -140,6 +152,21 @@
     }
 }
 
+/*
+    Altura máxima do bloco HTML
+    Ex: Um uso comum é aplicar a altura mínima numa linha: <div class="row min-h-7">
+*/
+
+@for $i from 1 through 20 {
+
+    .max-h-#{$i} {
+        height: $basal-leading * $i;
+        min-height: 1em;
+        overflow: hidden;
+    }
+}
+
+/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
 
 @media screen and  (max-width: ($basal-max-width + 10) ) {
 
@@ -164,8 +191,17 @@
         }
     }
 
-}
+    @for $i from 1 through 20 {
 
+        .max-h-#{$i} {
+            height: auto;
+            min-height: 1em;
+            overflow: hidden;
+        }
+    }
+
+}
+/* FIM do primeiro ajuste de layout */
 
 @media screen and  (max-width: 800px){
 
