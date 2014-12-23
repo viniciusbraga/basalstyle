@@ -141,14 +141,27 @@
 }
 
 
-@media screen and  (max-width: 1150px) {
+@media screen and  (max-width: ($basal-max-width + 10) ) {
 
     @for $i from 1 through $basal-col-number {
 
         .desktop-#{$i} {
             width: 8% * $i;
         }
+    }
 
+    @for $i from 1 through $basal-col-number - 1 {
+
+        .col-left-#{$i} {
+            margin-left: 8% * $i;
+        }
+    }
+
+    @for $i from 1 through $basal-col-number - 1 {
+
+        .col-right-#{$i} {
+            margin-right: 8% * $i;
+        }
     }
 
 }
