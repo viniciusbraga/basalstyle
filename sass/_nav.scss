@@ -13,11 +13,13 @@
     padding: 0;
     *zoom: 1;
 }
+
 .nav-inline ul:before,
 .nav-inline ul:after {
     content: " ";
     display: table;
 }
+
 .nav-inline ul:after {
     clear: both;
 }

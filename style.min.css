@@ -447,9 +447,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .header-search button[type="submit"] { color: #333; font-size: 14px; line-height: 30px; padding: 0; width: 30px; height: 30px; border: 0; box-shadow: none; overflow: hidden; display: block; background: none; position: absolute; top: 0; right: 0; z-index: 10; }
 
 /* Header inline */
-.header-inline .site-logo { display: inline-block; float: none; }
+.header-inline .site-logo { display: block; position: absolute; left: 0; }
 
-.header-inline .nav-inline { position: absolute; right: 0; margin: 23px 0; }
+.header-inline .nav-inline { margin: 23px 0; position: absolute; right: 0; }
 
 .header-inline .nav-inline li { margin: 0 0 0 1.4em; }
 

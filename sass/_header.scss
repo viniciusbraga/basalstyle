@@ -1,9 +1,7 @@
 
 /* Cabeçalho do Site e Navegação */
 
-.header {
-  position: relative;
-}
+.header { position: relative; }
 
 .header a { text-decoration: none; }
 
@@ -92,14 +90,15 @@
 /* Header inline */
 
 .header-inline .site-logo {
-    display: inline-block;
-    float: none;
+    display: block;
+    position: absolute;
+    left: 0;
 }
 
 .header-inline .nav-inline {
+    margin: 23px 0;
     position: absolute;
     right: 0;
-    margin: 23px 0;
 }
 
 .header-inline .nav-inline li {
