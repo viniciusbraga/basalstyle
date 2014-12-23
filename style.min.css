@@ -367,7 +367,29 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .desktop-9 { width: 72%; }
   .desktop-10 { width: 80%; }
   .desktop-11 { width: 88%; }
-  .desktop-12 { width: 96%; } }
+  .desktop-12 { width: 96%; }
+  .col-left-1 { margin-left: 8%; }
+  .col-left-2 { margin-left: 16%; }
+  .col-left-3 { margin-left: 24%; }
+  .col-left-4 { margin-left: 32%; }
+  .col-left-5 { margin-left: 40%; }
+  .col-left-6 { margin-left: 48%; }
+  .col-left-7 { margin-left: 56%; }
+  .col-left-8 { margin-left: 64%; }
+  .col-left-9 { margin-left: 72%; }
+  .col-left-10 { margin-left: 80%; }
+  .col-left-11 { margin-left: 88%; }
+  .col-right-1 { margin-right: 8%; }
+  .col-right-2 { margin-right: 16%; }
+  .col-right-3 { margin-right: 24%; }
+  .col-right-4 { margin-right: 32%; }
+  .col-right-5 { margin-right: 40%; }
+  .col-right-6 { margin-right: 48%; }
+  .col-right-7 { margin-right: 56%; }
+  .col-right-8 { margin-right: 64%; }
+  .col-right-9 { margin-right: 72%; }
+  .col-right-10 { margin-right: 80%; }
+  .col-right-11 { margin-right: 88%; } }
 @media screen and (max-width: 800px) { .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { width: 100%; float: none; max-width: none; }
   .tablet-1 { width: 25%; float: left; }
   .tablet-2 { width: 50%; float: left; }
