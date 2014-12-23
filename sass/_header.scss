@@ -1,14 +1,13 @@
 
 /* Cabeçalho do Site e Navegação */
 
-.header {
-  position: relative;
-  min-height: $basal-leading * 3;
-}
+.header { position: relative; }
 
 .header a { text-decoration: none; }
 
 .site-logo {
+    vertical-align: middle;
+    margin: 15px 0 0;
     padding: 0;
 }
 
@@ -17,19 +16,23 @@
     line-height: 1em;
     min-height: 1em;
     margin: 0;
-    padding: 10px 0 0;
+    padding: 0;
 }
 
 .site-logo h1 a {
     color: #000;
-    font-size: 2.8em;
-    line-height: 50px;
-    padding-top: 10px;
+    font-size: 30px;
+    line-height: 1.8em;
+    height: 50px;
+    display: block;
+    margin: 0;
+    overflow: hidden;
 }
 
 .site-logo .site-description {
   font-size: 1.2em;
   line-height: 1.5em;
+  max-height: 20px;
   margin: 0;
   padding: 0;
 }
@@ -41,11 +44,10 @@
 .header-search {
   vertical-align: middle;
   display: block;
-  margin: 0;
-  padding:0;
-  position: absolute;
-  top: 16px;
-  right: 0;
+  margin: 6px 0 0 $basal-padding;
+  padding: 0 0 0 $basal-padding;
+  width: 190px;
+  position: relative;
 }
 
 .header-search form {
@@ -63,7 +65,7 @@
   min-height: 27px;
   padding: 1px 6px;
   margin: 0 auto;
-  width: 270px;
+  width: 100%;
   border: 1px solid #C5CDCD;
   display: block;
 }
@@ -85,10 +87,49 @@
   z-index: 10
 }
 
+/* Header inline */
 
-/* @media (max-width: 800px) */
+.header-inline .site-logo {
+    display: block;
+    position: absolute;
+    left: 0;
+}
 
-@media (max-width: 800px) {
+.header-inline .nav-inline {
+    margin: 2.2em 0;
+    position: absolute;
+    right: 0;
+}
+
+.header-inline .nav-inline li {
+    margin: 0 0 0 1.4em;
+}
+
+.header-inline .submenu ul li {
+      margin: 0;
+      padding: 0;
+}
+
+
+
+/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
+
+@media (max-width: ($basal-max-width + 10)) {
+
+    .header-inline .header-search {
+          position: relative;
+          right: 0;
+          top: 0;
+          display: block;
+          padding-bottom: 20px;
+    }
+}
+/* FIM do primeiro ajuste de layout */
+
+
+/* @media (max-width: 1000px) */
+
+@media (max-width: 1000px) {
 
     /* Cabeçalho do Site e Navegação */
 
@@ -102,45 +143,24 @@
       padding: 0 $basal-padding;
     }
 
-    .site-logo h1 {
-        font-size: 1em;
-        line-height: 1em;
-        min-height: 1em;
-        margin: 0;
-        padding: 0;
-    }
-
-    .site-logo h1 a {
-        color: #000;
-        font-size: 2.8em;
-        line-height: 50px;
-        padding-top: 10px;
-    }
-
     .site-logo .site-description {
-      width: 100%;
+      width: 90%;
       padding-top: 0;
       padding-bottom: 10px;
     }
 
 
-    /* Cabeçalho do Site e Navegação */
+    /* Fomulário de Busca */
 
     .header-search {
       vertical-align: middle;
       display: block;
-      margin: 0 auto;
+      margin: 0 10px;
       padding: 20px 0;
-      max-width: 100%;
-      position: relative;
-      top: 0;
-      right: 0;
-      background: rgba(0,0,0,0.05);
     }
 
     .header-search form {
         margin: 0 auto;
-        width: 270px;
         position: relative;
     }
 
@@ -162,6 +182,50 @@
       z-index: 10;
     }
 
-} /* FIM @media (max-width: 800px) */
+    /* Header inline */
+
+    .header-inline .nav-inline {
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+        overflow: hidden;
+        background: #fff;
+        position: absolute;
+        right: $basal-padding;
+        z-index: 9999;
+    }
+
+    .header-inline .nav-inline:hover {
+        position: absolute;
+        height: auto;
+        width: auto;
+        box-shadow: 0 5px 10px #CCC;
+    }
+
+    .header-inline .nav-inline > ul {
+        border: none;
+    }
+
+    .header-inline .nav-inline li {
+        margin: 0;
+        padding-left: 0;
+        border: none;
+    }
+
+    .header-inline .nav-inline li a {
+        padding: 0 2em 0 1em;
+    }
+
+    .header-inline .submenu ul li {
+          margin: 0;
+          padding: 0 0 0 1em;
+    }
+
+    .header-inline .nav-inline:hover .nav-mobile {
+        color: $grey-darkest;
+    }
+
+
+} /* FIM @media (max-width: 1000px) */
 
 /* FIM Cabeçalho do Site e Navegação */

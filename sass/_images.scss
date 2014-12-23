@@ -11,17 +11,19 @@
     para o alinhamento com o texto.
 */
 
-img {
+.img img,
+figure img {
     width: 100%;
     height: auto;
 }
 
-.img {
-    display: block;
+.img,
+figure {
     position: relative;
 }
 
-.img:after {
+.img:after,
+figure:after {
     content: "";
     top: 0;
     left: 0;
@@ -31,17 +33,18 @@ img {
     z-index: -1;
 }
 
-
-figcaption, .img-legend {
+figcaption,
+.img-legend {
     font-size: 1em;
-    line-height: 1.3em;
+    line-height: 1em;
     text-align: right;
-    padding: 0.3em 0 0.7em;
+    padding: 1.10em 0.5em 0;
     width: 100%;
     min-height: $basal-leading;
+    background-color: #ffffff;
+    opacity: 1;
     position: absolute;
     bottom: 0;
-    background-color: #ffffff;
 }
 
 figcaption a,
@@ -54,67 +57,37 @@ figcaption a,
     da letra capitular (cap height) do texto.
 */
 
-.img-align-title {
-    margin-top: 0;
-}
+.img-align-title { margin-top: 0; }
 
-.img-align-text {
-    padding-top: 1.4em;
-    margin-bottom: 0;
-}
+.img-align-text { padding-top: 1.4em; }
 
 
 
-/*
-    paspatour-(número de entrelinha)
-    Tem momentos que você precisa de uma altura mínima da caixa da imagem.
-    Esta classe especifica um tamanho limite, fazendo o recorte (crop) necessário.
-    Ex: Preciso de uma caixa de imagem com no máximo 3 linhas,
-        basta usar a classe paspatour-7, tipo:
-        <div class="img paspatour-7">
-*/
+/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
 
-@for $i from 1 through 20 {
+@media (max-width: ($basal-max-width + 10)) {
 
-    .paspatour-#{$i} {
-        height: $basal-leading * $i;
-        min-height: 1em;
-        overflow: hidden;
-    }
+    .img,
+    figure { padding: ($basal-leading / 2) 0; }
 
-}
-
-
-/* @media (max-width: 1150px) */
-
-@media (max-width: 1150px) {
-
-    .img { padding: ($basal-leading / 2) 0; }
-
+    figcaption,
+    .img-legend { position: relative; }
 
     .img-align-text {
         margin-top: 0;
         margin-bottom: 0;
     }
 
-    @for $i from 1 through 20 {
-
-        .paspatour-#{$i} {
-            height: auto;
-            min-height: 1em;
-            overflow: hidden;
-        }
-
-    }
-
 }
-/* @media (max-width: 1150px) */
+/* FIM do primeiro ajuste de layout */
+
 
 /* @media (max-width: 800px) */
 
 @media (max-width: 800px) {
 
-    .img { padding: ($basal-leading / 2) $basal-padding; }
+    .img,
+    figure { padding: ($basal-leading / 2) $basal-padding; }
 
 }
 /* @media (max-width: 800px) */
