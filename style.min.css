@@ -515,9 +515,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .site-logo { vertical-align: middle; margin: 15px 0 0; padding: 0; }
 
-.site-logo h1 { font-size: 1em; line-height: 1em; min-height: 1em; margin: 0; padding: 0; }
-
-.site-logo h1 a { color: #000; font-size: 30px; line-height: 1.8em; height: 50px; display: block; margin: 0; overflow: hidden; }
+.site-logo h1, .site-logo h1 a { color: #000; font-size: 30px; line-height: 1.8em; margin: 0; padding: 0; display: block; height: 50px; min-height: 1em; overflow: hidden; }
 
 .site-logo .site-description { font-size: 1.2em; line-height: 1.5em; max-height: 20px; margin: 0; padding: 0; }
 
