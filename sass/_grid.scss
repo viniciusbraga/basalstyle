@@ -7,24 +7,13 @@
     .desktop-#{$i} {
         max-width: $basal-col-fixed * $i;
     }
-}
 
-.desktop-1,
-.desktop-2,
-.desktop-3,
-.desktop-4,
-.desktop-5,
-.desktop-6,
-.desktop-7,
-.desktop-8,
-.desktop-9,
-.desktop-10,
-.desktop-11,
-.desktop-12 {
-    float: left;
-    width: 100%;
-}
+    .desktop-#{$i} {
+        float: left;
+        width: 100%;
+    }
 
+}
 
 /* Colunas usando porcentagem */
 .col-25 { width: 25.0%; }
@@ -205,21 +194,12 @@
 
 @media screen and  (max-width: 800px){
 
-    .desktop-1,
-    .desktop-2,
-    .desktop-3,
-    .desktop-4,
-    .desktop-5,
-    .desktop-6,
-    .desktop-7,
-    .desktop-8,
-    .desktop-9,
-    .desktop-10,
-    .desktop-11,
-    .desktop-12 {
-        width: 100%;
-        float: none;
-        max-width: none;
+    @for $i from 1 through $basal-col-number {
+        .desktop-#{$i} {
+            width: 100%;
+            float: none;
+            max-width: none;
+        }
     }
 
     .tablet-1 { width: 25%; float: left; }
