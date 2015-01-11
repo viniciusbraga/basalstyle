@@ -11,6 +11,14 @@ $basal-gutter:           $basal-padding;
 $basal-max-width:        $basal-col-fixed * $basal-col-number;
 
 
+/* GridForMe (https://github.com/henriquebastos/gridforme)
+ * Os parâmetros para construção da imagem de grid:
+ * /i/{colunas}/{largura da coluna}/{leading}/{gutter}/?bg=cor&v=cor&h=cor
+ *
+ */
+$basal-image-param:      "#{$basal-col-number}/#{strip-unit($basal-col-fixed)}/#{strip-unit($basal-leading)}/#{strip-unit($basal-gutter)}/";
+$basal-image-grid:       "https://gridforme.herokuapp.com/i/#{$basal-image-param}";
+
 // Cores
 
 $grey-lighter:   #F2F5F5;

@@ -348,7 +348,7 @@
 
 .debug:after {
     content: "";
-    background: url(images/grid-15-30-95-1140.png) repeat-y center top !important;
+    background: url(#{$basal-image-grid}) repeat-y center top !important;
     opacity: 0.8;
     top: 0;
     left: 0;
@@ -357,6 +357,7 @@
     position: absolute;
     z-index: 2;
     transition: display 1.5s;
+    background: rgba(255,0,0,0.25);
 }
 
 .btnDebug {
