@@ -17,7 +17,7 @@ $basal-max-width:        $basal-col-fixed * $basal-col-number;
  *
  */
 $basal-image-param:      "#{$basal-col-number}/#{strip-unit($basal-col-fixed)}/#{strip-unit($basal-leading)}/#{strip-unit($basal-gutter)}/";
-$basal-image-grid:       "https://gridforme.herokuapp.com/i/#{$basal-image-param}";
+$basal-image-grid:       "//gridfor.me/i/#{$basal-image-param}";
 
 // Cores
 
