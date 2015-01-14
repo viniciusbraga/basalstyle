@@ -102,7 +102,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Anexo com complementos de tipografia e layout */
 .text-small p, .text-small li, .text-small dt, .text-small dd, .text-small th, .text-small td, .text-small caption { font-size: 1.4em; line-height: 24px; }
 
-.text-small h1, .text-small h2, .text-small h3, .text-small h4, .text-small h5, .text-small h6 { font-size: 1.6em; line-height: 30px; min-height: 0; padding: 5px 0 0; display: inline-block; }
+.text-small h1, .text-small h2, .text-small h3, .text-small h4, .text-small h5, .text-small h6 { font-size: 1.6em; line-height: 30px; min-height: 0; padding: 5px 0 0; }
 
 .text-small h1 { font-size: 2.4em; }
 
@@ -110,7 +110,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .text-small h3 { font-size: 1.8em; }
 
-.text-small p { padding: 2px 0 23px; }
+.text-small p { padding: 2px 0 22px; }
 
 .text-small ul, .text-small ol { padding: 7px 0 23px 42px; }
 
