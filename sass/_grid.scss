@@ -1,5 +1,6 @@
 ﻿/*
  * Estruturas de Colunas fixas
+ *
  */
 
 @for $i from 1 through $basal-col-number {
@@ -15,7 +16,12 @@
     width: 100%;
 }
 
-/* Colunas usando porcentagem */
+
+/*
+ * Colunas usando porcentagem
+ *
+ */
+
 @each $i in $basal-col-flex {
 
     .col-#{$i} {
@@ -30,11 +36,14 @@
 
 .col { overflow: hidden; }
 
+
 /*
  * Anula o float e centraliza o <div> da coluna.
+ *
  */
 
 .container { margin: 0 auto; float: none; }
+
 
 /*
  * Esconde o elemento HTML em diferente modos de apresentação
@@ -82,8 +91,9 @@
 
 
 /*
- * Aplica um espaço em tamanho de coluna correspondente,
- * ao lado esquerdo (col-left) e ao lado direito (col-right)
+ * Aplica um espaço de coluna a
+ * esquerda (col-left-[n]) ou a direita (col-right-[n])
+ *
  */
 
 @for $i from 1 through $basal-col-number - 1 {
@@ -101,7 +111,8 @@
 }
 
 /*
- * Aplica o gutter entre as colunas usando o padding interno de cada coluna aplicada.
+ * Aplica o gutter entre as colunas
+ * usando o padding interno da caixa da coluna.
  *
  */
 
@@ -116,11 +127,14 @@
 
 
 /*
-    Altura mínima do elemento HTML
-    Tem momentos que você precisa de uma altura mínima do elemento HTML.
-    Esta classe especifica a altura mínima, sem atrapalhar caso cresça a quantidade de elemntos na caixa.
-    Ex: Um uso comum é aplicar a altura mínima numa linha: <div class="row min-h-7">
-*/
+ * Altura mínima do elemento HTML
+ *
+ * Uso: Tem momentos que você precisa de uma altura mínima no elemento HTML.
+ * Esta classe especifica a altura mínima com valor múltiplo da entrelinha,
+ * sem limitar o conteúdo, caso cresça em tamanho e quantidade de elementos.
+ * Ex: Um uso comum: <div class="row min-h-7">
+ *
+ */
 
 @for $i from 1 through 40 {
 
@@ -131,7 +145,12 @@
 
 /*
  * Altura máxima do bloco HTML
- * Ex: Um uso comum é aplicar a altura mínima numa linha: <div class="row min-h-7">
+ *
+ * Uso: Aplíca-se para conter a altura da imagem dentro do grid.
+ * Esta classe especifica a altura máxima do bloco HTML com valor múltiplo da entrelinha.
+ * Ela restringe a visualização do conteúdo, como se fosse uma máscara com altura máxima.
+ * Ex: Um uso comum: <figure class="max-h-6"><img></figure>
+ *
  */
 
 @for $i from 1 through 20 {
@@ -147,7 +166,11 @@
     overflow: hidden;
 }
 
-/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
+/*
+ * Primeiro ajuste de layout
+ * Quando menor que o tamanho máximo de colunas + 10 pixels
+ *
+ */
 
 @media screen and  (max-width: ($basal-max-width + 10) ) {
 
@@ -187,7 +210,14 @@
 
 
 }
-/* FIM do primeiro ajuste de layout */
+/* Fim do primeiro ajuste de layout */
+
+
+/*
+ * Segundo ajuste de layout (Tablet)
+ * Quando menor que o tamanho máximo de colunas + 10 pixels
+ *
+ */
 
 @media screen and  (max-width: 800px){
 
@@ -211,9 +241,13 @@
     .gutter, .gutter-left, .gutter-right { padding: 0; }
 
 }
+/* Fim do segundo ajuste de layout */
 
 
-// Mobile
+/*
+ * Terceiro ajuste de layout (Mobile < 700)
+ *
+ */
 
 @media screen and (max-width: 700px) {
 
@@ -363,4 +397,4 @@
 
 }
 
-/* FIM Grid e Normalizador */
+/* FIM Grid */
