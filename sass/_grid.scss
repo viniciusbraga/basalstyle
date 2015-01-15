@@ -255,9 +255,14 @@
     .tablet-2,
     .tablet-3 { width: 100%; float: none; }
 
-    ._basal-col-mobile {
-        width: 100%; float: none;
-    }
+    .mobile-2 { width: 50%; float: left;}
+
+    .col { overflow: visible; display: block; }
+
+    .hide-desktop { display: block; }
+
+    .hide-mobile  { display: none; }
+
 
     @each $i in $basal-col-flex {
 
@@ -266,9 +271,9 @@
         }
     }
 
-    .col { overflow: visible; display: block; }
-
-    .mobile-2 { width: 50%; float: left;}
+    ._basal-col-mobile {
+        width: 100%; float: none;
+    }
 
 
     @for $i from 1 through $basal-col-number - 1 {
@@ -279,6 +284,7 @@
     }
 
     ._basal-col-left-mobile { margin-left: 0; }
+
 
     @for $i from 1 through $basal-col-number - 1 {
 
@@ -316,10 +322,6 @@
     ._basal-margin-top-mobile { margin-top: 1em; }
 
     ._basal-margin-bottom-mobile { margin-bottom: 1em; }
-
-
-    .hide-desktop { display: block; }
-    .hide-mobile  { display: none; }
 
 }
 
