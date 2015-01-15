@@ -171,16 +171,20 @@
 
 /*
  * Primeiro ajuste de layout
- * Quando menor que o tamanho máximo de colunas + 10 pixels
+ * Quando menor que o tamanho máximo de colunas + ($basal-col-fixed / 2)
  *
  */
 
-@media screen and  (max-width: ($basal-max-width + 10) ) {
+@media screen and  (max-width: ( $basal-max-width + floor($basal-col-fixed / 2) )) {
 
     @for $i from 1 through $basal-col-number {
 
         .desktop-#{$i} {
-            width: ( 100% / $basal-col-number ) * $i;
+            @if $i < $basal-col-number {
+                width: ( 100% / $basal-col-number ) * $i;
+            } @else {
+                width: 96%;
+            }
         }
     }
 

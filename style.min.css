@@ -420,8 +420,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .max-h-20 { height: 600px; }
 
-/* Primeiro ajuste de layout Quando menor que o tamanho máximo de colunas + 10 pixels  */
-@media screen and (max-width: 1150px) { .desktop-1 { width: 8.33333%; }
+/* Primeiro ajuste de layout Quando menor que o tamanho máximo de colunas + ($basal-col-fixed / 2)  */
+@media screen and (max-width: 1187px) { .desktop-1 { width: 8.33333%; }
   .desktop-2 { width: 16.66667%; }
   .desktop-3 { width: 25%; }
   .desktop-4 { width: 33.33333%; }
@@ -432,7 +432,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .desktop-9 { width: 75%; }
   .desktop-10 { width: 83.33333%; }
   .desktop-11 { width: 91.66667%; }
-  .desktop-12 { width: 100%; }
+  .desktop-12 { width: 96%; }
   .col-left-1 { margin-left: 8.33333%; }
   .col-left-2 { margin-left: 16.66667%; }
   .col-left-3 { margin-left: 25%; }
