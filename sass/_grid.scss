@@ -1,6 +1,12 @@
 ﻿/*
  * Estruturas de Colunas fixas
+ *
  */
+
+._basal-desktop {
+    float: left;
+    width: 100%;
+}
 
 @for $i from 1 through $basal-col-number {
 
@@ -10,12 +16,17 @@
     }
 }
 
-._basal-desktop {
+
+
+/*
+ * Colunas usando porcentagem
+ *
+ */
+
+._basal-col {
     float: left;
-    width: 100%;
 }
 
-/* Colunas usando porcentagem */
 @each $i in $basal-col-flex {
 
     .col-#{$i} {
@@ -24,17 +35,17 @@
     }
 }
 
-._basal-col {
-    float: left;
-}
 
 .col { overflow: hidden; }
 
+
 /*
  * Anula o float e centraliza o <div> da coluna.
+ *
  */
 
 .container { margin: 0 auto; float: none; }
+
 
 /*
  * Esconde o elemento HTML em diferente modos de apresentação
@@ -82,8 +93,9 @@
 
 
 /*
- * Aplica um espaço em tamanho de coluna correspondente,
- * ao lado esquerdo (col-left) e ao lado direito (col-right)
+ * Aplica um espaço de coluna a
+ * esquerda (col-left-[n]) ou a direita (col-right-[n])
+ *
  */
 
 @for $i from 1 through $basal-col-number - 1 {
@@ -101,7 +113,8 @@
 }
 
 /*
- * Aplica o gutter entre as colunas usando o padding interno de cada coluna aplicada.
+ * Aplica o gutter entre as colunas
+ * usando o padding interno da caixa da coluna.
  *
  */
 
@@ -116,11 +129,14 @@
 
 
 /*
-    Altura mínima do elemento HTML
-    Tem momentos que você precisa de uma altura mínima do elemento HTML.
-    Esta classe especifica a altura mínima, sem atrapalhar caso cresça a quantidade de elemntos na caixa.
-    Ex: Um uso comum é aplicar a altura mínima numa linha: <div class="row min-h-7">
-*/
+ * Altura mínima do elemento HTML
+ *
+ * Uso: Tem momentos que você precisa de uma altura mínima no elemento HTML.
+ * Esta classe especifica a altura mínima com valor múltiplo da entrelinha,
+ * sem limitar o conteúdo, caso cresça em tamanho e quantidade de elementos.
+ * Ex: Um uso comum: <div class="row min-h-7">
+ *
+ */
 
 @for $i from 1 through 40 {
 
@@ -131,8 +147,18 @@
 
 /*
  * Altura máxima do bloco HTML
- * Ex: Um uso comum é aplicar a altura mínima numa linha: <div class="row min-h-7">
+ *
+ * Uso: Aplíca-se para conter a altura da imagem dentro do grid.
+ * Esta classe especifica a altura máxima do bloco HTML com valor múltiplo da entrelinha.
+ * Ela restringe a visualização do conteúdo, como se fosse uma máscara com altura máxima.
+ * Ex: Um uso comum: <figure class="max-h-6"><img></figure>
+ *
  */
+
+._basal-max-h {
+    min-height: 1em;
+    overflow: hidden;
+}
 
 @for $i from 1 through 20 {
 
@@ -142,12 +168,12 @@
     }
 }
 
-._basal-max-h {
-    min-height: 1em;
-    overflow: hidden;
-}
 
-/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
+/*
+ * Primeiro ajuste de layout
+ * Quando menor que o tamanho máximo de colunas + 10 pixels
+ *
+ */
 
 @media screen and  (max-width: ($basal-max-width + 10) ) {
 
@@ -172,12 +198,6 @@
         }
     }
 
-    @for $i from 1 through 20 {
-
-        .max-h-#{$i} {
-            @extend ._basal-max-h-tablet;
-        }
-    }
 
     ._basal-max-h-tablet {
         height: auto;
@@ -185,23 +205,36 @@
         overflow: hidden;
     }
 
+    @for $i from 1 through 20 {
+
+        .max-h-#{$i} {
+            @extend ._basal-max-h-tablet;
+        }
+    }
+
 
 }
-/* FIM do primeiro ajuste de layout */
+/* Fim do primeiro ajuste de layout */
+
+
+/*
+ * Segundo ajuste de layout (Tablet)
+ *
+ */
 
 @media screen and  (max-width: 800px){
+
+    ._basal-desktop-tablet {
+        width: 100%;
+        float: none;
+        max-width: none;
+    }
 
     @for $i from 1 through $basal-col-number {
 
         .desktop-#{$i} {
             @extend ._basal-desktop-tablet;
         }
-    }
-
-    ._basal-desktop-tablet {
-        width: 100%;
-        float: none;
-        max-width: none;
     }
 
     .tablet-1 { width: 25%; float: left; }
@@ -211,19 +244,39 @@
     .gutter, .gutter-left, .gutter-right { padding: 0; }
 
 }
+/* Fim do segundo ajuste de layout */
 
 
-// Mobile
+/*
+ * Terceiro ajuste de layout (Mobile < 700)
+ *
+ */
 
 @media screen and (max-width: 700px) {
 
-    .tablet-1,
-    .tablet-2,
-    .tablet-3 { width: 100%; float: none; }
+    .col {
+        overflow: visible;
+        display: block;
+    }
+
+    .hide-desktop { display: block; }
+
+    .hide-mobile  { display: none; }
+
+    .mobile-2 {
+        width: 50%;
+        float: left;
+    }
+
 
     ._basal-col-mobile {
-        width: 100%; float: none;
+        width: 100%;
+        float: none;
     }
+
+    .tablet-1,
+    .tablet-2,
+    .tablet-3 { @extend ._basal-col-mobile; }
 
     @each $i in $basal-col-flex {
 
@@ -232,10 +285,8 @@
         }
     }
 
-    .col { overflow: visible; display: block; }
 
-    .mobile-2 { width: 50%; float: left;}
-
+    ._basal-col-left-mobile { margin-left: 0; }
 
     @for $i from 1 through $basal-col-number - 1 {
 
@@ -244,7 +295,8 @@
         }
     }
 
-    ._basal-col-left-mobile { margin-left: 0; }
+
+    ._basal-col-right-mobile { margin-right: 0; }
 
     @for $i from 1 through $basal-col-number - 1 {
 
@@ -253,8 +305,14 @@
         }
     }
 
-    ._basal-col-right-mobile { margin-right: 0; }
 
+    ._basal-padding-top-mobile { padding-top: 1em; }
+
+    ._basal-padding-bottom-mobile { padding-bottom: 1em; }
+
+    ._basal-margin-top-mobile { margin-top: 1em; }
+
+    ._basal-margin-bottom-mobile { margin-bottom: 1em; }
 
     @for $i from 1 through 5 {
 
@@ -275,23 +333,14 @@
         }
     }
 
-    ._basal-padding-top-mobile { padding-top: 1em; }
-
-    ._basal-padding-bottom-mobile { padding-bottom: 1em; }
-
-    ._basal-margin-top-mobile { margin-top: 1em; }
-
-    ._basal-margin-bottom-mobile { margin-bottom: 1em; }
-
-
-    .hide-desktop { display: block; }
-    .hide-mobile  { display: none; }
-
 }
 
 @media screen and (max-width: 360px) {
 
-    .mobile-2 { width: 100%; float: none;}
+    .mobile-2 {
+        width: 100%;
+        float: none;
+    }
 
 }
 
@@ -363,4 +412,4 @@
 
 }
 
-/* FIM Grid e Normalizador */
+/* FIM Grid */
