@@ -3,6 +3,11 @@
  *
  */
 
+._basal-desktop {
+    float: left;
+    width: 100%;
+}
+
 @for $i from 1 through $basal-col-number {
 
     .desktop-#{$i} {
@@ -11,16 +16,16 @@
     }
 }
 
-._basal-desktop {
-    float: left;
-    width: 100%;
-}
 
 
 /*
  * Colunas usando porcentagem
  *
  */
+
+._basal-col {
+    float: left;
+}
 
 @each $i in $basal-col-flex {
 
@@ -30,9 +35,6 @@
     }
 }
 
-._basal-col {
-    float: left;
-}
 
 .col { overflow: hidden; }
 
@@ -153,6 +155,11 @@
  *
  */
 
+._basal-max-h {
+    min-height: 1em;
+    overflow: hidden;
+}
+
 @for $i from 1 through 20 {
 
     .max-h-#{$i} {
@@ -161,10 +168,6 @@
     }
 }
 
-._basal-max-h {
-    min-height: 1em;
-    overflow: hidden;
-}
 
 /*
  * Primeiro ajuste de layout
@@ -195,17 +198,18 @@
         }
     }
 
-    @for $i from 1 through 20 {
-
-        .max-h-#{$i} {
-            @extend ._basal-max-h-tablet;
-        }
-    }
 
     ._basal-max-h-tablet {
         height: auto;
         min-height: 1em;
         overflow: hidden;
+    }
+
+    @for $i from 1 through 20 {
+
+        .max-h-#{$i} {
+            @extend ._basal-max-h-tablet;
+        }
     }
 
 
@@ -215,23 +219,22 @@
 
 /*
  * Segundo ajuste de layout (Tablet)
- * Quando menor que o tamanho máximo de colunas + 10 pixels
  *
  */
 
 @media screen and  (max-width: 800px){
+
+    ._basal-desktop-tablet {
+        width: 100%;
+        float: none;
+        max-width: none;
+    }
 
     @for $i from 1 through $basal-col-number {
 
         .desktop-#{$i} {
             @extend ._basal-desktop-tablet;
         }
-    }
-
-    ._basal-desktop-tablet {
-        width: 100%;
-        float: none;
-        max-width: none;
     }
 
     .tablet-1 { width: 25%; float: left; }
@@ -251,18 +254,29 @@
 
 @media screen and (max-width: 700px) {
 
-    .tablet-1,
-    .tablet-2,
-    .tablet-3 { width: 100%; float: none; }
-
-    .mobile-2 { width: 50%; float: left;}
-
-    .col { overflow: visible; display: block; }
+    .col {
+        overflow: visible;
+        display: block;
+    }
 
     .hide-desktop { display: block; }
 
     .hide-mobile  { display: none; }
 
+    .mobile-2 {
+        width: 50%;
+        float: left;
+    }
+
+
+    ._basal-col-mobile {
+        width: 100%;
+        float: none;
+    }
+
+    .tablet-1,
+    .tablet-2,
+    .tablet-3 { @extend ._basal-col-mobile; }
 
     @each $i in $basal-col-flex {
 
@@ -271,10 +285,8 @@
         }
     }
 
-    ._basal-col-mobile {
-        width: 100%; float: none;
-    }
 
+    ._basal-col-left-mobile { margin-left: 0; }
 
     @for $i from 1 through $basal-col-number - 1 {
 
@@ -283,8 +295,8 @@
         }
     }
 
-    ._basal-col-left-mobile { margin-left: 0; }
 
+    ._basal-col-right-mobile { margin-right: 0; }
 
     @for $i from 1 through $basal-col-number - 1 {
 
@@ -293,8 +305,14 @@
         }
     }
 
-    ._basal-col-right-mobile { margin-right: 0; }
 
+    ._basal-padding-top-mobile { padding-top: 1em; }
+
+    ._basal-padding-bottom-mobile { padding-bottom: 1em; }
+
+    ._basal-margin-top-mobile { margin-top: 1em; }
+
+    ._basal-margin-bottom-mobile { margin-bottom: 1em; }
 
     @for $i from 1 through 5 {
 
@@ -315,19 +333,14 @@
         }
     }
 
-    ._basal-padding-top-mobile { padding-top: 1em; }
-
-    ._basal-padding-bottom-mobile { padding-bottom: 1em; }
-
-    ._basal-margin-top-mobile { margin-top: 1em; }
-
-    ._basal-margin-bottom-mobile { margin-bottom: 1em; }
-
 }
 
 @media screen and (max-width: 360px) {
 
-    .mobile-2 { width: 100%; float: none;}
+    .mobile-2 {
+        width: 100%;
+        float: none;
+    }
 
 }
 
