@@ -25,33 +25,20 @@
     width: 100%;
 }
 
-
 /* Colunas usando porcentagem */
-.col-25 { width: 25.0%; }
+@each $i in $basal-col-flex {
 
-.col-30 { width: 30.0%; }
+    .col-#{$i} {
+        width: $i * 1%;
+        @extend ._basal-col;
+    }
+}
 
-.col-33 { width: 33.0%; }
-
-.col-40 { width: 40.0%; }
-
-.col-50 { width: 50.0%; }
-
-.col-60 { width: 60.0%; }
-
-.col-66 { width: 66.0%; }
-
-.col-70 { width: 70.0%; }
-
-.col-75 { width: 75.0%; }
-
-
-.col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 {
+._basal-col {
     float: left;
 }
 
 .col { overflow: hidden; }
-
 
 /*
  * Anula o float e centraliza o <div> da coluna.
