@@ -133,7 +133,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .text-legend h1 + p, .text-legend h2 + p, .text-legend h3 + p, .text-legend h4 + p, .text-legend h5 + p, .text-legend h6 + p { padding: 0 0 0.5em; }
 
 /* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
-@media (max-width: 1210px) { figcaption { position: relative; } }
+@media (max-width: 1150px) { figcaption { position: relative; } }
 /* FIM do primeiro ajuste de layout */
 @media (max-width: 800px) { h1, h2, h3, h4, h5, h6 { font-size: 3em; line-height: 1.3em; min-height: 1em; }
   h2 { font-size: 2.6em; }
@@ -146,33 +146,35 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .brno { white-space: normal; } }
 /* FIM (max-width: 800px) */
 /* Estruturas de Colunas fixas  */
-.desktop-1 { max-width: 100px; }
-
-.desktop-2 { max-width: 200px; }
-
-.desktop-3 { max-width: 300px; }
-
-.desktop-4 { max-width: 400px; }
-
-.desktop-5 { max-width: 500px; }
-
-.desktop-6 { max-width: 600px; }
-
-.desktop-7 { max-width: 700px; }
-
-.desktop-8 { max-width: 800px; }
-
-.desktop-9 { max-width: 900px; }
-
-.desktop-10 { max-width: 1000px; }
-
-.desktop-11 { max-width: 1100px; }
-
-.desktop-12 { max-width: 1200px; }
-
 ._basal-desktop, .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { float: left; width: 100%; }
 
+.desktop-1 { max-width: 95px; }
+
+.desktop-2 { max-width: 190px; }
+
+.desktop-3 { max-width: 285px; }
+
+.desktop-4 { max-width: 380px; }
+
+.desktop-5 { max-width: 475px; }
+
+.desktop-6 { max-width: 570px; }
+
+.desktop-7 { max-width: 665px; }
+
+.desktop-8 { max-width: 760px; }
+
+.desktop-9 { max-width: 855px; }
+
+.desktop-10 { max-width: 950px; }
+
+.desktop-11 { max-width: 1045px; }
+
+.desktop-12 { max-width: 1140px; }
+
 /* Colunas usando porcentagem  */
+._basal-col, .col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 { float: left; }
+
 .col-25 { width: 25%; }
 
 .col-30 { width: 30%; }
@@ -190,8 +192,6 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .col-70 { width: 70%; }
 
 .col-75 { width: 75%; }
-
-._basal-col, .col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 { float: left; }
 
 .col { overflow: hidden; }
 
@@ -245,49 +245,49 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .margin-bottom-5 { margin-bottom: 150px; }
 
 /* Aplica um espaço de coluna a esquerda (col-left-[n]) ou a direita (col-right-[n])  */
-.col-left-1 { margin-left: 100px; }
+.col-left-1 { margin-left: 95px; }
 
-.col-left-2 { margin-left: 200px; }
+.col-left-2 { margin-left: 190px; }
 
-.col-left-3 { margin-left: 300px; }
+.col-left-3 { margin-left: 285px; }
 
-.col-left-4 { margin-left: 400px; }
+.col-left-4 { margin-left: 380px; }
 
-.col-left-5 { margin-left: 500px; }
+.col-left-5 { margin-left: 475px; }
 
-.col-left-6 { margin-left: 600px; }
+.col-left-6 { margin-left: 570px; }
 
-.col-left-7 { margin-left: 700px; }
+.col-left-7 { margin-left: 665px; }
 
-.col-left-8 { margin-left: 800px; }
+.col-left-8 { margin-left: 760px; }
 
-.col-left-9 { margin-left: 900px; }
+.col-left-9 { margin-left: 855px; }
 
-.col-left-10 { margin-left: 1000px; }
+.col-left-10 { margin-left: 950px; }
 
-.col-left-11 { margin-left: 1100px; }
+.col-left-11 { margin-left: 1045px; }
 
-.col-right-1 { margin-right: 100px; }
+.col-right-1 { margin-right: 95px; }
 
-.col-right-2 { margin-right: 200px; }
+.col-right-2 { margin-right: 190px; }
 
-.col-right-3 { margin-right: 300px; }
+.col-right-3 { margin-right: 285px; }
 
-.col-right-4 { margin-right: 400px; }
+.col-right-4 { margin-right: 380px; }
 
-.col-right-5 { margin-right: 500px; }
+.col-right-5 { margin-right: 475px; }
 
-.col-right-6 { margin-right: 600px; }
+.col-right-6 { margin-right: 570px; }
 
-.col-right-7 { margin-right: 700px; }
+.col-right-7 { margin-right: 665px; }
 
-.col-right-8 { margin-right: 800px; }
+.col-right-8 { margin-right: 760px; }
 
-.col-right-9 { margin-right: 900px; }
+.col-right-9 { margin-right: 855px; }
 
-.col-right-10 { margin-right: 1000px; }
+.col-right-10 { margin-right: 950px; }
 
-.col-right-11 { margin-right: 1100px; }
+.col-right-11 { margin-right: 1045px; }
 
 /* Aplica o gutter entre as colunas usando o padding interno da caixa da coluna.  */
 .gutter { padding-left: 15px; padding-right: 15px; }
@@ -378,6 +378,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .min-h-40 { min-height: 1200px; }
 
 /* Altura máxima do bloco HTML  Uso: Aplíca-se para conter a altura da imagem dentro do grid. Esta classe especifica a altura máxima do bloco HTML com valor múltiplo da entrelinha. Ela restringe a visualização do conteúdo, como se fosse uma máscara com altura máxima. Ex: Um uso comum: <figure class="max-h-6"><img></figure>  */
+._basal-max-h, .max-h-1, .max-h-2, .max-h-3, .max-h-4, .max-h-5, .max-h-6, .max-h-7, .max-h-8, .max-h-9, .max-h-10, .max-h-11, .max-h-12, .max-h-13, .max-h-14, .max-h-15, .max-h-16, .max-h-17, .max-h-18, .max-h-19, .max-h-20 { min-height: 1em; overflow: hidden; }
+
 .max-h-1 { height: 30px; }
 
 .max-h-2 { height: 60px; }
@@ -418,10 +420,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .max-h-20 { height: 600px; }
 
-._basal-max-h, .max-h-1, .max-h-2, .max-h-3, .max-h-4, .max-h-5, .max-h-6, .max-h-7, .max-h-8, .max-h-9, .max-h-10, .max-h-11, .max-h-12, .max-h-13, .max-h-14, .max-h-15, .max-h-16, .max-h-17, .max-h-18, .max-h-19, .max-h-20 { min-height: 1em; overflow: hidden; }
-
 /* Primeiro ajuste de layout Quando menor que o tamanho máximo de colunas + 10 pixels  */
-@media screen and (max-width: 1210px) { .desktop-1 { width: 8.33333%; }
+@media screen and (max-width: 1150px) { .desktop-1 { width: 8.33333%; }
   .desktop-2 { width: 16.66667%; }
   .desktop-3 { width: 25%; }
   .desktop-4 { width: 33.33333%; }
@@ -457,7 +457,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .col-right-11 { margin-right: 91.66667%; }
   ._basal-max-h-tablet, .max-h-1, .max-h-2, .max-h-3, .max-h-4, .max-h-5, .max-h-6, .max-h-7, .max-h-8, .max-h-9, .max-h-10, .max-h-11, .max-h-12, .max-h-13, .max-h-14, .max-h-15, .max-h-16, .max-h-17, .max-h-18, .max-h-19, .max-h-20 { height: auto; min-height: 1em; overflow: hidden; } }
 /* Fim do primeiro ajuste de layout */
-/* Segundo ajuste de layout (Tablet) Quando menor que o tamanho máximo de colunas + 10 pixels  */
+/* Segundo ajuste de layout (Tablet)  */
 @media screen and (max-width: 800px) { ._basal-desktop-tablet, .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { width: 100%; float: none; max-width: none; }
   .tablet-1 { width: 25%; float: left; }
   .tablet-2 { width: 50%; float: left; }
@@ -465,12 +465,11 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .gutter, .gutter-left, .gutter-right { padding: 0; } }
 /* Fim do segundo ajuste de layout */
 /* Terceiro ajuste de layout (Mobile < 700)  */
-@media screen and (max-width: 700px) { .tablet-1, .tablet-2, .tablet-3 { width: 100%; float: none; }
-  .mobile-2 { width: 50%; float: left; }
-  .col { overflow: visible; display: block; }
+@media screen and (max-width: 700px) { .col { overflow: visible; display: block; }
   .hide-desktop { display: block; }
   .hide-mobile { display: none; }
-  ._basal-col-mobile, .col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 { width: 100%; float: none; }
+  .mobile-2 { width: 50%; float: left; }
+  ._basal-col-mobile, .tablet-1, .tablet-2, .tablet-3, .col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 { width: 100%; float: none; }
   ._basal-col-left-mobile, .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-left: 0; }
   ._basal-col-right-mobile, .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-right: 0; }
   ._basal-padding-top-mobile, .padding-top-1, .padding-top-2, .padding-top-3, .padding-top-4, .padding-top-5 { padding-top: 1em; }
@@ -488,7 +487,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Grid de DEBUG de alinhamento  Uso: Basta aplicar na página/template o <label> abaixo. Certifique-se que a imagem com o grid esteja disponível.  <label class="btnDebug" for="debug"> Grid <input type="checkbox" id="debug" onclick='var e=document.getElementsByTagName("body")[0],c="debug",re=new RegExp("(?:^|\s)"+c+"(?!\S)","g");if(e.className.match(re)){e.className=e.className.replace(re,"");}else{e.className+=" "+c;this.checked=true;}'></label>   */
 .debug { display: block; position: relative; }
 
-.debug:after { content: ""; background: url(//gridfor.me/i/12/100/30/15/) repeat-y center top !important; opacity: 0.8; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: 2; transition: display 1.5s; background: rgba(255, 0, 0, 0.25); }
+.debug:after { content: ""; background: url(//gridfor.me/i/12/95/30/15/) repeat-y center top !important; opacity: 0.8; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: 2; transition: display 1.5s; background: rgba(255, 0, 0, 0.25); }
 
 .btnDebug { color: #666666; font-size: 14px; line-height: 20px; text-transform: uppercase; vertical-align: top; padding: 0 0.25em; position: fixed; top: 0; right: 0; z-index: 1000; opacity: 1; background-color: #FFF; border-radius: 0 0 6px 6px; }
 
@@ -526,7 +525,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .header-inline .submenu ul li { margin: 0; padding: 0; }
 
 /* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
-@media (max-width: 1210px) { .header-inline .header-search { position: relative; right: 0; top: 0; display: block; padding-bottom: 20px; } }
+@media (max-width: 1150px) { .header-inline .header-search { position: relative; right: 0; top: 0; display: block; padding-bottom: 20px; } }
 /* FIM do primeiro ajuste de layout */
 /* @media (max-width: 1000px) */
 @media (max-width: 1000px) { /* Cabeçalho do Site e Navegação */
@@ -594,9 +593,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .nav-inline .current > a, .nav-inline .current-menu-item > a, .nav-inline .current_page_item > a, .nav-inline .current-post-ancestor > a, .nav-inline .current-menu-ancestor > a, .nav-inline .current-menu-parent > a, .nav-inline .current-custom-parent > a { border: none; } }
 /* FIM @media (max-width: 800px) */
 /* FIM Menu nav-inline */
-/*  Imagens
- Exemplo de aplicação: <div class="img img-align-text frame-h-27x8"> <img src="nome_da_image.png" height="530" width="800"> </div> Onde img-col-(número de coluna) especifica a largura máxima da caixa da imagem. Contudo, a imagem ficará menor, porque a regra CSS desconta os espaços laterais (padding) para o alinhamento com o texto.
-*/
+/* Imagens  Exemplo de aplicação: <div class="img max-h-8"> <img src="nome_da_image.png" height="530" width="800"> </div> <figure class="max-h-8"> <img src="nome_da_image.png" height="530" width="800"> </figure>  */
 .img img, figure img { width: 100%; height: auto; }
 
 .img, figure { position: relative; }
@@ -607,20 +604,17 @@ figcaption, .img-legend { font-size: 1em; line-height: 1em; text-align: right; p
 
 figcaption a, .img-legend a { text-decoration: none; }
 
-/* img-align-text A imagem fica alinhada com a altura da letra capitular (cap height) do texto.
-*/
-.img-align-title { margin-top: 0; }
-
+/* img-align-text  A caixa da entidade HTML (DIV ou FIGURE), que envolve a imagem, recebe uma propriedade extra no padding-top, empurando a imagem para o alinhamento visual com o texto das colunas ao lado.  Exemplo de aplicação: <figure class="img-align-text max-h-8"> <img src="nome_da_image.png" height="530" width="800"> </figure>  */
 .img-align-text { padding-top: 1.4em; }
 
-/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
-@media (max-width: 1210px) { .img, figure { padding: 15px 0; }
+/* Primeiro ajuste de layout Quando menor que o tamanho máximo de colunas + 10 pixels  */
+@media (max-width: 1150px) { .img, figure { padding: 15px 0; }
   figcaption, .img-legend { position: relative; }
   .img-align-text { margin-top: 0; margin-bottom: 0; } }
-/* FIM do primeiro ajuste de layout */
-/* @media (max-width: 800px) */
+/* Fim do primeiro ajuste de layout */
+/* Segundo ajuste de layout (Tablet)  */
 @media (max-width: 800px) { .img, figure { padding: 15px 15px; } }
-/* @media (max-width: 800px) */
+/* Fim do segundo ajuste de layout */
 /* FIM Imagens */
 /* Formulários  */
 .form-row { margin: 0; padding: 0; list-style: none; min-height: 90px; }
