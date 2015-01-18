@@ -7,7 +7,7 @@ Folha de estilo para prototipação rápida de wireframes, sites e formulários.
 O Grid default tem entrelinha de 30px (baseline) e 12 colunas de 95px. As colunas totalizam uma largura máxima de 1140px (`desktop-12`).
 
 ```
-<div class="desktop-12 container">
+<div class="row desktop-12 container">
     <div class="row">
         <div class="desktop-6"></div>
         <div class="desktop-3"></div>
@@ -18,7 +18,7 @@ O Grid default tem entrelinha de 30px (baseline) e 12 colunas de 95px. As coluna
 A classe `container` centraliza o bloco, por isso é comum usá-la junto com uma classe de tamanho de coluna, para definir a largura máxima. Existe um exemplo completo no documento`index.html`. Caso queira fazer um site com largura máxima de 10 colunas (950px de largura máxima), segue um exemplo:
 
 ```
-<div class="desktop-10 container">
+<div class="row desktop-10 container">
     <div class="row">
         <div class="desktop-7"></div>
         <div class="desktop-3"></div>
@@ -50,7 +50,7 @@ Qual é o resultado:
 1. **Em telas acima de 800px de largura (`desktop-#`)**
 O layout fica definido em 3 colunas flexíveis com largura máxima total de 1440px.
 2. **Abaixo de 800px até 700px (`tablet-#`)**
-As primeiras duas colunas dividirã a tela em 50% de largura cada. A última coluna ficará abaixo delas e ocupará toda a largura (100%).
+As primeiras duas colunas dividirão a tela em 50% de largura cada. A última coluna ficará abaixo delas e ocupará toda a largura (100%).
 2. **Abaixo de 700px até 320px (`mobile-#`)**
 O layout será semelhante ao da tablet.
 
