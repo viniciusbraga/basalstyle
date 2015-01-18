@@ -50,7 +50,7 @@ Qual é o resultado:
 1. **Em telas acima de 800px de largura (`desktop-#`)**
 O layout fica definido em 3 colunas flexíveis com largura máxima total de 1440px.
 2. **Abaixo de 800px até 700px (`tablet-#`)**
-As primeiras duas colunas dividirã a tela em 50% de largura cada. A última coluna ficará abaixo delas e ocupará toda a largura (100%).
+As primeiras duas colunas dividirão a tela em 50% de largura cada. A última coluna ficará abaixo delas e ocupará toda a largura (100%).
 2. **Abaixo de 700px até 320px (`mobile-#`)**
 O layout será semelhante ao da tablet.
 
