@@ -16,3 +16,66 @@ section header h2 {
     min-height: 60px;
     text-transform: uppercase;
 }
+
+
+.debug:after {
+    background-image: url("//gridfor.me/i/12/95/30/15/?v=255,255,255,0") !important;
+}
+
+.source-sans-pro { font-family: "Source Sans Pro"}
+.open-sans { font-family: "Open Sans"}
+.roboto { font-family: "Roboto"}
+.exo-2 { font-family: "Exo 2"}
+.dosis { font-family: "Dosis"}
+
+.droid-serif { font-family: "Droid Serif"}
+.arvo { font-family: "Arvo"}
+.roboto-slab { font-family: "Roboto Slab"}
+.vollkorn { font-family: "Vollkorn"}
+
+.typo {
+    padding-left: 0;
+}
+
+.tamanho dl {
+    padding: 0;
+    margin: 0;
+}
+
+.tamanho dt {
+    line-height: 44px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+.tamanho dd {
+    font-size: 100px;
+    line-height: 120px;
+    height: 180px;
+    letter-spacing: 5px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    position: relative;
+    background: rgba(0,0,0,0.09);
+    white-space: nowrap;
+}
+
+.tamanho dd:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    border-bottom: 1px solid blue;
+}
+
+.tamanho dd span {
+    background: rgba(255,0,0,0.25);
+}
+
+
+
