@@ -213,7 +213,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .text-small td,
 .text-small caption {
     font-size: 1.4em;
-    line-height: $basal-leading * 0.8;
+    line-height: $basal-leading * 0.800;
 }
 
 .text-small h1,
@@ -226,14 +226,13 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
     line-height: $basal-leading;
     min-height: 0;
     padding: 5px 0 0;
-    display: inline-block;
     }
 
 .text-small h1 { font-size: 2.4em; }
 .text-small h2 { font-size: 2.1em; }
 .text-small h3 { font-size: 1.8em; }
 
-.text-small p  { padding: 2px 0 23px; }
+.text-small p  { padding: 2px 0 22px; }
 
 .text-small ul,
 .text-small ol { padding: 7px 0 23px 42px; }

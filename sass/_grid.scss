@@ -1,44 +1,38 @@
 ﻿/*
  * Estruturas de Colunas fixas
+ *
  */
+
+._basal-desktop {
+    float: left;
+    width: 100%;
+}
 
 @for $i from 1 through $basal-col-number {
 
     .desktop-#{$i} {
         max-width: $basal-col-fixed * $i;
+        @extend ._basal-desktop;
     }
 
-    .desktop-#{$i} {
-        float: left;
-        width: 100%;
-    }
 
+
+
+/*
+ * Colunas usando porcentagem
+ *
+ */
+
+._basal-col {
+    float: left;
 }
 
-/* Colunas usando porcentagem */
-.col-20 { width: 20.0%; }
+@each $i in $basal-col-flex {
 
-.col-25 { width: 25.0%; }
-
-.col-30 { width: 30.0%; }
-
-.col-33 { width: 33.0%; }
-
-.col-40 { width: 40.0%; }
-
-.col-50 { width: 50.0%; }
-
-.col-60 { width: 60.0%; }
-
-.col-66 { width: 66.0%; }
-
-.col-70 { width: 70.0%; }
-
-.col-75 { width: 75.0%; }
-
-
-.col-20, .col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 {
-    float: left;
+    .col-#{$i} {
+        width: $i * 1%;
+        @extend ._basal-col;
+    }
 }
 
 .col { overflow: hidden; }
@@ -46,9 +40,11 @@
 
 /*
  * Anula o float e centraliza o <div> da coluna.
+ *
  */
 
 .container { margin: 0 auto; float: none; }
+
 
 /*
  * Esconde o elemento HTML em diferente modos de apresentação
@@ -96,8 +92,9 @@
 
 
 /*
- * Aplica um espaço em tamanho de coluna correspondente,
- * ao lado esquerdo (col-left) e ao lado direito (col-right)
+ * Aplica um espaço de coluna a
+ * esquerda (col-left-[n]) ou a direita (col-right-[n])
+ *
  */
 
 @for $i from 1 through $basal-col-number - 1 {
@@ -115,7 +112,8 @@
 }
 
 /*
- * Aplica o gutter entre as colunas usando o padding interno de cada coluna aplicada.
+ * Aplica o gutter entre as colunas
+ * usando o padding interno da caixa da coluna.
  *
  */
 
@@ -130,11 +128,14 @@
 
 
 /*
-    Altura mínima do elemento HTML
-    Tem momentos que você precisa de uma altura mínima do elemento HTML.
-    Esta classe especifica a altura mínima, sem atrapalhar caso cresça a quantidade de elemntos na caixa.
-    Ex: Um uso comum é aplicar a altura mínima numa linha: <div class="row min-h-7">
-*/
+ * Altura mínima do elemento HTML
+ *
+ * Uso: Tem momentos que você precisa de uma altura mínima no elemento HTML.
+ * Esta classe especifica a altura mínima com valor múltiplo da entrelinha,
+ * sem limitar o conteúdo, caso cresça em tamanho e quantidade de elementos.
+ * Ex: Um uso comum: <div class="row min-h-7">
+ *
+ */
 
 @for $i from 1 through 40 {
 
@@ -144,63 +145,98 @@
 }
 
 /*
-    Altura máxima do bloco HTML
-    Ex: Um uso comum é aplicar a altura mínima numa linha: <div class="row min-h-7">
-*/
+ * Altura máxima do bloco HTML
+ *
+ * Uso: Aplíca-se para conter a altura da imagem dentro do grid.
+ * Esta classe especifica a altura máxima do bloco HTML com valor múltiplo da entrelinha.
+ * Ela restringe a visualização do conteúdo, como se fosse uma máscara com altura máxima.
+ * Ex: Um uso comum: <figure class="max-h-6"><img></figure>
+ *
+ */
+
+._basal-max-h {
+    min-height: 1em;
+    overflow: hidden;
+}
 
 @for $i from 1 through 20 {
 
     .max-h-#{$i} {
         height: $basal-leading * $i;
-        min-height: 1em;
-        overflow: hidden;
+        @extend ._basal-max-h;
     }
 }
 
-/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
 
-@media screen and  (max-width: ($basal-max-width + 10) ) {
+/*
+ * Primeiro ajuste de layout
+ * Quando menor que o tamanho máximo de colunas + ($basal-col-fixed / 2)
+ *
+ */
+
+@media screen and  (max-width: ( $basal-max-width + floor($basal-col-fixed / 2) )) {
 
     @for $i from 1 through $basal-col-number {
 
         .desktop-#{$i} {
-            width: 8% * $i;
+            @if $i < $basal-col-number {
+                width: ( 100% / $basal-col-number ) * $i;
+            } @else {
+                width: 96%;
+            }
         }
     }
 
     @for $i from 1 through $basal-col-number - 1 {
 
         .col-left-#{$i} {
-            margin-left: 8% * $i;
+            margin-left: ( 100% / $basal-col-number ) * $i;
         }
     }
 
     @for $i from 1 through $basal-col-number - 1 {
 
         .col-right-#{$i} {
-            margin-right: 8% * $i;
+            margin-right: ( 100% / $basal-col-number ) * $i;
         }
+    }
+
+
+    ._basal-max-h-tablet {
+        height: auto;
+        min-height: 1em;
+        overflow: hidden;
     }
 
     @for $i from 1 through 20 {
 
         .max-h-#{$i} {
-            height: auto;
-            min-height: 1em;
-            overflow: hidden;
+            @extend ._basal-max-h-tablet;
         }
     }
 
+
 }
-/* FIM do primeiro ajuste de layout */
+/* Fim do primeiro ajuste de layout */
+
+
+/*
+ * Segundo ajuste de layout (Tablet)
+ *
+ */
 
 @media screen and  (max-width: 800px){
 
+    ._basal-desktop-tablet {
+        width: 100%;
+        float: none;
+        max-width: none;
+    }
+
     @for $i from 1 through $basal-col-number {
+
         .desktop-#{$i} {
-            width: 100%;
-            float: none;
-            max-width: none;
+            @extend ._basal-desktop-tablet;
         }
     }
 
@@ -211,88 +247,103 @@
     .gutter, .gutter-left, .gutter-right { padding: 0; }
 
 }
+/* Fim do segundo ajuste de layout */
 
 
-// Mobile
+/*
+ * Terceiro ajuste de layout (Mobile < 700)
+ *
+ */
 
 @media screen and (max-width: 700px) {
 
-    .tablet-1,
-    .tablet-2,
-    .tablet-3 { width: 100%; float: none; }
-
-    .col-25,
-    .col-30,
-    .col-33,
-    .col-40,
-    .col-50,
-    .col-60,
-    .col-66,
-    .col-70,
-    .col-75 { width: 100%; float: none; }
-
-    .col { overflow: visible; display: block; }
-
-    .mobile-2 { width: 50%; float: left;}
-
-    .col-left-1,
-    .col-left-2,
-    .col-left-3,
-    .col-left-4,
-    .col-left-5,
-    .col-left-6,
-    .col-left-7,
-    .col-left-8,
-    .col-left-9,
-    .col-left-10,
-    .col-left-11,
-    .col-left-12 { margin-left: 0; }
-
-    .col-right-1,
-    .col-right-2,
-    .col-right-3,
-    .col-right-4,
-    .col-right-5,
-    .col-right-6,
-    .col-right-7,
-    .col-right-8,
-    .col-right-9,
-    .col-right-10,
-    .col-right-11,
-    .col-right-12 { margin-right: 0; }
-
-    .padding-top-1,
-    .padding-top-2,
-    .padding-top-3,
-    .padding-top-4,
-    .padding-top-5 { padding-top: 1em; }
-
-    .padding-bottom-1,
-    .padding-bottom-2,
-    .padding-bottom-3,
-    .padding-bottom-4,
-    .padding-bottom-5 { padding-bottom: 1em; }
-
-    .margin-top-1,
-    .margin-top-2,
-    .margin-top-3,
-    .margin-top-4,
-    .margin-top-5 { margin-top: 1em; }
-
-    .margin-bottom-1,
-    .margin-bottom-2,
-    .margin-bottom-3,
-    .margin-bottom-4,
-    .margin-bottom-5 { margin-bottom: 1em; }
+    .col {
+        overflow: visible;
+        display: block;
+    }
 
     .hide-desktop { display: block; }
+
     .hide-mobile  { display: none; }
+
+    .mobile-2 {
+        width: 50%;
+        float: left;
+    }
+
+
+    ._basal-col-mobile {
+        width: 100%;
+        float: none;
+    }
+
+    .tablet-1,
+    .tablet-2,
+    .tablet-3 { @extend ._basal-col-mobile; }
+
+    @each $i in $basal-col-flex {
+
+        .col-#{$i} {
+            @extend ._basal-col-mobile;
+        }
+    }
+
+
+    ._basal-col-left-mobile { margin-left: 0; }
+
+    @for $i from 1 through $basal-col-number - 1 {
+
+        .col-left-#{$i} {
+            @extend ._basal-col-left-mobile;
+        }
+    }
+
+
+    ._basal-col-right-mobile { margin-right: 0; }
+
+    @for $i from 1 through $basal-col-number - 1 {
+
+        .col-left-#{$i} {
+            @extend ._basal-col-right-mobile;
+        }
+    }
+
+
+    ._basal-padding-top-mobile { padding-top: 1em; }
+
+    ._basal-padding-bottom-mobile { padding-bottom: 1em; }
+
+    ._basal-margin-top-mobile { margin-top: 1em; }
+
+    ._basal-margin-bottom-mobile { margin-bottom: 1em; }
+
+    @for $i from 1 through 5 {
+
+        .padding-top-#{$i} {
+            @extend ._basal-padding-top-mobile;
+        }
+
+        .padding-bottom-#{$i} {
+            @extend ._basal-padding-bottom-mobile;
+        }
+
+        .margin-top-#{$i} {
+            @extend ._basal-margin-top-mobile;
+        }
+
+        .margin-bottom-#{$i} {
+            @extend ._basal-margin-bottom-mobile;
+        }
+    }
 
 }
 
 @media screen and (max-width: 360px) {
 
-    .mobile-2 { width: 100%; float: none;}
+    .mobile-2 {
+        width: 100%;
+        float: none;
+    }
 
 }
 
@@ -330,7 +381,7 @@
 
 .debug:after {
     content: "";
-    background: url(images/grid-15-30-95-1140.png) repeat-y center top !important;
+    background: url(#{$basal-image-grid}) repeat-y center top !important;
     opacity: 0.8;
     top: 0;
     left: 0;
@@ -339,6 +390,7 @@
     position: absolute;
     z-index: 2;
     transition: display 1.5s;
+    background: rgba(255,0,0,0.25);
 }
 
 .btnDebug {
@@ -363,4 +415,4 @@
 
 }
 
-/* FIM Grid e Normalizador */
+/* FIM Grid */

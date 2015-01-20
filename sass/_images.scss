@@ -1,15 +1,16 @@
 
-/*  Imagens
-
-    Exemplo de aplicação:
-    <div class="img img-align-text frame-h-27x8">
-      <img src="nome_da_image.png" height="530" width="800">
-    </div>
-    Onde img-col-(número de coluna) especifica a largura máxima
-    da caixa da imagem. Contudo, a imagem ficará menor,
-    porque a regra CSS desconta os espaços laterais (padding)
-    para o alinhamento com o texto.
-*/
+/*
+ * Imagens
+ *
+ * Exemplo de aplicação:
+ * <div class="img max-h-8">
+ *   <img src="nome_da_image.png" height="530" width="800">
+ * </div>
+ * <figure class="max-h-8">
+ *   <img src="nome_da_image.png" height="530" width="800">
+ * </figure>
+ *
+ */
 
 .img img,
 figure img {
@@ -52,18 +53,27 @@ figcaption a,
 
 
 /*
-    img-align-text
-    A imagem fica alinhada com a altura
-    da letra capitular (cap height) do texto.
-*/
-
-.img-align-title { margin-top: 0; }
+ * img-align-text
+ *
+ * A caixa da entidade HTML (DIV ou FIGURE), que envolve a imagem,
+ * recebe uma propriedade extra no padding-top,
+ * empurando a imagem para o alinhamento visual com o texto das colunas ao lado.
+ *
+ * Exemplo de aplicação:
+ * <figure class="img-align-text max-h-8">
+ *   <img src="nome_da_image.png" height="530" width="800">
+ * </figure>
+ *
+ */
 
 .img-align-text { padding-top: 1.4em; }
 
 
-
-/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
+/*
+ * Primeiro ajuste de layout
+ * Quando menor que o tamanho máximo de colunas + 10 pixels
+ *
+ */
 
 @media (max-width: ($basal-max-width + 10)) {
 
@@ -79,10 +89,13 @@ figcaption a,
     }
 
 }
-/* FIM do primeiro ajuste de layout */
+/* Fim do primeiro ajuste de layout */
 
 
-/* @media (max-width: 800px) */
+/*
+ * Segundo ajuste de layout (Tablet)
+ *
+ */
 
 @media (max-width: 800px) {
 
@@ -90,7 +103,7 @@ figcaption a,
     figure { padding: ($basal-leading / 2) $basal-padding; }
 
 }
-/* @media (max-width: 800px) */
+/* Fim do segundo ajuste de layout */
 
 /* FIM Imagens */
 
