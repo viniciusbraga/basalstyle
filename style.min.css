@@ -596,26 +596,29 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* FIM @media (max-width: 800px) */
 /* FIM Menu nav-inline */
 /* Imagens  Exemplo de aplicação: <div class="img max-h-8"> <img src="nome_da_image.png" height="530" width="800"> </div> <figure class="max-h-8"> <img src="nome_da_image.png" height="530" width="800"> </figure>  */
-.img img, figure img { width: 100%; height: auto; }
+.img { position: relative; }
 
-.img, figure { position: relative; }
+.img img { width: 100%; height: auto; }
 
-.img:after, figure:after { content: ""; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1; }
+.img:after { content: ""; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1; }
 
-figcaption, .img-legend { font-size: 1em; line-height: 1em; text-align: right; padding: 1.10em 0.5em 0; width: 100%; min-height: 30px; background-color: #ffffff; opacity: 1; position: absolute; bottom: 0; }
+.img figcaption, .img-legend { font-size: 1em; line-height: 1em; text-align: right; padding: 1.10em 0.5em 0; width: 100%; min-height: 30px; background-color: #ffffff; opacity: 1; position: absolute; bottom: 0; }
 
-figcaption a, .img-legend a { text-decoration: none; }
+.img figcaption a, .img-legend a { text-decoration: none; }
+
+.img-normal { width: auto; height: auto; margin: 0 auto; display: block; }
 
 /* img-align-text  A caixa da entidade HTML (DIV ou FIGURE), que envolve a imagem, recebe uma propriedade extra no padding-top, empurando a imagem para o alinhamento visual com o texto das colunas ao lado.  Exemplo de aplicação: <figure class="img-align-text max-h-8"> <img src="nome_da_image.png" height="530" width="800"> </figure>  */
 .img-align-text { padding-top: 1.4em; }
 
 /* Primeiro ajuste de layout Quando menor que o tamanho máximo de colunas + 10 pixels  */
-@media (max-width: 1150px) { .img, figure { padding: 15px 0; }
-  figcaption, .img-legend { position: relative; }
-  .img-align-text { margin-top: 0; margin-bottom: 0; } }
+@media (max-width: 1150px) { .img { padding: 15px 0; }
+  .img figcaption, .img-legend { position: relative; }
+  .img-align-text { margin-top: 0; margin-bottom: 0; }
+  .img-normal { width: 100%; height: auto; } }
 /* Fim do primeiro ajuste de layout */
 /* Segundo ajuste de layout (Tablet)  */
-@media (max-width: 800px) { .img, figure { padding: 15px 15px; } }
+@media (max-width: 800px) { .img { padding: 15px 15px; } }
 /* Fim do segundo ajuste de layout */
 /* FIM Imagens */
 /* Formulários  */
