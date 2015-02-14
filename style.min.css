@@ -606,7 +606,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .img figcaption a, .img-legend a { text-decoration: none; }
 
-.img-normal { width: auto; height: auto; margin: 0 auto; display: block; }
+.img .img-normal { width: auto; height: auto; margin: 0 auto; display: block; }
 
 /* img-align-text  A caixa da entidade HTML (DIV ou FIGURE), que envolve a imagem, recebe uma propriedade extra no padding-top, empurando a imagem para o alinhamento visual com o texto das colunas ao lado.  Exemplo de aplicação: <figure class="img-align-text max-h-8"> <img src="nome_da_image.png" height="530" width="800"> </figure>  */
 .img-align-text { padding-top: 1.4em; }
@@ -615,7 +615,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 @media (max-width: 1150px) { .img { padding: 15px 0; }
   .img figcaption, .img-legend { position: relative; }
   .img-align-text { margin-top: 0; margin-bottom: 0; }
-  .img-normal { width: 100%; height: auto; } }
+  .img .img-normal { width: 100%; height: auto; } }
 /* Fim do primeiro ajuste de layout */
 /* Segundo ajuste de layout (Tablet)  */
 @media (max-width: 800px) { .img { padding: 15px 15px; } }
