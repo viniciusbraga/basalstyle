@@ -461,10 +461,12 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Fim do primeiro ajuste de layout */
 /* Segundo ajuste de layout (Tablet)  */
 @media screen and (max-width: 800px) { ._basal-desktop-tablet, .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { width: 100%; float: none; max-width: none; }
+  ._basal-col-right-mobile, .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-right: 0; }
   .tablet-1 { width: 25%; float: left; }
   .tablet-2 { width: 50%; float: left; }
   .tablet-3 { width: 75%; float: left; }
-  .gutter, .gutter-left, .gutter-right { padding: 0; } }
+  .gutter, .gutter-left, .gutter-right { padding: 0; }
+  ._basal-col-left-mobile, .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-left: 0; } }
 /* Fim do segundo ajuste de layout */
 /* Terceiro ajuste de layout (Mobile < 700)  */
 @media screen and (max-width: 700px) { .col { overflow: visible; display: block; }
@@ -472,8 +474,6 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .hide-mobile { display: none; }
   .mobile-2 { width: 50%; float: left; }
   ._basal-col-mobile, .tablet-1, .tablet-2, .tablet-3, .col-20, .col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 { width: 100%; float: none; }
-  ._basal-col-left-mobile, .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-left: 0; }
-  ._basal-col-right-mobile, .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-right: 0; }
   ._basal-padding-top-mobile, .padding-top-1, .padding-top-2, .padding-top-3, .padding-top-4, .padding-top-5 { padding-top: 1em; }
   ._basal-padding-bottom-mobile, .padding-bottom-1, .padding-bottom-2, .padding-bottom-3, .padding-bottom-4, .padding-bottom-5 { padding-bottom: 1em; }
   ._basal-margin-top-mobile, .margin-top-1, .margin-top-2, .margin-top-3, .margin-top-4, .margin-top-5 { margin-top: 1em; }
