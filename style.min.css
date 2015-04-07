@@ -489,7 +489,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Grid de DEBUG de alinhamento  Uso: Basta aplicar na página/template o <label> abaixo. Certifique-se que a imagem com o grid esteja disponível.  <label class="btnDebug" for="debug"> Grid <input type="checkbox" id="debug" onclick='var e=document.getElementsByTagName("body")[0],c="debug",re=new RegExp("(?:^|\s)"+c+"(?!\S)","g");if(e.className.match(re)){e.className=e.className.replace(re,"");}else{e.className+=" "+c;this.checked=true;}'></label>   */
 .debug { display: block; position: relative; }
 
-.debug:after { content: ""; background: url(//gridfor.me/i/12/95/30/15/) repeat-y center top !important; opacity: 0.8; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: 2; transition: display 1.5s; background: rgba(255, 0, 0, 0.25); }
+.debug:after { content: ""; background: url(https://gridforme.herokuapp.com/i/12/95/30/15/) repeat-y center top !important; opacity: 0.8; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: 2; transition: display 1.5s; background: rgba(255, 0, 0, 0.25); }
 
 .btnDebug { color: #666666; font-size: 14px; line-height: 20px; text-transform: uppercase; vertical-align: top; padding: 0 0.25em; position: fixed; top: 0; right: 0; z-index: 1000; opacity: 1; background-color: #FFF; border-radius: 0 0 6px 6px; }
 
