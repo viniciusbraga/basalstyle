@@ -721,3 +721,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 @media (max-width: 800px) { .btn-row { padding: 0 15px; } }
 /* Fim @media (max-width: 800px) */
 /* FIM Botões de Interface  */
+/* Customização */
+body { font-family: 'Open Sans', sans-serif; }
+
+section header h2 { color: #c5cdcd; font-size: 20px; padding: 15px 0 0 0; min-height: 60px; text-transform: uppercase; }
+
+/* Fim Customização */
