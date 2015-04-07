@@ -489,7 +489,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Grid de DEBUG de alinhamento  Uso: Basta aplicar na página/template o <label> abaixo. Certifique-se que a imagem com o grid esteja disponível.  <label class="btnDebug" for="debug"> Grid <input type="checkbox" id="debug" onclick='var e=document.getElementsByTagName("body")[0],c="debug",re=new RegExp("(?:^|\s)"+c+"(?!\S)","g");if(e.className.match(re)){e.className=e.className.replace(re,"");}else{e.className+=" "+c;this.checked=true;}'></label>   */
 .debug { display: block; position: relative; }
 
-.debug:after { content: ""; background: url(//gridfor.me/i/12/95/30/15/) repeat-y center top !important; opacity: 0.8; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: 2; transition: display 1.5s; background: rgba(255, 0, 0, 0.25); }
+.debug:after { content: ""; background: url(https://gridforme.herokuapp.com/i/12/95/30/15/) repeat-y center top !important; opacity: 0.8; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: 2; transition: display 1.5s; background: rgba(255, 0, 0, 0.25); }
 
 .btnDebug { color: #666666; font-size: 14px; line-height: 20px; text-transform: uppercase; vertical-align: top; padding: 0 0.25em; position: fixed; top: 0; right: 0; z-index: 1000; opacity: 1; background-color: #FFF; border-radius: 0 0 6px 6px; }
 
@@ -634,15 +634,15 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .label-block label, .form-row legend { display: block; }
 
-.input-text input[type="text"] { font-size: 2.0em; font-family: inherit; line-height: 1.4em; letter-spacing: 0.06em; vertical-align: middle; white-space: pre; margin: 0; padding: 0.35em 0.6em; width: 100%; min-height: 1em; display: block; border: 1px solid #BFBFBF; border-radius: 3px; box-shadow: inset 1px 1px 3px #CCCCCB; background-color: #F8F8F9; outline: none; transition: background-color 1s ease 0s,border 1s ease 0s; }
+.input-text input[type="text"], .input-text input[type="password"] { font-size: 2.0em; font-family: inherit; line-height: 1.4em; letter-spacing: 0.06em; vertical-align: middle; white-space: pre; margin: 0; padding: 0.35em 0.6em; width: 100%; min-height: 1em; display: block; border: 1px solid #BFBFBF; border-radius: 3px; box-shadow: inset 1px 1px 3px #CCCCCB; background-color: #F8F8F9; outline: none; transition: background-color 1s ease 0s,border 1s ease 0s; }
 
-.input-text input[type="text"]:hover { border: 1px solid #999999; background-color: #FFF7CC; transition: background-color 1s ease 0s,border 1s ease 0s; }
+.input-text input[type="text"]:hover, .input-text input[type="password"]:hover { border: 1px solid #999999; background-color: #FFF7CC; transition: background-color 1s ease 0s,border 1s ease 0s; }
 
-.input-text input[type="text"]:focus { border: 1px solid #999999; background-color: #FFF7CC; }
+.input-text input[type="text"]:focus, .input-text input[type="password"]:focus { border: 1px solid #999999; background-color: #FFF7CC; }
 
-.input-text-66 input[type="text"] { width: 66%; }
+.input-text-66 input[type="text"], .input-text-66 input[type="password"] { width: 66%; }
 
-.input-text-33 input[type="text"] { width: 33%; }
+.input-text-33 input[type="text"], .input-text-33 input[type="password"] { width: 33%; }
 
 .input-radio fieldset { padding: 0; border: none; }
 
@@ -683,7 +683,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 /* Mensagens e Alertas */
 @media (max-width: 800px) { .form-row { padding: 0 15px; }
-  .input-text-66 input[type="text"], .input-text-33 input[type="text"] { width: 100%; } }
+  .input-text-66 input[type="text"], .input-text-33 input[type="text"], .input-text-66 input[type="password"], .input-text-33 input[type="password"] { width: 100%; } }
 /* Fim @media (max-width: 800px) */
 /* Formulários  */
 /* Botões de Interface */
