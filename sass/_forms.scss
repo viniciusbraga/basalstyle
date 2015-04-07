@@ -43,7 +43,8 @@
   display: block;
 }
 
-.input-text input[type="text"] {
+.input-text input[type="text"] ,
+.input-text input[type="password"] {
   font-size: 2.0em;
   font-family: inherit;
   line-height: 1.4em;
@@ -62,21 +63,25 @@
   outline:none;
   transition: background-color 1s ease 0s,border 1s ease 0s;
 }
-.input-text input[type="text"]:hover {
+.input-text input[type="text"]:hover ,
+.input-text input[type="password"]:hover {
   border: 1px solid #999999;
   background-color: #FFF7CC;
   transition: background-color 1s ease 0s,border 1s ease 0s;
 }
-.input-text input[type="text"]:focus {
+.input-text input[type="text"]:focus ,
+.input-text input[type="password"]:focus {
   border: 1px solid #999999;
   background-color: #FFF7CC;
 }
 
-.input-text-66 input[type="text"] {
+.input-text-66 input[type="text"] ,
+.input-text-66 input[type="password"] {
   width: 66%;
 }
 
-.input-text-33 input[type="text"] {
+.input-text-33 input[type="text"] ,
+.input-text-33 input[type="password"] {
   width: 33%;
 }
 
@@ -221,7 +226,9 @@
 }
 
   .input-text-66 input[type="text"] ,
-  .input-text-33 input[type="text"]  {
+  .input-text-33 input[type="text"] ,
+  .input-text-66 input[type="password"] ,
+  .input-text-33 input[type="password"]  {
     width: 100%;
   }
 
