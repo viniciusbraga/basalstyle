@@ -82,6 +82,14 @@ As classes `col-left-[1-11]` e `col-right-[1-11]` aplicam um espaço real entre 
 </div>
 ```
 
+### Customização
+
+Para qualquer customização utilize o arquivo `_custom.sass` e execute o comando:
+
+```bash
+sass --update sass/style.sass:style.min.css --stop-on-error --no-cache --style compact
+```
+
 ### Bugs, Sugestões e Funcionalidades
 
 Relate sua questão ou pedido de funcionalidades no [GitHub Issues](https://github.com/viniciusbraga/basalstyle/issues).

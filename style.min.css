@@ -461,10 +461,12 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Fim do primeiro ajuste de layout */
 /* Segundo ajuste de layout (Tablet)  */
 @media screen and (max-width: 800px) { ._basal-desktop-tablet, .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { width: 100%; float: none; max-width: none; }
+  ._basal-col-right-mobile, .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-right: 0; }
   .tablet-1 { width: 25%; float: left; }
   .tablet-2 { width: 50%; float: left; }
   .tablet-3 { width: 75%; float: left; }
-  .gutter, .gutter-left, .gutter-right { padding: 0; } }
+  .gutter, .gutter-left, .gutter-right { padding: 0; }
+  ._basal-col-left-mobile, .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-left: 0; } }
 /* Fim do segundo ajuste de layout */
 /* Terceiro ajuste de layout (Mobile < 700)  */
 @media screen and (max-width: 700px) { .col { overflow: visible; display: block; }
@@ -472,8 +474,6 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .hide-mobile { display: none; }
   .mobile-2 { width: 50%; float: left; }
   ._basal-col-mobile, .tablet-1, .tablet-2, .tablet-3, .col-20, .col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 { width: 100%; float: none; }
-  ._basal-col-left-mobile, .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-left: 0; }
-  ._basal-col-right-mobile, .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-right: 0; }
   ._basal-padding-top-mobile, .padding-top-1, .padding-top-2, .padding-top-3, .padding-top-4, .padding-top-5 { padding-top: 1em; }
   ._basal-padding-bottom-mobile, .padding-bottom-1, .padding-bottom-2, .padding-bottom-3, .padding-bottom-4, .padding-bottom-5 { padding-bottom: 1em; }
   ._basal-margin-top-mobile, .margin-top-1, .margin-top-2, .margin-top-3, .margin-top-4, .margin-top-5 { margin-top: 1em; }
@@ -489,7 +489,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Grid de DEBUG de alinhamento  Uso: Basta aplicar na página/template o <label> abaixo. Certifique-se que a imagem com o grid esteja disponível.  <label class="btnDebug" for="debug"> Grid <input type="checkbox" id="debug" onclick='var e=document.getElementsByTagName("body")[0],c="debug",re=new RegExp("(?:^|\s)"+c+"(?!\S)","g");if(e.className.match(re)){e.className=e.className.replace(re,"");}else{e.className+=" "+c;this.checked=true;}'></label>   */
 .debug { display: block; position: relative; }
 
-.debug:after { content: ""; background: url(//gridfor.me/i/12/95/30/15/) repeat-y center top !important; opacity: 0.8; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: 2; transition: display 1.5s; background: rgba(255, 0, 0, 0.25); }
+.debug:after { content: ""; background: url(https://gridforme.herokuapp.com/i/12/95/30/15/) repeat-y center top !important; opacity: 0.8; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: 2; transition: display 1.5s; background: rgba(255, 0, 0, 0.25); }
 
 .btnDebug { color: #666666; font-size: 14px; line-height: 20px; text-transform: uppercase; vertical-align: top; padding: 0 0.25em; position: fixed; top: 0; right: 0; z-index: 1000; opacity: 1; background-color: #FFF; border-radius: 0 0 6px 6px; }
 
@@ -606,7 +606,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .img figcaption a, .img-legend a { text-decoration: none; }
 
-.img-normal { width: auto; height: auto; margin: 0 auto; display: block; }
+.img .img-normal { width: auto; height: auto; margin: 0 auto; display: block; }
 
 /* img-align-text  A caixa da entidade HTML (DIV ou FIGURE), que envolve a imagem, recebe uma propriedade extra no padding-top, empurando a imagem para o alinhamento visual com o texto das colunas ao lado.  Exemplo de aplicação: <figure class="img-align-text max-h-8"> <img src="nome_da_image.png" height="530" width="800"> </figure>  */
 .img-align-text { padding-top: 1.4em; }
@@ -615,7 +615,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 @media (max-width: 1150px) { .img { padding: 15px 0; }
   .img figcaption, .img-legend { position: relative; }
   .img-align-text { margin-top: 0; margin-bottom: 0; }
-  .img-normal { width: 100%; height: auto; } }
+  .img .img-normal { width: 100%; height: auto; } }
 /* Fim do primeiro ajuste de layout */
 /* Segundo ajuste de layout (Tablet)  */
 @media (max-width: 800px) { .img { padding: 15px 15px; } }
@@ -721,3 +721,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 @media (max-width: 800px) { .btn-row { padding: 0 15px; } }
 /* Fim @media (max-width: 800px) */
 /* FIM Botões de Interface  */
+/* Customização */
+body { font-family: 'Open Sans', sans-serif; }
+
+section header h2 { color: #c5cdcd; font-size: 20px; padding: 15px 0 0 0; min-height: 60px; text-transform: uppercase; }
+
+/* Fim Customização */
