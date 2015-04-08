@@ -37,6 +37,7 @@
 }
 
 .form-row textarea {
+    color: $basal-form-text-color;
     font-family: inherit;
     font-size: 1.6em;
     margin: 0;
@@ -62,6 +63,7 @@
 
 .input-text input[type="text"] ,
 .input-text input[type="password"] {
+    color: $basal-form-text-color;
     font-size: 2.0em;
     font-family: inherit;
     line-height: 1.4em;
@@ -135,7 +137,7 @@
 }
 
 .select-dropdown select {
-    color: #000;
+    color: $basal-form-dropdown-text-color;
     font-family: inherit;
     font-size: 1.6em;
     line-height: 40px;
