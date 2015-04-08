@@ -57,10 +57,40 @@ $basal-color-link-active:       invert( $basal-color-link );
 $basal-color-link-visited:      darken( $basal-color-link, 10% );
 
 $basal-color-text:              #111100;
-$basal-color-text-highlight:    #E6EEFF;
+$basal-color-text-highlight:    #CCDDFF;
 
 $basal-color-ruler:             #c5cdcd;
 $basal-color-background:        #ffffff;
 
 
-$basal-color-form-highlight:    #E6EEFF;
+// Formúlário - Variáveis de cor e borda
+$basal-form-legend-color:                $basal-color-text;
+$basal-form-text-color:                  #E6EEFF;
+
+$basal-form-error-color:                 #e74c3c;
+$basal-form-error-background:            #FFF4F3;
+
+$basal-form-border:                      1px solid #BFBFBF;
+$basal-form-border-hover:                $basal-form-border;
+$basal-form-border-focus:                1px solid $grey-darker;
+
+$basal-form-shadow:                      inset 1px 1px 3px #CCCCCB;
+
+$basal-form-background:                  $grey-lighter;
+$basal-form-background-hover:            #E6EEFF;
+$basal-form-background-focus:            #E6EEFF;
+
+$basal-form-border-radius:               3px;
+
+$basal-form-dropdown-border:             $basal-form-border;
+$basal-form-dropdown-border-hover:       $basal-form-border-hover;
+$basal-form-dropdown-border-focus:       $basal-form-border-focus;
+
+$basal-form-dropdown-radius:             $basal-form-border-radius;
+
+$basal-form-dropdown-shadow:             1px 1px 3px #CCCCCB;
+
+$basal-form-dropdown-background:         $basal-form-background;
+$basal-form-dropdown-background-hover:   $basal-form-background-hover;
+$basal-form-dropdown-background-focus:   $basal-form-background-focus;
+
