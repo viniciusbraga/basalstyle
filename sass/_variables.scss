@@ -1,4 +1,6 @@
+
 // Variáveis do grid
+
 $basal-grid-x:           15px;
 $basal-grid-y:           30px;
 
@@ -16,13 +18,16 @@ $basal-media-tablet:     900px;
 $basal-media-mobile:     480px;
 $basal-media-tiny:       360px;
 
-/* GridForMe (https://github.com/henriquebastos/gridforme)
+
+/*
+ * GridForMe (https://github.com/henriquebastos/gridforme)
  * Os parâmetros para construção da imagem de grid:
  * /i/{colunas}/{largura da coluna}/{leading}/{gutter}/?bg=cor&v=cor&h=cor
  *
  */
 $basal-image-param:      "#{$basal-col-number}/#{strip-unit($basal-col-fixed)}/#{strip-unit($basal-leading)}/#{strip-unit($basal-gutter)}/";
 $basal-image-grid:       "https://gridforme.herokuapp.com/i/#{$basal-image-param}";
+
 
 // Cores
 
@@ -49,8 +54,8 @@ $red-light:      #FF9B96;
 $red-darker:     #CC3300;
 
 
-
 // Variáveis de cor
+
 $basal-color-link:              $blue-base;
 $basal-color-link-hover:        $blue-darker;
 $basal-color-link-active:       invert( $basal-color-link );
@@ -63,7 +68,8 @@ $basal-color-ruler:             #c5cdcd;
 $basal-color-background:        #ffffff;
 
 
-// Formúlário - Variáveis de cor e borda
+// Formulário - Variáveis de cor e borda
+
 $basal-form-legend-color:                $basal-color-text;
 $basal-form-text-color:                  #E6EEFF;
 
@@ -93,4 +99,3 @@ $basal-form-dropdown-shadow:             1px 1px 3px #CCCCCB;
 $basal-form-dropdown-background:         $basal-form-background;
 $basal-form-dropdown-background-hover:   $basal-form-background-hover;
 $basal-form-dropdown-background-focus:   $basal-form-background-focus;
-
