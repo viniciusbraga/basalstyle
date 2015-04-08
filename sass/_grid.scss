@@ -335,9 +335,14 @@
         }
     }
 
-}
+} /* Fim do segundo ajuste de layout */
 
-@media screen and (max-width: 360px) {
+
+/*
+ * Quebra de layout para Mobile
+ *
+ */
+@media all and (max-width: $basal-media-tiny) {
 
     .mobile-2 {
         width: 100%;
