@@ -11,6 +11,9 @@ $basal-leading:          $basal-grid-y;
 $basal-gutter:           $basal-padding;
 $basal-max-width:        $basal-col-fixed * $basal-col-number;
 
+$basal-media-inbound:    $basal-max-width + floor($basal-col-fixed / 2) ;
+$basal-media-tablet:     900px;
+$basal-media-mobile:     480px;
 
 /* GridForMe (https://github.com/henriquebastos/gridforme)
  * Os parâmetros para construção da imagem de grid:

@@ -81,14 +81,20 @@ input[type="submit"].btnRed:visited   { color: #FFF; background-color: #e74c3c; 
 input[type="submit"].btnRed:hover     { color: #FFF; background-color: #CC3300; }
 
 
-@media (max-width: 800px) {
 
-.btn-row {
-  padding: 0 $basal-padding;
-}
+/*
+ * Quebra de layout para Tablet
+ *
+ */
+
+@media all and (max-width: $basal-media-tablet) {
+
+    .btn-row {
+      padding: 0 $basal-padding;
+    }
 
 
+} /* Fim da Quebra de layout para Tablet */
 
-} /* Fim @media (max-width: 800px) */
 
 /* FIM Botões de Interface  */

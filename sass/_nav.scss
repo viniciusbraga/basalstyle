@@ -65,11 +65,16 @@
 .nav-mobile, .nav-close { display: none; }
 
 
-/* Submenu de links do Menu nav-inline */
+/* Submenu de links do Menu nav-inline
+ *
+ * Esta "media query" aplica as propriedades a partir da largura
+ * especificada para uma quebra de tablet até ao infinito (sentido de dentro para fora).
+ * Quando a janela for menor que a quebra de uma tablet,
+ * as propriedades cessam de existir.
+ *
+ */
 
-/* @media (max-width: 1000px) */
-
-@media (min-width: 1000px) {
+@media all and (min-width: $basal-media-tablet) {
 
     .submenu { position: relative; overflow: hidden; }
 
@@ -152,12 +157,15 @@
     }
 
 
-}
+} /* Fim da quebra de layout */
 
 
-/* @media (max-width: 1000px) */
+/*
+ * Quebra de layout para Tablet
+ *
+ */
 
-@media (max-width: 1000px) {
+@media all and (max-width: $basal-media-tablet) {
 
     .nav-inline {
         display: block;
@@ -227,6 +235,7 @@
     }
 
 
-} /* FIM @media (max-width: 800px) */
+} /* Fim da Quebra de layout para Tablet */
+
 
 /* FIM Menu nav-inline */
