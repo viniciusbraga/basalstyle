@@ -2,22 +2,31 @@
 /* Formulários  */
 
 .form-row {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  min-height: $basal-leading * 3;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    min-height: $basal-leading * 3;
+}
+
+@for $i from 1 through 40 {
+
+    .form-row.min-h-#{$i} {
+        @extend .min-h-#{$i};
+    }
 }
 
 .form-row p {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-.form-row a { text-decoration: none; }
+.form-row a {
+    text-decoration: none;
+}
 
 .form-row label,
 .form-row legend {
-    color: #000;
+    color: $basal-form-legend-color;
     font-size: 14px;
     font-weight: 700;
     line-height: $basal-leading;
@@ -28,93 +37,101 @@
 }
 
 .form-row textarea {
-  font-family:inherit;
-  font-size:1.5em;
-  margin:0;
-  padding:0.75em 0.5em 0.5em 0.75em;
-  width: 100%;
-  border: 1px solid #D9D9D9;
-  border-bottom: 2px solid #CCCCCC;
-  border-right: 2px solid #CCCCCC;
+    font-family: inherit;
+    font-size: 1.6em;
+    margin: 0;
+    padding: 0.75em 0.5em 0.5em 0.75em;
+    width: 100%;
+    min-height: $basal-leading * 4;
+    border: $basal-form-border;
+    border-radius: $basal-form-border-radius;
+    box-shadow: $basal-form-shadow;
+    background-color: $basal-form-background;
+    transition: background-color 1s ease 0s,border 1s ease 0s;
+}
+
+.form-row textarea:focus {
+    border: $basal-form-border-focus;
+    background-color: $basal-form-background-focus;
 }
 
 .label-block label,
 .form-row legend {
-  display: block;
+    display: block;
 }
 
 .input-text input[type="text"] ,
 .input-text input[type="password"] {
-  font-size: 2.0em;
-  font-family: inherit;
-  line-height: 1.4em;
-  letter-spacing: 0.06em;
-  vertical-align: middle;
-  white-space: pre;
-  margin: 0;
-  padding: 0.35em 0.6em;
-  width: 100%;
-  min-height: 1em;
-  display: block;
-  border:1px solid #BFBFBF;
-  border-radius: 3px;
-  box-shadow: inset 1px 1px 3px #CCCCCB;
-  background-color:#F8F8F9;
-  outline:none;
-  transition: background-color 1s ease 0s,border 1s ease 0s;
+    font-size: 2.0em;
+    font-family: inherit;
+    line-height: 1.4em;
+    letter-spacing: 0.06em;
+    vertical-align: middle;
+    white-space: pre;
+    margin: 0;
+    padding: 0.35em 0.6em;
+    width: 100%;
+    min-height: 1em;
+    display: block;
+    border: $basal-form-border;
+    border-radius: $basal-form-border-radius;
+    box-shadow: $basal-form-shadow;
+    background-color: $basal-form-background;
+    outline: none;
+    transition: background-color 1s ease 0s,border 1s ease 0s;
 }
 .input-text input[type="text"]:hover ,
 .input-text input[type="password"]:hover {
-  border: 1px solid #999999;
-  background-color: $basal-color-form-highlight;
-  transition: background-color 1s ease 0s,border 1s ease 0s;
+    border: $basal-form-border-hover;
+    background-color: $basal-form-background-hover;
+    transition: background-color 1s ease 0s,border 1s ease 0s;
 }
 .input-text input[type="text"]:focus ,
 .input-text input[type="password"]:focus {
-  border: 1px solid #999999;
-  background-color: $basal-color-form-highlight;
+    border: $basal-form-border-focus;
+    background-color: $basal-form-background-focus;
 }
 
 .input-text-66 input[type="text"] ,
 .input-text-66 input[type="password"] {
-  width: 66%;
+    width: 66%;
 }
 
 .input-text-33 input[type="text"] ,
 .input-text-33 input[type="password"] {
-  width: 33%;
+    width: 33%;
 }
 
 .input-radio fieldset {
-  padding: 0;
-  border: none;
+    padding: 0;
+    border: none;
 }
 
 .input-radio ul,
 .input-radio dl {
-  margin: 0;
-  padding: 0 0 $basal-leading;
-  list-style: none;
+    margin: 0;
+    padding: 0 0 $basal-leading;
+    list-style: none;
 }
 .input-radio li,
 .input-radio dt,
 .input-radio dd {
-  font-size: 1.4em;
-  line-height: $basal-leading;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    font-size: 1.4em;
+    line-height: $basal-leading;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 
 .input-radio label {
-  font-size: 1em;
-  font-weight: 300;
+    font-size: 1em;
+    font-weight: 300;
 }
 
 .input-radio input {
-  display: inline-block;
-  margin-right: 0.66em
+    display: inline-block;
+    margin-right: 0.66em
 }
 
 .select-dropdown select {
@@ -126,95 +143,87 @@
     padding: 0.6em 0.3em 0.6em 0.3em;
     min-height: 36px;
     width: 100%;
-    border:1px solid #BFBFBF;
-    border-bottom:2px solid #BFBFBF;
-    border-radius: 3px;
-    box-shadow: 1px 1px 3px #CCCCCB;
-    background-color:#F8F8F9;
+    border: $basal-form-dropdown-border;
+    border-radius: $basal-form-dropdown-radius;
+    box-shadow: $basal-form-dropdown-shadow;
+    background-color: $basal-form-dropdown-background;
     transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
     outline: none;
 }
 .select-dropdown select:hover {
-  border: 1px solid #999999;
-  background-color: $basal-color-form-highlight;
-  outline: none;
+    border: $basal-form-dropdown-border-hover;
+    background-color: $basal-form-dropdown-background-hover;
+    outline: none;
 }
 .select-dropdown select:focus {
-  border: 1px solid #999999;
-  background-color: $basal-color-form-highlight;
-  outline: none;
+    border: $basal-form-dropdown-border-focus;
+    background-color: $basal-form-dropdown-background-focus;
+    outline: none;
 }
 
-.label-inline label {
-  font-size: 1.2em;
-  font-weight: 400;
-  line-height: 1.666em;
-  padding: 0;
-  margin: 0;
-  float: left;
 
+.label-inline label {
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.666em;
+    padding: 0;
+    margin: 0;
+    float: left;
 }
 
 
 /* Erros nos formulários */
 
 .errorlist {
-  color: #e74c3c;
+    color: $basal-form-error-color;
 }
 
 .errorlist p,
 .errorlist li,
 .errorlist dt,
 .errorlist dd {
-  font-size: 1.4em;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
+    font-size: 1.4em;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .errorlist li + li,
 .errorlist dd + dd {
-  line-height: 1.25em;
-  margin: 0;
-  padding-bottom:0.7em;
+    line-height: 1.25em;
+    margin: 0;
+    padding-bottom:0.7em;
 }
 
 .form-row .errorlist {
-  margin: 0;
-  padding: 0 0 0 0;
-  list-style: none;
+    margin: 0;
+    padding: 0 0 0 0;
+    list-style: none;
 }
 
 .form-row .errorlist + input,
+.form-row .errorlist + input:hover,
+.form-row .errorlist + input:focus,
 .form-row .errorlist + input + input,
 .form-row .errorlist + textarea,
+.form-row .errorlist + ul,
 .form-row .errorlist + dl,
 .error-input input {
-  margin: 0 0 6px;
-  padding: 4px 0 5px 5px;
-  border: none;
-  border-left: 6px solid #e74c3c;
-  background: #FFF4F3;
+    margin: 0 0 6px;
+    padding: 4px 0 5px 5px;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    border-left: 6px solid $basal-form-error-color;
 }
 
-
-.form-row .errorlist + dl {
-  border: none;
-  border-left: 6px solid #e74c3c;
+.form-row .errorlist {
+    padding-left: $basal-padding / 2 ;
+    border-left: 6px solid $basal-form-error-color;
 }
 
 .error-input label{
-  color: #e74c3c;
+    color: $basal-form-error-color;
 }
-
-.error-input input:hover { background: #FFF4F3; }
-
-.error-input input:focus {
-  border: none;
-  border-left: 6px solid #16a085;
-  background-color: #ecf0f1;
-}
-
 
 
 /*
@@ -236,6 +245,6 @@
     }
 
 
-    } /* Fim da Quebra de layout para Tablet */
+} /* Fim da Quebra de layout para Tablet */
 
-    /* FIM de Formulários  */
+/* FIM de Formulários  */
