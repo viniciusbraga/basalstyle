@@ -2,10 +2,17 @@
 /* Formulários  */
 
 .form-row {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  min-height: $basal-leading * 3;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    min-height: $basal-leading * 3;
+}
+
+@for $i from 1 through 40 {
+
+    .form-row.min-h-#{$i} {
+        @extend .min-h-#{$i};
+    }
 }
 
 .form-row p {
