@@ -11,6 +11,10 @@ $basal-leading:          $basal-grid-y;
 $basal-gutter:           $basal-padding;
 $basal-max-width:        $basal-col-fixed * $basal-col-number;
 
+$basal-media-inbound:    $basal-max-width + floor($basal-col-fixed / 2) ;
+$basal-media-tablet:     900px;
+$basal-media-mobile:     480px;
+$basal-media-tiny:       360px;
 
 /* GridForMe (https://github.com/henriquebastos/gridforme)
  * Os parâmetros para construção da imagem de grid:
@@ -47,11 +51,16 @@ $red-darker:     #CC3300;
 
 
 // Variáveis de cor
-$basal-color-link:           $blue-base;
-$basal-color-link-hover:     $blue-darker;
-$basal-color-link-active:    invert( $basal-color-link );
-$basal-color-link-visited:   darken( $basal-color-link, 10% );
+$basal-color-link:              $blue-base;
+$basal-color-link-hover:        $blue-darker;
+$basal-color-link-active:       invert( $basal-color-link );
+$basal-color-link-visited:      darken( $basal-color-link, 10% );
 
-$basal-color-text:           #111100;
-$basal-color-ruler:          #c5cdcd;
-$basal-color-background:     #ffffff;
+$basal-color-text:              #111100;
+$basal-color-text-highlight:    #E6EEFF;
+
+$basal-color-ruler:             #c5cdcd;
+$basal-color-background:        #ffffff;
+
+
+$basal-color-form-highlight:    #E6EEFF;

@@ -107,9 +107,12 @@
 
 
 
-/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
+/*
+ * Quebra de layout no limite da largura máxima de colunas
+ *
+ */
 
-@media (max-width: ($basal-max-width + 10)) {
+@media all and (max-width: $basal-media-inbound) {
 
     .header-inline .header-search {
           position: relative;
@@ -118,13 +121,17 @@
           display: block;
           padding-bottom: 20px;
     }
-}
-/* FIM do primeiro ajuste de layout */
 
 
-/* @media (max-width: 1000px) */
+} /* FIM da quebra de layout */
 
-@media (max-width: 1000px) {
+
+/*
+ * Quebra de layout para Tablet
+ *
+ */
+
+@media all and (max-width: $basal-media-tablet) {
 
     /* Cabeçalho do Site e Navegação */
 
@@ -221,6 +228,6 @@
     }
 
 
-} /* FIM @media (max-width: 1000px) */
+} /* Fim da Quebra de layout para Tablet */
 
 /* FIM Cabeçalho do Site e Navegação */

@@ -159,6 +159,16 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
     margin: 0;
     padding: 0;
 }
+
+/* WebKit/Blink Browsers */
+::selection {
+  background: $basal-color-text-highlight;
+}
+/* Gecko Browsers */
+::-moz-selection {
+  background: $basal-color-text-highlight;
+}
+
 /* Aplica o modelo de caixa semelhante ao do IE */
 
 * {
@@ -281,19 +291,27 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 
 
-/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
+/*
+ * Quebra de layout no limite da largura máxima de colunas
+ *
+ */
 
-@media (max-width: ($basal-max-width + 10)) {
+@media all and (max-width: $basal-media-inbound) {
 
     figcaption {
         position: relative;
     }
 
-}
-/* FIM do primeiro ajuste de layout */
+
+} /* FIM do primeiro ajuste de layout */
 
 
-@media (max-width: 800px) {
+/*
+ * Quebra de layout para Tablet
+ *
+ */
+
+@media all and (max-width: $basal-media-tablet) {
 
     h1, h2, h3, h4, h5, h6 {
         font-size: 3em;
@@ -327,7 +345,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
     .brno { white-space: normal; }
 
-}
-/* FIM (max-width: 800px) */
+
+} /* Fim da Quebra de layout para Tablet */
 
 
