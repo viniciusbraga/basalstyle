@@ -87,7 +87,7 @@ As classes `col-left-[1-11]` e `col-right-[1-11]` aplicam um espaço real entre 
 Para qualquer customização utilize o arquivo `_custom.sass` e execute o comando:
 
 ```bash
-sass --update sass/style.sass:style.min.css --stop-on-error --no-cache --style compact
+sass --update sass/style.sass:style.min.css --stop-on-error --sourcemap=none --no-cache --style compact
 ```
 
 ### Bugs, Sugestões e Funcionalidades
