@@ -66,13 +66,13 @@
 .input-text input[type="text"]:hover ,
 .input-text input[type="password"]:hover {
   border: 1px solid #999999;
-  background-color: #FFF7CC;
+  background-color: $basal-color-form-highlight;
   transition: background-color 1s ease 0s,border 1s ease 0s;
 }
 .input-text input[type="text"]:focus ,
 .input-text input[type="password"]:focus {
   border: 1px solid #999999;
-  background-color: #FFF7CC;
+  background-color: $basal-color-form-highlight;
 }
 
 .input-text-66 input[type="text"] ,
@@ -136,12 +136,12 @@
 }
 .select-dropdown select:hover {
   border: 1px solid #999999;
-  background-color: #FFF7CC;
+  background-color: $basal-color-form-highlight;
   outline: none;
 }
 .select-dropdown select:focus {
   border: 1px solid #999999;
-  background-color: #FFF7CC;
+  background-color: $basal-color-form-highlight;
   outline: none;
 }
 

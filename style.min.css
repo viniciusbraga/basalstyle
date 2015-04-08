@@ -71,6 +71,12 @@ a:visited { color: #217dbb; }
 
 header, menu, nav, article, section, aside, details, figcaption, figure, footer { display: block; margin: 0; padding: 0; }
 
+/* WebKit/Blink Browsers */
+::selection { background: #e6eeff; }
+
+/* Gecko Browsers */
+::-moz-selection { background: #e6eeff; }
+
 /* Aplica o modelo de caixa semelhante ao do IE */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -639,9 +645,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .input-text input[type="text"], .input-text input[type="password"] { font-size: 2.0em; font-family: inherit; line-height: 1.4em; letter-spacing: 0.06em; vertical-align: middle; white-space: pre; margin: 0; padding: 0.35em 0.6em; width: 100%; min-height: 1em; display: block; border: 1px solid #BFBFBF; border-radius: 3px; box-shadow: inset 1px 1px 3px #CCCCCB; background-color: #F8F8F9; outline: none; transition: background-color 1s ease 0s,border 1s ease 0s; }
 
-.input-text input[type="text"]:hover, .input-text input[type="password"]:hover { border: 1px solid #999999; background-color: #FFF7CC; transition: background-color 1s ease 0s,border 1s ease 0s; }
+.input-text input[type="text"]:hover, .input-text input[type="password"]:hover { border: 1px solid #999999; background-color: #e6eeff; transition: background-color 1s ease 0s,border 1s ease 0s; }
 
-.input-text input[type="text"]:focus, .input-text input[type="password"]:focus { border: 1px solid #999999; background-color: #FFF7CC; }
+.input-text input[type="text"]:focus, .input-text input[type="password"]:focus { border: 1px solid #999999; background-color: #e6eeff; }
 
 .input-text-66 input[type="text"], .input-text-66 input[type="password"] { width: 66%; }
 
@@ -659,9 +665,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .select-dropdown select { color: #000; font-family: inherit; font-size: 1.6em; line-height: 40px; margin: 0; padding: 0.6em 0.3em 0.6em 0.3em; min-height: 36px; width: 100%; border: 1px solid #BFBFBF; border-bottom: 2px solid #BFBFBF; border-radius: 3px; box-shadow: 1px 1px 3px #CCCCCB; background-color: #F8F8F9; transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s; outline: none; }
 
-.select-dropdown select:hover { border: 1px solid #999999; background-color: #FFF7CC; outline: none; }
+.select-dropdown select:hover { border: 1px solid #999999; background-color: #e6eeff; outline: none; }
 
-.select-dropdown select:focus { border: 1px solid #999999; background-color: #FFF7CC; outline: none; }
+.select-dropdown select:focus { border: 1px solid #999999; background-color: #e6eeff; outline: none; }
 
 .label-inline label { font-size: 1.2em; font-weight: 400; line-height: 1.666em; padding: 0; margin: 0; float: left; }
 
