@@ -56,23 +56,23 @@
   width: 100%;
   min-height: 1em;
   display: block;
-    border:1px solid #BFBFBF;
-    border-radius: 3px;
-    box-shadow: inset 1px 1px 3px #CCCCCB;
-    background-color:#F8F8F9;
+  border:1px solid #BFBFBF;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 3px #CCCCCB;
+  background-color:#F8F8F9;
   outline:none;
   transition: background-color 1s ease 0s,border 1s ease 0s;
 }
 .input-text input[type="text"]:hover ,
 .input-text input[type="password"]:hover {
   border: 1px solid #999999;
-  background-color: #FFF7CC;
+  background-color: $basal-color-form-highlight;
   transition: background-color 1s ease 0s,border 1s ease 0s;
 }
 .input-text input[type="text"]:focus ,
 .input-text input[type="password"]:focus {
   border: 1px solid #999999;
-  background-color: #FFF7CC;
+  background-color: $basal-color-form-highlight;
 }
 
 .input-text-66 input[type="text"] ,
@@ -136,12 +136,12 @@
 }
 .select-dropdown select:hover {
   border: 1px solid #999999;
-  background-color: #FFF7CC;
+  background-color: $basal-color-form-highlight;
   outline: none;
 }
 .select-dropdown select:focus {
   border: 1px solid #999999;
-  background-color: #FFF7CC;
+  background-color: $basal-color-form-highlight;
   outline: none;
 }
 
@@ -215,24 +215,27 @@
   background-color: #ecf0f1;
 }
 
-/* Mensagens e Alertas */
 
 
+/*
+ * Quebra de layout para Tablet
+ *
+ */
 
-@media (max-width: 800px) {
+ @media all and (max-width: $basal-media-tablet) {
 
-.form-row {
-  padding: 0 $basal-padding;
-}
+    .form-row {
+        padding: 0 $basal-padding;
+    }
 
-  .input-text-66 input[type="text"] ,
-  .input-text-33 input[type="text"] ,
-  .input-text-66 input[type="password"] ,
-  .input-text-33 input[type="password"]  {
-    width: 100%;
-  }
+    .input-text-66 input[type="text"] ,
+    .input-text-33 input[type="text"] ,
+    .input-text-66 input[type="password"] ,
+    .input-text-33 input[type="password"]  {
+        width: 100%;
+    }
 
 
-} /* Fim @media (max-width: 800px) */
+    } /* Fim da Quebra de layout para Tablet */
 
-/* Formulários  */
+    /* FIM de Formulários  */

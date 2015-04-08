@@ -73,12 +73,11 @@
 
 
 /*
- * Primeiro ajuste de layout
- * Quando menor que o tamanho máximo de colunas + 10 pixels
+ * Quebra de layout no limite da largura máxima de colunas
  *
  */
 
-@media (max-width: ($basal-max-width + 10)) {
+@media all and (max-width: $basal-media-inbound) {
 
     .img { padding: ($basal-leading / 2) 0; }
 
@@ -96,21 +95,19 @@
     }
 
 
-}
-/* Fim do primeiro ajuste de layout */
+} /* FIM da quebra de layout */
 
 
 /*
- * Segundo ajuste de layout (Tablet)
+ * Quebra de layout para Tablet
  *
  */
 
-@media (max-width: 800px) {
+@media all and (max-width: $basal-media-tablet) {
 
     .img { padding: ($basal-leading / 2) $basal-padding; }
 
-}
-/* Fim do segundo ajuste de layout */
+} /* Fim da Quebra de layout para Tablet */
 
 /* FIM Imagens */
 

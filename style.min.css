@@ -71,6 +71,12 @@ a:visited { color: #217dbb; }
 
 header, menu, nav, article, section, aside, details, figcaption, figure, footer { display: block; margin: 0; padding: 0; }
 
+/* WebKit/Blink Browsers */
+::selection { background: #e6eeff; }
+
+/* Gecko Browsers */
+::-moz-selection { background: #e6eeff; }
+
 /* Aplica o modelo de caixa semelhante ao do IE */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -132,10 +138,11 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .text-legend h1 + p, .text-legend h2 + p, .text-legend h3 + p, .text-legend h4 + p, .text-legend h5 + p, .text-legend h6 + p { padding: 0 0 0.5em; }
 
-/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
-@media (max-width: 1150px) { figcaption { position: relative; } }
+/* Quebra de layout no limite da largura máxima de colunas  */
+@media all and (max-width: 1187px) { figcaption { position: relative; } }
 /* FIM do primeiro ajuste de layout */
-@media (max-width: 800px) { h1, h2, h3, h4, h5, h6 { font-size: 3em; line-height: 1.3em; min-height: 1em; }
+/* Quebra de layout para Tablet  */
+@media all and (max-width: 900px) { h1, h2, h3, h4, h5, h6 { font-size: 3em; line-height: 1.3em; min-height: 1em; }
   h2 { font-size: 2.6em; }
   h3 { font-size: 2.0em; }
   h4, h5, h6 { font-size: 1.6em; }
@@ -144,7 +151,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote { margin: 0 15px; }
   figcaption { position: relative; }
   .brno { white-space: normal; } }
-/* FIM (max-width: 800px) */
+/* Fim da Quebra de layout para Tablet */
 /* Estruturas de Colunas fixas  */
 ._basal-desktop, .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { float: left; width: 100%; }
 
@@ -422,8 +429,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .max-h-20 { height: 600px; }
 
-/* Primeiro ajuste de layout Quando menor que o tamanho máximo de colunas + ($basal-col-fixed / 2)  */
-@media screen and (max-width: 1187px) { .desktop-1 { width: 8.33333%; }
+/* Quebra de layout no limite da largura máxima de colunas  */
+@media all and (max-width: 1187px) { .desktop-1 { width: 8.33333%; }
   .desktop-2 { width: 16.66667%; }
   .desktop-3 { width: 25%; }
   .desktop-4 { width: 33.33333%; }
@@ -459,8 +466,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .col-right-11 { margin-right: 91.66667%; }
   ._basal-max-h-tablet, .max-h-1, .max-h-2, .max-h-3, .max-h-4, .max-h-5, .max-h-6, .max-h-7, .max-h-8, .max-h-9, .max-h-10, .max-h-11, .max-h-12, .max-h-13, .max-h-14, .max-h-15, .max-h-16, .max-h-17, .max-h-18, .max-h-19, .max-h-20 { height: auto; min-height: 1em; overflow: hidden; } }
 /* Fim do primeiro ajuste de layout */
-/* Segundo ajuste de layout (Tablet)  */
-@media screen and (max-width: 800px) { ._basal-desktop-tablet, .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { width: 100%; float: none; max-width: none; }
+/* Quebra de layout para Tablet  */
+@media all and (max-width: 900px) { ._basal-desktop-tablet, .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { width: 100%; float: none; max-width: none; }
   ._basal-col-right-mobile, .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-right: 0; }
   .tablet-1 { width: 25%; float: left; }
   .tablet-2 { width: 50%; float: left; }
@@ -468,17 +475,19 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .gutter, .gutter-left, .gutter-right { padding: 0; }
   ._basal-col-left-mobile, .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-left: 0; } }
 /* Fim do segundo ajuste de layout */
-/* Terceiro ajuste de layout (Mobile < 700)  */
-@media screen and (max-width: 700px) { .col { overflow: visible; display: block; }
+/* Quebra de layout para Mobile  */
+@media all and (max-width: 480px) { .col { overflow: visible; display: block; }
   .hide-desktop { display: block; }
   .hide-mobile { display: none; }
-  .mobile-2 { width: 50%; float: left; }
   ._basal-col-mobile, .tablet-1, .tablet-2, .tablet-3, .col-20, .col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 { width: 100%; float: none; }
+  .mobile-2 { width: 50%; float: left; }
   ._basal-padding-top-mobile, .padding-top-1, .padding-top-2, .padding-top-3, .padding-top-4, .padding-top-5 { padding-top: 1em; }
   ._basal-padding-bottom-mobile, .padding-bottom-1, .padding-bottom-2, .padding-bottom-3, .padding-bottom-4, .padding-bottom-5 { padding-bottom: 1em; }
   ._basal-margin-top-mobile, .margin-top-1, .margin-top-2, .margin-top-3, .margin-top-4, .margin-top-5 { margin-top: 1em; }
   ._basal-margin-bottom-mobile, .margin-bottom-1, .margin-bottom-2, .margin-bottom-3, .margin-bottom-4, .margin-bottom-5 { margin-bottom: 1em; } }
-@media screen and (max-width: 360px) { .mobile-2 { width: 100%; float: none; } }
+/* Fim do segundo ajuste de layout */
+/* Quebra de layout para Mobile  */
+@media all and (max-width: 360px) { .mobile-2 { width: 100%; float: none; } }
 /* Nicolas Gallagher's micro clearfix */
 .row { *zoom: 1; }
 
@@ -526,11 +535,11 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .header-inline .submenu ul li { margin: 0; padding: 0; }
 
-/* Primeiro ajuste de layout, quando menos que o tamanho máximo + 10 pixels */
-@media (max-width: 1150px) { .header-inline .header-search { position: relative; right: 0; top: 0; display: block; padding-bottom: 20px; } }
-/* FIM do primeiro ajuste de layout */
-/* @media (max-width: 1000px) */
-@media (max-width: 1000px) { /* Cabeçalho do Site e Navegação */
+/* Quebra de layout no limite da largura máxima de colunas  */
+@media all and (max-width: 1187px) { .header-inline .header-search { position: relative; right: 0; top: 0; display: block; padding-bottom: 20px; } }
+/* FIM da quebra de layout */
+/* Quebra de layout para Tablet  */
+@media all and (max-width: 900px) { /* Cabeçalho do Site e Navegação */
   .header { position: relative; min-height: 13.5em; }
   .site-logo { width: 100%; padding: 0 15px; }
   .site-logo .site-description { width: 90%; padding-top: 0; padding-bottom: 10px; }
@@ -546,7 +555,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .header-inline .nav-inline li a { padding: 0 2em 0 1em; }
   .header-inline .submenu ul li { margin: 0; padding: 0 0 0 1em; }
   .header-inline .nav-inline:hover .nav-mobile { color: #2e3333; } }
-/* FIM @media (max-width: 1000px) */
+/* Fim da Quebra de layout para Tablet */
 /* FIM Cabeçalho do Site e Navegação */
 /* Menu navInline */
 .nav-inline { vertical-align: middle; margin: 0 0; padding: 0 0; display: inline-block; }
@@ -567,9 +576,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .nav-mobile, .nav-close { display: none; }
 
-/* Submenu de links do Menu nav-inline */
-/* @media (max-width: 1000px) */
-@media (min-width: 1000px) { .submenu { position: relative; overflow: hidden; }
+/* Submenu de links do Menu nav-inline  Esta "media query" aplica as propriedades a partir da largura especificada para uma quebra de tablet até ao infinito (sentido de dentro para fora). Quando a janela for menor que a quebra de uma tablet, as propriedades cessam de existir.  */
+@media all and (min-width: 900px) { .submenu { position: relative; overflow: hidden; }
   .submenu:hover { color: #000; overflow: visible; }
   .submenu ul { margin: -5px 0 0; padding: 10px 0 0; opacity: 0; border: none; background-color: #FFF; box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); position: absolute; z-index: 9995; }
   .submenu ul:after { content: ""; width: 20px; height: 20px; display: block; border: none; background-color: #FFFFFF; box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); position: absolute; top: -10px; left: 20px; z-index: -9994; -webkit-transform-origin: 0 0; -webkit-transform: rotate(45deg); transform-origin: 0 0; transform: rotate(45deg); }
@@ -580,8 +588,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .submenu ul li a { margin: 0 0; padding: 0 1em; display: block; text-align: left; }
   .submenu ul li a:hover { color: #FFF; background: #3498DB; }
   .submenu .current > a, .submenu .current-menu-item > a, .submenu .current_page_item > a, .submenu .current-post-ancestor > a, .submenu .current-menu-ancestor > a, .submenu .current-menu-parent > a, .submenu .current-custom-parent > a { color: #000; font-weight: 700; } }
-/* @media (max-width: 1000px) */
-@media (max-width: 1000px) { .nav-inline { display: block; }
+/* Fim da quebra de layout */
+/* Quebra de layout para Tablet  */
+@media all and (max-width: 900px) { .nav-inline { display: block; }
   .nav-mobile { color: #95a5a5; font-size: 28px; line-height: 30px; margin: 0 0 0 auto; padding: 5px 8px; width: 40px; display: block; }
   .nav-mobile:hover { color: #2e3333; }
   .nav-inline > ul { background: #fff; border-top: 1px solid #c5cdcd; border-bottom: 1px solid #c5cdcd; }
@@ -593,7 +602,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .submenu li a { padding-left: 1em; }
   .submenu .fa-chevron-down { display: none; }
   .nav-inline .current > a, .nav-inline .current-menu-item > a, .nav-inline .current_page_item > a, .nav-inline .current-post-ancestor > a, .nav-inline .current-menu-ancestor > a, .nav-inline .current-menu-parent > a, .nav-inline .current-custom-parent > a { border: none; } }
-/* FIM @media (max-width: 800px) */
+/* Fim da Quebra de layout para Tablet */
 /* FIM Menu nav-inline */
 /* Imagens  Exemplo de aplicação: <div class="img max-h-8"> <img src="nome_da_image.png" height="530" width="800"> </div> <figure class="max-h-8"> <img src="nome_da_image.png" height="530" width="800"> </figure>  */
 .img { position: relative; }
@@ -611,15 +620,15 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* img-align-text  A caixa da entidade HTML (DIV ou FIGURE), que envolve a imagem, recebe uma propriedade extra no padding-top, empurando a imagem para o alinhamento visual com o texto das colunas ao lado.  Exemplo de aplicação: <figure class="img-align-text max-h-8"> <img src="nome_da_image.png" height="530" width="800"> </figure>  */
 .img-align-text { padding-top: 1.4em; }
 
-/* Primeiro ajuste de layout Quando menor que o tamanho máximo de colunas + 10 pixels  */
-@media (max-width: 1150px) { .img { padding: 15px 0; }
+/* Quebra de layout no limite da largura máxima de colunas  */
+@media all and (max-width: 1187px) { .img { padding: 15px 0; }
   .img figcaption, .img-legend { position: relative; }
   .img-align-text { margin-top: 0; margin-bottom: 0; }
   .img .img-normal { width: 100%; height: auto; } }
-/* Fim do primeiro ajuste de layout */
-/* Segundo ajuste de layout (Tablet)  */
-@media (max-width: 800px) { .img { padding: 15px 15px; } }
-/* Fim do segundo ajuste de layout */
+/* FIM da quebra de layout */
+/* Quebra de layout para Tablet  */
+@media all and (max-width: 900px) { .img { padding: 15px 15px; } }
+/* Fim da Quebra de layout para Tablet */
 /* FIM Imagens */
 /* Formulários  */
 .form-row { margin: 0; padding: 0; list-style: none; min-height: 90px; }
@@ -636,9 +645,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .input-text input[type="text"], .input-text input[type="password"] { font-size: 2.0em; font-family: inherit; line-height: 1.4em; letter-spacing: 0.06em; vertical-align: middle; white-space: pre; margin: 0; padding: 0.35em 0.6em; width: 100%; min-height: 1em; display: block; border: 1px solid #BFBFBF; border-radius: 3px; box-shadow: inset 1px 1px 3px #CCCCCB; background-color: #F8F8F9; outline: none; transition: background-color 1s ease 0s,border 1s ease 0s; }
 
-.input-text input[type="text"]:hover, .input-text input[type="password"]:hover { border: 1px solid #999999; background-color: #FFF7CC; transition: background-color 1s ease 0s,border 1s ease 0s; }
+.input-text input[type="text"]:hover, .input-text input[type="password"]:hover { border: 1px solid #999999; background-color: #e6eeff; transition: background-color 1s ease 0s,border 1s ease 0s; }
 
-.input-text input[type="text"]:focus, .input-text input[type="password"]:focus { border: 1px solid #999999; background-color: #FFF7CC; }
+.input-text input[type="text"]:focus, .input-text input[type="password"]:focus { border: 1px solid #999999; background-color: #e6eeff; }
 
 .input-text-66 input[type="text"], .input-text-66 input[type="password"] { width: 66%; }
 
@@ -656,9 +665,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .select-dropdown select { color: #000; font-family: inherit; font-size: 1.6em; line-height: 40px; margin: 0; padding: 0.6em 0.3em 0.6em 0.3em; min-height: 36px; width: 100%; border: 1px solid #BFBFBF; border-bottom: 2px solid #BFBFBF; border-radius: 3px; box-shadow: 1px 1px 3px #CCCCCB; background-color: #F8F8F9; transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s; outline: none; }
 
-.select-dropdown select:hover { border: 1px solid #999999; background-color: #FFF7CC; outline: none; }
+.select-dropdown select:hover { border: 1px solid #999999; background-color: #e6eeff; outline: none; }
 
-.select-dropdown select:focus { border: 1px solid #999999; background-color: #FFF7CC; outline: none; }
+.select-dropdown select:focus { border: 1px solid #999999; background-color: #e6eeff; outline: none; }
 
 .label-inline label { font-size: 1.2em; font-weight: 400; line-height: 1.666em; padding: 0; margin: 0; float: left; }
 
@@ -681,11 +690,11 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .error-input input:focus { border: none; border-left: 6px solid #16a085; background-color: #ecf0f1; }
 
-/* Mensagens e Alertas */
-@media (max-width: 800px) { .form-row { padding: 0 15px; }
+/* Quebra de layout para Tablet  */
+@media all and (max-width: 900px) { .form-row { padding: 0 15px; }
   .input-text-66 input[type="text"], .input-text-33 input[type="text"], .input-text-66 input[type="password"], .input-text-33 input[type="password"] { width: 100%; } }
-/* Fim @media (max-width: 800px) */
-/* Formulários  */
+/* Fim da Quebra de layout para Tablet */
+/* FIM de Formulários  */
 /* Botões de Interface */
 .btn-basic, .btn-basic:visited, input[type="submit"] { color: #2E3333; font-size: 14px; font-weight: bold; line-height: 42px; min-height: 42px; vertical-align: middle; text-transform: uppercase; text-decoration: none; margin: 0.5em 1em 0.5em 0; padding: 0 1.6em; display: inline-block; border: 0; border-radius: 3px; position: relative; background-color: #c5cdcd; transition: background-color ease 0.5s; }
 
@@ -718,8 +727,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .btn-red:hover, input[type="submit"].btnRed:hover { color: #FFF; background-color: #CC3300; }
 
-@media (max-width: 800px) { .btn-row { padding: 0 15px; } }
-/* Fim @media (max-width: 800px) */
+/* Quebra de layout para Tablet  */
+@media all and (max-width: 900px) { .btn-row { padding: 0 15px; } }
+/* Fim da Quebra de layout para Tablet */
 /* FIM Botões de Interface  */
 /* Customização */
 body { font-family: 'Open Sans', sans-serif; }
