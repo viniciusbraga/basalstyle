@@ -170,12 +170,11 @@
 
 
 /*
- * Primeiro ajuste de layout
- * Quando menor que o tamanho máximo de colunas + ($basal-col-fixed / 2)
+ * Quebra de layout no limite da largura máxima de colunas
  *
  */
 
-@media screen and  (max-width: ( $basal-max-width + floor($basal-col-fixed / 2) )) {
+@media all and (max-width: $basal-media-inbound) {
 
     @for $i from 1 through $basal-col-number {
 
@@ -217,16 +216,15 @@
     }
 
 
-}
-/* Fim do primeiro ajuste de layout */
+} /* Fim do primeiro ajuste de layout */
 
 
 /*
- * Segundo ajuste de layout (Tablet)
+ * Quebra de layout para Tablet
  *
  */
 
-@media screen and  (max-width: 800px){
+@media all and (max-width: $basal-media-tablet) {
 
     ._basal-desktop-tablet {
         width: 100%;
@@ -266,16 +264,15 @@
 
     ._basal-col-left-mobile { margin-left: 0; }
 
-}
-/* Fim do segundo ajuste de layout */
+} /* Fim do segundo ajuste de layout */
 
 
 /*
- * Terceiro ajuste de layout (Mobile < 700)
+ * Quebra de layout para Mobile
  *
  */
 
-@media screen and (max-width: 700px) {
+@media all and (max-width: $basal-media-mobile) {
 
     .col {
         overflow: visible;
@@ -285,12 +282,6 @@
     .hide-desktop { display: block; }
 
     .hide-mobile  { display: none; }
-
-    .mobile-2 {
-        width: 50%;
-        float: left;
-    }
-
 
     ._basal-col-mobile {
         width: 100%;
@@ -306,6 +297,11 @@
         .col-#{$i} {
             @extend ._basal-col-mobile;
         }
+    }
+
+    .mobile-2 {
+        width: 50%;
+        float: left;
     }
 
     ._basal-padding-top-mobile { padding-top: 1em; }

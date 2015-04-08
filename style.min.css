@@ -423,8 +423,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .max-h-20 { height: 600px; }
 
-/* Primeiro ajuste de layout Quando menor que o tamanho máximo de colunas + ($basal-col-fixed / 2)  */
-@media screen and (max-width: 1187px) { .desktop-1 { width: 8.33333%; }
+/* Quebra de layout no limite da largura máxima de colunas  */
+@media all and (max-width: 1187px) { .desktop-1 { width: 8.33333%; }
   .desktop-2 { width: 16.66667%; }
   .desktop-3 { width: 25%; }
   .desktop-4 { width: 33.33333%; }
@@ -460,8 +460,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .col-right-11 { margin-right: 91.66667%; }
   ._basal-max-h-tablet, .max-h-1, .max-h-2, .max-h-3, .max-h-4, .max-h-5, .max-h-6, .max-h-7, .max-h-8, .max-h-9, .max-h-10, .max-h-11, .max-h-12, .max-h-13, .max-h-14, .max-h-15, .max-h-16, .max-h-17, .max-h-18, .max-h-19, .max-h-20 { height: auto; min-height: 1em; overflow: hidden; } }
 /* Fim do primeiro ajuste de layout */
-/* Segundo ajuste de layout (Tablet)  */
-@media screen and (max-width: 800px) { ._basal-desktop-tablet, .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { width: 100%; float: none; max-width: none; }
+/* Quebra de layout para Tablet  */
+@media all and (max-width: 900px) { ._basal-desktop-tablet, .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { width: 100%; float: none; max-width: none; }
   ._basal-col-right-mobile, .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-right: 0; }
   .tablet-1 { width: 25%; float: left; }
   .tablet-2 { width: 50%; float: left; }
@@ -469,17 +469,19 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .gutter, .gutter-left, .gutter-right { padding: 0; }
   ._basal-col-left-mobile, .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-left: 0; } }
 /* Fim do segundo ajuste de layout */
-/* Terceiro ajuste de layout (Mobile < 700)  */
-@media screen and (max-width: 700px) { .col { overflow: visible; display: block; }
+/* Quebra de layout para Mobile  */
+@media all and (max-width: 480px) { .col { overflow: visible; display: block; }
   .hide-desktop { display: block; }
   .hide-mobile { display: none; }
-  .mobile-2 { width: 50%; float: left; }
   ._basal-col-mobile, .tablet-1, .tablet-2, .tablet-3, .col-20, .col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 { width: 100%; float: none; }
+  .mobile-2 { width: 50%; float: left; }
   ._basal-padding-top-mobile, .padding-top-1, .padding-top-2, .padding-top-3, .padding-top-4, .padding-top-5 { padding-top: 1em; }
   ._basal-padding-bottom-mobile, .padding-bottom-1, .padding-bottom-2, .padding-bottom-3, .padding-bottom-4, .padding-bottom-5 { padding-bottom: 1em; }
   ._basal-margin-top-mobile, .margin-top-1, .margin-top-2, .margin-top-3, .margin-top-4, .margin-top-5 { margin-top: 1em; }
   ._basal-margin-bottom-mobile, .margin-bottom-1, .margin-bottom-2, .margin-bottom-3, .margin-bottom-4, .margin-bottom-5 { margin-bottom: 1em; } }
-@media screen and (max-width: 360px) { .mobile-2 { width: 100%; float: none; } }
+/* Fim do segundo ajuste de layout */
+/* Quebra de layout para Mobile  */
+@media all and (max-width: 360px) { .mobile-2 { width: 100%; float: none; } }
 /* Nicolas Gallagher's micro clearfix */
 .row { *zoom: 1; }
 
