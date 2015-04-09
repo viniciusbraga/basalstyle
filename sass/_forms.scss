@@ -61,8 +61,7 @@
     display: block;
 }
 
-.input-text input[type="text"] ,
-.input-text input[type="password"] {
+.input-text input {
     color: $basal-form-text-color;
     font-size: 2.0em;
     font-family: inherit;
@@ -82,25 +81,21 @@
     outline: none;
     transition: background-color 1s ease 0s,border 1s ease 0s;
 }
-.input-text input[type="text"]:hover ,
-.input-text input[type="password"]:hover {
+.input-text input:hover {
     border: $basal-form-border-hover;
     background-color: $basal-form-background-hover;
     transition: background-color 1s ease 0s,border 1s ease 0s;
 }
-.input-text input[type="text"]:focus ,
-.input-text input[type="password"]:focus {
+.input-text input:focus {
     border: $basal-form-border-focus;
     background-color: $basal-form-background-focus;
 }
 
-.input-text-66 input[type="text"] ,
-.input-text-66 input[type="password"] {
+.input-text-66 input {
     width: 66%;
 }
 
-.input-text-33 input[type="text"] ,
-.input-text-33 input[type="password"] {
+.input-text-33 input {
     width: 33%;
 }
 
@@ -239,10 +234,9 @@
         padding: 0 $basal-padding;
     }
 
-    .input-text-66 input[type="text"] ,
-    .input-text-33 input[type="text"] ,
-    .input-text-66 input[type="password"] ,
-    .input-text-33 input[type="password"]  {
+
+    .input-text-66 input,
+    .input-text-33 input {
         width: 100%;
     }
 
