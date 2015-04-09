@@ -2,7 +2,7 @@
 /* Remove unidade de uma variável Baseado na função existente no Foundation https://github.com/zurb/foundation/blob/4d54d0c0851faa02b500c0707241424d27a9b26e/scss/foundation/_functions.scss */
 /* GridForMe (https://github.com/henriquebastos/gridforme) Os parâmetros para construção da imagem de grid:  /i/{colunas}/{largura da coluna}/{leading}/{gutter}/?bg=cor&v=cor&h=cor  */
 /* Etiquetas HTML obs: Não é necessário aplicar o CSS RESET com este código na página. */
-html { font-size: 62.5%; background-color: white; }
+html { font-size: 62.5%; background-color: #ffffff; }
 
 body { color: #111100; font-size: 1em; line-height: 2.7; font-family: sans-serif; margin: 0; padding: 0; }
 
@@ -61,9 +61,9 @@ fieldset { border: solid 1px #c5cdcd; }
 
 textarea { font-family: inherit; font-size: 1.5em; margin: 0 1.2em; padding: 0.75em 0.5em 0.5em 0.75em; width: 93%; border: 1px solid #c5cdcd; }
 
-a { color: #3498db; }
+a { color: #3498DB; }
 
-a:hover { color: #2980b9; }
+a:hover { color: #2980B9; }
 
 a:active { color: #cb6724; }
 
@@ -72,10 +72,10 @@ a:visited { color: #217dbb; }
 header, menu, nav, article, section, aside, details, figcaption, figure, footer { display: block; margin: 0; padding: 0; }
 
 /* WebKit/Blink Browsers */
-::selection { background: #e6eeff; }
+::selection { background: #DDE6E6; }
 
 /* Gecko Browsers */
-::-moz-selection { background: #e6eeff; }
+::-moz-selection { background: #DDE6E6; }
 
 /* Aplica o modelo de caixa semelhante ao do IE */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -306,85 +306,85 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .gutter-right { padding-right: 15px; }
 
 /* Altura mínima do elemento HTML  Uso: Tem momentos que você precisa de uma altura mínima no elemento HTML. Esta classe especifica a altura mínima com valor múltiplo da entrelinha, sem limitar o conteúdo, caso cresça em tamanho e quantidade de elementos. Ex: Um uso comum: <div class="row min-h-7">  */
-.min-h-1 { min-height: 30px; }
+.min-h-1, .form-row.min-h-1 { min-height: 30px; }
 
-.min-h-2 { min-height: 60px; }
+.min-h-2, .form-row.min-h-2 { min-height: 60px; }
 
-.min-h-3 { min-height: 90px; }
+.min-h-3, .form-row.min-h-3 { min-height: 90px; }
 
-.min-h-4 { min-height: 120px; }
+.min-h-4, .form-row.min-h-4 { min-height: 120px; }
 
-.min-h-5 { min-height: 150px; }
+.min-h-5, .form-row.min-h-5 { min-height: 150px; }
 
-.min-h-6 { min-height: 180px; }
+.min-h-6, .form-row.min-h-6 { min-height: 180px; }
 
-.min-h-7 { min-height: 210px; }
+.min-h-7, .form-row.min-h-7 { min-height: 210px; }
 
-.min-h-8 { min-height: 240px; }
+.min-h-8, .form-row.min-h-8 { min-height: 240px; }
 
-.min-h-9 { min-height: 270px; }
+.min-h-9, .form-row.min-h-9 { min-height: 270px; }
 
-.min-h-10 { min-height: 300px; }
+.min-h-10, .form-row.min-h-10 { min-height: 300px; }
 
-.min-h-11 { min-height: 330px; }
+.min-h-11, .form-row.min-h-11 { min-height: 330px; }
 
-.min-h-12 { min-height: 360px; }
+.min-h-12, .form-row.min-h-12 { min-height: 360px; }
 
-.min-h-13 { min-height: 390px; }
+.min-h-13, .form-row.min-h-13 { min-height: 390px; }
 
-.min-h-14 { min-height: 420px; }
+.min-h-14, .form-row.min-h-14 { min-height: 420px; }
 
-.min-h-15 { min-height: 450px; }
+.min-h-15, .form-row.min-h-15 { min-height: 450px; }
 
-.min-h-16 { min-height: 480px; }
+.min-h-16, .form-row.min-h-16 { min-height: 480px; }
 
-.min-h-17 { min-height: 510px; }
+.min-h-17, .form-row.min-h-17 { min-height: 510px; }
 
-.min-h-18 { min-height: 540px; }
+.min-h-18, .form-row.min-h-18 { min-height: 540px; }
 
-.min-h-19 { min-height: 570px; }
+.min-h-19, .form-row.min-h-19 { min-height: 570px; }
 
-.min-h-20 { min-height: 600px; }
+.min-h-20, .form-row.min-h-20 { min-height: 600px; }
 
-.min-h-21 { min-height: 630px; }
+.min-h-21, .form-row.min-h-21 { min-height: 630px; }
 
-.min-h-22 { min-height: 660px; }
+.min-h-22, .form-row.min-h-22 { min-height: 660px; }
 
-.min-h-23 { min-height: 690px; }
+.min-h-23, .form-row.min-h-23 { min-height: 690px; }
 
-.min-h-24 { min-height: 720px; }
+.min-h-24, .form-row.min-h-24 { min-height: 720px; }
 
-.min-h-25 { min-height: 750px; }
+.min-h-25, .form-row.min-h-25 { min-height: 750px; }
 
-.min-h-26 { min-height: 780px; }
+.min-h-26, .form-row.min-h-26 { min-height: 780px; }
 
-.min-h-27 { min-height: 810px; }
+.min-h-27, .form-row.min-h-27 { min-height: 810px; }
 
-.min-h-28 { min-height: 840px; }
+.min-h-28, .form-row.min-h-28 { min-height: 840px; }
 
-.min-h-29 { min-height: 870px; }
+.min-h-29, .form-row.min-h-29 { min-height: 870px; }
 
-.min-h-30 { min-height: 900px; }
+.min-h-30, .form-row.min-h-30 { min-height: 900px; }
 
-.min-h-31 { min-height: 930px; }
+.min-h-31, .form-row.min-h-31 { min-height: 930px; }
 
-.min-h-32 { min-height: 960px; }
+.min-h-32, .form-row.min-h-32 { min-height: 960px; }
 
-.min-h-33 { min-height: 990px; }
+.min-h-33, .form-row.min-h-33 { min-height: 990px; }
 
-.min-h-34 { min-height: 1020px; }
+.min-h-34, .form-row.min-h-34 { min-height: 1020px; }
 
-.min-h-35 { min-height: 1050px; }
+.min-h-35, .form-row.min-h-35 { min-height: 1050px; }
 
-.min-h-36 { min-height: 1080px; }
+.min-h-36, .form-row.min-h-36 { min-height: 1080px; }
 
-.min-h-37 { min-height: 1110px; }
+.min-h-37, .form-row.min-h-37 { min-height: 1110px; }
 
-.min-h-38 { min-height: 1140px; }
+.min-h-38, .form-row.min-h-38 { min-height: 1140px; }
 
-.min-h-39 { min-height: 1170px; }
+.min-h-39, .form-row.min-h-39 { min-height: 1170px; }
 
-.min-h-40 { min-height: 1200px; }
+.min-h-40, .form-row.min-h-40 { min-height: 1200px; }
 
 /* Altura máxima do bloco HTML  Uso: Aplíca-se para conter a altura da imagem dentro do grid. Esta classe especifica a altura máxima do bloco HTML com valor múltiplo da entrelinha. Ela restringe a visualização do conteúdo, como se fosse uma máscara com altura máxima. Ex: Um uso comum: <figure class="max-h-6"><img></figure>  */
 ._basal-max-h, .max-h-1, .max-h-2, .max-h-3, .max-h-4, .max-h-5, .max-h-6, .max-h-7, .max-h-8, .max-h-9, .max-h-10, .max-h-11, .max-h-12, .max-h-13, .max-h-14, .max-h-15, .max-h-16, .max-h-17, .max-h-18, .max-h-19, .max-h-20 { min-height: 1em; overflow: hidden; }
@@ -554,7 +554,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .header-inline .nav-inline li { margin: 0; padding-left: 0; border: none; }
   .header-inline .nav-inline li a { padding: 0 2em 0 1em; }
   .header-inline .submenu ul li { margin: 0; padding: 0 0 0 1em; }
-  .header-inline .nav-inline:hover .nav-mobile { color: #2e3333; } }
+  .header-inline .nav-inline:hover .nav-mobile { color: #2E3333; } }
 /* Fim da Quebra de layout para Tablet */
 /* FIM Cabeçalho do Site e Navegação */
 /* Menu navInline */
@@ -570,7 +570,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .nav-inline li a { font-size: 1.4em; font-weight: 400; line-height: 45px; font-weight: 700; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; display: block; transition: color 0.3s; }
 
-.nav-inline li a:hover { color: #000; border-top-color: #2e3333; }
+.nav-inline li a:hover { color: #000; border-top-color: #2E3333; }
 
 .nav-inline .current > a, .nav-inline .current-menu-item > a, .nav-inline .current_page_item > a, .nav-inline .current-post-ancestor > a, .nav-inline .current-menu-ancestor > a, .nav-inline .current-menu-parent > a, .nav-inline .current-custom-parent > a { color: #000; font-weight: 700; }
 
@@ -591,14 +591,14 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Fim da quebra de layout */
 /* Quebra de layout para Tablet  */
 @media all and (max-width: 900px) { .nav-inline { display: block; }
-  .nav-mobile { color: #95a5a5; font-size: 28px; line-height: 30px; margin: 0 0 0 auto; padding: 5px 8px; width: 40px; display: block; }
-  .nav-mobile:hover { color: #2e3333; }
-  .nav-inline > ul { background: #fff; border-top: 1px solid #c5cdcd; border-bottom: 1px solid #c5cdcd; }
-  .nav-inline li { margin: 0; padding-left: 15px; float: none; border-top: 1px solid #c5cdcd; border-bottom: 1px solid #c5cdcd; }
+  .nav-mobile { color: #95A5A5; font-size: 28px; line-height: 30px; margin: 0 0 0 auto; padding: 5px 8px; width: 40px; display: block; }
+  .nav-mobile:hover { color: #2E3333; }
+  .nav-inline > ul { background: #fff; border-top: 1px solid #C5CDCD; border-bottom: 1px solid #C5CDCD; }
+  .nav-inline li { margin: 0; padding-left: 15px; float: none; border-top: 1px solid #C5CDCD; border-bottom: 1px solid #C5CDCD; }
   .nav-inline li a { border: none; }
   .nav-inline .submenu { padding-left: 0; }
   .nav-inline .submenu > a { padding-left: 15px; }
-  .submenu li { border-top: 1px solid #c5cdcd; border-bottom: none; }
+  .submenu li { border-top: 1px solid #C5CDCD; border-bottom: none; }
   .submenu li a { padding-left: 1em; }
   .submenu .fa-chevron-down { display: none; }
   .nav-inline .current > a, .nav-inline .current-menu-item > a, .nav-inline .current_page_item > a, .nav-inline .current-post-ancestor > a, .nav-inline .current-menu-ancestor > a, .nav-inline .current-menu-parent > a, .nav-inline .current-custom-parent > a { border: none; } }
@@ -637,21 +637,23 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .form-row a { text-decoration: none; }
 
-.form-row label, .form-row legend { color: #000; font-size: 14px; font-weight: 700; line-height: 30px; letter-spacing: 0.06em; text-transform: none; padding: 0; margin: 0; }
+.form-row label, .form-row legend { color: #191919; font-size: 14px; font-weight: 700; line-height: 30px; letter-spacing: 0.06em; text-transform: none; padding: 0; margin: 0; }
 
-.form-row textarea { font-family: inherit; font-size: 1.5em; margin: 0; padding: 0.75em 0.5em 0.5em 0.75em; width: 100%; border: 1px solid #D9D9D9; border-bottom: 2px solid #CCCCCC; border-right: 2px solid #CCCCCC; }
+.form-row textarea { color: #191919; font-family: inherit; font-size: 1.6em; margin: 0; padding: 0.75em 0.5em 0.5em 0.75em; width: 100%; min-height: 120px; border: 1px solid #B5B5B5; border-radius: 3px; box-shadow: inset 1px 1px 3px #CCCCCC; background-color: #F5F5F5; transition: background-color 1s ease 0s,border 1s ease 0s; }
+
+.form-row textarea:focus { border: 1px solid #5C5C5C; background-color: #e7f2fa; }
 
 .label-block label, .form-row legend { display: block; }
 
-.input-text input[type="text"], .input-text input[type="password"] { font-size: 2.0em; font-family: inherit; line-height: 1.4em; letter-spacing: 0.06em; vertical-align: middle; white-space: pre; margin: 0; padding: 0.35em 0.6em; width: 100%; min-height: 1em; display: block; border: 1px solid #BFBFBF; border-radius: 3px; box-shadow: inset 1px 1px 3px #CCCCCB; background-color: #F8F8F9; outline: none; transition: background-color 1s ease 0s,border 1s ease 0s; }
+.input-text input { color: #191919; font-size: 2.0em; font-family: inherit; line-height: 1.4em; letter-spacing: 0.06em; vertical-align: middle; white-space: pre; margin: 0; padding: 0.35em 0.6em; width: 100%; min-height: 1em; display: block; border: 1px solid #B5B5B5; border-radius: 3px; box-shadow: inset 1px 1px 3px #CCCCCC; background-color: #F5F5F5; outline: none; transition: background-color 1s ease 0s,border 1s ease 0s; }
 
-.input-text input[type="text"]:hover, .input-text input[type="password"]:hover { border: 1px solid #999999; background-color: #e6eeff; transition: background-color 1s ease 0s,border 1s ease 0s; }
+.input-text input:hover { border: 1px solid #999999; background-color: #ffffff; transition: background-color 1s ease 0s,border 1s ease 0s; }
 
-.input-text input[type="text"]:focus, .input-text input[type="password"]:focus { border: 1px solid #999999; background-color: #e6eeff; }
+.input-text input:focus { border: 1px solid #5C5C5C; background-color: #e7f2fa; }
 
-.input-text-66 input[type="text"], .input-text-66 input[type="password"] { width: 66%; }
+.input-text-66 input { width: 66%; }
 
-.input-text-33 input[type="text"], .input-text-33 input[type="password"] { width: 33%; }
+.input-text-33 input { width: 33%; }
 
 .input-radio fieldset { padding: 0; border: none; }
 
@@ -663,11 +665,11 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .input-radio input { display: inline-block; margin-right: 0.66em; }
 
-.select-dropdown select { color: #000; font-family: inherit; font-size: 1.6em; line-height: 40px; margin: 0; padding: 0.6em 0.3em 0.6em 0.3em; min-height: 36px; width: 100%; border: 1px solid #BFBFBF; border-bottom: 2px solid #BFBFBF; border-radius: 3px; box-shadow: 1px 1px 3px #CCCCCB; background-color: #F8F8F9; transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s; outline: none; }
+.select-dropdown select { color: #191919; font-family: inherit; font-size: 1.6em; line-height: 40px; margin: 0; padding: 0.6em 0.3em 0.6em 0.3em; min-height: 36px; width: 100%; border: 1px solid #B5B5B5; border-radius: 3px; box-shadow: 1px 1px 3px #CCCCCC; background-color: #F5F5F5; transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s; outline: none; }
 
-.select-dropdown select:hover { border: 1px solid #999999; background-color: #e6eeff; outline: none; }
+.select-dropdown select:hover { border: 1px solid #999999; background-color: #F5F5F5; outline: none; }
 
-.select-dropdown select:focus { border: 1px solid #999999; background-color: #e6eeff; outline: none; }
+.select-dropdown select:focus { border: 1px solid #5C5C5C; background-color: #F5F5F5; outline: none; }
 
 .label-inline label { font-size: 1.2em; font-weight: 400; line-height: 1.666em; padding: 0; margin: 0; float: left; }
 
@@ -680,23 +682,21 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .form-row .errorlist { margin: 0; padding: 0 0 0 0; list-style: none; }
 
-.form-row .errorlist + input, .form-row .errorlist + input + input, .form-row .errorlist + textarea, .form-row .errorlist + dl, .error-input input { margin: 0 0 6px; padding: 4px 0 5px 5px; border: none; border-left: 6px solid #e74c3c; background: #FFF4F3; }
+.form-row .errorlist + input, .form-row .errorlist + input:hover, .form-row .errorlist + input:focus, .form-row .errorlist + input + input, .form-row .errorlist + textarea, .form-row .errorlist + ul, .form-row .errorlist + dl, .error-input input { margin: 0 0 6px; padding: 4px 0 5px 5px; border-radius: 0 3px 3px 0; border-left: 6px solid #e74c3c; }
 
-.form-row .errorlist + dl { border: none; border-left: 6px solid #e74c3c; }
+.form-row .errorlist + input, .form-row .errorlist + input:hover, .form-row .errorlist + input:focus, .form-row .errorlist + input + input, .form-row .errorlist + textarea, .error-input input, .error-input input:hover, .error-input input:focus { border: 1px solid #e74c3c; border-left: 6px solid #e74c3c; }
+
+.form-row .errorlist { padding-left: 7.5px; border-left: 6px solid #e74c3c; }
 
 .error-input label { color: #e74c3c; }
 
-.error-input input:hover { background: #FFF4F3; }
-
-.error-input input:focus { border: none; border-left: 6px solid #16a085; background-color: #ecf0f1; }
-
 /* Quebra de layout para Tablet  */
 @media all and (max-width: 900px) { .form-row { padding: 0 15px; }
-  .input-text-66 input[type="text"], .input-text-33 input[type="text"], .input-text-66 input[type="password"], .input-text-33 input[type="password"] { width: 100%; } }
+  .input-text-66 input, .input-text-33 input { width: 100%; } }
 /* Fim da Quebra de layout para Tablet */
 /* FIM de Formulários  */
 /* Botões de Interface */
-.btn-basic, .btn-basic:visited, input[type="submit"] { color: #2E3333; font-size: 14px; font-weight: bold; line-height: 42px; min-height: 42px; vertical-align: middle; text-transform: uppercase; text-decoration: none; margin: 0.5em 1em 0.5em 0; padding: 0 1.6em; display: inline-block; border: 0; border-radius: 3px; position: relative; background-color: #c5cdcd; transition: background-color ease 0.5s; }
+.btn-basic, .btn-basic:visited, input[type="submit"] { color: #2E3333; font-size: 14px; font-weight: bold; line-height: 42px; min-height: 42px; vertical-align: middle; text-transform: uppercase; text-decoration: none; margin: 0.5em 1em 0.5em 0; padding: 0 1.6em; display: inline-block; border: 0; border-radius: 3px; position: relative; background-color: #C5CDCD; transition: background-color ease 0.5s; }
 
 .btn-basic:hover, .btn-basic:focus, input[type="submit"]:hover { color: #F2F5F5; background-color: #95A5A5; outline: 0; cursor: pointer; }
 
@@ -734,6 +734,6 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Customização */
 body { font-family: 'Open Sans', sans-serif; }
 
-section header h2 { color: #c5cdcd; font-size: 20px; padding: 15px 0 0 0; min-height: 60px; text-transform: uppercase; }
+section header h2 { color: #C5CDCD; font-size: 20px; padding: 15px 0 0 0; min-height: 60px; text-transform: uppercase; }
 
 /* Fim Customização */

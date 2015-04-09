@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>BasalStyle - Formulários</title>
+    <title>BasalStyle - CSS e HTML para prototipação rápida de Sites e Formulários.</title>
 
     <meta name="author" content="Vinicius Braga">
 
@@ -335,6 +335,31 @@
                             <input type="text" id="id-03" name="zipcode">
                         </div>
 
+                        <div class="row">
+                            <div class="desktop-1 gutter-right">
+                                <div class="form-row label-block input-text">
+                                    <label for="id-21">DDI</label>
+                                    <div class="row">
+                                        <input type="tel" id="id-21" name="ddi" maxlength="2" size="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="desktop-1">
+                                <div class="form-row label-block input-text">
+                                    <label for="id-22">DDD</label>
+                                    <div class="row">
+                                        <input type="tel" id="id-22" name="ddd" maxlength="3" size="2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="desktop-2 gutter-left">
+                                <div class="form-row label-block input-text">
+                                    <label for="id-23">Telefone</label>
+                                    <input type="tel" id="id-23" name="tel">
+                                </div>
+                            </div>
+                        </div>
+
                         <div id="FormRadio" class="row">
                             <div class="col-50">
                                 <div class="form-row input-radio form-label-desc">
@@ -375,11 +400,11 @@
                             </select>
                         </div>
 
-                        <div class="form-row label-block input-text min-h-10">
+                        <div class="form-row label-block input-text min-h-6">
                             <label>Observações</label> <textarea name=""></textarea>
                         </div>
 
-                        <div class="padding-top-1 min-h-5">
+                        <div class="min-h-3">
                             <p class="btn-row "><button type="submit" class="btn-basic btn-icon-right">Entrar <i class="fa fa-chevron-right"></i></button>  ou <a href="#">Cancelar</a></p>
                         </div>
 
@@ -396,6 +421,7 @@
             </header>
 
             <form action="/" class="min-h-13">
+
                 <div class="form-row label-block input-text">
                     <label for="id-12">Email</label>
                     <ul class="errorlist">
@@ -424,7 +450,7 @@
 
             <h3>Erros agregados no topo do formulário</h3>
 
-            <form action="/" accept-charset="utf-8" class="min-h-15">
+            <form action="/" accept-charset="utf-8" class="min-h-16">
 
                 <div class="errorlist">
                     <p>O fomulário contêm erros nos campos, são eles:</p>
