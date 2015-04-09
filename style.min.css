@@ -643,15 +643,15 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .label-block label, .form-row legend { display: block; }
 
-.input-text input[type="text"], .input-text input[type="password"] { font-size: 2.0em; font-family: inherit; line-height: 1.4em; letter-spacing: 0.06em; vertical-align: middle; white-space: pre; margin: 0; padding: 0.35em 0.6em; width: 100%; min-height: 1em; display: block; border: 1px solid #BFBFBF; border-radius: 3px; box-shadow: inset 1px 1px 3px #CCCCCB; background-color: #F8F8F9; outline: none; transition: background-color 1s ease 0s,border 1s ease 0s; }
+.input-text input[type="text"], .input-text input[type="email"], .input-text input[type="password"] { font-size: 2.0em; font-family: inherit; line-height: 1.4em; letter-spacing: 0.06em; vertical-align: middle; white-space: pre; margin: 0; padding: 0.35em 0.6em; width: 100%; min-height: 1em; display: block; border: 1px solid #BFBFBF; border-radius: 3px; box-shadow: inset 1px 1px 3px #CCCCCB; background-color: #F8F8F9; outline: none; transition: background-color 1s ease 0s,border 1s ease 0s; }
 
-.input-text input[type="text"]:hover, .input-text input[type="password"]:hover { border: 1px solid #999999; background-color: #e6eeff; transition: background-color 1s ease 0s,border 1s ease 0s; }
+.input-text input[type="text"]:hover, .input-text input[type="email"]:hover, .input-text input[type="password"]:hover { border: 1px solid #999999; background-color: #e6eeff; transition: background-color 1s ease 0s,border 1s ease 0s; }
 
-.input-text input[type="text"]:focus, .input-text input[type="password"]:focus { border: 1px solid #999999; background-color: #e6eeff; }
+.input-text input[type="text"]:focus, .input-text input[type="email"]:focus, .input-text input[type="password"]:focus { border: 1px solid #999999; background-color: #e6eeff; }
 
-.input-text-66 input[type="text"], .input-text-66 input[type="password"] { width: 66%; }
+.input-text-66 input[type="text"], .input-text-66 input[type="email"], .input-text-66 input[type="password"] { width: 66%; }
 
-.input-text-33 input[type="text"], .input-text-33 input[type="password"] { width: 33%; }
+.input-text-33 input[type="text"], .input-text-33 input[type="email"], .input-text-33 input[type="password"] { width: 33%; }
 
 .input-radio fieldset { padding: 0; border: none; }
 
@@ -692,7 +692,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 /* Quebra de layout para Tablet  */
 @media all and (max-width: 900px) { .form-row { padding: 0 15px; }
-  .input-text-66 input[type="text"], .input-text-33 input[type="text"], .input-text-66 input[type="password"], .input-text-33 input[type="password"] { width: 100%; } }
+  .input-text-66 input[type="text"], .input-text-33 input[type="text"], .input-text-66 input[type="email"], .input-text-33 input[type="email"], .input-text-66 input[type="password"], .input-text-33 input[type="password"] { width: 100%; } }
 /* Fim da Quebra de layout para Tablet */
 /* FIM de Formulários  */
 /* Botões de Interface */

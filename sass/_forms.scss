@@ -44,6 +44,7 @@
 }
 
 .input-text input[type="text"] ,
+.input-text input[type="email"] ,
 .input-text input[type="password"] {
   font-size: 2.0em;
   font-family: inherit;
@@ -64,23 +65,27 @@
   transition: background-color 1s ease 0s,border 1s ease 0s;
 }
 .input-text input[type="text"]:hover ,
+.input-text input[type="email"]:hover ,
 .input-text input[type="password"]:hover {
   border: 1px solid #999999;
   background-color: $basal-color-form-highlight;
   transition: background-color 1s ease 0s,border 1s ease 0s;
 }
 .input-text input[type="text"]:focus ,
+.input-text input[type="email"]:focus ,
 .input-text input[type="password"]:focus {
   border: 1px solid #999999;
   background-color: $basal-color-form-highlight;
 }
 
 .input-text-66 input[type="text"] ,
+.input-text-66 input[type="email"] ,
 .input-text-66 input[type="password"] {
   width: 66%;
 }
 
 .input-text-33 input[type="text"] ,
+.input-text-33 input[type="email"] ,
 .input-text-33 input[type="password"] {
   width: 33%;
 }
@@ -230,6 +235,8 @@
 
     .input-text-66 input[type="text"] ,
     .input-text-33 input[type="text"] ,
+    .input-text-66 input[type="email"] ,
+    .input-text-33 input[type="email"] ,
     .input-text-66 input[type="password"] ,
     .input-text-33 input[type="password"]  {
         width: 100%;
