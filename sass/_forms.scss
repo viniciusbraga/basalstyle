@@ -220,6 +220,7 @@
 .error-input input:focus {
     border: 1px solid $basal-form-error-color;
     border-left: 6px solid $basal-form-error-color;
+    background-color: $basal-form-error-background;
 }
 
 .form-row .errorlist {
