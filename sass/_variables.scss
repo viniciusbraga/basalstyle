@@ -71,10 +71,16 @@ $basal-color-background:        #ffffff;
 // Botões - Variáveis de cor
 
 $basal-button-text-color:               #2E3333;
-$basal-button-text-color-hover:         #F2F5F5;
+$basal-button-text-color-hover:         #FFFFFF;
+
+$basal-button-border:                   0;
+
+$basal-button-border-radius:            3px;
 
 $basal-button-background:               #C5CDCD;
-$basal-button-background-hover:         #95A5A5;
+$basal-button-background-hover:         darken($basal-button-background, 10%);
+
+$basal-button-color-text-color:         #FFFFFF;
 
 
 // Formulário - Variáveis de cor e borda

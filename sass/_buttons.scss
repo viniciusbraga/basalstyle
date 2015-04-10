@@ -3,7 +3,7 @@
 
 .btn-basic,
 .btn-basic:visited,
-input[type="submit"]  {
+input[type="submit"] {
   color: $basal-button-text-color;
   font-size: 14px;
   font-weight: bold;
@@ -15,11 +15,12 @@ input[type="submit"]  {
   margin: 0.5em 1em 0.5em 0;
   padding: 0 1.6em;
   display: inline-block;
-  border: 0;
-  border-radius: 3px;
+  border: $basal-button-border;
+  border-radius: $basal-button-border-radius;
   position: relative;
   background-color: $basal-button-background;
   transition: background-color ease 0.5s;
+
 }
 
 .btn-basic:hover,
@@ -45,41 +46,53 @@ input[type="submit"]:hover {
 
 /* Botões coloridos */
 
-.btn-green,
-.btn-green:visited,
-input[type="submit"].btnGreen,
-input[type="submit"].btnGreen:visited  { color: #FFF; background-color: #1abc9c; }
+@mixin buttons($selector, $txt-color, $bg-color) {
 
-.btn-green:hover,
-input[type="submit"].btnGreen:hover    { color: #FFF; background-color: #16a085; }
+    #{$selector} {
 
+        color: $txt-color;
+        background-color: $bg-color;
 
-.btn-blue,
-.btn-blue:visited,
-input[type="submit"].btnBlue,
-input[type="submit"].btnBlue:visited   { color: #FFF; background-color: #3498db; }
+        &:visited {
+            @extend #{$selector};
+        }
 
-.btn-blue:hover,
-input[type="submit"].btnBlue:hover     { color: #FFF; background-color: #2980b9; }
+        &:hover {
+            color: $txt-color;
+            background-color: darken($bg-color, 15%);
+        }
+    }
 
+    input[type="submit"]#{$selector} {
 
-.btn-orange,
-.btn-orange:visited,
-input[type="submit"].btnOrange,
-input[type="submit"].btnOrange:visited   { color: #FFF; background-color: #FF9900; }
+        @extend #{$selector};
 
-.btn-orange:hover,
-input[type="submit"].btnOrange:hover     { color: #FFF; background-color: #F08000;}
+        &:visited {
+            @extend #{$selector};
+        }
 
+        &:hover {
+            @extend #{$selector}:hover;
+        }
+    }
 
-.btn-red,
-.btn-red:visited,
-input[type="submit"].btnRed,
-input[type="submit"].btnRed:visited   { color: #FFF; background-color: #e74c3c; }
+}
 
-.btn-red:hover,
-input[type="submit"].btnRed:hover     { color: #FFF; background-color: #CC3300; }
+@include buttons( ".btn-green",
+                  $basal-button-color-text-color,
+                  $green-base);
 
+@include buttons( ".btn-blue",
+                  $basal-button-color-text-color,
+                  $blue-base);
+
+@include buttons( ".btn-orange",
+                  $basal-button-color-text-color,
+                  $orange-base);
+
+@include buttons( ".btn-red",
+                  $basal-button-color-text-color,
+                  $red-base);
 
 
 /*
