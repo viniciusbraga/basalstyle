@@ -99,5 +99,6 @@ $basal-form-dropdown-background:         $basal-form-background;
 $basal-form-dropdown-background-hover:   $basal-form-background;
 $basal-form-dropdown-background-focus:   $basal-form-background;
 
+
 $basal-form-error-color:                 #e74c3c;
-$basal-form-error-background:            lighten($basal-form-error-color, 50%);
+$basal-form-error-background:            rgba($basal-form-error-color, 0.1);

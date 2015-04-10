@@ -684,7 +684,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .form-row .errorlist + input, .form-row .errorlist + input:hover, .form-row .errorlist + input:focus, .form-row .errorlist + input + input, .form-row .errorlist + textarea, .form-row .errorlist + ul, .form-row .errorlist + dl, .error-input input { margin: 0 0 6px; padding: 4px 0 5px 5px; border-radius: 0 3px 3px 0; border-left: 6px solid #e74c3c; }
 
-.form-row .errorlist + input, .form-row .errorlist + input:hover, .form-row .errorlist + input:focus, .form-row .errorlist + input + input, .form-row .errorlist + textarea, .error-input input, .error-input input:hover, .error-input input:focus { border: 1px solid #e74c3c; border-left: 6px solid #e74c3c; }
+.form-row .errorlist + input, .form-row .errorlist + input:hover, .form-row .errorlist + input:focus, .form-row .errorlist + input + input, .form-row .errorlist + textarea, .error-input input, .error-input input:hover, .error-input input:focus { border: 1px solid #e74c3c; border-left: 6px solid #e74c3c; background-color: rgba(231, 76, 60, 0.1); }
 
 .form-row .errorlist { padding-left: 7.5px; border-left: 6px solid #e74c3c; }
 
