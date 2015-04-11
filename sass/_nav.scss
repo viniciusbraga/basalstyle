@@ -1,5 +1,5 @@
 
-/* Menu navInline */
+/* Menu de navegação inline */
 
 .nav-inline {
     vertical-align: middle;
@@ -65,14 +65,12 @@
 .nav-mobile, .nav-close { display: none; }
 
 
-/* Submenu de links do Menu nav-inline
- *
- * Esta "media query" aplica as propriedades a partir da largura
- * especificada para uma quebra de tablet até ao infinito (sentido de dentro para fora).
- * Quando a janela for menor que a quebra de uma tablet,
- * as propriedades cessam de existir.
- *
- */
+// Submenu de links do Menu nav-inline
+//
+// Esta "media query" aplica as propriedades a partir da largura
+// especificada para uma quebra de tablet até ao infinito (sentido de dentro para fora).
+// Quando a janela for menor que a quebra de uma tablet,
+// as propriedades cessam de existir.
 
 @media all and (min-width: $basal-media-tablet) {
 
