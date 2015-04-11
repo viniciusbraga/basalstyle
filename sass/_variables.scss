@@ -19,12 +19,12 @@ $basal-media-mobile:     480px;
 $basal-media-tiny:       360px;
 
 
-/*
- * GridForMe (https://github.com/henriquebastos/gridforme)
- * Os parâmetros para construção da imagem de grid:
- * /i/{colunas}/{largura da coluna}/{leading}/{gutter}/?bg=cor&v=cor&h=cor
- *
- */
+
+// GridForMe (https://github.com/henriquebastos/gridforme)
+// Os parâmetros para construção da imagem de grid:
+// /i/{colunas}/{largura da coluna}/{leading}/{gutter}/?bg=cor&v=cor&h=cor
+
+
 $basal-image-param:      "#{$basal-col-number}/#{strip-unit($basal-col-fixed)}/#{strip-unit($basal-leading)}/#{strip-unit($basal-gutter)}/";
 $basal-image-grid:       "https://gridforme.herokuapp.com/i/#{$basal-image-param}";
 
