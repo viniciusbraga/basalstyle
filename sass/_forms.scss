@@ -166,6 +166,24 @@
     float: left;
 }
 
+.input-text-multi-inline input {
+    margin: 0 2% 0 0;
+    width: 44%;
+    display: inline-block;
+
+}
+
+.input-text-multi-inline input {
+    margin: 0 2% 0 0;
+    width: 48%;
+    display: inline-block;
+}
+
+.input-text-multi-inline input:last-child {
+    margin: 0;
+    border: 1px solid rgb(255,0,0);
+}
+
 
 /* Erros nos formulários */
 
@@ -210,17 +228,8 @@
     border-left: 6px solid $basal-form-error-color;
 }
 
-.form-row .errorlist + input,
-.form-row .errorlist + input:hover,
-.form-row .errorlist + input:focus,
-.form-row .errorlist + input + input,
-.form-row .errorlist + textarea,
-.error-input input,
-.error-input input:hover,
-.error-input input:focus {
-    border: 1px solid $basal-form-error-color;
-    border-left: 6px solid $basal-form-error-color;
-    background-color: $basal-form-error-background;
+.error-input input {
+    margin: 0;
 }
 
 .form-row .errorlist {

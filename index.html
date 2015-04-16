@@ -335,29 +335,20 @@
                             <input type="text" id="id-03" name="zipcode">
                         </div>
 
-                        <div class="row">
-                            <div class="desktop-1 gutter-right">
-                                <div class="form-row label-block input-text">
-                                    <label for="id-21">DDI</label>
-                                    <div class="row">
-                                        <input type="tel" id="id-21" name="ddi" maxlength="2" size="1">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="desktop-1">
-                                <div class="form-row label-block input-text">
-                                    <label for="id-22">DDD</label>
-                                    <div class="row">
-                                        <input type="tel" id="id-22" name="ddd" maxlength="3" size="2">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="desktop-2 gutter-left">
-                                <div class="form-row label-block input-text">
-                                    <label for="id-23">Telefone</label>
-                                    <input type="tel" id="id-23" name="tel">
-                                </div>
-                            </div>
+                        <div class="form-row label-block input-text input-text-multi-inline">
+                            <label for="id-22">Telefone</label>
+                            <input type="tel" id="id-22" name="phone_0">
+                            <input type="tel" id="id-23" name="phone_1">
+                        </div>
+
+                        <div class="form-row label-block input-text input-text-multi-inline error-input">
+                            <label for="id-22">Telefone</label>
+                            <input type="tel" id="id-22" name="phone_0">
+                            <input type="tel" id="id-23" name="phone_1">
+                            <ul class="errorlist">
+                                <li>Este campo é obrigatório.</li>
+                                <li>Um exemplo de uma segunda ou mais linhas de erro no mesmo campo.</li>
+                            </ul>
                         </div>
 
                         <div id="FormRadio" class="row">
