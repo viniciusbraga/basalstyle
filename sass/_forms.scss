@@ -2,10 +2,10 @@
 /* Formulários  */
 
 .form-row {
-    margin: 0;
-    padding: 0;
+    margin: 0 0 0 0;
+    padding: 0 0 16px 0;
     list-style: none;
-    min-height: $basal-leading * 3;
+    min-height: $basal-leading * 2;
 }
 
 @for $i from 1 through 40 {
@@ -35,6 +35,11 @@
     padding: 0;
     margin: 0;
 }
+
+.form-row input + label {
+    font-weight: 400;
+}
+
 
 .form-row textarea {
     color: $basal-form-text-color;
@@ -99,7 +104,8 @@
     width: 33%;
 }
 
-.input-radio fieldset {
+.input-radio fieldset,
+.input-text fieldset {
     padding: 0;
     border: none;
 }
@@ -107,7 +113,7 @@
 .input-radio ul,
 .input-radio dl {
     margin: 0;
-    padding: 0 0 $basal-leading;
+    padding: 0;
     list-style: none;
 }
 .input-radio li,
@@ -168,20 +174,13 @@
 
 .input-text-multi-inline input {
     margin: 0 2% 0 0;
-    width: 44%;
+    width: 30%;
     display: inline-block;
 
-}
-
-.input-text-multi-inline input {
-    margin: 0 2% 0 0;
-    width: 48%;
-    display: inline-block;
 }
 
 .input-text-multi-inline input:last-child {
-    margin: 0;
-    border: 1px solid rgb(255,0,0);
+    margin-right: 0;
 }
 
 
@@ -196,6 +195,7 @@
 .errorlist dt,
 .errorlist dd {
     font-size: 1.4em;
+    line-height: 30px;
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -203,16 +203,33 @@
 
 .errorlist li + li,
 .errorlist dd + dd {
-    line-height: 1.25em;
+    line-height: 20px;
+    padding-bottom: 10px;
     margin: 0;
-    padding-bottom:0.7em;
 }
 
 .form-row .errorlist {
     margin: 0;
-    padding: 0 0 0 0;
+    padding: 0 0 0 30px;
     list-style: none;
+    display: block;
+    position: relative;
 }
+
+.errorlist:before {
+    content: "\f071"; //  fa-exclamation-circle f06a
+    font-size: 20px;
+    line-height: 26px;
+    font-style: normal;
+    font-weight: normal;
+    padding: 0 0 0 0;
+    margin: 0 0 0 -30px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
 
 .form-row .errorlist + input,
 .form-row .errorlist + input:hover,
@@ -222,24 +239,15 @@
 .form-row .errorlist + ul,
 .form-row .errorlist + dl,
 .error-input input {
-    margin: 0 0 6px;
-    padding: 4px 0 5px 5px;
-    border-radius: 0 3px 3px 0;
-    border-left: 6px solid $basal-form-error-color;
+    border: 1px solid $basal-form-error-color;
 }
 
-.error-input input {
-    margin: 0;
-}
-
-.form-row .errorlist {
-    padding-left: $basal-padding / 2 ;
-    border-left: 6px solid $basal-form-error-color;
-}
-
-.error-input label{
+.error-input label,
+.error-input legend {
     color: $basal-form-error-color;
 }
+
+
 
 
 /*
@@ -250,7 +258,8 @@
  @media all and (max-width: $basal-media-tablet) {
 
     .form-row {
-        padding: 0 $basal-padding;
+        padding-left: $basal-padding;
+        padding-right: $basal-padding;
     }
 
 
