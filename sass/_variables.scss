@@ -83,7 +83,9 @@ $basal-button-background-hover:         darken($basal-button-background, 10%);
 $basal-button-color-text-color:         #FFFFFF;
 
 
-// Formulário - Variáveis de cor e borda
+// Formulário - Especificação visual de cores, espessura de borda e fundo.
+
+// Formulário de campo de texto e similares
 
 $basal-form-legend-color:                #191919;
 $basal-form-text-color:                  #191919;
@@ -101,6 +103,8 @@ $basal-form-background-hover:            #ffffff;
 $basal-form-background-focus:            lighten(#2980B9, 50%);
 
 
+// Formulário de dropdown
+
 $basal-form-dropdown-text-color:         #191919;
 
 $basal-form-dropdown-border:             $basal-form-border;
@@ -115,6 +119,8 @@ $basal-form-dropdown-background:         $basal-form-background;
 $basal-form-dropdown-background-hover:   $basal-form-background;
 $basal-form-dropdown-background-focus:   $basal-form-background;
 
+
+// Formulário com Erro
 
 $basal-form-error-color:                 #e74c3c;
 $basal-form-error-border:                1px solid $basal-form-error-color;
