@@ -2,8 +2,8 @@
 /* Formulários  */
 
 .form-row {
-    margin: 0;
-    padding: 0;
+    margin: 0 0 0 0;
+    padding: 0 0 16px 0;
     list-style: none;
     min-height: $basal-leading * 3;
 }
@@ -35,6 +35,11 @@
     padding: 0;
     margin: 0;
 }
+
+.form-row input + label {
+    font-weight: 400;
+}
+
 
 .form-row textarea {
     color: $basal-form-text-color;
@@ -99,7 +104,8 @@
     width: 33%;
 }
 
-.input-radio fieldset {
+.input-radio fieldset,
+.input-text fieldset {
     padding: 0;
     border: none;
 }
@@ -107,7 +113,7 @@
 .input-radio ul,
 .input-radio dl {
     margin: 0;
-    padding: 0 0 $basal-leading;
+    padding: 0;
     list-style: none;
 }
 .input-radio li,
@@ -134,10 +140,9 @@
     color: $basal-form-dropdown-text-color;
     font-family: inherit;
     font-size: 1.6em;
-    line-height: 40px;
+    line-height: 2em;
     margin: 0;
-    padding: 0.6em 0.3em 0.6em 0.3em;
-    min-height: 36px;
+    padding: 9px 0.3em 8px;
     width: 100%;
     border: $basal-form-dropdown-border;
     border-radius: $basal-form-dropdown-radius;
@@ -166,6 +171,17 @@
     float: left;
 }
 
+.input-text-multi-inline input {
+    margin: 0 2% 0 0;
+    width: 30%;
+    display: inline-block;
+
+}
+
+.input-text-multi-inline input:last-child {
+    margin-right: 0;
+}
+
 
 /* Erros nos formulários */
 
@@ -178,6 +194,7 @@
 .errorlist dt,
 .errorlist dd {
     font-size: 1.4em;
+    line-height: $basal-leading;
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -185,15 +202,31 @@
 
 .errorlist li + li,
 .errorlist dd + dd {
-    line-height: 1.25em;
+    line-height: 20px;
+    padding-bottom: 10px;
     margin: 0;
-    padding-bottom:0.7em;
 }
 
 .form-row .errorlist {
     margin: 0;
-    padding: 0 0 0 0;
+    padding: 0 0 0 30px;
     list-style: none;
+    display: block;
+    position: relative;
+}
+
+.form-row .errorlist:before {
+    content: "\f071"; //  fa-exclamation-circle f06a
+    font-size: 20px;
+    line-height: 26px;
+    font-style: normal;
+    font-weight: normal;
+    padding: 0 0 0 0;
+    margin: 0 0 0 -30px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
 }
 
 .form-row .errorlist + input,
@@ -204,33 +237,16 @@
 .form-row .errorlist + ul,
 .form-row .errorlist + dl,
 .error-input input {
-    margin: 0 0 6px;
-    padding: 4px 0 5px 5px;
-    border-radius: 0 3px 3px 0;
-    border-left: 6px solid $basal-form-error-color;
-}
-
-.form-row .errorlist + input,
-.form-row .errorlist + input:hover,
-.form-row .errorlist + input:focus,
-.form-row .errorlist + input + input,
-.form-row .errorlist + textarea,
-.error-input input,
-.error-input input:hover,
-.error-input input:focus {
-    border: 1px solid $basal-form-error-color;
-    border-left: 6px solid $basal-form-error-color;
+    border: $basal-form-error-border;
     background-color: $basal-form-error-background;
 }
 
-.form-row .errorlist {
-    padding-left: $basal-padding / 2 ;
-    border-left: 6px solid $basal-form-error-color;
-}
-
-.error-input label{
+.error-input label,
+.error-input legend {
     color: $basal-form-error-color;
 }
+
+
 
 
 /*
@@ -241,7 +257,8 @@
  @media all and (max-width: $basal-media-tablet) {
 
     .form-row {
-        padding: 0 $basal-padding;
+        padding-left: $basal-padding;
+        padding-right: $basal-padding;
     }
 
 
