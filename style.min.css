@@ -617,7 +617,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Fim da Quebra de layout para Tablet */
 /* FIM Imagens */
 /* Formulários  */
-.form-row { margin: 0 0 0 0; padding: 0 0 16px 0; list-style: none; min-height: 90px; }
+.form-row { margin: 0 0 0 0; padding: 0 0 16px 0; list-style: none; }
 
 .form-row p { margin: 0; padding: 0; }
 
