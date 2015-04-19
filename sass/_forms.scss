@@ -5,7 +5,7 @@
     margin: 0 0 0 0;
     padding: 0 0 16px 0;
     list-style: none;
-    min-height: $basal-leading * 2;
+    min-height: $basal-leading * 3;
 }
 
 @for $i from 1 through 40 {
@@ -140,10 +140,9 @@
     color: $basal-form-dropdown-text-color;
     font-family: inherit;
     font-size: 1.6em;
-    line-height: 40px;
+    line-height: 2em;
     margin: 0;
-    padding: 0.6em 0.3em 0.6em 0.3em;
-    min-height: 36px;
+    padding: 9px 0.3em 8px;
     width: 100%;
     border: $basal-form-dropdown-border;
     border-radius: $basal-form-dropdown-radius;
@@ -195,7 +194,7 @@
 .errorlist dt,
 .errorlist dd {
     font-size: 1.4em;
-    line-height: 30px;
+    line-height: $basal-leading;
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -216,7 +215,7 @@
     position: relative;
 }
 
-.errorlist:before {
+.form-row .errorlist:before {
     content: "\f071"; //  fa-exclamation-circle f06a
     font-size: 20px;
     line-height: 26px;
@@ -230,7 +229,6 @@
     position: absolute;
 }
 
-
 .form-row .errorlist + input,
 .form-row .errorlist + input:hover,
 .form-row .errorlist + input:focus,
@@ -239,7 +237,8 @@
 .form-row .errorlist + ul,
 .form-row .errorlist + dl,
 .error-input input {
-    border: 1px solid $basal-form-error-color;
+    border: $basal-form-error-border;
+    background-color: $basal-form-error-background;
 }
 
 .error-input label,

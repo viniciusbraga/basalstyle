@@ -413,7 +413,18 @@
                 <h2 id="FormError">Erros no Formulário</h2>
             </header>
 
-            <form action="/" class="min-h-13">
+            <form action="/" class="min-h-35">
+                <h3>Erro abaixo do campo</h3>
+
+                <div class="form-row label-block input-text error-input">
+                    <label for="id-12_01">Nome Completo</label>
+                    <input type="text" id="id-12_01" name="full_name" value="">
+                    <ul class="errorlist">
+                        <li>Este campo é obrigatório.</li>
+                    </ul>
+                </div>
+
+                <h3>Erro entre o label e o campo</h3>
 
                 <div class="form-row label-block input-text error-input">
                     <label for="id-12">Email</label>
@@ -423,6 +434,8 @@
                     </ul>
                     <input type="text" id="id-12" name="name" value="">
                 </div>
+
+                <h3>Erros com múltiplos campos de texto organizados num Fieldset</h3>
 
                 <div class="form-row label-block input-text error-input">
                     <fieldset>
@@ -448,6 +461,9 @@
                     </fieldset>
                 </div>
 
+
+                <h3>Erros com Fieldset e Radios</h3>
+
                 <div class="form-row input-radio form-label-desc error-input">
                     <fieldset>
                         <legend>Estado Civil</legend>
@@ -464,6 +480,10 @@
                     </fieldset>
                 </div>
             </form>
+
+        </section>
+
+        <section>
 
             <h3>Erros agregados no topo do formulário</h3>
 
@@ -551,5 +571,5 @@
 
     <label class="btnDebug" for="debug"> Grid <input type="checkbox" id="debug" onclick='var e=document.getElementsByTagName("body")[0],c="debug",re=new RegExp("(?:^|\\s)"+c+"(?!\\S)","g");if(e.className.match(re)){e.className=e.className.replace(re,"");}else{e.className+=" "+c;this.checked=true;}'></label>
 
-</body>
+<script src="http://www.basalstyle.dev/_debuglive/live.js"></script></body>
 </html>
