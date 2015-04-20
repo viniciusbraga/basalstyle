@@ -13,7 +13,7 @@ html {
 body {
     color: $basal-color-text;
     font-size: 1em;
-    line-height: 2.7;
+    line-height: floor($basal-leading / 2) / 10 * 1em );
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ body {
 
 h1 {
     font-size: 4.0em;
-    line-height: 60px;
+    line-height: $basal-leading * 2;
     min-height: $basal-leading * 3;
     padding: 13px 0 17px;
     }

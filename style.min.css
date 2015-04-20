@@ -2,7 +2,7 @@
 /* Etiquetas HTML obs: Não é necessário aplicar o CSS RESET com este código na página.  */
 html { font-size: 62.5%; background-color: #ffffff; }
 
-body { color: #111100; font-size: 1em; line-height: 2.7; font-family: sans-serif; margin: 0; padding: 0; }
+body { color: #111100; font-size: 1em; line-height: 1.5em; font-family: sans-serif; margin: 0; padding: 0; }
 
 /* Titulagem */
 h1 { font-size: 4.0em; line-height: 60px; min-height: 90px; padding: 13px 0 17px; }
@@ -479,7 +479,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Quebra de layout para Mobile */
 @media all and (max-width: 360px) { .mobile-2 { width: 100%; float: none; } }
 /* Nicolas Gallagher's micro clearfix */
-.row, .form-row { *zoom: 1; }
+.row, .form-row { line-height: 1em; *zoom: 1; }
 
 .row:before, .form-row:before, .row:after, .form-row:after { content: " "; display: table; }
 

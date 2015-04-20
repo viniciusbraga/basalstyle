@@ -331,6 +331,7 @@
 /* Nicolas Gallagher's micro clearfix */
 
 .row {
+    line-height: 1em; // Adicionado para remover interferência de espaçamneto
     *zoom: 1;
 }
 .row:before,
