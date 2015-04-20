@@ -39,27 +39,6 @@
     font-weight: 400;
 }
 
-
-.form-row textarea {
-    color: $basal-form-text-color;
-    font-family: inherit;
-    font-size: 1.6em;
-    margin: 0;
-    padding: 0.75em 0.5em 0.5em 0.75em;
-    width: 100%;
-    min-height: $basal-leading * 4;
-    border: $basal-form-border;
-    border-radius: $basal-form-border-radius;
-    box-shadow: $basal-form-shadow;
-    background-color: $basal-form-background;
-    transition: background-color 1s ease 0s,border 1s ease 0s;
-}
-
-.form-row textarea:focus {
-    border: $basal-form-border-focus;
-    background-color: $basal-form-background-focus;
-}
-
 .label-block label,
 .form-row legend {
     display: block;
@@ -102,6 +81,27 @@
 .input-text-33 input {
     width: 33%;
 }
+
+.form-row textarea {
+    color: $basal-form-text-color;
+    font-family: inherit;
+    font-size: 1.6em;
+    margin: 0;
+    padding: 0.75em 0.5em 0.5em 0.75em;
+    width: 100%;
+    min-height: $basal-leading * 4;
+    border: $basal-form-border;
+    border-radius: $basal-form-border-radius;
+    box-shadow: $basal-form-shadow;
+    background-color: $basal-form-background;
+    transition: background-color 1s ease 0s,border 1s ease 0s;
+}
+
+.form-row textarea:focus {
+    border: $basal-form-border-focus;
+    background-color: $basal-form-background-focus;
+}
+
 
 .input-radio fieldset,
 .input-text fieldset {
