@@ -479,11 +479,11 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Quebra de layout para Mobile */
 @media all and (max-width: 360px) { .mobile-2 { width: 100%; float: none; } }
 /* Nicolas Gallagher's micro clearfix */
-.row { *zoom: 1; }
+.row, .form-row { *zoom: 1; }
 
-.row:before, .row:after { content: " "; display: table; }
+.row:before, .form-row:before, .row:after, .form-row:after { content: " "; display: table; }
 
-.row:after { clear: both; }
+.row:after, .form-row:after { clear: both; }
 
 .debug { display: block; position: relative; }
 
@@ -635,6 +635,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .input-text input:focus { border: 1px solid #5C5C5C; background-color: #e7f2fa; }
 
+.input-text input + label { font-weight: 400; margin-top: -16px; margin-bottom: 16px; }
+
 .input-text-66 input { width: 66%; }
 
 .input-text-33 input { width: 33%; }
@@ -661,10 +663,6 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .label-inline label { font-size: 1.2em; font-weight: 400; line-height: 1.666em; padding: 0; margin: 0; float: left; }
 
-.input-text-multi-inline input { margin: 0 2% 0 0; width: 30%; display: inline-block; }
-
-.input-text-multi-inline input:last-child { margin-right: 0; }
-
 /* Erros nos formulários */
 .errorlist { color: #e74c3c; }
 
@@ -677,6 +675,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .form-row .errorlist:before { content: "\f071"; font-size: 20px; line-height: 26px; font-style: normal; font-weight: normal; padding: 0 0 0 0; margin: 0 0 0 -30px; display: block; width: 30px; height: 30px; position: absolute; }
 
 .form-row .errorlist + input, .form-row .errorlist + input:hover, .form-row .errorlist + input:focus, .form-row .errorlist + input + input, .form-row .errorlist + textarea, .form-row .errorlist + ul, .form-row .errorlist + dl, .error-input input { border: 1px solid #e74c3c; background-color: rgba(231, 76, 60, 0.1); }
+
+.form-row .errorlist + ul, .form-row .errorlist + dl { padding-left: 5px; border: 0; }
 
 .error-input label, .error-input legend { color: #e74c3c; }
 

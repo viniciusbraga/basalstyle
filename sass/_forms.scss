@@ -2,6 +2,7 @@
 /* Formulários  */
 
 .form-row {
+    @extend .row;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -74,6 +75,12 @@
     background-color: $basal-form-background-focus;
 }
 
+.input-text input + label {
+    font-weight: 400;
+    margin-top: -16px;
+    margin-bottom: 16px;
+}
+
 .input-text-66 input {
     width: 66%;
 }
@@ -101,7 +108,6 @@
     border: $basal-form-border-focus;
     background-color: $basal-form-background-focus;
 }
-
 
 .input-radio fieldset,
 .input-text fieldset {
@@ -171,17 +177,6 @@
     float: left;
 }
 
-.input-text-multi-inline input {
-    margin: 0 2% 0 0;
-    width: 30%;
-    display: inline-block;
-
-}
-
-.input-text-multi-inline input:last-child {
-    margin-right: 0;
-}
-
 
 /* Erros nos formulários */
 
@@ -241,12 +236,16 @@
     background-color: $basal-form-error-background;
 }
 
+.form-row .errorlist + ul,
+.form-row .errorlist + dl {
+    padding-left: floor($basal-gutter / 3);
+    border: 0;
+}
+
 .error-input label,
 .error-input legend {
     color: $basal-form-error-color;
 }
-
-
 
 
 /*
