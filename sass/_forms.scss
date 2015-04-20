@@ -131,8 +131,9 @@
 }
 
 .input-radio input {
+    vertical-align: -14%;
     display: inline-block;
-    margin-right: 0.66em
+    margin: 0 floor($basal-gutter / 2) 0 0;
 }
 
 .select-dropdown select {
