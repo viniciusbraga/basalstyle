@@ -1,6 +1,8 @@
-﻿/*
+﻿
+/*
  * Etiquetas HTML
  * obs: Não é necessário aplicar o CSS RESET com este código na página.
+ *
  */
 
 html {
@@ -11,7 +13,7 @@ html {
 body {
     color: $basal-color-text;
     font-size: 1em;
-    line-height: 2.7;
+    line-height: strip-unit($basal-leading / 2) / 10 * 1em;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -21,7 +23,7 @@ body {
 
 h1 {
     font-size: 4.0em;
-    line-height: 60px;
+    line-height: $basal-leading * 2;
     min-height: $basal-leading * 3;
     padding: 13px 0 17px;
     }
@@ -177,9 +179,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
     box-sizing: border-box;
 }
 
-/*
- * Columns Rulers, tricks and treats
- */
+
+// Columns Rulers, tricks and treats
 
 .ruler-left   { border-left:   1px solid $basal-color-ruler; }
 .ruler-top    { border-top:    1px solid $basal-color-ruler; }
@@ -193,27 +194,21 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .text-align-right  { text-align: right; }
 .text-align-center { text-align: center; }
 
-/*
- * Impõe a quebra em bloco/ brbk
- * Permite a quebrar de textos de uma manchete ou chamada em blocos determinados.
- * Ex.: <h1>Tipografia Moderna e Futurismo/ <b class="brbk">Ação e Perspectiva</b></h1>
- */
+
+ // Impõe a quebra em bloco/ brbk
+ // Permite a quebrar de textos de uma manchete ou chamada em blocos determinados.
+ // Ex.: <h1>Tipografia Moderna e Futurismo/ <b class="brbk">Ação e Perspectiva</b></h1>
 
 .brbk { display: block; font-weight: inherit; }
 
-/*
- * Evita quebra de palavras de um bloco inline/ brno
- * Ajuda na quebrar de um conjunto de palavras em títulos em destaque
- * Ex.: <h1>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva</b></h1>
- */
+ // Evita quebra de palavras de um bloco inline/ brno
+ // Ajuda na quebrar de um conjunto de palavras em títulos em destaque
+ // Ex.: <h1>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva</b></h1>
 
 .brno { white-space: nowrap; font-weight: inherit; }
 
 
-/*
- * Anexo com complementos de tipografia e layout
- */
-
+/* Anexo com complementos de tipografia e layout */
 
 .text-small p,
 .text-small li,
@@ -290,7 +285,6 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .text-legend h6 + p { padding: 0 0 0.5em; }
 
 
-
 /*
  * Quebra de layout no limite da largura máxima de colunas
  *
@@ -303,7 +297,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
     }
 
 
-} /* FIM do primeiro ajuste de layout */
+}
+// FIM do primeiro ajuste de layout
 
 
 /*
@@ -346,6 +341,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
     .brno { white-space: normal; }
 
 
-} /* Fim da Quebra de layout para Tablet */
+}
+// Fim da Quebra de layout para Tablet
 
 

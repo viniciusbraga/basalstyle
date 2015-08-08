@@ -2,15 +2,15 @@
 /*
  * Imagens
  *
- * Exemplo de aplicação:
- * <div class="img max-h-8">
- *   <img src="nome_da_image.png" height="530" width="800">
- * </div>
- * <figure class="max-h-8">
- *   <img src="nome_da_image.png" height="530" width="800">
- * </figure>
- *
  */
+
+ // Exemplo de aplicação:
+ // <div class="img max-h-8">
+ //   <img src="nome_da_image.png" height="530" width="800">
+ // </div>
+ // <figure class="max-h-8">
+ //   <img src="nome_da_image.png" height="530" width="800">
+ // </figure>
 
 .img {
     position: relative;
@@ -55,19 +55,18 @@
     display: block;
 }
 
-/*
- * img-align-text
- *
- * A caixa da entidade HTML (DIV ou FIGURE), que envolve a imagem,
- * recebe uma propriedade extra no padding-top,
- * empurando a imagem para o alinhamento visual com o texto das colunas ao lado.
- *
- * Exemplo de aplicação:
- * <figure class="img-align-text max-h-8">
- *   <img src="nome_da_image.png" height="530" width="800">
- * </figure>
- *
- */
+
+// img-align-text
+//
+// A caixa da entidade HTML (DIV ou FIGURE), que envolve a imagem,
+// recebe uma propriedade extra no padding-top,
+// empurando a imagem para o alinhamento visual com o texto das colunas ao lado.
+//
+// Exemplo de aplicação:
+// <figure class="img-align-text max-h-8">
+// <img src="nome_da_image.png" height="530" width="800">
+// </figure>
+
 
 .img-align-text { padding-top: 1.4em; }
 

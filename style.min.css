@@ -1,10 +1,8 @@
 @charset "UTF-8";
-/* Remove unidade de uma variável Baseado na função existente no Foundation https://github.com/zurb/foundation/blob/4d54d0c0851faa02b500c0707241424d27a9b26e/scss/foundation/_functions.scss */
-/* GridForMe (https://github.com/henriquebastos/gridforme) Os parâmetros para construção da imagem de grid:  /i/{colunas}/{largura da coluna}/{leading}/{gutter}/?bg=cor&v=cor&h=cor  */
-/* Etiquetas HTML obs: Não é necessário aplicar o CSS RESET com este código na página. */
+/* Etiquetas HTML obs: Não é necessário aplicar o CSS RESET com este código na página.  */
 html { font-size: 62.5%; background-color: #ffffff; }
 
-body { color: #111100; font-size: 1em; line-height: 2.7; font-family: sans-serif; margin: 0; padding: 0; }
+body { color: #111100; font-size: 1em; line-height: 1.5em; font-family: sans-serif; margin: 0; padding: 0; }
 
 /* Titulagem */
 h1 { font-size: 4.0em; line-height: 60px; min-height: 90px; padding: 13px 0 17px; }
@@ -80,7 +78,6 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Aplica o modelo de caixa semelhante ao do IE */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/* Columns Rulers, tricks and treats */
 .ruler-left { border-left: 1px solid #c5cdcd; }
 
 .ruler-top { border-top: 1px solid #c5cdcd; }
@@ -99,10 +96,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .text-align-center { text-align: center; }
 
-/* Impõe a quebra em bloco/ brbk Permite a quebrar de textos de uma manchete ou chamada em blocos determinados. Ex.: <h1>Tipografia Moderna e Futurismo/ <b class="brbk">Ação e Perspectiva</b></h1> */
 .brbk { display: block; font-weight: inherit; }
 
-/* Evita quebra de palavras de um bloco inline/ brno Ajuda na quebrar de um conjunto de palavras em títulos em destaque Ex.: <h1>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva</b></h1> */
 .brno { white-space: nowrap; font-weight: inherit; }
 
 /* Anexo com complementos de tipografia e layout */
@@ -140,7 +135,6 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 /* Quebra de layout no limite da largura máxima de colunas  */
 @media all and (max-width: 1187px) { figcaption { position: relative; } }
-/* FIM do primeiro ajuste de layout */
 /* Quebra de layout para Tablet  */
 @media all and (max-width: 900px) { h1, h2, h3, h4, h5, h6 { font-size: 3em; line-height: 1.3em; min-height: 1em; }
   h2 { font-size: 2.6em; }
@@ -151,9 +145,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote { margin: 0 15px; }
   figcaption { position: relative; }
   .brno { white-space: normal; } }
-/* Fim da Quebra de layout para Tablet */
-/* Estruturas de Colunas fixas  */
-._basal-desktop, .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { float: left; width: 100%; }
+/* Estruturas de Colunas fixas */
+.desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { float: left; width: 100%; }
 
 .desktop-1 { max-width: 95px; }
 
@@ -179,8 +172,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .desktop-12 { max-width: 1140px; }
 
-/* Colunas usando porcentagem  */
-._basal-col, .col-20, .col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 { float: left; }
+/* Colunas usando porcentagem */
+.col-20, .col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 { float: left; }
 
 .col-20 { width: 20%; }
 
@@ -204,15 +197,15 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .col { overflow: hidden; }
 
-/* Anula o float e centraliza o <div> da coluna.  */
+/* Anula o float e centraliza o <div> da coluna. */
 .container { margin: 0 auto; float: none; }
 
-/* Esconde o elemento HTML em diferente modos de apresentação  */
+/* Esconde o elemento HTML em diferente modos de apresentação */
 .hide, .hide-desktop { display: none; }
 
 .screen-reader-only { position: absolute; visibility: hidden; }
 
-/* Aplica o espaço de entrelinha no Padding ou na Margin da caixa Deve ser aplicado em caixas (<div>,<header>,<section>,<articles>)  */
+/* Aplica o espaço de entrelinha no Padding ou na Margin da caixa. Deve ser aplicado em caixas (<div>,<header>,<section>,<articles>)  */
 .padding-top-1 { padding-top: 30px; }
 
 .padding-top-2 { padding-top: 60px; }
@@ -305,7 +298,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .gutter-right { padding-right: 15px; }
 
-/* Altura mínima do elemento HTML  Uso: Tem momentos que você precisa de uma altura mínima no elemento HTML. Esta classe especifica a altura mínima com valor múltiplo da entrelinha, sem limitar o conteúdo, caso cresça em tamanho e quantidade de elementos. Ex: Um uso comum: <div class="row min-h-7">  */
+/* Altura mínima do elemento HTML.  Uso: Tem momentos que você precisa de uma altura mínima no elemento HTML. Esta classe especifica a altura mínima com valor múltiplo da entrelinha, sem limitar o conteúdo, caso cresça em tamanho e quantidade de elementos. Ex: Um uso comum: <div class="row min-h-7">  */
 .min-h-1, .form-row.min-h-1 { min-height: 30px; }
 
 .min-h-2, .form-row.min-h-2 { min-height: 60px; }
@@ -386,8 +379,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .min-h-40, .form-row.min-h-40 { min-height: 1200px; }
 
-/* Altura máxima do bloco HTML  Uso: Aplíca-se para conter a altura da imagem dentro do grid. Esta classe especifica a altura máxima do bloco HTML com valor múltiplo da entrelinha. Ela restringe a visualização do conteúdo, como se fosse uma máscara com altura máxima. Ex: Um uso comum: <figure class="max-h-6"><img></figure>  */
-._basal-max-h, .max-h-1, .max-h-2, .max-h-3, .max-h-4, .max-h-5, .max-h-6, .max-h-7, .max-h-8, .max-h-9, .max-h-10, .max-h-11, .max-h-12, .max-h-13, .max-h-14, .max-h-15, .max-h-16, .max-h-17, .max-h-18, .max-h-19, .max-h-20 { min-height: 1em; overflow: hidden; }
+/* Altura máxima do bloco HTML.  Uso: Aplíca-se para conter a altura da imagem dentro do grid. Esta classe especifica a altura máxima do bloco HTML com valor múltiplo da entrelinha. Ela restringe a visualização do conteúdo, como se fosse uma máscara com altura máxima. Ex: Um uso comum: <figure class="max-h-6"><img></figure>  */
+.max-h-1, .max-h-2, .max-h-3, .max-h-4, .max-h-5, .max-h-6, .max-h-7, .max-h-8, .max-h-9, .max-h-10, .max-h-11, .max-h-12, .max-h-13, .max-h-14, .max-h-15, .max-h-16, .max-h-17, .max-h-18, .max-h-19, .max-h-20 { min-height: 1em; overflow: hidden; }
 
 .max-h-1 { height: 30px; }
 
@@ -429,7 +422,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .max-h-20 { height: 600px; }
 
-/* Quebra de layout no limite da largura máxima de colunas  */
+/* Quebra de layout no limite da largura máxima de colunas */
 @media all and (max-width: 1187px) { .desktop-1 { width: 8.33333%; }
   .desktop-2 { width: 16.66667%; }
   .desktop-3 { width: 25%; }
@@ -464,38 +457,34 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .col-right-9 { margin-right: 75%; }
   .col-right-10 { margin-right: 83.33333%; }
   .col-right-11 { margin-right: 91.66667%; }
-  ._basal-max-h-tablet, .max-h-1, .max-h-2, .max-h-3, .max-h-4, .max-h-5, .max-h-6, .max-h-7, .max-h-8, .max-h-9, .max-h-10, .max-h-11, .max-h-12, .max-h-13, .max-h-14, .max-h-15, .max-h-16, .max-h-17, .max-h-18, .max-h-19, .max-h-20 { height: auto; min-height: 1em; overflow: hidden; } }
-/* Fim do primeiro ajuste de layout */
-/* Quebra de layout para Tablet  */
-@media all and (max-width: 900px) { ._basal-desktop-tablet, .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { width: 100%; float: none; max-width: none; }
-  ._basal-col-right-mobile, .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-right: 0; }
+  .max-h-1, .max-h-2, .max-h-3, .max-h-4, .max-h-5, .max-h-6, .max-h-7, .max-h-8, .max-h-9, .max-h-10, .max-h-11, .max-h-12, .max-h-13, .max-h-14, .max-h-15, .max-h-16, .max-h-17, .max-h-18, .max-h-19, .max-h-20 { height: auto; min-height: 1em; overflow: hidden; } }
+/* Quebra de layout para Tablet */
+@media all and (max-width: 900px) { .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { width: 100%; float: none; max-width: none; }
+  .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-right: 0; }
   .tablet-1 { width: 25%; float: left; }
   .tablet-2 { width: 50%; float: left; }
   .tablet-3 { width: 75%; float: left; }
   .gutter, .gutter-left, .gutter-right { padding: 0; }
-  ._basal-col-left-mobile, .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-left: 0; } }
-/* Fim do segundo ajuste de layout */
-/* Quebra de layout para Mobile  */
+  .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-left: 0; } }
+/* Quebra de layout para Mobile */
 @media all and (max-width: 480px) { .col { overflow: visible; display: block; }
   .hide-desktop { display: block; }
   .hide-mobile { display: none; }
-  ._basal-col-mobile, .tablet-1, .tablet-2, .tablet-3, .col-20, .col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 { width: 100%; float: none; }
+  .tablet-1, .tablet-2, .tablet-3, .col-20, .col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 { width: 100%; float: none; }
   .mobile-2 { width: 50%; float: left; }
-  ._basal-padding-top-mobile, .padding-top-1, .padding-top-2, .padding-top-3, .padding-top-4, .padding-top-5 { padding-top: 1em; }
-  ._basal-padding-bottom-mobile, .padding-bottom-1, .padding-bottom-2, .padding-bottom-3, .padding-bottom-4, .padding-bottom-5 { padding-bottom: 1em; }
-  ._basal-margin-top-mobile, .margin-top-1, .margin-top-2, .margin-top-3, .margin-top-4, .margin-top-5 { margin-top: 1em; }
-  ._basal-margin-bottom-mobile, .margin-bottom-1, .margin-bottom-2, .margin-bottom-3, .margin-bottom-4, .margin-bottom-5 { margin-bottom: 1em; } }
-/* Fim do segundo ajuste de layout */
-/* Quebra de layout para Mobile  */
+  .padding-top-1, .padding-top-2, .padding-top-3, .padding-top-4, .padding-top-5 { padding-top: 1em; }
+  .padding-bottom-1, .padding-bottom-2, .padding-bottom-3, .padding-bottom-4, .padding-bottom-5 { padding-bottom: 1em; }
+  .margin-top-1, .margin-top-2, .margin-top-3, .margin-top-4, .margin-top-5 { margin-top: 1em; }
+  .margin-bottom-1, .margin-bottom-2, .margin-bottom-3, .margin-bottom-4, .margin-bottom-5 { margin-bottom: 1em; } }
+/* Quebra de layout para Mobile */
 @media all and (max-width: 360px) { .mobile-2 { width: 100%; float: none; } }
 /* Nicolas Gallagher's micro clearfix */
-.row { *zoom: 1; }
+.row, .form-row { line-height: 1em; *zoom: 1; }
 
-.row:before, .row:after { content: " "; display: table; }
+.row:before, .form-row:before, .row:after, .form-row:after { content: " "; display: table; }
 
-.row:after { clear: both; }
+.row:after, .form-row:after { clear: both; }
 
-/* Grid de DEBUG de alinhamento  Uso: Basta aplicar na página/template o <label> abaixo. Certifique-se que a imagem com o grid esteja disponível.  <label class="btnDebug" for="debug"> Grid <input type="checkbox" id="debug" onclick='var e=document.getElementsByTagName("body")[0],c="debug",re=new RegExp("(?:^|\s)"+c+"(?!\S)","g");if(e.className.match(re)){e.className=e.className.replace(re,"");}else{e.className+=" "+c;this.checked=true;}'></label>   */
 .debug { display: block; position: relative; }
 
 .debug:after { content: ""; background: url(https://gridforme.herokuapp.com/i/12/95/30/15/) repeat-y center top !important; opacity: 0.8; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: 2; transition: display 1.5s; background: rgba(255, 0, 0, 0.25); }
@@ -503,7 +492,6 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .btnDebug { color: #666666; font-size: 14px; line-height: 20px; text-transform: uppercase; vertical-align: top; padding: 0 0.25em; position: fixed; top: 0; right: 0; z-index: 1000; opacity: 1; background-color: #FFF; border-radius: 0 0 6px 6px; }
 
 @media (max-width: 800px) { .btnDebug { display: none; } }
-/* FIM Grid */
 /* Cabeçalho do Site e Navegação */
 .header { position: relative; }
 
@@ -540,7 +528,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* FIM da quebra de layout */
 /* Quebra de layout para Tablet  */
 @media all and (max-width: 900px) { /* Cabeçalho do Site e Navegação */
-  .header { position: relative; min-height: 13.5em; }
+  .header { position: relative; }
   .site-logo { width: 100%; padding: 0 15px; }
   .site-logo .site-description { width: 90%; padding-top: 0; padding-bottom: 10px; }
   /* Fomulário de Busca */
@@ -557,7 +545,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .header-inline .nav-inline:hover .nav-mobile { color: #2E3333; } }
 /* Fim da Quebra de layout para Tablet */
 /* FIM Cabeçalho do Site e Navegação */
-/* Menu navInline */
+/* Menu de navegação inline */
 .nav-inline { vertical-align: middle; margin: 0 0; padding: 0 0; display: inline-block; }
 
 .nav-inline ul { margin: 0; padding: 0; *zoom: 1; }
@@ -576,7 +564,6 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .nav-mobile, .nav-close { display: none; }
 
-/* Submenu de links do Menu nav-inline  Esta "media query" aplica as propriedades a partir da largura especificada para uma quebra de tablet até ao infinito (sentido de dentro para fora). Quando a janela for menor que a quebra de uma tablet, as propriedades cessam de existir.  */
 @media all and (min-width: 900px) { .submenu { position: relative; overflow: hidden; }
   .submenu:hover { color: #000; overflow: visible; }
   .submenu ul { margin: -5px 0 0; padding: 10px 0 0; opacity: 0; border: none; background-color: #FFF; box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); position: absolute; z-index: 9995; }
@@ -591,7 +578,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Fim da quebra de layout */
 /* Quebra de layout para Tablet  */
 @media all and (max-width: 900px) { .nav-inline { display: block; }
-  .nav-mobile { color: #95A5A5; font-size: 28px; line-height: 30px; margin: 0 0 0 auto; padding: 5px 8px; width: 40px; display: block; }
+  .nav-mobile { color: #95A5A5; margin: 0 0 0 auto; padding: 5px 8px; width: 40px; display: block; }
+  .nav-mobile i { font-size: 28px; line-height: 30px; }
   .nav-mobile:hover { color: #2E3333; }
   .nav-inline > ul { background: #fff; border-top: 1px solid #C5CDCD; border-bottom: 1px solid #C5CDCD; }
   .nav-inline li { margin: 0; padding-left: 15px; float: none; border-top: 1px solid #C5CDCD; border-bottom: 1px solid #C5CDCD; }
@@ -604,7 +592,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .nav-inline .current > a, .nav-inline .current-menu-item > a, .nav-inline .current_page_item > a, .nav-inline .current-post-ancestor > a, .nav-inline .current-menu-ancestor > a, .nav-inline .current-menu-parent > a, .nav-inline .current-custom-parent > a { border: none; } }
 /* Fim da Quebra de layout para Tablet */
 /* FIM Menu nav-inline */
-/* Imagens  Exemplo de aplicação: <div class="img max-h-8"> <img src="nome_da_image.png" height="530" width="800"> </div> <figure class="max-h-8"> <img src="nome_da_image.png" height="530" width="800"> </figure>  */
+/* Imagens  */
 .img { position: relative; }
 
 .img img { width: 100%; height: auto; }
@@ -617,7 +605,6 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .img .img-normal { width: auto; height: auto; margin: 0 auto; display: block; }
 
-/* img-align-text  A caixa da entidade HTML (DIV ou FIGURE), que envolve a imagem, recebe uma propriedade extra no padding-top, empurando a imagem para o alinhamento visual com o texto das colunas ao lado.  Exemplo de aplicação: <figure class="img-align-text max-h-8"> <img src="nome_da_image.png" height="530" width="800"> </figure>  */
 .img-align-text { padding-top: 1.4em; }
 
 /* Quebra de layout no limite da largura máxima de colunas  */
@@ -631,7 +618,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Fim da Quebra de layout para Tablet */
 /* FIM Imagens */
 /* Formulários  */
-.form-row { margin: 0; padding: 0; list-style: none; min-height: 90px; }
+.form-row { margin: 0; padding: 0; list-style: none; }
 
 .form-row p { margin: 0; padding: 0; }
 
@@ -639,33 +626,37 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .form-row label, .form-row legend { color: #191919; font-size: 14px; font-weight: 700; line-height: 30px; letter-spacing: 0.06em; text-transform: none; padding: 0; margin: 0; }
 
-.form-row textarea { color: #191919; font-family: inherit; font-size: 1.6em; margin: 0; padding: 0.75em 0.5em 0.5em 0.75em; width: 100%; min-height: 120px; border: 1px solid #B5B5B5; border-radius: 3px; box-shadow: inset 1px 1px 3px #CCCCCC; background-color: #F5F5F5; transition: background-color 1s ease 0s,border 1s ease 0s; }
-
-.form-row textarea:focus { border: 1px solid #5C5C5C; background-color: #e7f2fa; }
+.form-row input + label { font-weight: 400; }
 
 .label-block label, .form-row legend { display: block; }
 
-.input-text input { color: #191919; font-size: 2.0em; font-family: inherit; line-height: 1.4em; letter-spacing: 0.06em; vertical-align: middle; white-space: pre; margin: 0; padding: 0.35em 0.6em; width: 100%; min-height: 1em; display: block; border: 1px solid #B5B5B5; border-radius: 3px; box-shadow: inset 1px 1px 3px #CCCCCC; background-color: #F5F5F5; outline: none; transition: background-color 1s ease 0s,border 1s ease 0s; }
+.input-text input { color: #191919; font-size: 2.0em; font-family: inherit; line-height: 1.4em; letter-spacing: 0.06em; vertical-align: middle; white-space: pre; margin: 0 0 16px 0; padding: 0.35em 0.6em; width: 100%; min-height: 1em; display: block; border: 1px solid #B5B5B5; border-radius: 3px; box-shadow: inset 1px 1px 3px #CCCCCC; background-color: #F5F5F5; outline: none; transition: background-color 1s ease 0s,border 1s ease 0s; }
 
 .input-text input:hover { border: 1px solid #999999; background-color: #ffffff; transition: background-color 1s ease 0s,border 1s ease 0s; }
 
 .input-text input:focus { border: 1px solid #5C5C5C; background-color: #e7f2fa; }
 
+.input-text input + label { font-weight: 400; margin-top: -16px; margin-bottom: 16px; }
+
 .input-text-66 input { width: 66%; }
 
 .input-text-33 input { width: 33%; }
 
-.input-radio fieldset { padding: 0; border: none; }
+.form-row textarea { color: #191919; font-family: inherit; font-size: 1.6em; margin: 0; padding: 0.75em 0.5em 0.5em 0.75em; width: 100%; min-height: 120px; border: 1px solid #B5B5B5; border-radius: 3px; box-shadow: inset 1px 1px 3px #CCCCCC; background-color: #F5F5F5; transition: background-color 1s ease 0s,border 1s ease 0s; }
 
-.input-radio ul, .input-radio dl { margin: 0; padding: 0 0 30px; list-style: none; }
+.form-row textarea:focus { border: 1px solid #5C5C5C; background-color: #e7f2fa; }
+
+.input-radio fieldset, .input-text fieldset { padding: 0; border: none; }
+
+.input-radio ul, .input-radio dl { margin: 0; padding: 0; list-style: none; }
 
 .input-radio li, .input-radio dt, .input-radio dd { font-size: 1.4em; line-height: 30px; margin: 0; padding: 0; list-style: none; }
 
 .input-radio label { font-size: 1em; font-weight: 300; }
 
-.input-radio input { display: inline-block; margin-right: 0.66em; }
+.input-radio input { vertical-align: -14%; display: inline-block; margin: 0 7px 0 0; }
 
-.select-dropdown select { color: #191919; font-family: inherit; font-size: 1.6em; line-height: 40px; margin: 0; padding: 0.6em 0.3em 0.6em 0.3em; min-height: 36px; width: 100%; border: 1px solid #B5B5B5; border-radius: 3px; box-shadow: 1px 1px 3px #CCCCCC; background-color: #F5F5F5; transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s; outline: none; }
+.select-dropdown select { color: #191919; font-family: inherit; font-size: 1.6em; line-height: 2em; margin: 0 0 16px 0; padding: 9px 0.3em 8px; width: 100%; border: 1px solid #B5B5B5; border-radius: 3px; box-shadow: 1px 1px 3px #CCCCCC; background-color: #F5F5F5; transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s; outline: none; }
 
 .select-dropdown select:hover { border: 1px solid #999999; background-color: #F5F5F5; outline: none; }
 
@@ -676,29 +667,27 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Erros nos formulários */
 .errorlist { color: #e74c3c; }
 
-.errorlist p, .errorlist li, .errorlist dt, .errorlist dd { font-size: 1.4em; padding-top: 0; padding-bottom: 0; margin-bottom: 0; }
+.errorlist p, .errorlist li, .errorlist dt, .errorlist dd { font-size: 1.4em; line-height: 30px; padding-top: 0; padding-bottom: 0; margin-bottom: 0; }
 
-.errorlist li + li, .errorlist dd + dd { line-height: 1.25em; margin: 0; padding-bottom: 0.7em; }
+.errorlist li + li, .errorlist dd + dd { line-height: 20px; padding-bottom: 10px; margin: 0; }
 
-.form-row .errorlist { margin: 0; padding: 0 0 0 0; list-style: none; }
+.form-row .errorlist { margin: 0; padding: 0 0 0 30px; list-style: none; display: block; position: relative; }
 
-.form-row .errorlist + input, .form-row .errorlist + input:hover, .form-row .errorlist + input:focus, .form-row .errorlist + input + input, .form-row .errorlist + textarea, .form-row .errorlist + ul, .form-row .errorlist + dl, .error-input input { margin: 0 0 6px; padding: 4px 0 5px 5px; border-radius: 0 3px 3px 0; border-left: 6px solid #e74c3c; }
+.form-row .errorlist:before { content: "\f071"; font-size: 20px; line-height: 26px; font-style: normal; font-weight: normal; padding: 0 0 0 0; margin: 0 0 0 -30px; display: block; width: 30px; height: 30px; position: absolute; }
 
-.form-row .errorlist + input, .form-row .errorlist + input:hover, .form-row .errorlist + input:focus, .form-row .errorlist + input + input, .form-row .errorlist + textarea, .error-input input, .error-input input:hover, .error-input input:focus { border: 1px solid #e74c3c; border-left: 6px solid #e74c3c; }
+.form-row .errorlist + input, .form-row .errorlist + input:hover, .form-row .errorlist + input:focus, .form-row .errorlist + input + input, .form-row .errorlist + textarea, .form-row .errorlist + ul, .form-row .errorlist + dl, .error-input input { border: 1px solid #e74c3c; background-color: rgba(231, 76, 60, 0.1); }
 
-.form-row .errorlist { padding-left: 7.5px; border-left: 6px solid #e74c3c; }
+.form-row .errorlist + ul, .form-row .errorlist + dl { padding-left: 5px; border: 0; }
 
-.error-input label { color: #e74c3c; }
+.error-input label, .error-input legend { color: #e74c3c; }
 
 /* Quebra de layout para Tablet  */
-@media all and (max-width: 900px) { .form-row { padding: 0 15px; }
+@media all and (max-width: 900px) { .form-row { padding-left: 15px; padding-right: 15px; }
   .input-text-66 input, .input-text-33 input { width: 100%; } }
-/* Fim da Quebra de layout para Tablet */
-/* FIM de Formulários  */
 /* Botões de Interface */
 .btn-basic, .btn-basic:visited, input[type="submit"] { color: #2E3333; font-size: 14px; font-weight: bold; line-height: 42px; min-height: 42px; vertical-align: middle; text-transform: uppercase; text-decoration: none; margin: 0.5em 1em 0.5em 0; padding: 0 1.6em; display: inline-block; border: 0; border-radius: 3px; position: relative; background-color: #C5CDCD; transition: background-color ease 0.5s; }
 
-.btn-basic:hover, .btn-basic:focus, input[type="submit"]:hover { color: #F2F5F5; background-color: #95A5A5; outline: 0; cursor: pointer; }
+.btn-basic:hover, .btn-basic:focus, input[type="submit"]:hover { color: #FFFFFF; background-color: #aab5b5; outline: 0; cursor: pointer; }
 
 .btn-icon-left { padding-left: 1.2em; }
 
@@ -711,26 +700,20 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .btn-row { margin: 0; padding: 0; min-height: 60px; }
 
 /* Botões coloridos */
-.btn-green, .btn-green:visited, input[type="submit"].btnGreen, input[type="submit"].btnGreen:visited { color: #FFF; background-color: #1abc9c; }
+.btn-green, .btn-green:visited, input[type="submit"].btn-green, input[type="submit"].btn-green:visited { color: #FFFFFF; background-color: #1abc9c; }
+.btn-green:hover, input[type="submit"].btn-green:hover { color: #FFFFFF; background-color: #117964; }
 
-.btn-green:hover, input[type="submit"].btnGreen:hover { color: #FFF; background-color: #16a085; }
+.btn-blue, .btn-blue:visited, input[type="submit"].btn-blue, input[type="submit"].btn-blue:visited { color: #FFFFFF; background-color: #3498DB; }
+.btn-blue:hover, input[type="submit"].btn-blue:hover { color: #FFFFFF; background-color: #1d6fa5; }
 
-.btn-blue, .btn-blue:visited, input[type="submit"].btnBlue, input[type="submit"].btnBlue:visited { color: #FFF; background-color: #3498db; }
+.btn-orange, .btn-orange:visited, input[type="submit"].btn-orange, input[type="submit"].btn-orange:visited { color: #FFFFFF; background-color: #FF9900; }
+.btn-orange:hover, input[type="submit"].btn-orange:hover { color: #FFFFFF; background-color: #b36b00; }
 
-.btn-blue:hover, input[type="submit"].btnBlue:hover { color: #FFF; background-color: #2980b9; }
-
-.btn-orange, .btn-orange:visited, input[type="submit"].btnOrange, input[type="submit"].btnOrange:visited { color: #FFF; background-color: #FF9900; }
-
-.btn-orange:hover, input[type="submit"].btnOrange:hover { color: #FFF; background-color: #F08000; }
-
-.btn-red, .btn-red:visited, input[type="submit"].btnRed, input[type="submit"].btnRed:visited { color: #FFF; background-color: #e74c3c; }
-
-.btn-red:hover, input[type="submit"].btnRed:hover { color: #FFF; background-color: #CC3300; }
+.btn-red, .btn-red:visited, input[type="submit"].btn-red, input[type="submit"].btn-red:visited { color: #FFFFFF; background-color: #E74C3C; }
+.btn-red:hover, input[type="submit"].btn-red:hover { color: #FFFFFF; background-color: #bf2718; }
 
 /* Quebra de layout para Tablet  */
 @media all and (max-width: 900px) { .btn-row { padding: 0 15px; } }
-/* Fim da Quebra de layout para Tablet */
-/* FIM Botões de Interface  */
 /* Customização */
 body { font-family: 'Open Sans', sans-serif; }
 
