@@ -171,12 +171,15 @@
 
     .nav-mobile {
         color: $grey-base;
-        font-size: 28px;
-        line-height: 30px;
         margin: 0 0 0 auto;
         padding: 5px 8px;
         width: 40px;
         display: block;
+    }
+
+    .nav-mobile i {
+        font-size: 28px;
+        line-height: 30px;
     }
 
     .nav-mobile:hover {
