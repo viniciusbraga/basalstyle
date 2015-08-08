@@ -528,7 +528,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* FIM da quebra de layout */
 /* Quebra de layout para Tablet  */
 @media all and (max-width: 900px) { /* Cabeçalho do Site e Navegação */
-  .header { position: relative; min-height: 13.5em; }
+  .header { position: relative; }
   .site-logo { width: 100%; padding: 0 15px; }
   .site-logo .site-description { width: 90%; padding-top: 0; padding-bottom: 10px; }
   /* Fomulário de Busca */
@@ -715,7 +715,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Quebra de layout para Tablet  */
 @media all and (max-width: 900px) { .btn-row { padding: 0 15px; } }
 /* Customização */
-body { font-family: 'Open Sans', sans-serif; background: #ccc; }
+body { font-family: 'Open Sans', sans-serif; }
 
 section header h2 { color: #C5CDCD; font-size: 20px; padding: 15px 0 0 0; min-height: 60px; text-transform: uppercase; }
 
