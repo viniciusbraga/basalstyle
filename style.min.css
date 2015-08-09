@@ -794,6 +794,33 @@ a:visited { color: #217dbb; }
 /* Fim da Quebra de layout para Tablet */
 .img figcaption, .img-legend { background-color: #ffffff; opacity: 1; }
 
+.form-row label, .form-row legend { color: #191919; }
+
+.input-text input { color: #191919; border: 1px solid #B5B5B5; border-radius: 3px; box-shadow: inset 1px 1px 3px #CCCCCC; background-color: #F5F5F5; outline: none; transition: background-color 1s ease 0s,border 1s ease 0s; }
+
+.input-text input:hover { border: 1px solid #999999; background-color: #ffffff; transition: background-color 1s ease 0s,border 1s ease 0s; }
+
+.input-text input:focus { border: 1px solid #5C5C5C; background-color: #e7f2fa; }
+
+.form-row textarea { color: #191919; border: 1px solid #B5B5B5; border-radius: 3px; box-shadow: inset 1px 1px 3px #CCCCCC; background-color: #F5F5F5; transition: background-color 1s ease 0s,border 1s ease 0s; }
+
+.form-row textarea:focus { border: 1px solid #5C5C5C; background-color: #e7f2fa; }
+
+.select-dropdown select { color: #191919; border: 1px solid #B5B5B5; border-radius: 3px; box-shadow: 1px 1px 3px #CCCCCC; background-color: #F5F5F5; transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s; outline: none; }
+
+.select-dropdown select:hover { border: 1px solid #999999; background-color: #F5F5F5; outline: none; }
+
+.select-dropdown select:focus { border: 1px solid #5C5C5C; background-color: #F5F5F5; outline: none; }
+
+/* Erros nos formulários */
+.errorlist { color: #e74c3c; }
+
+.form-row .errorlist + input, .form-row .errorlist + input:hover, .form-row .errorlist + input:focus, .form-row .errorlist + input + input, .form-row .errorlist + textarea, .form-row .errorlist + ul, .form-row .errorlist + dl, .error-input input { border: 1px solid #e74c3c; background-color: rgba(231, 76, 60, 0.1); }
+
+.form-row .errorlist + ul, .form-row .errorlist + dl { border: 0; }
+
+.error-input label, .error-input legend { color: #e74c3c; }
+
 .btn-basic, .btn-basic:visited, input[type="submit"] { color: #2E3333; border: 0; border-radius: 3px; background-color: #C5CDCD; transition: background-color ease 0.5s; }
 
 .btn-basic:hover, .btn-basic:focus, input[type="submit"]:hover, input[type="submit"]:focus { color: #FFFFFF; background-color: #aab5b5; }

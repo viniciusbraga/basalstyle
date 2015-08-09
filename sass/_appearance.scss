@@ -249,6 +249,93 @@ a:visited { color: $basal-color-link-visited; }
 
 // @import "forms"
 
+.form-row label,
+.form-row legend {
+    color: $basal-form-legend-color;
+}
+
+.input-text input {
+    color: $basal-form-text-color;
+    border: $basal-form-border;
+    border-radius: $basal-form-border-radius;
+    box-shadow: $basal-form-shadow;
+    background-color: $basal-form-background;
+    outline: none;
+    transition: background-color 1s ease 0s,border 1s ease 0s;
+}
+.input-text input:hover {
+    border: $basal-form-border-hover;
+    background-color: $basal-form-background-hover;
+    transition: background-color 1s ease 0s,border 1s ease 0s;
+}
+
+.input-text input:focus {
+    border: $basal-form-border-focus;
+    background-color: $basal-form-background-focus;
+}
+
+.form-row textarea {
+    color: $basal-form-text-color;
+    border: $basal-form-border;
+    border-radius: $basal-form-border-radius;
+    box-shadow: $basal-form-shadow;
+    background-color: $basal-form-background;
+    transition: background-color 1s ease 0s,border 1s ease 0s;
+}
+
+.form-row textarea:focus {
+    border: $basal-form-border-focus;
+    background-color: $basal-form-background-focus;
+}
+
+.select-dropdown select {
+    color: $basal-form-dropdown-text-color;
+    border: $basal-form-dropdown-border;
+    border-radius: $basal-form-dropdown-radius;
+    box-shadow: $basal-form-dropdown-shadow;
+    background-color: $basal-form-dropdown-background;
+    transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
+    outline: none;
+}
+.select-dropdown select:hover {
+    border: $basal-form-dropdown-border-hover;
+    background-color: $basal-form-dropdown-background-hover;
+    outline: none;
+}
+.select-dropdown select:focus {
+    border: $basal-form-dropdown-border-focus;
+    background-color: $basal-form-dropdown-background-focus;
+    outline: none;
+}
+
+/* Erros nos formulários */
+
+.errorlist {
+    color: $basal-form-error-color;
+}
+
+.form-row .errorlist + input,
+.form-row .errorlist + input:hover,
+.form-row .errorlist + input:focus,
+.form-row .errorlist + input + input,
+.form-row .errorlist + textarea,
+.form-row .errorlist + ul,
+.form-row .errorlist + dl,
+.error-input input {
+    border: $basal-form-error-border;
+    background-color: $basal-form-error-background;
+}
+
+.form-row .errorlist + ul,
+.form-row .errorlist + dl {
+    border: 0;
+}
+
+.error-input label,
+.error-input legend {
+    color: $basal-form-error-color;
+}
+
 
 // @import "buttons"
 
