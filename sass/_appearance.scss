@@ -19,7 +19,7 @@ blockquote {
 }
 
 code, tt {
-    color: #C06;
+    color: $basal-color-text-code;
 }
 
 hr {
@@ -62,7 +62,7 @@ a:visited { color: $basal-color-link-visited; }
 
 .site-logo h1,
 .site-logo h1 a {
-    color: #000;
+    color: #000000;
 }
 
 /* Fomulário de Busca no Header do Site */

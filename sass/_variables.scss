@@ -38,34 +38,27 @@ $grey-darker:    #7F8C8C;
 $grey-darkest:   #2E3333;
 
 $blue-base:      #3498DB;
-$blue-light:     #93C6E8;
-$blue-darker:    #2980B9;
 
 $green-base:     #1abc9c;
-$green-light:    lighten($green-base, 15%);
-$green-darker:   #16a085;
 
 $orange-base:    #FF9900;
-$orange-light:   lighten($orange-base, 15%);
-$orange-darker:  #F08000;
 
 $red-base:       #E74C3C;
-$red-light:      #FF9B96;
-$red-darker:     #CC3300;
 
 
-// Variáveis de cor
+// Cor do Texto
 
 $basal-color-link:              $blue-base;
-$basal-color-link-hover:        $blue-darker;
+$basal-color-link-hover:        darken( $basal-color-link, 15% );
 $basal-color-link-active:       invert( $basal-color-link );
 $basal-color-link-visited:      darken( $basal-color-link, 10% );
 
-$basal-color-text:              #111100;
+$basal-color-text:              #333333;
 $basal-color-text-highlight:    #DDE6E6;
+$basal-color-text-code:         #CC0066;
 
-$basal-color-ruler:             #c5cdcd;
-$basal-color-background:        #ffffff;
+$basal-color-ruler:             #C5CDCD;
+$basal-color-background:        #FFFFFF;
 
 
 // Botões - Variáveis de cor
@@ -125,3 +118,4 @@ $basal-form-dropdown-background-focus:   $basal-form-background;
 $basal-form-error-color:                 #e74c3c;
 $basal-form-error-border:                1px solid $basal-form-error-color;
 $basal-form-error-background:            rgba($basal-form-error-color, 0.1);
+

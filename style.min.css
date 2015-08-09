@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* Etiquetas HTML obs: Não é necessário aplicar o CSS RESET com este código na página.  */
-html { font-size: 62.5%; background-color: #ffffff; }
+html { font-size: 62.5%; background-color: #FFFFFF; }
 
-body { color: #111100; font-size: 1em; line-height: 1.5em; font-family: sans-serif; margin: 0; padding: 0; }
+body { color: #333333; font-size: 1em; line-height: 1.5em; font-family: sans-serif; margin: 0; padding: 0; }
 
 /* Titulagem */
 h1 { font-size: 4.0em; line-height: 60px; min-height: 90px; padding: 13px 0 17px; }
@@ -39,7 +39,7 @@ table { border-collapse: collapse; width: 100%; margin: 0 0 0 1em; }
 
 th, caption { text-align: left; font-weight: 700; }
 
-blockquote { margin: 0 0 30px 15px; padding: 0 9em 0 1.5em; border-left: 8px solid #c5cdcd; }
+blockquote { margin: 0 0 30px 15px; padding: 0 9em 0 1.5em; border-left: 8px solid #C5CDCD; }
 
 em { font-style: italic; }
 
@@ -49,19 +49,19 @@ strong, b { font-weight: 700; }
 
 code, tt { color: #C06; font-size: 1.2em; line-height: 1em; }
 
-hr { border-left: 0; border-right: 0; border-top: solid 1px white; border-bottom: solid 1px #c5cdcd; }
+hr { border-left: 0; border-right: 0; border-top: solid 1px white; border-bottom: solid 1px #C5CDCD; }
 
 img { margin: 0 auto; vertical-align: middle; border-width: 0; }
 
 form { padding: 0; margin: 0; }
 
-fieldset { border: solid 1px #c5cdcd; }
+fieldset { border: solid 1px #C5CDCD; }
 
-textarea { font-family: inherit; font-size: 1.5em; margin: 0 1.2em; padding: 0.75em 0.5em 0.5em 0.75em; width: 93%; border: 1px solid #c5cdcd; }
+textarea { font-family: inherit; font-size: 1.5em; margin: 0 1.2em; padding: 0.75em 0.5em 0.5em 0.75em; width: 93%; border: 1px solid #C5CDCD; }
 
 a { color: #3498DB; }
 
-a:hover { color: #2980B9; }
+a:hover { color: #1d6fa5; }
 
 a:active { color: #cb6724; }
 
@@ -78,13 +78,13 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Aplica o modelo de caixa semelhante ao do IE */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.ruler-left { border-left: 1px solid #c5cdcd; }
+.ruler-left { border-left: 1px solid #C5CDCD; }
 
-.ruler-top { border-top: 1px solid #c5cdcd; }
+.ruler-top { border-top: 1px solid #C5CDCD; }
 
-.ruler-right { border-right: 1px solid #c5cdcd; }
+.ruler-right { border-right: 1px solid #C5CDCD; }
 
-.ruler-bottom { border-bottom: 1px solid #c5cdcd; }
+.ruler-bottom { border-bottom: 1px solid #C5CDCD; }
 
 .float-left { float: left; }
 
@@ -715,23 +715,23 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Quebra de layout para Tablet  */
 @media all and (max-width: 900px) { .btn-row { padding: 0 15px; } }
 /* Cores, bordas e Efeitos  */
-html { background-color: #ffffff; }
+html { background-color: #FFFFFF; }
 
-body { color: #111100; }
+body { color: #333333; }
 
-blockquote { border-left: 8px solid #c5cdcd; }
+blockquote { border-left: 8px solid #C5CDCD; }
 
-code, tt { color: #C06; }
+code, tt { color: #CC0066; }
 
-hr { border-top: solid 1px white; border-bottom: solid 1px #c5cdcd; }
+hr { border-top: solid 1px white; border-bottom: solid 1px #C5CDCD; }
 
-fieldset { border: solid 1px #c5cdcd; }
+fieldset { border: solid 1px #C5CDCD; }
 
-textarea { border: 1px solid #c5cdcd; }
+textarea { border: 1px solid #C5CDCD; }
 
 a { color: #3498DB; }
 
-a:hover { color: #2980B9; }
+a:hover { color: #1d6fa5; }
 
 a:active { color: #cb6724; }
 
@@ -743,15 +743,15 @@ a:visited { color: #217dbb; }
 /* Gecko Browsers */
 ::-moz-selection { background: #DDE6E6; }
 
-.ruler-left { border-left: 1px solid #c5cdcd; }
+.ruler-left { border-left: 1px solid #C5CDCD; }
 
-.ruler-top { border-top: 1px solid #c5cdcd; }
+.ruler-top { border-top: 1px solid #C5CDCD; }
 
-.ruler-right { border-right: 1px solid #c5cdcd; }
+.ruler-right { border-right: 1px solid #C5CDCD; }
 
-.ruler-bottom { border-bottom: 1px solid #c5cdcd; }
+.ruler-bottom { border-bottom: 1px solid #C5CDCD; }
 
-.site-logo h1, .site-logo h1 a { color: #000; }
+.site-logo h1, .site-logo h1 a { color: #000000; }
 
 /* Fomulário de Busca no Header do Site */
 .header-search input[type="text"] { color: #333; border: 1px solid #C5CDCD; }
