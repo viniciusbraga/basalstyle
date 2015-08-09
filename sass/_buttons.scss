@@ -17,15 +17,16 @@ input[type="submit"] {
   display: inline-block;
   border: $basal-button-border;
   border-radius: $basal-button-border-radius;
-  position: relative;
   background-color: $basal-button-background;
   transition: background-color ease 0.5s;
+  position: relative;
 
 }
 
 .btn-basic:hover,
 .btn-basic:focus,
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+input[type="submit"]:focus {
   color: $basal-button-text-color-hover;
   background-color: $basal-button-background-hover;
   outline: 0;
@@ -61,6 +62,10 @@ input[type="submit"]:hover {
             color: $txt-color;
             background-color: darken($bg-color, 15%);
         }
+
+        &:focus {
+            @extend #{$selector}:hover;
+        }
     }
 
     input[type="submit"]#{$selector} {
@@ -72,6 +77,10 @@ input[type="submit"]:hover {
         }
 
         &:hover {
+            @extend #{$selector}:hover;
+        }
+
+        &:focus {
             @extend #{$selector}:hover;
         }
     }

@@ -685,9 +685,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 @media all and (max-width: 900px) { .form-row { padding-left: 15px; padding-right: 15px; }
   .input-text-66 input, .input-text-33 input { width: 100%; } }
 /* Botões de Interface */
-.btn-basic, .btn-basic:visited, input[type="submit"] { color: #2E3333; font-size: 14px; font-weight: bold; line-height: 42px; min-height: 42px; vertical-align: middle; text-transform: uppercase; text-decoration: none; margin: 0.5em 1em 0.5em 0; padding: 0 1.6em; display: inline-block; border: 0; border-radius: 3px; position: relative; background-color: #C5CDCD; transition: background-color ease 0.5s; }
+.btn-basic, .btn-basic:visited, input[type="submit"] { color: #2E3333; font-size: 14px; font-weight: bold; line-height: 42px; min-height: 42px; vertical-align: middle; text-transform: uppercase; text-decoration: none; margin: 0.5em 1em 0.5em 0; padding: 0 1.6em; display: inline-block; border: 0; border-radius: 3px; background-color: #C5CDCD; transition: background-color ease 0.5s; position: relative; }
 
-.btn-basic:hover, .btn-basic:focus, input[type="submit"]:hover { color: #FFFFFF; background-color: #aab5b5; outline: 0; cursor: pointer; }
+.btn-basic:hover, .btn-basic:focus, input[type="submit"]:hover, input[type="submit"]:focus { color: #FFFFFF; background-color: #aab5b5; outline: 0; cursor: pointer; }
 
 .btn-icon-left { padding-left: 1.2em; }
 
@@ -701,16 +701,16 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 /* Botões coloridos */
 .btn-green, .btn-green:visited, input[type="submit"].btn-green, input[type="submit"].btn-green:visited { color: #FFFFFF; background-color: #1abc9c; }
-.btn-green:hover, input[type="submit"].btn-green:hover { color: #FFFFFF; background-color: #117964; }
+.btn-green:hover, .btn-green:focus, input[type="submit"].btn-green:focus, input[type="submit"].btn-green:hover { color: #FFFFFF; background-color: #117964; }
 
 .btn-blue, .btn-blue:visited, input[type="submit"].btn-blue, input[type="submit"].btn-blue:visited { color: #FFFFFF; background-color: #3498DB; }
-.btn-blue:hover, input[type="submit"].btn-blue:hover { color: #FFFFFF; background-color: #1d6fa5; }
+.btn-blue:hover, .btn-blue:focus, input[type="submit"].btn-blue:focus, input[type="submit"].btn-blue:hover { color: #FFFFFF; background-color: #1d6fa5; }
 
 .btn-orange, .btn-orange:visited, input[type="submit"].btn-orange, input[type="submit"].btn-orange:visited { color: #FFFFFF; background-color: #FF9900; }
-.btn-orange:hover, input[type="submit"].btn-orange:hover { color: #FFFFFF; background-color: #b36b00; }
+.btn-orange:hover, .btn-orange:focus, input[type="submit"].btn-orange:focus, input[type="submit"].btn-orange:hover { color: #FFFFFF; background-color: #b36b00; }
 
 .btn-red, .btn-red:visited, input[type="submit"].btn-red, input[type="submit"].btn-red:visited { color: #FFFFFF; background-color: #E74C3C; }
-.btn-red:hover, input[type="submit"].btn-red:hover { color: #FFFFFF; background-color: #bf2718; }
+.btn-red:hover, .btn-red:focus, input[type="submit"].btn-red:focus, input[type="submit"].btn-red:hover { color: #FFFFFF; background-color: #bf2718; }
 
 /* Quebra de layout para Tablet  */
 @media all and (max-width: 900px) { .btn-row { padding: 0 15px; } }
@@ -799,16 +799,16 @@ a:visited { color: #217dbb; }
 .btn-basic:hover, .btn-basic:focus, input[type="submit"]:hover, input[type="submit"]:focus { color: #FFFFFF; background-color: #aab5b5; }
 
 .btn-green, .btn-green:visited, input[type="submit"].btn-green, input[type="submit"].btn-green:visited { color: #FFFFFF; background-color: #1abc9c; }
-.btn-green:hover, input[type="submit"].btn-green:hover { color: #FFFFFF; background-color: #117964; }
+.btn-green:hover, .btn-green:focus, input[type="submit"].btn-green:focus, input[type="submit"].btn-green:hover { color: #FFFFFF; background-color: #117964; }
 
 .btn-blue, .btn-blue:visited, input[type="submit"].btn-blue, input[type="submit"].btn-blue:visited { color: #FFFFFF; background-color: #3498DB; }
-.btn-blue:hover, input[type="submit"].btn-blue:hover { color: #FFFFFF; background-color: #1d6fa5; }
+.btn-blue:hover, .btn-blue:focus, input[type="submit"].btn-blue:focus, input[type="submit"].btn-blue:hover { color: #FFFFFF; background-color: #1d6fa5; }
 
 .btn-orange, .btn-orange:visited, input[type="submit"].btn-orange, input[type="submit"].btn-orange:visited { color: #FFFFFF; background-color: #FF9900; }
-.btn-orange:hover, input[type="submit"].btn-orange:hover { color: #FFFFFF; background-color: #b36b00; }
+.btn-orange:hover, .btn-orange:focus, input[type="submit"].btn-orange:focus, input[type="submit"].btn-orange:hover { color: #FFFFFF; background-color: #b36b00; }
 
 .btn-red, .btn-red:visited, input[type="submit"].btn-red, input[type="submit"].btn-red:visited { color: #FFFFFF; background-color: #E74C3C; }
-.btn-red:hover, input[type="submit"].btn-red:hover { color: #FFFFFF; background-color: #bf2718; }
+.btn-red:hover, .btn-red:focus, input[type="submit"].btn-red:focus, input[type="submit"].btn-red:hover { color: #FFFFFF; background-color: #bf2718; }
 
 /* Customização */
 body { font-family: 'Open Sans', sans-serif; }
