@@ -105,6 +105,14 @@ a:visited { color: $basal-color-link-visited; }
         box-shadow: 0 5px 10px #CCC;
     }
 
+    .header-inline .nav-inline > ul {
+        border: none;
+    }
+
+    .header-inline .nav-inline li {
+        border: none;
+    }
+
     .header-inline .nav-inline:hover .nav-mobile {
         color: $grey-darkest;
     }
@@ -161,8 +169,8 @@ a:visited { color: $basal-color-link-visited; }
     }
     .submenu:hover ul {
       opacity: 1;
-      -webkit-transition: opacity 0.6s, margin 1s;
-      transition: opacity 0.6s, margin 1s;
+      -webkit-transition: opacity 0.6s;
+      transition: opacity 0.6s;
     }
 
     .submenu ul li a:hover {
