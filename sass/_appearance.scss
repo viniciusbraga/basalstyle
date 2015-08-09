@@ -1,0 +1,282 @@
+/*
+ * Cores, bordas e Efeitos
+ *
+ */
+
+// @import "variables"
+// @import "typography"
+
+html {
+    background-color: $basal-color-background;
+}
+
+body {
+    color: $basal-color-text;
+}
+
+blockquote {
+    border-left: 8px solid $basal-color-ruler;
+}
+
+code, tt {
+    color: #C06;
+}
+
+hr {
+    border-top:    solid 1px lighten( $basal-color-ruler, 50% );
+    border-bottom: solid 1px $basal-color-ruler;
+}
+
+fieldset {
+    border: solid 1px $basal-color-ruler;
+}
+
+textarea {
+    border: 1px solid  $basal-color-ruler;
+}
+
+a         { color: $basal-color-link; }
+a:hover   { color: $basal-color-link-hover; }
+a:active  { color: $basal-color-link-active; }
+a:visited { color: $basal-color-link-visited; }
+
+/* WebKit/Blink Browsers */
+::selection {
+  background: $basal-color-text-highlight;
+}
+
+/* Gecko Browsers */
+::-moz-selection {
+  background: $basal-color-text-highlight;
+}
+
+// Columns Rulers, tricks and treats
+
+.ruler-left   { border-left:   1px solid $basal-color-ruler; }
+.ruler-top    { border-top:    1px solid $basal-color-ruler; }
+.ruler-right  { border-right:  1px solid $basal-color-ruler; }
+.ruler-bottom { border-bottom: 1px solid $basal-color-ruler; }
+
+
+// @import "header"
+
+.site-logo h1,
+.site-logo h1 a {
+    color: #000;
+}
+
+/* Fomulário de Busca no Header do Site */
+
+.header-search input[type="text"] {
+  color: #333;
+  border: 1px solid #C5CDCD;
+}
+
+.header-search button[type="submit"] {
+  color: #333;
+  border: 0;
+  box-shadow: none;
+  background: none;
+}
+
+/*
+ * Quebra de layout para Tablet
+ *
+ */
+
+@media all and (max-width: $basal-media-tablet) {
+
+    /* Fomulário de Busca */
+
+    .header-search button[type="submit"] {
+        color: #333;
+        border: 0;
+        box-shadow: none;
+        background: none;
+    }
+
+    /* Header inline */
+
+    .header-inline .nav-inline {
+        background: #fff;
+    }
+
+    .header-inline .nav-inline:hover {
+        box-shadow: 0 5px 10px #CCC;
+    }
+
+    .header-inline .nav-inline:hover .nav-mobile {
+        color: $grey-darkest;
+    }
+
+} /* Fim da Quebra de layout para Tablet */
+
+
+// @import "nav"
+
+.nav-inline li a {
+    transition: color 0.5s;
+}
+
+.nav-inline li a:hover {
+    color: #000;
+    border-top-color: $grey-darkest;
+}
+
+.nav-inline .current > a,
+.nav-inline .current-menu-item > a,
+.nav-inline .current_page_item > a,
+.nav-inline .current-post-ancestor > a,
+.nav-inline .current-menu-ancestor > a,
+.nav-inline .current-menu-parent > a,
+.nav-inline .current-custom-parent > a {
+    color: #000;
+    font-weight: 700;
+}
+
+// Submenu de links do Menu nav-inline
+
+@media all and (min-width: $basal-media-tablet) {
+
+    .submenu:hover {
+        color: #000;
+    }
+
+    .submenu ul {
+      opacity: 0;
+      border: none;
+      background-color: #FFF;
+      box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    }
+    .submenu ul:after {
+      border: none;
+      background-color: #FFFFFF;
+      box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    }
+    .submenu ul:before {
+      background: #FFF;
+    }
+    .submenu:hover > a {
+      color: #000;
+    }
+    .submenu:hover ul {
+      opacity: 1;
+      -webkit-transition: opacity 0.6s, margin 1s;
+      transition: opacity 0.6s, margin 1s;
+    }
+
+    .submenu ul li a:hover {
+      color: #FFF;
+      background: #3498DB;
+    }
+
+    .submenu .current > a,
+    .submenu .current-menu-item > a,
+    .submenu .current_page_item > a,
+    .submenu .current-post-ancestor > a,
+    .submenu .current-menu-ancestor > a,
+    .submenu .current-menu-parent > a,
+    .submenu .current-custom-parent > a {
+      color: #000;
+    }
+
+
+} /* Fim da quebra de layout */
+
+/*
+ * Quebra de layout para Tablet
+ */
+
+@media all and (max-width: $basal-media-tablet) {
+
+    .nav-mobile {
+        color: $grey-base;
+    }
+
+    .nav-mobile:hover {
+        color: $grey-darkest;
+    }
+
+    .nav-inline > ul {
+        background: #fff;
+        border-top: 1px solid $grey-light;
+        border-bottom: 1px solid $grey-light;
+    }
+
+    .nav-inline li {
+        border-top: 1px solid $grey-light;
+        border-bottom: 1px solid $grey-light;
+    }
+
+    .nav-inline li a {
+        border: none;
+    }
+
+    .submenu li {
+        border-top: 1px solid $grey-light;
+        border-bottom: none;
+    }
+
+    .nav-inline .current > a,
+    .nav-inline .current-menu-item > a,
+    .nav-inline .current_page_item > a,
+    .nav-inline .current-post-ancestor > a,
+    .nav-inline .current-menu-ancestor > a,
+    .nav-inline .current-menu-parent > a,
+    .nav-inline .current-custom-parent > a {
+        border: none;
+    }
+
+} /* Fim da Quebra de layout para Tablet */
+
+
+// @import "images"
+
+.img figcaption,
+.img-legend {
+    background-color: #ffffff;
+    opacity: 1;
+}
+
+
+// @import "forms"
+
+
+// @import "buttons"
+
+.btn-basic,
+.btn-basic:visited,
+input[type="submit"] {
+  color: $basal-button-text-color;
+  border: $basal-button-border;
+  border-radius: $basal-button-border-radius;
+  background-color: $basal-button-background;
+  transition: background-color ease 0.5s;
+
+}
+
+.btn-basic:hover,
+.btn-basic:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  color: $basal-button-text-color-hover;
+  background-color: $basal-button-background-hover;
+}
+
+// Botão Verde
+@include buttons( ".btn-green",
+                  $basal-button-color-text-color,
+                  $green-base);
+// Botão Azul
+@include buttons( ".btn-blue",
+                  $basal-button-color-text-color,
+                  $blue-base);
+// Botão Laranja
+@include buttons( ".btn-orange",
+                  $basal-button-color-text-color,
+                  $orange-base);
+// Botão Vermelho
+@include buttons( ".btn-red",
+                  $basal-button-color-text-color,
+                  $red-base);
+
