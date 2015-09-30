@@ -5,6 +5,15 @@
     font-family: 'Open Sans', sans-serif;
  }
 
+.site-logo h1 a {
+    background: transparent url(images/basalstyle-logo.png) no-repeat left bottom;
+}
+
+.site-logo h1 a {
+    background-image: url(images/basalstyle-logo.png);
+    background-image: url(images/basalstyle-logo.svg), none;
+}
+
 section header h2 {
     color: $grey-light;
     font-size: 20px;
@@ -12,5 +21,19 @@ section header h2 {
     min-height: 60px;
     text-transform: uppercase;
 }
+
+.footer-frame {
+    background: $grey-lighter;
+}
+
+.footer .site-logo h1 a {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.6;
+}
+
 
 /* Fim Customização */

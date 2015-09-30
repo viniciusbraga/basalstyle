@@ -27,7 +27,7 @@
 </head>
 <body>
 
-    <div class="row min-h-4">
+    <div class="header-frame row min-h-4">
 
         <header class="header header-inline min-h-3 row desktop-12 container" role="banner">
 
@@ -43,7 +43,7 @@
                     <li class="current"><a href="#TextAndImages">Texto e Imagens</a></li>
                     <li><a href="#Menus">menus</a></li>
                     <li class="submenu">
-                        <a href="#Form">Formulários</a>
+                        <a href="#Form">Formulários <i class="fa fa-chevron-down"></i> </a>
                         <ul>
                             <li><a href="#FormInput">Input Text</a></li>
                             <li><a href="#FormRadio">Radio Buttons</a></li>
@@ -258,7 +258,7 @@
                             <li class="current"><a href="#TextAndImages">Texto e Imagens</a></li>
                             <li><a href="#Menus">menus</a></li>
                             <li class="submenu">
-                                <a href="#Form">Formulários</a>
+                                <a href="#Form">Formulários <i class="fa fa-chevron-down"></i></a>
                                 <ul>
                                     <li><a href="#FormInput">Input Text</a></li>
                                     <li><a href="#FormRadio">Radio Buttons</a></li>
@@ -333,6 +333,8 @@
                             <input type="text" id="id-03" name="zipcode">
                         </div>
 
+                        <!-- Inicia exemplos de formulários com colunas -->
+                        <!-- Exemplo com 3 colunas de tamanhos diferentes, somando 100% -->
                         <div class="form-row label-block input-text">
                             <fieldset>
                                 <legend>Telefone</legend>
@@ -353,6 +355,7 @@
                             </fieldset>
                         </div>
 
+                        <!-- Exemplo com 2 colunas de 50% cada -->
                         <div id="FormRadio" class="row min-h-7">
                             <div class="col-50">
                                 <div class="form-row input-radio form-label-desc">
@@ -379,8 +382,8 @@
                                     </fieldset>
                                 </div>
                             </div>
-
                         </div>
+                        <!-- Fim do exemplo de formulários com colunas -->
 
                         <div id="FormPulldown" class="form-row label-block select-dropdown">
                             <label for="id-11">Estado (UF)</label>
@@ -559,11 +562,11 @@
 
     <hr class="hide">
 
-    <div class="ruler-top">
+    <div class="footer-frame ruler-top  min-h-5">
         <footer class="footer desktop-12 container">
-            <div class="padding-top-1">
-                <p>basalStyle</p>
-                <p>CSS e HTML para prototipação rápida de Sites, WebApps e Formulários.</p>
+            <div class="site-logo">
+                <h1><a href="#" rel="home">BasalStyle</a></h1>
+                <p class="site-description">CSS e HTML para prototipação rápida de Sites e Formulários.</p>
             </div>
         </footer>
         <!-- END footer -->

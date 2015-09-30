@@ -7,19 +7,20 @@
 
 .site-logo {
     vertical-align: middle;
-    margin: 15px 0 0;
+    margin: 30px 0 0;
     padding: 0;
 }
 
 .site-logo h1,
- .site-logo h1 a {
+.site-logo h1 a {
     color: #000;
     font-size: 30px;
-    line-height: 1.8em;
+    line-height: 3em;
     margin: 0;
     padding: 0;
     display: block;
-    height: 50px;
+    height: 30px;
+    width: 190px;
     min-height: 1em;
     overflow: hidden;
 }
@@ -98,6 +99,25 @@
 
 .header-inline .nav-inline li {
     margin: 0 0 0 1.4em;
+}
+
+.header-inline .nav-inline li a {
+    color: $grey-darker;
+}
+
+.nav-inline li a:hover {
+    color: #000;
+}
+
+.header-inline .nav-inline .current > a,
+.header-inline .nav-inline .current-menu-item > a,
+.header-inline .nav-inline .current_page_item > a,
+.header-inline .nav-inline .current-post-ancestor > a,
+.header-inline .nav-inline .current-menu-ancestor > a,
+.header-inline .nav-inline .current-menu-parent > a,
+.header-inline .nav-inline .current-custom-parent > a {
+    color: #000;
+    font-weight: 700;
 }
 
 .header-inline .submenu ul li {

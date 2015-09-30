@@ -136,15 +136,16 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Quebra de layout no limite da largura máxima de colunas  */
 @media all and (max-width: 1187px) { figcaption { position: relative; } }
 /* Quebra de layout para Tablet  */
-@media all and (max-width: 900px) { h1, h2, h3, h4, h5, h6 { font-size: 3em; line-height: 1.3em; min-height: 1em; }
-  h2 { font-size: 2.6em; }
-  h3 { font-size: 2.0em; }
-  h4, h5, h6 { font-size: 1.6em; }
-  p, li, dt, dd, th, td, caption { font-size: 1.6em; line-height: 1.7em; }
-  blockquote { margin: 1em 15px; padding: 0 0 0 0.25em; }
+@media all and (max-width: 900px) { blockquote { margin: 1em 15px; padding: 0 0 0 0.25em; }
   h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote { margin: 0 15px; }
   figcaption { position: relative; }
   .brno { white-space: normal; } }
+/* Quebra de layout para Mobile/Celulares  */
+@media all and (max-width: 480px) { h1, h2, h3, h4, h5, h6 { font-size: 3em; line-height: 1.3em; min-height: 1em; }
+  h2 { font-size: 2.6em; }
+  h3 { font-size: 2.0em; }
+  h4, h5, h6 { font-size: 1.6em; }
+  p, li, dt, dd, th, td, caption { font-size: 1.6em; line-height: 1.7em; } }
 /* Estruturas de Colunas fixas */
 .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { float: left; width: 100%; }
 
@@ -456,15 +457,13 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .col-right-8 { margin-right: 66.66667%; }
   .col-right-9 { margin-right: 75%; }
   .col-right-10 { margin-right: 83.33333%; }
-  .col-right-11 { margin-right: 91.66667%; }
-  .max-h-1, .max-h-2, .max-h-3, .max-h-4, .max-h-5, .max-h-6, .max-h-7, .max-h-8, .max-h-9, .max-h-10, .max-h-11, .max-h-12, .max-h-13, .max-h-14, .max-h-15, .max-h-16, .max-h-17, .max-h-18, .max-h-19, .max-h-20 { height: auto; min-height: 1em; overflow: hidden; } }
+  .col-right-11 { margin-right: 91.66667%; } }
 /* Quebra de layout para Tablet */
 @media all and (max-width: 900px) { .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { width: 100%; float: none; max-width: none; }
   .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-right: 0; }
   .tablet-1 { width: 25%; float: left; }
   .tablet-2 { width: 50%; float: left; }
   .tablet-3 { width: 75%; float: left; }
-  .gutter, .gutter-left, .gutter-right { padding: 0; }
   .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-left: 0; } }
 /* Quebra de layout para Mobile */
 @media all and (max-width: 480px) { .col { overflow: visible; display: block; }
@@ -475,7 +474,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .padding-top-1, .padding-top-2, .padding-top-3, .padding-top-4, .padding-top-5 { padding-top: 1em; }
   .padding-bottom-1, .padding-bottom-2, .padding-bottom-3, .padding-bottom-4, .padding-bottom-5 { padding-bottom: 1em; }
   .margin-top-1, .margin-top-2, .margin-top-3, .margin-top-4, .margin-top-5 { margin-top: 1em; }
-  .margin-bottom-1, .margin-bottom-2, .margin-bottom-3, .margin-bottom-4, .margin-bottom-5 { margin-bottom: 1em; } }
+  .margin-bottom-1, .margin-bottom-2, .margin-bottom-3, .margin-bottom-4, .margin-bottom-5 { margin-bottom: 1em; }
+  .max-h-1, .max-h-2, .max-h-3, .max-h-4, .max-h-5, .max-h-6, .max-h-7, .max-h-8, .max-h-9, .max-h-10, .max-h-11, .max-h-12, .max-h-13, .max-h-14, .max-h-15, .max-h-16, .max-h-17, .max-h-18, .max-h-19, .max-h-20 { height: auto; min-height: 1em; overflow: hidden; }
+  .gutter, .gutter-left, .gutter-right { padding: 0; } }
 /* Quebra de layout para Mobile */
 @media all and (max-width: 360px) { .mobile-2 { width: 100%; float: none; } }
 /* Nicolas Gallagher's micro clearfix */
@@ -497,9 +498,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .header a { text-decoration: none; }
 
-.site-logo { vertical-align: middle; margin: 15px 0 0; padding: 0; }
+.site-logo { vertical-align: middle; margin: 30px 0 0; padding: 0; }
 
-.site-logo h1, .site-logo h1 a { color: #000; font-size: 30px; line-height: 1.8em; margin: 0; padding: 0; display: block; height: 50px; min-height: 1em; overflow: hidden; }
+.site-logo h1, .site-logo h1 a { color: #000; font-size: 30px; line-height: 3em; margin: 0; padding: 0; display: block; height: 30px; width: 190px; min-height: 1em; overflow: hidden; }
 
 .site-logo .site-description { font-size: 1.2em; line-height: 1.5em; max-height: 20px; margin: 0; padding: 0; }
 
@@ -520,6 +521,12 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .header-inline .nav-inline { margin: 2.2em 0; position: absolute; right: 0; }
 
 .header-inline .nav-inline li { margin: 0 0 0 1.4em; }
+
+.header-inline .nav-inline li a { color: #8C8C8C; }
+
+.nav-inline li a:hover { color: #000; }
+
+.header-inline .nav-inline .current > a, .header-inline .nav-inline .current-menu-item > a, .header-inline .nav-inline .current_page_item > a, .header-inline .nav-inline .current-post-ancestor > a, .header-inline .nav-inline .current-menu-ancestor > a, .header-inline .nav-inline .current-menu-parent > a, .header-inline .nav-inline .current-custom-parent > a { color: #000; font-weight: 700; }
 
 .header-inline .submenu ul li { margin: 0; padding: 0; }
 
@@ -542,7 +549,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .header-inline .nav-inline li { margin: 0; padding-left: 0; border: none; }
   .header-inline .nav-inline li a { padding: 0 2em 0 1em; }
   .header-inline .submenu ul li { margin: 0; padding: 0 0 0 1em; }
-  .header-inline .nav-inline:hover .nav-mobile { color: #2E3333; } }
+  .header-inline .nav-inline:hover .nav-mobile { color: #333333; } }
 /* Fim da Quebra de layout para Tablet */
 /* FIM Cabeçalho do Site e Navegação */
 /* Menu de navegação inline */
@@ -556,9 +563,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .nav-inline li { font-size: 1em; margin: 0 1.4em 0 0; padding: 0 0; float: left; list-style: none; position: relative; }
 
-.nav-inline li a { font-size: 1.4em; font-weight: 400; line-height: 45px; font-weight: 700; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; display: block; transition: color 0.3s; }
+.nav-inline li a { font-size: 1.4em; line-height: 45px; font-weight: 700; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; display: block; transition: color 0.3s; }
 
-.nav-inline li a:hover { color: #000; border-top-color: #2E3333; }
+.nav-inline li a:hover { color: #000; border-top-color: #333333; }
 
 .nav-inline .current > a, .nav-inline .current-menu-item > a, .nav-inline .current_page_item > a, .nav-inline .current-post-ancestor > a, .nav-inline .current-menu-ancestor > a, .nav-inline .current-menu-parent > a, .nav-inline .current-custom-parent > a { color: #000; font-weight: 700; }
 
@@ -578,15 +585,15 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Fim da quebra de layout */
 /* Quebra de layout para Tablet  */
 @media all and (max-width: 900px) { .nav-inline { display: block; }
-  .nav-mobile { color: #95A5A5; margin: 0 0 0 auto; padding: 5px 8px; width: 40px; display: block; }
+  .nav-mobile { color: #A5A5A5; margin: 0 0 0 auto; padding: 5px 8px; width: 40px; display: block; }
   .nav-mobile i { font-size: 28px; line-height: 30px; }
-  .nav-mobile:hover { color: #2E3333; }
-  .nav-inline > ul { background: #fff; border-top: 1px solid #C5CDCD; border-bottom: 1px solid #C5CDCD; }
-  .nav-inline li { margin: 0; padding-left: 15px; float: none; border-top: 1px solid #C5CDCD; border-bottom: 1px solid #C5CDCD; }
+  .nav-mobile:hover { color: #333333; }
+  .nav-inline > ul { background: #fff; border-top: 1px solid #CDCDCD; border-bottom: 1px solid #CDCDCD; }
+  .nav-inline li { margin: 0; padding-left: 15px; float: none; border-top: 1px solid #CDCDCD; border-bottom: 1px solid #CDCDCD; }
   .nav-inline li a { border: none; }
   .nav-inline .submenu { padding-left: 0; }
   .nav-inline .submenu > a { padding-left: 15px; }
-  .submenu li { border-top: 1px solid #C5CDCD; border-bottom: none; }
+  .submenu li { border-top: 1px solid #CDCDCD; border-bottom: none; }
   .submenu li a { padding-left: 1em; }
   .submenu .fa-chevron-down { display: none; }
   .nav-inline .current > a, .nav-inline .current-menu-item > a, .nav-inline .current_page_item > a, .nav-inline .current-post-ancestor > a, .nav-inline .current-menu-ancestor > a, .nav-inline .current-menu-parent > a, .nav-inline .current-custom-parent > a { border: none; } }
@@ -717,6 +724,14 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Customização */
 body { font-family: 'Open Sans', sans-serif; }
 
-section header h2 { color: #C5CDCD; font-size: 20px; padding: 15px 0 0 0; min-height: 60px; text-transform: uppercase; }
+.site-logo h1 a { background: transparent url(images/basalstyle-logo.png) no-repeat left bottom; }
+
+.site-logo h1 a { background-image: url(images/basalstyle-logo.png); background-image: url(images/basalstyle-logo.svg), none; }
+
+section header h2 { color: #CDCDCD; font-size: 20px; padding: 15px 0 0 0; min-height: 60px; text-transform: uppercase; }
+
+.footer-frame { background: #F5F5F5; }
+
+.footer .site-logo h1 a { -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); opacity: 0.6; }
 
 /* Fim Customização */

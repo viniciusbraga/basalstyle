@@ -308,22 +308,23 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 @media all and (max-width: $basal-media-tablet) {
 
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 3em;
-        line-height: 1.3em;
-        min-height: 1em;
-    }
+    // h1, h2, h3, h4, h5, h6 {
+    //     font-size: 3em;
+    //     line-height: 1.3em;
+    //     min-height: 1em;
+    //     background: rgba(255,0,0,0.25);
+    // }
 
-    h2 { font-size: 2.6em; }
+    // h2 { font-size: 2.6em; }
 
-    h3 { font-size: 2.0em; }
+    // h3 { font-size: 2.0em; }
 
-    h4, h5, h6 { font-size: 1.6em; }
+    // h4, h5, h6 { font-size: 1.6em; }
 
-    p, li, dt, dd, th, td, caption {
-        font-size: 1.6em;
-        line-height: 1.7em;
-    }
+    // p, li, dt, dd, th, td, caption {
+    //     font-size: 1.6em;
+    //     line-height: 1.7em;
+    // }
 
     blockquote {
         margin: 1em $basal-padding;
@@ -344,4 +345,30 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 }
 // Fim da Quebra de layout para Tablet
 
+/*
+ * Quebra de layout para Mobile/Celulares
+ *
+ */
+
+@media all and (max-width: $basal-media-mobile) {
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 3em;
+        line-height: 1.3em;
+        min-height: 1em;
+    }
+
+    h2 { font-size: 2.6em; }
+
+    h3 { font-size: 2.0em; }
+
+    h4, h5, h6 { font-size: 1.6em; }
+
+    p, li, dt, dd, th, td, caption {
+        font-size: 1.6em;
+        line-height: 1.7em;
+    }
+
+}
+// Fim da Quebra de layout para Mobile/Celulares
 
