@@ -498,9 +498,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .header a { text-decoration: none; }
 
-.site-logo { vertical-align: middle; margin: 15px 0 0; padding: 0; }
+.site-logo { vertical-align: middle; margin: 30px 0 0; padding: 0; }
 
-.site-logo h1, .site-logo h1 a { color: #000; font-size: 30px; line-height: 1.8em; margin: 0; padding: 0; display: block; height: 50px; min-height: 1em; overflow: hidden; }
+.site-logo h1, .site-logo h1 a { color: #000; font-size: 30px; line-height: 3em; margin: 0; padding: 0; display: block; height: 30px; width: 190px; min-height: 1em; overflow: hidden; }
 
 .site-logo .site-description { font-size: 1.2em; line-height: 1.5em; max-height: 20px; margin: 0; padding: 0; }
 
@@ -717,6 +717,10 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 @media all and (max-width: 900px) { .btn-row { padding: 0 15px; } }
 /* Customização */
 body { font-family: 'Open Sans', sans-serif; }
+
+.site-logo h1 a { background: transparent url(images/basalstyle-logo.png) no-repeat left bottom; }
+
+.site-logo h1 a { background-image: url(images/basalstyle-logo.png); background-image: url(images/basalstyle-logo.svg), none; }
 
 section header h2 { color: #C5CDCD; font-size: 20px; padding: 15px 0 0 0; min-height: 60px; text-transform: uppercase; }
 

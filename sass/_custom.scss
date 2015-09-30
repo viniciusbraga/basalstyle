@@ -5,6 +5,15 @@
     font-family: 'Open Sans', sans-serif;
  }
 
+.site-logo h1 a {
+    background: transparent url(images/basalstyle-logo.png) no-repeat left bottom;
+}
+
+.site-logo h1 a {
+    background-image: url(images/basalstyle-logo.png);
+    background-image: url(images/basalstyle-logo.svg), none;
+}
+
 section header h2 {
     color: $grey-light;
     font-size: 20px;
