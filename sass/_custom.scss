@@ -22,4 +22,18 @@ section header h2 {
     text-transform: uppercase;
 }
 
+.footer-frame {
+    background: $grey-lighter;
+}
+
+.footer .site-logo h1 a {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.6;
+}
+
+
 /* Fim Customização */

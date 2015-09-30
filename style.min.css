@@ -522,6 +522,12 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .header-inline .nav-inline li { margin: 0 0 0 1.4em; }
 
+.header-inline .nav-inline li a { color: #8C8C8C; }
+
+.nav-inline li a:hover { color: #000; }
+
+.header-inline .nav-inline .current > a, .header-inline .nav-inline .current-menu-item > a, .header-inline .nav-inline .current_page_item > a, .header-inline .nav-inline .current-post-ancestor > a, .header-inline .nav-inline .current-menu-ancestor > a, .header-inline .nav-inline .current-menu-parent > a, .header-inline .nav-inline .current-custom-parent > a { color: #000; font-weight: 700; }
+
 .header-inline .submenu ul li { margin: 0; padding: 0; }
 
 /* Quebra de layout no limite da largura máxima de colunas  */
@@ -543,7 +549,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .header-inline .nav-inline li { margin: 0; padding-left: 0; border: none; }
   .header-inline .nav-inline li a { padding: 0 2em 0 1em; }
   .header-inline .submenu ul li { margin: 0; padding: 0 0 0 1em; }
-  .header-inline .nav-inline:hover .nav-mobile { color: #2E3333; } }
+  .header-inline .nav-inline:hover .nav-mobile { color: #333333; } }
 /* Fim da Quebra de layout para Tablet */
 /* FIM Cabeçalho do Site e Navegação */
 /* Menu de navegação inline */
@@ -557,9 +563,9 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .nav-inline li { font-size: 1em; margin: 0 1.4em 0 0; padding: 0 0; float: left; list-style: none; position: relative; }
 
-.nav-inline li a { font-size: 1.4em; font-weight: 400; line-height: 45px; font-weight: 700; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; display: block; transition: color 0.3s; }
+.nav-inline li a { font-size: 1.4em; line-height: 45px; font-weight: 700; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; display: block; transition: color 0.3s; }
 
-.nav-inline li a:hover { color: #000; border-top-color: #2E3333; }
+.nav-inline li a:hover { color: #000; border-top-color: #333333; }
 
 .nav-inline .current > a, .nav-inline .current-menu-item > a, .nav-inline .current_page_item > a, .nav-inline .current-post-ancestor > a, .nav-inline .current-menu-ancestor > a, .nav-inline .current-menu-parent > a, .nav-inline .current-custom-parent > a { color: #000; font-weight: 700; }
 
@@ -579,15 +585,15 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Fim da quebra de layout */
 /* Quebra de layout para Tablet  */
 @media all and (max-width: 900px) { .nav-inline { display: block; }
-  .nav-mobile { color: #95A5A5; margin: 0 0 0 auto; padding: 5px 8px; width: 40px; display: block; }
+  .nav-mobile { color: #A5A5A5; margin: 0 0 0 auto; padding: 5px 8px; width: 40px; display: block; }
   .nav-mobile i { font-size: 28px; line-height: 30px; }
-  .nav-mobile:hover { color: #2E3333; }
-  .nav-inline > ul { background: #fff; border-top: 1px solid #C5CDCD; border-bottom: 1px solid #C5CDCD; }
-  .nav-inline li { margin: 0; padding-left: 15px; float: none; border-top: 1px solid #C5CDCD; border-bottom: 1px solid #C5CDCD; }
+  .nav-mobile:hover { color: #333333; }
+  .nav-inline > ul { background: #fff; border-top: 1px solid #CDCDCD; border-bottom: 1px solid #CDCDCD; }
+  .nav-inline li { margin: 0; padding-left: 15px; float: none; border-top: 1px solid #CDCDCD; border-bottom: 1px solid #CDCDCD; }
   .nav-inline li a { border: none; }
   .nav-inline .submenu { padding-left: 0; }
   .nav-inline .submenu > a { padding-left: 15px; }
-  .submenu li { border-top: 1px solid #C5CDCD; border-bottom: none; }
+  .submenu li { border-top: 1px solid #CDCDCD; border-bottom: none; }
   .submenu li a { padding-left: 1em; }
   .submenu .fa-chevron-down { display: none; }
   .nav-inline .current > a, .nav-inline .current-menu-item > a, .nav-inline .current_page_item > a, .nav-inline .current-post-ancestor > a, .nav-inline .current-menu-ancestor > a, .nav-inline .current-menu-parent > a, .nav-inline .current-custom-parent > a { border: none; } }
@@ -722,6 +728,10 @@ body { font-family: 'Open Sans', sans-serif; }
 
 .site-logo h1 a { background-image: url(images/basalstyle-logo.png); background-image: url(images/basalstyle-logo.svg), none; }
 
-section header h2 { color: #C5CDCD; font-size: 20px; padding: 15px 0 0 0; min-height: 60px; text-transform: uppercase; }
+section header h2 { color: #CDCDCD; font-size: 20px; padding: 15px 0 0 0; min-height: 60px; text-transform: uppercase; }
+
+.footer-frame { background: #F5F5F5; }
+
+.footer .site-logo h1 a { -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); opacity: 0.6; }
 
 /* Fim Customização */
