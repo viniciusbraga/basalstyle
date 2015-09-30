@@ -186,21 +186,6 @@
         }
     }
 
-
-    %_basal-max-h-tablet {
-        height: auto;
-        min-height: 1em;
-        overflow: hidden;
-    }
-
-    @for $i from 1 through 20 {
-
-        .max-h-#{$i} {
-            @extend %_basal-max-h-tablet;
-        }
-    }
-
-
 }
 // Fim do primeiro ajuste de layout
 
@@ -309,6 +294,19 @@
 
         .margin-bottom-#{$i} {
             @extend %_basal-margin-bottom-mobile;
+        }
+    }
+
+    %_basal-max-h-mobile {
+        height: auto;
+        min-height: 1em;
+        overflow: hidden;
+    }
+
+    @for $i from 1 through 20 {
+
+        .max-h-#{$i} {
+            @extend %_basal-max-h-mobile;
         }
     }
 
