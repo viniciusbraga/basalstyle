@@ -228,8 +228,6 @@
     .tablet-2 { width: 50%; float: left; }
     .tablet-3 { width: 75%; float: left; }
 
-    .gutter, .gutter-left, .gutter-right { padding: 0; }
-
     %_basal-col-left-mobile { margin-left: 0; }
 
 }
@@ -309,6 +307,10 @@
             @extend %_basal-max-h-mobile;
         }
     }
+
+    .gutter,
+    .gutter-left,
+    .gutter-right { padding: 0; }
 
 }
 // Fim do segundo ajuste de layout

@@ -464,7 +464,6 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .tablet-1 { width: 25%; float: left; }
   .tablet-2 { width: 50%; float: left; }
   .tablet-3 { width: 75%; float: left; }
-  .gutter, .gutter-left, .gutter-right { padding: 0; }
   .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-left: 0; } }
 /* Quebra de layout para Mobile */
 @media all and (max-width: 480px) { .col { overflow: visible; display: block; }
@@ -476,7 +475,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .padding-bottom-1, .padding-bottom-2, .padding-bottom-3, .padding-bottom-4, .padding-bottom-5 { padding-bottom: 1em; }
   .margin-top-1, .margin-top-2, .margin-top-3, .margin-top-4, .margin-top-5 { margin-top: 1em; }
   .margin-bottom-1, .margin-bottom-2, .margin-bottom-3, .margin-bottom-4, .margin-bottom-5 { margin-bottom: 1em; }
-  .max-h-1, .max-h-2, .max-h-3, .max-h-4, .max-h-5, .max-h-6, .max-h-7, .max-h-8, .max-h-9, .max-h-10, .max-h-11, .max-h-12, .max-h-13, .max-h-14, .max-h-15, .max-h-16, .max-h-17, .max-h-18, .max-h-19, .max-h-20 { height: auto; min-height: 1em; overflow: hidden; } }
+  .max-h-1, .max-h-2, .max-h-3, .max-h-4, .max-h-5, .max-h-6, .max-h-7, .max-h-8, .max-h-9, .max-h-10, .max-h-11, .max-h-12, .max-h-13, .max-h-14, .max-h-15, .max-h-16, .max-h-17, .max-h-18, .max-h-19, .max-h-20 { height: auto; min-height: 1em; overflow: hidden; }
+  .gutter, .gutter-left, .gutter-right { padding: 0; } }
 /* Quebra de layout para Mobile */
 @media all and (max-width: 360px) { .mobile-2 { width: 100%; float: none; } }
 /* Nicolas Gallagher's micro clearfix */
