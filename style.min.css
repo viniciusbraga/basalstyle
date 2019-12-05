@@ -680,7 +680,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .form-row .errorlist { margin: 0; padding: 0 0 0 30px; list-style: none; display: block; position: relative; }
 
-.form-row .errorlist:before { content: "\f071"; font-size: 20px; line-height: 26px; font-style: normal; font-weight: normal; padding: 0 0 0 0; margin: 0 0 0 -30px; display: block; width: 30px; height: 30px; position: absolute; }
+.form-row .errorlist:before { content: "\f071"; font-family: 'FontAwesome'; font-size: 20px; line-height: 26px; font-style: normal; font-weight: normal; padding: 0 0 0 0; margin: 0 0 0 -30px; display: block; width: 30px; height: 30px; position: absolute; }
 
 .form-row .errorlist + input, .form-row .errorlist + input:hover, .form-row .errorlist + input:focus, .form-row .errorlist + input + input, .form-row .errorlist + textarea, .form-row .errorlist + ul, .form-row .errorlist + dl, .error-input input { border: 1px solid #e74c3c; background-color: rgba(231, 76, 60, 0.1); }
 
