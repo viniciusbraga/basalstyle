@@ -134,7 +134,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .text-legend h1 + p, .text-legend h2 + p, .text-legend h3 + p, .text-legend h4 + p, .text-legend h5 + p, .text-legend h6 + p { padding: 0 0 0.5em; }
 
 /* Quebra de layout no limite da largura máxima de colunas  */
-@media all and (max-width: 1187px) { figcaption { position: relative; } }
+@media all and (max-width: 1250px) { figcaption { position: relative; } }
 /* Quebra de layout para Tablet  */
 @media all and (max-width: 900px) { blockquote { margin: 1em 15px; padding: 0 0 0 0.25em; }
   h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote { margin: 0 15px; }
@@ -149,29 +149,29 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 /* Estruturas de Colunas fixas */
 .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { float: left; width: 100%; }
 
-.desktop-1 { max-width: 95px; }
+.desktop-1 { max-width: 100px; }
 
-.desktop-2 { max-width: 190px; }
+.desktop-2 { max-width: 200px; }
 
-.desktop-3 { max-width: 285px; }
+.desktop-3 { max-width: 300px; }
 
-.desktop-4 { max-width: 380px; }
+.desktop-4 { max-width: 400px; }
 
-.desktop-5 { max-width: 475px; }
+.desktop-5 { max-width: 500px; }
 
-.desktop-6 { max-width: 570px; }
+.desktop-6 { max-width: 600px; }
 
-.desktop-7 { max-width: 665px; }
+.desktop-7 { max-width: 700px; }
 
-.desktop-8 { max-width: 760px; }
+.desktop-8 { max-width: 800px; }
 
-.desktop-9 { max-width: 855px; }
+.desktop-9 { max-width: 900px; }
 
-.desktop-10 { max-width: 950px; }
+.desktop-10 { max-width: 1000px; }
 
-.desktop-11 { max-width: 1045px; }
+.desktop-11 { max-width: 1100px; }
 
-.desktop-12 { max-width: 1140px; }
+.desktop-12 { max-width: 1200px; }
 
 /* Colunas usando porcentagem */
 .col-20, .col-25, .col-30, .col-33, .col-40, .col-50, .col-60, .col-66, .col-70, .col-75 { float: left; }
@@ -248,49 +248,49 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .margin-bottom-5 { margin-bottom: 150px; }
 
 /* Aplica um espaço de coluna a esquerda (col-left-[n]) ou a direita (col-right-[n])  */
-.col-left-1 { margin-left: 95px; }
+.col-left-1 { margin-left: 100px; }
 
-.col-left-2 { margin-left: 190px; }
+.col-left-2 { margin-left: 200px; }
 
-.col-left-3 { margin-left: 285px; }
+.col-left-3 { margin-left: 300px; }
 
-.col-left-4 { margin-left: 380px; }
+.col-left-4 { margin-left: 400px; }
 
-.col-left-5 { margin-left: 475px; }
+.col-left-5 { margin-left: 500px; }
 
-.col-left-6 { margin-left: 570px; }
+.col-left-6 { margin-left: 600px; }
 
-.col-left-7 { margin-left: 665px; }
+.col-left-7 { margin-left: 700px; }
 
-.col-left-8 { margin-left: 760px; }
+.col-left-8 { margin-left: 800px; }
 
-.col-left-9 { margin-left: 855px; }
+.col-left-9 { margin-left: 900px; }
 
-.col-left-10 { margin-left: 950px; }
+.col-left-10 { margin-left: 1000px; }
 
-.col-left-11 { margin-left: 1045px; }
+.col-left-11 { margin-left: 1100px; }
 
-.col-right-1 { margin-right: 95px; }
+.col-right-1 { margin-right: 100px; }
 
-.col-right-2 { margin-right: 190px; }
+.col-right-2 { margin-right: 200px; }
 
-.col-right-3 { margin-right: 285px; }
+.col-right-3 { margin-right: 300px; }
 
-.col-right-4 { margin-right: 380px; }
+.col-right-4 { margin-right: 400px; }
 
-.col-right-5 { margin-right: 475px; }
+.col-right-5 { margin-right: 500px; }
 
-.col-right-6 { margin-right: 570px; }
+.col-right-6 { margin-right: 600px; }
 
-.col-right-7 { margin-right: 665px; }
+.col-right-7 { margin-right: 700px; }
 
-.col-right-8 { margin-right: 760px; }
+.col-right-8 { margin-right: 800px; }
 
-.col-right-9 { margin-right: 855px; }
+.col-right-9 { margin-right: 900px; }
 
-.col-right-10 { margin-right: 950px; }
+.col-right-10 { margin-right: 1000px; }
 
-.col-right-11 { margin-right: 1045px; }
+.col-right-11 { margin-right: 1100px; }
 
 /* Aplica o gutter entre as colunas usando o padding interno da caixa da coluna.  */
 .gutter { padding-left: 15px; padding-right: 15px; }
@@ -424,7 +424,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .max-h-20 { height: 600px; }
 
 /* Quebra de layout no limite da largura máxima de colunas */
-@media all and (max-width: 1187px) { .desktop-1 { width: 8.333%; }
+@media all and (max-width: 1250px) { .desktop-1 { width: 8.333%; }
   .desktop-2 { width: 16.667%; }
   .desktop-3 { width: 25%; }
   .desktop-4 { width: 33.333%; }
@@ -488,7 +488,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 .debug { display: block; position: relative; }
 
-.debug:after { content: ""; background: url(https://gridforme.herokuapp.com/i/12/95/30/15/) repeat-y center top !important; opacity: 0.8; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: 2; transition: display 1.5s; background: rgba(255, 0, 0, 0.25); }
+.debug:after { content: ""; background: url(https://gridforme.herokuapp.com/i/12/100/30/15/) repeat-y center top !important; opacity: 0.8; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: 2; transition: display 1.5s; background: rgba(255, 0, 0, 0.25); }
 
 .btnDebug { color: #666666; font-size: 14px; line-height: 20px; text-transform: uppercase; vertical-align: top; padding: 0 0.25em; position: fixed; top: 0; right: 0; z-index: 1000; opacity: 1; background-color: #FFF; border-radius: 0 0 6px 6px; }
 
@@ -531,7 +531,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .header-inline .submenu ul li { margin: 0; padding: 0; }
 
 /* Quebra de layout no limite da largura máxima de colunas  */
-@media all and (max-width: 1187px) { .header-inline .header-search { position: relative; right: 0; top: 0; display: block; padding-bottom: 20px; } }
+@media all and (max-width: 1250px) { .header-inline .header-search { position: relative; right: 0; top: 0; display: block; padding-bottom: 20px; } }
 /* FIM da quebra de layout */
 /* Quebra de layout para Tablet  */
 @media all and (max-width: 900px) { /* Cabeçalho do Site e Navegação */
@@ -615,7 +615,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .img-align-text { padding-top: 1.4em; }
 
 /* Quebra de layout no limite da largura máxima de colunas  */
-@media all and (max-width: 1187px) { .img { padding: 15px 0; }
+@media all and (max-width: 1250px) { .img { padding: 15px 0; }
   .img figcaption, .img-legend { position: relative; }
   .img-align-text { margin-top: 0; margin-bottom: 0; }
   .img .img-normal { width: 100%; height: auto; } }
