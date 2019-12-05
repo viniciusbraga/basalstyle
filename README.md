@@ -4,7 +4,7 @@ Folha de estilo para prototipação rápida de wireframes, sites e formulários.
 
 ## Sobre o Grid
 
-O Grid default tem entrelinha de 30px (baseline) e 12 colunas de 95px. As colunas totalizam uma largura máxima de 1140px (`desktop-12`).
+O Grid default tem entrelinha de 30px (baseline) e 12 colunas de 100px. As colunas totalizam uma largura máxima de 1200px (`desktop-12`).
 
 ```
 <div class="row desktop-12 container">
@@ -15,7 +15,7 @@ O Grid default tem entrelinha de 30px (baseline) e 12 colunas de 95px. As coluna
     </div>
 </div>
 ```
-A classe `container` centraliza o bloco, por isso é comum usá-la junto com uma classe de tamanho de coluna, para definir a largura máxima. Existe um exemplo completo no documento`index.html`. Caso queira fazer um site com largura máxima de 10 colunas (950px de largura máxima), segue um exemplo:
+A classe `container` centraliza o bloco, por isso é comum usá-la junto com uma classe de tamanho de coluna, para definir a largura máxima. Existe um exemplo completo no documento`index.html`. Caso queira fazer um site com largura máxima de 10 colunas (1000px de largura máxima), segue um exemplo:
 
 ```
 <div class="row desktop-10 container">
