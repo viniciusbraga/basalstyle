@@ -424,40 +424,40 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .max-h-20 { height: 600px; }
 
 /* Quebra de layout no limite da largura máxima de colunas */
-@media all and (max-width: 1187px) { .desktop-1 { width: 8.33333%; }
-  .desktop-2 { width: 16.66667%; }
+@media all and (max-width: 1187px) { .desktop-1 { width: 8.333%; }
+  .desktop-2 { width: 16.667%; }
   .desktop-3 { width: 25%; }
-  .desktop-4 { width: 33.33333%; }
-  .desktop-5 { width: 41.66667%; }
+  .desktop-4 { width: 33.333%; }
+  .desktop-5 { width: 41.667%; }
   .desktop-6 { width: 50%; }
-  .desktop-7 { width: 58.33333%; }
-  .desktop-8 { width: 66.66667%; }
+  .desktop-7 { width: 58.333%; }
+  .desktop-8 { width: 66.667%; }
   .desktop-9 { width: 75%; }
-  .desktop-10 { width: 83.33333%; }
-  .desktop-11 { width: 91.66667%; }
+  .desktop-10 { width: 83.333%; }
+  .desktop-11 { width: 91.667%; }
   .desktop-12 { width: 96%; }
-  .col-left-1 { margin-left: 8.33333%; }
-  .col-left-2 { margin-left: 16.66667%; }
+  .col-left-1 { margin-left: 8.333%; }
+  .col-left-2 { margin-left: 16.667%; }
   .col-left-3 { margin-left: 25%; }
-  .col-left-4 { margin-left: 33.33333%; }
-  .col-left-5 { margin-left: 41.66667%; }
+  .col-left-4 { margin-left: 33.333%; }
+  .col-left-5 { margin-left: 41.667%; }
   .col-left-6 { margin-left: 50%; }
-  .col-left-7 { margin-left: 58.33333%; }
-  .col-left-8 { margin-left: 66.66667%; }
+  .col-left-7 { margin-left: 58.333%; }
+  .col-left-8 { margin-left: 66.667%; }
   .col-left-9 { margin-left: 75%; }
-  .col-left-10 { margin-left: 83.33333%; }
-  .col-left-11 { margin-left: 91.66667%; }
-  .col-right-1 { margin-right: 8.33333%; }
-  .col-right-2 { margin-right: 16.66667%; }
+  .col-left-10 { margin-left: 83.333%; }
+  .col-left-11 { margin-left: 91.667%; }
+  .col-right-1 { margin-right: 8.333%; }
+  .col-right-2 { margin-right: 16.667%; }
   .col-right-3 { margin-right: 25%; }
-  .col-right-4 { margin-right: 33.33333%; }
-  .col-right-5 { margin-right: 41.66667%; }
+  .col-right-4 { margin-right: 33.333%; }
+  .col-right-5 { margin-right: 41.667%; }
   .col-right-6 { margin-right: 50%; }
-  .col-right-7 { margin-right: 58.33333%; }
-  .col-right-8 { margin-right: 66.66667%; }
+  .col-right-7 { margin-right: 58.333%; }
+  .col-right-8 { margin-right: 66.667%; }
   .col-right-9 { margin-right: 75%; }
-  .col-right-10 { margin-right: 83.33333%; }
-  .col-right-11 { margin-right: 91.66667%; } }
+  .col-right-10 { margin-right: 83.333%; }
+  .col-right-11 { margin-right: 91.667%; } }
 /* Quebra de layout para Tablet */
 @media all and (max-width: 900px) { .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { width: 100%; float: none; max-width: none; }
   .col-left-1, .col-left-2, .col-left-3, .col-left-4, .col-left-5, .col-left-6, .col-left-7, .col-left-8, .col-left-9, .col-left-10, .col-left-11 { margin-right: 0; }
@@ -721,17 +721,5 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 /* Quebra de layout para Tablet  */
 @media all and (max-width: 900px) { .btn-row { padding: 0 15px; } }
-/* Customização */
-body { font-family: 'Open Sans', sans-serif; }
 
-.site-logo h1 a { background: transparent url(images/basalstyle-logo.png) no-repeat left bottom; }
-
-.site-logo h1 a { background-image: url(images/basalstyle-logo.png); background-image: url(images/basalstyle-logo.svg), none; }
-
-section header h2 { color: #CDCDCD; font-size: 20px; padding: 15px 0 0 0; min-height: 60px; text-transform: uppercase; }
-
-.footer-frame { background: #F5F5F5; }
-
-.footer .site-logo h1 a { -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); opacity: 0.6; }
-
-/* Fim Customização */
+/*# sourceMappingURL=style.min.css.map */
