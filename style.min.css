@@ -5,7 +5,7 @@ html { font-size: 62.5%; background-color: #ffffff; }
 body { color: #111100; font-size: 1em; line-height: 1.5em; font-family: sans-serif; margin: 0; padding: 0; }
 
 /* Titulagem */
-h1 { font-size: 4.0em; line-height: 60px; min-height: 90px; padding: 13px 0 17px; }
+h1 { font-size: 4.0em; line-height: 60px; min-height: 90px; padding: 14px 0 16px; }
 
 h2 { font-size: 3.2em; line-height: 42px; min-height: 90px; padding: 26px 0 10px; }
 
