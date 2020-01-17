@@ -385,7 +385,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .min-h-40, .form-row.min-h-40 { min-height: 1200px; }
 
 /* Altura máxima do bloco HTML.  Uso: Aplíca-se para conter a altura da imagem dentro do grid. Esta classe especifica a altura máxima do bloco HTML com valor múltiplo da entrelinha. Ela restringe a visualização do conteúdo, como se fosse uma máscara com altura máxima. Ex: Um uso comum: <figure class="max-h-6"><img></figure>  */
-.max-h-1, .max-h-2, .max-h-3, .max-h-4, .max-h-5, .max-h-6, .max-h-7, .max-h-8, .max-h-9, .max-h-10, .max-h-11, .max-h-12, .max-h-13, .max-h-14, .max-h-15, .max-h-16, .max-h-17, .max-h-18, .max-h-19, .max-h-20 { min-height: 1em; overflow: hidden; }
+.max-h-1, .max-h-2, .max-h-3, .max-h-4, .max-h-5, .max-h-6, .max-h-7, .max-h-8, .max-h-9, .max-h-10, .max-h-11, .max-h-12, .max-h-13, .max-h-14, .max-h-15, .max-h-16, .max-h-17, .max-h-18, .max-h-19, .max-h-20, .max-h-21, .max-h-22, .max-h-23, .max-h-24, .max-h-25, .max-h-26, .max-h-27, .max-h-28, .max-h-29, .max-h-30 { min-height: 1em; overflow: hidden; }
 
 .max-h-1 { height: 30px; }
 
@@ -426,6 +426,26 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .max-h-19 { height: 570px; }
 
 .max-h-20 { height: 600px; }
+
+.max-h-21 { height: 630px; }
+
+.max-h-22 { height: 660px; }
+
+.max-h-23 { height: 690px; }
+
+.max-h-24 { height: 720px; }
+
+.max-h-25 { height: 750px; }
+
+.max-h-26 { height: 780px; }
+
+.max-h-27 { height: 810px; }
+
+.max-h-28 { height: 840px; }
+
+.max-h-29 { height: 870px; }
+
+.max-h-30 { height: 900px; }
 
 /* Quebra de layout no limite da largura máxima de colunas */
 @media all and (max-width: 1250px) { .desktop-1 { width: 8.333%; }
@@ -479,7 +499,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   .padding-bottom-1, .padding-bottom-2, .padding-bottom-3, .padding-bottom-4, .padding-bottom-5 { padding-bottom: 1em; }
   .margin-top-1, .margin-top-2, .margin-top-3, .margin-top-4, .margin-top-5 { margin-top: 1em; }
   .margin-bottom-1, .margin-bottom-2, .margin-bottom-3, .margin-bottom-4, .margin-bottom-5 { margin-bottom: 1em; }
-  .max-h-1, .max-h-2, .max-h-3, .max-h-4, .max-h-5, .max-h-6, .max-h-7, .max-h-8, .max-h-9, .max-h-10, .max-h-11, .max-h-12, .max-h-13, .max-h-14, .max-h-15, .max-h-16, .max-h-17, .max-h-18, .max-h-19, .max-h-20 { height: auto; min-height: 1em; overflow: hidden; }
+  .max-h-1, .max-h-2, .max-h-3, .max-h-4, .max-h-5, .max-h-6, .max-h-7, .max-h-8, .max-h-9, .max-h-10, .max-h-11, .max-h-12, .max-h-13, .max-h-14, .max-h-15, .max-h-16, .max-h-17, .max-h-18, .max-h-19, .max-h-20, .max-h-21, .max-h-22, .max-h-23, .max-h-24, .max-h-25, .max-h-26, .max-h-27, .max-h-28, .max-h-29, .max-h-30 { height: auto; min-height: 1em; overflow: hidden; }
   .gutter, .gutter-left, .gutter-right { padding: 0; } }
 /* Quebra de layout para Mobile */
 @media all and (max-width: 360px) { .mobile-2 { width: 100%; float: none; } }

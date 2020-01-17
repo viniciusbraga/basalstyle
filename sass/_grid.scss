@@ -148,7 +148,7 @@
     overflow: hidden;
 }
 
-@for $i from 1 through 20 {
+@for $i from 1 through 30 {
 
     .max-h-#{$i} {
         height: $basal-leading * $i;
@@ -301,7 +301,7 @@
         overflow: hidden;
     }
 
-    @for $i from 1 through 20 {
+    @for $i from 1 through 30 {
 
         .max-h-#{$i} {
             @extend %_basal-max-h-mobile;
