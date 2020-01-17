@@ -114,10 +114,31 @@ small { font-size: 0.75em; line-height: 1em; }
 
 strong, b { font-weight: 700; }
 
+pre {
+    font-size: 2em;
+    line-height: $basal-leading;
+    text-align: left;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 30px $basal-padding 0 $basal-padding * 2;
+    margin: 0 0 $basal-leading 0;
+    min-height: $basal-leading * 3;
+    background-color: $basal-color-text-code;
+    border-radius: 6px;
+}
+
 code, tt {
     color: #C06;
     font-size: 1.2em;
-    line-height: 1em;
+    line-height: inherit;
+    padding: 0.25em 0.6em 0.3em 0.6em;
+    border-radius: 6px;
+    background-color: $basal-color-text-code;
+}
+
+pre code {
+    display: block;
+    margin-bottom: 1em;
 }
 
 hr {
