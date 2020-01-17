@@ -47,7 +47,11 @@ small { font-size: 0.75em; line-height: 1em; }
 
 strong, b { font-weight: 700; }
 
-code, tt { color: #C06; font-size: 1.2em; line-height: 1em; }
+pre { font-size: 2em; line-height: 30px; text-align: left; overflow-x: auto; overflow-y: hidden; padding: 30px 15px 0 30px; margin: 0 0 30px 0; min-height: 90px; background-color: #e4e7e7; border-radius: 6px; }
+
+code, tt { color: #C06; font-size: 1.2em; line-height: inherit; padding: 0.25em 0.6em 0.3em 0.6em; border-radius: 6px; background-color: #e4e7e7; }
+
+pre code { display: block; margin-bottom: 1em; }
 
 hr { border-left: 0; border-right: 0; border-top: solid 1px white; border-bottom: solid 1px #c5cdcd; }
 
