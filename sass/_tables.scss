@@ -1,0 +1,16 @@
+
+table {
+    margin: 0 0 $basal-leading 0;
+}
+
+table th {
+    padding-left: $basal-padding;
+    min-height: $basal-leading;
+    background-color: $basal-color-text-background;
+}
+
+table td {
+    min-height: $basal-leading;
+    padding-left: $basal-padding;
+    border-bottom: 1px solid $basal-color-ruler;
+}
