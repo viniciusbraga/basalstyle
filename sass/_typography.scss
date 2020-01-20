@@ -115,16 +115,25 @@ small { font-size: 0.75em; line-height: 1em; }
 strong, b { font-weight: 700; }
 
 pre {
-    font-size: 2em;
+    font-size: 1.9em;
     line-height: $basal-leading;
     text-align: left;
-    overflow-x: auto;
+    // overflow-x: auto;
     overflow-y: hidden;
-    padding: 30px $basal-padding 0 $basal-padding * 2;
-    margin: 0 0 $basal-leading 0;
+    width: 100%;
     min-height: $basal-leading * 3;
-    background-color: $basal-color-text-code;
+    padding: $basal-leading $basal-padding 0 $basal-padding;
+    margin: 0 0 $basal-leading 0;
+    display: block;
     border-radius: 6px;
+    background-color: $basal-color-text-code;
+    transition: width 0.8s;
+}
+
+pre:hover {
+    width: 160%;
+    display: inline-block;
+    z-index: 1000;
 }
 
 code, tt {
@@ -137,8 +146,11 @@ code, tt {
 }
 
 pre code {
-    display: block;
-    margin-bottom: 1em;
+    font-size: 1.05em;
+    line-height: $basal-leading * 0.95;
+    margin: 0;
+    padding: 0 1em 0 0;
+    display: inline-block;
 }
 
 hr {
@@ -358,6 +370,17 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
     figcaption {
         position: relative;
+    }
+
+    pre {
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    pre:hover {
+        width: auto;
+        display: inline-block;
+        z-index: 0;
     }
 
     .brno { white-space: normal; }
