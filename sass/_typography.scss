@@ -121,33 +121,28 @@ pre {
     // overflow-x: auto;
     overflow-y: hidden;
     width: 100%;
-    min-height: $basal-leading * 3;
-    padding: $basal-leading $basal-padding 0 $basal-padding;
+    min-height: $basal-leading * 2;
+    padding: $basal-leading / 2 $basal-padding;
     margin: 0 0 $basal-leading 0;
-    display: block;
+    display: flex;
+    align-items: center;
     border-radius: 6px;
     background-color: $basal-color-text-code;
     transition: width 0.8s;
 }
 
-pre:hover {
-    width: 160%;
-    display: inline-block;
-    z-index: 1000;
-}
-
 code, tt {
     color: #C06;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: inherit;
-    padding: 0.25em 0.6em 0.3em 0.6em;
+    padding: 0.2em 0.35em 0.25em;
     border-radius: 6px;
     background-color: $basal-color-text-code;
 }
 
 pre code {
     font-size: 1.05em;
-    line-height: $basal-leading * 0.95;
+    line-height: $basal-leading;
     margin: 0;
     padding: 0 1em 0 0;
     display: inline-block;
@@ -374,13 +369,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
     pre {
         width: 96%;
-        margin: 0 auto;
-    }
-
-    pre:hover {
-        width: auto;
-        display: inline-block;
-        z-index: 0;
+        margin: 0 auto $basal-leading;
     }
 
     .brno { white-space: normal; }
