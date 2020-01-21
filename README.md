@@ -82,13 +82,15 @@ As classes `col-left-[1-11]` e `col-right-[1-11]` aplicam um espaço real entre 
 </div>
 ```
 
-### Customização
+### SASS e Opções da compilação
 
-Para qualquer customização utilize o arquivo `_custom.sass` e execute o comando:
+Segue abaixo as opções empregadas na compiláção do SASS:
 
 ```bash
-sass --update sass/style.sass:style.min.css --stop-on-error --sourcemap=auto --no-cache --style compact
+sass --update sass/style.sass:../style.min.css --sourcemap=auto  --style compact  --precision 3 --stop-on-error --no-cache
 ```
+
+Como uso o editor Atom, tenho o plugin Save-Autorun para a compilação automática depois de mudar algum arquivo na pasta **sass**. O arquivo **.save.cson** é o arquivo de configuração requerido pelo plugin.
 
 ### Bugs, Sugestões e Funcionalidades
 

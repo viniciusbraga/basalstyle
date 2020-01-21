@@ -37,7 +37,7 @@ dd { margin: 0; padding: 0; }
 
 table { border-collapse: collapse; width: 100%; margin: 0 0 0 1em; }
 
-th, caption { text-align: left; font-weight: 700; }
+th, caption { text-align: left; font-weight: bold; }
 
 blockquote { margin: 0 0 30px 15px; padding: 0 9em 0 1.5em; border-left: 8px solid #c5cdcd; }
 
@@ -47,11 +47,11 @@ small { font-size: 0.75em; line-height: 1em; }
 
 strong, b { font-weight: 700; }
 
-pre { font-size: 2em; line-height: 30px; text-align: left; overflow-x: auto; overflow-y: hidden; padding: 30px 15px 0 30px; margin: 0 0 30px 0; min-height: 90px; background-color: #e4e7e7; border-radius: 6px; }
+pre { font-size: 1.9em; line-height: 30px; text-align: left; overflow-y: hidden; width: 100%; min-height: 60px; padding: 15px 15px; margin: 0 0 30px 0; display: flex; align-items: center; border-radius: 6px; background-color: #e4e7e7; transition: width 0.8s; }
 
-code, tt { color: #C06; font-size: 1.2em; line-height: inherit; padding: 0.25em 0.6em 0.3em 0.6em; border-radius: 6px; background-color: #e4e7e7; }
+code, tt { color: #C06; font-size: 1.1em; line-height: inherit; padding: 0.2em 0.35em 0.25em; border-radius: 6px; background-color: #e4e7e7; }
 
-pre code { display: block; margin-bottom: 1em; }
+pre code { font-size: 1.05em; line-height: 30px; margin: 0; padding: 0 1em 0 0; display: inline-block; }
 
 hr { border-left: 0; border-right: 0; border-top: solid 1px white; border-bottom: solid 1px #c5cdcd; }
 
@@ -143,6 +143,7 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 @media all and (max-width: 900px) { blockquote { margin: 1em 15px; padding: 0 0 0 0.25em; }
   h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote { margin: 0 15px; }
   figcaption { position: relative; }
+  pre { width: 96%; margin: 0 auto 30px; }
   .brno { white-space: normal; } }
 /* Quebra de layout para Mobile/Celulares  */
 @media all and (max-width: 480px) { h1, h2, h3, h4, h5, h6 { font-size: 3em; line-height: 1.3em; min-height: 1em; }
@@ -150,6 +151,18 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   h3 { font-size: 2.0em; }
   h4, h5, h6 { font-size: 1.6em; }
   p, li, dt, dd, th, td, caption { font-size: 1.6em; line-height: 1.7em; } }
+table { margin: 0 0 30px 0; }
+
+table th { font-size: 1.6em; text-transform: none; line-height: 30px; padding: 0.5em 0 0 15px; background-color: #e4e7e7; }
+
+table td { min-height: 30px; padding-left: 15px; border-bottom: 1px solid #c5cdcd; }
+
+.table-wrapper { margin: 0 auto 30px; }
+
+/* Quebra de layout para Mobile/Celulares  */
+@media all and (max-width: 480px) { .table-wrapper { display: block; width: 94%; overflow: auto; }
+  .table-wrapper table { white-space: nowrap; }
+  .table-wrapper th, .table-wrapper td { font-size: 1.6em; line-height: 1.88em; } }
 /* Estruturas de Colunas fixas */
 .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { float: left; width: 100%; }
 

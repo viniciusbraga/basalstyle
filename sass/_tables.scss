@@ -1,0 +1,48 @@
+
+table {
+    margin: 0 0 $basal-leading 0;
+}
+
+table th {
+    font-size: 1.6em;
+    text-transform: none;
+    line-height: $basal-leading;
+    padding: 0.5em 0 0 $basal-padding;
+    background-color: $basal-color-text-background;
+}
+
+table td {
+    min-height: $basal-leading;
+    padding-left: $basal-padding;
+    border-bottom: 1px solid $basal-color-ruler;
+}
+
+.table-wrapper {
+    margin: 0 auto $basal-leading;
+}
+
+
+/*
+ * Quebra de layout para Mobile/Celulares
+ *
+ */
+
+@media all and (max-width: $basal-media-mobile) {
+
+    .table-wrapper {
+        display: block;
+        width: 94%;
+        overflow: auto;
+    }
+
+    .table-wrapper table {
+        white-space: nowrap;
+    }
+
+    .table-wrapper th,
+    .table-wrapper td {
+        font-size: 1.6em;
+        line-height: 1.88em;
+    }
+
+}
