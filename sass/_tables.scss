@@ -4,8 +4,10 @@ table {
 }
 
 table th {
-    padding-left: $basal-padding;
-    min-height: $basal-leading;
+    font-size: 1.6em;
+    text-transform: none;
+    line-height: $basal-leading;
+    padding: 0.5em 0 0 $basal-padding;
     background-color: $basal-color-text-background;
 }
 
@@ -14,6 +16,11 @@ table td {
     padding-left: $basal-padding;
     border-bottom: 1px solid $basal-color-ruler;
 }
+
+.table-wrapper {
+    margin: 0 auto $basal-leading;
+}
+
 
 /*
  * Quebra de layout para Mobile/Celulares
@@ -26,7 +33,6 @@ table td {
         display: block;
         width: 94%;
         overflow: auto;
-        margin: 0 auto $basal-leading;
     }
 
     .table-wrapper table {

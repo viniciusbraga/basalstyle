@@ -37,7 +37,7 @@ dd { margin: 0; padding: 0; }
 
 table { border-collapse: collapse; width: 100%; margin: 0 0 0 1em; }
 
-th, caption { text-align: left; font-weight: 700; }
+th, caption { text-align: left; font-weight: bold; }
 
 blockquote { margin: 0 0 30px 15px; padding: 0 9em 0 1.5em; border-left: 8px solid #c5cdcd; }
 
@@ -153,12 +153,14 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
   p, li, dt, dd, th, td, caption { font-size: 1.6em; line-height: 1.7em; } }
 table { margin: 0 0 30px 0; }
 
-table th { padding-left: 15px; min-height: 30px; background-color: #e4e7e7; }
+table th { font-size: 1.6em; text-transform: none; line-height: 30px; padding: 0.5em 0 0 15px; background-color: #e4e7e7; }
 
 table td { min-height: 30px; padding-left: 15px; border-bottom: 1px solid #c5cdcd; }
 
+.table-wrapper { margin: 0 auto 30px; }
+
 /* Quebra de layout para Mobile/Celulares  */
-@media all and (max-width: 480px) { .table-wrapper { display: block; width: 94%; overflow: auto; margin: 0 auto 30px; }
+@media all and (max-width: 480px) { .table-wrapper { display: block; width: 94%; overflow: auto; }
   .table-wrapper table { white-space: nowrap; }
   .table-wrapper th, .table-wrapper td { font-size: 1.6em; line-height: 1.88em; } }
 /* Estruturas de Colunas fixas */
