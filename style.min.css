@@ -157,6 +157,10 @@ table th { padding-left: 15px; min-height: 30px; background-color: #e4e7e7; }
 
 table td { min-height: 30px; padding-left: 15px; border-bottom: 1px solid #c5cdcd; }
 
+/* Quebra de layout para Mobile/Celulares  */
+@media all and (max-width: 480px) { .table-wrapper { display: block; width: 94%; overflow: auto; margin: 0 auto 30px; }
+  .table-wrapper table { white-space: nowrap; }
+  .table-wrapper th, .table-wrapper td { font-size: 1.6em; line-height: 1.88em; } }
 /* Estruturas de Colunas fixas */
 .desktop-1, .desktop-2, .desktop-3, .desktop-4, .desktop-5, .desktop-6, .desktop-7, .desktop-8, .desktop-9, .desktop-10, .desktop-11, .desktop-12 { float: left; width: 100%; }
 

@@ -14,3 +14,29 @@ table td {
     padding-left: $basal-padding;
     border-bottom: 1px solid $basal-color-ruler;
 }
+
+/*
+ * Quebra de layout para Mobile/Celulares
+ *
+ */
+
+@media all and (max-width: $basal-media-mobile) {
+
+    .table-wrapper {
+        display: block;
+        width: 94%;
+        overflow: auto;
+        margin: 0 auto $basal-leading;
+    }
+
+    .table-wrapper table {
+        white-space: nowrap;
+    }
+
+    .table-wrapper th,
+    .table-wrapper td {
+        font-size: 1.6em;
+        line-height: 1.88em;
+    }
+
+}
