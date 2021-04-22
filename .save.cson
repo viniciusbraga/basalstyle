@@ -1,4 +1,8 @@
-
 # Documento de compilação automática do plugin Save-AutoRun do Atom.
 
-"**/sass/*.scss": "sass ${dir}/style.sass:${dir}/../style.min.css --sourcemap=auto  --style compact  --precision 3 --stop-on-error --no-cache;"
+# SASS Ruby
+# "**/sass/*.scss": "sass ${dir}/style.sass:${dir}/../style.min.css --sourcemap=auto  --style compact  --precision 3 --stop-on-error --no-cache;"
+
+# SASS Dart
+"**/sass/*.scss": "sass ${dir}/style.sass:${dir}/../style.min.css --style compressed --charset --stop-on-error;"
+# "**/sass/*.scss": "sass ${dir}/style.sass:${dir}/../style.min.css --style expanded --charset --stop-on-error;"
