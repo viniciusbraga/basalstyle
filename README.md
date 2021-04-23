@@ -32,9 +32,9 @@ Deve existir dentro da `row` um somatório de classes de colunas similar a largu
 
 ### Layout "responsivo"
 
-Não é necessário aplicar as classes "tablet" e "mobile" para o grid ficar "responsivo". Quando o site está sendo apresentado na tela com largura inferior a 800px, todas as classes de `desktop-#` se modificam e ajustam-se em uma única coluna.
+Não é necessário aplicar as classes "tablet" e "mobile" para o grid ficar "responsivo". Quando o site está sendo apresentado na tela com largura inferior a 900px, todas as classes de `desktop-#` se modificam e ajustam-se em uma única coluna.
 
-As classes de organização do layout para mobile funcionam entre a largura de 800px até 700px (`tablet-[1,2,3]`) e de 700px até 320px (`mobile-2`).
+As classes de organização do layout para mobile funcionam entre a largura de 900px até 480px (`tablet-[1,2,3]`) e de 480px até 320px (`mobile-2`).
 
 Um exemplo com quebras no layout:
 
@@ -47,11 +47,11 @@ Um exemplo com quebras no layout:
 ```
 Qual é o resultado:
 
-1. **Em telas acima de 800px de largura (`desktop-#`)**
-O layout fica definido em 3 colunas flexíveis com largura máxima total de 1440px.
-2. **Abaixo de 800px até 700px (`tablet-#`)**
+1. **Em telas acima de 900px de largura (`desktop-#`)**
+O layout fica definido em 3 colunas flexíveis com largura máxima total de 1200px.
+2. **Abaixo de 900px até 480px (`tablet-#`)**
 As primeiras duas colunas dividirão a tela em 50% de largura cada. A última coluna ficará abaixo delas e ocupará toda a largura (100%).
-2. **Abaixo de 700px até 320px (`mobile-#`)**
+2. **Abaixo de 480px até 320px (`mobile-#`)**
 O layout será semelhante ao da tablet.
 
 O emprego das classes `tablet-#` e `mobile-#` deve ser avaliado com critério, para não incorrer em erros de usabilidade, no caso de conteúdos que não ficam bem apresentados em telas pequenas.
@@ -84,13 +84,8 @@ As classes `col-left-[1-11]` e `col-right-[1-11]` aplicam um espaço real entre 
 
 ### SASS e Opções da compilação
 
-Segue abaixo as opções empregadas na compiláção do SASS:
+Como uso o editor Atom, tenho o plugin [Save Autorun](https://atom.io/packages/save-autorun) para a compilação automática. O arquivo **.save.cson** é o arquivo de configuração requerido pelo plugin e nele possui diferentes configurações de compilação de SASS Ruby e DART. Atualmente a preferência é pelo SASS DART no modo 'compressed'.
 
-```bash
-sass --update sass/style.sass:../style.min.css --sourcemap=auto  --style compact  --precision 3 --stop-on-error --no-cache
-```
-
-Como uso o editor Atom, tenho o plugin Save-Autorun para a compilação automática depois de mudar algum arquivo na pasta **sass**. O arquivo **.save.cson** é o arquivo de configuração requerido pelo plugin.
 
 ### Bugs, Sugestões e Funcionalidades
 
