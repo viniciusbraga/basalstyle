@@ -63,19 +63,6 @@ input[type="submit"]:hover {
         }
     }
 
-    input[type="submit"]#{$selector} {
-
-        @extend #{$selector};
-
-        &:visited {
-            @extend #{$selector};
-        }
-
-        &:hover {
-            @extend #{$selector}:hover;
-        }
-    }
-
 }
 
 @include buttons( ".btn-green",

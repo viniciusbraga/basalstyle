@@ -165,7 +165,7 @@
 
         .desktop-#{$i} {
             @if $i < $basal-col-number {
-                width: ( 100% / $basal-col-number ) * $i;
+                width: $basal-col-percent * $i;
             } @else {
                 width: 96%;
             }
@@ -175,14 +175,14 @@
     @for $i from 1 through $basal-col-number - 1 {
 
         .col-left-#{$i} {
-            margin-left: ( 100% / $basal-col-number ) * $i;
+            margin-left: $basal-col-percent * $i;
         }
     }
 
     @for $i from 1 through $basal-col-number - 1 {
 
         .col-right-#{$i} {
-            margin-right: ( 100% / $basal-col-number ) * $i;
+            margin-right: $basal-col-percent * $i;
         }
     }
 
