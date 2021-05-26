@@ -36,13 +36,20 @@
     font-size: 1em;
     line-height: 1em;
     text-align: right;
-    padding: 1.10em 0.5em 0;
-    width: 100%;
+    padding: 1.10em 1.5em 0;
+    width: auto;
     min-height: $basal-leading;
     background-color: #ffffff;
-    opacity: 1;
+    opacity: 0.3;
     position: absolute;
     bottom: 0;
+    right: 0;
+    transition: opacity 1s;
+}
+
+.img:hover figcaption,
+.img:hover .img-legend{
+    opacity: 1;
 }
 
 .img figcaption a,
@@ -109,4 +116,3 @@
 } /* Fim da Quebra de layout para Tablet */
 
 /* FIM Imagens */
-
