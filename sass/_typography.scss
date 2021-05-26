@@ -134,8 +134,8 @@ pre {
 code, tt {
     color: #C06;
     font-size: 1.1em;
-    line-height: inherit;
-    padding: 0.2em 0.35em 0.25em;
+    line-height: 1em;
+    padding: 0.2em 0.4em 0.25em;
     border-radius: 6px;
     background-color: $basal-color-text-code;
 }
@@ -404,4 +404,3 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 }
 // Fim da Quebra de layout para Mobile/Celulares
-
