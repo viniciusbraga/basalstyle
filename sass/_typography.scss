@@ -337,24 +337,6 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 @media all and (max-width: $basal-media-tablet) {
 
-    // h1, h2, h3, h4, h5, h6 {
-    //     font-size: 3em;
-    //     line-height: 1.3em;
-    //     min-height: 1em;
-    //     background: rgba(255,0,0,0.25);
-    // }
-
-    // h2 { font-size: 2.6em; }
-
-    // h3 { font-size: 2.0em; }
-
-    // h4, h5, h6 { font-size: 1.6em; }
-
-    // p, li, dt, dd, th, td, caption {
-    //     font-size: 1.6em;
-    //     line-height: 1.7em;
-    // }
-
     blockquote {
         margin: 1em $basal-padding;
         padding: 0 0 0 0.25em;
@@ -384,19 +366,21 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 @media all and (max-width: $basal-media-mobile) {
 
     h1, h2, h3, h4, h5, h6 {
-        font-size: 3em;
-        line-height: 1.3em;
+        line-height: 1.4em;
         min-height: 1em;
+        padding: 2em 0 0.25em;
     }
+
+    h1 { font-size: 2.8em; }
 
     h2 { font-size: 2.6em; }
 
-    h3 { font-size: 2.0em; }
+    h3 { font-size: 2.3em; }
 
-    h4, h5, h6 { font-size: 1.6em; }
+    h4, h5, h6 { font-size: 2.0em; }
 
     p, li, dt, dd, th, td, caption {
-        font-size: 1.6em;
+        font-size: 1.7em;
         line-height: 1.7em;
     }
 
