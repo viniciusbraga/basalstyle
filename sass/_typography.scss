@@ -224,13 +224,13 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 .text-align-center { text-align: center; }
 
 
- // Impõe a quebra em bloco/ brbk
+ // Break Block - Força a quebra em bloco/ brbk
  // Permite a quebrar de textos de uma manchete ou chamada em blocos determinados.
  // Ex.: <h1>Tipografia Moderna e Futurismo/ <b class="brbk">Ação e Perspectiva</b></h1>
 
 .brbk { display: block; font-weight: inherit; }
 
- // Evita quebra de palavras de um bloco inline/ brno
+ // Break No - Evita quebra de palavras de um bloco inline/ brno
  // Ajuda na quebrar de um conjunto de palavras em títulos em destaque
  // Ex.: <h1>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva</b></h1>
 
@@ -373,9 +373,6 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
         margin: 0 auto $basal-leading;
     }
 
-    .brno { white-space: normal; }
-
-
 }
 // Fim da Quebra de layout para Tablet
 
@@ -402,6 +399,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
         font-size: 1.6em;
         line-height: 1.7em;
     }
+
+    .brno { white-space: normal; }
 
 }
 // Fim da Quebra de layout para Mobile/Celulares
