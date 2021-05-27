@@ -63,8 +63,8 @@ h6 {
     padding: 14px 0 3px;
 }
 
-h1, h2 {
-    letter-spacing: -0.006em;
+h1, h2, h3 {
+    letter-spacing: -0.030em;
     word-spacing: -0.05em;
 }
 
@@ -118,6 +118,7 @@ pre {
     font-size: 1.9em;
     line-height: $basal-leading;
     text-align: left;
+    white-space: pre-wrap;
     // overflow-x: auto;
     overflow-y: hidden;
     width: 100%;
@@ -134,8 +135,8 @@ pre {
 code, tt {
     color: #C06;
     font-size: 1.1em;
-    line-height: inherit;
-    padding: 0.2em 0.35em 0.25em;
+    line-height: 1em;
+    padding: 0.2em 0.4em 0.25em;
     border-radius: 6px;
     background-color: $basal-color-text-code;
 }
@@ -208,111 +209,6 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 }
 
 
-// Columns Rulers, tricks and treats
-
-.ruler-left   { border-left:   1px solid $basal-color-ruler; }
-.ruler-top    { border-top:    1px solid $basal-color-ruler; }
-.ruler-right  { border-right:  1px solid $basal-color-ruler; }
-.ruler-bottom { border-bottom: 1px solid $basal-color-ruler; }
-
-.float-left       { float: left; }
-.float-right      { float: right; }
-
-.text-align-left   { text-align: left; }
-.text-align-right  { text-align: right; }
-.text-align-center { text-align: center; }
-
-
- // Impõe a quebra em bloco/ brbk
- // Permite a quebrar de textos de uma manchete ou chamada em blocos determinados.
- // Ex.: <h1>Tipografia Moderna e Futurismo/ <b class="brbk">Ação e Perspectiva</b></h1>
-
-.brbk { display: block; font-weight: inherit; }
-
- // Evita quebra de palavras de um bloco inline/ brno
- // Ajuda na quebrar de um conjunto de palavras em títulos em destaque
- // Ex.: <h1>Tipografia Moderna e Futurismo/ <b class="brno">Ação e Perspectiva</b></h1>
-
-.brno { white-space: nowrap; font-weight: inherit; }
-
-
-/* Anexo com complementos de tipografia e layout */
-
-.text-small p,
-.text-small li,
-.text-small dt,
-.text-small dd,
-.text-small th,
-.text-small td,
-.text-small caption {
-    font-size: 1.4em;
-    line-height: $basal-leading * 0.800;
-}
-
-.text-small h1,
-.text-small h2,
-.text-small h3,
-.text-small h4,
-.text-small h5,
-.text-small h6 {
-    font-size: 1.6em;
-    line-height: $basal-leading;
-    min-height: 0;
-    padding: 5px 0 0;
-    }
-
-.text-small h1 { font-size: 2.4em; }
-.text-small h2 { font-size: 2.1em; }
-.text-small h3 { font-size: 1.8em; }
-
-.text-small p  { padding: 2px 0 22px; }
-
-.text-small ul,
-.text-small ol { padding: 7px 0 23px 42px; }
-
-.text-small dl { padding: 0 0 $basal-leading; }
-
-.text-small dt { padding: $basal-leading 0 0; font-weight: 700; }
-
-.text-small dd { padding: 0; }
-
-
-.text-legend p,
-.text-legend li,
-.text-legend dt,
-.text-legend dd,
-.text-legend th,
-.text-legend td,
-.text-legend caption {
-    font-size: 1.2em;
-    line-height: $basal-leading * 0.6;
-}
-
-.text-legend h1,
-.text-legend h2,
-.text-legend h3,
-.text-legend h4,
-.text-legend h5,
-.text-legend h6 {
-    font-size: 1.4em;
-    line-height: $basal-leading;
-    min-height: 0;
-    padding: 1em 0 0;
-    }
-
-.text-legend h1 { font-size: 1.8em; }
-.text-legend h2 { font-size: 1.6em; }
-
-.text-legend p  { padding: 0.5em 0; }
-
-.text-legend h1 + p,
-.text-legend h2 + p,
-.text-legend h3 + p,
-.text-legend h4 + p,
-.text-legend h5 + p,
-.text-legend h6 + p { padding: 0 0 0.5em; }
-
-
 /*
  * Quebra de layout no limite da largura máxima de colunas
  *
@@ -336,24 +232,6 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 @media all and (max-width: $basal-media-tablet) {
 
-    // h1, h2, h3, h4, h5, h6 {
-    //     font-size: 3em;
-    //     line-height: 1.3em;
-    //     min-height: 1em;
-    //     background: rgba(255,0,0,0.25);
-    // }
-
-    // h2 { font-size: 2.6em; }
-
-    // h3 { font-size: 2.0em; }
-
-    // h4, h5, h6 { font-size: 1.6em; }
-
-    // p, li, dt, dd, th, td, caption {
-    //     font-size: 1.6em;
-    //     line-height: 1.7em;
-    // }
-
     blockquote {
         margin: 1em $basal-padding;
         padding: 0 0 0 0.25em;
@@ -372,9 +250,6 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
         margin: 0 auto $basal-leading;
     }
 
-    .brno { white-space: normal; }
-
-
 }
 // Fim da Quebra de layout para Tablet
 
@@ -386,22 +261,23 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 @media all and (max-width: $basal-media-mobile) {
 
     h1, h2, h3, h4, h5, h6 {
-        font-size: 3em;
-        line-height: 1.3em;
+        line-height: 1.4em;
         min-height: 1em;
+        padding: 2em 0 0.25em;
     }
+
+    h1 { font-size: 2.8em; }
 
     h2 { font-size: 2.6em; }
 
-    h3 { font-size: 2.0em; }
+    h3 { font-size: 2.3em; }
 
-    h4, h5, h6 { font-size: 1.6em; }
+    h4, h5, h6 { font-size: 2.0em; }
 
     p, li, dt, dd, th, td, caption {
-        font-size: 1.6em;
+        font-size: 1.7em;
         line-height: 1.7em;
     }
 
 }
 // Fim da Quebra de layout para Mobile/Celulares
-
