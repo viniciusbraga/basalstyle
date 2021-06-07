@@ -68,6 +68,11 @@ h1, h2, h3 {
     word-spacing: -0.05em;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
 h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dt,dd,blockquote {
     margin: 0;
 }
