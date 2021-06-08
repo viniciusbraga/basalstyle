@@ -35,7 +35,7 @@
 
 .nav-inline li a {
     font-size: 1.4em;
-    line-height: 45px;
+    line-height: 50px;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
@@ -73,11 +73,20 @@
 
 @media all and (min-width: $basal-media-tablet) {
 
-    .submenu { position: relative; overflow: hidden; }
+    .submenu,
+    .menu-item-has-children {
+        position: relative;
+        overflow: hidden;
+    }
 
-    .submenu:hover { color: #000; overflow: visible; }
+    .submenu:hover,
+    .menu-item-has-children:hover {
+        color: #000;
+        overflow: visible;
+    }
 
-    .submenu ul {
+    .submenu ul,
+    .menu-item-has-children ul {
       margin: -5px 0 0;
       padding: 10px 0 0 ;
       opacity: 0;
@@ -86,44 +95,57 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.25);
       position: absolute;
       z-index: 9995;
+      border-radius: 8px;
     }
-    .submenu ul:after {
+
+    .submenu ul:after,
+    .menu-item-has-children ul:after {
       content: "";
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
       display: block;
       border: none;
       background-color: #FFFFFF;
       box-shadow: 0 0 10px rgba(0,0,0,0.25);
       position: absolute;
-      top:-10px;
-      left: 20px;
+      top: -12px;
+      left: 30px;
       z-index: -9994;
       -webkit-transform-origin: 0 0;
       -webkit-transform: rotate(45deg);
       transform-origin: 0 0;
       transform: rotate(45deg);
+      border-radius: 3px;
     }
-    .submenu ul:before {
+
+    .submenu ul:before,
+    .menu-item-has-children ul:before {
       content: "";
       position: absolute;
       top:0;
       left:0;
       display: block;
       width: 100%;
-      height: 20px;
+      height: 30px;
       background: #FFF;
+      border-radius: 8px;
     }
-    .submenu:hover > a {
+
+    .submenu:hover > a,
+    .menu-item-has-children:hover > a {
         color: #000;
     }
-    .submenu:hover ul {
+
+    .submenu:hover > ul,
+    .menu-item-has-children:hover > ul {
       margin: 0 0 0;
       opacity: 1;
       -webkit-transition: opacity 0.6s, margin 1s;
       transition: opacity 0.6s, margin 1s;
     }
-    .submenu ul li {
+
+    .submenu ul li,
+    .menu-item-has-children ul li {
       font-size: 1em;
       min-width: 200px;
       min-height: 44px;
@@ -131,15 +153,25 @@
       padding: 0;
       float: none;
     }
-    .submenu ul li a {
+
+    .submenu ul li a,
+    .menu-item-has-children ul li a {
       margin: 0 0;
       padding: 0 1em;
       display: block;
       text-align: left;
+      white-space: nowrap;
     }
-    .submenu ul li a:hover {
+
+    .submenu ul li a:hover,
+    .menu-item-has-children ul li a:hover {
       color: #FFF;
       background: #3498DB;
+    }
+
+    .submenu ul li:last-child a:hover,
+    .menu-item-has-children ul li:last-child a:hover {
+      border-radius: 0 0 8px 8px;
     }
 
     .submenu .current > a,
@@ -151,6 +183,40 @@
     .submenu .current-custom-parent > a {
         color: #000;
         font-weight: 700;
+    }
+
+    .menu-item-has-children .current > a,
+    .menu-item-has-children .current-menu-item > a,
+    .menu-item-has-children .current_page_item > a,
+    .menu-item-has-children .current-post-ancestor > a,
+    .menu-item-has-children .current-menu-ancestor > a,
+    .menu-item-has-children .current-menu-parent > a,
+    .menu-item-has-children .current-custom-parent > a {
+        color: #000;
+        font-weight: 700;
+    }
+
+    // Submenu do Submenu...
+
+    .submenu .submenu ul,
+    .menu-item-has-children .menu-item-has-children ul {
+      margin: 0;
+    }
+
+    .submenu .submenu:hover ul,
+    .menu-item-has-children .menu-item-has-children:hover ul {
+      margin: 0 0 0 20%;
+    }
+
+    .submenu .submenu .submenu:hover ul,
+    .menu-item-has-children .menu-item-has-children .menu-item-has-children:hover ul {
+      margin: 0 0 0 15%;
+    }
+
+    .submenu .submenu:hover > a,
+    .menu-item-has-children .menu-item-has-children:hover > a {
+      color: #FFF;
+      background: #3498DB;
     }
 
 
@@ -203,24 +269,29 @@
         border: none;
     }
 
-    .nav-inline .submenu {
+    .nav-inline .submenu,
+    .nav-inline .menu-item-has-children {
         padding-left: 0;
     }
 
-    .nav-inline .submenu > a {
+    .nav-inline .submenu > a,
+    .nav-inline .menu-item-has-children > a {
         padding-left: 15px;
     }
 
-    .submenu li {
+    .submenu li,
+    .menu-item-has-children li {
         border-top: 1px solid $grey-light;
         border-bottom: none;
     }
 
-    .submenu li a {
+    .submenu li a,
+    .menu-item-has-children li a {
         padding-left: 1em;
     }
 
-    .submenu .fa-chevron-down {
+    .submenu .fa-chevron-down,
+    .menu-item-has-children .fa-chevron-down  {
         display: none;
     }
 
