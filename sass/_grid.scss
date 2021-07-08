@@ -12,7 +12,7 @@
         max-width: $basal-col-fixed * $i;
         @extend %_basal-desktop;
     }
-}
+
 
 
 /* Colunas usando porcentagem */
@@ -28,7 +28,6 @@
         @extend %_basal-col;
     }
 }
-
 
 .col { overflow: hidden; }
 
