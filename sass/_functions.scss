@@ -2,8 +2,8 @@
 // Remove unidade de uma variável
 // Baseado na função existente no Foundation
 // https://github.com/zurb/foundation/blob/4d54d0c0851faa02b500c0707241424d27a9b26e/scss/foundation/_functions.scss
-
+@use 'sass:math';
 
 @function strip-unit($num) {
-  @return $num / ($num * 0 + 1);
+  @return math.div($num, ($num * 0 + 1));
 }

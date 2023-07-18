@@ -1,0 +1,10 @@
+{
+    "filewatcher.commands": [
+        {
+            "match": "/sass/\\.*",
+            "isAsync": true,
+            "cmd": "sass ${fileDirname}/style.sass:${fileDirname}/../style.min.css --style compressed --charset --stop-on-error;",
+            "event": "onFolderChange"
+        }
+    ]
+}
