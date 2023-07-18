@@ -26,8 +26,8 @@ $basal-media-tiny:       360px;
 // /i/{colunas}/{largura da coluna}/{leading}/{gutter}/?bg=cor&v=cor&h=cor
 
 
-$basal-image-param:      "#{$basal-col-number}/#{strip-unit($basal-col-fixed)}/#{strip-unit($basal-leading)}/#{strip-unit($basal-gutter)}/";
-$basal-image-grid:       "https://gridforme.herokuapp.com/i/#{$basal-image-param}";
+$basal-image-param: "#{$basal-col-number}/#{strip-unit($basal-col-fixed)}/#{strip-unit($basal-leading)}/#{strip-unit($basal-gutter)}/";
+$basal-image-grid:  "https://gridfor.me/i/#{$basal-image-param}";
 
 
 // Cores
