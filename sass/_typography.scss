@@ -13,7 +13,7 @@ html {
 body {
     color: $basal-color-text;
     font-size: 1em;
-    line-height: strip-unit($basal-leading / 2) / 10 * 1em;
+    line-height: calc( strip-unit( calc($basal-leading / 2) ) / 10 ) * 1em;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -66,6 +66,11 @@ h6 {
 h1, h2, h3 {
     letter-spacing: -0.030em;
     word-spacing: -0.05em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dt,dd,blockquote {
@@ -123,7 +128,7 @@ pre {
     overflow-y: hidden;
     width: 100%;
     min-height: $basal-leading * 2;
-    padding: $basal-leading / 2 $basal-padding;
+    padding: calc($basal-leading / 2) $basal-padding;
     margin: 0 0 $basal-leading 0;
     display: flex;
     align-items: center;

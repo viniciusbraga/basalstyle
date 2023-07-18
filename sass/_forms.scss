@@ -139,7 +139,7 @@
 .input-radio input {
     vertical-align: -14%;
     display: inline-block;
-    margin: 0 floor($basal-gutter / 2) 0 0;
+    margin: 0 floor( calc($basal-gutter / 2)) 0 0;
 }
 
 .select-dropdown select {
@@ -239,7 +239,7 @@
 
 .form-row .errorlist + ul,
 .form-row .errorlist + dl {
-    padding-left: floor($basal-gutter / 3);
+    padding-left: floor( calc($basal-gutter / 3));
     border: 0;
 }
 

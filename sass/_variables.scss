@@ -1,12 +1,12 @@
 
 // Variáveis do grid
 
-$basal-grid-x:           15px;
+$basal-grid-x:           20px;
 $basal-grid-y:           30px;
 
-$basal-col-fixed:        100px;
+$basal-col-fixed:        110px;
 $basal-col-number:       12;
-$basal-col-percent:      round( ( 100% / $basal-col-number ) * 1000) / 1000;
+$basal-col-percent:      calc(round( calc(100% / $basal-col-number ) * 1000) / 1000);
 $basal-col-flex:         (20, 25, 30, 33, 40, 50, 60, 66, 70, 75);
 
 $basal-padding:          $basal-grid-x;
@@ -14,7 +14,7 @@ $basal-leading:          $basal-grid-y;
 $basal-gutter:           $basal-padding;
 $basal-max-width:        $basal-col-fixed * $basal-col-number;
 
-$basal-media-inbound:    $basal-max-width + floor($basal-col-fixed / 2) ;
+$basal-media-inbound:    $basal-max-width + floor( calc($basal-col-fixed / 2) ) ;
 $basal-media-tablet:     900px;
 $basal-media-mobile:     480px;
 $basal-media-tiny:       360px;
@@ -26,8 +26,8 @@ $basal-media-tiny:       360px;
 // /i/{colunas}/{largura da coluna}/{leading}/{gutter}/?bg=cor&v=cor&h=cor
 
 
-$basal-image-param:      "#{$basal-col-number}/#{strip-unit($basal-col-fixed)}/#{strip-unit($basal-leading)}/#{strip-unit($basal-gutter)}/";
-$basal-image-grid:       "https://gridforme.herokuapp.com/i/#{$basal-image-param}";
+$basal-image-param: "#{$basal-col-number}/#{strip-unit($basal-col-fixed)}/#{strip-unit($basal-leading)}/#{strip-unit($basal-gutter)}/";
+$basal-image-grid:  "https://gridfor.me/i/#{$basal-image-param}";
 
 
 // Cores
