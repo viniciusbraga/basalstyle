@@ -85,7 +85,7 @@
 
 @media all and (max-width: $basal-media-inbound) {
 
-    .img { padding: ($basal-leading / 2) 0; }
+    .img { padding: calc($basal-leading / 2) 0; }
 
     .img figcaption,
     .img-legend { position: relative; }
@@ -111,7 +111,7 @@
 
 @media all and (max-width: $basal-media-tablet) {
 
-    .img { padding: ($basal-leading / 2) $basal-padding; }
+    .img { padding: calc($basal-leading / 2) $basal-padding; }
 
 } /* Fim da Quebra de layout para Tablet */
 
