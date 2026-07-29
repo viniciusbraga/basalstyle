@@ -191,9 +191,10 @@ a:active  { color: $basal-color-link-active; }
 a:visited { color: $basal-color-link-visited; }
 
 header, menu, nav, article, section, aside, details, figcaption, figure, footer {
-    display: block;
     margin: 0;
     padding: 0;
+    display: block;
+    align-self: flex-start;
 }
 
 /* WebKit/Blink Browsers */
