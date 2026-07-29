@@ -2,7 +2,6 @@
 /* Estruturas de Colunas fixas */
 
 %_basal-desktop {
-    float: left;
     width: 100%;
 }
 
@@ -17,15 +16,10 @@
 
 /* Colunas usando porcentagem */
 
-%_basal-col {
-    float: left;
-}
-
 @each $i in $basal-col-flex {
 
     .col-#{$i} {
         width: $i * 1%;
-        @extend %_basal-col;
     }
 }
 
@@ -224,9 +218,9 @@
         }
     }
 
-    .tablet-1 { width: 25%; float: left; }
-    .tablet-2 { width: 50%; float: left; }
-    .tablet-3 { width: 75%; float: left; }
+    .tablet-1 { width: 25%; }
+    .tablet-2 { width: 50%; }
+    .tablet-3 { width: 75%; }
 
     %_basal-col-left-mobile { margin-left: 0; }
 
@@ -265,7 +259,6 @@
 
     .mobile-2 {
         width: 50%;
-        float: left;
     }
 
     %_basal-padding-top-mobile { padding-top: 1em; }
@@ -327,20 +320,8 @@
 
 }
 
-
-/* Nicolas Gallagher's micro clearfix */
-
 .row {
-    line-height: 1em; // Adicionado para remover interferência de espaçamneto
-    *zoom: 1;
-}
-.row:before,
-.row:after {
-    content: " ";
-    display: table;
-}
-.row:after {
-    clear: both;
+    display: flex;
 }
 
 
