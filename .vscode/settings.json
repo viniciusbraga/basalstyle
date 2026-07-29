@@ -5,6 +5,12 @@
             "isAsync": true,
             "cmd": "sass ${fileDirname}/style.sass:${fileDirname}/../style.min.css --style compressed --charset --stop-on-error;",
             "event": "onFolderChange"
+        },
+        {
+            "match": "/sass/\\.*",
+            "isAsync": true,
+            "cmd": "sass ${fileDirname}/style.sass:${fileDirname}/../style.css --charset --no-source-map;",
+            "event": "onFolderChange"
         }
     ]
 }
